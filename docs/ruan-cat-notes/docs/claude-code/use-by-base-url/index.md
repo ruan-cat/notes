@@ -128,6 +128,16 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 2. 不能使用任何形式的翻墙。这个站点的 baseUrl 都不能翻墙，不能开启任何翻墙，TUN 不能开启，任何节点都不能选取。
 3. 需要额外多配置一个 `ANTHROPIC_API_KEY` ，这和其他供应商有所不同。
 
+## 基于 GLM 模型的配置
+
+- 获取 key： https://bigmodel.cn/usercenter/proj-mgmt/apikeys
+- 文档： https://docs.bigmodel.cn/cn/guide/develop/claude
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
+$env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
+```
+
 ## 参考资料
 
 其他类似思路的参考资料：
