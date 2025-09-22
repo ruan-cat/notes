@@ -132,6 +132,8 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 
 - 获取 key： https://bigmodel.cn/usercenter/proj-mgmt/apikeys
 - 文档： https://docs.bigmodel.cn/cn/guide/develop/claude
+- 月度订阅套餐购买： https://bigmodel.cn/claude-code
+- 类似于流量包的套餐： https://bigmodel.cn/special_area
 
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "sk-**"
