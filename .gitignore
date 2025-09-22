@@ -47,4 +47,8 @@ auto-imports.d.ts
 */**/.vitepress/dist
 */**/.vitepress/cache
 
+
+# 忽略 claude 的 statusline 日志文件
+.claude/statusline.log
+
 .vercel
