@@ -146,6 +146,14 @@ $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
 
 :::
 
+### 使用体验
+
+::: details `claude code` + `智谱 GLM 模型` 的使用体验
+
+很容易修改无关的代码。要注意说明作用范围。不要让 ai 去做函数名和变量名的取名检查。
+
+:::
+
 ## 参考资料
 
 其他类似思路的参考资料：
