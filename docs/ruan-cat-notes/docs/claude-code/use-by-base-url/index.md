@@ -136,9 +136,15 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 - 类似于流量包的套餐： https://bigmodel.cn/special_area
 
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
+$env:ANTHROPIC_AUTH_TOKEN = "**"
 $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
 ```
+
+::: tip GLM 的 ANTHROPIC_AUTH_TOKEN 没有 sk- 开头
+
+智谱 GLM 提供的 key 是不提供 `sk-` 开头的。这一点要注意。
+
+:::
 
 ## 参考资料
 
