@@ -253,3 +253,9 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## alova ？
 
 - https://alova.js.org/zh-CN/tutorial/getting-started/introduce
+
+## 给自己的 monorepo 库新建一个关系图表
+
+- https://github.com/uni-helper/website/pull/22
+- https://unjs.io/relations
+- https://uni-helper.js.org/relations
