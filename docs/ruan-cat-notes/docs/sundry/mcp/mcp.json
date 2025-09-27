@@ -1,17 +1,25 @@
 {
 	"mcpServers": {
-		"promptx": {
-			"command": "cmd",
-			"args": ["/c", "npx", "-y", "-f", "--registry", "https://registry.npmjs.org", "dpml-prompt@latest", "mcp-server"]
-		},
 		"context7": {
 			"command": "cmd",
-			"args": ["/c", "npx", "-y", "@upstash/context7-mcp"]
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"@upstash/context7-mcp"
+			]
 		},
 		"fetch-mcp": {
 			"command": "cmd",
-			"args": ["/c", "npx", "-y", "@tokenizin/mcp-npx-fetch"],
-			"autoApprove": ["fetch_markdown"]
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"@tokenizin/mcp-npx-fetch"
+			],
+			"autoApprove": [
+				"fetch_markdown"
+			]
 		}
 	}
 }
