@@ -36,6 +36,12 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 }
 ```
 
+### 默认占用非常大的上下文
+
+如图所示，promptx 占用了很多上下文。故应该谨慎使用。
+
+![2025-09-27-12-34-27](https://gh-img-store.ruan-cat.com/img/2025-09-27-12-34-27.png)
+
 ## context7
 
 据说是一个能够索引最新内容的工具。
