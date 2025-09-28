@@ -20,6 +20,15 @@
 			"autoApprove": [
 				"fetch_markdown"
 			]
+		},
+		"chrome-devtools": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"chrome-devtools-mcp@latest"
+			]
 		}
 	}
 }
