@@ -147,6 +147,8 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 
 ### claude code 全局安装命令
 
+- 按照特定范围安装 claude code 的 mcp： https://docs.claude.com/en/docs/claude-code/mcp#choosing-the-right-scope
+
 ```bash
 claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
 ```
