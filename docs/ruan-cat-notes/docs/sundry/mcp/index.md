@@ -125,6 +125,47 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 }
 ```
 
+## chrome-devtools-mcp
+
+一个能够调用 Chrome 浏览器并通过视觉功能操作浏览器的 mcp，由谷歌官方提供。
+
+- 仓库： https://github.com/ChromeDevTools/chrome-devtools-mcp/
+- [`🚀谷歌Chrome DevTools MCP彻底颠覆AI浏览器自动化！让Cursor、Claude Code、Codex CLI成浏览器控制神器，AI为你打工`](https://www.bilibili.com/video/BV1EynZzcEmh)
+
+### 模仿其他配置写的 mcp 配置
+
+```json
+{
+	"mcpServers": {
+		"chrome-devtools": {
+			"command": "cmd",
+			"args": ["/c", "npx", "-y", "chrome-devtools-mcp@latest"]
+		}
+	}
+}
+```
+
+### claude code 全局安装命令
+
+```bash
+claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
+```
+
+产生的配置：
+
+```json
+{
+	"mcpServers": {
+		"chrome-devtools": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["chrome-devtools-mcp@latest"],
+			"env": {}
+		}
+	}
+}
+```
+
 ## 个人全局通用的 mcp.json
 
 尽量实现频繁更新与配置：
