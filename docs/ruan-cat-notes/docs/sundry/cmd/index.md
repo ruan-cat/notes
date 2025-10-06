@@ -16,10 +16,18 @@
 code $profile
 ```
 
+## 关闭 window 系统内指定端口的进程
+
+- `netstat -ano | findstr :端口号` 查找占用端口的进程
+- `powershell "Stop-Process -Id PID -Force"` 强制终止指定进程
+
+上述内容很适合交由给 AI cli，让 AI 来帮我们关闭掉指定端口号的进程。
+
 ## set-ExecutionPolicy RemoteSigned
 
-https://blog.csdn.net/qq_31319235/article/details/119725835
 在 powershell.exe 内设置命令行的权限。即可在 vscode 内使用各类命令。如 vue cli 的命令。
+
+- https://blog.csdn.net/qq_31319235/article/details/119725835
 
 ## tree
 
