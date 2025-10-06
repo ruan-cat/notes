@@ -1,5 +1,21 @@
 # 常用的 cmd 命令
 
+这里的命令主要是在 powershell 内使用。
+
+## 全局配置 window powershell 的环境变量
+
+设置当前电脑的全局环境变量。
+
+::: tip AI cli 场景下高频使用
+
+该命令主要是在使用 claude code 或者是其他 AI cli 工具时，频繁地手动切换模型供应商的时候使用。
+
+:::
+
+```bash
+code $profile
+```
+
 ## set-ExecutionPolicy RemoteSigned
 
 https://blog.csdn.net/qq_31319235/article/details/119725835
