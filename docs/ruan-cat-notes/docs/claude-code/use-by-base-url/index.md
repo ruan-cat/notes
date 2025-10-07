@@ -138,6 +138,9 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "**"
 $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "glm-4.5-air"
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "glm-4.6"
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 ```
 
 ::: tip GLM 的 ANTHROPIC_AUTH_TOKEN 没有 sk- 开头
@@ -151,6 +154,8 @@ $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
 ::: details `claude code` + `智谱 GLM 模型` 的使用体验
 
 很容易修改无关的代码。要注意说明作用范围。不要让 ai 去做函数名和变量名的取名检查。
+
+<!-- TODO: 尝试一下在主动配置模型后 效果是不是更好了 -->
 
 :::
 
