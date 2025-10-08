@@ -46,3 +46,9 @@ docs/docs-01-star/*
 在 monorepo 内，为了避免重复构建，实现有针对性的构建，这里配置目标的文件夹目录。
 
 注意，这里并不是写 glob 语法。
+
+### cloudflare worker 配置总览
+
+大致效果如下图所示：
+
+![2025-10-08-17-12-18](https://gh-img-store.ruan-cat.com/img/2025-10-08-17-12-18.png)
