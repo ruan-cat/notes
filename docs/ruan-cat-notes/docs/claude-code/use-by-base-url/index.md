@@ -52,18 +52,36 @@ $env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
 
 手动指定 git bash 的路径即可。
 
-## 基于 anyrouter.top 中转商的配置
+## 基于 GLM 模型的配置
 
-- 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
+- 获取 key： https://bigmodel.cn/usercenter/proj-mgmt/apikeys
+- 文档： https://docs.bigmodel.cn/cn/guide/develop/claude
+- 月度订阅套餐购买： https://bigmodel.cn/claude-code
+- 类似于流量包的套餐： https://bigmodel.cn/special_area
 
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token"
-$env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
+$env:ANTHROPIC_AUTH_TOKEN = "**"
+$env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "glm-4.5-air"
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "glm-4.6"
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 ```
 
-### 注意事项
+::: tip GLM 的 ANTHROPIC_AUTH_TOKEN 没有 sk- 开头
 
-1. **ANTHROPIC_BASE_URL 不能设置成国内镜像**： anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
+智谱 GLM 提供的 key 是不提供 `sk-` 开头的。这一点要注意。
+
+:::
+
+### 使用体验
+
+::: details `claude code` + `智谱 GLM 模型` 的使用体验
+
+很容易修改无关的代码。要注意说明作用范围。不要让 ai 去做函数名和变量名的取名检查。
+
+<!-- TODO: 尝试一下在主动配置模型后 效果是不是更好了 -->
+
+:::
 
 ## 基于 Kimi 官方网站的配置
 
@@ -85,6 +103,19 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 ### 月之暗面速度太慢
 
 目前，我使用国内`月之暗面`提供的 url 地址，响应速度太慢。故不继续使用该方案。
+
+## 基于 anyrouter.top 中转商的配置
+
+- 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token"
+$env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
+```
+
+### 注意事项
+
+1. **ANTHROPIC_BASE_URL 不能设置成国内镜像**： anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
 
 ## 基于 claudeyy.com 中转商的配置
 
@@ -127,37 +158,6 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 1. 这个供应商提供**免费额度**。
 2. 不能使用任何形式的翻墙。这个站点的 baseUrl 都不能翻墙，不能开启任何翻墙，TUN 不能开启，任何节点都不能选取。
 3. 需要额外多配置一个 `ANTHROPIC_API_KEY` ，这和其他供应商有所不同。
-
-## 基于 GLM 模型的配置
-
-- 获取 key： https://bigmodel.cn/usercenter/proj-mgmt/apikeys
-- 文档： https://docs.bigmodel.cn/cn/guide/develop/claude
-- 月度订阅套餐购买： https://bigmodel.cn/claude-code
-- 类似于流量包的套餐： https://bigmodel.cn/special_area
-
-```bash
-$env:ANTHROPIC_AUTH_TOKEN = "**"
-$env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "glm-4.5-air"
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "glm-4.6"
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
-```
-
-::: tip GLM 的 ANTHROPIC_AUTH_TOKEN 没有 sk- 开头
-
-智谱 GLM 提供的 key 是不提供 `sk-` 开头的。这一点要注意。
-
-:::
-
-### 使用体验
-
-::: details `claude code` + `智谱 GLM 模型` 的使用体验
-
-很容易修改无关的代码。要注意说明作用范围。不要让 ai 去做函数名和变量名的取名检查。
-
-<!-- TODO: 尝试一下在主动配置模型后 效果是不是更好了 -->
-
-:::
 
 ## 参考资料
 
