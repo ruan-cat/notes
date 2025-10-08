@@ -22,3 +22,4 @@
 - [v0](https://v0.app/)
 - [bolt.new](https://bolt.new/)
 - [lovable](https://lovable.dev/)
+- [dyad](https://github.com/dyad-sh/dyad)
