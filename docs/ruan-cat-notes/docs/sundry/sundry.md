@@ -19,6 +19,6 @@
 
 - https://zhuanlan.zhihu.com/p/19533859140
 
-- v0
-- bolt.new
-- lovable
+- [v0](https://v0.app/)
+- [bolt.new](https://bolt.new/)
+- [lovable](https://lovable.dev/)
