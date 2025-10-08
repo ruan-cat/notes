@@ -68,6 +68,7 @@
    - cursor
    - Trae
    - CodeBuddy
+5. claude code。并选购便宜廉价的，为期一个月 20 元人民币的 GLM 月度套餐。
 
 ## 我对大家的要求
 
