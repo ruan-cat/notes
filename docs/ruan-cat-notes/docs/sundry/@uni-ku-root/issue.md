@@ -1,3 +1,5 @@
+<!-- https://github.com/uni-ku/root/issues/29 -->
+
 # 在本仓库的 examples 示例内，因`路径匹配失败`而出现无法自动注册全局的 `<global-ku-root>` 组件的现象，进而导致点击`展示Toast`按钮不生效
 
 针对本仓库，在 examples 内的项目，运行后点击 `展示Toast` 按钮，没有办法显示出预期期望的弹框。
