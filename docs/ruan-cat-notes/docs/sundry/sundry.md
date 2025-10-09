@@ -23,3 +23,11 @@
 - [bolt.new](https://bolt.new/)
 - [lovable](https://lovable.dev/)
 - [dyad](https://github.com/dyad-sh/dyad)
+
+## 对提示词的思考
+
+2025 年是高强度使用 AI 的一年，用了很多 AI 工具，对提示词的划分理解如下：
+
+- 一次性片段式提示词
+- 一次性文档式提示词
+- 可复用代理式提示词
