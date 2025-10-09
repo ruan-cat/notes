@@ -16,6 +16,18 @@ claude -v
 
 输出版本号即说明安装成功。
 
+## 常用快捷键
+
+### 切换计划模式
+
+Tip: Use Plan Mode to prepare for a complex request before making changes. Press alt+m twice to enable.
+
+alt+m 两次
+
+### 切换思考模式
+
+按 tab
+
 ## 思考
 
 看到过一个 B 站视频，讲的是用 claude code 调用 gemini cli，这样可以让 gemini 去完成那些低水准的，简单的，重复性强的，上下文 token 消耗大的任务。让 claude code 专注于任务调度即可。
