@@ -31,3 +31,9 @@
 - 一次性片段式提示词
 - 一次性文档式提示词
 - 可复用代理式提示词
+
+## vite mock 插件技术选型
+
+- [vite-plugin-fake-server](https://github.com/condorheroblog/vite-plugin-fake-server)
+- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server)
+- [vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock)
