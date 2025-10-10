@@ -51,3 +51,23 @@
 多个包升级情况：
 
 ![2025-10-10-16-19-21](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-19-21.png)
+
+## 使用 vite-plugin-fake-server 插件打包项目时出现的 require 函数故障
+
+按理说不应该出现的，在生产环境内不应该出现 require 函数的。
+
+针对 vue-pure-admin 仓库，该模板项目打包后，是正常的。但是我的项目也是用这个模板二开的，却出现了故障。
+
+在 dist 内搜索这些关键词：
+
+- `vite-plugin-fake-server`
+- `__VITE__PLUGIN__FAKE__SERVER__`
+- `window.__VITE__PLUGIN__FAKE__SERVER__.xhook`
+
+无 require：
+
+![2025-10-10-16-21-50](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-21-50.png)
+
+有 require：
+
+![2025-10-10-16-22-03](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-22-03.png)
