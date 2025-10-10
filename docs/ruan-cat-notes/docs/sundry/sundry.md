@@ -37,3 +37,17 @@
 - [vite-plugin-fake-server](https://github.com/condorheroblog/vite-plugin-fake-server)
 - [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server)
 - [vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock)
+
+## changeset 发版版本号控制导致的差异
+
+是否要在底层依赖更新时，是的同一个 monorepo 内的上层依赖也一起更新版本号呢？以下是两种差异：
+
+- https://github.com/ruan-cat/monorepo/pull/39
+
+单一包升级情况：
+
+![2025-10-10-16-18-37](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-18-37.png)
+
+多个包升级情况：
+
+![2025-10-10-16-19-21](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-19-21.png)
