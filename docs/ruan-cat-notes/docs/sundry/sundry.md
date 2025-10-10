@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # 各种杂项，随笔
 
 ## GitHub Spec Kit
