@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 从第十二次大项目开始，再跌一次跟头
-      link: /12
+      link: /12psi
     - theme: alt
       text: 在github内查看
       link: https://github.com/ruan-cat/notes/tree/dev/docs/docs-01-star
