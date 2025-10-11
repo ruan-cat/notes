@@ -1,3 +1,5 @@
+<!-- https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/161 -->
+
 # 在标题内使用引号包裹的类 html 标签的字符串，会导致开发环境无法看到其他的页面
 
 在 markdown 文档的一级标题内，使用引号包裹的类似 html 标签的字符串，会导致在开发环境内无法看到其他页面。
