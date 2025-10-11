@@ -13,3 +13,4 @@
 - [qwen-code](https://github.com/QwenLM/qwen-code)
 - [cursor cli](https://cursor.com/docs/cli/overview)
 - [trae-agent](https://github.com/bytedance/trae-agent)
+- [copilot-cli](https://github.com/github/copilot-cli)
