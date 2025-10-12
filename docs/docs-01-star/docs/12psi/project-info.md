@@ -9,3 +9,6 @@
 - 后台管理系统体验地址： https://web.nodcloud.cn/#/
 - 体验账号： admin
 - 体验密码： admin
+
+- 使用手册： https://docs.nodcloud.com/erp/v7/doc/
+- 开发文档： https://docs.nodcloud.com/erp/v7/dev/
