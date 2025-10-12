@@ -9,3 +9,17 @@
 按照教程，配置好全局的环境变量即可。
 
 ![2025-10-12-09-40-09](https://gh-img-store.ruan-cat.com/img/2025-10-12-09-40-09.png)
+
+## 终极解决 mysql8.0 ERROR 1045 (28000): Access denied for user ‘ODBC‘@‘localhost‘ (using password: NO)
+
+- https://blog.csdn.net/m0_47505062/article/details/122342121
+
+手动新建 `my.ini` 文件即可：
+
+![2025-10-12-09-49-02](https://gh-img-store.ruan-cat.com/img/2025-10-12-09-49-02.png)
+
+```txt
+[mysql]
+user=root
+password=123456
+```
