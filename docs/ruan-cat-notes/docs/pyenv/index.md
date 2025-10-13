@@ -4,7 +4,7 @@
 
 这样就便于我后面安装 MCP 了。
 
-## 安装
+## 在 window 内安装专门的 `pyenv-win`
 
 - 安装教程： https://juejin.cn/post/7467931315401965631
 
@@ -13,5 +13,7 @@
 ```bash
 git clone --depth=1 https://github.com/pyenv-win/pyenv-win.git "$HOME\.pyenv"
 ```
+
+这里安装的位置是 C 盘。未来想升级时，可以直接考虑来这里拉取仓库。
 
 ![2025-10-13-10-56-53](https://gh-img-store.ruan-cat.com/img/2025-10-13-10-56-53.png)
