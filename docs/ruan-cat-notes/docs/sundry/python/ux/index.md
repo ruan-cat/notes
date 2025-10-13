@@ -22,4 +22,6 @@ C:\Users\pc\.local\bin
 
 ## 处理 vscode 终端无法识别的故障
 
-- https://zhuanlan.zhihu.com/p/1891949813500719871
+- 参考资料： https://zhuanlan.zhihu.com/p/1891949813500719871
+
+重启电脑即可。
