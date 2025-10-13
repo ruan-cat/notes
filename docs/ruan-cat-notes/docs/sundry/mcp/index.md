@@ -175,7 +175,7 @@ claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
 - 仓库： https://github.com/GongRzhe/Office-Word-MCP-Server
 - smithery： https://smithery.ai/server/@GongRzhe/Office-Word-MCP-Server
 
-### claude code 全局安装命令
+### 安装网络版： claude code 全局安装命令
 
 ```bash
 claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp" --scope user
@@ -189,6 +189,29 @@ claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server
 		"gong-rzhe-office-word-mcp-server": {
 			"type": "http",
 			"url": "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp"
+		}
+	}
+}
+```
+
+::: warning 效果不佳
+
+云 MCP 工具太容易链接失败了。不能用。
+
+:::
+
+### 安装本地版
+
+- https://github.com/GongRzhe/Office-Word-MCP-Server#method-2-without-installation-using-uvx
+
+需要的配置：
+
+```json
+{
+	"mcpServers": {
+		"office-word-mcp-server": {
+			"command": "uvx",
+			"args": ["--from", "office-word-mcp-server", "word_mcp_server"]
 		}
 	}
 }
