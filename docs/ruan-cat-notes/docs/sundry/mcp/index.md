@@ -168,6 +168,32 @@ claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
 }
 ```
 
+## Office-Word-MCP-Server
+
+阅读 docx 的 MCP。
+
+- 仓库： https://github.com/GongRzhe/Office-Word-MCP-Server
+- smithery： https://smithery.ai/server/@GongRzhe/Office-Word-MCP-Server
+
+### claude code 全局安装命令
+
+```bash
+claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp" --scope user
+```
+
+产生的配置：
+
+```json
+{
+	"mcpServers": {
+		"gong-rzhe-office-word-mcp-server": {
+			"type": "http",
+			"url": "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp"
+		}
+	}
+}
+```
+
 ## 个人全局通用的 mcp.json
 
 尽量实现频繁更新与配置：

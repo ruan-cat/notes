@@ -29,6 +29,10 @@
 				"-y",
 				"chrome-devtools-mcp@latest"
 			]
+		},
+		"gong-rzhe-office-word-mcp-server": {
+			"type": "http",
+			"url": "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp"
 		}
 	}
 }
