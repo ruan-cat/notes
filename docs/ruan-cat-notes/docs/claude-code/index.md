@@ -34,9 +34,11 @@ alt+m 两次
 
 ## 安装 MCP
 
-<!-- claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp" --scope user -->
+- 按照特定范围安装 claude code 的 mcp： https://docs.claude.com/en/docs/claude-code/mcp#choosing-the-right-scope
 
-<!-- C:\Users\pc\.claude.json -->
+通常文件会安装到 `C:\Users\pc\.claude.json` ，即用户目录的 `.claude.json` 内。
+
+实际实践下来，`.claude.json` 文件长度会变得非常大。
 
 ## 拓展待办
 
