@@ -263,3 +263,8 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## 利用智谱 GLM 的大容量，搭建 github workflow 实现 pr 后自动调用工具
 
 - https://docs.claude.com/zh-CN/docs/claude-code/github-actions
+
+## 安装基于 Python 的 docx 文档阅读工具
+
+- https://github.com/GongRzhe/Office-Word-MCP-Server
+- docx-mcp
