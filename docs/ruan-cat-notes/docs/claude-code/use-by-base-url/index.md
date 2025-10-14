@@ -86,6 +86,10 @@ $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 
 :::
 
+### 参考资料
+
+- [`零基础学会安装Claude Code+GLM 4.6`](https://www.bilibili.com/video/BV1GE4yzAEq3)
+
 ## 基于 Kimi 官方网站的配置
 
 - `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
