@@ -1,6 +1,6 @@
 # mcp
 
-这里记录一些常用的 mcp 配置 json，基于 win 和 npx
+这里记录一些常用的 mcp 配置 json，基于 window 系统 、npx 和 uvx 。
 
 这里为了实现泛用性，故罗列出具体的 json 配置。
 
@@ -168,12 +168,34 @@ claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
 }
 ```
 
+根据 claude code 的自检命令，应该写成：
+
+```json
+{
+	"mcpServers": {
+		"chrome-devtools": {
+			"type": "stdio",
+			"command": "cmd",
+			"args": ["/c", "npx", "chrome-devtools-mcp@latest"],
+			"env": {}
+		}
+	}
+}
+```
+
 ## Office-Word-MCP-Server
 
 阅读 docx 的 MCP。
 
 - 仓库： https://github.com/GongRzhe/Office-Word-MCP-Server
 - smithery： https://smithery.ai/server/@GongRzhe/Office-Word-MCP-Server
+
+::: warning 不推荐全局安装
+
+1. 消耗 token： 该 MCP 如果作为常驻的 MCP，太消耗 token 了，应该少用该 MCP。
+2. 启动慢： 每次启动 claude code 时，速度都很慢。主要就是应该这个 MCP。
+
+:::
 
 ### 安装网络版： claude code 全局安装命令
 

@@ -22,13 +22,14 @@
 			]
 		},
 		"chrome-devtools": {
+			"type": "stdio",
 			"command": "cmd",
 			"args": [
 				"/c",
 				"npx",
-				"-y",
 				"chrome-devtools-mcp@latest"
-			]
+			],
+			"env": {}
 		},
 		"office-word-mcp-server": {
 			"command": "uvx",
