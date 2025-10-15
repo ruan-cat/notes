@@ -84,7 +84,16 @@ pnpm v vue-router
 
 - https://github.com/vuejs/router/issues/2569
 
-<!-- TODO: 同步性的在 uniapp 内做出警告，告诉 uniapp 官方，不要继续使用 dist/vue-router.esm-bundler.js 的写法了 -->
+<!--
+	TODO: 同步性的在 uniapp 内做出警告，告诉 uniapp 官方，不要继续使用 dist/vue-router.esm-bundler.js 的写法了
+
+	去uni-app仓库提一个PR，把这行代码删了，然后把前因后果在PR里说明白就行
+	https://github.com/dcloudio/uni-app/blob/next/packages/vite-plugin-uni/src/configResolved/plugins/resolveId.ts
+
+	然后就可以在简历里面写个“联合vue、uni-app官方解决依赖丢失问题”
+	通过此事件，一方面让vue官方不要一股脑直接删除某打包文件，而是先用一个废弃警告来提醒；一方面帮助uni-app解决依赖丢失问题
+-->
+
 <!--
 	考虑写一个 pr 修改这部分的源码调用
 	可以考虑在模板库内提交东西 https://github.com/dcloudio/uni-preset-vue/tree/vite
