@@ -41,6 +41,15 @@
 - 一次性文档式提示词
 - 可复用代理式提示词
 
+### 提示词 4 要素
+
+基于 `gemini-for-google-workspace-prompting-guide-101` ：
+
+- 角色
+- 任务
+- 上下文
+- 格式
+
 ## vite mock 插件技术选型
 
 - [vite-plugin-fake-server](https://github.com/condorheroblog/vite-plugin-fake-server)
