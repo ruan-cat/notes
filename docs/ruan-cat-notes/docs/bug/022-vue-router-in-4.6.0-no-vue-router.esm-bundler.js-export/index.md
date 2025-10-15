@@ -69,9 +69,25 @@ pnpm v vue-router
 
 所以破案了，是 `vue-router@4.6.0` 用了 `tsup` 做代码重构，所以导致构建产物名称变化，进而导致缺少文件的错误。
 
-## 修复故障
+## 正式修复故障
 
 预期会在 [`vue-router@4.6.1`](https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#461-2025-10-15) 内得到修复。
+
+## 临时修复故障
+
+如果很着急，需要实现版本回退，可以临时地用 `pnpm.overrides` 做依赖版本覆盖。在 `package.json` 内这样写：
+
+```json
+{
+	"pnpm": {
+		"overrides": {
+			"vue-router": "4.5.1"
+		}
+	}
+}
+```
+
+不过 [`vue-router@4.6.1`](https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#461-2025-10-15) 已经发版更新，所以该临时写法可以暂时不用了。
 
 ## 作为破坏性变更，准备向未来迁移
 
