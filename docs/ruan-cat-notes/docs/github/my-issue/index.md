@@ -10,4 +10,11 @@
 - https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/142
 - https://github.com/uni-ku/root/issues/29
 
-<!-- TODO: 我记得 antfu 有一个网站 可以全面的检查自己的 github 活动的，可以考虑套模板 -->
+<!--
+	TODO: 我记得 antfu 有一个网站 可以全面的检查自己的 github 活动的，可以考虑套模板
+	https://prs.atinux.com/
+	https://github.com/atinux/my-pull-requests
+
+	https://releases.antfu.me/
+	https://github.com/antfu/releases.antfu.me
+-->
