@@ -89,3 +89,10 @@
 有 require：
 
 ![2025-10-10-16-22-03](https://gh-img-store.ruan-cat.com/img/2025-10-10-16-22-03.png)
+
+## 依赖冲突
+
+- resolutions
+- overrides
+
+到底怎么使用？
