@@ -96,3 +96,13 @@
 - overrides
 
 到底怎么使用？
+
+## 在 pnpm-workspace.yaml 写 overrides 似乎没用，要在 package.json 内写 pnpm.overrides 才有效
+
+疑似故障，无法实现依赖覆盖。
+
+```bash
+pnpm why vue-router
+```
+
+![2025-10-15-19-00-29](https://gh-img-store.ruan-cat.com/img/2025-10-15-19-00-29.png)
