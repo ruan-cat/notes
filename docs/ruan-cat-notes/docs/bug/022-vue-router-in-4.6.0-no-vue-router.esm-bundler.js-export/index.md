@@ -69,6 +69,17 @@ pnpm v vue-router
 
 所以破案了，是 `vue-router@4.6.0` 用了 tsup 做代码重构，所以导致构建产物名称变化，进而导致缺少文件的错误。
 
+## 修复故障
+
+预期会在 `vue-router@4.6.1` 内得到修复。
+
+## 作为破坏性变更，准备向未来迁移
+
+经过沟通得知，`vue-router/dist/vue-router.esm-bundler.js` 已经属于弃用的配置了，未来就不会提供了。
+
+- 未来不提供 `vue-router.esm-bundler.js` 的导出方式了： https://github.com/vuejs/router/issues/2569#issuecomment-3405172967
+- `build: add deprecated vue-router.esm-bundler export`： https://github.com/vuejs/router/commit/9b22edcff3acd9782dd86257b2744c1ae35a455e
+
 ## 已发布相关的报障 issue
 
 - https://github.com/vuejs/router/issues/2569
