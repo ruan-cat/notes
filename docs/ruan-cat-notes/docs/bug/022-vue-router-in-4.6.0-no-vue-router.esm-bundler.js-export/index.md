@@ -5,6 +5,8 @@ desc: 因vue-router在4.6.0版本使用了tsup重构打包行为，使得dist文
 
 # 记一次因 vue-router 升级而导致的 uniapp 故障
 
+> 因 `vue-router` 在 `4.6.0` 版本使用了 `tsup` 重构打包行为，使得 `dist` 文件夹缺少 `vue-router/dist/vue-router.esm-bundler.js` 文件，进而导致 `uniapp` 的 H5 打包失败
+
 ## 在云端复现故障
 
 问题起因，在 [github workflow 流水线](https://github.com/nwt-q/001-Smart-Community/actions/runs/18517921823/job/52772087484)打包的项目出现莫名其妙的故障，称找不到 `vue-router.esm-bundler.js` 文件。
@@ -91,14 +93,14 @@ pnpm v vue-router
 
 ## 作为破坏性变更，准备向未来迁移
 
-经过沟通得知，`vue-router/dist/vue-router.esm-bundler.js` 已经属于弃用的配置了，未来就不会提供了。
+经过沟通得知，`vue-router/dist/vue-router.esm-bundler.js` 已经属于弃用的配置了，未来就不会提供了。参考资料如下：
 
 - 未来不提供 `vue-router.esm-bundler.js` 的导出方式了： https://github.com/vuejs/router/issues/2569#issuecomment-3405172967
 - `build: add deprecated vue-router.esm-bundler export`： https://github.com/vuejs/router/commit/9b22edcff3acd9782dd86257b2744c1ae35a455e
 
 ## 已发布相关的报障 issue
 
-- https://github.com/vuejs/router/issues/2569
+- [`vue-router.esm-bundler.js not exported in vue-router@4.6.0 version`](https://github.com/vuejs/router/issues/2569)
 
 <!--
 	TODO: 同步性的在 uniapp 内做出警告，告诉 uniapp 官方，不要继续使用 dist/vue-router.esm-bundler.js 的写法了
