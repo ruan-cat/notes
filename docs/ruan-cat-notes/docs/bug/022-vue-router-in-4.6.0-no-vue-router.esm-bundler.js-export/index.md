@@ -83,3 +83,6 @@ pnpm v vue-router
 ## 已发布相关的报障 issue
 
 - https://github.com/vuejs/router/issues/2569
+
+<!-- TODO: 同步性的在 uniapp 内做出警告，告诉 uniapp 官方，不要继续使用 dist/vue-router.esm-bundler.js 的写法了 -->
+<!-- 考虑写一个 pr 修改这部分的源码调用 -->
