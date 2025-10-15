@@ -1,6 +1,6 @@
 ---
-juejin: TODO:
-desc: TODO:
+juejin: TODO 处理完了issue就发文章
+desc: 因vue-router在4.6.0版本使用了tsup重构打包行为，使得dist文件夹缺少文件，进而导致uniapp的H5打包失败
 ---
 
 # 记一次因 vue-router 升级而导致的 uniapp 故障
