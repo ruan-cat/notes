@@ -21,7 +21,6 @@
 		"clear:deps": "rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml}'",
 		"format": "prettier --experimental-cli --write .",
 		"test": "vitest --ui --watch --api.port=4000",
-		"create-code-workspace": "tsx ./scripts/generate.code-workspace.ts --name=note笔记项目",
 		"preinstall": "npm run corepack:pnpm",
 		"old-preinstall": "npx only-allow pnpm && npm run corepack:pnpm",
 		"corepack:pnpm": "corepack enable && corepack install",
