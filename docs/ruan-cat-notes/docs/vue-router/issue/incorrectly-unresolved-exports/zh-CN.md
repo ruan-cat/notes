@@ -1,3 +1,5 @@
+<!-- https://github.com/vuejs/router/issues/2569 -->
+
 # 缺失 `vue-router.esm-bundler.js` 的导出
 
 > 报告者并不是以英文为母语的用户，以下内容均使用翻译软件翻译：
