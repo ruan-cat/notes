@@ -3,6 +3,7 @@
 这里将我所新建的 issue 罗列出来，以便复盘，并发给其他人针对性阅读。
 
 - https://github.com/vuejs/router/issues/2569
+- https://github.com/unjs/automd/issues/123
 - https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/161
 - https://github.com/shikijs/shiki/issues/966
 - https://github.com/ren-wei/echarts-enhanced-completion/issues/9
