@@ -67,11 +67,11 @@ pnpm v vue-router
 
 ![2025-10-15-14-14-14](https://gh-img-store.ruan-cat.com/img/2025-10-15-14-14-14.png)
 
-所以破案了，是 `vue-router@4.6.0` 用了 tsup 做代码重构，所以导致构建产物名称变化，进而导致缺少文件的错误。
+所以破案了，是 `vue-router@4.6.0` 用了 `tsup` 做代码重构，所以导致构建产物名称变化，进而导致缺少文件的错误。
 
 ## 修复故障
 
-预期会在 `vue-router@4.6.1` 内得到修复。
+预期会在 [`vue-router@4.6.1`](https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#461-2025-10-15) 内得到修复。
 
 ## 作为破坏性变更，准备向未来迁移
 
