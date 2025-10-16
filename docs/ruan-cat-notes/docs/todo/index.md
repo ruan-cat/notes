@@ -267,3 +267,9 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## CodeRabbit
 
 这是什么 github pr 机器人？
+
+## 基于动态组件的精细化，高性能组件编写方案
+
+`<component :is>` + `defineAsyncComponent` + `<keep-alive>` = 高性能动态组件系统。
+
+- https://juejin.cn/post/7549314246204522506
