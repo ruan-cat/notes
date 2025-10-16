@@ -111,3 +111,10 @@
 ### 已完成
 
 时过境迁。现在用 AI 工具可以轻松的实现开发 cli 命令行工具了。
+
+## 安装基于 Python 的 docx 文档阅读工具
+
+- https://github.com/GongRzhe/Office-Word-MCP-Server
+- docx-mcp
+
+### 已完成

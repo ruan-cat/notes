@@ -264,7 +264,6 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 - https://docs.claude.com/zh-CN/docs/claude-code/github-actions
 
-## 安装基于 Python 的 docx 文档阅读工具
+## CodeRabbit
 
-- https://github.com/GongRzhe/Office-Word-MCP-Server
-- docx-mcp
+这是什么 github pr 机器人？
