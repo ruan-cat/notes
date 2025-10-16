@@ -23,9 +23,13 @@
 
 ### uniapp H5 项目在 `vue-router@4.6.0` 版本下是失败的
 
-稍晚些提供完整的可复现案例。
+- 可复现案例，切换到 `4.6.0` 分支： https://github.com/ruan-cat/bug-in-vue-router-4.6.0-with-uniapp/tree/4.6.0
 
-<!-- TODO: 准备特定分支下的可复现案例 -->
+如下图所示，在依赖关系指定为 `vue-router@4.6.0` 时，是**失败**的。
+
+![2025-10-16-18-28-56](https://gh-img-store.ruan-cat.com/img/2025-10-16-18-28-56.png)
+
+![2025-10-16-18-30-02](https://gh-img-store.ruan-cat.com/img/2025-10-16-18-30-02.png)
 
 ### uniapp H5 项目在 `vue-router@4.5.1` 版本下是成功的
 
@@ -35,11 +39,15 @@
 
 ![2025-10-16-17-57-29](https://gh-img-store.ruan-cat.com/img/2025-10-16-17-57-29.png)
 
-### uniapp H5 项目在 `vue-router@4.6.1` 版本下是成功的
+### uniapp H5 项目在 `vue-router@4.6.3` 版本下是成功的
 
-稍晚些提供完整的可复现案例。
+- 可复现案例，切换到 `4.6.3` 分支： https://github.com/ruan-cat/bug-in-vue-router-4.6.0-with-uniapp/tree/4.6.3
 
-<!-- TODO: 准备特定分支下的可复现案例 -->
+如下图所示，在依赖关系指定为 `vue-router@4.6.3` 时，是**成功**的。
+
+![2025-10-16-18-48-32](https://gh-img-store.ruan-cat.com/img/2025-10-16-18-48-32.png)
+
+![2025-10-16-18-48-43](https://gh-img-store.ruan-cat.com/img/2025-10-16-18-48-43.png)
 
 ## 有什么故障先例？
 
