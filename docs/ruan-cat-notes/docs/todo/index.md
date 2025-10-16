@@ -273,3 +273,34 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 `<component :is>` + `defineAsyncComponent` + `<keep-alive>` = 高性能动态组件系统。
 
 - https://juejin.cn/post/7549314246204522506
+
+## node 内置的测试框架
+
+- https://juejin.cn/post/7536817253879513123
+
+```js
+// test/math.test.js
+import { test, describe } from "node:test";
+import assert from "node:assert";
+import { add, multiply } from "../math.js";
+
+describe("Math functions", () => {
+	test("adds numbers correctly", () => {
+		assert.strictEqual(add(2, 3), 5);
+	});
+
+	test("handles async operations", async () => {
+		const result = await multiply(2, 3);
+		assert.strictEqual(result, 6);
+	});
+
+	test("throws on invalid input", () => {
+		assert.throws(() => add("a", "b"), /Invalid input/);
+	});
+});
+```
+
+## 从公开的 Figma 设计稿内提取出样式设计风格，优化项目的视觉设计
+
+- https://juejin.cn/post/7506051295951732748
+- https://juejin.cn/post/7515231445276852239#heading-8
