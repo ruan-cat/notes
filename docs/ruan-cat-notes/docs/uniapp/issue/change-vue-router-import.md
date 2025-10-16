@@ -1,5 +1,6 @@
 <!-- 已经pr https://github.com/dcloudio/uni-app/pull/5824 -->
-<!-- 重新克隆本地项目 不要浅克隆 需要历史git blame信息的
+<!--
+	重新克隆本地项目 不要浅克隆 需要历史git blame信息的
 	git clone --depth=5000 https://github.com/ruan-cat/uni-app.git uni-app__ruan-cat
  -->
 
@@ -61,6 +62,14 @@
 
 - https://github.com/dcloudio/uni-app/blame/next/packages/vite-plugin-uni/src/configResolved/plugins/resolveId.ts
 
-<!-- fix(vite-plugin-uni): 提前适配 vue-router 在未来 v5 版本修改 dist 文件导出的破坏性变更 -->
+<!--
+	历史commit
+	fix(vite-plugin-uni): 提前适配 vue-router 在未来 v5 版本修改 dist 文件导出的破坏性变更
+	chore(vite-plugin-uni): vue-router 导入 dist/vue-router.mjs 文件
+	perf(vite-plugin-uni): 优化 vue-router 的导入语法，直接用 vue-router.mjs 代替 vue-router.esm-bundler.js
+-->
 
-<!-- pr注意事项 https://github.com/ruan-cat/uni-app/blob/next/.github/CONTRIBUTING.md -->
+<!--
+	pr注意事项 https://github.com/dcloudio/uni-app/blob/next/.github/CONTRIBUTING.md
+
+-->
