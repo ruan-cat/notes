@@ -29,9 +29,11 @@
 
 ### uniapp H5 项目在 `vue-router@4.5.1` 版本下是成功的
 
-稍晚些提供完整的可复现案例。
+- 可复现案例，切换到 `4.5.1` 分支： https://stackblitz.com/~/github.com/ruan-cat/bug-in-vue-router-4.6.0-with-uniapp?file=package.json
 
-<!-- TODO: 准备特定分支下的可复现案例 -->
+如下图所示，在依赖关系指定为 `vue-router@4.5.1` 时，是**成功**的。
+
+![2025-10-16-17-57-29](https://gh-img-store.ruan-cat.com/img/2025-10-16-17-57-29.png)
 
 ### uniapp H5 项目在 `vue-router@4.6.1` 版本下是成功的
 
