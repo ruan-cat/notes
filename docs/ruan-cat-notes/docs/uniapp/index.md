@@ -1,10 +1,13 @@
-# 基于 vue 的跨端 app 开发框架
+# uniapp ，基于 vue 的跨端 app 开发框架
 
 我知道是 shit，但也要赤石。
 
 ## 了解在 vue3 场景下如何使用 uniapp
 
 现在是 25 年 4 月，需要看看社区内有没有成熟的框架。
+
+- unibest 框架文档：https://unibest.tech/base/2-start
+- wot-design-uni 组件库： https://wot-ui.cn/guide/quick-use.html
 
 ## 挑选合适的学习模板
 
