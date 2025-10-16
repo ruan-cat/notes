@@ -1,5 +1,7 @@
-<!-- TODO: 等待pr -->
-<!-- 重新克隆本地项目 不要浅克隆 需要历史git blame信息的 -->
+<!-- 已经pr https://github.com/dcloudio/uni-app/pull/5824 -->
+<!-- 重新克隆本地项目 不要浅克隆 需要历史git blame信息的
+	git clone --depth=5000 https://github.com/ruan-cat/uni-app.git uni-app__ruan-cat
+ -->
 
 # 更改 vue-router 的导入写法，以便适应 vue-router 在未来 v5 版本内，更改文件导出格式所带来的破坏性变更
 
@@ -21,25 +23,31 @@
 
 ### uniapp H5 项目在 `vue-router@4.6.0` 版本下是失败的
 
+稍晚些提供完整的可复现案例。
+
 <!-- TODO: 准备特定分支下的可复现案例 -->
 
 ### uniapp H5 项目在 `vue-router@4.5.1` 版本下是成功的
+
+稍晚些提供完整的可复现案例。
 
 <!-- TODO: 准备特定分支下的可复现案例 -->
 
 ### uniapp H5 项目在 `vue-router@4.6.1` 版本下是成功的
 
+稍晚些提供完整的可复现案例。
+
 <!-- TODO: 准备特定分支下的可复现案例 -->
 
-### 硬编码肯定会造成构建失败
-
 ## 有什么故障先例？
+
+- [`fix(vite-plugin-uni): 修复 pinia v3 版本 访问 dist 报错的bug`](https://github.com/dcloudio/uni-app/pull/5430)
 
 ## 模仿 pinia v3 版本的更改先例，提前更改 vue-router v5 版本的导入写法
 
 - 成熟先例： https://github.com/dcloudio/uni-app/commit/3b71fdda2206339629de1985be629804f3535d77
 
-### 被修改的文件
+### 预期被修改的文件
 
 - https://github.com/dcloudio/uni-app/blame/next/packages/vite-plugin-uni/src/configResolved/plugins/resolveId.ts
 
