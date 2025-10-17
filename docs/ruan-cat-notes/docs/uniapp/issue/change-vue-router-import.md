@@ -71,5 +71,23 @@
 
 <!--
 	pr注意事项 https://github.com/dcloudio/uni-app/blob/next/.github/CONTRIBUTING.md
-
+	构建：
+	node scripts/build.js uni-i18n uni-shared uni-nvue-styler uni-cli-shared
 -->
+
+<!--
+	提示词
+
+安装来自本地的依赖包
+
+针对本地文件夹的 D:\code\github-desktop-store\uni-app__ruan-cat\packages\vite-plugin-uni\package.json 文件。我希望你在本项目内，安装这个本地构建的依赖包。本项目安装由本地构建的 `@dcloudio/vite-plugin-uni` 包。
+
+按照以下步骤实现安装：
+
+1. 编写 resolutions ，强制覆盖依赖。确保本项目的 `@dcloudio/vite-plugin-uni` 包能够链接到本地构建的文件。
+2. 安装依赖。用 pnpm i 安装依赖。
+3. 用命令 `pnpm why @dcloudio/vite-plugin-uni` 来验证本项目的依赖关系，确定本项目的依赖来自于本地构建的产物。
+
+不能设置成本机的全局依赖。只能针对本项目，本项目使用特定的依赖。
+
+ -->
