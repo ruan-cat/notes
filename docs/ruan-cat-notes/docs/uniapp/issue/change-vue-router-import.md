@@ -7,6 +7,10 @@
 <!--
 	pr 进度： 要自己先办法去复杂的项目内，复测效果，还要在什么 uniapp X 内测试，很烦人。就不想继续跟进了。
 	有兴趣再弄了。累人。
+
+	相关的发文：
+	docs\ruan-cat-notes\docs\posts\2025-10-17-use-claude4.6-add-local-package\index.md
+	docs\ruan-cat-notes\docs\posts\2025-10-16-pr-uniapp-to-fix-vue-router-v5-bug\index.md
 -->
 
 # 更改 vue-router 的导入写法，以便适应 vue-router 在未来 v5 版本内，更改文件导出格式所带来的破坏性变更
