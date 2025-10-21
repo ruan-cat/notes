@@ -40,6 +40,16 @@ alt+m 两次
 
 实际实践下来，`.claude.json` 文件长度会变得非常大。
 
+## 利用 `Magic Words` 控制 claude code 思考预算
+
+- [`把钱花在刀刃上：我的 Claude Code 省钱指南`](https://www.hats-land.com/archives/skills/2025-claude-code-usage-guide.html)
+
+从使用的思考预算来看，`think` < `think hard` < `think harder` (`ultrathink`)。
+
+- 基础思考 (`think`): 将消耗约 4K Tokens 预算用于思考，适用于大部分常规任务。
+- 深度思考 (`think hard`): 将消耗约 10K Tokens 预算用于思考，当你需要它进行更复杂的逻辑推理或重构时使用。
+- 极限思考 (`ultrathink`): 将消耗约 32K Tokens 预算用于思考，用于攻克极其复杂、需要多步骤规划的难题。
+
 ## 拓展待办
 
 1. 阅读官方文档、掌握核心概念： https://docs.anthropic.com/zh-CN/home
