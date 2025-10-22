@@ -304,3 +304,12 @@ describe("Math functions", () => {
 
 - https://juejin.cn/post/7506051295951732748
 - https://juejin.cn/post/7515231445276852239#heading-8
+
+## 尝试制作分发自己的 claude code 插件
+
+- https://www.anthropic.com/news/claude-code-plugins
+- https://docs.claude.com/zh-CN/docs/claude-code/plugin-marketplaces
+- https://juejin.cn/post/7559818022971097129
+- https://www.aivi.fyi/llms/introduce-Claude-Code-Plugins
+
+`/plugin marketplace add 你的用户名/仓库名`
