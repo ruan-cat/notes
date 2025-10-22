@@ -307,8 +307,19 @@ describe("Math functions", () => {
 
 ## 尝试制作分发自己的 claude code 插件
 
+### 官方文档
+
 - https://www.anthropic.com/news/claude-code-plugins
 - https://docs.claude.com/zh-CN/docs/claude-code/plugin-marketplaces
+- https://docs.claude.com/zh-CN/docs/claude-code/plugins
+
+### 插件结构参考仓库
+
+- https://github.com/ananddtyagi/claude-code-marketplace
+- https://github.com/wshobson/agents
+
+### 博客
+
 - https://juejin.cn/post/7559818022971097129
 - https://www.aivi.fyi/llms/introduce-Claude-Code-Plugins
 
