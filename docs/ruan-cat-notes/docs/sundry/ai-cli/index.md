@@ -14,3 +14,4 @@
 - [cursor cli](https://cursor.com/docs/cli/overview)
 - [trae-agent](https://github.com/bytedance/trae-agent)
 - [copilot-cli](https://github.com/github/copilot-cli)
+- [kilocode](https://kilocode.ai/docs/cli)
