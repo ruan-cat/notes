@@ -23,3 +23,9 @@
 
 - https://juejin.cn/post/7559818022971097129
 - https://www.aivi.fyi/llms/introduce-Claude-Code-Plugins
+
+## 已做好的 claude code 插件
+
+```bash
+/plugin marketplace add ruan-cat/monorepo
+```
