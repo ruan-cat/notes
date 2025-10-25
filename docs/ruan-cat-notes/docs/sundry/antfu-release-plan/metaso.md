@@ -124,13 +124,12 @@ jobs:
 
 ## Node 包打包与 npm 推送配置
 
-| 配置位置                          | 内容                                                       | 说明                                                                    |
-| --------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `package.json`（根或子包）        | `json "scripts": { "prepublishOnly": "nr build" }`         |
-| 在 `npm publish` 前自动执行构建。 |
-| CI 步骤                           | `run: npm publish --access public`                         | 使用 `NODE_AUTH_TOKEN`（存于 GitHub Secrets `NPM_TOKEN`）完成身份验证。 |
-| 打包工具                          | **`unbuild`**、**`vite`**、**`rollup`** 等（依据具体项目） | 通过 `nr build` 调用对应打包脚本，产出 `dist/` 目录。                   |
-| 依赖管理                          | **`pnpm`**（或 `ni`）                                      | 统一锁文件 `pnpm-lock.yaml`，保证 CI 与本地环境一致。                   |
+| 配置位置                   | 内容                                                       | 说明                                                                    |
+| -------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `package.json`（根或子包） | `json "scripts": { "prepublishOnly": "nr build" }`         | 在 `npm publish` 前自动执行构建。                                       |
+| CI 步骤                    | `run: npm publish --access public`                         | 使用 `NODE_AUTH_TOKEN`（存于 GitHub Secrets `NPM_TOKEN`）完成身份验证。 |
+| 打包工具                   | **`unbuild`**、**`vite`**、**`rollup`** 等（依据具体项目） | 通过 `nr build` 调用对应打包脚本，产出 `dist/` 目录。                   |
+| 依赖管理                   | **`pnpm`**（或 `ni`）                                      | 统一锁文件 `pnpm-lock.yaml`，保证 CI 与本地环境一致。                   |
 
 ---
 
