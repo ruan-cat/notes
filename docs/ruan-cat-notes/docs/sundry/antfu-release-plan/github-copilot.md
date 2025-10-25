@@ -86,7 +86,10 @@ antfu 发包发版方案调研报告
 
 1. pnpm -w exec changeset version -> 生成 changelog 到 stdout 或文件
 2. 将 changelog 读入变量
-3. `uses: ncipollo/release-action with: body: "${{ steps.read_changelog.outputs.body }}"`
+
+```yaml
+uses: ncipollo/release-action with: body: "${{ steps.read_changelog.outputs.body }}"
+```
 
 ### 3.4 他是怎么在 GitHub Workflow 内配置工作流的？如何触发发版？
 
