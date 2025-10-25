@@ -161,27 +161,6 @@ zsh 是干什么的？
 - https://deepwiki.org/
 - https://opendeep.wiki/
 
-## 发包日志包含提交记录
-
-实现 github release 的日志包含 git commit ：
-
-standard-version + cz-git
-
-[standard-version](https://github.com/conventional-changelog/standard-version)，不能继续弄，这个库已经被声明弃用了。
-
-standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit 提交类型会写入到那些范围。
-
-继任者 [release-please](https://github.com/googleapis/release-please) ，也不能落实。因为触发 pr 合并的 github workflow 工作流，我已经选择了 [changesets/action](https://github.com/changesets/action) ，所以不太可能换装成这个方案实现 pr 写入 git commit。
-
-### 发包日志生成工具
-
-需要参考注意的仓库：
-
-- changelogen
-- changelogithub
-- conventional-changelog-conventionalcommits
-- conventional-recommended-bump
-
 ## doskey
 
 好像是 window 命令的别名方案。
@@ -223,18 +202,13 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 - https://github.com/AttoJS/vue-request
 
+### alova ？
+
+- https://alova.js.org/zh-CN/tutorial/getting-started/introduce
+
 ## git clean -fdx
 
 试试看，看看能不能实现一次性删除一大堆内容？
-
-## antfu 发包的流程？
-
-我没有看到 antfu 的包有 changeset 变更集和 changelog 变更日志的东西。
-
-- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
-- 依赖构建 unbuild 或者是其他工具
-- github release 发版 changelogithub
-- 依赖升级 taze
 
 ## 基于 taze 的依赖更新工作流配置
 
@@ -249,10 +223,6 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## openapi-ts-request ？
 
 - https://github.com/openapi-ui/openapi-ts-request
-
-## alova ？
-
-- https://alova.js.org/zh-CN/tutorial/getting-started/introduce
 
 ## 给自己的 monorepo 库新建一个关系图表
 
@@ -304,3 +274,46 @@ describe("Math functions", () => {
 
 - https://juejin.cn/post/7506051295951732748
 - https://juejin.cn/post/7515231445276852239#heading-8
+
+## 发布依赖包相关的杂事 ？
+
+### antfu 发包的流程？
+
+我没有看到 antfu 的包有 changeset 变更集和 changelog 变更日志的东西。可以肯定的是，存在两套 monorepo 依赖包版本号发版方案的。
+
+1. 基于 changeset 变更集的方案。
+2. antfu 系列方案。
+
+大致了解的 antfu 发版方案如下：
+
+- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
+- 依赖构建 unbuild 或者是其他工具
+- github release 发版 changelogithub
+- 依赖升级 taze
+
+需要想办法细化清楚 antfu 的发版方案才行。
+
+### antfu 发版风格的仓库和参考资料？
+
+<!-- TODO: -->
+
+## 发包日志包含提交记录 ？
+
+期望实现 github release 的日志包含 git commit 。
+
+standard-version + cz-git
+
+[standard-version](https://github.com/conventional-changelog/standard-version)，不能继续弄，这个库已经被声明弃用了。
+
+standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit 提交类型会写入到那些范围。
+
+继任者 [release-please](https://github.com/googleapis/release-please) ，也不能落实。因为触发 pr 合并的 github workflow 工作流，我已经选择了 [changesets/action](https://github.com/changesets/action) ，所以不太可能换装成这个方案实现 pr 写入 git commit。
+
+### 发包日志生成工具
+
+需要参考注意的仓库：
+
+- changelogen
+- changelogithub
+- conventional-changelog-conventionalcommits
+- conventional-recommended-bump
