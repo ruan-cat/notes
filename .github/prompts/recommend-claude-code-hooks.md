@@ -16,6 +16,7 @@
 
 我想自己写 hooks，推送到自己的插件商城内。插件商城内怎么确保 hooks 写的 typescript 脚本能否正常运行呢？
 
+- 这个包是专门弄网络平台的，不是弄操作系统层面的全局通知的 https://github.com/foxytanuki/ccnotify
 - 这个包生成的是 window 脚本，不是直接运行本身的 node 包 https://github.com/Roy-Tu/claude-code-task-notifier
 - 这个包太老了，几年不更新了 https://github.com/mikaelbr/node-notifier
 
