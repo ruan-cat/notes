@@ -30,3 +30,36 @@
 请为我编写实现 window 系统内提示的 typescript 脚本。
 
 请告知我相关的注意事项和风险项
+
+### 使用 Roy-Tu/claude-code-task-notifier 生成的全局通知配置
+
+在 `C:\Users\pc\.claude\settings.json` 内：
+
+```json
+{
+	"hooks": {
+		"Notification": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "powershell -NoProfile -Command \"Add-Type -AssemblyName System.Windows.Forms; $balloon = New-Object System.Windows.Forms.NotifyIcon; $path = (Get-Process -Id $pid).Path; $balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path); $balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Warning; $balloon.BalloonTipText = 'Claude Task Completed!'; $balloon.BalloonTipTitle = 'Claude Code'; $balloon.Visible = $true; $balloon.ShowBalloonTip(5000)\""
+					}
+				]
+			}
+		],
+		"Stop": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "powershell -NoProfile -Command \"Add-Type -AssemblyName System.Windows.Forms; $balloon = New-Object System.Windows.Forms.NotifyIcon; $path = (Get-Process -Id $pid).Path; $balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path); $balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Warning; $balloon.BalloonTipText = 'Claude Task Stopped!'; $balloon.BalloonTipTitle = 'Claude Code'; $balloon.Visible = $true; $balloon.ShowBalloonTip(5000)\""
+					}
+				]
+			}
+		]
+	}
+}
+```
+
+说实话有点难绷，生成的是 ps1 脚本，而不是单纯的，纯粹的 node 包。
