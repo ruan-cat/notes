@@ -317,3 +317,17 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 - changelogithub
 - conventional-changelog-conventionalcommits
 - conventional-recommended-bump
+
+## 做一个控制台初始化工具包 ？
+
+我还想做一个 cli，实现按需初始化各类配置文件。直接复制粘贴文件的。
+
+```bash
+ruan-cat-cli init config -- eslint prettier cz taze
+ruan-cat-cli init ghw -- ci
+ruan-cat-cli init cc -- statusline
+```
+
+直接覆写，覆盖，预设一大堆配置文件，实现渐进式升级旧项目，一键初始化其他规格的新项目。
+
+先去调研一下类似的配置初始化工具。
