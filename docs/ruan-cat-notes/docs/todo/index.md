@@ -331,3 +331,8 @@ ruan-cat-cli init cc -- statusline
 直接覆写，覆盖，预设一大堆配置文件，实现渐进式升级旧项目，一键初始化其他规格的新项目。
 
 先去调研一下类似的配置初始化工具。
+
+## 学习相关的 claude code 周边库
+
+- https://github.com/UfoMiao/zcf
+- https://github.com/Haleclipse/CCometixLine
