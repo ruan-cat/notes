@@ -1,6 +1,6 @@
 <!--
 	一次性提示词
-	未完成
+	已完成
  -->
 
 # 推荐适用于 window 系统的 claude code hooks 配置
