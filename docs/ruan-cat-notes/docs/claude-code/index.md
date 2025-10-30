@@ -50,6 +50,10 @@ alt+m 两次
 - 深度思考 (`think hard`): 将消耗约 10K Tokens 预算用于思考，当你需要它进行更复杂的逻辑推理或重构时使用。
 - 极限思考 (`ultrathink`): 将消耗约 32K Tokens 预算用于思考，用于攻克极其复杂、需要多步骤规划的难题。
 
-## 拓展待办
+## hooks 钩子
 
-1. 阅读官方文档、掌握核心概念： https://docs.anthropic.com/zh-CN/home
+参考资料：
+
+- https://aliceric27.github.io/claude-code-hooks/
+- https://claudecodehub.github.io/hooks.html
+- https://zhuanlan.zhihu.com/p/1950634615065809103
