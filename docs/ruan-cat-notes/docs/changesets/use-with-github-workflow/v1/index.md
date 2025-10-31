@@ -1,4 +1,4 @@
-# 使用 changeset publish 的 --otp 参数实现发包
+# 使用 changeset publish 的 `--otp` 参数实现发包
 
 ::: tip
 
@@ -30,9 +30,9 @@
 
 :::
 
-## 配置工作流
+## 基于 `--otp` 的发包工作流
 
-::: details
+::: details 发包工作流
 
 <<< ./release.yml
 

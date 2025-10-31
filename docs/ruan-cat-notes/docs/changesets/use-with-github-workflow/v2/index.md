@@ -47,7 +47,7 @@ error npm error 404  '' is not in this registry.
 - https://github.com/changesets/action/issues/311#issuecomment-1666950465
 - https://zhuanlan.zhihu.com/p/25771848717
 
-配置 NODE_AUTH_TOKEN 环境变量即可，太坑了。要看官方 issue 才有相关的说明。
+配置 `NODE_AUTH_TOKEN` 环境变量即可，太坑了。要看官方 issue 才有相关的说明。
 
 ## 进度
 
@@ -77,6 +77,14 @@ Error: Validation Failed: {"resource":"PullRequest","code":"custom","message":"N
 ## 参考资料
 
 - https://juejin.cn/post/7140639347937640479
+
+## 基于 `changesets/action` 工作流和 `NODE_AUTH_TOKEN` 的发包工作流
+
+::: details 发包工作流
+
+<<< ./release.yml
+
+:::
 
 ## 其他尝试的记录
 
