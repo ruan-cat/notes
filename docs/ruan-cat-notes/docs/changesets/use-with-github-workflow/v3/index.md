@@ -18,3 +18,7 @@
 ## 在每个包的信息内，从设置栏内找到 `Trusted Publisher` 选项
 
 ![2025-10-31-21-10-58](https://gh-img-store.ruan-cat.com/img/2025-10-31-21-10-58.png)
+
+设置成功后如图所示：
+
+![2025-10-31-21-16-09](https://gh-img-store.ruan-cat.com/img/2025-10-31-21-16-09.png)
