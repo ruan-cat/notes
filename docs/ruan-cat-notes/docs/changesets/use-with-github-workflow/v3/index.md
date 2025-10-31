@@ -37,6 +37,10 @@
 
 出现故障，本质上还是需要 `NODE_AUTH_TOKEN` 变量的。
 
+```log
+error an error occurred while publishing XXX: E404 Not Found
+```
+
 ### 相关思考
 
 阅读[该文章](https://www.k8o.me/blog/npm-trusted-publishing-for-npm-packages)，注意到这一段：
