@@ -55,7 +55,10 @@
 
 ![2025-10-31-23-14-39](https://gh-img-store.ruan-cat.com/img/2025-10-31-23-14-39.png)
 
+### pnpm 本体正在等待合并 pr
+
+该 [pr](https://github.com/pnpm/pnpm/pull/10092) 正在被合并，只要合并到位，pnpm 就可以通过配置的方式获得到 npm 最新版本的能力了。
+
 - https://github.com/coveo/ui-kit/pull/6329
-- https://github.com/pnpm/pnpm/pull/10092
 
 - https://livingdevops.com/aws/step-by-step-guide-to-setting-oidc-for-github-actions-workflows-with-aws-using-terraform/
