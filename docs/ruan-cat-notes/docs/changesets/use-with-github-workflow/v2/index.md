@@ -1,5 +1,11 @@
 # 使用 changesets 的官方 github 工作流实现发包
 
+::: tip
+
+这是第二版本的发包实践。
+
+:::
+
 - https://github.com/changesets/action
 
 使用该工作流，同时生成 github release 发行记录，和 changelog 变更日志文件。

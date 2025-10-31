@@ -1,5 +1,11 @@
 # 使用 `Trusted Publishers (OIDC)` 完成 github workflow 发包
 
+::: tip
+
+这是第三版本的发包实践。
+
+:::
+
 ## 动机
 
 被 npm 和 github 都发布了公告，要求我们在 npm 官方镜像源发包的开发者，都必须改换 token 的提供方式。
