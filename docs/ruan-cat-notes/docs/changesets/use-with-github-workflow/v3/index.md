@@ -69,6 +69,25 @@ error an error occurred while publishing XXX: E404 Not Found
 
 该 [pr](https://github.com/pnpm/pnpm/pull/10092) 正在被合并，只要合并到位，pnpm 就可以通过配置的方式获得到 npm 最新版本的能力了。
 
-- https://github.com/coveo/ui-kit/pull/6329
+<!-- - https://livingdevops.com/aws/step-by-step-guide-to-setting-oidc-for-github-actions-workflows-with-aws-using-terraform/
+- https://github.com/coveo/ui-kit/pull/6329 -->
 
-- https://livingdevops.com/aws/step-by-step-guide-to-setting-oidc-for-github-actions-workflows-with-aws-using-terraform/
+## 被迫将 `NODE_AUTH_TOKEN` 变量加回给 `changesets/action`
+
+```yaml{11}
+- name: 构建并发版
+  id: changesets
+  uses: changesets/action@v1
+  with:
+    publish: pnpm release
+    version: pnpm run version
+    commit: "📢 publish: release package(s)"
+    title: "📢 publish: release package(s)"
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+```
+
+## 怀疑 `changesets/action` 不得不要求传递有效的 `NODE_AUTH_TOKEN` 值
+
+我不清楚 changesets 在执行内部的 `changeset publish` 命令时，到底能不能使用最新的 npm，这个问题打算先拖个几周。后面 pnpm 会更新的， changesets 肯定也会跟进的。
