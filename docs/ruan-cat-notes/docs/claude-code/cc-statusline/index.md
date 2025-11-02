@@ -1,4 +1,4 @@
-# cc-statusline ，设置 statusline 状态栏
+# cc-statusline,设置 statusline 状态栏
 
 想实现自定义的状态栏。实时看到自己的 api 开销。
 

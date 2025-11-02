@@ -1,6 +1,6 @@
-# 以 commitizen 为中心的 git 提交格式化工具
+# commitizen,git commit 提交格式化工具
 
-commitizen，简称 cz，他用于管控我们 git commite 提交。
+commitizen，简称 cz，他用于管控我们 git commit 提交。
 
 相关的配置很多，附属插件，依赖也很多。目前（2024-10-23）暂不考虑继续折腾该内容。
 
