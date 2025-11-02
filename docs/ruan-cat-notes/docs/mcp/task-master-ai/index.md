@@ -30,3 +30,7 @@ pnpm i -g task-master-ai
 ```bash
 claude mcp add taskmaster-ai -- task-master-ai --scope project
 ```
+
+## TODO: 未来再继续跟进学习
+
+task-master-ai 太复杂了，任务调度机制很多，很杂乱。以后再考虑，至少现在知道这个工具可以无缝衔接 claude code 了。
