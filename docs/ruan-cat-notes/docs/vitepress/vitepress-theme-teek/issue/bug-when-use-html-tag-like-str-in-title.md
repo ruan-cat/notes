@@ -1,4 +1,7 @@
-<!-- https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/161 -->
+<!--
+	https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/161
+	已完成 该issue已关闭
+-->
 
 # 在标题内使用引号包裹的类 html 标签的字符串，会导致开发环境无法看到其他的页面
 
