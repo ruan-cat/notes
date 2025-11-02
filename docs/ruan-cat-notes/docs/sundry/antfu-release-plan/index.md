@@ -18,3 +18,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 1. 为我编写一个完整全面的报告，说明清楚 antfu 的发包流程。
 2. 用 mermaid 图绘制 antfu 的发包流程。
 3. 请用严谨的 markdown 格式来编写报告，务必增加清晰的标题项。
+
+## 可供参考的仓库
+
+- https://github.com/pengzhanbo/vite-plugin-mock-dev-server
