@@ -30,18 +30,3 @@ pnpm i -g task-master-ai
 ```bash
 claude mcp add taskmaster-ai -- task-master-ai --scope project
 ```
-
-然后手动更改 mcp：
-
-```json
-{
-	"mcpServers": {
-		"taskmaster-ai": {
-			"type": "command",
-			"command": "task-master-ai",
-			"args": [],
-			"env": {}
-		}
-	}
-}
-```
