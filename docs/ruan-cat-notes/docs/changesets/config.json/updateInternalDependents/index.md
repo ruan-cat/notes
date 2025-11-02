@@ -9,3 +9,7 @@
 核心配置如下：
 
 <<< ./config.json
+
+## 专门的博客文章
+
+[点此阅读专门对外发文的文章](../../../posts/2025-11-2-changeset-config-updateInternalDependents/index.md)。
