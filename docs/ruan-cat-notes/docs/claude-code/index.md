@@ -34,7 +34,9 @@ alt+m 两次
 
 ## 安装 MCP
 
-- 按照特定范围安装 claude code 的 mcp： https://docs.claude.com/en/docs/claude-code/mcp#choosing-the-right-scope
+- 按照特定范围安装 claude code 的 mcp：
+  - 中文 https://docs.claude.com/zh-CN/docs/claude-code/mcp#choosing-the-right-scope
+  - 英文 https://docs.claude.com/en/docs/claude-code/mcp#choosing-the-right-scope
 
 命令举例：
 
