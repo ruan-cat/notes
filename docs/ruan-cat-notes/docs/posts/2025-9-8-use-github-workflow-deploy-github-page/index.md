@@ -5,6 +5,10 @@ desc: 使用 github workflow 工作流部署 github page 页面，减少诸如 v
 
 # 配置 github workflow 工作流文件，实现仓库自动更新 github page 站点
 
+> **摘要**：
+>
+> 使用 github workflow 工作流部署 github page 页面，减少诸如 vercel 的部署平台提供的免费额度使用，并减少自定义域名维护时的心智负担。
+
 ## 动机
 
 随着个人技术的学习，我拥有越来越多的 github 仓库了。对于每一个前端项目，往往都需要提供一个 url 链接，来访问页面。
