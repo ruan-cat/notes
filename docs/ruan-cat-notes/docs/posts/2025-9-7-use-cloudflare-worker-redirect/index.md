@@ -5,6 +5,10 @@ desc: 编写 cloudflare worker 边缘计算函数，实现指定域名的重定�
 
 # 使用 cloudflare worker 实现域名重定向
 
+> **摘要**：
+>
+> 编写 cloudflare worker 边缘计算函数，实现指定域名的重定向功能。最终提供一个短小精悍，便于记忆的自定义域名。
+
 我希望用自己的域名，对一个特定链接做重定向。实现 https://juejin.ruan-cat.com 重定向到 https://juejin.cn/user/2406144257559271/posts 。提供一个更加短小易于记忆的域名，访问我的掘金博客。
 
 ## 方案选型
