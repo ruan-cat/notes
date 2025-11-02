@@ -72,17 +72,6 @@
 
 有另外的域名专门展示可以访问的作品集。[点此访问](https://dm.ruan-cat.com/)。
 
-## Task Master
-
-据说是一个 mcp，能完成 AI 的任务调度。但是看了官网文档，发现这个包既可以作为 mcp 工具，又可以作为 cli 命令行工具。
-
-- https://github.com/eyaltoledano/claude-task-master
-- https://docs.task-master.dev/getting-started/quick-start/quick-start
-
-### 已放弃
-
-注意到官网里面说，需要供应商提供 key 才行。现在（2025-7-29）我没办法去获得有意义的 key，这个就不做了。
-
 ## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
 
 - https://deepwiki.com/badge-maker
