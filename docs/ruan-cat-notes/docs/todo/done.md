@@ -77,7 +77,7 @@
 据说是一个 mcp，能完成 AI 的任务调度。但是看了官网文档，发现这个包既可以作为 mcp 工具，又可以作为 cli 命令行工具。
 
 - https://github.com/eyaltoledano/claude-task-master
-- https://docs.task-master.dev/docs/getting-started/quick-start/quick-start
+- https://docs.task-master.dev/getting-started/quick-start/quick-start
 
 ### 已放弃
 
