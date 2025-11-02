@@ -1,4 +1,4 @@
-# uniapp ，基于 vue 的跨端 app 开发框架
+# uniapp,基于 vue 的跨端 app 开发框架
 
 我知道是 shit，但也要赤石。
 
