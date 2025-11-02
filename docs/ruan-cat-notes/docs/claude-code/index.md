@@ -1,4 +1,4 @@
-# claude code，AI 编程工具
+# claude code,AI 编程工具
 
 命令行交互的 AI 编程工具。相比于 cursor，用起来有点古怪。
 

@@ -1,4 +1,4 @@
-# gemini-balance，基于 dorker 部署的自建 gemini 轮询代理
+# gemini-balance,基于 dorker 部署的自建 gemini 轮询代理
 
 ## 教程
 

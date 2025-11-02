@@ -1,4 +1,4 @@
-# openai-gemini，基于无服务器实现自建 gemini 代理
+# openai-gemini,基于无服务器实现自建 gemini 代理
 
 ## 目前不支持 key 轮询
 

@@ -1,4 +1,4 @@
-# cursor ，AI 编辑器
+# cursor,AI 编辑器
 
 ## 下载
 

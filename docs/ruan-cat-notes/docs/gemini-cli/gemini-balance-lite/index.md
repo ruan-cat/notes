@@ -1,4 +1,4 @@
-# gemini-balance-lite，基于无服务器实现自建 gemini 轮询代理
+# gemini-balance-lite,基于无服务器实现自建 gemini 轮询代理
 
 为了充分使用 `gemini API key` 提供的每日免费 100 次额度，通过创建多个谷歌账号，多个项目的方式，获取到足够的 key，轮询使用 key。实现足量的请求。
 
