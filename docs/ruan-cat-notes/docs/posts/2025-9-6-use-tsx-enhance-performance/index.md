@@ -5,6 +5,10 @@ desc: 使用tsx直接运行typescript脚本，避免先经过一次rollup打包�
 
 # 记一次基于 tsx 的脚本性能优化
 
+> **摘要**：
+>
+> 使用 tsx 直接运行 typescript 脚本，避免先经过一次 rollup 打包，减少编译环节，进而提高性能。
+
 ## 问题起因
 
 我在阅读[其他开源项目](https://github.com/Open-Yami-Community/awesome-yami)时，发现存在这样的脚本写法：
