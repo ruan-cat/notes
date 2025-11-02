@@ -334,5 +334,10 @@ ruan-cat-cli init cc -- statusline
 
 ## 学习相关的 claude code 周边库
 
+- 一体化方案？
+- 模型路由切换方案？
+- 计费统计方案？
+- 状态栏方案？
+
 - https://github.com/UfoMiao/zcf
 - https://github.com/Haleclipse/CCometixLine
