@@ -24,6 +24,19 @@
 
 该方案实现起来太脏了。而且在 uniapp 内无法选择元素，该方案被放弃。
 
+## 对 mintlify 文档云平台的思考
+
+- https://www.mintlify.com/docs/zh/migration#手动迁移
+- https://github.com/mintlify
+
+我觉得太冷门了。做出来的产品是明星产品，但是技术本身很冷门，迁移成本太大。
+
+1. 文档格式必须是 `*.mdx` 格式，很不喜欢这种 markdown 的衍生格式。
+2. 要制作专门的 `docs.json` 文件。
+3. 静态资源必须要移动到规定的目录内。
+
+这个要求决定了，mintlify 不太适合现在大多数的静态文档渲染框架。不合适。专有专用的格式太多了。
+
 ## 用于原型设计与最小 MVP 产品设计的 AI 平台
 
 - https://zhuanlan.zhihu.com/p/19533859140
