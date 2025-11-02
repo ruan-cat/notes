@@ -9,12 +9,20 @@ desc: 尝试使用changelogithub生成github release发行版，发现changelogi
 >
 > 尝试使用 changelogithub 生成 github release 发行版，发现 changelogithub 目前(2025-7-1)没办法支持在 monorepo 场景下的日志生成。
 
-- https://github.com/unjs/changelogen
-- https://github.com/antfu/changelogithub
+## 折腾动机
 
-这两个库，更加倾向于设置 github release 的发行版报告，而不是设置到 changelog 文件内。
+我非常喜欢基于 [changelogithub](https://github.com/antfu/changelogithub) 生成发版日志，很好看。
 
-实际使用下来，在 monorepo 内，效果不好。
+> 我在想，能不能在基于 monorepo + changeset 的项目内，使用这款日志生成库呢？
+
+## 寻找相关仓库并大胆尝试
+
+- [`unjs/changelogen`](https://github.com/unjs/changelogen)
+- [`antfu/changelogithub`](https://github.com/antfu/changelogithub)
+
+值得注意的是，这两个库，更加倾向于设置 github release 的发行版报告，而不是设置到 changelog 文件内。
+
+实际尝试下来，在 monorepo 内，效果不好。
 
 工作流：
 
@@ -164,6 +172,12 @@ changelogen 目前作为 tsdown 的 vue 组件库默认模版内使用的发包�
 
 该差异才导致了上述实践失败。
 
-## 不如暂停
+## 不如暂停，不钻牛角尖
 
 changelogen 有专门的 [issue](https://github.com/unjs/changelogen/issues/85) 和 pr，实现对正统 monorepo 方案的支持，实现对 changeset 的支持时，就不需要上述的折腾了。
+
+## 产生结论
+
+本次碰壁，我至少得知，现在发版的方案有两款，一款是基于 changeset 的，另一款是基于 changelogen 的，二者的发版场景是不一样的。
+
+最大的差异是：changeset 允许 monorepo 项目的**每个子包都拥有独立的版本号**，而基于 changelogen 的 monorepo **永远只能有唯一的版本号**。
