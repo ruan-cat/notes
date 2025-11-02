@@ -1,10 +1,12 @@
 ---
-juejin: TODO
+juejin: https://juejin.cn/post/7567350088617312308
 desc: 使用changeset的updateInternalDependents配置，让monorepo架构下相互依赖的node包实现基于底层依赖包触发上层依赖包共同升级的效果
 ---
 
 # 在使用 changeset 时，如何在更新底部依赖时，触发上层依赖更新
 
+> **摘要**：
+>
 > 使用 changeset 的 updateInternalDependents 配置，让 monorepo 架构下相互依赖的 node 包实现基于底层依赖包触发上层依赖包共同升级的效果。
 
 ## changeset 发版版本号有明显差异
