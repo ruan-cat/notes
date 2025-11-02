@@ -1,4 +1,13 @@
+---
+juejin: https://juejin.cn/post/7567309723479031860
+desc: 尝试使用changelogithub生成github release发行版，发现changelogithub目前(2025-7-1)没办法支持在monorepo场景下的日志生成。
+---
+
 # 尝试使用 changelogithub 生成 github release 发行版
+
+> **摘要**：
+>
+> 尝试使用 changelogithub 生成 github release 发行版，发现 changelogithub 目前(2025-7-1)没办法支持在 monorepo 场景下的日志生成。
 
 - https://github.com/unjs/changelogen
 - https://github.com/antfu/changelogithub
