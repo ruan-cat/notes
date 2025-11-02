@@ -28,5 +28,20 @@ pnpm i -g task-master-ai
 在项目内安装，结合参考资料，这里我的安装命令为：
 
 ```bash
-claude mcp add taskmaster-ai -- task-master-ai
+claude mcp add taskmaster-ai -- task-master-ai --scope project
+```
+
+然后手动更改 mcp：
+
+```json
+{
+	"mcpServers": {
+		"taskmaster-ai": {
+			"type": "command",
+			"command": "task-master-ai",
+			"args": [],
+			"env": {}
+		}
+	}
+}
 ```

@@ -1,0 +1,10 @@
+{
+	"mcpServers": {
+		"taskmaster-ai": {
+			"type": "command",
+			"command": "task-master-ai",
+			"args": [],
+			"env": {}
+		}
+	}
+}
