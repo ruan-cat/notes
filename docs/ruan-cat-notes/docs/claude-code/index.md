@@ -36,9 +36,20 @@ alt+m 两次
 
 - 按照特定范围安装 claude code 的 mcp： https://docs.claude.com/en/docs/claude-code/mcp#choosing-the-right-scope
 
-通常文件会安装到 `C:\Users\pc\.claude.json` ，即用户目录的 `.claude.json` 内。
+命令举例：
 
-实际实践下来，`.claude.json` 文件长度会变得非常大。
+```bash
+claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --scope user
+claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server.smithery.ai/@GongRzhe/Office-Word-MCP-Server/mcp" --scope user
+```
+
+对我而言，我安装 mcp 都是安装全局 mcp。未来会逐步试着安装项目级别的，或者是 claude code 插件级别的 mcp。
+
+通常配置会写入到 `C:\Users\pc\.claude.json` ，即用户目录的 `.claude.json` 内。
+
+值得注意的是，本身 `.claude.json` 文件长度就很大，寻找全局配置会稍微麻烦一点。
+
+全局配置的 mcp 也会占据 claude code 的上下文 token，所以安装全局 mcp 时，应该谨慎挑选最高频使用的，通用的 mcp 工具。
 
 ## 利用 `Magic Words` 控制 claude code 思考预算
 
