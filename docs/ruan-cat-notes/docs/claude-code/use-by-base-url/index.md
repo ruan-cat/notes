@@ -102,7 +102,12 @@ $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 
 ## 基于 Kimi 官方网站的配置
 
-- `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
+- https://platform.moonshot.ai/docs/guide/agent-support.en-US#windows-1
+- 官网博客 [`Claude Code 与 Kimi K2：终极 AI 编程助手组合`](https://kimi-k2.org/zh/blog/07-ai-coding-assistant-zh)
+
+<!-- TODO: 准备重构文档 -->
+
+- 博客 [`Kimi K2驱动Claude Code终极指南 | Claude国内使用新姿势`](https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide)
 
 本质上是配置由 Kimi 提供的 token 和 baseUrl，模仿上面的配置，如下：
 
