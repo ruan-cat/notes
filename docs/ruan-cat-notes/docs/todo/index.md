@@ -341,3 +341,15 @@ ruan-cat-cli init cc -- statusline
 
 - https://github.com/UfoMiao/zcf
 - https://github.com/Haleclipse/CCometixLine
+
+## claude code 任务通知工具？？
+
+我很怀疑我自己是不是重复造轮子了？
+
+12psi main 群
+
+- https://github.com/xuemk/termiClaude
+
+koishi 群
+
+- https://github.com/timtoday/mcp-windows-notify
