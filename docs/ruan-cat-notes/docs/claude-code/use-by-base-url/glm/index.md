@@ -21,7 +21,7 @@ $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 
 ## 使用体验
 
-## 提示词没有 `ultrathink` 标记时
+### 提示词没有 `ultrathink` 标记时
 
 ::: details `claude code` + `智谱 GLM 模型` 的使用体验，很糟糕
 
@@ -34,7 +34,7 @@ $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
 
 :::
 
-## 提示词包含 `ultrathink` 标记时
+### 提示词包含 `ultrathink` 标记时
 
 ::: tip 出乎意料的好
 
