@@ -350,6 +350,12 @@ ruan-cat-cli init cc -- statusline
 
 - https://github.com/xuemk/termiClaude
 
+### mcp-windows-notify
+
 koishi 群
 
 - https://github.com/timtoday/mcp-windows-notify
+
+个人感觉这个工具有点怪异，不清楚这个工具是什么时候开始调用的？是完全依赖 AI 自主决定什么时候是任务完成，并自主通知的么？
+
+不太信得过这种方案，因为这个完全取决于 AI 模型的智能情况。如果遇到智能程度不高的模型，估计无法主动实现触发 mcp。
