@@ -20,7 +20,7 @@ $env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-0905-preview"
 $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-0905-preview"
 ```
 
-::: error 无法连接
+::: danger 无法连接
 
 总是 404 。都换成国内的 baseUrl 了，还是不行，模型也换了两个了。不弄了。
 
