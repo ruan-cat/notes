@@ -12,19 +12,13 @@
 按照这个官方文档，结合 GLM 的配置写法，Kimi 的写法如下：
 
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token"
-$env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/anthropic"
-$env:ANTHROPIC_MODEL = "kimi-k2-0905-preview"
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-0905-preview"
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-0905-preview"
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-0905-preview"
+$env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token";
+$env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/anthropic";
+$env:ANTHROPIC_MODEL = "kimi-k2-turbo-preview";
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-turbo-preview";
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-turbo-preview";
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-turbo-preview";
 ```
-
-::: danger 无法连接
-
-总是 404 。都换成国内的 baseUrl 了，还是不行，模型也换了两个了。不弄了。
-
-:::
 
 ## 基于博客文章的配置方案
 
