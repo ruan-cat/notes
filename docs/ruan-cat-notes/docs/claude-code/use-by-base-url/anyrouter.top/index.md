@@ -3,8 +3,8 @@
 - 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
 
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token"
-$env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
+$env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token";
+$env:ANTHROPIC_BASE_URL = "https://anyrouter.top";
 ```
 
 ## 注意事项
