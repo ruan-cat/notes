@@ -17,3 +17,4 @@
 - [kilocode](https://kilocode.ai/docs/cli)
 - [cline-cli](https://cline.bot/cline-cli)
 - [Auggie CLI](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli)
+- [iFlow CLI](https://cli.iflow.cn/)
