@@ -16,6 +16,10 @@ pnpm i -g @google/gemini-cli
 
 - https://console.cloud.google.com/projectcreate
 
+查看已经有的 Google 项目：
+
+- https://console.cloud.google.com/welcome
+
 获取自己的 `gemini API key`：
 
 - https://aistudio.google.com/apikey
