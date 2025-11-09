@@ -1,5 +1,15 @@
 # 基于 Kimi 官方网站的配置
 
+## 备选的 Kimi 模型
+
+- [模型产品价格](https://platform.moonshot.cn/docs/pricing/chat#产品定价)
+
+kimi 官方是用量计费的，所以用的时候应该价格敏感。
+
+- kimi-k2-turbo-preview
+- kimi-k2-thinking
+- kimi-k2-thinking-turbo
+
 ## 基于官方教程的方案
 
 - 官网博客 [`Claude Code 与 Kimi K2：终极 AI 编程助手组合`](https://kimi-k2.org/zh/blog/07-ai-coding-assistant-zh)
@@ -14,10 +24,10 @@
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token";
 $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/anthropic";
-$env:ANTHROPIC_MODEL = "kimi-k2-turbo-preview";
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-turbo-preview";
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-turbo-preview";
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-turbo-preview";
+$env:ANTHROPIC_MODEL = "kimi-k2-thinking-turbo";
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-thinking-turbo";
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-thinking-turbo";
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-thinking-turbo";
 ```
 
 ## 基于博客文章的配置方案
