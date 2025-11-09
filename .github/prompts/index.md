@@ -20,3 +20,23 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 ## 02 帮我找关于 markdown 维护顶部 yaml 头部信息的 node 库
 
 我需要对 md 文件顶部的 yaml 信息做统一的管理，包括常见的增删改查。请你帮我推荐几个相关的 node 库。
+
+## 03 阅读报告并编写一个迁移子代理
+
+我需要你帮我阅读文件，并编写一个便于我复用的 claude code agent 子代理文件。
+
+请阅读：
+
+- docs\ruan-cat-notes\docs\sundry\antfu-release-plan\index.md
+- docs\ruan-cat-notes\docs\sundry\antfu-release-plan\github-copilot.md
+- docs\ruan-cat-notes\docs\sundry\antfu-release-plan\gemini.md
+
+请你认真思考上述的报告结论，在 .claude\agents 目录内，新建一个子代理，便于我未来重复执行该子代理，实现项目改造，实现发包所必要的基础配置。
+
+### 01 仅仅使用唯一的发包方案
+
+请你帮我修改 `.claude\agents\setup-release-workflow.md` 文件，重新设计初始化发包方案的子代理配置。
+
+- 版本升级： Bumpp
+- 项目构建： tsup
+- 日志生成： changelogithub
