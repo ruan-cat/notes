@@ -40,3 +40,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 - 版本升级： Bumpp
 - 项目构建： tsup
 - 日志生成： changelogithub
+
+## 04 对本项目使用 `setup-release-workflow` 子代理
+
+<!-- TODO: -->
