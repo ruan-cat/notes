@@ -93,3 +93,10 @@ error an error occurred while publishing XXX: E404 Not Found
 ## 怀疑 `changesets/action` 不得不要求传递有效的 `NODE_AUTH_TOKEN` 值
 
 我不清楚 changesets 在执行内部的 `changeset publish` 命令时，到底能不能使用最新的 npm，这个问题打算先拖个几周。后面 pnpm 会更新的， changesets 肯定也会跟进的。
+
+## 传递空的 `NPM_TOKEN` 或 `NODE_AUTH_TOKEN` 是否有效呢？
+
+<!-- TODO: 待研究 研究一下传递空的值是否是有效的 -->
+
+- https://github.com/e18e/setup-publish/blob/main/templates/changesets.yml#L46
+- https://github.com/changesets/changesets/issues/1152#issuecomment-3190884868
