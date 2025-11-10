@@ -6,9 +6,9 @@
 
 kimi 官方是用量计费的，所以用的时候应该价格敏感。
 
-- kimi-k2-turbo-preview
 - kimi-k2-thinking
-- kimi-k2-thinking-turbo
+- kimi-k2-turbo-preview
+- kimi-k2-thinking-turbo 价格太贵
 
 ## 基于官方教程的方案
 
@@ -24,10 +24,10 @@ kimi 官方是用量计费的，所以用的时候应该价格敏感。
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token";
 $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/anthropic";
-$env:ANTHROPIC_MODEL = "kimi-k2-thinking-turbo";
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-thinking-turbo";
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-thinking-turbo";
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-thinking-turbo";
+$env:ANTHROPIC_MODEL = "kimi-k2-thinking";
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-k2-thinking";
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-k2-thinking";
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-k2-thinking";
 ```
 
 ## 基于博客文章的配置方案
