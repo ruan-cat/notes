@@ -2,23 +2,47 @@
 
 我眼馋这个发版方案很久了，打算学一下，不要再拖延不学习了。
 
-## 编写提示词
+## 对 antfu 发包流程的理解
 
-github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研他发布的依赖包，维护的 github 项目，帮我研究一下以下几个问题：
+我没有看到 antfu 的包有 changeset 变更集和 changelog 变更日志的东西。可以肯定的是，存在两套 monorepo 依赖包版本号发版方案的。
 
-1. 他是用怎么样的方案来发布依赖包的？
-2. 他是怎么实现依赖包版本升级的？
-3. 他是怎么确保更新日志能够写入到 github release 内的？
-4. 他是怎么在 github workflow 内配置 github 工作流的？是怎么触发发版的？
-5. 是什么配置实现了 node 包的打包，并推送到 npm 的？
-6. 他的依赖包在 monorepo 架构的仓库内，版本号是各自独立发布的？还是统一单一的版本号？
+1. 基于 changeset 变更集的方案。
+2. antfu 系列方案。
 
-请你用以下格式给出报告：
+大致了解的 antfu 发版方案如下：
 
-1. 为我编写一个完整全面的报告，说明清楚 antfu 的发包流程。
-2. 用 mermaid 图绘制 antfu 的发包流程。
-3. 请用严谨的 markdown 格式来编写报告，务必增加清晰的标题项。
+- 版本号升级： [bumpp](https://github.com/antfu-collective/bumpp)
+- 依赖构建： unbuild （或者是其他工具）
+- github release 发版： [changelogithub](https://github.com/antfu/changelogithub)
+- 依赖升级： [taze](https://github.com/antfu-collective/taze)
 
-## 可供参考的仓库
+## antfu 发版风格的仓库和参考资料？
 
-- https://github.com/pengzhanbo/vite-plugin-mock-dev-server
+<!-- TODO: -->
+
+## 对 antfu 发版风格的理解
+
+最核心的是两个工具：
+
+- 版本号升级： [bumpp](https://github.com/antfu-collective/bumpp)
+- github release 发版： [changelogithub](https://github.com/antfu/changelogithub)
+
+步骤如下：
+
+1. 手动运行 bumpp 命令。
+   - 生成 git tag 标签。
+   - 更新 package.json 的版本号。
+   - 自动 push 提交到远程仓库。
+2. 在 github workflow 内根据 `v*` 的 git tag 标签来触发生成 github release 更新日志。
+
+### 没有本地的 CHANGELOG.md 文件
+
+注意，这套发版风格是不会生成本地的 `CHANGELOG.md` 更新日志的。对 github 有强依赖。
+
+### 面对 monorepo 项目无法实现多 tag 标签发布
+
+changelogithub 是基于 changelogen 制作的，这两款工具都不能在 monorepo 仓库内实现多包多标签的发版。一次只能推送一个 git tag，对一个包做版本号变更，生成整个 github 仓库的版本号差异对比 url 链接。
+
+该方案和 changeset 方案是不同的。changeset 方案是允许我们发布多个独立 node 包的版本号的。
+
+## tsdown 的 vue 模板默认使用 antfu 发版风格

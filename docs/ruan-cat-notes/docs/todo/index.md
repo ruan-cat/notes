@@ -277,42 +277,9 @@ describe("Math functions", () => {
 
 ## 发布依赖包相关的杂事 ？
 
-### antfu 发包的流程？
+### antfu ？
 
-我没有看到 antfu 的包有 changeset 变更集和 changelog 变更日志的东西。可以肯定的是，存在两套 monorepo 依赖包版本号发版方案的。
-
-1. 基于 changeset 变更集的方案。
-2. antfu 系列方案。
-
-大致了解的 antfu 发版方案如下：
-
-- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
-- 依赖构建 unbuild 或者是其他工具
-- github release 发版 [changelogithub](https://github.com/antfu/changelogithub)
-- 依赖升级 taze
-
-需要想办法细化清楚 antfu 的发版方案才行。
-
-### antfu 发版风格的仓库和参考资料？
-
-<!-- TODO: -->
-
-### 对 antfu 发版风格的理解
-
-最核心的是两个工具
-
-- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
-- github release 发版 [changelogithub](https://github.com/antfu/changelogithub)
-
-步骤如下：
-
-1. 手动运行 bumpp 命令。
-   - 生成 git tag 标签。
-   - 更新 package.json 的版本号。
-   - 自动 push 提交到远程仓库。
-2. 在 github workflow 内根据 `v*` 的 git tag 标签来触发生成 github release 更新日志。
-
-这套发版风格是不会生成本地的 `CHANGELOG.md` 更新日志的。
+[点此专项阅读](../sundry/antfu-release-plan/index.md)。
 
 ## 发包日志包含提交记录 ？
 
