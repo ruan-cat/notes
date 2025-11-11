@@ -288,7 +288,7 @@ describe("Math functions", () => {
 
 - 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
 - 依赖构建 unbuild 或者是其他工具
-- github release 发版 changelogithub
+- github release 发版 [changelogithub](https://github.com/antfu/changelogithub)
 - 依赖升级 taze
 
 需要想办法细化清楚 antfu 的发版方案才行。
@@ -296,6 +296,23 @@ describe("Math functions", () => {
 ### antfu 发版风格的仓库和参考资料？
 
 <!-- TODO: -->
+
+### 对 antfu 发版风格的理解
+
+最核心的是两个工具
+
+- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
+- github release 发版 [changelogithub](https://github.com/antfu/changelogithub)
+
+步骤如下：
+
+1. 手动运行 bumpp 命令。
+   - 生成 git tag 标签。
+   - 更新 package.json 的版本号。
+   - 自动 push 提交到远程仓库。
+2. 在 github workflow 内根据 `v*` 的 git tag 标签来触发生成 github release 更新日志。
+
+这套发版风格是不会生成本地的 `CHANGELOG.md` 更新日志的。
 
 ## 发包日志包含提交记录 ？
 
