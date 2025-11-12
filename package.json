@@ -5,7 +5,7 @@
 	"description": "笔记单仓根目录。",
 	"license": "MIT",
 	"type": "module",
-	"packageManager": "pnpm@10.21.0",
+	"packageManager": "pnpm@10.22.0",
 	"engines": {
 		"node": ">=22.14.0"
 	},
@@ -52,7 +52,7 @@
 		"@iconify/json": "^2.2.406",
 		"@iconify/vue": "^5.0.0",
 		"@prettier/plugin-oxc": "^0.0.4",
-		"@ruan-cat/commitlint-config": "^4.2.0",
+		"@ruan-cat/commitlint-config": "^4.3.0",
 		"@ruan-cat/domains": "^1.7.0",
 		"@ruan-cat/generate-code-workspace": "^0.6.0",
 		"@ruan-cat/taze-config": "^0.3.0",
