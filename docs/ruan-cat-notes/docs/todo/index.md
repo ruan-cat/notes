@@ -330,3 +330,7 @@ ruan-cat-cli init cc -- statusline
 
 - https://github.com/orgs/community/discussions/178947
 - https://github.com/orgs/community/discussions/179124
+
+## 方舟 Coding Plan 首月特惠 ？
+
+- https://www.volcengine.com/activity/codingplan
