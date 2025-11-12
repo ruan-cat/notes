@@ -65,3 +65,17 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 不能用 360 极速浏览器，否则会提示区域不对，无法访问，被重定向回退到这个界面了：
 
 ![2025-11-13-05-35-48](https://gh-img-store.ruan-cat.com/img/2025-11-13-05-35-48.png)
+
+### 砍价提示词与各种砍价方案
+
+### 基于 kimi-for-coding 的配置
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "这里填在会员页面生成的 API Key";
+$env:ANTHROPIC_BASE_URL = "https://api.kimi.com/coding/";
+$env:ANTHROPIC_MODEL = "kimi-for-coding";
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "kimi-for-coding";
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-for-coding";
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-for-coding";
+claude --dangerously-skip-permissions
+```
