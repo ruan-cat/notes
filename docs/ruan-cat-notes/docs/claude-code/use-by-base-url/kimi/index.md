@@ -68,6 +68,9 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 
 ### 砍价提示词与各种砍价方案
 
+- https://blog.csdn.net/m0_74837192/article/details/154702964 失效
+- https://zhuanlan.zhihu.com/p/1971628865752373220 失效
+
 ### 基于 kimi-for-coding 的配置
 
 ```bash
