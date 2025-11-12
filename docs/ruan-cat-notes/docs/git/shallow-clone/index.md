@@ -1,3 +1,7 @@
+<script setup>
+import MakeGitCloneCmd from "./make-git-clone-cmd.vue";
+</script>
+
 # 浅克隆技术
 
 稀疏检出的方式，操作起来还是有点难受的。直接用浅克隆也行，至少查看的历史记录少很多了。
@@ -28,3 +32,11 @@ git clone --depth=1 https://github.com/vercel/examples gh.vercel.examples
 ![2024-08-14-11-39-44](https://gh-img-store.ruan-cat.com/img/2024-08-14-11-39-44.png)
 
 :::
+
+## 动态生成 git 浅克隆命令
+
+以下小工具会帮助你根据 github 链接生成便于克隆的：
+
+<ClientOnly>
+	<MakeGitCloneCmd />
+</ClientOnly>
