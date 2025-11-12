@@ -11,3 +11,9 @@
 ```bash
 code $profile
 ```
+
+### 清除 window 系统代理
+
+```bash
+netsh winhttp reset proxy
+```
