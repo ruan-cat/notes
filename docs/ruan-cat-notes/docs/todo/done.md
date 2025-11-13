@@ -107,3 +107,11 @@
 - docx-mcp
 
 ### 已完成
+
+## 用 swagger 生成 ts 类型声明文件
+
+swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
+
+### 已完成
+
+这是（`23年7月13号星期四 下午 6点35分`）记录的待办任务，现在（2025-11-14）学会了用 [openapi-ts-request](https://github.com/openapi-ui/openapi-ts-request) 来根据后端有意义的 swagger 文档，或者是 apifox 的 openai 数据格式的文档，批量生成 typescript 类型了。
