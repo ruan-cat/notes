@@ -1,5 +1,5 @@
 ---
-juejin: TODO
+juejin: https://juejin.cn/post/7572095192417828891
 desc: 对 bumpp+changelogithub 和 changelogen 这两款发版方案的实践探索与对比。
 ---
 
