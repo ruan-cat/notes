@@ -96,6 +96,20 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 
 :::
 
+### 砍价并订阅成功
+
+::: details 生成成功的，有效的降价页面
+
+![2025-11-13-10-04-46](https://gh-img-store.ruan-cat.com/img/2025-11-13-10-04-46.png)
+
+:::
+
+::: details 订阅成功
+
+![2025-11-13-10-05-04](https://gh-img-store.ruan-cat.com/img/2025-11-13-10-05-04.png)
+
+:::
+
 ### 有效的降价链接
 
 - https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a8f2-4fa2-8969-8000-0000b7453551&discount_id=19a7a8f2-4f82-8b59-8000-00004d8c4bc2
