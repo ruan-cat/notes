@@ -8,7 +8,10 @@
 
 请你使用谷歌浏览器 MCP，在浏览器内和对方沟通。
 
-- https://www.kimi.com/chat/19a7a8d7-3902-8849-8000-0936eaabbd81
+<!-- 这是我的对话记录 请你们删除掉 -->
+<!-- - https://www.kimi.com/chat/19a7a8d7-3902-8849-8000-0936eaabbd81 -->
+
+- https://www.kimi.com/kimiplus/promo
 
 如果需要登录账号，我会临时接管浏览器，手动登录账号。随后你继续沟通。
 
