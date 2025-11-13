@@ -12,7 +12,7 @@ kimi 官方是用量计费的，所以用的时候应该价格敏感。
 
 ## 基于官方教程的方案
 
-::: info 按量计费
+::: tip 按量计费
 
 这个方案是基于**按量付费**的计费方式的。
 
@@ -55,7 +55,7 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 
 ## 基于 kimi 会员提供的 key
 
-::: info 套餐月度计费
+::: tip 套餐月度计费
 
 这个方案是基于**套餐订阅**的计费方式的。
 
@@ -87,6 +87,14 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 
 - https://blog.csdn.net/m0_74837192/article/details/154702964 失效
 - https://zhuanlan.zhihu.com/p/1971628865752373220 失效
+
+### 自己编写提示词和 AI 沟通
+
+::: details kimi 价格讨价还价员
+
+<<< ../../../../../../.github/prompts/kimi-price-negotiator.md
+
+:::
 
 ### 有效的降价链接
 
