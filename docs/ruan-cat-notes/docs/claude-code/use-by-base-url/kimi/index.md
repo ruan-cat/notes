@@ -12,6 +12,12 @@ kimi 官方是用量计费的，所以用的时候应该价格敏感。
 
 ## 基于官方教程的方案
 
+::: info 按量计费
+
+这个方案是基于**按量付费**的计费方式的。
+
+:::
+
 - 官网博客 [`Claude Code 与 Kimi K2：终极 AI 编程助手组合`](https://kimi-k2.org/zh/blog/07-ai-coding-assistant-zh)
 - https://platform.moonshot.ai/docs/guide/agent-support.en-US#windows-1
 - https://platform.moonshot.cn/docs/guide/agent-support#配置环境变量
@@ -49,11 +55,19 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 
 ## 基于 kimi 会员提供的 key
 
+::: info 套餐月度计费
+
+这个方案是基于**套餐订阅**的计费方式的。
+
+:::
+
 kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`Kimi For Coding` 权益是可以生成专门的 key，并在 claude code 内使用。使用的是 `kimi-for-coding` 这款模型。
 
 - [砍价守门员](https://www.kimi.com/kimiplus/promo)
 - [`你真的会用AI砍价吗？双十一教你把 Kimi K2 Thinking 模型薅秃，一个月0.99元你敢信？（含保姆级教程）`](https://blog.csdn.net/m0_74837192/article/details/154702964)
 - [开通 kimi 会员](https://www.kimi.com/membership/pricing)
+
+### 账号不能绑定谷歌账号
 
 ### 进入到砍价页面
 
