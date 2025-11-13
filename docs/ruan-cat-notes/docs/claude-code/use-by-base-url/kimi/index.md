@@ -54,7 +54,6 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 - [砍价守门员](https://www.kimi.com/kimiplus/promo)
 - [`你真的会用AI砍价吗？双十一教你把 Kimi K2 Thinking 模型薅秃，一个月0.99元你敢信？（含保姆级教程）`](https://blog.csdn.net/m0_74837192/article/details/154702964)
 - [开通 kimi 会员](https://www.kimi.com/membership/pricing)
-- [`配置 Kimi For Coding 模型`](https://www.kimi.com/coding/docs/third-party-agents.html)
 
 ### 进入到砍价页面
 
@@ -82,6 +81,8 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 - https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7ad1b-d822-8c88-8000-0000edfe45a3&discount_id=19a7ad1b-d812-823a-8000-00002cdbffa8
 
 ### 基于 kimi-for-coding 的配置
+
+- [`配置 Kimi For Coding 模型`](https://www.kimi.com/coding/docs/third-party-agents.html)
 
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "这里填在会员页面生成的 API Key";
