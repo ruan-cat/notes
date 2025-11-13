@@ -9,4 +9,241 @@ desc: TODO
 >
 > TODO:
 
+我试着使用这两款工具，实现`版本升级`、`更新日志生成`、和`依赖包发布`。不过用起来有点卡手，对我来说仅仅只使用部分的功能。
+
+我打算在一个普通的管理后台项目内，使用这些工具，实现`版本升级`和`日志生成`。不考虑依赖包发布的事情，因为不可能发布一个管理后台到 npm 镜像内。
+
+## 试着直接使用工作流的 changelogithub 和 bumpp 工具实现上述要求
+
+在 node 项目安装 [bumpp](https://github.com/antfu-collective/bumpp) ，这是一个用来实现依赖包版本号升级的库，用于**手动升级**项目内根包的版本号。
+
+在 package.json 内编写命令：
+
+```json
+{
+	"release:bumpp": "bumpp"
+}
+```
+
+## bumpp 的默认行为不适合同步上传本地修改的 `CHANGELOG.md` 文件
+
+bumpp 是一个很单纯的，对版本号做升级的工具。阅读文档，其默认开启了一下三款参数：
+
+1. `--commit` 默认生成 git commit 提交信息。
+2. `--tag` 默认生成 git tag 版本。
+3. `--push` 默认同时推送 tag 和 commit 信息。
+
+这些默认行为不好去拆分处理，彼此相互耦合，形成了一套固定的，**仅仅对外更新 package.json 版本号和推送 git tag** 的工作流程。
+
+如果我想拆分掉其中的内容，重新有机组合自己的工作流程，就很**坐牢**。
+
+### 试着在本次 git commit 生成的时候，不默认提交到本地仓库
+
+这事实上做不到，只要你写配置，就一定会生成 git commit，并且默认推送到本地 git 仓库。而且你的 git commit 仅仅只有一个文件修改和一个 tag 提交，你不能添加额外的东西。
+
+比如说我想在更新版本号后，同时更新 `CHANGELOG.md` 文件，然后再提交。让一次 git commit 同时包含三个内容：
+
+- 被更新的 `CHANGELOG.md` 文件。
+- 被更新的根目录 `package.json` 文件。
+- 新增的 git tag 标签。
+
+这是做不到的，bumpp 工具没办法让你多上传一个被更改的本地文件。
+
+基于 bumpp 工具的版本升级逻辑，就不允许，也不考虑你在本地写入、更新、并推送`CHANGELOG.md` 文件到 git 仓库。你的每次 git commit 只能包含以下两个内容：
+
+- 被更新的根目录 `package.json` 文件。
+- 新增的 git tag 标签。
+
+这种逻辑你必须接受，否则你就别用 bumpp 来升级版本号。这让我非常难受，因为我之前习惯用 changset 来更新版本号，并且每次提交的时候，都是可以一次性提交：
+
+1. 被更新的 `CHANGELOG.md` 文件。
+2. 被更新的根目录 `package.json` 文件。
+3. 新增的 git tag 标签。
+
+这些都可以自由掌控，而 bumpp 发版工具卡死了，限定死了。不允许你有多余的日志更新与上传行为。
+
+### 试着在 `bump.config.ts` 内不提供 `--tag` 参数
+
+这事实上是不可理喻的，反而让自己坐牢。不提供 tag 参数，bumpp 甚至没办法给 package.json 更新有意义的版本号，直接留空，无法写入。
+
+### 试着在 `bump.config.ts` 内不提供 `--push` 参数
+
+这反而自己坐牢。不提供 `--push` 参数，虽然 package.json 的修改没有被默认推送到本地 git 仓库，可是 tag 标签却没办法推送，要自己手动不全 git 的推送参数才行。
+
+```bash
+git push --follow-tags
+```
+
+你要自己找机会，确保生成的 tag 被推送云端仓库，才能不会漏东西。这反而加重了心智负担。
+
+### 结论： bumpp 就不给你机会生成什么日志文件
+
+bumpp 本身的默认行为就不适合你在任何渠道内同时上传本地的 `CHANGELOG.md` 文件、package.json 的版本号和 git tag 标签。
+
+## bumpp 事实上和 changelogithub 高度耦合的
+
+我上面折腾那么久，不就是为了实现在本地生成 `CHANGELOG.md` 文件并且一同上传么？我就是喜欢 changeset 这种提交方式啊。
+
+所以更新日志的生成能力，只能仰赖其他的工具。经过调研，bumpp 经常是用 [changelogithub](https://github.com/antfu/changelogithub) 来生成更新日志的。
+
+但是很不巧的是，changelogithub 本身就仅仅只考虑生成最好的 github release 更新日志，不考虑生成本地的 `CHANGELOG.md` 更新日志。
+
+### 正常使用 changelogithub 的工作流
+
+一般来说，changelogithub 是在 github workflow 工作流配置文件内写的，而且往往是通过 git tag 来触发工作流的。
+
+```yaml
+# .github\workflows\release.yaml
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions: write-all
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 设置javascript环境
+        uses: sxzz/workflows/setup-js@v1
+        with:
+          fetch-all: false
+          package-manager: pnpm
+          auto-install: true
+
+			- name: 用 changelogithub 生成 github release 发行版日志
+        run: pnpm dlx changelogithub
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+在工作流内写起来很简单，很优雅。但是只负责，只考虑在 github release 内发布更新日志。
+
+### 尝试在 github workflow 内让 changelogithub 生成日志文件
+
+实在不行我试着让 changelogithub 在云端工作流内，也写入 `CHANGELOG.md` 更新日志，再实现提交。
+
+1. 在 github workflow 内额外增加一个步骤 `pnpm dlx changelogithub --output "CHANGELOG.md"` 。在云端内写入文件。
+2. 在云端的 git 内设置用户名、邮箱。
+3. 确定云端 git 的分支名称。
+4. 推送到 origin 远程仓库。
+5. 本机仓库再 git fetch 拉取更新。
+
+这套流程很麻烦，要实现云端生成文件、修改文件、生成 git commit 提交并拉取更新，太麻烦了。我都套模板了，至于搞那么复杂么？
+
+这套流程不好走通，而且 changelogithub 本身提供的 `--output` 参数在仓库文档内是不写清楚的，要你自己亲自看源码才知道有这个参数的。可想而知这个方案太离谱，太弯弯绕绕了。太卡手了，不能去落实下去。
+
+### 尝试在本地仓库用 changelogithub 生成日志文件，然后额外提交一个 git commit 专门说明更新了日志文件
+
+这肯定很不优雅嘛。哪有一个 git commit 提交专门为了说明一个版本更新的日志的。那肯定会问，为什么更新日志不能和更新版本后的 package.json 一起发布呢？
+
+这问题又绕回来了，bumpp 没办法让我做到这一点。这就意味着，只要我使用这一套 `bumpp` + `changelogithub` 的发版工作流，就算能生成本地日志文件，git commit 提交也被迫变乱。
+
+### changelogithub 本地生成的 `CHANGELOG.md` 更新日志太难看
+
+在本地运行命令：
+
+```bash
+pnpm dlx changelogithub --output "CHANGELOG.md"
+```
+
+控制台内看起来很好看：
+
+![2025-11-13-22-47-30](https://gh-img-store.ruan-cat.com/img/2025-11-13-22-47-30.png)
+
+但是实际在 `CHANGELOG.md` 文件内，看的难看的要死：
+
+![2025-11-13-22-48-16](https://gh-img-store.ruan-cat.com/img/2025-11-13-22-48-16.png)
+
+满屏幕都是 `&nbsp;` 空格，这个 `CHANGELOG.md` 文件都不是给人看的。这不能接受吧，不可能去生成这种全都是 `&nbsp;` 空格的文件给人去阅读的，太离谱了。
+
+### 结论： changelogithub 就不给你在本地生成能看的日志文件
+
+所以很遗憾，只能放弃掉用 changelogithub 在云端和本地生成 `CHANGELOG.md` 文件的方案。
+
+changelogithub 的用途就卡死了，自己就仅仅限定在 github workflow 工作流内，根据 tag 标签触发更新，生成 github release 更新日志。
+
+完全不能去生成任何实体的，具体的 `CHANGELOG.md` 文件。
+
+在生成 github release 日志这件事上，这个工具很优雅。但也就只能做这一种事情。
+
+## 尝试用 bumpp + changelogen 的搭配来生成本地的更新日志文件
+
+那既然本地用 changelogithub 生成 `CHANGELOG.md` 文件是一坨答辩，那我退而求其次用更加根本的 changelogen 来生成更新日志，行不行呢？
+
+changelogithub 本质上就是对 [changelogen](https://github.com/unjs/changelogen) 的二次封装，在 bumpp 升级版本后，紧接着用 changelogen 来生成：
+
+运行命令：
+
+```bash
+pnpm dlx changelogen --output "CHANGELOG.md"
+```
+
+实际出现一个致命缺陷，changelogen 没办法在本地内判断上一个 tag 标签和最新的 tag 标签，导致生成的更新日志是空的。两个相同版本号之间是没有任何差异的，所以日志是空的。
+
+## 尝试单独使用 changelogen 完成一整个版本升级和日志生成工作
+
+我就很纳闷了，changelogen 有那么废物么？在 bumpp 升级版本后，紧接着用 changelogen 来生成本地日志，结果无法判断版本号差异？生成空日志？
+
+我很怀疑 changelogen 本身是不能去依赖别人来更新版本号的，如果让 changelogen 自己去实现版本号升级，并且自己去生成日志，会怎么样？
+
+这是一套完全独立的新方案了。和 `bumpp` + `changelogithub` 方案完全不同了。
+
+### 编写命令并生成版本号
+
+阅读 changelogen 的 [README](https://github.com/unjs/changelogen/blob/main/README.md) 文档，得知要想让 changelogen 独立完成上述工作，需要以下这几个参数：
+
+1. `--bump` 根据 git 语义化提交来确定版本号，写入 package.json 文件并升级版本号。
+2. `--release` 生成更新日志。并生成 git tag。
+3. `--push` 根据预设的 git commit 模板，同时推送：
+   - 升级版本号，更改后的 package.json 文件。
+   - 更新日志文件。
+   - git tag 标签。
+
+```json
+{
+	"release:changelogen": "changelogen --bump --release --push"
+}
+```
+
+如下图所示：
+
+![2025-11-13-23-13-24](https://gh-img-store.ruan-cat.com/img/2025-11-13-23-13-24.png)
+
+查看 git 记录，同时有 git tag、本地的修改日志文件、被修改的 package.json。
+
+![2025-11-13-23-14-45](https://gh-img-store.ruan-cat.com/img/2025-11-13-23-14-45.png)
+
+而且本地的 `CHANGELOG.md` 文件很工整美观：
+
+![2025-11-13-23-15-42](https://gh-img-store.ruan-cat.com/img/2025-11-13-23-15-42.png)
+
+这很完美哦，完美满足了我上面的全部需求。不过单独的 changelogen 方案还是有一些问题的。
+
+### 容易误触
+
+你一点击，你就发布更新了。你要手动撤回 git 修改内容才行，包括手动删除掉推送的 tag 标签。
+
+误触撤回比较麻烦。很容易不小心就触发版本更新了。
+
+### 没办法自己确定版本号
+
+changelogen 是根据语义化的 git commit 信息，来自主判断确定版本号的。你没得选版本号。
+
+### 总是会自己打开 github release 页面
+
+目前 changelogen 是没有办法自己关闭掉默认打开 github release 页面的行为的，这一点有点恼人。
+
+![2025-11-13-23-17-10](https://gh-img-store.ruan-cat.com/img/2025-11-13-23-17-10.png)
+
+### 总结： 顾此失彼，失去对版本号的手动控制了
+
+changelogen 能独立完成我的核心需求，但是我却没办法手动精准选择版本号了。只能按照语义化的发版规则，自主更新版本号。
+
+## 使用总结表
+
 <!-- TODO: 认真编写 docs\ruan-cat-notes\docs\sundry\antfu-release-plan\index.md 对应的本外发文章 -->

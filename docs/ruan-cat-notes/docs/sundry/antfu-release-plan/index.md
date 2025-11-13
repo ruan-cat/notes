@@ -16,10 +16,6 @@
 - github release 发版： [changelogithub](https://github.com/antfu/changelogithub)
 - 依赖升级： [taze](https://github.com/antfu-collective/taze)
 
-## antfu 发版风格的仓库和参考资料？
-
-<!-- TODO: -->
-
 ## 对 antfu 发版风格的理解
 
 最核心的是两个工具：
