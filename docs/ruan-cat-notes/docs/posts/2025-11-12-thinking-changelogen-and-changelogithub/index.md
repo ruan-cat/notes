@@ -1,13 +1,13 @@
 ---
 juejin: TODO
-desc: TODO
+desc: 对 bumpp+changelogithub 和 changelogen 这两款发版方案的实践探索与对比。
 ---
 
 # 对 changelogen 和 changelogithub 使用的思考
 
 > **摘要**：
 >
-> TODO:
+> 对 bumpp+changelogithub 和 changelogen 这两款发版方案的实践探索与对比。
 
 我试着使用这两款工具，实现`版本升级`、`更新日志生成`、和`依赖包发布`。不过用起来有点卡手，对我来说仅仅只使用部分的功能。
 
