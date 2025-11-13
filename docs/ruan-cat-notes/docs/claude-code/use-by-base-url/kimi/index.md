@@ -71,6 +71,16 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 - https://blog.csdn.net/m0_74837192/article/details/154702964 失效
 - https://zhuanlan.zhihu.com/p/1971628865752373220 失效
 
+### 有效的降价链接
+
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a8f2-4fa2-8969-8000-0000b7453551&discount_id=19a7a8f2-4f82-8b59-8000-00004d8c4bc2
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a90a-7cd2-875a-8000-0000de683f10&discount_id=19a7a90a-7cb2-8e28-8000-0000b4e5baef
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a918-0282-8451-8000-00009dd7110f&discount_id=19a7a918-0262-8993-8000-000067da3484
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a944-e3b2-8db7-8000-0000bc23fc4e&discount_id=19a7a944-e322-8002-8000-00009087bbad
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7a97a-e7c2-8cc9-8000-000004456d0a&discount_id=19a7a97a-e7a2-8b50-8000-0000d3359624
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7aa4a-f3c2-82bf-8000-0000e10bd105&discount_id=19a7aa4a-f332-8480-8000-0000d64f4c5e
+- https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7ad1b-d822-8c88-8000-0000edfe45a3&discount_id=19a7ad1b-d812-823a-8000-00002cdbffa8
+
 ### 基于 kimi-for-coding 的配置
 
 ```bash
