@@ -9,18 +9,6 @@
 				"@upstash/context7-mcp"
 			]
 		},
-		"fetch-mcp": {
-			"command": "cmd",
-			"args": [
-				"/c",
-				"npx",
-				"-y",
-				"@tokenizin/mcp-npx-fetch"
-			],
-			"autoApprove": [
-				"fetch_markdown"
-			]
-		},
 		"chrome-devtools": {
 			"type": "stdio",
 			"command": "cmd",
