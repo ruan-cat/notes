@@ -337,4 +337,6 @@ ruan-cat-cli init cc -- statusline
 
 ## 方舟 Coding Plan 首月特惠 ？
 
+￥ 9.90 ，晚点购买测试效果。
+
 - https://www.volcengine.com/activity/codingplan
