@@ -120,7 +120,7 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 - https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7aa4a-f3c2-82bf-8000-0000e10bd105&discount_id=19a7aa4a-f332-8480-8000-0000d64f4c5e
 - https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a7ad1b-d822-8c88-8000-0000edfe45a3&discount_id=19a7ad1b-d812-823a-8000-00002cdbffa8
 
-### 基于 kimi-for-coding 的配置
+### 基于 kimi-for-coding 模型的配置
 
 - [`配置 Kimi For Coding 模型`](https://www.kimi.com/coding/docs/third-party-agents.html)
 
@@ -133,3 +133,8 @@ $env:ANTHROPIC_DEFAULT_SONNET_MODEL = "kimi-for-coding";
 $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "kimi-for-coding";
 claude --dangerously-skip-permissions
 ```
+
+### 个人评价 kimi-for-coding 模型
+
+- 指令遵循很差。
+- 文档阅读、思考、任务规划很差。
