@@ -8,6 +8,7 @@
 - [Lingma](https://lingma.aliyun.com/lingma/download)
 - [Kiro](https://kiro.dev/downloads/)
 - [Codebuddy](https://www.codebuddy.ai/)
+- [antigravity](https://antigravity.google/download)
 
 <!-- TODO: kiro 邮件提供给我的邀请码 懒得用 -->
 <!-- KIRO-bHZr-sOdS -->
