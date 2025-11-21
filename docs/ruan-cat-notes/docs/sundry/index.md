@@ -105,3 +105,12 @@ pnpm why vue-router
 ```
 
 ![2025-10-15-19-00-29](https://gh-img-store.ruan-cat.com/img/2025-10-15-19-00-29.png)
+
+## 前端发展方向
+
+- 网页
+- 管理后台
+- 大屏
+- 移动端
+- 桌面端 electron
+- 游戏前端
