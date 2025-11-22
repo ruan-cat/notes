@@ -53,3 +53,20 @@ $env:GEMINI_API_KEY="***"
 
 1. **gemini cli 阅读文档不完全：** 给他很多提示词，阅读起来缺斤少两，很多细节都有缺失。需要我反复提醒，反复拉扯，才能得到一个勉强的结果。
 2. **无法阅读 ide 提供的报错信息：** 无法阅读 ide 提供的 typescript 类型报错信息，导致我无法使用 gemini cli 完成 typescript 类型报错的修复。相反，claude code 在配套的 vscode 插件的帮助下，能够阅读 ide 提供的报错信息，并针对性的修复故障。
+
+<!-- TODO: gemini 3 最近很火 看看如何自己订阅？ -->
+
+## 想办法订阅谷歌的会员
+
+参考资料：
+
+- [`Gemini会员开通攻略：Pro/Ultra订阅方法、充值流程与平台推荐`](https://zhuanlan.zhihu.com/p/1974851569586561940)
+- [`Google Gemini Pro 高级会员订阅实战教程`](https://mdnice.com/writing/61a93ff2671e4456bcf3470c8931c86f)
+
+### 套餐购买入口
+
+![2025-11-22-12-30-16](https://gh-img-store.ruan-cat.com/img/2025-11-22-12-30-16.png)
+
+谷歌套餐是包含一揽子工具链的：
+
+![2025-11-22-12-30-56](https://gh-img-store.ruan-cat.com/img/2025-11-22-12-30-56.png)
