@@ -47,7 +47,7 @@ $env:GEMINI_API_KEY="***"
 
 ## 整体体验
 
-对于 gemini cli，有以下的体验：
+对于 gemini cli 免费提供的 `gemini pro 2.5` 模型，体验如下：
 
 智障、傻逼、废物、八嘎。
 
