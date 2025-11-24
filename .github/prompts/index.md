@@ -49,8 +49,6 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
  2 再开始重新设置本项目
 -->
 
-<!-- TODO: -->
-
 ## 05 调研 conventional-changelog
 
 阅读该 github 仓库：
