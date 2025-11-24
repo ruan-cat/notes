@@ -43,4 +43,30 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 
 ## 04 对本项目使用 `setup-release-workflow` 子代理
 
+<!--
+ TODO:
+ 1 先迭代一轮 setup-release-workflow 子代理
+ 2 再开始重新设置本项目
+-->
+
 <!-- TODO: -->
+
+## 05 调研 conventional-changelog
+
+阅读该 github 仓库：
+
+- https://github.com/conventional-changelog/conventional-changelog
+
+这是一个复杂的 monorepo，我想入门学习使用 conventional-changelog 系列的 node 包，实现本地更新日志的生成。
+
+但是我搞不清楚 `conventional-changelog-cli` 这款包，请问这款 `conventional-changelog-cli` 还应该要继续使用吗？
+
+请部分地阅读该更新日志：
+
+- https://github.com/pengzhanbo/vuepress-theme-plume/blob/main/CHANGELOG.md
+
+请问这种更新日志是用 conventional-changelog 的哪款依赖包生成的？用什么方式来生成的？生成流程是如何的？
+
+我也想在任意一个 node 项目内初始化这一套日志生成手段，也想生成这种带有 github diff 差异对比的链接。
+
+请生成一个文档，教我如何生成。
