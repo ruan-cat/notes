@@ -326,11 +326,6 @@ ruan-cat-cli init cc -- statusline
 - https://github.com/UfoMiao/zcf
 - https://github.com/Haleclipse/CCometixLine
 
-## github 无法添加 stars
-
-- https://github.com/orgs/community/discussions/178947
-- https://github.com/orgs/community/discussions/179124
-
 ## Spec Kit ？
 
 ## minimax M2 ？
