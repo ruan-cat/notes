@@ -55,3 +55,15 @@ pnpm i -D conventional-changelog-cli
 ![2025-11-26-02-56-04](https://gh-img-store.ruan-cat.com/img/2025-11-26-02-56-04.png)
 
 按照配置规范，我们应该去配置 `.versionrc.js` 文件，声明清楚那些提交类型需要添加到更新日志内。
+
+## 基于 commit-and-tag-version 的日志生成方案
+
+- 仓库： https://github.com/absolute-version/commit-and-tag-version
+
+该方案是 [standard-version](https://github.com/conventional-changelog/standard-version) 的替代方案，个人认为 `standard-version` 、 `commit-and-tag-version` 和 `changelogen` 一样，都是一体化的发版与日志生成工具。但是这里我只想使用其部分的**日志生成能力**。
+
+### 暂停： `.versionrc.js` 文件无法 cjs 导入预先配置好的数组
+
+目前我直接使用 `commit-and-tag-version` 来生成日志时，是没有实现有效的日志生成的，配置 `.versionrc.js` 文件也没办法导入 cjs 格式的模块。
+
+个人感觉这个工具似乎是烂掉了，不好用。故不继续探究这个方案了。
