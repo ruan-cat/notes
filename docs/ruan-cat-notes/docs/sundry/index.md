@@ -114,3 +114,10 @@ pnpm why vue-router
 - 移动端
 - 桌面端 electron
 - 游戏前端
+
+## 独立前端组件显示文档
+
+- histoire
+- storybook
+
+这两个都可以实现对 vue 组件生成专用的，独立的，可交互的组件。
