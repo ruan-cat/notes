@@ -68,3 +68,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 我也想在任意一个 node 项目内初始化这一套日志生成手段，也想生成这种带有 github diff 差异对比的链接。
 
 请生成一个文档，教我如何生成。
+
+## 06 寻找 claude code 仓库
+
+请帮我寻找 claude code 内能够直接使用本地 gemini cli 和 codex 的库。我希望在 claude code 内直接使用 gemini cli 或 codex 提供的模型。
