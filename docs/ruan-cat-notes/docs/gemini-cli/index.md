@@ -70,3 +70,9 @@ $env:GEMINI_API_KEY="***"
 谷歌套餐是包含一揽子工具链的：
 
 ![2025-11-22-12-30-56](https://gh-img-store.ruan-cat.com/img/2025-11-22-12-30-56.png)
+
+### 获得 Gemini 3 Pro 的免费使用权限
+
+因为添加自己在等待列表内，所以现在拥有了免费的使用权限。
+
+![2025-11-26-05-01-43](https://gh-img-store.ruan-cat.com/img/2025-11-26-05-01-43.png)
