@@ -18,3 +18,4 @@
 - [cline-cli](https://cline.bot/cline-cli)
 - [Auggie CLI](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli)
 - [iFlow CLI](https://cli.iflow.cn/)
+- [Atlassian Rovo Dev CLI](https://www.atlassian.com/zh/software/rovo-dev)
