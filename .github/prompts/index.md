@@ -72,3 +72,5 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 ## 06 寻找 claude code 仓库
 
 请帮我寻找 claude code 内能够直接使用本地 gemini cli 和 codex 的库。我希望在 claude code 内直接使用 gemini cli 或 codex 提供的模型。
+
+就是 [`zen-mcp-server`](https://github.com/BeehiveInnovations/zen-mcp-server)
