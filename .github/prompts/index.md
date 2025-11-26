@@ -77,3 +77,9 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 
 - 可以查找 claude code plugin 插件商城。
 - 可以查找流行的跨项目，跨模型的常用提示词。
+
+---
+
+<!-- TODO: -->
+
+我想找一下关于 vue-cli（webpack + vue2） 项目迁移成 vite + vue3 项目的子代理、提示词、或 claude code skill。请帮我找相关的 github 仓库，至少 10 个。
