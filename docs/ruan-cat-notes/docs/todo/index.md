@@ -341,3 +341,11 @@ ruan-cat-cli init cc -- statusline
 阅读这些提示词仓库，针对性的阅读自己想看的内容，整理翻译成中文提示词。便于高强度阅读学习。
 
 - https://github.com/PatrickJS/awesome-cursorrules
+- https://github.com/BehiSecc/awesome-claude-skills
+- https://github.com/wshobson/agents
+
+## academy.openai.com
+
+去探索这个网站，能够提供哪些有用的，实用的提示词。
+
+- https://academy.openai.com/
