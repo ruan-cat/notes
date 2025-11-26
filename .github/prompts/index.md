@@ -70,3 +70,10 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 就是 [`zen-mcp-server`](https://github.com/BeehiveInnovations/zen-mcp-server)
 
 这个方案不可行。因为 zen-mcp-server 要求配置供应商的 key，我目前无法提供其他供应商的 key。
+
+## 07 寻找最流行的 claude code skill 仓库
+
+请帮我找 15 个最流行的 claude code skill github 仓库，便于我学习了解有哪些好用的 skill 可以使用。
+
+- 可以查找 claude code plugin 插件商城。
+- 可以查找流行的跨项目，跨模型的常用提示词。
