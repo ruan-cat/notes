@@ -41,14 +41,6 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 - 项目构建： tsup
 - 日志生成： changelogithub
 
-## 04 对本项目使用 `setup-release-workflow` 子代理
-
-<!--
- TODO:
- 1 先迭代一轮 setup-release-workflow 子代理
- 2 再开始重新设置本项目
--->
-
 ## 05 调研 conventional-changelog
 
 阅读该 github 仓库：
@@ -73,4 +65,8 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 
 请帮我寻找 claude code 内能够直接使用本地 gemini cli 和 codex 的库。我希望在 claude code 内直接使用 gemini cli 或 codex 提供的模型。
 
+---
+
 就是 [`zen-mcp-server`](https://github.com/BeehiveInnovations/zen-mcp-server)
+
+这个方案不可行。因为 zen-mcp-server 要求配置供应商的 key，我目前无法提供其他供应商的 key。
