@@ -335,3 +335,9 @@ ruan-cat-cli init cc -- statusline
 ￥ 9.90 ，晚点购买测试效果。
 
 - https://www.volcengine.com/activity/codingplan
+
+## 阅读并翻译这些提示词仓库
+
+阅读这些提示词仓库，针对性的阅读自己想看的内容，整理翻译成中文提示词。便于高强度阅读学习。
+
+- https://github.com/PatrickJS/awesome-cursorrules
