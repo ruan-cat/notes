@@ -65,6 +65,8 @@ $env:GEMINI_API_KEY="***"
 
 ### 套餐购买入口
 
+- https://one.google.com/explore-plan/gemini-advanced
+
 ![2025-11-22-12-30-16](https://gh-img-store.ruan-cat.com/img/2025-11-22-12-30-16.png)
 
 谷歌套餐是包含一揽子工具链的：
