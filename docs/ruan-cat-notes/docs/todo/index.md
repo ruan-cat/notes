@@ -358,3 +358,4 @@ ruan-cat-cli init cc -- statusline
 
 - https://github.com/hex-novaflow-ai/OpenSpec-Chinese
 - https://github.com/Fission-AI/OpenSpec
+- [`🚀开发者福音！现有项目用AI迭代？OpenSpec规范驱动开发！让AI按规范写代码，真正做到零失误！支持Cursor、Claude Code、Codex！`](https://www.bilibili.com/video/BV1fFWJztEAu/)
