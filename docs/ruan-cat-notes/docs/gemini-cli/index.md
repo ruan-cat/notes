@@ -78,3 +78,50 @@ $env:GEMINI_API_KEY="***"
 因为添加自己在等待列表内，所以现在拥有了免费的使用权限。
 
 ![2025-11-26-05-01-43](https://gh-img-store.ruan-cat.com/img/2025-11-26-05-01-43.png)
+
+## 在 gemini 内给账号授权
+
+参考资料
+
+- [`github issue ： Permission 'cloudaicompanion.companions.generateChat' denied`](https://github.com/google-gemini/gemini-cli/issues/1966#issuecomment-3009083556)
+- [`谷歌云文档 ： 在 Google Cloud 项目中授予 IAM 角色`](https://docs.cloud.google.com/gemini/docs/discover/set-up-gemini?hl=zh-cn#console_1)
+- https://console.cloud.google.com/iam-admin/iam
+
+我遇到这样的错误：
+
+```log
+[API Error: [{
+    "error": {
+      "code": 403,
+      "message": "Permission 'cloudaicompanion.companions.generateChat' denied on resource
+  '//cloudaicompanion.googleapis.com/projects/83565277083/locations/global' (or it may not
+  exist).",
+      "errors": [
+        {
+          "message": "Permission 'cloudaicompanion.companions.generateChat' denied on
+  resource '//cloudaicompanion.googleapis.com/projects/83565277083/locations/global' (or it
+  may not exist).",
+          "domain": "global",
+          "reason": "forbidden"
+        }
+      ],
+      "status": "PERMISSION_DENIED",
+      "details": [
+        {
+          "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+          "reason": "IAM_PERMISSION_DENIED",
+          "domain": "cloudaicompanion.googleapis.com",
+          "metadata": {
+            "resource": "projects/83565277083/locations/global",
+            "permission": "cloudaicompanion.companions.generateChat"
+          }
+        }
+      ]
+    }
+  }
+  ]]
+```
+
+按照 issue 说明和文档教程，我进入到谷歌云的 iam 设置界面内，设置角色：
+
+![2025-12-06-09-37-42](https://gh-img-store.ruan-cat.com/img/2025-12-06-09-37-42.png)
