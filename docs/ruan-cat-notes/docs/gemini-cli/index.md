@@ -73,11 +73,15 @@ $env:GEMINI_API_KEY="***"
 
 ![2025-11-22-12-30-56](https://gh-img-store.ruan-cat.com/img/2025-11-22-12-30-56.png)
 
-### 获得 Gemini 3 Pro 的免费使用权限
+## 获得 Gemini 3 Pro 的免费使用权限
 
 因为添加自己在等待列表内，所以现在拥有了免费的使用权限。
 
 ![2025-11-26-05-01-43](https://gh-img-store.ruan-cat.com/img/2025-11-26-05-01-43.png)
+
+### 手动设置 gemini 3 权限
+
+- [`如何将 Gemini 3 Pro 与 Gemini CLI 配合使用`](https://geminicli.com/docs/get-started/gemini-3/#how-to-use-gemini-3-pro-with-gemini-cli)
 
 ## 在 gemini 内给账号授权
 
