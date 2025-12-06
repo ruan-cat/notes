@@ -91,6 +91,14 @@ $env:GEMINI_API_KEY="***"
 - [`谷歌云文档 ： 在 Google Cloud 项目中授予 IAM 角色`](https://docs.cloud.google.com/gemini/docs/discover/set-up-gemini?hl=zh-cn#console_1)
 - https://console.cloud.google.com/iam-admin/iam
 
+按照 issue 说明和文档教程，我进入到谷歌云的 iam 设置界面内，设置角色：
+
+![2025-12-06-09-37-42](https://gh-img-store.ruan-cat.com/img/2025-12-06-09-37-42.png)
+
+## 处理 403 错误
+
+- [`API Error 403 CONSUMER_INVALID after setting the GOOGLE_CLOUD_PROJECT`](https://github.com/google-gemini/gemini-cli/issues/1808#issuecomment-3007714343)
+
 我遇到这样的错误：
 
 ```log
@@ -126,6 +134,4 @@ $env:GEMINI_API_KEY="***"
   ]]
 ```
 
-按照 issue 说明和文档教程，我进入到谷歌云的 iam 设置界面内，设置角色：
-
-![2025-12-06-09-37-42](https://gh-img-store.ruan-cat.com/img/2025-12-06-09-37-42.png)
+注意到关键的项目 id `83565277083` 。关闭掉我的全局 `$env:GOOGLE_CLOUD_PROJECT` 环境变量即可。
