@@ -32,7 +32,7 @@ pnpm i -g @google/gemini-cli
 
 ![2025-08-04-15-33-54](https://gh-img-store.ruan-cat.com/img/2025-08-04-15-33-54.png)
 
-## 环境变量
+### 设置 key 环境变量
 
 ```bash
 # gemini-cli 的 api key
@@ -44,6 +44,10 @@ $env:GEMINI_API_KEY="***"
 
 - https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist
 - https://developers.google.com/gemini-code-assist/docs/overview?hl=zh-cn
+
+## 设置 mcp
+
+在全局的用户文件 `C:\Users\pc\.gemini\settings.json` 内设置即可。
 
 ## 整体体验
 
