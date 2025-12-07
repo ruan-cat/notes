@@ -53,3 +53,23 @@ docs/docs-01-star/*
 大致效果如下图所示：
 
 ![2025-10-08-17-12-18](https://gh-img-store.ruan-cat.com/img/2025-10-08-17-12-18.png)
+
+## 在 monorepo 内部署一个 nuxt/nitro 格式的 worker
+
+大体的做法和上面差不多。配置如下：
+
+![2025-12-07-22-48-28](https://gh-img-store.ruan-cat.com/img/2025-12-07-22-48-28.png)
+
+### 构建命令
+
+```bash
+pnpm i && pnpm run build:cloudflare:admin
+```
+
+### 部署命令
+
+按照 nitro 构建后的日志，编写该配置写法：
+
+```bash
+npx wrangler --cwd=./apps/admin/.output deploy
+```
