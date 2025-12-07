@@ -139,3 +139,7 @@ $env:GEMINI_API_KEY="***"
 ```
 
 注意到关键的项目 id `83565277083` 。关闭掉我的全局 `$env:GOOGLE_CLOUD_PROJECT` 环境变量即可。
+
+## 想办法访问到 Google Antigravity
+
+- [`Google Antigravity 登录失败？中国地区完整解决方案与排查指南`](https://blog.csdn.net/qq_38912395/article/details/155539650)
