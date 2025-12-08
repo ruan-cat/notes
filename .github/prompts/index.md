@@ -78,9 +78,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 - 可以查找 claude code plugin 插件商城。
 - 可以查找流行的跨项目，跨模型的常用提示词。
 
----
-
-### <!-- TODO: 认真阅读以下对话反馈的仓库 认真学习仓库 --> 01 阅读并收集整理出一份完整完全的 github 仓库 url 地址信息文档
+### 01 阅读并收集整理出一份完整完全的 github 仓库 url 地址信息文档
 
 1. 完整阅读以下 url：
    - https://github.com/copilot/c/f536c27a-bdc2-4f24-8789-015ecc1c4416
@@ -115,3 +113,15 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
    └─ 探索 tsup 和 c12 配置 · 13 tool uses · 37.5k tokens
       ⎿  Search: packages/vercel-deploy-tool/tsup.config.ts
 ```
+
+## 010 <!-- TODO: --> 调研 OpenSpec 的使用方式
+
+需要专门学习学会如何使用该工具提供的一系列命令。
+
+1. 请阅读以下仓库和文档教程，学习了解核心工具 `OpenSpec-Chinese` 和 `OpenSpec` 的使用。
+   - https://github.com/hex-novaflow-ai/OpenSpec-Chinese
+   - https://github.com/Fission-AI/OpenSpec
+   - https://www.aivi.fyi/llms/introduce-OpenSpec
+2. 为我出示一份报告，教会我如何在一个全新的项目内初始化 OpenSpec ？
+3. 如何在现有的 OpenSpec 配置内，继续新增、迭代规格文件？
+4. `OpenSpec-Chinese` 有固定的文档规则，请问新增时的固定规则是什么？

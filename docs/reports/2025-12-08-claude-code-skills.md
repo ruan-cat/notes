@@ -1,5 +1,7 @@
 # Claude Code Skill 资源清单
 
+<!-- TODO: 认真阅读以下对话反馈的仓库 认真学习仓库 -->
+
 ## 1 报告说明
 
 - 目标：整理 25 个 Claude 生态常用 Skill 仓库与资源，涵盖 MCP Server、Coding Agent、Prompt/规则清单与自动化工具。
