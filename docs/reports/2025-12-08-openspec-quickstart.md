@@ -3,7 +3,7 @@
 ## 1. 环境与安装
 
 - 需要 Node.js ≥ 20.19.0（项目本身使用 Node 22 也兼容）。
-- 全局安装（推荐）：`npm install -g @org-hex/openspec-chinese@latest`。
+- 全局安装（推荐）：`pnpm install -g @org-hex/openspec-chinese@latest`。
 - 本地开发/调试：克隆仓库后 `pnpm install && pnpm run build`，可用 `npm link` 暂时全局使用。
 - 常用校验：`openspec-chinese --version`、`openspec-chinese --help`。
 
@@ -113,3 +113,17 @@ flowchart TD
   H --> I[archive --yes 合并主规范]
   I --> J[后续变更重新走 Proposal]
 ```
+
+---
+
+1. 填充您的项目上下文:
+   "请阅读 openspec/project.md 并帮助我填写
+   关于我的项目、技术栈和约定的详细信息"
+
+2. 创建您的第一个变更提案:
+   "我想添加 [您的功能这里]。请为此
+   功能创建一个 OpenSpec 变更提案"
+
+3. 学习 OpenSpec 工作流程:
+   "请从 openspec/AGENTS.md 解释 OpenSpec 工作流程
+   以及我应该如何在这个项目中与您合作"

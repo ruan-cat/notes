@@ -136,3 +136,7 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 1. 把你总结的产出，输出到文件 `docs\reports\2025-12-08-openspec-quickstart.md` 内。
 2. 请你用 pnpm dlx 的方式，初始化一个 OpenSpec 流程。用中文的工具来初始化。
 3. 我需要你在仓库里补一份可复用的自定义模板示例（放 openspec/templates/），并给出一份示例 spec.md 骨架。
+
+### 03
+
+1. `AGENTS.md` 文件是 OpenSpec 专用的文件么？还是说是大多数 AI 工具都能够共同识别的，作为业界共识的文件？
