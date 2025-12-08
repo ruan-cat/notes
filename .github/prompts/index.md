@@ -80,11 +80,13 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 
 ---
 
-<!-- TODO: 认真阅读以下对话反馈的仓库 认真学习仓库 -->
+### <!-- TODO: 认真阅读以下对话反馈的仓库 认真学习仓库 --> 01 阅读并收集整理出一份完整完全的 github 仓库 url 地址信息文档
 
-- https://github.com/copilot/c/f536c27a-bdc2-4f24-8789-015ecc1c4416
-- https://chatgpt.com/c/692763bb-cea4-8323-be44-f102ed45a017
-- https://gemini.google.com/app/5b3892f9fc81360e
+1. 完整阅读以下 url：
+   - https://github.com/copilot/c/f536c27a-bdc2-4f24-8789-015ecc1c4416
+   - https://chatgpt.com/c/692763bb-cea4-8323-be44-f102ed45a017
+   - https://gemini.google.com/app/5b3892f9fc81360e
+2. 将上述内容，整理成一份完整全面的报告，包含全部的 github 仓库，确保不会遗漏。
 
 ## 08 寻找 vue2 老项目迁移用的知识
 
