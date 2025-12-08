@@ -86,13 +86,11 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 - https://chatgpt.com/c/692763bb-cea4-8323-be44-f102ed45a017
 - https://gemini.google.com/app/5b3892f9fc81360e
 
----
-
-<!-- TODO: -->
+## 08 寻找 vue2 老项目迁移用的知识
 
 我想找一下关于 vue-cli（webpack + vue2） 项目迁移成 vite + vue3 项目的子代理、提示词、或 claude code skill。请帮我找相关的 github 仓库，至少 10 个。
 
-## 08 让 claude code 学会调用 gemini 来收集上下文
+## 09 让 claude code 学会调用 gemini 来收集上下文
 
 claude code 要学会用 gemini 的无头模式写法，开启多款并行的探索代理（Explore agents），来完成上下文收集。
 
