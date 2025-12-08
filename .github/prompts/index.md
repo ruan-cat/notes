@@ -91,3 +91,27 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
 <!-- TODO: -->
 
 我想找一下关于 vue-cli（webpack + vue2） 项目迁移成 vite + vue3 项目的子代理、提示词、或 claude code skill。请帮我找相关的 github 仓库，至少 10 个。
+
+## 08 让 claude code 学会调用 gemini 来收集上下文
+
+claude code 要学会用 gemini 的无头模式写法，开启多款并行的探索代理（Explore agents），来完成上下文收集。
+
+claude code 的 claude 主模型作为主代理，用于新建，并向并行子代理布置探索任务，收集信息，并从 gemini 驱动的探索子代理内，收集回上下文信息。便于 claude 模型做行为决策。
+
+---
+
+<!-- TODO:  -->
+
+我来帮你规划这个大规模的重构任务。首先，我需要深入了解当前代码库的结构和相关包的实现方式。
+
+让我启动多个探索代理来并行收集信息：
+
+```log
+  Running 3 Explore agents… (ctrl+o to expand)
+   ├─ 探索 vercel-deploy-tool 当前结构 · 7 tool uses · 32.1k tokens
+   │  ⎿  Read: packages\vercel-deploy-tool\tsconfig.json
+   ├─ 探索 CLI 实现参考包 · 11 tool uses · 26.7k tokens
+   │  ⎿  Read: configs-package\taze-config\src\cli.ts
+   └─ 探索 tsup 和 c12 配置 · 13 tool uses · 37.5k tokens
+      ⎿  Search: packages/vercel-deploy-tool/tsup.config.ts
+```
