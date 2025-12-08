@@ -7,38 +7,38 @@
 
 ## 2 MCP 与 Skill 标准类
 
-- `modelcontextprotocol/servers`：官方 MCP 参考实现与示例 Server。
-- `modelcontextprotocol/python-sdk`：MCP Python SDK，便于自定义 Server。
-- `modelcontextprotocol/typescript-sdk`：MCP TS/JS SDK，对接前后端工具。
-- `microsoft/playwright-mcp`：浏览器自动化 MCP，让 Claude 具备页面操作能力。
-- `BeehiveInnovations/zen-mcp-server`：MCP Server 示例，可参考多工具接入。
-- `appcypher/awesome-mcp-servers`：社区 MCP Server 清单。
-- `wong2/awesome-mcp-servers`：另一份 MCP Server 精选清单。
-- `anthropic/anthropic-cookbook`：官方示例，含 MCP、工具调用、RAG 等。
-- `pydantic/pydantic-ai`：含 mcp-run-python 等能力，支持安全执行代码。
-- `simonw/llm`：CLI 工具，插件生态可与 Claude 协同。
+- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)：官方 MCP 参考实现与示例 Server。
+- [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)：MCP Python SDK，便于自定义 Server。
+- [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)：MCP TS/JS SDK，对接前后端工具。
+- [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)：浏览器自动化 MCP，让 Claude 具备页面操作能力。
+- [BeehiveInnovations/zen-mcp-server](https://github.com/BeehiveInnovations/zen-mcp-server)：MCP Server 示例，可参考多工具接入。
+- [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers)：社区 MCP Server 清单。
+- [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers)：另一份 MCP Server 精选清单。
+- [anthropic/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook)：官方示例，含 MCP、工具调用、RAG 等。
+- [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)：含 mcp-run-python 等能力，支持安全执行代码。
+- [simonw/llm](https://github.com/simonw/llm)：CLI 工具，插件生态可与 Claude 协同。
 
 ## 3 Coding Agent / IDE 插件
 
-- `cline/cline`：原 Claude Dev，VS Code 插件，强化文件、终端、浏览器工具链。
-- `Aider-AI/aider`：CLI 结对编程，支持 Claude 3.5，长程多文件修改强。
-- `continuedev/continue`：开源 IDE Copilot，支持自定义上下文与 Claude。
-- `All-Hands-AI/OpenHands`：原 OpenDevin，自主软件工程 Agent 平台。
-- `abi/screenshot-to-code`：视觉生成前端代码，可配合 Claude 视觉能力。
-- `Exafunction/codeium`：自托管/云补全，对比参考 Claude 工具链。
-- `TabbyML/tabby`：自托管补全，可与 Claude/工具结合。
+- [cline/cline](https://github.com/cline/cline)：原 Claude Dev，VS Code 插件，强化文件、终端、浏览器工具链。
+- [Aider-AI/aider](https://github.com/Aider-AI/aider)：CLI 结对编程，支持 Claude 3.5，长程多文件修改强。
+- [continuedev/continue](https://github.com/continuedev/continue)：开源 IDE Copilot，支持自定义上下文与 Claude。
+- [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)：原 OpenDevin，自主软件工程 Agent 平台。
+- [abi/screenshot-to-code](https://github.com/abi/screenshot-to-code)：视觉生成前端代码，可配合 Claude 视觉能力。
+- [Exafunction/codeium](https://github.com/Exafunction/codeium)：自托管/云补全，对比参考 Claude 工具链。
+- [TabbyML/tabby](https://github.com/TabbyML/tabby)：自托管补全，可与 Claude/工具结合。
 
 ## 4 Prompt 与规则集合
 
-- `patrickjmcd/awesome-cursorrules`：Cursor 规则合集，含多栈专家模式。
-- `langgptai/awesome-claude-prompts`：Claude 提示词大全。
-- `danielmiessler/fabric`：提示模式库，可作技能模板。
-- `anthropic/anthropic-cookbook`：再次列出，便于按提示/工具示例检索。
-- `quemsah/awesome-claude-plugins`：社区插件与规则清单。
-- `hesreallyhim/awesome-claude-code`：Claude 相关资源整理。
-- `ComposioHQ/composio`：Agent/工具编排，支持 Claude。
-- `Cloudflare/flows`：自动化/工作流示例，可与 Claude 工具结合。
-- `replicate/cog-templates`：模型/工具生成部署模板，可配合 Claude 生成代码后落地。
+- [patrickjmcd/awesome-cursorrules](https://github.com/patrickjmcd/awesome-cursorrules)：Cursor 规则合集，含多栈专家模式。
+- [langgptai/awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)：Claude 提示词大全。
+- [danielmiessler/fabric](https://github.com/danielmiessler/fabric)：提示模式库，可作技能模板。
+- [anthropic/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook)：再次列出，便于按提示/工具示例检索。
+- [quemsah/awesome-claude-plugins](https://github.com/quemsah/awesome-claude-plugins)：社区插件与规则清单。
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)：Claude 相关资源整理。
+- [ComposioHQ/composio](https://github.com/ComposioHQ/composio)：Agent/工具编排，支持 Claude。
+- [Cloudflare/flows](https://github.com/cloudflare/flows)：自动化/工作流示例，可与 Claude 工具结合。
+- [replicate/cog-templates](https://github.com/replicate/cog-templates)：模型/工具生成部署模板，可配合 Claude 生成代码后落地。
 
 ## 5 使用建议
 
