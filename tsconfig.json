@@ -73,6 +73,7 @@
 		"./docs/**/*.md",
 		"./.github/**/*.md",
 		"./.claude/**/*.md",
+		"./.cursor/**/*.md",
 		"./openspec/**/*.md",
 		"GEMINI.md",
 		"README.md",
