@@ -1,9 +1,9 @@
-# codebuddy ，AI 编程 IDE
+# codebuddy,AI 编程 IDE
 
 ## IDE
 
 - 官网（国内版）： https://copilot.tencent.com/ide/
-- 官网（国际版）： https://www.codebuddy.com/
+- 官网（国际版）： https://www.codebuddy.ai/
 
 ## vscode 插件
 
