@@ -122,3 +122,13 @@ swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
 - https://github.com/orgs/community/discussions/179124
 
 ### 已修复
+
+## 学习 OpenSpec <Badge type="tip" text="已完成" />
+
+这个工具看起来类似于 `taskmaster-ai` ，是一个定义任务规格，任务进度的工具。似乎可以试试看。
+
+需要专门学习学会如何使用该工具提供的一系列命令。
+
+- https://github.com/hex-novaflow-ai/OpenSpec-Chinese
+- https://github.com/Fission-AI/OpenSpec
+- [`🚀开发者福音！现有项目用AI迭代？OpenSpec规范驱动开发！让AI按规范写代码，真正做到零失误！支持Cursor、Claude Code、Codex！`](https://www.bilibili.com/video/BV1fFWJztEAu/)
