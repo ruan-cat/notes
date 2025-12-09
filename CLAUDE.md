@@ -1,14 +1,17 @@
 <!-- OPENSPEC:START -->
+
 # OpenSpec Instructions
 
 These instructions are for AI assistants working in this project.
 
 Always open `@/openspec/AGENTS.md` when the request:
+
 - Mentions planning or proposals (words like proposal, spec, change, plan)
 - Introduces new capabilities, breaking changes, architecture shifts, or big performance/security work
 - Sounds ambiguous and you need the authoritative spec before coding
 
 Use `@/openspec/AGENTS.md` to learn:
+
 - How to create and apply change proposals
 - Spec format and conventions
 - Project structure and guidelines
@@ -113,6 +116,19 @@ export function successResponse<T>(data: T, message: string = "操作成功") {
 - 报告文件名称命名要求：
   1. 前缀以日期命名。包括年月日。日期格式 `YYYY-MM-DD` 。
   2. 用小写英文加短横杠的方式命名。
+- 报告的一级标题： 必须是日期`YYYY-MM-DD`+报告名的格式。
+  - 好的例子： `2025-12-09 修复 @ruan-cat/commitlint-config 包的 negation pattern 处理错误` 。前缀包含有 `YYYY-MM-DD` 日期。
+  - 糟糕的例子： `构建与 fdir/Vite 事件复盘报告` 。前缀缺少 `YYYY-MM-DD` 日期。
+- 报告日志信息的代码块语言： 一律用 `log` 作为日志信息的代码块语言。如下例子：
+
+  ````markdown
+  日志如下：
+
+  ```log
+  日志信息……
+  ```
+  ````
+
 - 报告语言： 默认用简体中文。
 
 ## 项目概览
