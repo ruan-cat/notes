@@ -34,10 +34,7 @@
 		- https://github.com/vuejs/language-tools/tree/master/extensions/vscode#configs
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
-	"vue.server.includeLanguages": [
-		"vue",
-		"markdown"
-	],
+	"vue.server.includeLanguages": ["vue", "markdown"],
 	/** 忽略特定的文件夹 不予搜索 */
 	"search.exclude": {
 		"**/dist": true,
@@ -45,7 +42,7 @@
 		"**/.temp": true,
 		"**/.vercel": true,
 		"**/.turbo": true,
-		"**/cache": true,
+		"**/cache": true
 	},
 	// 配置多根项目的目录地址 默认为项目根目录
 	"terminal.integrated.cwd": "${workspaceFolder}",

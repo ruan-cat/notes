@@ -1,51 +1,33 @@
 {
 	"$schema": "https://turbo.build/schema.json",
+	"ui": "tui",
 	"tasks": {
-		"//#pnpm:build": {
+		"//#do-build": {
 			"cache": true,
-			"outputs": [
-				"**/.vuepress/dist/**",
-				"**/.vitepress/dist/**"
+			"outputs": ["**/.vuepress/dist/**", "**/.vitepress/dist/**"],
+			"dependsOn": [
+				"@ruan-cat-docs/notes#build:docs",
+				"@ruan-cat-docs/docs-01-star#build:docs",
+				"@ruan-cat-docs/rpgmv-dev-notes#build:docs"
 			]
 		},
 		"//#deploy-on-vercel": {
 			"cache": false,
-			"dependsOn": [
-				"//#pnpm:build"
-			]
+			"dependsOn": ["//#do-build"]
 		},
 		"//#do-deploy": {
 			"cache": false,
-			"dependsOn": [
-				"//#deploy-on-vercel"
-			]
-		},
-		"docs:update-package": {
-			"cache": false,
-			"dependsOn": []
-		},
-		"clear": {
-			"dependsOn": [
-				"^clear"
-			]
+			"dependsOn": ["//#deploy-on-vercel"]
 		},
 		"do-build-note-doc": {
 			"cache": true,
-			"outputs": [
-				"docs/ruan-cat-notes/docs/.vitepress/dist/**"
-			],
-			"dependsOn": [
-				"@ruan-cat-docs/notes#build:docs"
-			]
+			"outputs": ["docs/ruan-cat-notes/docs/.vitepress/dist/**"],
+			"dependsOn": ["@ruan-cat-docs/notes#build:docs"]
 		},
 		"do-build-01star-doc": {
 			"cache": true,
-			"outputs": [
-				"docs/docs-01-star/docs/.vitepress/dist/**"
-			],
-			"dependsOn": [
-				"@ruan-cat-docs/docs-01-star#build:docs"
-			]
+			"outputs": ["docs/docs-01-star/docs/.vitepress/dist/**"],
+			"dependsOn": ["@ruan-cat-docs/docs-01-star#build:docs"]
 		}
 	}
 }

@@ -36,3 +36,7 @@
 - vite-plugin-dts
 
 现在需要想办法实现简单的生成。试着用 `vite-plugin-autogeneration-import-file` 在组件库端完成类型文件生成，避免在应用端手动配置 vite 生成类型。太繁琐了。
+
+## tsdown 是否是封装组件库的新选择？
+
+尝试用 tsdown 实现简单的 vue 组件库封装。

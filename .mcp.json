@@ -1,0 +1,10 @@
+{
+	"mcpServers": {
+		"taskmaster-ai": {
+			"type": "stdio",
+			"command": "task-master-ai",
+			"args": [],
+			"env": {}
+		}
+	}
+}

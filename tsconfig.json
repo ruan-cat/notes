@@ -71,17 +71,19 @@
 		// "scripts"
 		// 包含全部的md文件
 		"./docs/**/*.md",
-		// 包含github内写的提示词文件
 		"./.github/**/*.md",
-		// 包含gemini的提示词文件
+		"./.claude/**/*.md",
+		"./.cursor/**/*.md",
+		"./openspec/**/*.md",
 		"GEMINI.md",
 		"README.md",
-		"CLAUDE.md"
+		"CLAUDE.md",
+		"GEMINI.md"
 	],
 	/* 模仿其他项目加上的排除配置 */
 	"exclude": [
 		"node_modules",
-		"dist",
+		"dist"
 	],
 	/**
 		让volar对md提供基础的类型支持

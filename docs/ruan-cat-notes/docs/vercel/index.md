@@ -10,7 +10,7 @@
 
 ## 额度
 
-- https://github.com/RuanZhongNan/RPGMV-dev-notes/actions/runs/9976519939/job/27569258838
+- https://github.com/ruan-cat/notes/actions/runs/9976519939/job/27569258838
 - https://github.com/vercel/vercel/discussions/6617
 - https://vercel.com/docs/limits/overview#deployments-per-day-(free)
 

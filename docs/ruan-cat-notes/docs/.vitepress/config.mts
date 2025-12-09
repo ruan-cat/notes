@@ -20,7 +20,7 @@ const userConfig = setUserConfig({
 	themeConfig: {
 		nav: [
 			{
-				link: "/learn-todo/",
+				link: "/todo/",
 				text: "学习待办",
 			},
 			{
@@ -47,7 +47,7 @@ const userConfig = setUserConfig({
 		socialLinks: [
 			{
 				icon: "github",
-				link: "https://github.com/ruan-cat/RPGMV-dev-notes",
+				link: "https://github.com/ruan-cat/notes",
 			},
 		],
 	},

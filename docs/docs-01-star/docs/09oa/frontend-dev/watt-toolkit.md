@@ -6,4 +6,4 @@
 
 ## 其他边缘的注意事项
 
-- https://ruan-cat-notes.ruan-cat.com/Watt-Toolkit/ignore.html
+- https://notes.ruan-cat.com/Watt-Toolkit/

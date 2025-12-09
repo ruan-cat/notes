@@ -21,9 +21,6 @@ node_modules/
 # 忽略掉电脑层面上的工作区配置 每一个工作区都应该自行实现对应的配置
 this-proj.code-workspace
 
-# 忽略掉总是会自动生成的文件夹 该内容都是用typedoc自动生成的文档；
-docs/docs-typedoc
-
 # 忽略掉 @vitest/ui 生成的本地测试页面
 html
 
@@ -49,5 +46,9 @@ auto-imports.d.ts
 # 忽略vitepress的缓存文件
 */**/.vitepress/dist
 */**/.vitepress/cache
+
+
+# 忽略 claude 的 statusline 日志文件
+.claude/statusline.log
 
 .vercel

@@ -64,7 +64,7 @@ function clear() {
 		.command-preview {
 			margin-top: 15px;
 			padding: 10px;
-			background-color: #f5f7fa;
+			background-color: var(--vp-c-bg-soft);
 			border-radius: 4px;
 
 			p {
@@ -75,7 +75,7 @@ function clear() {
 			code {
 				display: block;
 				padding: 10px;
-				background-color: #e6e8eb;
+				background-color: var(--vp-code-bg);
 				border-radius: 4px;
 				word-break: break-all;
 				font-family: monospace;

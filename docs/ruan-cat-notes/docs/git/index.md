@@ -92,7 +92,7 @@ git config --local --list
 
 ```plain
 > git pull --tags origin hope
-> fatal: unable to access 'https://github.com/RuanZhongNan/RPGMV-dev-notes.git/': SSL certificate problem: unable to get local issuer certificate
+> fatal: unable to access 'https://github.com/ruan-cat/notes.git/': SSL certificate problem: unable to get local issuer certificate
 ```
 
 ## 更改本机全局的默认主分支名称
@@ -223,3 +223,15 @@ To add an exception for this directory, call:
 ## 退出 git bash
 
 - https://blog.csdn.net/weixin_41287260/article/details/89813851
+
+按 Esc 键退出编辑模式，大写英文模式下输入 ZZ ，然后回车。
+
+## clone 项目时，总是要输入用户名和密码
+
+- https://blog.csdn.net/lemonzjk/article/details/135330630
+
+设置 git 保存凭证即可。
+
+```bash
+git config --global credential.helper store
+```

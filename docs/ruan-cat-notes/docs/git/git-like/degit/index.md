@@ -38,8 +38,6 @@ $env:NODE_TLS_REJECT_UNAUTHORIZED=0; degit XXX
 	<DynamicSplicingDegitCmd />
 </ClientOnly>
 
-<!-- TODO: 待开发 -->
-
 ## HTTPS_PROXY 环境变量方案
 
 - https://github.com/Rich-Harris/degit/issues/143#issuecomment-1172888955

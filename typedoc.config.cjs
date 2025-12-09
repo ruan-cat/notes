@@ -1,16 +1,3 @@
-// {
-// 	"entryPoints": [
-// 		"./src/index.ts"
-// 	],
-// 	"tsconfig": "./tsconfig.json",
-// 	"cleanOutputDir": true,
-// 	"out": "docs-typedoc",
-// 	"sidebar": {
-// 		"fullNames": true,
-// 		"parentCategory": "API"
-// 	}
-// }
-
 /**
  * @type {import('typedoc').TypeDocOptions}
  *

@@ -13,8 +13,6 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
-// import typedocConf from "../../../../typedoc.config.cjs";
-
 import theme from "./theme.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -36,10 +34,6 @@ export default defineUserConfig({
 			lang: "zh-CN",
 			title: "阮喵喵笔记",
 			description: "自己的笔记",
-
-			// https://theme-hope.vuejs.press/zh/config/theme/i18n.html
-			// TODO 想设置这个名称 右侧侧边栏名称？
-			// metaLocales
 		},
 	},
 

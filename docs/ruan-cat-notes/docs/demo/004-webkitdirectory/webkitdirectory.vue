@@ -20,8 +20,6 @@ const readDir = async () => {
 		console.log(entry.kind, entry.name);
 	}
 };
-
-// TODO: 待实现
 </script>
 
 <template>

@@ -50,5 +50,5 @@ dir:
 ## 联系方式
 
 - [BiliBili](https://space.bilibili.com/359907572)
-- [GitHub](https://github.com/RuanZhongNan)
-- [Gitee](https://gitee.com/HechiCollegeComputerAssociation)
+- [GitHub](https://github.com/ruan-cat)
+- [Gitee](https://gitee.com/ruan-cat)

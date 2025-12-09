@@ -1,18 +1,5 @@
 {
 	"mcpServers": {
-		"promptx": {
-			"command": "cmd",
-			"args": [
-				"/c",
-				"npx",
-				"-y",
-				"-f",
-				"--registry",
-				"https://registry.npmjs.org",
-				"dpml-prompt@latest",
-				"mcp-server"
-			]
-		},
 		"context7": {
 			"command": "cmd",
 			"args": [
@@ -22,16 +9,22 @@
 				"@upstash/context7-mcp"
 			]
 		},
-		"fetch-mcp": {
+		"chrome-devtools": {
+			"type": "stdio",
 			"command": "cmd",
 			"args": [
 				"/c",
 				"npx",
-				"-y",
-				"@tokenizin/mcp-npx-fetch"
+				"chrome-devtools-mcp@latest"
 			],
-			"autoApprove": [
-				"fetch_markdown"
+			"env": {}
+		},
+		"office-word-mcp-server": {
+			"command": "uvx",
+			"args": [
+				"--from",
+				"office-word-mcp-server",
+				"word_mcp_server"
 			]
 		}
 	}

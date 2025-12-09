@@ -1,4 +1,15 @@
+---
+juejin: TODO
+desc: TODO
+---
+
+<!-- TODO: 没有准备好发文 -->
+
 # cloudflare worker 怎么准备好 pnpm 管理器？
+
+> **摘要**：
+>
+> TODO: 没有准备好发文
 
 ## ci-info
 

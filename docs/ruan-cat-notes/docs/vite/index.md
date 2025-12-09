@@ -1,4 +1,4 @@
-# vite，本地开发环境、打包工具
+# vite,本地开发环境、打包工具
 
 ## 打包错误
 
@@ -21,7 +21,7 @@ Error: Module "fs" has been externalized for browser compatibility. Cannot acces
 
 - https://cn.vitejs.dev/guide/troubleshooting.html#others
 
-TODO: 一个可能的方案
+一个可能的方案
 
 - https://juejin.cn/post/7145383283038093319
 

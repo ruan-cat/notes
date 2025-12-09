@@ -1,4 +1,4 @@
-# vitepress-theme-teek ，一款主题
+# vitepress-theme-teek,一款 vitepress 主题
 
-- https://github.com/Kele-Bingtang/vitepress-theme-teek
-- https://vp.teek.top/
+- 仓库： https://github.com/Kele-Bingtang/vitepress-theme-teek
+- 文档： https://vp.teek.top/

@@ -1,0 +1,53 @@
+name: CI
+
+env:
+  # https://turborepo.com/docs/crafting-your-repository/constructing-ci#enabling-remote-caching
+  # https://vercel.com/docs/monorepos/remote-caching#use-remote-caching-from-external-ci/cd
+  TURBO_TOKEN: ${{ secrets.vercel_token }}
+  TURBO_TEAM: "ruancat-projects"
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出分支
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx", "turbo"]
+
+      - name: 安装node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          cache: pnpm
+
+      - name: 检查版本
+        run: |
+          node -v
+          pnpm -v
+          vc -v
+          turbo --version
+
+      - name: pnpm全局检查依赖包
+        run: pnpm ls -g
+
+      - name: turbo login 远程登录
+        run: turbo login --token=${{env.TURBO_TOKEN}} --team=${{env.TURBO_TEAM}}
+
+      - name: turbo link 链接远程项目
+        run: turbo link --token=${{env.TURBO_TOKEN}} --scope=${{env.TURBO_TEAM}} --yes
+
+      - name: turbo并发打包全部子项目
+        run: pnpm run ci

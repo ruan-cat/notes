@@ -1,6 +1,6 @@
-# 从 vue 组件生成文档 ？
+# 从 vue 组件生成文档
 
-TODO: 写 vue 组件，直接生成文档？
+如何实现写 vue 组件，直接生成文档？
 
 期望实现有效的的文档生成。比如说我使用 vue 的组合式 api，或者是选项式 api。不论在 vue2 还是 vue3，都可以根据 jsdoc 或者是 tsdoc 的格式来自动生成文档。
 
@@ -119,3 +119,13 @@ https://gitlab.com/vuedoc/parser#features
 
 - html
 - md
+
+## 不再跟进考虑
+
+### 人工编写 vitepress 文档代替自动生成文档
+
+现在写 vue3 + typescript 的组件时，只需要定义好 typescript 类型就行。写一个组件就对应写 vitepress 动态展示的 vue 组件文档即可。不需要考虑用什么注释的方式来生成文档了。
+
+### 让 AI 阅读参数并编写文档
+
+没必要自己折腾从 vue 组件内获取数据并渲染了，让 AI 读取组件的参数，生成 markdown 文档就可以了。这样效率更高。

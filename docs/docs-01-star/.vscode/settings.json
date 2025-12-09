@@ -5,8 +5,8 @@
 			"uploader": "github",
 			"github": {
 				// 图片上传到专门的 01星球文档图片目录
-				"path": "01s-docs/",
+				"path": "01s-docs/"
 			}
 		}
-	},
+	}
 }

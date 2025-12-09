@@ -1,0 +1,137 @@
+# https://github.com/Mattraks/delete-workflow-runs
+name: 🧹 智能清理工作流运行记录
+
+on:
+  schedule:
+    # 每月第一天 02:00 UTC 自动清理 (避开发版高峰期)
+    - cron: "0 2 1 * *"
+  workflow_dispatch:
+    inputs:
+      cleanup_strategy:
+        description: "清理策略"
+        required: true
+        default: "conservative"
+        type: choice
+        options:
+          - "conservative" # 保守模式：只清理失败/取消的运行
+          - "aggressive" # 激进模式：清理所有旧运行
+          - "test_only" # 仅清理测试工作流
+      days:
+        description: "保留天数 (保守模式: 45天, 激进模式: 30天)"
+        required: false
+        default: "45"
+      minimum_runs:
+        description: "每个工作流最少保留运行数"
+        required: false
+        default: "8"
+      target_workflow:
+        description: "目标工作流名称 (留空清理所有)"
+        required: false
+      dry_run:
+        description: "模拟运行 (不实际删除)"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  # 保守清理：优先清理失败和取消的运行，保护重要记录
+  conservative-cleanup:
+    if: github.event.inputs.cleanup_strategy == 'conservative' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: 🧹 清理失败和取消的运行记录
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: ${{ github.event.inputs.days || '45' }}
+          keep_minimum_runs: ${{ github.event.inputs.minimum_runs || '8' }}
+          delete_workflow_pattern: ${{ github.event.inputs.target_workflow }}
+          delete_workflow_by_state_pattern: "active"
+          delete_run_by_conclusion_pattern: "cancelled,failure,action_required"
+          dry_run: ${{ github.event.inputs.dry_run || 'false' }}
+          check_branch_existence: true
+          check_pullrequest_exist: true
+
+      - name: 🧹 清理跳过的运行记录 (更长保留期)
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: "60" # 跳过的记录保留更长时间
+          keep_minimum_runs: ${{ github.event.inputs.minimum_runs || '8' }}
+          delete_workflow_pattern: ${{ github.event.inputs.target_workflow }}
+          delete_workflow_by_state_pattern: "active"
+          delete_run_by_conclusion_pattern: "skipped"
+          dry_run: ${{ github.event.inputs.dry_run || 'false' }}
+          check_branch_existence: true
+          check_pullrequest_exist: true
+
+  # 激进清理：清理所有旧运行（包括成功的）
+  aggressive-cleanup:
+    if: github.event.inputs.cleanup_strategy == 'aggressive'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: ⚡ 激进清理所有旧运行记录
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: ${{ github.event.inputs.days || '30' }}
+          keep_minimum_runs: ${{ github.event.inputs.minimum_runs || '8' }}
+          delete_workflow_pattern: ${{ github.event.inputs.target_workflow }}
+          delete_workflow_by_state_pattern: "active"
+          delete_run_by_conclusion_pattern: "ALL"
+          dry_run: ${{ github.event.inputs.dry_run || 'false' }}
+          check_branch_existence: true
+          check_pullrequest_exist: true
+
+  # 测试工作流专用清理：针对实验性和测试工作流
+  test-workflow-cleanup:
+    if: github.event.inputs.cleanup_strategy == 'test_only'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    strategy:
+      matrix:
+        workflow_pattern:
+          - "use-vercel-cli-and-turbo-build-1.yaml"
+          - "use-vercel-cli-build-try-1.yaml"
+          - "use-vercel-cli-build-try-2.yaml"
+          - "use-vercel-cli-build-try-3.yaml"
+          - "use-vercel-cli-build-try-4.yaml"
+          - "批量部署vercel项目"
+    steps:
+      - name: 🧪 清理实验性工作流记录
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: "15" # 实验性工作流保留期更短
+          keep_minimum_runs: "3"
+          delete_workflow_pattern: ${{ matrix.workflow_pattern }}
+          delete_workflow_by_state_pattern: "active"
+          delete_run_by_conclusion_pattern: "ALL"
+          dry_run: ${{ github.event.inputs.dry_run || 'false' }}
+
+  # 报告清理结果
+  cleanup-summary:
+    needs: [conservative-cleanup, aggressive-cleanup, test-workflow-cleanup]
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📊 清理完成报告
+        run: |
+          echo "## 🧹 工作流清理完成报告" >> $GITHUB_STEP_SUMMARY
+          echo "- 清理策略: ${{ github.event.inputs.cleanup_strategy || 'conservative' }}" >> $GITHUB_STEP_SUMMARY  
+          echo "- 保留天数: ${{ github.event.inputs.days || '45' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 最小保留数: ${{ github.event.inputs.minimum_runs || '8' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 模拟运行: ${{ github.event.inputs.dry_run || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 执行时间: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY

@@ -1,10 +1,7 @@
 {
 	"compilerOptions": {
 		"jsx": "preserve",
-		"lib": [
-			"DOM",
-			"ESNext"
-		],
+		"lib": ["DOM", "ESNext"],
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
 		"resolveJsonModule": true,
@@ -22,12 +19,6 @@
 		"verbatimModuleSyntax": true,
 		"skipLibCheck": true
 	},
-	"include": [
-		"**/.vitepress/**/*.ts",
-		"**/.vitepress/**/*.mts",
-		"**/.vitepress/**/*.vue"
-	],
-	"exclude": [
-		"node_modules"
-	]
+	"include": ["**/.vitepress/**/*.ts", "**/.vitepress/**/*.mts", "**/.vitepress/**/*.vue"],
+	"exclude": ["node_modules"]
 }

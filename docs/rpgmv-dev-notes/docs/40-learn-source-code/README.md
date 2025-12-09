@@ -12,7 +12,7 @@ dir:
 
 ## rmmv 源码翻译
 
-作者稍微整理的`mv`代码分类与翻译，目前保存在以下的开源仓库内。[点此进入仓库。](https://gitee.com/HechiCollegeComputerAssociation/rmmv-api)
+作者稍微整理的`mv`代码分类与翻译，目前保存在以下的开源仓库内。[点此进入仓库。](https://gitee.com/ruan-cat/rmmv-api)
 
 该源码翻译，大部分的整理与翻译并不是由仓库主人完成的，而是从其他论坛下载到的。作者仅仅是在此基础上做了一下改动，并增加了正版`mv`所具有的类。
 

@@ -4,14 +4,9 @@
 			"name": "gemini",
 			"api_base_url": "https://gemini-balance-lite.ruan-cat.com/v1beta/models/",
 			"api_key": "AIzaSyBP6MCPHw2Rw9lvEBflB-13D7A1j7PuscA,AIzaSyC5_0GSeA2XJZURzg9XLxSJDSPh7iLGarg",
-			"models": [
-				"gemini-2.5-flash",
-				"gemini-2.5-pro"
-			],
+			"models": ["gemini-2.5-flash", "gemini-2.5-pro"],
 			"transformer": {
-				"use": [
-					"gemini"
-				]
+				"use": ["gemini"]
 			}
 		}
 	],

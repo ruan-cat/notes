@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"dev": "turbo vite:dev",
+		"vite:dev": "vite",
+		"rm:types": "tsx ./scripts/del-types.ts",
+		"copy-changelog": "cpx CHANGELOG.md src",
+		"changelog-yaml": "tsx ./scripts/yaml-in-md.ts --md=./src/CHANGELOG.md",
+		"do-docs-dev": "vitepress dev src --port 8080",
+		"docs:dev": "turbo do-docs-dev"
+	}
+}

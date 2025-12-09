@@ -16,13 +16,15 @@
 
 ## eslint 和 prettier
 
-前端工程化的一部分。我个人人为是臭名昭著的，这里不过多介绍，请看外链：
+`前端工程化`的一部分。我个人认为是臭名昭著的，这里不过多介绍，请看外链：
 
 - https://notes.ruan-cat.com/eslint/struggle-with-eslint.html
 
 ## cz
 
-前端工程化的一部分。在 git commit 提交时，帮助我们写出满足常见提交规范的工具。
+`前端工程化`的一部分，全称 [commitizen](https://github.com/commitizen/cz-cli)，cz 是其命令行简写。
+
+通过主动运行 commitizen 命令行，在交互式的 cli 内，编写 git commit 提交信息。是帮助我们写出满足常见提交规范的工具。
 
 - https://notes.ruan-cat.com/cz/
 

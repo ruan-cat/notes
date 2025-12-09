@@ -1,4 +1,4 @@
-# claude-code-proxy，更换 claude code 的内部模型
+# claude-code-proxy,更换 claude code 的内部模型
 
 - 仓库教程： https://github.com/musistudio/claude-code-router/blob/main/README_zh.md
 - [`【免费Claude Code，免费模型有满血版几成功力？ Claude Code高热度AI编程工具】`](https://www.bilibili.com/video/BV1jGtEzNEAv/)

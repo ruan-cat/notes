@@ -1,0 +1,17 @@
+Plugin Status
+
+
+Plugins:
+
+  ✘ close-window-port · Failed
+     Plugin not found in any marketplace
+
+Plugin Loading Errors:
+
+  ✘ close-window-port@ruan-cat-tools
+     Plugin 'close-window-port' not found in marketplace 'ruan-cat-tools'
+
+     → Plugin may not exist in marketplace 'ruan-cat-tools'
+
+
+Press r to retry failed installations · Esc to return

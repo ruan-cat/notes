@@ -35,10 +35,6 @@ npx tsc --target es6 --module es6 src\hooks\useEarlyWarningMapData\useEarlyWarni
 
 通过 tsc 的文件配置，实现打包编译文件，让指定文件压缩成一个单个的 js 文件，而不是直接生成多份 js 文件。目前并没有找到合适的技术实现这样的配置。
 
-### 用 swagger 生成 ts 类型声明文件？
-
-TODO: swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
-
 ## 项目内的.d.ts 配置
 
 目前的痛点是，自己会经常的设计出一些就较为复杂的配置对象，而这些配置对象本身没有更多的类型提醒，开发效率很低。

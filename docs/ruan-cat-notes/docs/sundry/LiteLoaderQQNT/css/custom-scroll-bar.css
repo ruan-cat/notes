@@ -1,0 +1,118 @@
+/* 
+	阮喵喵的简单交互增强样式
+	这是远程备份 本地实例是另外一个文件 需要额外注意
+*/
+
+.group-panel {
+	--width-rzn: 1rem;
+	--transition-time-rzn: 2s;
+
+	--width-QQ-group-panel-rzn: 15rem;
+
+	--bgc-light-rzn: rgba(127, 127, 127, 0.1);
+	--bgc-dark-rzn: transparent;
+	/* color: transparent; */
+}
+
+.v-scrollbar-track {
+	width: var(--width-rzn) !important;
+}
+
+.v-scrollbar-thumb {
+	background-color: gray;
+	width: var(--width-rzn) !important;
+
+	border-radius: calc(var(--width-rzn) / 2) !important;
+
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
+.v-scrollbar-thumb:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+.group-member-list::-webkit-scrollbar {
+	width: var(--width-rzn) !important;
+}
+
+/* .group-member-list::-webkit-scrollbar-track {
+  width: var(--width-rzn) !important;
+} */
+
+/* QQ群 群成员列表 滚动条滑块 */
+.group-member-list::-webkit-scrollbar-thumb {
+	background-color: rgba(127, 127, 127, 0.5);
+
+	width: var(--width-rzn) !important;
+	border-radius: calc(var(--width-rzn) / 2) !important;
+}
+
+/* QQ群 群成员列表 滚动条滑块 */
+.group-member-list::-webkit-scrollbar-thumb:hover {
+	background-color: black;
+	/* 有疑惑 无效？ */
+	cursor: pointer;
+}
+
+/* .group-panel :not(.group-box__container[style="width: 180px;"])  {
+  width: 0 !important;
+} */
+
+.group-box,
+.group-notice,
+.group-member {
+	width: var(--width-QQ-group-panel-rzn) !important;
+}
+
+/* QQ群 群成员列表 宽度重设 */
+.group-box__container[style="width: 180px;"] {
+	width: var(--width-QQ-group-panel-rzn) !important;
+}
+
+.group-user:nth-child(odd) {
+	background-color: var(--bgc-dark-rzn);
+}
+
+.group-user:nth-child(even) {
+	background-color: var(--bgc-light-rzn);
+}
+
+/* 输入栏 */
+.chat-input-area {
+	margin: 1rem;
+
+	border-radius: 1rem;
+	border: 1px solid var(--bgc-light-rzn);
+
+	background-color: snow;
+}
+
+/* 
+  输入框 选中后增加边框颜色
+  参考资料 
+  - https://blog.csdn.net/progrmmmm/article/details/131814924
+  - https://juejin.cn/post/6844904101382357000#heading-27
+*/
+.chat-input-area:has(.ck-focused) {
+	box-shadow: 0px 1rem 2rem #bebebe;
+}
+
+/* QQ输入框 滚动条 */
+.q-scroll-view.msg-input::-webkit-scrollbar {
+	width: var(--width-rzn) !important;
+}
+
+/* QQ输入框 滚动条滑块 */
+.q-scroll-view.msg-input::-webkit-scrollbar-thumb {
+	background-color: rgba(127, 127, 127, 0.5);
+	width: var(--width-rzn) !important;
+	border-radius: calc(var(--width-rzn) / 2) !important;
+}
+
+/* QQ输入框 光标颜色 */
+.ck-content.ck-editor__editable {
+	caret-color: rgb(0, 153, 255);
+}

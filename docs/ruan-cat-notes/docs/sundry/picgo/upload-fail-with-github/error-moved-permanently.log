@@ -1,0 +1,22 @@
+2024-10-22 23:28:46 [PicGo INFO] Before transform
+2024-10-22 23:28:46 [PicGo INFO] Transforming... Current transformer is [path]
+2024-10-22 23:28:46 [PicGo INFO] Before upload
+2024-10-22 23:28:46 [PicGo INFO] beforeUploadPlugins: vsPicgoRenamePlugin running
+2024-10-22 23:28:46 [PicGo INFO] Uploading... Current uploader is [github]
+2024-10-22 23:28:47 [PicGo WARN] failed
+2024-10-22 23:28:47 [PicGo ERROR]
+------Error Stack Begin------
+StatusCodeError: 307 - {"message":"Moved Permanently","url":"https://api.github.com/repositories/503268809/contents/img/2024-10-22-23-28-46.png","documentation_url":"https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"}
+    at new StatusCodeError (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request-promise-core\lib\errors.js:32:1)
+    at Request.plumbing.callback (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request-promise-core\lib\plumbing.js:104:1)
+    at Request.RP$callback [as _callback] (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request-promise-core\lib\plumbing.js:46:1)
+    at Request.self.callback (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request\request.js:185:1)
+    at Request.emit (node:events:519:28)
+    at Request.<anonymous> (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request\request.js:1154:1)
+    at Request.emit (node:events:519:28)
+    at IncomingMessage.<anonymous> (F:\store\vscode\extensions\spades.vs-picgo-2.1.6\node_modules\request\request.js:1076:1)
+    at Object.onceWrapper (node:events:633:28)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+-------Error Stack End-------

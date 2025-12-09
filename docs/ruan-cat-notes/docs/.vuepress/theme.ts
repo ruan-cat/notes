@@ -37,7 +37,7 @@ export default hopeTheme({
 	// logo: '/logo.svg',
 	logo: undefined,
 
-	repo: "ruan-cat/RPGMV-dev-notes",
+	repo: "ruan-cat/notes",
 
 	docsDir: "docs",
 
@@ -55,7 +55,7 @@ export default hopeTheme({
 			icon: "flat-color-icons:timeline",
 		},
 		{
-			link: "/learn-todo/",
+			link: "/todo/",
 			text: "学习待办",
 			icon: "flat-color-icons:todo-list",
 		},
@@ -94,7 +94,7 @@ export default hopeTheme({
 	blog: {
 		medias: {
 			BiliBili: "https://space.bilibili.com/359907572",
-			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
+			Gitee: "https://gitee.com/ruan-cat",
 			GitHub: "https://github.com/ruan-cat",
 		},
 	},
@@ -149,7 +149,7 @@ export default hopeTheme({
 			 * Using Giscus
 			 */
 			provider: "Giscus",
-			repo: "ruan-cat/RPGMV-dev-notes",
+			repo: "ruan-cat/notes",
 			repoId: "R_kgDOH7md9w",
 			category: "Announcements",
 			categoryId: "DIC_kwDOH7md984CRo_I",

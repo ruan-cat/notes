@@ -30,11 +30,12 @@ pnpm i && pnpm run build:docs:01star
 npx wrangler deploy --assets=./docs/docs-01-star/docs/.vitepress/dist --compatibility-date 2025-06-15
 ```
 
-设置好部署的静态资产位置，在部署 page 时，需要指定静态文件的位置，故需要设置 `--assets` 参数。
+- 必须设置 `--assets` 参数：设置好部署的静态资产位置，在部署 `page` 时，需要指定静态文件的位置，故需要设置 `--assets` 参数。
+- `--assets` 参数允许写等于号： 经过实验，在 `wrangler deploy` 部署命令内，`--assets` 参数允许写等于号。
+- 必须设置 `--compatibility-date` 参数： wrangler 还要求必填 `--compatibility-date` 参数。这是语法决定的。
+- `--compatibility-date` 参数**不能**写等于号： 经过实验，不能写等于号来传参。
 
-wrangler 还要求必填 `--compatibility-date` 参数。
-
-这些可以在 wrangler 配置文件内完成配置。但是目前在 monorepo 内，不好实现 page 项目的分治处理，故不打算配置
+这些配置也可以在 wrangler 配置文件内编写。但是目前在 monorepo 内，不好实现 page 项目的分治处理，故不打算配置
 wrangler.toml。就和之前给 monorepo 配置 vercel.json 一样。
 
 ### 构建监视路径
@@ -46,3 +47,29 @@ docs/docs-01-star/*
 在 monorepo 内，为了避免重复构建，实现有针对性的构建，这里配置目标的文件夹目录。
 
 注意，这里并不是写 glob 语法。
+
+### cloudflare worker 配置总览
+
+大致效果如下图所示：
+
+![2025-10-08-17-12-18](https://gh-img-store.ruan-cat.com/img/2025-10-08-17-12-18.png)
+
+## 在 monorepo 内部署一个 nuxt/nitro 格式的 worker
+
+大体的做法和上面差不多。配置如下：
+
+![2025-12-07-22-48-28](https://gh-img-store.ruan-cat.com/img/2025-12-07-22-48-28.png)
+
+### 构建命令
+
+```bash
+pnpm i && pnpm run build:cloudflare:admin
+```
+
+### 部署命令
+
+按照 nitro 构建后的日志，编写该配置写法：
+
+```bash
+npx wrangler --cwd=./apps/admin/.output deploy
+```

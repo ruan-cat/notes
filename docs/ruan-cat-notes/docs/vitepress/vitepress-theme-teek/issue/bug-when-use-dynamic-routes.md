@@ -1,5 +1,7 @@
 # 在使用动态路由时，teek 主题无法正常渲染
 
+<!-- issue地址： https://github.com/Kele-Bingtang/vitepress-theme-teek/issues/142 -->
+
 - 可复现案例： https://github.com/ruan-cat/vitepress-theme-teek-bug-when-use-dynamic-routes
 
 复现步骤如下：

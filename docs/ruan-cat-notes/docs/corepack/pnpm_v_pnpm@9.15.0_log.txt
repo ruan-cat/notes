@@ -1,4 +1,4 @@
-PS E:\code\rzn\github-desktop-store\RPGMV-dev-notes> pnpm v pnpm@9.15.0
+PS E:\code\rzn\github-desktop-store\notes> pnpm v pnpm@9.15.0
 
 pnpm@9.15.0 | MIT | deps: none | versions: 1096
 Fast, disk space efficient package manager

@@ -7,10 +7,10 @@
 - https://pnpm.io/zh/cli/config
 
 ```bash
-# long
+# 长命令
 pnpm config list --global
 
-# short 失败 未识别出来 可能是和pnpm v7 v8 的cli区别。
+# 短命令 失败 未识别出来 可能是和pnpm v7 v8 的cli区别。
 pnpm c ls -g
 
 # 失败
@@ -22,7 +22,7 @@ pnpm config list -g
 
 ## 存储在 C 盘的内容并迁移清理
 
-发现 C:\Users\ruanzhongnan\AppData\Local 文件夹里面存在 pnpm-state 和 pnpm-cache 两个文件夹。如下图所示：
+发现 `C:\Users\ruanzhongnan\AppData\Local` 文件夹里面存在 `pnpm-state` 和 `pnpm-cache` 两个文件夹。如下图所示：
 
 ![2023-06-25-13-45-28](https://gh-img-store.ruan-cat.com/img/2023-06-25-13-45-28.png)
 
@@ -80,7 +80,7 @@ ERROR  The configured global bin directory "D:\store\pnpm\global-bin-dir" is n
 
 ![2023-06-25-14-06-14](https://gh-img-store.ruan-cat.com/img/2023-06-25-14-06-14.png)
 
-通过检查 C:\Users\ruanzhongnan\AppData\Local\pnpm\config\rc 的文件，发现仅有两条被配置了。
+通过检查 `C:\Users\ruanzhongnan\AppData\Local\pnpm\config\rc` 的文件，发现仅有两条被配置了。
 
 ![2023-06-25-14-07-51](https://gh-img-store.ruan-cat.com/img/2023-06-25-14-07-51.png)
 
@@ -92,7 +92,7 @@ ERROR  The configured global bin directory "D:\store\pnpm\global-bin-dir" is n
 
 尝试按照以下方案：
 
-- 检查 ~/AppData/Local/pnpm/config/rc 文件，手动移除掉内容的全部配置。
+- 检查 `~/AppData/Local/pnpm/config/rc` 文件，手动移除掉内容的全部配置。
 - 路径增加双引号。
 - 故意去除某个命令。
 
@@ -155,8 +155,8 @@ C:\Windows\system32>\store\pnpm\global-dir\5\node_modules\pnpm\bin\pnpm.cjs" i -
 
 ## 安装后无法被识别到
 
-```plain
-PS E:\code\rzn\personal-proj\RPGMV-dev-notes> pnpm -v
+```bash
+PS E:\code\rzn\personal-proj\notes> pnpm -v
 pnpm : 无法将“pnpm”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
 所在位置 行:1 字符: 1
 + pnpm -v
@@ -165,11 +165,11 @@ pnpm : 无法将“pnpm”项识别为 cmdlet、函数、脚本文件或可运�
     + FullyQualifiedErrorId : CommandNotFoundException
 ```
 
-参考资料 https://juejin.cn/post/7189174073899876409
+- https://juejin.cn/post/7189174073899876409
 
 ## cmd 无权限
 
-```plain
+```bash
 PS C:\Windows\system32> pnpm -v
 pnpm : 无法加载文件 E:\dev-evn\node-store\node_global\pnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:
 /go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
@@ -180,51 +180,18 @@ pnpm : 无法加载文件 E:\dev-evn\node-store\node_global\pnpm.ps1，因为在
     + FullyQualifiedErrorId : UnauthorizedAccess
 ```
 
-参考资料 https://blog.csdn.net/weixin_46212682/article/details/121784020
+- https://blog.csdn.net/weixin_46212682/article/details/121784020
 
 ## 在 vscode 终端内运行失败
 
-- vscode 设置为管理员权限运行
-  https://blog.csdn.net/qq_41701363/article/details/113992144
-
-- 综合解决方案
-  https://blog.csdn.net/weixin_41563986/article/details/121183842
+- vscode 设置为管理员权限运行： https://blog.csdn.net/qq_41701363/article/details/113992144
+- 综合解决方案： https://blog.csdn.net/weixin_41563986/article/details/121183842
 
 ## override.newPref.startsWith is not a function
 
 如下图所示，这里的 pnpm 想要实现全局依赖管理，就要先切换到 node16。在 node14 下是找不到全局依赖的。
 
 ![2023-06-12-14-52-45](https://gh-img-store.ruan-cat.com/img/2023-06-12-14-52-45.png)
-
-## 值得注意的版本差
-
-注意到在不同的 node 环境下，pnpm 有着不同的版本。
-
-### node16
-
-```bash
-PS C:\Windows\system32> node -v
-v16.19.0
-PS C:\Windows\system32> pnpm -v
-8.2.0
-```
-
-![2023-06-12-14-56-32](https://gh-img-store.ruan-cat.com/img/2023-06-12-14-56-32.png)
-
-### node14
-
-```bash
-PS C:\Windows\system32> node -v
-v14.20.1
-PS C:\Windows\system32> pnpm -v
-7.22.0
-```
-
-![2023-06-12-14-58-19](https://gh-img-store.ruan-cat.com/img/2023-06-12-14-58-19.png)
-
-### 猜测
-
-不知道是为什么，pnpm 作为全局包，在不同的 node 环境下，有着不同的版本。不知道是不是 nvm 本身的 node 导致全局包的存储全部混乱了。
 
 ## 使用 corepack 安装
 
