@@ -9,6 +9,7 @@
 - [Kiro](https://kiro.dev/downloads/)
 - [Codebuddy](https://www.codebuddy.ai/)
 - [antigravity](https://antigravity.google/download)
+- [Qoder](https://qoder.com/download)
 
 <!-- TODO: kiro 邮件提供给我的邀请码 懒得用 -->
 <!-- KIRO-bHZr-sOdS -->
