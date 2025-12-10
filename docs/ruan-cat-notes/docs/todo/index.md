@@ -356,3 +356,7 @@ ruan-cat-cli init cc -- statusline
 
 - https://forum.cursor.com/t/i-created-an-amazing-mode-called-riper-5-mode-fixes-claude-3-7-drastically/65516
 - https://github.com/wubin28/ICMwRIPER-5
+
+## 全局找一款工作流，将 github 开源信息的 TODO 都收集起来，制作成报表文档，便于整理复盘
+
+## vitepress 的 AI 搜索栏插件，便于让文档介入 AI 或者是大模型实现沟通，便于精准检索
