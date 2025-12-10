@@ -114,7 +114,7 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
       ⎿  Search: packages/vercel-deploy-tool/tsup.config.ts
 ```
 
-## 010 <!-- TODO: --> 调研 OpenSpec 的使用方式
+## 010 调研 OpenSpec 的使用方式
 
 需要专门学习学会如何使用该工具提供的一系列命令。
 
