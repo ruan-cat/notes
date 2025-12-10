@@ -143,3 +143,13 @@ $env:GEMINI_API_KEY="***"
 ## 想办法访问到 Google Antigravity
 
 - [`Google Antigravity 登录失败？中国地区完整解决方案与排查指南`](https://blog.csdn.net/qq_38912395/article/details/155539650)
+
+## 长时间连续运行 gemini cli 的方案
+
+gemini cli 目前（2025-12-10）还没有子代理能力，无法长期运行。但是在 openspec 的任务下，是可以实现长任务运行的。
+
+1. 用 openspec 新建一个长期运行的任务。
+2. 用 gemini 以自定义命令的方式，运行 openspec 生成的命令。
+3. 连续运行接近 1 小时，用完全部额度。触发限流。要过 22 小时才能恢复。
+
+![2025-12-10-21-13-42](https://gh-img-store.ruan-cat.com/img/2025-12-10-21-13-42.png)
