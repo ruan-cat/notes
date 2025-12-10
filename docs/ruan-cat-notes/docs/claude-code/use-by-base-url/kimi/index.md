@@ -136,5 +136,11 @@ claude --dangerously-skip-permissions
 
 ### 个人评价 kimi-for-coding 模型
 
+#### 直接使用并沟通时
+
 - 指令遵循很差。
 - 文档阅读、思考、任务规划很差。
+
+#### 执行 openspec 生成的长任务时（2025-12-10）
+
+在使用 openspec 给 claude code 新建一个长任务时，`kimi-for-coding` 模型表现一般，不会太差。
