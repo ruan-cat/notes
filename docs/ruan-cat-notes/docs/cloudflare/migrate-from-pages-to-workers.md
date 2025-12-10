@@ -18,11 +18,14 @@
 pnpm i && pnpm run build:docs:01star
 ```
 
-目前 cloudflare worker 用的是默认包管理器和环境都是 bun，被构建页面的项目是 monorepo+pnpm 项目。所以需要初始化 pnpm 管理器。
-
-但实际操作的时候，cloudflare 的云环境是包含有 pnpm 的，所以直接安装依赖即可。
-
-安装完依赖，就直接打包项目。这里是专门在 monorepo 的根包内暴露出一个命令，来构建子包的页面。
+1. 生成 `pnpm-lock.yaml` 依赖锁文件：
+   > 用指定的 `pnpm i` 命令，主动安装依赖，这样就可以在服务器环境内生成显性的 `pnpm-lock.yaml` 依赖锁文件，就可以在后续使用 pnpm 包管理器了。在 cloudflare worker 内，必须要识别到准确的 `pnpm-lock.yaml` 文件才能使用 pnpm。
+2. cloudflare worker 默认的包管理器和环境：
+   > 都是 `bun` 。
+3. 为什么可以直接使用 `pnpm i` 来安装依赖？
+   > cloudflare 的云环境是包含有 pnpm 的。
+4. 为什么一定要初始化 pnpm？
+   > 被构建页面的项目是 monorepo+pnpm 架构的项目，所以需要初始化 pnpm 管理器。否则后续子包无法在服务器内使用正确的包管理器构建。
 
 ### 部署命令
 
