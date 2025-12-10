@@ -26,3 +26,4 @@ netsh winhttp reset proxy
 - `glmcc` GLM 模型的 claude code
 - `kmcc` Kimi 思考模型的 claude code
 - `kfccc` `kimi-for-coding` 模型的 claude code
+- `arcc` `https://anyrouter.top` 公益站提供的 claude code key 国内代理
