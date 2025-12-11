@@ -168,3 +168,7 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
    - admin 管理后台。
    - nuxt 模板类。
 4. 将你检索的资料，生成出一份便于我阅读的 markdown 文档。且 markdown 文档必须满足 markdown 语法，不允许出现 markdown 表格语法错误的情况。
+
+### 01 输出 markdown 文档
+
+请将你的研究结果，生成出一个可以被我直接下载访问的 markdown 文档。
