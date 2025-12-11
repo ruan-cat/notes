@@ -86,7 +86,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
    - https://gemini.google.com/app/5b3892f9fc81360e
 2. 将上述内容，整理成一份完整全面的报告，包含全部的 github 仓库，确保不会遗漏。
 
-## 08 寻找 vue2 老项目迁移用的知识
+## 08 <!-- TODO: --> 寻找 vue2 老项目迁移用的知识
 
 我想找一下关于 vue-cli（webpack + vue2） 项目迁移成 vite + vue3 项目的子代理、提示词、或 claude code skill。请帮我找相关的 github 仓库，至少 10 个。
 
@@ -140,3 +140,5 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 ### 03
 
 1. `AGENTS.md` 文件是 OpenSpec 专用的文件么？还是说是大多数 AI 工具都能够共同识别的，作为业界共识的文件？
+
+## 011 <!-- TODO: --> 调研 uniapp 生态内，更加美观的，精彩的加载等待动效库
