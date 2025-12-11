@@ -143,7 +143,28 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 
 ## 011 调研 uniapp 生态内，更加美观的，精彩的加载等待动效库
 
-<!-- 报告在 docs\reports\2025-12-11-uniapp-vue3-loading-animation-libraries-research.md 内 -->
-
 1. 请你帮我在 github 内找在 uniapp vue3 typescript 的技术栈约束下，好用的动效库。
 2. 将调研结果输出成文档，供我阅读。
+
+---
+
+### 调研结果理解
+
+报告在 `docs\reports\2025-12-11-uniapp-vue3-loading-animation-libraries-research.md` 内。里面的这几个库质量很差，不如自己写。
+
+## 012 推荐几个使用 `@tanstack/vue-query` 的 github 仓库
+
+我想认真学习关于 `@tanstack/vue-query` 的基础使用，并快速应用在我的项目内。按照以下要求，帮我检索相关的资料。
+
+1. 我的项目类型包括：
+   - vite 前端项目类型
+   - nuxt 全栈项目类型
+   - vite + nitro 混合全栈项目
+   - uniapp 移动端项目
+2. 请你帮我在 github 内检索 9~15 个 github 仓库。
+3. github 仓库偏好如下：
+   - stars 数目多的。
+   - 更新频繁的。
+   - admin 管理后台。
+   - nuxt 模板类。
+4. 将你检索的资料，生成出一份便于我阅读的 markdown 文档。且 markdown 文档必须满足 markdown 语法，不允许出现 markdown 表格语法错误的情况。
