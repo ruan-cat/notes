@@ -1,5 +1,13 @@
 # chatgpt -- @tanstack/vue-query 学习与模板仓库精选（11 个）
 
+::: tip 已阅读完毕
+
+本报告已经阅读完毕。
+
+:::
+
+---
+
 本文件汇总了适用于 Vite、Nuxt、Nitro、UniApp 以及 Admin 后台场景的高质量
 GitHub 仓库，便于快速学习并在项目中落地使用。
 
@@ -26,7 +34,7 @@ Auto-import、SSR Prefetch、状态序列化、Devtools 等集成功能。
 
 ---
 
-## 3. yang1206 / uniapp-template
+## 3. yang1206 / uniapp-template <Badge type="tip" text="已克隆" />
 
 **仓库地址**：https://github.com/yang1206/uniapp-template
 **说明**：
