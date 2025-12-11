@@ -1,4 +1,4 @@
-# @tanstack/vue-query — 推荐仓库清单与学习指南
+# github-copilot -- @tanstack/vue-query — 推荐仓库清单与学习指南
 
 生成者: GitHub Copilot (为 ruan-cat 搜集)  
 生成日期: 2025-12-11

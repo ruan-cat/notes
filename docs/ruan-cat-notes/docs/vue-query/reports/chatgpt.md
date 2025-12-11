@@ -1,4 +1,4 @@
-# @tanstack/vue-query 学习与模板仓库精选（11 个）
+# chatgpt -- @tanstack/vue-query 学习与模板仓库精选（11 个）
 
 本文件汇总了适用于 Vite、Nuxt、Nitro、UniApp 以及 Admin 后台场景的高质量
 GitHub 仓库，便于快速学习并在项目中落地使用。

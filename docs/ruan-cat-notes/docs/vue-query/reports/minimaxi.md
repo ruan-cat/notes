@@ -9,7 +9,7 @@ AIGC:
   ReservedCode2: 30440220604dc0044bd3fdfb7726a71981854004fc38a53781f30d01457721d8412299f102203bb6dc4f09c5ec859e96140ba0cc1ef510d7637dde145d74b1eef1d18dca5986
 ---
 
-# @tanstack/vue-query GitHub 仓库推荐指南
+# minimaxi -- @tanstack/vue-query GitHub 仓库推荐指南
 
 > 基于 Vue Query 的高质量开源项目仓库精选，涵盖 Vite、Nuxt、Nitro、UniApp 等多种项目类型
 

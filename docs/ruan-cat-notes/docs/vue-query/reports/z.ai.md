@@ -1,4 +1,4 @@
-# @tanstack/vue-query 学习资源与项目推荐
+# z.ai -- @tanstack/vue-query 学习资源与项目推荐
 
 这份文档旨在帮助你快速学习 `@tanstack/vue-query` 的基础知识，并将其成功应用于你的项目中。内容涵盖了多种项目类型，并精选了来自 GitHub 的高质量仓库和学习资源。
 

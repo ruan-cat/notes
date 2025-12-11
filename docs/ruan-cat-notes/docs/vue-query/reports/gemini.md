@@ -1,4 +1,4 @@
-# TanStack Vue Query 学习与实战资源指南
+# gemini -- TanStack Vue Query 学习与实战资源指南
 
 这份文档精选了 12 个优质的 Github 仓库，涵盖了从官方示例、Nuxt 模块、Vite 脚手架到 Uniapp 适配器的全方位资源。旨在帮助你快速掌握 `@tanstack/vue-query` 并应用到各类前端及全栈项目中。
 

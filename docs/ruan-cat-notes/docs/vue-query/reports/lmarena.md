@@ -1,4 +1,4 @@
-# @tanstack/vue-query GitHub 仓库推荐指南
+# lmarena -- @tanstack/vue-query GitHub 仓库推荐指南
 
 > 📚 本文档整理了使用 `@tanstack/vue-query` 的优质 GitHub 仓库，适用于 Vite、Nuxt、Vite+Nitro 和 UniApp 等多种项目类型的学习与实践。
 

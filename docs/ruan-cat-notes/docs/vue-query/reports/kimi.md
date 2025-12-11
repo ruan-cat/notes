@@ -1,4 +1,4 @@
-# @tanstack/vue-query 实战仓库清单
+# kimi -- @tanstack/vue-query 实战仓库清单
 
 精选 12 个 GitHub 开源项目，覆盖 Vite / Nuxt / Vite+Nitro / UniApp 四大场景，全部已集成 `@tanstack/vue-query`，星数高、更新快、代码清晰，适合“抄作业”式学习。
 
