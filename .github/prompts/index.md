@@ -141,4 +141,9 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 
 1. `AGENTS.md` 文件是 OpenSpec 专用的文件么？还是说是大多数 AI 工具都能够共同识别的，作为业界共识的文件？
 
-## 011 <!-- TODO: --> 调研 uniapp 生态内，更加美观的，精彩的加载等待动效库
+## 011 调研 uniapp 生态内，更加美观的，精彩的加载等待动效库
+
+<!-- 报告在 docs\reports\2025-12-11-uniapp-vue3-loading-animation-libraries-research.md 内 -->
+
+1. 请你帮我在 github 内找在 uniapp vue3 typescript 的技术栈约束下，好用的动效库。
+2. 将调研结果输出成文档，供我阅读。
