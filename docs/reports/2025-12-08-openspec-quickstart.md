@@ -92,7 +92,7 @@ openspec/
 - Migration: ...
 ```
 
-## 8. 规格全生命周期流程（含 mermaid）
+## 8. 规格全生命周期流程
 
 - 创建：`openspec-chinese proposal "功能"` 或 `pnpm dlx @org-hex/openspec-chinese proposal "功能"`。
 - 细化：在 `tasks.md` 拆任务；在 `specs/` 按模板写增量规范。
@@ -114,16 +114,12 @@ flowchart TD
   I --> J[后续变更重新走 Proposal]
 ```
 
----
+## 9. 用 AI 模型补全生成的 `openspec/project.md` 文件
 
+在生成完 `openspec/project.md` 文件后，应该向大模型提出以下要求，并要求大模型补全完善 `openspec/project.md` 文档。
+
+```markdown
 1. 填充您的项目上下文:
    "请阅读 openspec/project.md 并帮助我填写
    关于我的项目、技术栈和约定的详细信息"
-
-2. 创建您的第一个变更提案:
-   "我想添加 [您的功能这里]。请为此
-   功能创建一个 OpenSpec 变更提案"
-
-3. 学习 OpenSpec 工作流程:
-   "请从 openspec/AGENTS.md 解释 OpenSpec 工作流程
-   以及我应该如何在这个项目中与您合作"
+```
