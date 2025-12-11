@@ -10,3 +10,7 @@ $env:ANTHROPIC_BASE_URL = "https://anyrouter.top";
 ## 注意事项
 
 1. **ANTHROPIC_BASE_URL 不能设置成国内镜像**： anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
+
+## 使用体验
+
+响应速度太慢了
