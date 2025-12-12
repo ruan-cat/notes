@@ -172,3 +172,34 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 ### 01 输出 markdown 文档
 
 请将你的研究结果，生成出一个可以被我直接下载访问的 markdown 文档。
+
+## 013 处理 cloudflare worker 默认依赖安装工具为 bun 导致无法识别 pnpm 工作区协议的故障
+
+请阅读以下在 cloudflare worker 内出现的故障。
+
+请告诉我如何让 cloudflare worker 使用 pnpm 来安装依赖，而不是默认的 bun？
+
+```log
+14:45:31.236	Initializing build environment...
+14:45:34.291	Success: Finished initializing build environment
+14:45:34.961	Cloning repository...
+14:45:38.182	No build output detected to cache. Skipping.
+14:45:38.183	No dependencies detected to cache. Skipping.
+14:45:40.454	Detected the following tools from environment: nodejs@22.14.0, pnpm@10.25.0
+14:45:40.455	Installing nodejs 22.14.0
+14:45:49.811	Installing project dependencies: bun install
+14:45:49.997	bun install v1.2.15 (df017990)
+14:45:50.040	Resolving dependencies
+14:46:00.120	Resolved, downloaded and extracted [4662]
+14:46:00.120	error: Workspace dependency "@01s-11comm/admin" not found
+14:46:00.120
+14:46:00.120	Searched in "./^"
+14:46:00.120
+14:46:00.120	Workspace documentation: https://bun.sh/docs/install/workspaces
+14:46:00.121
+14:46:00.121
+14:46:00.121	error: Workspace dependency "@01s-11comm/type" not found
+14:46:00.121
+14:46:00.121	Searched in "./^"
+14:46:00.121
+```
