@@ -2,14 +2,6 @@
 
 这份文档精选了 12 个优质的 Github 仓库，涵盖了从官方示例、Nuxt 模块、Vite 脚手架到 Uniapp 适配器的全方位资源。旨在帮助你快速掌握 `@tanstack/vue-query` 并应用到各类前端及全栈项目中。
 
-## 目录
-
-1. [核心与官方资源 (Core)](#1-核心与官方资源-core)
-2. [Nuxt 全栈集成 (Nuxt Integration)](#2-nuxt-全栈集成-nuxt-integration)
-3. [Vite 前端模版 (Vite Starters)](#3-vite-前端模版-vite-starters)
-4. [Uniapp 移动端适配 (Mobile/Uniapp)](#4-uniapp-移动端适配-mobileuniapp)
-5. [生态工具与最佳实践 (Ecosystem & Tools)](#5-生态工具与最佳实践-ecosystem--tools)
-
 ---
 
 ## 1. 核心与官方资源 (Core)
@@ -40,6 +32,8 @@
 ---
 
 ## 2. Nuxt 全栈集成 (Nuxt Integration)
+
+**阅读进度：**
 
 针对你的 Nuxt 全栈或 Vite + Nitro 混合项目，推荐使用模块化方案，而非手动封装。
 
