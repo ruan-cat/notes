@@ -326,8 +326,6 @@ ruan-cat-cli init cc -- statusline
 - https://github.com/UfoMiao/zcf
 - https://github.com/Haleclipse/CCometixLine
 
-## Spec Kit ？
-
 ## minimax M2 ？
 
 ## 方舟 Coding Plan 首月特惠 ？
