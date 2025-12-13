@@ -24,6 +24,7 @@ netsh winhttp reset proxy
 
 - `ccp` 以最大权限运行 claude code
 - `glmcc` GLM 模型的 claude code
+- `mmcc` minimax 模型的 claude code
 - `kmcc` Kimi 思考模型的 claude code
 - `kfccc` `kimi-for-coding` 模型的 claude code
 - `arcc` `https://anyrouter.top` 公益站提供的 claude code key 国内代理
