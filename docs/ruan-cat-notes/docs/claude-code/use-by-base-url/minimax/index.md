@@ -20,4 +20,8 @@ claude --dangerously-skip-permissions
 
 ## 使用体验
 
-<!-- TODO: 待测评 -->
+### 持久不泄
+
+在长任务场景下，能够高强度的，主动的使用子代理，完成划分的子任务。且没有出现普遍情况的代码幻觉。
+
+![2025-12-13-17-41-10](https://gh-img-store.ruan-cat.com/img/2025-12-13-17-41-10.png)
