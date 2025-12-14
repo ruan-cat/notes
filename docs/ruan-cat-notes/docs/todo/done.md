@@ -78,9 +78,15 @@
 
 ### 已完成
 
-## 制作简单的 cli 命令行工具
+## 制作简单的 cli 命令行工具 <Badge type="tip" text="已完成" />
 
 用的 node 工具越来越多了，写的 node 批处理脚本也变多了，现在期望做一个全局的命令行工具，实现批处理文件。
+
+::: tip
+
+时过境迁。现在用 AI 工具可以轻松的实现开发 cli 命令行工具了。
+
+:::
 
 ### 技术选型 rollup
 
@@ -97,24 +103,20 @@
 - https://jiaozitang.github.io/blog/2022/09/19/rollup
 - https://jonny-wei.github.io/blog/devops/vite/rollup.html
 
-### 已完成
-
-时过境迁。现在用 AI 工具可以轻松的实现开发 cli 命令行工具了。
-
-## 安装基于 Python 的 docx 文档阅读工具
+## 安装基于 Python 的 docx 文档阅读工具 <Badge type="tip" text="已完成" />
 
 - https://github.com/GongRzhe/Office-Word-MCP-Server
 - docx-mcp
 
-### 已完成
-
-## 用 swagger 生成 ts 类型声明文件
+## 用 swagger 生成 ts 类型声明文件 <Badge type="tip" text="已学习" />
 
 swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
 
-### 已完成
+::: tip 已学习
 
 这是（`23年7月13号星期四 下午 6点35分`）记录的待办任务，现在（2025-11-14）学会了用 [openapi-ts-request](https://github.com/openapi-ui/openapi-ts-request) 来根据后端有意义的 swagger 文档，或者是 apifox 的 openai 数据格式的文档，批量生成 typescript 类型了。
+
+:::
 
 ## github 无法添加 stars <Badge type="tip" text="已修复" />
 
