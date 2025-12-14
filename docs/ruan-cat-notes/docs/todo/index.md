@@ -356,3 +356,8 @@ ruan-cat-cli init cc -- statusline
 ## 全局找一款工作流，将 github 开源信息的 TODO 都收集起来，制作成报表文档，便于整理复盘
 
 ## vitepress 的 AI 搜索栏插件，便于让文档介入 AI 或者是大模型实现沟通，便于精准检索
+
+## 阿里云也有免费的边缘云计算套餐了
+
+- 从 github 内导入项目： https://help.aliyun.com/zh/edge-security-acceleration/esa/user-guide/connect-pages-to-github
+- ESA 产品控制台： https://esa.console.aliyun.com/edge/pages/list
