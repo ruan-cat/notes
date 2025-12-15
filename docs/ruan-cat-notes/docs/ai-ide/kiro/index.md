@@ -2,6 +2,7 @@
 
 - 官网： https://kiro.dev/
 - 官方文档： https://kiro.dev/docs/
+- 额度： https://app.kiro.dev/account/usage
 
 ## 利用 cloudflare 域名邮箱注册账号，并白嫖试用期
 
