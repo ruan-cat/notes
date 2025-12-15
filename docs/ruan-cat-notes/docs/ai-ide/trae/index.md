@@ -1,4 +1,4 @@
-# ai ide，trae
+# trae,字节跳动的 AI ide
 
 内部集成 ai 的开发工具，trae。字节跳动开发，免费。window 可用。分为国内版和国外版。
 

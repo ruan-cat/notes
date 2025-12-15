@@ -1,4 +1,4 @@
-# antigravity,AI ide
+# antigravity,谷歌的 AI ide
 
 - 下载 https://antigravity.google/download
 - 允许地区 https://antigravity.google/docs/faq
