@@ -145,3 +145,16 @@ pnpm why vue-router
 ### 使用体验
 
 点击生成课程无反应，算了。
+
+## automa
+
+针对浏览器操作的节点式自动化拖拽工作流，实现对浏览器或者是整个电脑的完整自动化操作工作流。
+
+![2025-12-15-16-16-13](https://gh-img-store.ruan-cat.com/img/2025-12-15-16-16-13.png)
+
+- 产品站点： https://www.automa.site/zh-CN
+- 浏览器插件的产品站点： https://extension.automa.site/
+- 浏览器插件，中文说明文档： https://automa.wiki/
+- 浏览器插件，github 仓库： https://github.com/AutomaApp/automa
+
+我暂时没有需要用浏览器批量自动化做重复操作的场景。
