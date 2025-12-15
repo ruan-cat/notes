@@ -1,6 +1,7 @@
 # kiro,亚马逊的 AI ide
 
 - 官网： https://kiro.dev/
+- 官方文档： https://kiro.dev/docs/
 
 ## 利用 cloudflare 域名邮箱注册账号，并白嫖试用期
 
