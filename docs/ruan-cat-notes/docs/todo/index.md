@@ -354,3 +354,7 @@ ruan-cat-cli init cc -- statusline
 
 - 从 github 内导入项目： https://help.aliyun.com/zh/edge-security-acceleration/esa/user-guide/connect-pages-to-github
 - ESA 产品控制台： https://esa.console.aliyun.com/edge/pages/list
+
+## openskills ？
+
+- https://github.com/numman-ali/openskills
