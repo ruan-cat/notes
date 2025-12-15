@@ -13,6 +13,7 @@
 - [qwen-code](https://github.com/QwenLM/qwen-code)
 - [cursor cli](https://cursor.com/docs/cli/overview)
 - [trae-agent](https://github.com/bytedance/trae-agent)
+- [Kiro CLI](https://kiro.dev/cli/)
 - [copilot-cli](https://github.com/github/copilot-cli)
 - [kilocode](https://kilocode.ai/docs/cli)
 - [cline-cli](https://cline.bot/cline-cli)
