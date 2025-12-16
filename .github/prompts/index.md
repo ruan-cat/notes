@@ -204,4 +204,16 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 14:46:00.121
 ```
 
-## 014 学习在 vue 项目内，如何使用 `@tanstack/vue-query` 工具？
+---
+
+最终处理方式是不和 cloudflare worker 较劲了，将 `pnpm-workspace.yaml` 依赖锁文件也一同上传到仓库内，让 cloudflare worker 能够自动识别 pnpm。
+
+## 014 <!-- TODO: --> 学习在 vue 项目内，如何使用 `@tanstack/vue-query` 工具
+
+请教我如何在 vue3 vite 项目内使用 `@tanstack/vue-query` 这个请求库？我主要想学习以下内容：
+
+1. 如何在使用 useQuery 时，对请求返回的结果写回调函数？比如成功或失败时，怎么写合适的函数来做后续的数据处理？
+2. 如何使用 useMutation ？ useMutation 和 useQuery 的关键差异点是什么？使用区别和使用误区有哪些？
+3. 如何使用 `@tanstack/vue-query` 实现常见的分页查询？
+
+请为我出示一份详细的教程 markdown 文档，供我学习。
