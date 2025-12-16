@@ -5,9 +5,18 @@
 
 ---
 
-# 调研学习 @tanstack/vue-query 在 vue 项目内的使用细节
+# 调研学习 `@tanstack/vue-query` 在 vue 项目内的使用细节
 
 请你全面的调研这个仓库，告诉我这个仓库是怎么定义接口请求文件的？怎么在 vue 组件内使用 `@tanstack/vue-query` 这个请求库的？在目录 `reports` 内编写一份极其详细详尽的 markdown 文档，供我阅读学习。
+
+## 调研范围
+
+1. 该项目是如何在 vue 项目内注册并初始化 `@tanstack/vue-query` 的？
+2. 在 vue 组件内，是如何使用 `@tanstack/vue-query` 的？
+3. 该项目有什么专门封装的函数或工具来二次封装 `@tanstack/vue-query` 的工具么？
+4. 该项目是怎么实现请求后完成回调并修改数据的？
+5. 该项目怎么实现缓存更新的？
+6. 该项目的 `@tanstack/vue-query` 是主动执行接口请求？还是基于响应式变量实现的接口请求？
 
 ## markdown 文档的一级标题格式要求为
 
@@ -20,6 +29,8 @@
 ```
 
 ## markdown 文档的代码片段格式要求
+
+首先是要满足 markdown 的代码片段语法。
 
 ### 1. markdown 文档的 table 编写格式
 
