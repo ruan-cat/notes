@@ -70,3 +70,14 @@ claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server
 - https://aliceric27.github.io/claude-code-hooks/
 - https://claudecodehub.github.io/hooks.html
 - https://zhuanlan.zhihu.com/p/1950634615065809103
+
+## 重设 Ctrl + G 打开编辑器
+
+设置全局环境变量 `EDITOR` 即可。
+
+```bash
+$env:EDITOR = "cursor --disable-extensions --wait";
+```
+
+- 参数 `--wait` ： 告诉命令行工具等待编辑器关闭后再继续执行。
+- 参数 `--disable-extensions` ： 以`纯净模式`（不加载任何插件、不恢复之前的窗口、以最轻量化的方式运行）启动编辑器。
