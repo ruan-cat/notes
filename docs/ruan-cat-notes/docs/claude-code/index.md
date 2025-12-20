@@ -71,6 +71,11 @@ claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server
 - https://claudecodehub.github.io/hooks.html
 - https://zhuanlan.zhihu.com/p/1950634615065809103
 
+## 编写高效的 skill 技能文档
+
+- 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
+- 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
+
 ## 重设 Ctrl + G 打开编辑器
 
 设置全局环境变量 `EDITOR` 即可。
