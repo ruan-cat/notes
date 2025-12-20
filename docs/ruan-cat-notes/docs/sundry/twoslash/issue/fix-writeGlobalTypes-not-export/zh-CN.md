@@ -1,3 +1,8 @@
+<!--
+	issue： https://github.com/twoslashes/twoslash/issues/81
+	pr： https://github.com/twoslashes/twoslash/pull/82
+ -->
+
 # 处理因 `@vue/language-core@3.2.0` 移除 writeGlobalTypes 函数而导致的故障
 
 > 非英语母语报告者
