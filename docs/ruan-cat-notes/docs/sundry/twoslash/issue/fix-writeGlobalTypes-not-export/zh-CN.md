@@ -1,9 +1,9 @@
 # 处理因 `@vue/language-core@3.2.0` 移除 writeGlobalTypes 函数而导致的故障
 
-> [!NOTE] 非英语母语报告者
+> 非英语母语报告者
 > 报告者并不是**以英文为母语**的用户，以下内容均使用翻译软件翻译。
 
-> [!TIP] 摘要
+> 摘要
 > 在最新发布的 `@vue/language-core@3.2.0` 包内，移除了 `writeGlobalTypes` 函数，由于 `twoslash-vue` 仍旧在使用来自 `@vue/language-core` 包导出的 `writeGlobalTypes` 函数，故导致在安装高版本依赖的时候，`vitepress` 项目构建失败。
 > 我们应该在 `packages\twoslash-vue\src\index.ts` 文件内，重构代码，避免再直接使用 `writeGlobalTypes` 函数了。
 

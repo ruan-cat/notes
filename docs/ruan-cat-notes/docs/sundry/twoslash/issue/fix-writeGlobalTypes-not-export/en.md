@@ -1,9 +1,8 @@
 # Fix build failure caused by removal of writeGlobalTypes function in `@vue/language-core@3.2.0`
 
-> [!NOTE] Non-native English speaker
-> The reporter is not a native English speaker. The following content has been translated using translation tools.
+> Non-native English speaker: The reporter is not a native English speaker. The following content has been translated using translation tools.
 
-> [!TIP] Summary
+> Summary
 > In the latest release of `@vue/language-core@3.2.0`, the `writeGlobalTypes` function was removed. Since `twoslash-vue` still imports and uses the `writeGlobalTypes` function from the `@vue/language-core` package, this causes VitePress projects to fail during build when the newer version is installed.
 > We should refactor the code in `packages\twoslash-vue\src\index.ts` to avoid using the `writeGlobalTypes` function directly.
 
