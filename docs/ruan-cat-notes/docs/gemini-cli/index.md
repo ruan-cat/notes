@@ -153,3 +153,9 @@ gemini cli 目前（2025-12-10）还没有子代理能力，无法长期运行�
 3. 连续运行接近 1 小时，用完全部额度。触发限流。要过 22 小时才能恢复。
 
 ![2025-12-10-21-13-42](https://gh-img-store.ruan-cat.com/img/2025-12-10-21-13-42.png)
+
+## gemini 账号 学生认证
+
+- 教程： https://mp.weixin.qq.com/s/JdLAsBPSNh8hS5jZjUrv5g?from=groupmessage&scene=1&subscene=10000&sessionid=1766117252&clicktime=1766117960&enterid=1766117960&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=8046144-zh_CN-zip&fasttmpl_flag=0&realreporttime=1766117960240
+- Gemini 3 Pro 学生认证： https://www.goofish.com/item?spm=a21ybx.search.searchFeedList.13.c8391221QX5p1F&id=1002954140410&categoryId=201419202
+- Gemini 虚拟卡绑定： https://www.goofish.com/item?spm=a21ybx.search.searchFeedList.2.4b14645cCDBoX6&id=1002413215156&categoryId=201461105
