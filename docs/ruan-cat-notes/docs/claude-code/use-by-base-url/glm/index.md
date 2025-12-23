@@ -8,9 +8,9 @@
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "**"
 $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "glm-4.5-air"
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "glm-4.6"
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.6"
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "glm-4.7"
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "glm-4.7"
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "glm-4.7"
 ```
 
 ::: tip GLM 的 ANTHROPIC_AUTH_TOKEN 没有 sk- 开头
