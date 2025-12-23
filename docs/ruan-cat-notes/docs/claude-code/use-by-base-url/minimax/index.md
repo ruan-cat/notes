@@ -11,10 +11,10 @@
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "这里填在会员页面生成的 API Key";
 $env:ANTHROPIC_BASE_URL = "https://api.minimaxi.com/anthropic";
-$env:ANTHROPIC_MODEL = "MiniMax-M2";
-$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "MiniMax-M2";
-$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "MiniMax-M2";
-$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "MiniMax-M2";
+$env:ANTHROPIC_MODEL = "MiniMax-M2.1";
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "MiniMax-M2.1";
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "MiniMax-M2.1";
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "MiniMax-M2.1";
 claude --dangerously-skip-permissions
 ```
 
