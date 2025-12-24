@@ -4,6 +4,7 @@
 - [获取 key](https://platform.minimaxi.com/user-center/basic-information/interface-key)
 - [获取 Coding Plan 的 key](https://platform.minimaxi.com/user-center/payment/coding-plan)
 - [在 claude-code 中使用 minimax m2（推荐）](https://platform.minimaxi.com/docs/guides/text-ai-coding-tools#在-claude-code-中使用-minimax-m2（推荐）)
+- [使用 Coding Plan 提供的 MCP](https://platform.minimaxi.com/docs/guides/coding-plan-mcp-guide)
 - [查看额度](https://platform.minimaxi.com/user-center/payment/coding-plan)
 
 我们是购买 `Coding Plan` 套餐。
