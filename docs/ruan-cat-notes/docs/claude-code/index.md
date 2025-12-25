@@ -2,6 +2,16 @@
 
 命令行交互的 AI 编程工具。相比于 cursor，用起来有点古怪。
 
+## 全局 ip 设置
+
+::: details 更换全局 ip
+
+从`美国5`，换到`日本4`
+
+![2025-12-25-18-29-48](https://gh-img-store.ruan-cat.com/img/2025-12-25-18-29-48.png)
+
+:::
+
 ## 全局安装 claude code
 
 ```bash
