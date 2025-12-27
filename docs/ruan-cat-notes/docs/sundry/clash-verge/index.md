@@ -22,6 +22,10 @@
 
 ![2025-09-16-02-07-20](https://gh-img-store.ruan-cat.com/img/2025-09-16-02-07-20.png)
 
+## 开启服务模式
+
+为了访问 Antigravity ，故考虑服务模式。
+
 ## 使用体验
 
 - 明显比 v2rayN 快。同样的机场节点订阅， `clash verge` 速度更快。
