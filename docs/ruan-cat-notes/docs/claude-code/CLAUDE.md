@@ -232,3 +232,12 @@ openspec validate {任务名称} --strict
    - **不允许**你编写任何 Python、typescript、javascript，或 bash 脚本，完成大批量代码删改之类的任务。
    - 你应该阅读文件来完成更改，而不是使用不稳定的，容易带来语法错误的，删改不干净不合理的批处理脚本，来完成任务。
    - 你应该新建多个子代理，主代理用具体的子代理来完成大规模的修改任务。
+
+## 7. 获取技术栈对应的上下文
+
+以下是本项目使用的部分技术栈，你应该主动访问 github 仓库，或者使用 context7 MCP 来访问最新的文档。
+
+### claude code skill
+
+- 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
+- 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
