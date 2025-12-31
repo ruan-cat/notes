@@ -26,6 +26,15 @@
 				"office-word-mcp-server",
 				"word_mcp_server"
 			]
+		},
+		"gemini": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"--from",
+				"git+https://github.com/GuDaStudio/geminimcp.git",
+				"geminimcp"
+			]
 		}
 	}
 }
