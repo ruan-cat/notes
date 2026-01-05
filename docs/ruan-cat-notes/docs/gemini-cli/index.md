@@ -140,6 +140,47 @@ $env:GEMINI_API_KEY="***"
 
 注意到关键的项目 id `83565277083` 。关闭掉我的全局 `$env:GOOGLE_CLOUD_PROJECT` 环境变量即可。
 
+## 处理 `Gemini Code Assist` 登录失败的故障
+
+如图，我在 cursor 内遇到以下故障：
+
+![2026-01-06-00-46-22](https://gh-img-store.ruan-cat.com/img/2026-01-06-00-46-22.png)
+
+报错日志如下：
+
+```log
+googleapi: Error 403: The caller does not have permission
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "iam.googleapis.com",
+    "metadata": {
+      "permission": "cloudaicompanion.companions.generateCode",
+      "resource": "projects/company-odyssey-kfg2z"
+    },
+    "reason": "IAM_PERMISSION_DENIED"
+  }
+]
+, forbidden
+I0105 23:40:31.455626   25584 client.go:270] CompleteCode response from cache (adaptive): {Suggestions:[] TraceID: RequestID: ServerTiming: NetPlusServerTiming:0s FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus: AtlasExperience: PromptID: CompletionMethod: ExperimentDebugStringFingerprint: ModelURI: ChatClientIDHash: MetricMetadata:map[] ModelConfig:{ID: DisplayName: DescriptionText:}} AdaptiveCacheHit:false}
+E0105 23:40:31.455626   25584 metrics.go:196] error setting metric metadata since metric event is not set
+E0105 23:40:31.455626   25584 metrics.go:196] error setting metric metadata since metric event is not set
+E0105 23:40:31.455626   25584 server.go:484] error fulfilling "service/healthcheck" request #28, &
+```
+
+在全局用户信息内，查到的 `geminicodeassist.project` 值为：
+
+![2026-01-06-00-47-23](https://gh-img-store.ruan-cat.com/img/2026-01-06-00-47-23.png)
+
+```json
+{
+	"geminicodeassist.project": "company-odyssey-kfg2z"
+}
+```
+
+不知道这个值哪里来的。删除即可正常登录。
+
 ## 想办法访问到 Google Antigravity
 
 - [`Google Antigravity 登录失败？中国地区完整解决方案与排查指南`](https://blog.csdn.net/qq_38912395/article/details/155539650)
