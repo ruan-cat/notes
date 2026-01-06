@@ -222,3 +222,14 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 请为我出示一份详细的教程 markdown 文档，供我学习。
 
 ---
+
+## 015 <!-- TODO: --> 利用 oxlint 优化 eslint 的最佳实践
+
+参考资料：
+
+- https://www.hongkiat.com/blog/eslint-to-oxlint-migration-guide/
+- 关闭 Oxlint 已支持的所有规则： https://github.com/oxc-project/eslint-plugin-oxlint
+
+正如所导入的 github 仓库所示，该仓库实现了 eslint 的处理。但是自始至终，eslint 太慢了，所以我期望使用 oxlint 来优化格式化速度。
+
+请告诉我最小侵入式的优化方案，只做必要的改造，最终完成用 oxlint 优化 eslint 的代码检查过程。
