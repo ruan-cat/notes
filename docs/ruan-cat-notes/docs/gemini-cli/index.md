@@ -184,6 +184,11 @@ E0105 23:40:31.455626   25584 server.go:484] error fulfilling "service/healthche
 ## 想办法访问到 Google Antigravity
 
 - [`Google Antigravity 登录失败？中国地区完整解决方案与排查指南`](https://blog.csdn.net/qq_38912395/article/details/155539650)
+- https://www.lanxk.com/zh/posts/google-antigravity/
+
+```bash
+Your current account is not eligible for Antigravity. Try signing in with another personal Google account.
+```
 
 ## 长时间连续运行 gemini cli 的方案
 
