@@ -4,3 +4,7 @@
 - 下载并安装破解版： https://www.3h3.com/soft/268598.html
 
 不实用，直接导致 Clash Verge 出现严重故障。
+
+参考资料：
+
+- https://kerrynotes.com/google-antigravity-cannot-log-in/
