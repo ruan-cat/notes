@@ -49,3 +49,21 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 ### 立刻获得 31 天的试用期
 
 ![2025-12-15-18-17-24](https://gh-img-store.ruan-cat.com/img/2025-12-15-18-17-24.png)
+
+## 用网易邮箱来注册 github 账号
+
+指纹浏览器、全局 TUN 模式、新加坡、网易邮箱。没有遇到严格的验证，一次过。
+
+![2026-01-09-18-32-30](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-32-30.png)
+
+可以正常的 fork 项目
+
+![2026-01-09-18-32-44](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-32-44.png)
+
+无法直接跳转验证
+
+![2026-01-09-18-33-03](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-33-03.png)
+
+重启电脑后，保持新加坡节点，登录成功。
+
+![2026-01-09-18-33-17](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-33-17.png)
