@@ -49,6 +49,10 @@ $env:GEMINI_API_KEY="***"
 
 在全局的用户文件 `C:\Users\pc\.gemini\settings.json` 内设置即可。
 
+## gemini cli 支持 skills 技能文件
+
+- 官方文档： https://geminicli.com/docs/cli/tutorials/skills-getting-started/
+
 ## 整体体验
 
 对于 gemini cli 免费提供的 `gemini pro 2.5` 模型，体验如下：
