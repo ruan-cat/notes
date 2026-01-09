@@ -6,7 +6,7 @@
 
 ## 利用 cloudflare 域名邮箱注册账号，并白嫖试用期
 
-该方案失效，目前我用域名邮箱注册的 github 账号，均被标记风控。
+该方案在我继续使用同一个浏览器时，失效。目前我用域名邮箱注册的 github 账号，均被标记风控。
 
 ![2026-01-09-18-29-02](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-29-02.png)
 
@@ -15,8 +15,6 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 ```
 
 被标记风控的 github 账号，无法 fork、无法链接第三方应用。比如 kiro。
-
-以下内容的步骤仅供参考。
 
 ### 创建新的域名邮箱
 
@@ -52,18 +50,44 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 
 ## 用网易邮箱来注册 github 账号
 
-指纹浏览器、全局 TUN 模式、新加坡、网易邮箱。没有遇到严格的验证，一次过。
+1. 指纹浏览器、全局 TUN 模式、新加坡、网易邮箱。没有遇到严格的验证，一次过。
 
 ![2026-01-09-18-32-30](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-32-30.png)
 
-可以正常的 fork 项目
+2. 可以正常的 fork 项目
 
 ![2026-01-09-18-32-44](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-32-44.png)
 
-无法直接跳转验证
+3. 无法直接跳转验证
 
 ![2026-01-09-18-33-03](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-33-03.png)
 
-重启电脑后，保持新加坡节点，登录成功。
+4. 重启电脑后，保持新加坡节点，登录成功。
 
 ![2026-01-09-18-33-17](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-33-17.png)
+
+## 继续用 cloudflare 域名邮箱，注册 github 账号
+
+1. 预备稍长一点点的邮箱 `use-kiro-006-my-lover@ruan-cat.com`
+
+![2026-01-09-19-49-23](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-49-23.png)
+
+2. 开启和刚才相同的指纹浏览器。使用相同新加坡节点的指纹浏览器。
+
+![2026-01-09-19-50-22](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-50-22.png)
+
+3. 和刚才不同，出现了验证过程。需要验证。
+
+![2026-01-09-19-50-44](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-50-44.png)
+
+4. 验证流程非常长。总共有 6 项。
+
+![2026-01-09-19-51-31](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-51-31.png)
+
+5. 可以正常完成 fork 仓库。
+
+![2026-01-09-19-51-45](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-51-45.png)
+
+6. 卡在登录验证这一块，无法选择新的账户来登录 kiro。github 重定向总是默认选择了刚才成功的`use_kiro_001@163.com`账户。应该是浏览器缓存的问题。
+
+![2026-01-09-19-52-07](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-52-07.png)
