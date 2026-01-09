@@ -50,7 +50,7 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 
 ## 用网易邮箱来注册 github 账号
 
-1. 指纹浏览器、全局 TUN 模式、新加坡、网易邮箱。没有遇到严格的验证，一次过。
+1. 指纹浏览器、全局 TUN 模式、新加坡、网易邮箱 `use_kiro_001@163.com`。没有遇到严格的验证，一次过。
 
 ![2026-01-09-18-32-30](https://gh-img-store.ruan-cat.com/img/2026-01-09-18-32-30.png)
 
