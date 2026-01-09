@@ -91,3 +91,29 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 6. 卡在登录验证这一块，无法选择新的账户来登录 kiro。github 重定向总是默认选择了刚才成功的`use_kiro_001@163.com`账户。应该是浏览器缓存的问题。
 
 ![2026-01-09-19-52-07](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-52-07.png)
+
+## 继续使用 cloudflare 域名邮箱的 catch all 规则来自定义域名邮箱
+
+1. 用 catch all 规则编写全新的邮箱 `MyLoverDrill007Tem@ruan-cat.com` ，继续注册 github 账号。相同的指纹浏览器，出现验证流程：
+
+![2026-01-09-19-55-10](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-55-10.png)
+
+2. 流程非常长，10 项，还剩下 9 项。
+
+![2026-01-09-19-55-25](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-55-25.png)
+
+3. 新号可以正常 fork。
+
+![2026-01-09-19-55-40](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-55-40.png)
+
+4. 是 `kiro-prod-us-east-1.auth.us-east-1.amazoncognito.com` 重定向站点，本身存储了上一个验证用户的 cookie，才导致无法主动选择切换 github 账户。如果遇到无法自主选择 github 账号来连接 kiro 应用时，应该主动清空浏览器对 `kiro-prod-us-east-1.auth.us-east-1.amazoncognito.com` 的 cookie。
+
+![2026-01-09-19-57-05](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-57-05.png)
+
+5. 删除以后，新的用户可以主动链接了。
+
+![2026-01-09-19-57-25](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-57-25.png)
+
+6. 成功。新用户`MyLoverDrill007Tem@ruan-cat.com`可以正常获取额度了。
+
+![2026-01-09-19-58-00](https://gh-img-store.ruan-cat.com/img/2026-01-09-19-58-00.png)
