@@ -6,3 +6,9 @@
 
 - 仓库： https://github.com/aiclientproxy/proxycast
 - 文档： https://aiclientproxy.github.io/proxycast/
+
+## 封号
+
+用 proxycast 登录 kiro，很快就封号了。
+
+## 怎么把导入的额度接入到 claude code 内识别呢？
