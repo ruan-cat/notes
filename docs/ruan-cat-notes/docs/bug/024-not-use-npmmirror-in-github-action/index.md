@@ -1,13 +1,13 @@
 ---
 juejin: "TODO"
-desc: TODO
+desc: 淘宝镜像源版本滞后会导致 GitHub Action 构建失败，应强制使用官方 npm 源。
 ---
 
 # 不要在 github action 内使用 npm 的淘宝镜像源
 
 > **摘要**：
 >
-> TODO: 编写摘要
+> 淘宝镜像源（npmmirror）的包版本同步存在滞后，在 GitHub Action 工作流中使用可能导致构建失败。当依赖链中某个包需要刚发布的新版本时，淘宝镜像源可能尚未同步，从而触发 `ERR_PNPM_NO_MATCHING_VERSION` 错误。解决方案是在 GitHub Action 中强制使用官方 npm 镜像源：通过设置 `NPM_CONFIG_REGISTRY` 环境变量，并在 pnpm 安装命令中显式指定 `--registry https://registry.npmjs.org`。
 
 注意看这个极端的情况，在特定时间内，分别运行以下命令：
 
