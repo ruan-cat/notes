@@ -1,15 +1,13 @@
 ---
 juejin: "TODO"
-desc: TODO
+desc: 在 pnpm + monorepo + turbo 架构中，turbo 只匹配根包已安装的子包。新增子包未被根包依赖时会被构建命令遗漏，需在根包中显式安装子包依赖。
 ---
-
-<!-- TODO: 编写完善的包匹配错误的文章 -->
 
 # turbo 根包没有安装子包依赖，导致根包命令运行时匹配缺漏
 
 > **摘要**：
 >
-> TODO: 编写摘要
+> 在 pnpm + monorepo + turbo 架构中，从根包运行 turbo 构建命令时，turbo 只会匹配根包已安装的工作区子包。如果新增的子包（如 `@ruan-cat/claude-notifier`）未被根包依赖，则会被构建命令遗漏，导致该子包及其文档都无法构建。解决方案是在根包的 `package.json` 中显式安装所有需要构建的子包依赖。
 
 我的项目用了 pnpm + monorepo + turbo 的方案，来实现一揽子 node 包的构建与发布。可是我之前的包都能在流水线内构建，为什么最近新开发的一个子包就不能及时构建呢？怎么会漏东西呢？为什么 turbo 偏偏就漏掉我新增加的 `@ruan-cat/claude-notifier` 子包呢？
 
