@@ -1,5 +1,5 @@
 ---
-juejin: "TODO"
+juejin: https://juejin.cn/post/7594309641867165734
 desc: 淘宝镜像源版本滞后会导致 GitHub Action 构建失败，应强制使用官方 npm 源。
 ---
 
