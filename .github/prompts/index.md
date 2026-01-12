@@ -237,3 +237,20 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 ---
 
 没弄出来，最后还是手动完成迁移了。
+
+## 016 优化 vscode 插件 `Gruntfuggly.todo-tree` 的显示效果
+
+如下图所示，这是 vscode 插件 `Gruntfuggly.todo-tree` 的显示效果：
+
+![2026-01-12-22-45-02](https://gh-img-store.ruan-cat.com/img/2026-01-12-22-45-02.png)
+
+我不喜欢对 `[x]` 和 `[]` 做统计，希望你帮我查找一下这个 vscode 插件的相关配置，避免统计并显示这两款类型。
+
+---
+
+```json
+{
+	// todo-true插件 的配置 移除掉多余配置即可
+	"todo-tree.general.tags": ["TODO"]
+}
+```
