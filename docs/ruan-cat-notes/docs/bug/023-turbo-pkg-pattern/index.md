@@ -1,5 +1,5 @@
 ---
-juejin: "TODO"
+juejin: https://juejin.cn/post/7594320543219564590
 desc: 在 pnpm + monorepo + turbo 架构中，turbo 只匹配根包已安装的子包。新增子包未被根包依赖时会被构建命令遗漏，需在根包中显式安装子包依赖。
 ---
 
