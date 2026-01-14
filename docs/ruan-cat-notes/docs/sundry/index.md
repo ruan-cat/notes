@@ -158,3 +158,14 @@ pnpm why vue-router
 - 浏览器插件，github 仓库： https://github.com/AutomaApp/automa
 
 我暂时没有需要用浏览器批量自动化做重复操作的场景。
+
+## npm-agentskills
+
+现在推出了一款规范，在 node 包内直接导入识别技能。以后对外分发一系列 node 包时，可以对外直接分发给 AI 识别的 skills 技能文档。便于 AI 正确使用本 node 包。比自己制作一个专用的 MCP 来暴露上下文，效果好多了。
+
+不过这个毕竟是最近出来的一个方案，还不至于被主流的 agentskills 规范所接纳。
+
+如果该规范正式被接纳，那么以后就应该要增加一个提交类型，叫做 skills，一个 node 包平时维护的东西除了文档，还包括专项的 skills 文档了。
+
+- 仓库： https://github.com/onmax/npm-agentskills
+- 倡议： https://github.com/agentskills/agentskills/issues/81
