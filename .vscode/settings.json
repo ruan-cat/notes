@@ -1,6 +1,17 @@
 {
-	"[vue]": {
+	// 需要使用prettier来便捷的格式化
+	"prettier.enable": true,
+	// markdown文件目前使用prettier来格式化
+	"[markdown]": {
+		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.formatOnSave": false,
+	// Auto fix
+	"editor.codeActionsOnSave": {
+		// https://oxc.rs/docs/guide/usage/linter/editors.html#use-recommended-setup-for-teams
+		"source.fixAll.oxc": "explicit",
+		"source.organizeImports": "never"
 	},
 	"picgo": {
 		"picBed": {
