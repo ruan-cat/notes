@@ -22,3 +22,7 @@ npx neonctl@latest init
 - neon 链接 Drizzle ORM： https://neon.com/docs/guides/drizzle
 - Drizzle ORM 更新数据库表： https://neon.com/docs/guides/drizzle-migrations
 - 和 Drizzle ORM 协作的 neon AI 技能：https://neon.com/docs/ai/ai-rules-neon-drizzle
+
+## @neondatabase/serverless
+
+- 入门 `@neondatabase/serverless` 包： https://neon.com/docs/serverless/serverless-driver
