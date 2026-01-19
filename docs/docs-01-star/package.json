@@ -16,7 +16,7 @@
 	"author": "ruan-cat",
 	"license": "MIT",
 	"devDependencies": {
-		"@ruan-cat/vitepress-preset-config": "^2.12.0",
+		"@ruan-cat/vitepress-preset-config": "^2.12.4",
 		"vitepress": "^1.6.4"
 	}
 }
