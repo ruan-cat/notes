@@ -141,3 +141,11 @@ TODO: prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
 - https://juejin.cn/post/7518931398340001802
 
 prettier 的性能优化手段，配置以上参数，安装新的插件，可以有效提高 prettier 的运行速度。
+
+## 高版本的 `prettier-vscode` 插件，出现严重故障
+
+v12 版本的 prettier 格式化插件，出现严重故障。
+
+- https://github.com/prettier/prettier-vscode/issues/3887
+- https://github.com/prettier/prettier-vscode/issues/3907
+- https://github.com/prettier/prettier-vscode/issues/3908
