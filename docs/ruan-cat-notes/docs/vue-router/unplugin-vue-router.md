@@ -7,8 +7,6 @@
 
 ## 学习进度设计
 
-TODO: 继续深度学习 unplugin-vue-router
-
 - 广泛地阅读文档，了解概念，明确边界范围
   - vue-router
   - unplugin-vue-router
