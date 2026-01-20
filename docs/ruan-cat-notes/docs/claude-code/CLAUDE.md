@@ -284,3 +284,4 @@ gemini MCP 提供了一个工具 `gemini`，用于调用 Google Gemini 模型执
 
 - 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
 - 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
+- 规范文档： https://agentskills.io/home
