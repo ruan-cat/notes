@@ -30,4 +30,14 @@
 
 ![2026-01-23-01-42-04](https://s2.loli.net/2026/01/23/7fewRsdXJNH4VIM.png)
 
-### 主号使用`关闭付款资料`以便处理地区差异问题
+### 主号不能通过`关闭付款资料`以便处理地区差异问题
+
+- 付款信息： https://payments.google.com/gp/w/home/settings
+
+如图，家庭组主号已经有了很多付款信息，这里尝试选择删除掉。
+
+![2026-01-23-01-55-58](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-55-58.png)
+
+不能关闭，如果关闭付款资料了，那么就丢失了 `Google One` 权限，就没有 gemini pro 权限了。我们需要换其他的方案来解决地区问题。
+
+![2026-01-23-01-58-39](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-58-39.png)
