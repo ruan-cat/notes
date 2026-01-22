@@ -27,3 +27,15 @@ Your current account is not eligible for Antigravity. Try signing in with anothe
 2. 下载并在本机安装这款`antigravity-tools`桌面软件。添加账号后，通过这个按钮直接进入 Antigravity，下次打开 Antigravity 时，就不需要验证了。
 
 ![2026-01-20-17-38-08](https://gh-img-store.ruan-cat.com/img/2026-01-20-17-38-08.png)
+
+### 干净的纯美区账号可以直接登录 antigravity 和 gemini 网页版
+
+我只能说我买的账号有问题，不知道是不是地区改的有问题还是什么缘故，反正需要借助其他方式来登录。很麻烦。但是我买的其他的账号却很正常。如下：
+
+可以直接登录 antigravity，直接验证通过，丝毫不受到任何阻力。
+
+![2026-01-23-01-30-04](https://s2.loli.net/2026/01/23/fXbmoT5rYLGEk9j.png)
+
+可以直接访问 gemini 网页版，并提示可以升级。
+
+![2026-01-23-01-37-36](https://s2.loli.net/2026/01/23/zsxjPAJGfau7B35.png)
