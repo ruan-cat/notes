@@ -62,8 +62,6 @@ $env:GEMINI_API_KEY="***"
 1. **gemini cli 阅读文档不完全：** 给他很多提示词，阅读起来缺斤少两，很多细节都有缺失。需要我反复提醒，反复拉扯，才能得到一个勉强的结果。
 2. **无法阅读 ide 提供的报错信息：** 无法阅读 ide 提供的 typescript 类型报错信息，导致我无法使用 gemini cli 完成 typescript 类型报错的修复。相反，claude code 在配套的 vscode 插件的帮助下，能够阅读 ide 提供的报错信息，并针对性的修复故障。
 
-<!-- TODO: gemini 3 最近很火 看看如何自己订阅？ -->
-
 ## 想办法订阅谷歌的会员
 
 参考资料：
@@ -184,30 +182,6 @@ E0105 23:40:31.455626   25584 server.go:484] error fulfilling "service/healthche
 ```
 
 不知道这个值哪里来的。删除即可正常登录。
-
-## 访问 Google Antigravity
-
-- [`Google Antigravity 登录失败？中国地区完整解决方案与排查指南`](https://blog.csdn.net/qq_38912395/article/details/155539650)
-- https://www.lanxk.com/zh/posts/google-antigravity/
-
-### 登录失败报错
-
-![2026-01-20-17-36-56](https://gh-img-store.ruan-cat.com/img/2026-01-20-17-36-56.png)
-
-```bash
-Your current account is not eligible for Antigravity. Try signing in with another personal Google account.
-```
-
-### 用曲折的方式跳过验证，直接登录授权 antigravity
-
-进入后的效果：
-
-![2026-01-20-17-37-51](https://gh-img-store.ruan-cat.com/img/2026-01-20-17-37-51.png)
-
-1. 使用 https://github.com/lbjlaq/Antigravity-Manager 提供的方案。
-2. 下载并在本机安装这款`antigravity-tools`桌面软件。添加账号后，通过这个按钮直接进入 Antigravity，下次打开 Antigravity 时，就不需要验证了。
-
-![2026-01-20-17-38-08](https://gh-img-store.ruan-cat.com/img/2026-01-20-17-38-08.png)
 
 ## 长时间连续运行 gemini cli 的方案
 
