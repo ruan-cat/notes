@@ -19,6 +19,8 @@ Your current account is not eligible for Antigravity. Try signing in with anothe
 
 ### 用曲折的方式跳过验证，直接登录授权 antigravity
 
+- 参考资料 `解决各种 Antigravity 无法登录问题` ： https://juejin.cn/post/7595960824486166562
+
 进入后的效果：
 
 ![2026-01-20-17-37-51](https://gh-img-store.ruan-cat.com/img/2026-01-20-17-37-51.png)
