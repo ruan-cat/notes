@@ -9,6 +9,7 @@
 ## 利用家庭组方案批量准备可用账号
 
 - 参考资料 `订阅 Google One，一个人交钱六个人用 Gemini Pro` ： https://zhuanlan.zhihu.com/p/1993253572247298825
+- 参考资料 `目前最省最强用 Claude ops 4.5 + Gemini 3 Pro 的方案，30 块钱一年` ： https://juejin.cn/post/7596241980869197858
 
 ### 购买一个干净的美区资格号，作为被邀请的账号
 
