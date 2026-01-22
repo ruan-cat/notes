@@ -30,7 +30,7 @@
 
 ![2026-01-23-01-42-04](https://s2.loli.net/2026/01/23/7fewRsdXJNH4VIM.png)
 
-### 主号不能通过`关闭付款资料`以便处理地区差异问题
+### 主号不能通过`关闭付款资料`处理地区差异问题
 
 - 付款信息： https://payments.google.com/gp/w/home/settings
 
