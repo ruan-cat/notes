@@ -47,6 +47,37 @@
 
 - 谷歌支付： https://play.google.com/store/games?device=windows
 
-通过查看谷歌支付的付款地址，右下角地址，可以确定位置。这里主号的位置是在英国。
+通过查看谷歌支付的`付款地址`，右下角地址，可以确定位置。这里主号的位置是在英国。
 
 ![2026-01-23-11-17-06](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-17-06.png)
+
+### 在强一致的 ip 环境下完成家庭组邀请
+
+- https://www.jkg.tw/p2436/
+- https://support.google.com/youtube/answer/7507744
+- `Google One家庭组地区不匹配解决方案（Gemini pro优惠共享）` ： https://linux.do/t/topic/1206323/18
+
+注意到这个 `Google One家庭组地区不匹配解决方案（Gemini pro优惠共享）` 和上述参考资料，我作出假设：如果我在强一致的环境下，在英国 ip 内，邀请`地理位置`被识别成英国的账号，进入家庭组，不就满足上述要求了么？
+
+![2026-01-23-11-51-48](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-51-48.png)
+
+1. 开启全局模式。稍后的操作都会在全局模式下缓慢完成。
+   > ![2026-01-23-11-57-38](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-57-38.png)
+2. 挑选来自英国伦敦的 ip。
+   > ![2026-01-23-11-57-04](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-57-04.png)
+3. 新建指纹浏览器，确保自己在英国。
+   > ![2026-01-23-12-03-21](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-03-21.png)
+4. 在指纹浏览器内，分别登录这两个账号。一个主号，一个家庭号。
+5. 在指纹浏览器内，发出邀请邮件。然后再被转发的 QQ 邮箱内，收到邮件。
+   > ![2026-01-23-12-05-46](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-05-46.png)
+6. 手动复制邀请链接，并手动在指纹浏览器内打开。
+   > ![2026-01-23-12-07-14](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-07-14.png)
+7. 同意，并正式进入家庭组。成功截图如下：
+   > ![2026-01-23-12-08-04](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-08-04.png)
+8. 子号可以看到自己加入到家庭组了。
+   > ![2026-01-23-12-10-31](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-10-31.png)
+9. 主号作为家庭管理员，是可以看到成员的。
+   > ![2026-01-23-12-11-38](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-11-38.png)
+
+<!-- ### 尝试更换付款方式的虚拟卡为美国卡
+- https://linux.do/t/topic/1206323 -->
