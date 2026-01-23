@@ -173,3 +173,27 @@ pnpm why vue-router
 ## RackNerd
 
 - `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
+
+## 购买 vps
+
+- `高性价比VPS | 精品线路 | 月付不到17元人民币 | 美国原生IP | 美国洛杉矶机房 | 低价VPS | 一键多协议脚本 | 从购买到搭建`： https://www.youtube.com/watch?v=cGYFKL3ZveY
+- https://potoh.com/posts/2025-12-30/vmiss/
+- https://potoh.com/vps/
+
+## 开通虚拟卡
+
+### bitget 供应商
+
+- `免费申请虚拟海外银行卡 | 0开卡费0年费 | 支持大陆身份 | 线上直接开卡 | Bitget Wallet 银行卡 | 可订阅GPT和Gemini | 从注册到使用全过程教程`：https://www.youtube.com/watch?v=RRap2O_vzgk
+- `Bitget虚拟U卡，从注册到使用全过程教程`： https://potoh.com/posts/2025-12-3/bitget-card/
+
+看了视频教程，个人感觉太复杂，太繁琐了。流程非常繁杂。
+
+从 2026 年 1 月 23 日起，将不支持身份证作为 KYC，只支持护照做 KYC 了。
+
+### bybit 供应商
+
+- `币圈神卡 | bybit亚洲虚拟U卡 | 支持大陆身份 | 线上直接开卡 | 0开卡费0年费0激活门槛 | 无需地址证明 | 可订阅GPT和Gemini`： https://www.youtube.com/watch?v=WWki8oJ8X1w
+- https://potoh.com/posts/2026-1-11/bybitcard/
+
+视频评论说无法绑定卡，就不继续弄了。不打算继续弄这个方案。
