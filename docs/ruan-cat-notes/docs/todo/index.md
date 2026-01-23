@@ -370,3 +370,5 @@ ruan-cat-cli init cc -- statusline
 - `Bitget虚拟U卡，从注册到使用全过程教程`： https://potoh.com/posts/2025-12-3/bitget-card/
 
 看了视频教程，个人感觉太复杂，太繁琐了。流程非常繁杂。
+
+从 2026 年 1 月 23 日起，将不支持身份证作为 KYC，只支持护照做 KYC 了。
