@@ -169,3 +169,7 @@ pnpm why vue-router
 
 - 仓库： https://github.com/onmax/npm-agentskills
 - 倡议： https://github.com/agentskills/agentskills/issues/81
+
+## RackNerd
+
+- `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
