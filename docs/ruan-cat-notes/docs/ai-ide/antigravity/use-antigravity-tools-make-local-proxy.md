@@ -11,6 +11,8 @@
 - 参考资料 `订阅 Google One，一个人交钱六个人用 Gemini Pro` ： https://zhuanlan.zhihu.com/p/1993253572247298825
 - 参考资料 `目前最省最强用 Claude ops 4.5 + Gemini 3 Pro 的方案，30 块钱一年` ： https://juejin.cn/post/7596241980869197858
 
+根据参考资料可知，只要我们现在有一个现存的，可用的 gemini pro 账号，就能利用家庭组方案，实现账号裂变。同时拥有多个 gemini pro 账号。
+
 ### 购买一个干净的美区资格号，作为被邀请的账号
 
 可以直接登录 antigravity，直接验证通过，丝毫不受到任何阻力。
@@ -86,6 +88,8 @@
    > ![2026-01-23-12-19-07](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-19-07.png)
 2. 在 antigravity-tools 内，子号已经是 pro 权限了。
    > ![2026-01-23-12-20-15](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-20-15.png)
+
+### 家庭组
 
 <!-- ### 尝试更换付款方式的虚拟卡为美国卡
 - https://linux.do/t/topic/1206323 -->
