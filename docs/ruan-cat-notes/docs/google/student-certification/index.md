@@ -5,5 +5,5 @@
 - Gemini 虚拟卡绑定： https://www.goofish.com/item?spm=a21ybx.search.searchFeedList.2.4b14645cCDBoX6&id=1002413215156&categoryId=201461105
 - gemini 认证专用虚拟卡，咸鱼卖家： https://www.goofish.com/personal?userId=3959155466
 - 学生资格认证：
-  - https://potoh.com/posts/2026-1-17/gemini-vesion4/
+  - `最后一期！Gemini学生会员方法合集 | 从注册到订阅全过程方法演示与总结 | 解决资格账号、学生认证、绑卡、养号等所有问题`： https://potoh.com/posts/2026-1-17/gemini-vesion4/
   - https://www.youtube.com/watch?v=lJow7jflrwg
