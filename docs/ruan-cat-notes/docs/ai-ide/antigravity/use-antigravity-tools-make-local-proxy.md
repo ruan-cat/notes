@@ -16,43 +16,46 @@
 ### 教育版账号不能进入家庭组
 
 1. 教育版账号是这样的：
+
    > ![2026-01-23-01-11-53](https://s2.loli.net/2026/01/23/KuprHGxOsIVe9Ry.png)
+
 2. 其他账号开始邀请本账号进入：
+
    > ![2026-01-23-01-12-15](https://s2.loli.net/2026/01/23/geRrna75A9wiVZ4.png)
+
 3. 无法正常访问，无权限使用家庭组：
    > ![2026-01-23-01-12-29](https://s2.loli.net/2026/01/23/4w1xBJ39HQd7rcn.png)
 
 ### 购买一个干净的美区资格号，作为被邀请的账号
 
-可以直接登录 antigravity，直接验证通过，丝毫不受到任何阻力。
+1. 可以直接登录 antigravity，直接验证通过，丝毫不受到任何阻力。
 
-![2026-01-23-01-30-04](https://s2.loli.net/2026/01/23/fXbmoT5rYLGEk9j.png)
+   > ![2026-01-23-01-30-04](https://s2.loli.net/2026/01/23/fXbmoT5rYLGEk9j.png)
 
-可以直接访问 gemini 网页版，并提示可以升级。
+2. 可以直接访问 gemini 网页版，并提示可以升级。
 
-![2026-01-23-01-37-36](https://s2.loli.net/2026/01/23/zsxjPAJGfau7B35.png)
+   > ![2026-01-23-01-37-36](https://s2.loli.net/2026/01/23/zsxjPAJGfau7B35.png)
 
 ### 邀请进入家庭组
 
-收到家庭组邀请：
+1. 收到家庭组邀请：
 
-![2026-01-23-01-41-34](https://s2.loli.net/2026/01/23/dPnLJrUiDs3cp1M.png)
+   > ![2026-01-23-01-41-34](https://s2.loli.net/2026/01/23/dPnLJrUiDs3cp1M.png)
 
-存在地区差异，无法进入：
-
-![2026-01-23-01-42-04](https://s2.loli.net/2026/01/23/7fewRsdXJNH4VIM.png)
+2. 存在地区差异，无法进入：
+   > ![2026-01-23-01-42-04](https://s2.loli.net/2026/01/23/7fewRsdXJNH4VIM.png)
 
 ### 主号不能通过`关闭付款资料`处理地区差异问题
 
 - 付款信息： https://payments.google.com/gp/w/home/settings
 
-如图，家庭组主号已经有了很多付款信息，这里尝试选择删除掉。
+1. 如图，家庭组主号已经有了很多付款信息，这里尝试选择删除掉。
 
-![2026-01-23-01-55-58](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-55-58.png)
+   > ![2026-01-23-01-55-58](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-55-58.png)
 
-不能关闭，如果关闭付款资料了，那么就丢失了 `Google One` 权限，就没有 gemini pro 权限了。我们需要换其他的方案来解决地区问题。
+2. 不能关闭，如果关闭付款资料了，那么就丢失了 `Google One` 权限，就没有 gemini pro 权限了。我们需要换其他的方案来解决地区问题。
 
-![2026-01-23-01-58-39](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-58-39.png)
+   > ![2026-01-23-01-58-39](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-58-39.png)
 
 ### 确定主号的家庭组 ip 地址
 
@@ -74,27 +77,43 @@
 ![2026-01-23-11-51-48](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-51-48.png)
 
 1. 开启全局模式。稍后的操作都会在全局模式下缓慢完成。
+
    > ![2026-01-23-11-57-38](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-57-38.png)
+
 2. 挑选来自英国伦敦的 ip。
+
    > ![2026-01-23-11-57-04](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-57-04.png)
+
 3. 新建指纹浏览器，确保自己在英国。
+
    > ![2026-01-23-12-03-21](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-03-21.png)
+
 4. 在指纹浏览器内，分别登录这两个账号。一个主号，一个家庭号。
 5. 在指纹浏览器内，发出邀请邮件。然后再被转发的 QQ 邮箱内，收到邮件。
+
    > ![2026-01-23-12-05-46](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-05-46.png)
+
 6. 手动复制邀请链接，并手动在指纹浏览器内打开。
+
    > ![2026-01-23-12-07-14](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-07-14.png)
+
 7. 同意，并正式进入家庭组。成功截图如下：
+
    > ![2026-01-23-12-08-04](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-08-04.png)
+
 8. 子号可以看到自己加入到家庭组了。
+
    > ![2026-01-23-12-10-31](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-10-31.png)
+
 9. 主号作为家庭管理员，是可以看到成员的。
    > ![2026-01-23-12-11-38](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-11-38.png)
 
 ### 检查 pro 权限
 
 1. 在网页版 gemini 内，子号已经是 pro 权限了。
+
    > ![2026-01-23-12-19-07](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-19-07.png)
+
 2. 在 antigravity-tools 内，子号已经是 pro 权限了。
    > ![2026-01-23-12-20-15](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-20-15.png)
 
