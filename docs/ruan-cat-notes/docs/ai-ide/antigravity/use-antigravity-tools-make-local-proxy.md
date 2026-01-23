@@ -42,3 +42,11 @@
 不能关闭，如果关闭付款资料了，那么就丢失了 `Google One` 权限，就没有 gemini pro 权限了。我们需要换其他的方案来解决地区问题。
 
 ![2026-01-23-01-58-39](https://gh-img-store.ruan-cat.com/img/2026-01-23-01-58-39.png)
+
+### 确定主号的家庭组 ip 地址
+
+- 谷歌支付： https://play.google.com/store/games?device=windows
+
+通过查看谷歌支付的付款地址，右下角地址，可以确定位置。这里主号的位置是在英国。
+
+![2026-01-23-11-17-06](https://gh-img-store.ruan-cat.com/img/2026-01-23-11-17-06.png)
