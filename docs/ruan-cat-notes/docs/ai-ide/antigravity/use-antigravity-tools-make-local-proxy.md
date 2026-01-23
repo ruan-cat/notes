@@ -56,6 +56,7 @@
 - `關於 Google 帳號轉區與加入家庭群組疑難雜症速解`： https://www.jkg.tw/p2436/
 - `设置和管理 YouTube 家庭方案`： https://support.google.com/youtube/answer/7507744
 - `Google One家庭组地区不匹配解决方案（Gemini pro优惠共享）` ： https://linux.do/t/topic/1206323/18
+- `Gemini Pro 家庭组「地区不匹配」完美解决方案`： https://linux.do/t/topic/1420929
 
 注意到这个 `Google One家庭组地区不匹配解决方案（Gemini pro优惠共享）` 和上述参考资料，我作出假设：如果我在强一致的环境下，在英国 ip 内，邀请`地理位置`被识别成英国的账号，进入家庭组，不就满足上述要求了么？
 
