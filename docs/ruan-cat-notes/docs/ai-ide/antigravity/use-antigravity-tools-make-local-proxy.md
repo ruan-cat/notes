@@ -80,5 +80,12 @@
 9. 主号作为家庭管理员，是可以看到成员的。
    > ![2026-01-23-12-11-38](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-11-38.png)
 
+### 检查 pro 权限
+
+1. 在网页版 gemini 内，子号已经是 pro 权限了。
+   > ![2026-01-23-12-19-07](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-19-07.png)
+2. 在 antigravity-tools 内，子号已经是 pro 权限了。
+   > ![2026-01-23-12-20-15](https://gh-img-store.ruan-cat.com/img/2026-01-23-12-20-15.png)
+
 <!-- ### 尝试更换付款方式的虚拟卡为美国卡
 - https://linux.do/t/topic/1206323 -->
