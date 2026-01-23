@@ -197,3 +197,10 @@ pnpm why vue-router
 - https://potoh.com/posts/2026-1-11/bybitcard/
 
 视频评论说无法绑定卡，就不继续弄了。不打算继续弄这个方案。
+
+## 开通国外接码用途手机号
+
+- `免实名海外esim卡 | 免费接收短信 | 长期保号 | 一年不到10元 | 荷兰沃达丰0月租手机卡 | 注册tg`： https://www.youtube.com/watch?v=RGu5jTQgKKw&t=191s
+- https://potoh.com/posts/2026-1-5/wdfesim/
+
+注意到这个视频，是要求我们先要有虚拟 visa 卡才能申请账号的。
