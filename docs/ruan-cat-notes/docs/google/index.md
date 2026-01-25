@@ -19,7 +19,8 @@
 
 ## 购买谷歌账号
 
-- 卖家 gmailgood ： https://gmailgood.com/?from=1267
+- 供应商 gmailgood 别人的推广码： https://gmailgood.com/?from=1267
+- 供应商 gmailgood 我的推广码： https://gmailgood.com?from=2835
 - `Gmail还不会设置？一个视频全告诉你！！！`： https://www.youtube.com/watch?v=NKo7oC44xl0
 
 ## 尝试创建新的付款资料信息
