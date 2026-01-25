@@ -19,6 +19,9 @@
 
 ## 购买谷歌账号
 
+- 卖家 gmailgood ： https://gmailgood.com/?from=1267
+- `Gmail还不会设置？一个视频全告诉你！！！`： https://www.youtube.com/watch?v=NKo7oC44xl0
+
 ## 尝试创建新的付款资料信息
 
 ### 确定自己的付款地址信息
