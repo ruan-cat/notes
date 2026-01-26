@@ -92,7 +92,7 @@ kimi 提供了会员，其中有一个会员权益叫做 `Kimi For Coding` ，`K
 
 ::: details kimi 价格讨价还价员
 
-<<< ../../../../../../.github/prompts/kimi-price-negotiator.md
+<<< ./kimi-price-negotiator.md
 
 :::
 
