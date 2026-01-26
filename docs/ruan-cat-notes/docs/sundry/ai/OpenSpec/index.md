@@ -25,3 +25,9 @@ pnpm install -g @org-hex/openspec-chinese@latest
 5. 最后运行 `openspec-archive` 命令，归档任务。
 
 ## 常用命令
+
+其实只有一个有意义的常用命令
+
+```bash
+openspec init
+```
