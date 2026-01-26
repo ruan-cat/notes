@@ -33,3 +33,9 @@ API Error: 400 {"error":{"code":400,"message":"The
     or dashes (-), with a maximum length of
     64.","status":"INVALID_ARGUMENT"}}
 ```
+
+1. 我在特定项目内，发现这样的错误。
+   > ![2026-01-26-19-37-51](https://gh-img-store.ruan-cat.com/img/2026-01-26-19-37-51.png)
+   - 出现工具识别错误的情况。
+2. 我判断是 mcp 工具命名过于冗长的缘故，超出了最大长度 64。在我手动修改 `.mcp.json` 的 MCP 工具名称从 `gitmcp__plus-pro-components__plus-pro-components` 长名称换成 `gitmcp__plus-pro-components` 短名称之后，就能正常运行了。
+   > ![2026-01-26-19-42-00](https://gh-img-store.ruan-cat.com/img/2026-01-26-19-42-00.png)
