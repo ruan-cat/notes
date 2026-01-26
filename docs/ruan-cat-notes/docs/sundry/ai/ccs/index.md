@@ -1,0 +1,18 @@
+# Claude Code Switch,基于 CLIProxyAPI 的本地 AI 客户端代理工具
+
+- 仓库： https://github.com/kaitranntt/ccs
+
+## 安装
+
+```bash
+pnpm i -g @kaitranntt/ccs
+```
+
+## 常用命令
+
+```bash
+ccs config
+# 打开仪表盘 http://localhost:3000
+```
+
+![2026-01-26-17-19-38](https://gh-img-store.ruan-cat.com/img/2026-01-26-17-19-38.png)
