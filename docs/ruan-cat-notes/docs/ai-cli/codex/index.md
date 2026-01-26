@@ -1,4 +1,4 @@
-# codex ，AI 命令行客户端
+# codex,AI 工具
 
 - 官网
 - 仓库： https://github.com/openai/codex
