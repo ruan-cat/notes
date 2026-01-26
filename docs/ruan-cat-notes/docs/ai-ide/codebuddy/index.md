@@ -1,4 +1,4 @@
-# codebuddy,AI 编程 IDE
+# codebuddy,腾讯的 AI ide
 
 ## IDE
 
