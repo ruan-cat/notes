@@ -1,19 +1,17 @@
 # gemini-balance,基于 dorker 部署的自建 gemini 轮询代理
 
+::: warning 低优先级
+
+现在不打算用这个工具了，工具迭代太快，被淘汰了。现在不考虑自己新建一大堆谷歌 key 来完成轮询。维护麻烦。
+
+:::
+
 ## 教程
 
 视频教程：
 
 - [`【十几个场景榨干AI善人，Gemini 2.5 Pro API又免费了】`](https://www.bilibili.com/video/BV1Bi3XzZESn/)
 
-云 dorker 平台：
-
-- https://run.claw.cloud/
-
-部署服务教程；
-
-- https://gb-docs.snaily.top/guide/setup-clawcloud-sqlite.html
-
-部署产出的自建 url 地址：
-
-- https://ijhyubgysuty.ap-southeast-1.clawcloudrun.com
+- 云 dorker 平台： https://run.claw.cloud/
+- 部署服务教程： https://gb-docs.snaily.top/guide/setup-clawcloud-sqlite.html
+- 部署产出的自建 url 地址： https://ijhyubgysuty.ap-southeast-1.clawcloudrun.com
