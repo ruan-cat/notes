@@ -14,6 +14,12 @@
 ./cli-proxy-api --login --project_id formal-ember-483415-b3
 ```
 
+## 尽量避免直接使用该工具
+
+我觉得这个是底层的工具，不应该直接使用，而是去使用二次封装后的，具有完善 UI 的工具。
+
+- 官方文档： https://github.com/router-for-me/CLIProxyAPI/blob/main/README_CN.md#谁与我们在一起
+
 ## 无法访问本地控制台
 
 gemini 登录成功后，无法继续访问本地控制台。没有遇到任何报错和日志。
