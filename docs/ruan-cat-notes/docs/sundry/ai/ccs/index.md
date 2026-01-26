@@ -1,6 +1,7 @@
 # Claude Code Switch,基于 CLIProxyAPI 的本地 AI 客户端代理工具
 
 - 仓库： https://github.com/kaitranntt/ccs
+- 文档： https://docs.ccs.kaitran.ca/introduction
 
 ## 安装
 
