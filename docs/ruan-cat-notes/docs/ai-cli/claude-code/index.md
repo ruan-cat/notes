@@ -73,6 +73,12 @@ claude mcp add --transport http gong-rzhe-office-word-mcp-server "https://server
 - 深度思考 (`think hard`): 将消耗约 10K Tokens 预算用于思考，当你需要它进行更复杂的逻辑推理或重构时使用。
 - 极限思考 (`ultrathink`): 将消耗约 32K Tokens 预算用于思考，用于攻克极其复杂、需要多步骤规划的难题。
 
+## ultrathink 在 claude code 内不再生效
+
+- `Ultrathink 已弃用 & 如何在 Claude Code 中启用 2 倍思考令牌`： https://memedata.com/post/95256
+
+使用环境变量 `MAX_THINKING_TOKENS=63999` 来控制 claude code 在运行时开启最大规模的思考预算。
+
 ## hooks 钩子
 
 参考资料：
