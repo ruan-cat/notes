@@ -13,6 +13,7 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 ## 常用的 skills 工具与下载站点
 
 - vercel 公司维护的 skills 下载站点： https://skills.sh/
+- https://claude-plugins.dev/skills
 - 比较杂项泛用非开发领域的 skills： https://clawdhub.com/
 
 ## skills 拓展工具
