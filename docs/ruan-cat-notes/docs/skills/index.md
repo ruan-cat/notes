@@ -1,0 +1,16 @@
+# skills,大语言模型的技能
+
+skills 技能，已经成为大语言模型通用的渐进式揭露的上下文工程方案。已经和 MCP 一样成为一个专门通用规范。
+
+## claude code skill
+
+来自 Anthropic 公司维护的 skills 文档：
+
+- 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
+- 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
+- 规范文档： https://agentskills.io/home
+
+## 常用的 skills 工具与下载站点
+
+- vercel 公司维护的 skills 下载站点： https://skills.sh/
+- 基于 npx 的通用技能下载工具： https://github.com/vercel-labs/skills
