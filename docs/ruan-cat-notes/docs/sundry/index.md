@@ -170,6 +170,12 @@ pnpm why vue-router
 - 仓库： https://github.com/onmax/npm-agentskills
 - 倡议： https://github.com/agentskills/agentskills/issues/81
 
+## 让 AI 实现高强度自动任务
+
+一个任务编排器。目前还没有那么多任务需要该工具实现调度与编排。故暂时不考虑。
+
+- https://github.com/subsy/ralph-tui
+
 ## RackNerd
 
 - `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
