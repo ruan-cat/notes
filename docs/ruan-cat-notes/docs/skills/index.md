@@ -19,7 +19,9 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 
 ## skills 拓展工具
 
-- 基于 npx 的通用技能下载工具： https://github.com/vercel-labs/skills
+- 基于 npx 的通用技能下载工具
+  - https://github.com/vercel-labs/skills
+  - https://github.com/rohitg00/skillkit
 - claude code 插件的注册表和技能查询工具： https://github.com/Kamalnrf/claude-plugins
 - 基于写入`AGENTS.md`的 skills 安装插件： https://github.com/numman-ali/openskills
 - 技能下载工具： https://github.com/Peiiii/skild
