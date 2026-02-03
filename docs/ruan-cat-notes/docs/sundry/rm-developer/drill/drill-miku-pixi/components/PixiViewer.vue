@@ -59,14 +59,14 @@ const createCylinderPlane = async (texture: PIXI.Texture) => {
   const imgHeight = texture.height
 
   // 创建 SimplePlane
-  const plane = new PIXI.MeshPlane({ texture, verticesX: segmentsX, verticesY: segmentsY })
+  const plane = new PIXI.MeshPlane({ texture, verticesX: segmentsX + 1, verticesY: segmentsY })
 
   // --- 数学变换 ---
   const buffer = plane.geometry.getBuffer('aPosition')
   const data = buffer.data as Float32Array
 
   // 理论圆柱半径
-  const radius = (imgWidth / Math.PI) * 1.2
+  const radius = imgWidth / Math.PI
 
   for (let i = 0; i < data.length; i += 2) {
     const originalY = data[i + 1]
@@ -100,16 +100,31 @@ const createCylinderPlane = async (texture: PIXI.Texture) => {
   buffer.update()
 
   // 居中平面
-  plane.x = -imgWidth / 2 + (imgWidth - (radius * 2)) / 2
-  // Pixi v8 pivot handled differently or same? Let's assume standard behavior.
-  // Actually SimplePlane doesn't have width/height properties in same way as Sprite sometimes.
-  // Let's set pivot to center.
-  plane.pivot.set(imgWidth / 2, imgHeight / 2)
+  plane.x = 0
+
+  // 由于我们手动将顶点修改为以 0 为中心（[-R, R]），
+  // 所以 Pivot X 应该设为 0，而不是 imgWidth/2。
+  // Y 轴仍然保持原始坐标系（[0, H]），所以 Pivot Y 设为 imgHeight/2 以便垂直居中。
+  plane.pivot.set(0, imgHeight / 2)
 
   stageContainer.addChild(plane)
 
   // 添加阴影
   createShadingOverlay(radius, imgHeight, stageContainer)
+
+  // --- 自动缩放适应画布 ---
+  const boundsWidth = radius * 2
+  const boundsHeight = imgHeight
+
+  // 留出 10% 边距
+  const padding = 0.9
+  const scaleX = (app.screen.width * padding) / boundsWidth
+  const scaleY = (app.screen.height * padding) / boundsHeight
+
+  // 保持比例，且最大缩放为 1 (不放大)
+  const scale = Math.min(scaleX, scaleY, 1)
+
+  stageContainer.scale.set(scale)
 }
 
 // 创建光影遮罩
@@ -132,18 +147,15 @@ const createShadingOverlay = (widthRadius: number, height: number, parent: PIXI.
   ctx.fillStyle = gradient
   ctx.fillRect(0, 0, 256, 1)
 
-  const shadowTexture = PIXI.Texture.from(canvas)
-  const shadow = new PIXI.Sprite(shadowTexture)
-
-  shadow.width = projectedWidth
-  shadow.height = height
-  shadow.scale.y = 0.85 // 透视因子平均值
-
-  shadow.anchor.set(0.5)
-  // Pixi v8 uses blendMode differently? BLEND_MODES.MULTIPLY should work.
-  shadow.blendMode = 'multiply'
-
-  parent.addChild(shadow)
+	// 不需要多余的阴影
+  // const shadowTexture = PIXI.Texture.from(canvas)
+  // const shadow = new PIXI.Sprite(shadowTexture)
+  // shadow.width = projectedWidth
+  // shadow.height = height * 0.85 // 匹配边缘高度 (透视因子 0.85)
+  // shadow.anchor.set(0.5)
+  // // Pixi v8 uses blendMode differently? BLEND_MODES.MULTIPLY should work.
+  // shadow.blendMode = 'multiply'
+  // parent.addChild(shadow)
 }
 
 watch(() => props.imageFile, (newFile) => {
