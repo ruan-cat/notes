@@ -109,9 +109,6 @@ const createCylinderPlane = async (texture: PIXI.Texture) => {
 
   stageContainer.addChild(plane)
 
-  // 添加阴影
-  createShadingOverlay(radius, imgHeight, stageContainer)
-
   // --- 自动缩放适应画布 ---
   const boundsWidth = radius * 2
   const boundsHeight = imgHeight
@@ -125,37 +122,6 @@ const createCylinderPlane = async (texture: PIXI.Texture) => {
   const scale = Math.min(scaleX, scaleY, 1)
 
   stageContainer.scale.set(scale)
-}
-
-// 创建光影遮罩
-const createShadingOverlay = (widthRadius: number, height: number, parent: PIXI.Container) => {
-  const canvas = document.createElement('canvas')
-  const projectedWidth = widthRadius * 2
-
-  canvas.width = 256
-  canvas.height = 1
-  const ctx = canvas.getContext('2d')
-  if (!ctx) return
-
-  const gradient = ctx.createLinearGradient(0, 0, 256, 0)
-  gradient.addColorStop(0, 'rgba(0,0,0, 0.8)')
-  gradient.addColorStop(0.2, 'rgba(0,0,0, 0.2)')
-  gradient.addColorStop(0.5, 'rgba(0,0,0, 0.0)')
-  gradient.addColorStop(0.8, 'rgba(0,0,0, 0.2)')
-  gradient.addColorStop(1, 'rgba(0,0,0, 0.8)')
-
-  ctx.fillStyle = gradient
-  ctx.fillRect(0, 0, 256, 1)
-
-	// 不需要多余的阴影
-  // const shadowTexture = PIXI.Texture.from(canvas)
-  // const shadow = new PIXI.Sprite(shadowTexture)
-  // shadow.width = projectedWidth
-  // shadow.height = height * 0.85 // 匹配边缘高度 (透视因子 0.85)
-  // shadow.anchor.set(0.5)
-  // // Pixi v8 uses blendMode differently? BLEND_MODES.MULTIPLY should work.
-  // shadow.blendMode = 'multiply'
-  // parent.addChild(shadow)
 }
 
 watch(() => props.imageFile, (newFile) => {
