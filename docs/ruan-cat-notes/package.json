@@ -28,6 +28,7 @@
 		"node-localstorage": "^3.0.5",
 		"pinia": "^3.0.4",
 		"pinia-plugin-persistedstate": "^4.7.1",
+		"pixi.js": "^8.15.0",
 		"uuid": "^11.1.0",
 		"vue-json-excel3": "^1.0.30",
 		"xlsx": "^0.18.5"
