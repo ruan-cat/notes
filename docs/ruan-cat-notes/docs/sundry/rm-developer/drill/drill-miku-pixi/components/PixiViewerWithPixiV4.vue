@@ -140,9 +140,6 @@ const createCylinderMesh = (texture: any) => {
 
   stageContainer.addChild(mesh)
 
-  // 添加光影遮罩
-  createShadingOverlay(radius, imgHeight, stageContainer)
-
   // --- 缩放计算优化 ---
   // 使用显式的逻辑尺寸 (800x600) 进行计算，与 initPixi 中的配置保持严格一致
   // 这样可以规避 renderer 尺寸、resolution 或 DOM 尺寸在不同环境下的不确定性
@@ -166,42 +163,6 @@ const createCylinderMesh = (texture: any) => {
   // 确保居中到逻辑画布中心
   stageContainer.x = APP_WIDTH / 2
   stageContainer.y = APP_HEIGHT / 2
-}
-
-/** 创建光影遮罩 (V4) */
-const createShadingOverlay = (widthRadius: number, height: number, parent: any) => {
-  const canvas = document.createElement('canvas')
-  canvas.width = 256
-  canvas.height = 1
-  const ctx = canvas.getContext('2d')
-  if (!ctx) return
-
-  // 模拟光照：两侧暗（背面），中间亮（正面）
-  const gradient = ctx.createLinearGradient(0, 0, 256, 0)
-  gradient.addColorStop(0, 'rgba(0,0,0, 0.8)')
-  gradient.addColorStop(0.2, 'rgba(0,0,0, 0.2)')
-  gradient.addColorStop(0.5, 'rgba(0,0,0, 0.0)')
-  gradient.addColorStop(0.8, 'rgba(0,0,0, 0.2)')
-  gradient.addColorStop(1, 'rgba(0,0,0, 0.8)')
-
-  ctx.fillStyle = gradient
-  ctx.fillRect(0, 0, 256, 1)
-
-  const shadowTexture = PIXI.Texture.from(canvas)
-  const shadow = new PIXI.Sprite(shadowTexture)
-  
-  shadow.width = widthRadius * 2
-  shadow.height = height * 0.85 // 匹配边缘高度近似值
-  
-  shadow.anchor.set(0.5)
-  shadow.x = 0
-  // 由于 Mesh pivot 调整过，容器中心即为 Mesh 中心
-  shadow.y = 0 
-  
-  shadow.blendMode = PIXI.BLEND_MODES.MULTIPLY
-  
-  // 确保遮罩在 Mesh 之上
-  parent.addChild(shadow)
 }
 
 watch(() => props.imageFile, (newFile) => {
