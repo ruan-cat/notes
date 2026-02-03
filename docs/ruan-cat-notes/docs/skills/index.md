@@ -26,3 +26,11 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 - claude code 插件的注册表和技能查询工具： https://github.com/Kamalnrf/claude-plugins
 - 基于写入`AGENTS.md`的 skills 安装插件： https://github.com/numman-ali/openskills
 - 技能下载工具： https://github.com/Peiiii/skild
+
+## 个人全局安装的 skills
+
+由于目前的 skills 安装没有一个专门的清单表，无法实现规模化控制，无法统一设置全部的 AI 客户端，故这里把必要的 skills 依赖列举出来：
+
+- 驱动 gemini cli： https://skills.sh/softaworks/agent-toolkit/gemini
+- 查询 skills： https://skills.sh/vercel-labs/skills/find-skills
+- 技能制作： https://skills.sh/anthropics/skills/skill-creator
