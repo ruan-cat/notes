@@ -8,7 +8,9 @@ import DrillMikuPixi from './DrillMikuPixi.vue'
 
 ## 效果演示
 
-<DrillMikuPixi />
+<ClientOnly>
+  <DrillMikuPixi />
+</ClientOnly>
 
 ## 核心源码
 

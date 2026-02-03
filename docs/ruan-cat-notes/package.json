@@ -30,6 +30,7 @@
 		"pinia": "^3.0.4",
 		"pinia-plugin-persistedstate": "^4.7.1",
 		"pixi.js": "^8.15.0",
+		"pixi.js-v4": "npm:pixi.js@^4.8.9",
 		"uuid": "^11.1.0",
 		"vue-json-excel3": "^1.0.30",
 		"xlsx": "^0.18.5"
