@@ -14,7 +14,13 @@ import DrillMikuPixi from './DrillMikuPixi.vue'
 
 ## 核心源码
 
+### pixi v8 版本代码实现
+
 <<< ./components/PixiViewer.vue
+
+### pixi v4 版本代码实现
+
+<<< ./components/PixiViewerWithPixiV4.vue
 
 ## 核心原理
 
