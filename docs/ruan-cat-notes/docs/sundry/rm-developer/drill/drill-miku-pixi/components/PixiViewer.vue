@@ -62,7 +62,6 @@ const createCylinderPlane = async (texture: PIXI.Texture) => {
   const plane = new PIXI.MeshPlane({ texture, verticesX: segmentsX, verticesY: segmentsY })
 
   // --- 数学变换 ---
-  // @ts-expect-error PixiJS v8 MeshPlane inherits from Mesh, accessing geometry buffer works at runtime
   const buffer = plane.geometry.getBuffer('aPosition')
   const data = buffer.data as Float32Array
 
@@ -142,7 +141,6 @@ const createShadingOverlay = (widthRadius: number, height: number, parent: PIXI.
 
   shadow.anchor.set(0.5)
   // Pixi v8 uses blendMode differently? BLEND_MODES.MULTIPLY should work.
-  // @ts-expect-error PixiJS v8 types might not infer 'multiply' string correctly or prefer enum
   shadow.blendMode = 'multiply'
 
   parent.addChild(shadow)
@@ -168,6 +166,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   if (app) {
+		// @ts-ignore
     app.destroy(true, { children: true, texture: true, baseTexture: true })
   }
 })
