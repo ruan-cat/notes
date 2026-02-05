@@ -41,3 +41,7 @@ Your current account is not eligible for Antigravity. Try signing in with anothe
 可以直接访问 gemini 网页版，并提示可以升级。
 
 ![2026-01-23-01-37-36](https://s2.loli.net/2026/01/23/zsxjPAJGfau7B35.png)
+
+## 设置 skills
+
+- `Antigravity Skills 全局安装与配置指南`： https://www.cnblogs.com/weizwz/p/19540736
