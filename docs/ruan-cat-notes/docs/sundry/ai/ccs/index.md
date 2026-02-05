@@ -39,3 +39,11 @@ API Error: 400 {"error":{"code":400,"message":"The
    - 出现工具识别错误的情况。
 2. 我判断是 mcp 工具命名过于冗长的缘故，超出了最大长度 64。在我手动修改 `.mcp.json` 的 MCP 工具名称从 `gitmcp__plus-pro-components__plus-pro-components` 长名称换成 `gitmcp__plus-pro-components` 短名称之后，就能正常运行了。
    > ![2026-01-26-19-42-00](https://gh-img-store.ruan-cat.com/img/2026-01-26-19-42-00.png)
+
+## 项目无法启动
+
+目前，这个版本是安全的，能够正常使用。没有故障。
+
+```bash
+pnpm i -g @kaitranntt/ccs@7.34.1
+```
