@@ -165,6 +165,10 @@ pnpm why vue-router
 
 - https://github.com/subsy/ralph-tui
 
+## 基于 git worktree 的 AI cli 工具并行开发工具
+
+- https://www.conductor.build/
+
 ## RackNerd
 
 - `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
