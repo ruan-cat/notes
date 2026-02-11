@@ -8,8 +8,6 @@ import DrillMikuPixi from './DrillMikuPixi.vue'
 
 ## 效果演示
 
-<!-- TODO: 修复在生产环境内 出现的水和报错问题 检查是不是外部依赖配置的故障？ -->
-
 <ClientOnly>
   <DrillMikuPixi />
 </ClientOnly>

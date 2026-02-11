@@ -255,7 +255,7 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 }
 ```
 
-## 017 <!-- TODO: --> 修复故障 pixi v8 v4 在 vitepress 生产环境内出现的错误
+## 017 修复故障 pixi v8 v4 在 vitepress 生产环境内出现的错误
 
 这两个组件是作用于 vitepress 场景下的组件。使用 `docs\ruan-cat-notes\package.json` 的 docs:dev 命令可以运行项目，在 `docs\ruan-cat-notes\docs\sundry\rm-developer\drill\drill-miku-pixi\index.md` 对应的页面内预览效果。
 
