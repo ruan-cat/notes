@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
-import * as PIXI from 'pixi.js'
+import type * as PIXI_TYPES from 'pixi.js'
 
 const props = defineProps<{
   imageFile: File | null
@@ -19,12 +19,19 @@ const canvasContainer = ref<HTMLElement | null>(null)
 const wrapper = ref<HTMLElement | null>(null)
 const hasImage = ref(false)
 
-let app: PIXI.Application | null = null
-let stageContainer: PIXI.Container | null = null
+// Use module-level variable to hold the dynamically imported PIXI module
+let PIXI: typeof import('pixi.js') | null = null
+let app: PIXI_TYPES.Application | null = null
+let stageContainer: PIXI_TYPES.Container | null = null
 
 // 初始化 Pixi 应用
 const initPixi = async () => {
   if (!canvasContainer.value) return
+
+  // Dynamically import pixi.js to avoid SSR issues
+  if (!PIXI) {
+    PIXI = await import('pixi.js')
+  }
 
   app = new PIXI.Application()
   await app.init({
@@ -45,8 +52,8 @@ const initPixi = async () => {
 }
 
 // 创建圆柱体网格
-const createCylinderPlane = async (texture: PIXI.Texture) => {
-  if (!stageContainer || !app) return
+const createCylinderPlane = async (texture: PIXI_TYPES.Texture) => {
+  if (!stageContainer || !app || !PIXI) return
 
   // 清理旧内容
   stageContainer.removeChildren()
@@ -130,6 +137,9 @@ watch(() => props.imageFile, (newFile) => {
     const reader = new FileReader()
     reader.onload = async (e) => {
       if (e.target?.result && typeof e.target.result === 'string') {
+        if (!PIXI) {
+          PIXI = await import('pixi.js')
+        }
         const texture = await PIXI.Assets.load(e.target.result)
         createCylinderPlane(texture)
       }
