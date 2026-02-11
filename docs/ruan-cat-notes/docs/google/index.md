@@ -81,3 +81,5 @@
 ```log
 Failed to login. Message: Your current account is not eligible for Gemini Code Assist for individuals. To use Gemini Code Assist for individuals you must be 18 years old or older. If you think you are receiving this message in error, please ensure you have verified your age and try to log in again.
 ```
+
+去这里做主动的年龄认证即可： https://support.google.com/accounts/answer/10071085
