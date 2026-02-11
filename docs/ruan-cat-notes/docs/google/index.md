@@ -71,3 +71,13 @@
 ### 无法实现有意义的切换
 
 当前账号的 pro 绑定在这张英国的付款方式上，无法切换更换。且购买的美国虚拟卡，无法完成有意义的认证。
+
+## 年龄不足
+
+某个账号已经有 gemini pro 了，但是说账号的年龄不足。
+
+![2026-02-11-18-20-45](https://gh-img-store.ruan-cat.com/img/2026-02-11-18-20-45.png)
+
+```log
+Failed to login. Message: Your current account is not eligible for Gemini Code Assist for individuals. To use Gemini Code Assist for individuals you must be 18 years old or older. If you think you are receiving this message in error, please ensure you have verified your age and try to log in again.
+```
