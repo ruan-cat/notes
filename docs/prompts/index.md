@@ -254,3 +254,26 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 	"todo-tree.general.tags": ["TODO"]
 }
 ```
+
+## 017 <!-- TODO: --> 修复故障 pixi v8 v4 在 vitepress 生产环境内出现的错误
+
+这两个组件是作用于 vitepress 场景下的组件。使用 `docs\ruan-cat-notes\package.json` 的 docs:dev 命令可以运行项目，在 `docs\ruan-cat-notes\docs\sundry\rm-developer\drill\drill-miku-pixi\index.md` 对应的页面内预览效果。
+
+- docs\ruan-cat-notes\docs\sundry\rm-developer\drill\drill-miku-pixi\components\PixiViewer.vue
+- docs\ruan-cat-notes\docs\sundry\rm-developer\drill\drill-miku-pixi\components\PixiViewerWithPixiV4.vue
+
+这两个组件出现严重的问题。怀疑是 pixi 注册实例数目和 vitepress SSR 渲染方面的问题。在生产环境内，出现了严重的水和报错。我希望你从 pixi 的角度，去排查 vitepress SSR 水和渲染的问题。
+
+相关的问题链路如下，供你参考：
+
+1. 我单独开发了 `docs\ruan-cat-notes\docs\sundry\rm-developer\drill\drill-miku-pixi\components\PixiViewer.vue` 即 PixiViewer 组件，在生产环境的 vitepress 文档内，该 vue 组件是可以正常渲染的。没有报错。
+2. 随后开发了 `PixiViewerWithPixiV4.vue` 组件，该组件在开发环境内，很正常。两个 `PixiViewer.vue` 和 `PixiViewerWithPixiV4.vue` 组件在开发环境内是很正常的。能够正常访问到效果。能够正常渲染。
+3. 但是部署到生产环境时，出现严重的错误。`PixiViewer.vue` 无法正常工作，只剩下 `PixiViewerWithPixiV4.vue` 还可以正常访问效果。
+
+生产环境控制台报错如下：
+
+```log
+Hydration completed but contains mismatches.
+```
+
+生产环境访问地址为： https://notes.ruan-cat.com/sundry/rm-developer/drill/drill-miku-pixi
