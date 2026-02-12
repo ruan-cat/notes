@@ -1,5 +1,7 @@
 # 基于 Kimi 官方网站的配置
 
+- 月度套餐订阅： https://www.kimi.com/code
+
 ## 备选的 Kimi 模型
 
 - [模型产品价格](https://platform.moonshot.cn/docs/pricing/chat#产品定价)
