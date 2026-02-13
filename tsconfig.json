@@ -78,7 +78,8 @@
 		"GEMINI.md",
 		"README.md",
 		"CLAUDE.md",
-		"GEMINI.md"
+		"GEMINI.md",
+		"AGENTS.md"
 	],
 	/* 模仿其他项目加上的排除配置 */
 	"exclude": [
