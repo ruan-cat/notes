@@ -83,3 +83,13 @@ Failed to login. Message: Your current account is not eligible for Gemini Code A
 ```
 
 去这里做主动的年龄认证即可： https://support.google.com/accounts/answer/10071085
+
+## There was an unexpected issue setting up your account. Please try again later
+
+登录 Antigravity 时，出现这样提示：
+
+```log
+There was an unexpected issue setting up your account. Please try again later.
+```
+
+![2026-02-13-16-16-47](https://gh-img-store.ruan-cat.com/img/2026-02-13-16-16-47.png)
