@@ -4,3 +4,4 @@
 - https://agent.minimaxi.com/
 - https://zcode.z.ai/cn
 - https://www.kimi.com/zh/agent
+- https://app.kiro.dev/agent
