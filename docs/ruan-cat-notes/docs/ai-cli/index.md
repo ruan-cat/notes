@@ -15,7 +15,7 @@
 - [trae-agent](https://github.com/bytedance/trae-agent)
 - [Kiro CLI](https://kiro.dev/cli/)
 - [copilot-cli](https://github.com/github/copilot-cli)
-- [kilocode](https://kilocode.ai/docs/cli)
+- [kilocode](https://kilo.ai/install#cli)
 - [cline-cli](https://cline.bot/cline-cli)
 - [Auggie CLI](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli)
 - [iFlow CLI](https://cli.iflow.cn/)
