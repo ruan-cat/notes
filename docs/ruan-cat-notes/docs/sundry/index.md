@@ -169,6 +169,16 @@ pnpm why vue-router
 
 - https://www.conductor.build/
 
+## 分析网站的风格
+
+用 AI 设计技能，反向地去检索这个网站使用的美术风格。用最出名的 UI 设计相关的技能来反向检索。
+
+- `nextlevelbuilder/ui-ux-pro-max-skill` https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+需要被分析的网站。
+
+- https://www.voxyz.space/
+
 ## RackNerd
 
 - `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
