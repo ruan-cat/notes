@@ -29,12 +29,12 @@
 
 ### 2.1 网站基本信息
 
-| 属性 | 值 |
-|------|-----|
-| 网站 URL | https://www.voxyz.space/ |
+| 属性     | 值                               |
+| -------- | -------------------------------- |
+| 网站 URL | https://www.voxyz.space/         |
 | 网站标题 | VoxYZ — 6 AI Agents, One Company |
-| 技术栈 | Next.js & Tailwind CSS |
-| 网站类型 | AI 公司产品展示主页 |
+| 技术栈   | Next.js & Tailwind CSS           |
+| 网站类型 | AI 公司产品展示主页              |
 
 ### 2.2 网站结构分析
 
@@ -48,7 +48,7 @@
 
 #### 2.2.2 主内容区 (Hero Section)
 
-```
+```plain
 主标题：6 AI Agents. One Company.
 副标题：Watch AI agents research, build, write, and ship — with zero human input.
 实时数据：87 signals processed today
@@ -56,14 +56,14 @@
 
 网站展示了 6 个 AI Agents 的实时状态：
 
-| Agent 名称 | 状态 | 处理数量 |
-|------------|------|----------|
-| Minion | Idle | 15 |
-| Sage | Idle | 14 |
-| Scout | Idle | 14 |
-| Quill | Idle | 15 |
-| Xalt | Idle | 14 |
-| Company Observer | Idle | 15 |
+| Agent 名称       | 状态 | 处理数量 |
+| ---------------- | ---- | -------- |
+| Minion           | Idle | 15       |
+| Sage             | Idle | 14       |
+| Scout            | Idle | 14       |
+| Quill            | Idle | 15       |
+| Xalt             | Idle | 14       |
+| Company Observer | Idle | 15       |
 
 #### 2.2.3 功能区块
 
@@ -96,69 +96,69 @@
 
 #### 2.3.1 配色方案
 
-| 颜色类型 | 具体值/特点 |
-|----------|--------------|
-| **背景色** | 深黑色 (Near Black / #000000) |
-| **主色调** | 蓝紫色系 (Indigo/Purple ~ #6366f1, #8b5cf6) |
-| **强调色** | 青色/蓝绿色点缀 (#06b6d4) |
-| **文字颜色** | 白色为主 (#ffffff)，灰色辅助 (#9ca3af) |
-| **边框/分隔** | 深灰色 (#374151) |
-| **发光效果** | 紫色/蓝色霓虹发光 |
+| 颜色类型      | 具体值/特点                                 |
+| ------------- | ------------------------------------------- |
+| **背景色**    | 深黑色 (Near Black / #000000)               |
+| **主色调**    | 蓝紫色系 (Indigo/Purple ~ #6366f1, #8b5cf6) |
+| **强调色**    | 青色/蓝绿色点缀 (#06b6d4)                   |
+| **文字颜色**  | 白色为主 (#ffffff)，灰色辅助 (#9ca3af)      |
+| **边框/分隔** | 深灰色 (#374151)                            |
+| **发光效果**  | 紫色/蓝色霓虹发光                           |
 
 #### 2.3.2 布局特点
 
-| 布局属性 | 具体特点 |
-|----------|----------|
+| 布局属性     | 具体特点                        |
+| ------------ | ------------------------------- |
 | **整体布局** | 单页滚动式 (Single Page Scroll) |
-| **内容组织** | 区块化 (Block-based) |
-| **卡片系统** | Bento Grid (便当盒式网格布局) |
-| **间距** | 大间距、留白充足 |
-| **对齐** | 居中对齐为主 |
-| **响应式** | 适配移动端和桌面端 |
+| **内容组织** | 区块化 (Block-based)            |
+| **卡片系统** | Bento Grid (便当盒式网格布局)   |
+| **间距**     | 大间距、留白充足                |
+| **对齐**     | 居中对齐为主                    |
+| **响应式**   | 适配移动端和桌面端              |
 
 #### 2.3.3 字体风格
 
-| 字体类型 | 推测字体 |
-|----------|----------|
+| 字体类型     | 推测字体                                      |
+| ------------ | --------------------------------------------- |
 | **标题字体** | 现代无衬线体 (推测：Inter, Geist Sans 或类似) |
-| **正文字体** | 系统默认无衬线体 |
-| **字号** | 大标题突出 (2xl-4xl)，正文适中 |
-| **字重** | 标题加粗，正文常规 |
-| **字间距** | 正常或略宽松 |
+| **正文字体** | 系统默认无衬线体                              |
+| **字号**     | 大标题突出 (2xl-4xl)，正文适中                |
+| **字重**     | 标题加粗，正文常规                            |
+| **字间距**   | 正常或略宽松                                  |
 
 #### 2.3.4 视觉效果
 
-| 效果类型 | 具体表现 |
-|----------|----------|
-| **霓虹发光** | 蓝紫色渐变发光边框和背景 |
-| **实时数据** | 动态数字更新展示 |
-| **卡片阴影** | 微妙的深色阴影 |
-| **渐变背景** | 紫色/蓝色径向渐变 |
-| **动画** | 平滑过渡效果 |
-| **图像** | Agent 头像展示 (PNG 格式) |
+| 效果类型     | 具体表现                  |
+| ------------ | ------------------------- |
+| **霓虹发光** | 蓝紫色渐变发光边框和背景  |
+| **实时数据** | 动态数字更新展示          |
+| **卡片阴影** | 微妙的深色阴影            |
+| **渐变背景** | 紫色/蓝色径向渐变         |
+| **动画**     | 平滑过渡效果              |
+| **图像**     | Agent 头像展示 (PNG 格式) |
 
 #### 2.3.5 整体氛围
 
-| 氛围维度 | 描述 |
-|----------|------|
-| **科技感** | 强烈 - 展现 AI 技术前沿形象 |
-| **未来感** | 强烈 - 实时数据、可视化效果 |
-| **专业感** | 中等 - 现代 SaaS 产品风格 |
+| 氛围维度   | 描述                               |
+| ---------- | ---------------------------------- |
+| **科技感** | 强烈 - 展现 AI 技术前沿形象        |
+| **未来感** | 强烈 - 实时数据、可视化效果        |
+| **专业感** | 中等 - 现代 SaaS 产品风格          |
 | **创新感** | 强烈 - 6 个 AI Agents 实时工作展示 |
-| **信任感** | 中等 - 透明化展示所有决策 |
+| **信任感** | 中等 - 透明化展示所有决策          |
 
 ### 2.4 风格匹配分析
 
 根据 ui-ux-pro-max-skill 技能中的 67 种 UI 风格数据库，目标网站最匹配的风格标签如下：
 
-| 匹配度 | 风格名称 | 匹配理由 |
-|--------|----------|----------|
-| ⭐⭐⭐⭐⭐ | **AI-Native UI** | 专为 AI 产品设计的 UI，展示 AI Agents 实时工作状态 |
-| ⭐⭐⭐⭐⭐ | **Dark Mode (OLED)** | 深黑色背景，适合 AI/科技类产品 |
-| ⭐⭐⭐⭐ | **Bento Box Grid** | 卡片式布局，展示多个产品和功能模块 |
-| ⭐⭐⭐⭐ | **Cyberpunk UI** | 赛博朋克风格的霓虹光效 |
-| ⭐⭐⭐⭐ | **Aurora UI** | 极光风格的渐变光效 |
-| ⭐⭐⭐ | **Gradient Mesh** | 紫色/蓝色渐变背景效果 |
+| 匹配度     | 风格名称             | 匹配理由                                           |
+| ---------- | -------------------- | -------------------------------------------------- |
+| ⭐⭐⭐⭐⭐ | **AI-Native UI**     | 专为 AI 产品设计的 UI，展示 AI Agents 实时工作状态 |
+| ⭐⭐⭐⭐⭐ | **Dark Mode (OLED)** | 深黑色背景，适合 AI/科技类产品                     |
+| ⭐⭐⭐⭐   | **Bento Box Grid**   | 卡片式布局，展示多个产品和功能模块                 |
+| ⭐⭐⭐⭐   | **Cyberpunk UI**     | 赛博朋克风格的霓虹光效                             |
+| ⭐⭐⭐⭐   | **Aurora UI**        | 极光风格的渐变光效                                 |
+| ⭐⭐⭐     | **Gradient Mesh**    | 紫色/蓝色渐变背景效果                              |
 
 ---
 
@@ -170,26 +170,26 @@ ui-ux-pro-max-skill（简称 UI UX Pro Max）是一个 AI 驱动的设计智能�
 
 #### 3.1.1 基本信息
 
-| 属性 | 值 |
-|------|-----|
-| 项目名称 | UI UX Pro Max |
+| 属性     | 值                                                      |
+| -------- | ------------------------------------------------------- |
+| 项目名称 | UI UX Pro Max                                           |
 | 项目地址 | https://github.com/nextlevelbuilder/ui-ux-pro-max-skill |
-| 官方网站 | https://uupm.cc |
-| 许可证 | MIT License |
-| 编程语言 | Python 3.x |
-| 支持平台 | Claude Code, Cursor, Windsurf, Continue, Gemini CLI 等 |
+| 官方网站 | https://uupm.cc                                         |
+| 许可证   | MIT License                                             |
+| 编程语言 | Python 3.x                                              |
+| 支持平台 | Claude Code, Cursor, Windsurf, Continue, Gemini CLI 等  |
 
 #### 3.1.2 核心统计数据
 
-| 指标 | 数量 |
-|------|------|
-| UI 风格种类 | 67 种 |
-| 配色方案 | 96 种 |
-| 字体搭配 | 57 种 |
-| 图表类型 | 25 种 |
-| UX 指南 | 99 条 |
+| 指标         | 数量   |
+| ------------ | ------ |
+| UI 风格种类  | 67 种  |
+| 配色方案     | 96 种  |
+| 字体搭配     | 57 种  |
+| 图表类型     | 25 种  |
+| UX 指南      | 99 条  |
 | 行业推理规则 | 100 条 |
-| 支持技术栈 | 13 种 |
+| 支持技术栈   | 13 种  |
 
 ### 3.2 功能架构
 
@@ -201,15 +201,15 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --domain <domain> [-n <max
 
 **Domain 搜索类型：**
 
-| 域名 | 功能 |
-|------|------|
-| `product` | 产品类型推荐 (SaaS, e-commerce, portfolio) |
-| `style` | UI 风格 (glassmorphism, minimalism, brutalism) + AI prompts + CSS 关键词 |
-| `typography` | 字体搭配 + Google Fonts 导入 |
-| `color` | 按产品类型的配色方案 |
-| `landing` | 页面结构 + CTA 策略 |
-| `chart` | 图表类型 + 库推荐 |
-| `ux` | 最佳实践 + 反模式 |
+| 域名         | 功能                                                                     |
+| ------------ | ------------------------------------------------------------------------ |
+| `product`    | 产品类型推荐 (SaaS, e-commerce, portfolio)                               |
+| `style`      | UI 风格 (glassmorphism, minimalism, brutalism) + AI prompts + CSS 关键词 |
+| `typography` | 字体搭配 + Google Fonts 导入                                             |
+| `color`      | 按产品类型的配色方案                                                     |
+| `landing`    | 页面结构 + CTA 策略                                                      |
+| `chart`      | 图表类型 + 库推荐                                                        |
+| `ux`         | 最佳实践 + 反模式                                                        |
 
 **Stack 搜索：**
 
@@ -225,7 +225,7 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --stack <stack>
 
 **工作流程：**
 
-```
+```plain
 1. 用户请求
    "Build a landing page for my beauty spa"
 
@@ -249,7 +249,7 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --stack <stack>
 
 **输出示例：**
 
-```
+```plain
 +----------------------------------------------------------------------------------------+
 |  TARGET: Serenity Spa - RECOMMENDED DESIGN SYSTEM                                      |
 +----------------------------------------------------------------------------------------+
@@ -290,93 +290,93 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --stack <stack>
 
 ### 3.3 风格数据库详解
 
-#### 3.3.1 通用风格 (49种)
+#### 3.3.1 通用风格 (49 种)
 
-| # | 风格名称 | 适用场景 |
-|---|----------|----------|
-| 1 | Minimalism & Swiss Style | 企业应用、仪表板、文档 |
-| 2 | Neumorphism | 健康/ wellness 应用、冥想平台 |
-| 3 | Glassmorphism | 现代 SaaS、金融仪表板 |
-| 4 | Brutalism | 设计作品集、艺术项目 |
-| 5 | 3D & Hyperrealism | 游戏、产品展示、沉浸式体验 |
-| 6 | Vibrant & Block-based | 创业公司、创意机构、游戏 |
-| 7 | Dark Mode (OLED) | 夜间模式应用、编码平台 |
-| 8 | Accessible & Ethical | 政府、医疗、教育 |
-| 9 | Claymorphism | 教育应用、儿童应用、SaaS |
-| 10 | Aurora UI | 现代 SaaS、创意机构 |
-| 11 | Retro-Futurism | 游戏、娱乐、音乐平台 |
-| 12 | Flat Design | Web 应用、移动应用、创业 MVP |
-| 13 | Skeuomorphism | 遗留应用、游戏、 premium 产品 |
-| 14 | Liquid Glass | Premium SaaS、高端电商 |
-| 15 | Motion-Driven | 作品集网站、叙事平台 |
-| 16 | Micro-interactions | 移动应用、触摸屏 UI |
-| 17 | Inclusive Design | 公共服务、教育、医疗 |
-| 18 | Zero Interface | 语音助手、AI 平台 |
-| 19 | Soft UI Evolution | 现代企业应用、SaaS |
-| 20 | Neubrutalism | Gen Z 品牌、创业公司 |
-| 21 | Bento Box Grid | 仪表板、产品页面、作品集 |
-| 22 | Y2K Aesthetic | 时尚品牌、音乐、Gen Z |
-| 23 | Cyberpunk UI | 游戏、科技产品、加密应用 |
-| 24 | Organic Biophilic | Wellness 应用、可持续品牌 |
-| 25 | AI-Native UI | AI 产品、聊天机器人、 copilots |
-| 26 | Memphis Design | 创意机构、音乐、青年品牌 |
-| 27 | Vaporwave | 音乐平台、游戏、作品集 |
-| 28 | Dimensional Layering | 仪表板、卡片布局、模态框 |
-| 29 | Exaggerated Minimalism | 时尚、建筑、作品集 |
-| 30 | Kinetic Typography | Hero 区域、营销站点 |
-| 31 | Parallax Storytelling | 品牌叙事、产品发布 |
-| 32 | Swiss Modernism 2.0 | 企业网站、建筑、编辑 |
-| 33 | HUD / Sci-Fi FUI | 科幻游戏、太空科技、网络安全 |
-| 34 | Pixel Art | 独立游戏、复古工具、创意 |
-| 35 | Bento Grids | 产品功能、仪表板、个人 |
-| 36 | Spatial UI (VisionOS) | 空间计算应用、VR/AR |
-| 37 | E-Ink / Paper | 阅读应用、数字报纸 |
-| 38 | Gen Z Chaos / Maximalism | Gen Z 生活、音乐艺术家 |
-| 39 | Biomimetic / Organic 2.0 | 可持续科技、生物技术、健康 |
-| 40 | Anti-Polish / Raw Aesthetic | 创意作品集、艺术家网站 |
-| 41 | Tactile Digital / Deformable UI | 现代移动应用、活泼品牌 |
-| 42 | Nature Distilled | Wellness 品牌、可持续产品 |
-| 43 | Interactive Cursor Design | 创意作品集、交互式 |
-| 44 | Voice-First Multimodal | 语音助手、无障碍应用 |
-| 45 | 3D Product Preview | 电商、家具、时尚 |
-| 46 | Gradient Mesh / Aurora Evolved | Hero 区域、背景、创意 |
-| 47 | Editorial Grid / Magazine | 新闻网站、博客、杂志 |
-| 48 | Chromatic Aberration / RGB Split | 音乐平台、游戏、科技 |
-| 49 | Vintage Analog / Retro Film | 摄影、音乐/黑胶品牌 |
+| #   | 风格名称                         | 适用场景                       |
+| --- | -------------------------------- | ------------------------------ |
+| 1   | Minimalism & Swiss Style         | 企业应用、仪表板、文档         |
+| 2   | Neumorphism                      | 健康/ wellness 应用、冥想平台  |
+| 3   | Glassmorphism                    | 现代 SaaS、金融仪表板          |
+| 4   | Brutalism                        | 设计作品集、艺术项目           |
+| 5   | 3D & Hyperrealism                | 游戏、产品展示、沉浸式体验     |
+| 6   | Vibrant & Block-based            | 创业公司、创意机构、游戏       |
+| 7   | Dark Mode (OLED)                 | 夜间模式应用、编码平台         |
+| 8   | Accessible & Ethical             | 政府、医疗、教育               |
+| 9   | Claymorphism                     | 教育应用、儿童应用、SaaS       |
+| 10  | Aurora UI                        | 现代 SaaS、创意机构            |
+| 11  | Retro-Futurism                   | 游戏、娱乐、音乐平台           |
+| 12  | Flat Design                      | Web 应用、移动应用、创业 MVP   |
+| 13  | Skeuomorphism                    | 遗留应用、游戏、 premium 产品  |
+| 14  | Liquid Glass                     | Premium SaaS、高端电商         |
+| 15  | Motion-Driven                    | 作品集网站、叙事平台           |
+| 16  | Micro-interactions               | 移动应用、触摸屏 UI            |
+| 17  | Inclusive Design                 | 公共服务、教育、医疗           |
+| 18  | Zero Interface                   | 语音助手、AI 平台              |
+| 19  | Soft UI Evolution                | 现代企业应用、SaaS             |
+| 20  | Neubrutalism                     | Gen Z 品牌、创业公司           |
+| 21  | Bento Box Grid                   | 仪表板、产品页面、作品集       |
+| 22  | Y2K Aesthetic                    | 时尚品牌、音乐、Gen Z          |
+| 23  | Cyberpunk UI                     | 游戏、科技产品、加密应用       |
+| 24  | Organic Biophilic                | Wellness 应用、可持续品牌      |
+| 25  | AI-Native UI                     | AI 产品、聊天机器人、 copilots |
+| 26  | Memphis Design                   | 创意机构、音乐、青年品牌       |
+| 27  | Vaporwave                        | 音乐平台、游戏、作品集         |
+| 28  | Dimensional Layering             | 仪表板、卡片布局、模态框       |
+| 29  | Exaggerated Minimalism           | 时尚、建筑、作品集             |
+| 30  | Kinetic Typography               | Hero 区域、营销站点            |
+| 31  | Parallax Storytelling            | 品牌叙事、产品发布             |
+| 32  | Swiss Modernism 2.0              | 企业网站、建筑、编辑           |
+| 33  | HUD / Sci-Fi FUI                 | 科幻游戏、太空科技、网络安全   |
+| 34  | Pixel Art                        | 独立游戏、复古工具、创意       |
+| 35  | Bento Grids                      | 产品功能、仪表板、个人         |
+| 36  | Spatial UI (VisionOS)            | 空间计算应用、VR/AR            |
+| 37  | E-Ink / Paper                    | 阅读应用、数字报纸             |
+| 38  | Gen Z Chaos / Maximalism         | Gen Z 生活、音乐艺术家         |
+| 39  | Biomimetic / Organic 2.0         | 可持续科技、生物技术、健康     |
+| 40  | Anti-Polish / Raw Aesthetic      | 创意作品集、艺术家网站         |
+| 41  | Tactile Digital / Deformable UI  | 现代移动应用、活泼品牌         |
+| 42  | Nature Distilled                 | Wellness 品牌、可持续产品      |
+| 43  | Interactive Cursor Design        | 创意作品集、交互式             |
+| 44  | Voice-First Multimodal           | 语音助手、无障碍应用           |
+| 45  | 3D Product Preview               | 电商、家具、时尚               |
+| 46  | Gradient Mesh / Aurora Evolved   | Hero 区域、背景、创意          |
+| 47  | Editorial Grid / Magazine        | 新闻网站、博客、杂志           |
+| 48  | Chromatic Aberration / RGB Split | 音乐平台、游戏、科技           |
+| 49  | Vintage Analog / Retro Film      | 摄影、音乐/黑胶品牌            |
 
-#### 3.3.2 落地页风格 (8种)
+#### 3.3.2 落地页风格 (8 种)
 
-| # | 风格名称 | 适用场景 |
-|---|----------|----------|
-| 1 | Hero-Centric Design | 产品有强视觉识别度 |
-| 2 | Conversion-Optimized | 潜在客户生成、销售页面 |
-| 3 | Feature-Rich Showcase | SaaS、复杂产品 |
-| 4 | Minimal & Direct | 简单产品、应用 |
-| 5 | Social Proof-Focused | 服务、B2C 产品 |
-| 6 | Interactive Product Demo | 软件、工具 |
-| 7 | Trust & Authority | B2B、企业、咨询 |
-| 8 | Storytelling-Driven | 品牌、机构、非营利 |
+| #   | 风格名称                 | 适用场景               |
+| --- | ------------------------ | ---------------------- |
+| 1   | Hero-Centric Design      | 产品有强视觉识别度     |
+| 2   | Conversion-Optimized     | 潜在客户生成、销售页面 |
+| 3   | Feature-Rich Showcase    | SaaS、复杂产品         |
+| 4   | Minimal & Direct         | 简单产品、应用         |
+| 5   | Social Proof-Focused     | 服务、B2C 产品         |
+| 6   | Interactive Product Demo | 软件、工具             |
+| 7   | Trust & Authority        | B2B、企业、咨询        |
+| 8   | Storytelling-Driven      | 品牌、机构、非营利     |
 
-#### 3.3.3 BI/仪表板风格 (10种)
+#### 3.3.3 BI/仪表板风格 (10 种)
 
-| # | 风格名称 | 适用场景 |
-|---|----------|----------|
-| 1 | Data-Dense Dashboard | 复杂数据分析 |
-| 2 | Heat Map & Heatmap Style | 地理/行为数据 |
-| 3 | Executive Dashboard | C-suite 摘要 |
-| 4 | Real-Time Monitoring | 运维、DevOps |
-| 5 | Drill-Down Analytics | 深度探索 |
-| 6 | Comparative Analysis Dashboard | 并排比较 |
-| 7 | Predictive Analytics | 预测、ML 洞察 |
-| 8 | User Behavior Analytics | UX 研究、产品分析 |
-| 9 | Financial Dashboard | 财务、会计 |
-| 10 | Sales Intelligence Dashboard | 销售团队、CRM |
+| #   | 风格名称                       | 适用场景          |
+| --- | ------------------------------ | ----------------- |
+| 1   | Data-Dense Dashboard           | 复杂数据分析      |
+| 2   | Heat Map & Heatmap Style       | 地理/行为数据     |
+| 3   | Executive Dashboard            | C-suite 摘要      |
+| 4   | Real-Time Monitoring           | 运维、DevOps      |
+| 5   | Drill-Down Analytics           | 深度探索          |
+| 6   | Comparative Analysis Dashboard | 并排比较          |
+| 7   | Predictive Analytics           | 预测、ML 洞察     |
+| 8   | User Behavior Analytics        | UX 研究、产品分析 |
+| 9   | Financial Dashboard            | 财务、会计        |
+| 10  | Sales Intelligence Dashboard   | 销售团队、CRM     |
 
 ### 3.4 安装和使用
 
 #### 3.4.1 Claude Marketplace 安装
 
-```
+```plain
 /plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
 /plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 ```
@@ -402,7 +402,7 @@ uipro init --ai gemini      # Gemini CLI
 
 **技能模式（自动激活）：**
 
-```
+```plain
 Build a landing page for my SaaS product
 Create a dashboard for healthcare analytics
 Design a portfolio website with dark mode
@@ -426,12 +426,12 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "fintech banking" --desig
 
 为了全面评估 ui-ux-pro-max-skill 的反向检索能力，我创建了一个由 4 个并行工作的子代理组成的分析团队：
 
-| 子代理编号 | 角色 | 分析重点 |
-|------------|------|----------|
-| analyzer-1 | UI/UX 分析专家 | 目标网站的美术设计风格 |
-| analyzer-2 | AI 设计技能专家 | 技能的设计系统生成能力 |
-| analyzer-3 | AI 设计技能分析师 | 技能的反向检索能力 |
-| analyzer-4 | 技术评估专家 | 技能复刻目标网站的可行性 |
+| 子代理编号 | 角色              | 分析重点                 |
+| ---------- | ----------------- | ------------------------ |
+| analyzer-1 | UI/UX 分析专家    | 目标网站的美术设计风格   |
+| analyzer-2 | AI 设计技能专家   | 技能的设计系统生成能力   |
+| analyzer-3 | AI 设计技能分析师 | 技能的反向检索能力       |
+| analyzer-4 | 技术评估专家      | 技能复刻目标网站的可行性 |
 
 ### 4.2 analyzer-1：目标网站美术风格分析
 
@@ -471,13 +471,13 @@ analyzer-1 子代理负责分析 https://www.voxyz.space/ 网站的美术设计�
 
 analyzer-1 识别出以下最匹配的风格：
 
-| 优先级 | 风格名称 | 匹配理由 |
-|--------|----------|----------|
-| 1 | AI-Native UI | 展示 AI Agents 实时工作 |
-| 2 | Dark Mode (OLED) | 深黑色背景 |
-| 3 | Bento Box Grid | 卡片式布局 |
-| 4 | Cyberpunk UI | 霓虹光效 |
-| 5 | Aurora UI | 渐变光效 |
+| 优先级 | 风格名称         | 匹配理由                |
+| ------ | ---------------- | ----------------------- |
+| 1      | AI-Native UI     | 展示 AI Agents 实时工作 |
+| 2      | Dark Mode (OLED) | 深黑色背景              |
+| 3      | Bento Box Grid   | 卡片式布局              |
+| 4      | Cyberpunk UI     | 霓虹光效                |
+| 5      | Aurora UI        | 渐变光效                |
 
 ### 4.3 analyzer-2：技能设计系统生成能力分析
 
@@ -487,14 +487,14 @@ analyzer-2 子代理负责深入分析 ui-ux-pro-max-skill 技能的设计系统
 
 #### 4.3.2 技能核心能力总结
 
-| 能力 | 状态 | 说明 |
-|------|------|------|
-| 67 种 UI 风格 | ✅ 完整 | 包含 Glassmorphism, Minimalism, Brutalism, AI-Native UI 等 |
-| 96 种配色方案 | ✅ 完整 | 行业特定的配色方案 |
-| 57 种字体搭配 | ✅ 完整 | Google Fonts 字体组合 |
-| 25 种图表类型 | ✅ 完整 | 仪表板和分析推荐 |
-| 设计系统生成器 | ✅ 支持 | v2.0 核心功能 |
-| 13 种技术栈 | ✅ 支持 | React, Next.js, Tailwind 等 |
+| 能力           | 状态    | 说明                                                       |
+| -------------- | ------- | ---------------------------------------------------------- |
+| 67 种 UI 风格  | ✅ 完整 | 包含 Glassmorphism, Minimalism, Brutalism, AI-Native UI 等 |
+| 96 种配色方案  | ✅ 完整 | 行业特定的配色方案                                         |
+| 57 种字体搭配  | ✅ 完整 | Google Fonts 字体组合                                      |
+| 25 种图表类型  | ✅ 完整 | 仪表板和分析推荐                                           |
+| 设计系统生成器 | ✅ 支持 | v2.0 核心功能                                              |
+| 13 种技术栈    | ✅ 支持 | React, Next.js, Tailwind 等                                |
 
 #### 4.3.3 设计系统生成器工作流程
 
@@ -520,12 +520,12 @@ analyzer-3 子代理专门分析 ui-ux-pro-max-skill 是否具备反向检索能
 
 #### 4.4.2 关键问题分析
 
-| 问题 | 答案 | 详细说明 |
-|------|------|----------|
-| 技能是"正向设计"还是"反向分析"？ | 正向设计 | 技能主要帮助用户设计新 UI，不是分析现有网站 |
-| 能否分析网站截图？ | ❌ 不能 | 技能没有图像识别/分析能力 |
-| 能否理解"和 XX 网站一样风格"的描述？ | ⚠️ 有限 | 取决于用户描述的详细程度 |
-| 是否有自动风格推断功能？ | ❌ 没有 | 完全依赖用户的文字描述输入 |
+| 问题                                 | 答案     | 详细说明                                    |
+| ------------------------------------ | -------- | ------------------------------------------- |
+| 技能是"正向设计"还是"反向分析"？     | 正向设计 | 技能主要帮助用户设计新 UI，不是分析现有网站 |
+| 能否分析网站截图？                   | ❌ 不能  | 技能没有图像识别/分析能力                   |
+| 能否理解"和 XX 网站一样风格"的描述？ | ⚠️ 有限  | 取决于用户描述的详细程度                    |
+| 是否有自动风格推断功能？             | ❌ 没有  | 完全依赖用户的文字描述输入                  |
 
 #### 4.4.3 技能能力限制
 
@@ -548,12 +548,12 @@ analyzer-4 子代理综合评估使用 ui-ux-pro-max-skill 复刻 https://www.vo
 
 #### 4.5.2 评估维度
 
-| 评估维度 | 评分 | 说明 |
-|----------|------|------|
-| 风格理解能力 | 6/10 | 需要用户辅助描述风格特征 |
-| 风格匹配度 | 9/10 | 技能库中有高度匹配的风格定义 |
-| 设计系统生成 | 8/10 | 可以生成完整的设计指导 |
-| 技术栈支持 | 9/10 | 支持 Next.js + Tailwind |
+| 评估维度     | 评分 | 说明                         |
+| ------------ | ---- | ---------------------------- |
+| 风格理解能力 | 6/10 | 需要用户辅助描述风格特征     |
+| 风格匹配度   | 9/10 | 技能库中有高度匹配的风格定义 |
+| 设计系统生成 | 8/10 | 可以生成完整的设计指导       |
+| 技术栈支持   | 9/10 | 支持 Next.js + Tailwind      |
 
 #### 4.5.3 复刻路径建议
 
@@ -614,21 +614,21 @@ python3 search.py "AI company landing page dark mode neon glow bento grid" --des
 
 #### 5.2.1 视觉特征矩阵
 
-| 视觉维度 | 特征值 | 对应技能标签 |
-|----------|--------|--------------|
-| 背景色 | #000000 (Near Black) | Dark Mode (OLED) |
-| 主色调 | #6366f1, #8b5cf6 (Indigo/Purple) | Aurora UI |
-| 强调色 | #06b6d4 (Cyan) | Cyberpunk UI |
-| 布局 | Bento Grid | Bento Box Grid |
-| 氛围 | AI/Tech/Future | AI-Native UI |
-| 效果 | 霓虹发光 | Cyberpunk UI |
-| 技术栈 | Next.js + Tailwind | 支持 |
+| 视觉维度 | 特征值                           | 对应技能标签     |
+| -------- | -------------------------------- | ---------------- |
+| 背景色   | #000000 (Near Black)             | Dark Mode (OLED) |
+| 主色调   | #6366f1, #8b5cf6 (Indigo/Purple) | Aurora UI        |
+| 强调色   | #06b6d4 (Cyan)                   | Cyberpunk UI     |
+| 布局     | Bento Grid                       | Bento Box Grid   |
+| 氛围     | AI/Tech/Future                   | AI-Native UI     |
+| 效果     | 霓虹发光                         | Cyberpunk UI     |
+| 技术栈   | Next.js + Tailwind               | 支持             |
 
 #### 5.2.2 设计系统建议
 
 基于 ui-ux-pro-max-skill 技能，为复刻该网站生成的设计系统建议：
 
-```
+```plain
 设计系统名称：VoxXYZ Clone Style
 
 风格定位：
@@ -670,15 +670,15 @@ python3 search.py "AI company landing page dark mode neon glow bento grid" --des
 
 #### 5.3.1 功能矩阵
 
-| 功能 | 能力评级 | 说明 |
-|------|----------|------|
+| 功能                        | 能力评级   | 说明                   |
+| --------------------------- | ---------- | ---------------------- |
 | 正向设计（根据描述生成 UI） | ⭐⭐⭐⭐⭐ | 强大的设计系统生成能力 |
-| 风格推荐 | ⭐⭐⭐⭐⭐ | 67 种风格数据库 |
-| 配色方案 | ⭐⭐⭐⭐⭐ | 96 种配色方案 |
-| 字体搭配 | ⭐⭐⭐⭐⭐ | 57 种字体组合 |
-| 反向检索（分析现有网站） | ⭐⭐☆☆☆ | 无图像分析能力 |
-| 自动化风格推断 | ⭐⭐☆☆☆ | 依赖用户描述 |
-| 技术栈代码生成 | ⭐⭐⭐⭐⭐ | 支持 13 种技术栈 |
+| 风格推荐                    | ⭐⭐⭐⭐⭐ | 67 种风格数据库        |
+| 配色方案                    | ⭐⭐⭐⭐⭐ | 96 种配色方案          |
+| 字体搭配                    | ⭐⭐⭐⭐⭐ | 57 种字体组合          |
+| 反向检索（分析现有网站）    | ⭐⭐☆☆☆    | 无图像分析能力         |
+| 自动化风格推断              | ⭐⭐☆☆☆    | 依赖用户描述           |
+| 技术栈代码生成              | ⭐⭐⭐⭐⭐ | 支持 13 种技术栈       |
 
 #### 5.3.2 核心优势
 
@@ -699,23 +699,23 @@ python3 search.py "AI company landing page dark mode neon glow bento grid" --des
 
 #### 5.4.1 任务完成度评估
 
-| 任务 | 完成度 | 说明 |
-|------|--------|------|
+| 任务             | 完成度  | 说明                 |
+| ---------------- | ------- | -------------------- |
 | 分析目标网站风格 | ✅ 100% | 成功识别所有视觉特征 |
-| 检索技能数据库 | ✅ 100% | 找到匹配的风格标签 |
-| 评估反向检索能力 | ✅ 100% | 明确技能无此能力 |
-| 评估复刻可行性 | ✅ 100% | 给出详细路径建议 |
+| 检索技能数据库   | ✅ 100% | 找到匹配的风格标签   |
+| 评估反向检索能力 | ✅ 100% | 明确技能无此能力     |
+| 评估复刻可行性   | ✅ 100% | 给出详细路径建议     |
 
 #### 5.4.2 最终结论
 
 **ui-ux-pro-max-skill 是否能完成"反向检索网站美术风格"的任务？**
 
-| 方面 | 结论 |
-|------|------|
-| **反向检索网站风格** | ⚠️ **不擅长** - 技能没有图像分析能力 |
-| **根据描述匹配风格** | ✅ **擅长** - 67 种风格数据库 |
-| **生成设计系统** | ✅ **擅长** - 可输出完整设计指导 |
-| **复刻 voxxyz.space** | ✅ **可行** - 需要人工辅助描述风格 |
+| 方面                  | 结论                                 |
+| --------------------- | ------------------------------------ |
+| **反向检索网站风格**  | ⚠️ **不擅长** - 技能没有图像分析能力 |
+| **根据描述匹配风格**  | ✅ **擅长** - 67 种风格数据库        |
+| **生成设计系统**      | ✅ **擅长** - 可输出完整设计指导     |
+| **复刻 voxxyz.space** | ✅ **可行** - 需要人工辅助描述风格   |
 
 ---
 
@@ -725,7 +725,7 @@ python3 search.py "AI company landing page dark mode neon glow bento grid" --des
 
 由于 ui-ux-pro-max-skill 本身不具备反向检索能力，要使用该技能复刻类似 voxxyz.space 的网站，需要采用人工辅助的工作流程：
 
-```
+```plain
 ┌─────────────────────────────────────────────────────────────────────┐
 │                     当前可用工作流程                                  │
 └─────────────────────────────────────────────────────────────────────┘
@@ -826,13 +826,13 @@ python3 search.py --analyze-url "https://www.voxyz.space/"
 
 ### 7.3 评分总结
 
-| 评估项 | 评分 |
-|--------|------|
-| 目标网站风格分析 | 10/10 ✅ |
-| 技能风格数据库 | 10/10 ✅ |
-| 技能正向设计能力 | 10/10 ✅ |
-| 技能反向检索能力 | 2/10 ❌ |
-| 复刻目标网站可行性 | 7/10 ⚠️ |
+| 评估项             | 评分     |
+| ------------------ | -------- |
+| 目标网站风格分析   | 10/10 ✅ |
+| 技能风格数据库     | 10/10 ✅ |
+| 技能正向设计能力   | 10/10 ✅ |
+| 技能反向检索能力   | 2/10 ❌  |
+| 复刻目标网站可行性 | 7/10 ⚠️  |
 
 ---
 
