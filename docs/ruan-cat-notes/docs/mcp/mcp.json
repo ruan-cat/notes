@@ -35,6 +35,13 @@
 				"git+https://github.com/GuDaStudio/geminimcp.git",
 				"geminimcp"
 			]
-		}
+		}, 
+		"github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer 自己设置的github token"
+      }
+    }
 	}
 }
