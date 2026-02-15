@@ -60,5 +60,8 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
   > `skills add https://github.com/vercel-labs/skills --skill find-skills`
 - 技能制作： https://skills.sh/anthropics/skills/skill-creator
   > `skills add https://github.com/anthropics/skills --skill skill-creator`
-- git 提交： https://github.com/ruan-cat/monorepo/blob/main/.claude-plugin/README.md#git-提交助手-git-commit
-  > `skills add https://github.com/ruan-cat/monorepo/tree/main/claude-code-marketplace/common-tools/skills/git-commit`
+- git 提交：
+  - https://github.com/ruan-cat/monorepo/blob/main/.claude-plugin/README.md#git-提交助手-git-commit
+    > `skills add https://github.com/ruan-cat/monorepo/tree/main/claude-code-marketplace/common-tools/skills/git-commit`
+  - https://skills.sh/ruan-cat/monorepo/git-commit
+    > `skills add https://github.com/ruan-cat/monorepo --skill git-commit`
