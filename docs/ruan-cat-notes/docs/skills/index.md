@@ -55,13 +55,32 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 由于目前的 skills 安装没有一个专门的清单表，无法实现规模化控制，无法统一设置全部的 AI 客户端，故这里把必要的 skills 依赖列举出来：
 
 - 驱动 gemini cli： https://skills.sh/softaworks/agent-toolkit/gemini
-  > `skills add https://github.com/softaworks/agent-toolkit --skill gemini`
+
+  > ```bash
+  > skills add https://github.com/softaworks/agent-toolkit --skill gemini
+  > ```
+
 - 查询 skills： https://skills.sh/vercel-labs/skills/find-skills
-  > `skills add https://github.com/vercel-labs/skills --skill find-skills`
+
+  > ```bash
+  > skills add https://github.com/vercel-labs/skills --skill find-skills
+  > ```
+
 - 技能制作： https://skills.sh/anthropics/skills/skill-creator
-  > `skills add https://github.com/anthropics/skills --skill skill-creator`
+
+  > ```bash
+  > skills add https://github.com/anthropics/skills --skill skill-creator
+  > ```
+
 - git 提交：
-  - https://github.com/ruan-cat/monorepo/blob/main/.claude-plugin/README.md#git-提交助手-git-commit
-    > `skills add https://github.com/ruan-cat/monorepo/tree/main/claude-code-marketplace/common-tools/skills/git-commit`
-  - https://skills.sh/ruan-cat/monorepo/git-commit
-    > `skills add https://github.com/ruan-cat/monorepo --skill git-commit`
+  - GitHub： https://github.com/ruan-cat/monorepo/blob/main/.claude-plugin/README.md#git-提交助手-git-commit
+
+    > ```bash
+    > skills add https://github.com/ruan-cat/monorepo/tree/main/claude-code-marketplace/common-tools/skills/git-commit
+    > ```
+
+  - skills.sh： https://skills.sh/ruan-cat/monorepo/git-commit
+
+    > ```bash
+    > skills add https://github.com/ruan-cat/monorepo --skill git-commit
+    > ```
