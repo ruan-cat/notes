@@ -277,3 +277,36 @@ Hydration completed but contains mismatches.
 ```
 
 生产环境访问地址为： https://notes.ruan-cat.com/sundry/rm-developer/drill/drill-miku-pixi
+
+## 018 <!-- TODO: --> 通用 agent 任务，发起 pr，批量对仓库做设置
+
+请你对以下清单的 github 仓库发起 pr。目标 github 用户名为 ruan-cat。
+
+### 需要新建 pr 的 github 仓库名称
+
+- ruan-cat/notes
+- ruan-cat/monorepo
+- ruan-cat/11comm
+- ruan-cat/10wms
+- ruan-cat/stars-list
+- ruan-cat/rm-monorepo
+
+### pr 任务细节与操作步骤
+
+你需要具体做的 pr 内容为：
+
+对 `.vscode\settings.json` 的 `explorer.fileNesting.patterns` 配置编写内容，内容为：
+
+```json
+{
+	"explorer.fileNesting.patterns": {
+		// 折叠 AI大模型记忆文件
+		"CLAUDE.md": "GEMINI.md,AGENTS.md"
+	}
+}
+```
+
+1. 首先，你需要用过 github MCP 来确定目标仓库。
+2. 确定目标仓库后，你需要检查该项目的分支。需要确定稍后 pr 的分支名称。
+   - 如果该仓库只有一个 main 主分支，那么就向这个主分支推送。
+   - 如果该仓库存在 dev 分支，那么就向这个 dev 分支做推送提交。
