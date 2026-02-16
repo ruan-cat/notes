@@ -62,6 +62,8 @@
 	"terminal.integrated.cwd": "${workspaceFolder}",
 	// 配置多根项目的目录地址 默认为项目根目录 且该配置仅在 .code-workspace 文件内生效
 	"terminal.integrated.splitCwd": "workspaceRoot",
+	/** 启用文件嵌套折叠功能 */
+	"explorer.fileNesting.enabled": true,
 	/** 折叠 AI大模型记忆文件 */
 	"explorer.fileNesting.patterns": {
 		"CLAUDE.md": "GEMINI.md,AGENTS.md"
