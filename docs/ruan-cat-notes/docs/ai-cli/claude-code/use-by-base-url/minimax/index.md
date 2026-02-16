@@ -24,6 +24,7 @@ claude --dangerously-skip-permissions
 各种收集过来的打折订阅链接。
 
 - https://platform.minimaxi.com/subscribe/coding-plan?code=DULH1o66fB&source=link
+- https://platform.minimaxi.com/subscribe/coding-plan?code=KWmeiTv74y
 
 ## 使用体验
 
