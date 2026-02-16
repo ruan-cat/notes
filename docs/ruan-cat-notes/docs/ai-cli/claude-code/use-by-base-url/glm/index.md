@@ -2,6 +2,7 @@
 
 - 月度套餐订阅： https://bigmodel.cn/glm-coding
 - 获取 key： https://bigmodel.cn/usercenter/proj-mgmt/apikeys
+- 控制台： https://bigmodel.cn/usercenter/glm-coding/overview
 - 文档： https://docs.bigmodel.cn/cn/guide/develop/claude
 - 类似于流量包的套餐： https://bigmodel.cn/special_area
 
