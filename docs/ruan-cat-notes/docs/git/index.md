@@ -235,3 +235,17 @@ To add an exception for this directory, call:
 ```bash
 git config --global credential.helper store
 ```
+
+## 用分支去强制推送，覆盖别的分支
+
+比如以下例子，在 dev 分支经过 rebase 调整提交的时间排序后，就会出现以下效果。dev 分支有正确的时间排序，而 main 分支内容没有正确的时间排序。
+
+![2026-02-16-23-13-39](https://gh-img-store.ruan-cat.com/img/2026-02-16-23-13-39.png)
+
+现在的需求是，想让 dev 分支的内容，直接强制覆盖掉 main 分支内容。询问 AI 得知：
+
+```bash
+git push -f origin dev:main
+```
+
+这个命令的效果是：用当前的远程 dev 分支，去强制覆盖掉远程 main 分支。随后会留下一个旧内容的本地 main 分支。
