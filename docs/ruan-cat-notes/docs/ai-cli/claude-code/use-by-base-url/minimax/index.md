@@ -19,6 +19,12 @@ $env:ANTHROPIC_DEFAULT_OPUS_MODEL = "MiniMax-M2.5";
 claude --dangerously-skip-permissions
 ```
 
+## 打折订阅链接
+
+各种收集过来的打折订阅链接。
+
+- https://platform.minimaxi.com/subscribe/coding-plan?code=DULH1o66fB&source=link
+
 ## 使用体验
 
 ### 持久不泄
