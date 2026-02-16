@@ -278,7 +278,7 @@ Hydration completed but contains mismatches.
 
 生产环境访问地址为： https://notes.ruan-cat.com/sundry/rm-developer/drill/drill-miku-pixi
 
-## 018 <!-- TODO: --> 通用 agent 任务，发起 pr，批量对仓库做设置
+## 018 通用 agent 任务，发起 pr，批量对仓库做设置
 
 请你对以下清单的 github 仓库发起 pr。目标 github 用户名为 ruan-cat。
 
