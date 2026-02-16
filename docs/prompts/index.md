@@ -290,6 +290,7 @@ Hydration completed but contains mismatches.
 - ruan-cat/10wms
 - ruan-cat/stars-list
 - ruan-cat/rm-monorepo
+- nwt-q/001-Smart-Community
 
 ### pr 任务细节与操作步骤
 
@@ -310,3 +311,18 @@ Hydration completed but contains mismatches.
 2. 确定目标仓库后，你需要检查该项目的分支。需要确定稍后 pr 的分支名称。
    - 如果该仓库只有一个 main 主分支，那么就向这个主分支推送。
    - 如果该仓库存在 dev 分支，那么就向这个 dev 分支做推送提交。
+
+### 新建 agent team 完成任务
+
+这里有多个仓库，他们都遵循相同的流程来完成 pr 任务。我要求他们都生成同样的信息：
+
+- pr title 标题
+- pr 正文内容
+- 遵循 `git-commit` 技能规范的 git commit 提交信息。
+- pr 时相同的来源分支名称。
+
+你应该新建一个专门的 team 团队成员，专门负责生成这些相同的，统一的内容，并分发给其他各个 team 团队成员 agent，确保每一个仓库的 pr 任务都做相同的事情。
+
+你应该新建多个并发的 agent team 成员代理，每一个目标仓库都有一个独立的 agent 成员来专门负责唯一的一个仓库。
+
+最后，主代理整理各个子代理的成果，为我生成一份报告。
