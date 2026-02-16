@@ -288,6 +288,8 @@ Hydration completed but contains mismatches.
 - ruan-cat/monorepo
 - ruan-cat/11comm
 - ruan-cat/10wms
+- ruan-cat/09oa
+- Nonameboyy/zero-one-mes
 - ruan-cat/stars-list
 - ruan-cat/rm-monorepo
 - nwt-q/001-Smart-Community
@@ -300,6 +302,8 @@ Hydration completed but contains mismatches.
 
 ```json
 {
+	// 开启折叠功能
+	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
 		// 折叠 AI大模型记忆文件
 		"CLAUDE.md": "GEMINI.md,AGENTS.md"
