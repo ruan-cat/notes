@@ -1,5 +1,13 @@
 # 使用 antigravity-tools 制作基于 antigravity 的本地代理
 
+::: danger 该方案全面破产
+
+被谷歌大规模封号了。大约是在 2026-2-13 星期五的时候开始大规模封禁疑似使用代理的账号了。
+
+个人推测是因为近端时间 openclaw 的爆火，导致 Antigravity 被反代的额度太多，故谷歌开始大规模封禁。
+
+:::
+
 ## 购买并准备一个有 pro 资格的谷歌账号
 
 ## 用 antigravity-tools 跳过验证，直接登录 antigravity
@@ -131,3 +139,60 @@
 - https://linux.do/t/topic/1206323
 
 给主号增加全新的虚拟卡，增加全新的付款信息，试图更改该账号的地理信息。
+
+---
+
+## 家庭组方案全面破产
+
+基于 ccs 实现的本地 Antigravity 家庭组多账号轮询方案，现在已破产。因为出现了严重的账号封禁情况。
+
+### 现象
+
+登录 Antigravity 时，出现这样提示：
+
+```log
+There was an unexpected issue setting up your account. Please try again later.
+```
+
+![2026-02-13-16-16-47](https://gh-img-store.ruan-cat.com/img/2026-02-13-16-16-47.png)
+
+这说明 gemini 相关服务被封禁了，账号还在，但是 gemini 服务全部被封禁。包括 Antigravity 和 gemini cli。仅 gemini 网页版仍旧可以继续使用。
+
+### 相关 issue 反馈
+
+#### ccs
+
+css 耗尽账号额度再度查询时，可能导致触发封号风控
+
+- https://github.com/kaitranntt/ccs/issues/509
+- https://github.com/kaitranntt/ccs/issues/512
+
+#### antigravity-claude-proxy
+
+本地反代工具 [antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) 的 issue：
+
+- https://github.com/badrisnarayanan/antigravity-claude-proxy/issues/277#issuecomment-3882126135
+
+![2026-02-17-14-34-15](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-34-15.png)
+
+#### Antigravity-Manager
+
+反代工具 [Antigravity-Manager](https://github.com/lbjlaq/Antigravity-Manager) 的 issue：
+
+- https://github.com/lbjlaq/Antigravity-Manager/issues/1829
+
+![2026-02-17-14-34-37](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-34-37.png)
+
+#### reddit 论坛讨论
+
+- https://www.reddit.com/r/google_antigravity/comments/1r1unas/google_is_permanently_banning_antigravity_users/
+
+![2026-02-17-14-35-04](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-35-04.png)
+
+![2026-02-17-14-35-51](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-35-51.png)
+
+#### 在 reddit 内，用户情绪高涨
+
+![2026-02-17-14-36-20](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-36-20.png)
+
+![2026-02-17-14-36-28](https://gh-img-store.ruan-cat.com/img/2026-02-17-14-36-28.png)

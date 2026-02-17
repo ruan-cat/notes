@@ -93,3 +93,5 @@ There was an unexpected issue setting up your account. Please try again later.
 ```
 
 ![2026-02-13-16-16-47](https://gh-img-store.ruan-cat.com/img/2026-02-13-16-16-47.png)
+
+这说明 gemini 相关服务被封禁了，账号还在，但是 gemini 服务全部被封禁。包括 Antigravity 和 gemini cli。仅 gemini 网页版仍旧可以继续使用。
