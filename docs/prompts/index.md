@@ -208,7 +208,7 @@ claude code 的 claude 主模型作为主代理，用于新建，并向并行子
 
 最终处理方式是不和 cloudflare worker 较劲了，将 `pnpm-workspace.yaml` 依赖锁文件也一同上传到仓库内，让 cloudflare worker 能够自动识别 pnpm。
 
-## 014 <!-- TODO: --> 学习在 vue 项目内，如何使用 `@tanstack/vue-query` 工具
+## 014 学习在 vue 项目内，如何使用 `@tanstack/vue-query` 工具
 
 请教我如何在 vue3 vite 项目内使用 `@tanstack/vue-query` v5 这个请求库？我主要想学习以下内容：
 
@@ -330,3 +330,9 @@ Hydration completed but contains mismatches.
 你应该新建多个并发的 agent team 成员代理，每一个目标仓库都有一个独立的 agent 成员来专门负责唯一的一个仓库。
 
 最后，主代理整理各个子代理的成果，为我生成一份报告。
+
+## 019 <!-- TODO: --> 在 cloudflare worker 内如何连接 neon 数据库
+
+我现在手上有现成的 neon 数据库连接地址，即 `DATABASE_URL` 环境变量。我希望实现在 cloudflare worker 内部署一个 nitro v3 接口。其中，ORM 用的是 drizzle。
+
+请为我编写一个最简单的 node typescript 项目示例。告诉我如何在 cloudflare worker 环境内，实现一个最基础 nitro + neon + drizzle 的 serverless 接口。
