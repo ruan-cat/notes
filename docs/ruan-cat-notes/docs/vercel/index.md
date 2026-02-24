@@ -1,4 +1,4 @@
-# vercel
+# vercel,云部署平台
 
 我是 vercel 的重度使用用户，这里记录着关于 vercel 部署的一些实践。
 
