@@ -179,16 +179,6 @@ pnpm why vue-router
 
 - https://www.voxyz.space/
 
-## RackNerd
-
-- `RackNerd购买及基础设置教程：如何购买、连接VPS、重装系统、发送工单、更换IP`： https://vpsfq.com/?p=1422
-
-## 购买 vps
-
-- `高性价比VPS | 精品线路 | 月付不到17元人民币 | 美国原生IP | 美国洛杉矶机房 | 低价VPS | 一键多协议脚本 | 从购买到搭建`： https://www.youtube.com/watch?v=cGYFKL3ZveY
-- https://potoh.com/posts/2025-12-30/vmiss/
-- https://potoh.com/vps/
-
 ## 开通虚拟卡
 
 ### bitget 供应商
