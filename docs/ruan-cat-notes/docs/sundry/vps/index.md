@@ -21,6 +21,7 @@
 - 三网优化
 - 中国移动 适合的 vps 供应线路
 - 中国移动 CMIN2
+- `移动CMI N2`
 
 - 9929 线路
 
@@ -36,6 +37,7 @@
 
 - CloudSilk
 - racknerd
+- Vmiss
 
 ## 折扣、测评、与资讯
 
@@ -44,6 +46,8 @@
 - https://zhujitanzhang.com/racknerd-jifang-tuijian/
 - `RackNerd测试IP/文件及如何选择机房`： https://www.racknerdcn.com/datacenters.html
 - `RackNerd 优惠码/促销汇总 (2026实时更新)：$10 便宜VPS推荐与避坑指南`： https://vpsdeck.com/racknerd-promotion/
+- `Vmiss：11元/月起，香港/韩国/日本/美国/英国机房可选，CN2/CUII/CMIN2/AS4837高速线路`： https://www.52vps.com/6577.html
+- `vmiss：周年庆特惠VPS主机11元/月起，可选美国/韩国/日本/香港等机房，CN2GIA/AS9929/CMIN2优质线路，附专业测评`： https://www.52vps.com/6738.html
 
 ## 购买链接表
 
