@@ -39,6 +39,10 @@
 - racknerd
 - Vmiss
 
+### 基础概念教程
+
+- `精品线路的vps选购全攻略`： https://www.youtube.com/watch?v=tVHHenqjxhw
+
 ## 折扣、测评、与资讯
 
 - https://github.com/xtgs377/CloudSilk
