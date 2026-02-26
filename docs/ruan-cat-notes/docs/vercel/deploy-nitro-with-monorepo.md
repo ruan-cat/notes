@@ -1,13 +1,13 @@
 ---
-juejin: 。。。
-desc: TODO 请编写摘要
+juejin: https://juejin.cn/post/7610816257119354915
+desc: 在 Vercel 平台部署 PNPM Workspace Monorepo 项目时，遇到依赖安装与产物路径冲突问题。本文介绍通过"根目录构建 + 产物手动搬运"策略，使用 shx 脚本将子项目构建产物复制到根目录 .vercel/output，解决部署问题的完整方案。
 ---
 
 # 在 vercel 平台部署 monorepo 架构下的 nitro 接口
 
 > **摘要**：
 >
-> 在 Vercel 平台部署基于 PNPM Workspace 的 Monorepo 项目时，遇到了构建目标子包依赖本地 Workspace 子包无法被识别的情况，和 Serverless 产物目录无法被 Vercel 识别的双输局面。
+> 在 Vercel 平台部署 PNPM Workspace Monorepo 项目时，遇到依赖安装与产物路径冲突问题。本文介绍通过"根目录构建 + 产物手动搬运"策略，使用 shx 脚本将子项目构建产物复制到根目录 .vercel/output，解决部署问题的完整方案。
 
 > **AI 辅助总结的文章**：
 >
@@ -15,11 +15,13 @@ desc: TODO 请编写摘要
 
 ## 问题起因
 
-如果是简单架构的 node 项目，那么直接在 vercel 平台内选择项目架构为 nitro 就行了。如果是正统的 monorepo 项目呢？且实现内部子包相互依赖的 monorepo 项目呢？又该如何在 vercel 平台内完成部署呢？
+我在 vercel 内连接了 neon，想在 vercel 内部署 monorepo 架构下的基于 nitro v3 的全栈项目。但是出现很多麻烦事，怎么配置路径都不行。
 
 ### 不同的路径配置导致相互冲突矛盾的情况
 
-vercel 平台提供 `Output Directory（输出目录）` 和 `Root Directory（根目录）`，但是在 monorepo 场景内，配置就遇到困难了。
+vercel 平台提供 `Output Directory（输出目录）` 和 `Root Directory（根目录）`。在普通单一架构下的 nitro 项目内，这个甚至不需要考虑路径，直接默认选择 nitro 预设就可以了。
+
+但是在 monorepo 场景内，配置路径就遇到困难了。
 
 一方面单独设置 `output 输出目录` 就始终不能让 vercel 平台正确的识别一个完整的 nitro 项目并识别出 serverless 接口。构建虽然成功了，但是部署出来的产物完全不是一个 nitro 接口，无法使用。
 
