@@ -1,4 +1,4 @@
-# nitro ，node 接口库
+# nitro,node serverless 服务端接口开发库
 
 这是 nuxt 内部实现后端接口的库。
 
@@ -59,3 +59,7 @@ vc init nitro
 - 缓存？
 - 日志？
 - 跨域？
+
+# 在 vercel 平台部署 monorepo 架构下的 nitro 接口
+
+见[专门的 vercel 文章](../../vercel/deploy-nitro-with-monorepo.md)。
