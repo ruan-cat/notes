@@ -386,3 +386,34 @@ Hydration completed but contains mismatches.
 1. 在非常敏感的 C 盘目录下，不要修改其他多余的文件。
 2. 你只被允许修改清单罗列出来的文件。不允许你修改多余的文件。
 3. 你不需要再去检索查询多余的文件了，只需要针对性的处理清单提供的 MCP 配置文件。
+
+## 022 <!-- TODO: --> 设计一个对 nitro 官方仓库完成 pr 的计划
+
+我需要对 nitro 仓库完成一个 pr，用于更新文档，说明清楚在 nitro v3 版本中，获取 cloudflare worker 的环境变量应该使用 `event.req.runtime.cloudflare.env` 的方式，而不是使用 `event.context.cloudflare.env` 的方式。这是一个破坏性变更，但 nitro v3 的官方文档没有说明，过时的文档误导了我们开发。
+
+这是一个流程很长的 pr 任务，我要求你按照以下步骤来逐步完成。先指定一个 plan 计划，再开始完成后续的 pr 内容。
+
+### 整个 pr 流程的步骤
+
+1. **明确仓库**： 明确清楚现在处于 `https://github.com/ruan-cat/nitro` 这个仓库内。目标被 pr 仓库是 `https://github.com/nitrojs/nitro` 。
+2. **新建分支**： 在 fork 仓库内新建一个专门的 fix-doc 的分支，后续操作都在专门新建的，独立的分支内完成文档编写。
+3. **阅读报告**： 阅读以下报告，明确清楚上下文。明确清楚为什么需要 pr，本次 pr 需要说明清楚文档那些地方出现缺漏和过时内容，导致使用误导。必须深刻的，认真的阅读这个报告。
+   - https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/apps/admin/src/docs/reports/from-nitro-repo/2026-02-28-cloudflare-env-vars-analysis.md
+4. **探索当前仓库**： 针对性的阅读当前仓库的文档部分。本次 pr 预期在 cloudflare 相关的地方，说明清楚 nitro v3 带来的破坏性变更。
+5. **修改仓库文档**： 开始修改当前项目的文档部分。这部分作为 pr 的核心内容。我们就是向目标仓库更新文档的。
+   - 去找 cloudflare 相关的部分，说明清楚获取 cloudflare worker 的环境变量应该使用 `event.req.runtime.cloudflare.env` 的方式，而不是使用 `event.context.cloudflare.env` 的方式。
+   - 去找 nitro v2 迁移到 nitro v3 的部分，去找迁移教程。在迁移教程内，看情况增加，编写关于 cloudflare worker 获取环境变量的破坏性代码写法。告诉后续全部的 nitro v3 用户这个关键的破坏性变更。
+   - 修改、增加 nitro 的文档时，必须使用**纯英文**，而不是中文。
+   - 修改文件时，不要携带多余的编写作者。git 修改的编写作者就只有 ruan-cat 用于，没有 `Co-Authored-By: Claude Opus 4.6 <@anthropic.com>` 或者是其他的 `Co-Authored-By` 。我不希望出现
+6. **编写 pr 稿**： 向目标项目 pr 时，必须要写完善的 pr 稿。
+   - pr 稿的文本必须是**全英文**的。nitro 仓库是全英文的仓库，不要编写中文的 pr 稿。
+   - 在 pr 稿的最上面，需要专门声明清楚，本 pr 稿并不是人类独立完成编写的，是由 AI 完成编写的。
+   - 编写 pr 时，必须要说明清楚前因后果。说明清楚 nitro v3 到底是哪里提供了 `event.req.runtime.cloudflare.env` 的使用方式。
+   - 提供 `https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/apps/admin/server/api/debug-env.get.ts` 内容，提供这款用于测试 cloudflare worker 的接口请求，说明清楚 nitro v3 接口为什么能够在 `event.req.runtime.cloudflare.env` 路径内获取到环境变量。
+   - 提供 `https://01s-11.ruan-cat.com/api/debug-env` 这个可复现的，在线的，部署到 cloudflare worker 的 nitro v3 接口，进一步佐证在 `event.req.runtime.cloudflare.env` 路径内获取到环境变量。
+   - 说明清楚本次 pr 只修改了部分文档，对用户使用 nitro 接口做纠偏，不涉及到任何代码修改。
+7. **编写中文 pr 审核稿**： 同步地编写一份内容完全相同的，但是被翻译成中文的 pr 稿，用于给我审核。因为我看不懂英文、所以我只能审核你用中文编写的 pr 稿。
+   - 请务必确保中文和英文 pr 稿的内容均完全相同，不要缺漏。
+   - 编写好两份中文和英文的 pr 草稿后，生成到 reports 目录内。
+8. **人工审核**： 然后要求我人工完成审核检查。人工审核后，才开始下一个步骤。
+9. **发起 pr**： 用 github MCP 完成最关键的 pr 流程。不要直接 pr 到目标项目的 main 主分支，这不符合规范。应该直接 pr 到目标仓库的一个新的分支。
