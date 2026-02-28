@@ -1,0 +1,39 @@
+{
+	"hooks": {
+		"sessionStart": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"beforeSubmitPrompt": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"afterFileEdit": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"beforeShellExecution": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"afterMCPExecution": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"preCompact": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		],
+		"stop": [
+			{
+				"command": "cmd /c memorix hook"
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Memorix Session Memory",
+  "description": "Record session context when agent completes a turn",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Call memorix MCP tools to store important context from this conversation:\n1. Use memorix_store to record any decisions, bug fixes, gotchas, or configuration changes\n2. Include relevant file paths and concepts for searchability"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Memorix Context Loader",
+  "description": "Load relevant memories when user submits a prompt",
+  "version": "1",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Before responding, search for relevant context:\n1. Call memorix_search with a query related to the user's prompt\n2. If results are found, use memorix_detail to fetch the most relevant ones\n3. Reference relevant memories naturally in your response"
+  }
+}

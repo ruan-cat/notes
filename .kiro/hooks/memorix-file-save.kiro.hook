@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "name": "Memorix File Change Tracker",
+  "description": "Track significant file changes for cross-session memory",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.ts",
+      "**/*.js",
+      "**/*.tsx",
+      "**/*.jsx",
+      "**/*.py",
+      "**/*.rs",
+      "**/*.go",
+      "**/*.java",
+      "**/*.md"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "cmd /c memorix hook"
+  }
+}
