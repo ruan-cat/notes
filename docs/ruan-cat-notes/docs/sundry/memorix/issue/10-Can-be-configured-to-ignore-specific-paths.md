@@ -1,4 +1,6 @@
-# 能够让 memorix 配置忽略特定路径？或者是针对性对指定目录提供 memorix 能力？
+<!-- https://github.com/AVIDS2/memorix/issues/10 -->
+
+# 能否让 memorix 配置忽略特定路径？或者是针对性对指定目录提供 memorix 能力？
 
 我使用了多款 AI 客户端，并且很希望实现跨工具的上下文同步。但是 memorix 总是无条件的给当前被打开的项目，添加提示词文件和钩子配置文件。
 
