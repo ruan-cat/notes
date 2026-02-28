@@ -336,3 +336,19 @@ Hydration completed but contains mismatches.
 我现在手上有现成的 neon 数据库连接地址，即 `DATABASE_URL` 环境变量。我希望实现在 cloudflare worker 内部署一个 nitro v3 接口。其中，ORM 用的是 drizzle。
 
 请为我编写一个最简单的 node typescript 项目示例。告诉我如何在 cloudflare worker 环境内，实现一个最基础 nitro + neon + drizzle 的 serverless 接口。
+
+## 020 在 C 盘内完成 memorix 全局 MCP 的批量配置
+
+我需要你帮我实现批量配置 MCP 工具。
+
+1. 阅读这个部分，了解清楚要对那些 AI 客户端实现 MCP 配置，以及如何完成配置：https://github.com/AVIDS2/memorix/blob/main/README.zh-CN.md#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%88%B0%E4%BD%A0%E7%9A%84-agent-%E7%9A%84-mcp-%E9%85%8D%E7%BD%AE
+2. 我需要配置的 memorix 这款 MCP。
+3. 你现在在 `C:\Users\pc` 这个非常敏感的 C 盘目录，不允许你擅自删改内容。任何行为都要经过我检查同意。你现在属于计划模式，先列举一个精准的文件修改计划，再开始完成任务。
+4. 我需要你在当前 `C:\Users\pc` 内，找到关于以下 AI 客户端的全局 MCP 配置文件。然后写入 memorix 的全局 MCP 配置。
+5. 需要你专门查找的 AI 客户端如下。你只为这几款 AI 客户端配置全局 MCP。
+   - claude code
+   - cursor
+   - codex
+   - kiro
+   - Antigravity
+   - gemini cli
