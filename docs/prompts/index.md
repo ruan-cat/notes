@@ -387,7 +387,11 @@ Hydration completed but contains mismatches.
 2. 你只被允许修改清单罗列出来的文件。不允许你修改多余的文件。
 3. 你不需要再去检索查询多余的文件了，只需要针对性的处理清单提供的 MCP 配置文件。
 
-## 022 <!-- TODO: --> 设计一个对 nitro 官方仓库完成 pr 的计划
+## 022 设计一个对 nitro 官方仓库完成 pr 的计划
+
+<!-- 已发起pr https://github.com/nitrojs/nitro/pull/4064 -->
+
+---
 
 我需要对 nitro 仓库完成一个 pr，用于更新文档，说明清楚在 nitro v3 版本中，获取 cloudflare worker 的环境变量应该使用 `event.req.runtime.cloudflare.env` 的方式，而不是使用 `event.context.cloudflare.env` 的方式。这是一个破坏性变更，但 nitro v3 的官方文档没有说明，过时的文档误导了我们开发。
 
