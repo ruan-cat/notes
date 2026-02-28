@@ -356,3 +356,33 @@ Hydration completed but contains mismatches.
    - kiro
    - Antigravity
    - gemini cli
+
+## 021 <!-- TODO: --> 批量的为 AI 客户端配置 MCP
+
+你的任务是在敏感的 C 盘，在多个 AI 客户端，配置全局 MCP。配置 github 官方 MCP。
+
+1. 你先去 claude code 配置内，找到现存的，现有的 github MCP。获取到 token。
+2. 模仿 claude code 的 MCP 配置，去配置其他 AI 客户端的 MCP。
+
+### 目标 MCP 的配置文档
+
+务必要主动阅读以下 MCP 配置文档，了解清楚如何配置该 MCP。
+
+- https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-codex.md
+
+### AI 客户端 MCP 配置文件的位置与状态
+
+| 客户端      | 配置文件路径                                      | 现有状态                |
+| ----------- | ------------------------------------------------- | ----------------------- |
+| Claude Code | `C:/Users/pc/.claude.json`                        | 已存在，包含 mcpServers |
+| Cursor      | `C:/Users/pc/.cursor/mcp.json`                    | 已存在，包含 mcpServers |
+| Codex       | `C:/Users/pc/.codex/config.toml`                  | 已存在                  |
+| Kiro        | `C:/Users/pc/.kiro/settings/mcp.json`             | 已存在，包含 mcpServers |
+| Antigravity | `C:/Users/pc/.gemini/antigravity/mcp_config.json` | 已存在，包含 mcpServers |
+| Gemini CLI  | `C:/Users/pc/.gemini/settings.json`               | 已存在，包含 mcpServers |
+
+### 修改任务的注意事项
+
+1. 在非常敏感的 C 盘目录下，不要修改其他多余的文件。
+2. 你只被允许修改清单罗列出来的文件。不允许你修改多余的文件。
+3. 你不需要再去检索查询多余的文件了，只需要针对性的处理清单提供的 MCP 配置文件。
