@@ -331,7 +331,11 @@ Hydration completed but contains mismatches.
 
 最后，主代理整理各个子代理的成果，为我生成一份报告。
 
-## 019 <!-- TODO: --> 在 cloudflare worker 内如何连接 neon 数据库
+## 019 在 cloudflare worker 内如何连接 neon 数据库
+
+已完成，在 nitro v3 内应该使用 `event.req.runtime.cloudflare.env` 而不是 `event.context.cloudflare.env` 来获取 cloudflare worker 提供的环境变量。
+
+---
 
 我现在手上有现成的 neon 数据库连接地址，即 `DATABASE_URL` 环境变量。我希望实现在 cloudflare worker 内部署一个 nitro v3 接口。其中，ORM 用的是 drizzle。
 
