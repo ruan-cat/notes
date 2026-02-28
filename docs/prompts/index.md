@@ -357,7 +357,7 @@ Hydration completed but contains mismatches.
    - Antigravity
    - gemini cli
 
-## 021 <!-- TODO: --> 批量的为 AI 客户端配置 MCP
+## 021 批量的为 AI 客户端配置 MCP
 
 你的任务是在敏感的 C 盘，在多个 AI 客户端，配置全局 MCP。配置 github 官方 MCP。
 
