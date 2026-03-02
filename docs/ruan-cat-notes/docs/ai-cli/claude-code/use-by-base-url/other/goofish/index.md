@@ -1,4 +1,4 @@
-# 咸鱼卖家
+# 基于咸鱼卖家自主封装的 newapi 按量计费的配置
 
 ## 001
 
@@ -9,6 +9,12 @@
 - 额度兑换比例： 10 元 -> 10 美元
 
 花了 10 块钱买的额度。计费价格按照官网半价计费，太贵了。
+
+::: warning 关于 token 安全
+
+钱快被我用完了，暴露 token 无所谓了。
+
+:::
 
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "sk-8mtAfS33Jo3eBxvNnX9OR9bzxYHd6eBQsuulSJduMOR9Uz04";
@@ -28,6 +34,12 @@ claude --dangerously-skip-permissions
 - 管理后台： http://47.119.122.61:4000/
 
 - 你的兑换码为： ad2a66a8e71d4386a0f44adeb0221a02
+
+::: warning 关于 token 安全
+
+钱快被我用完了，暴露 token 无所谓了。
+
+:::
 
 <!--
 $env:ANTHROPIC_MODEL = "claude-opus-4-6";
