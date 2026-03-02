@@ -1,6 +1,7 @@
 # kiro,亚马逊的 AI ide
 
 - 官网： https://kiro.dev/
+- builder id 注册与登录页面： https://aws.amazon.com/cn/builder/
 - 官方文档： https://kiro.dev/docs/
 - 额度： https://app.kiro.dev/account/usage
 
