@@ -2,8 +2,14 @@
 
 - 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
 
+::: warning 关于 token 安全
+
+`anyrouter.top` 平台运行太慢了。暴露出来无所谓，反正也无法继续运行下去。
+
+:::
+
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token";
+$env:ANTHROPIC_AUTH_TOKEN = "sk-Wc4PjwD5wbARFd2qYviemWqNVHcTMuMPPrcOlaa2zBXgRczN";
 $env:ANTHROPIC_BASE_URL = "https://anyrouter.top";
 ```
 
