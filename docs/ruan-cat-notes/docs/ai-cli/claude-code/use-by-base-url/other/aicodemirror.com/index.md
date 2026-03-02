@@ -4,9 +4,10 @@
 - window 环境不生效需要手动删除文件重置： https://www.aicodemirror.com/dashboard/official-installation/windows
 
 ```bash
-$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
-$env:ANTHROPIC_API_KEY = "sk-**"
-$env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
+$env:ANTHROPIC_AUTH_TOKEN = "sk-ant-api03-BRtWhsJGb7VjJ3F3PODhREISzv7YG79sfl5NbCAArC1sqye0Q67ZO5b150FH8q2YMyDUxcQprxiv2-C2h4TIbg";
+$env:ANTHROPIC_API_KEY = "sk-ant-api03-BRtWhsJGb7VjJ3F3PODhREISzv7YG79sfl5NbCAArC1sqye0Q67ZO5b150FH8q2YMyDUxcQprxiv2-C2h4TIbg";
+$env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode";
+claude --dangerously-skip-permissions
 ```
 
 ## 注意事项
