@@ -1,4 +1,4 @@
-# 基于 aicodemirror.com 中转商的配置
+# aicodemirror.com
 
 - 获取 key： https://www.aicodemirror.com/dashboard/apikeys
 - window 环境不生效需要手动删除文件重置： https://www.aicodemirror.com/dashboard/official-installation/windows

@@ -1,4 +1,4 @@
-# 基于 anyrouter.top 中转商的配置
+# anyrouter.top
 
 - 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
 

@@ -1,4 +1,4 @@
-# 基于 claudeyy.com 中转商的配置
+# claudeyy.com
 
 ::: danger 作废
 

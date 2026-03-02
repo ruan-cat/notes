@@ -1,4 +1,4 @@
-# 基于 dmxapi.cn 中转商的配置
+# dmxapi.cn
 
 - https://www.dmxapi.cn/ClaudeCode
 - 配置文档： http://doc.dmxapi.cn/claude-code.html

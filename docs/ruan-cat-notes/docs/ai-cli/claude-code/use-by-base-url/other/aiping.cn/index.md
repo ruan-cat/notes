@@ -1,4 +1,4 @@
-# 基于 aiping.cn 官方网站的配置
+# aiping.cn
 
 [aiping.cn](https://www.aiping.cn/)，是一个通用的 AI 大模型供应商，类似于硅基流动。该站点也提供直接对接编程工具的 api 端口。
 
