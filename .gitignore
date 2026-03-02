@@ -53,4 +53,7 @@ todoctor/
 # 忽略 claude 的 statusline 日志文件
 .claude/statusline.log
 
+# 忽略本地缓存文件 忽略AI模型记忆缓存文件
+local_cache/
+
 .vercel
