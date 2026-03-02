@@ -23,8 +23,9 @@ netsh winhttp reset proxy
 记录在搜狗输入法快捷键内的快捷键映射：
 
 - `ccp` 以最大权限运行 claude code
-- `glmcc` GLM 模型的 claude code
 - `mmcc` minimax 模型的 claude code
+- `glmcc` GLM 模型的 claude code
 - `kmcc` Kimi 思考模型的 claude code
 - `kfccc` `kimi-for-coding` 模型的 claude code
+
 - `arcc` `https://anyrouter.top` 公益站提供的 claude code key 国内代理
