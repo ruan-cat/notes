@@ -15,10 +15,12 @@ const userConfig = setUserConfig({
 		socialLinks: [
 			{
 				icon: "github",
-				// TODO: 提交后重设主分支的地址
-				link: "https://github.com/ruan-cat/monorepo/tree/main/docs/docs-01-star",
+				link: "https://github.com/ruan-cat/notes/tree/dev/docs/rpgmv-dev-notes",
 			},
 		],
+		editLink: {
+			pattern: "https://github.com/ruan-cat/notes/edit/dev/docs/rpgmv-dev-notes/docs/:path",
+		},
 	},
 });
 
