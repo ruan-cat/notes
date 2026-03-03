@@ -117,9 +117,12 @@ const userConfig = setUserConfig({
 		socialLinks: [
 			{
 				icon: "github",
-				link: "https://github.com/ruan-cat/monorepo/tree/main/docs/docs-01-star",
+				link: "https://github.com/ruan-cat/notes/tree/dev/docs/docs-01-star",
 			},
 		],
+		editLink: {
+			pattern: "https://github.com/ruan-cat/notes/edit/dev/docs/docs-01-star/docs/:path",
+		},
 	},
 });
 // @ts-ignore
