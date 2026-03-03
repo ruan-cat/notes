@@ -54,3 +54,42 @@ $env:ANTHROPIC_BASE_URL = "http://47.119.122.61:4000";
 $env:CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = "1";
 claude --dangerously-skip-permissions
 ```
+
+## 003
+
+- 卖家地址： https://www.goofish.com/item?spm=a21ybx.item.itemCnxh.16.519b3da6mKlCby&id=1025497550445
+- 使用文档： https://xcnfo191obv4.feishu.cn/wiki/Z3zaw2q6viC1Gnk9R6yc58p1neb
+- 额度兑换比例： 156 元 -> 2000 美元
+- 管理后台： https://www.ai-clauder.cc
+
+<!-- 兑换码 -->
+<!-- 已使用 2000美元 a5033e11950ca3732534b7ecd9c2123c -->
+<!-- 已使用 49e01e1d4b5f73ebccfdda1e9366ce99 -->
+
+<!--
+套餐：1
+订单编号：4502097506073027136
+兑换码：49e01e1d4b5f73ebccfdda1e9366ce99
+教程：
+1、打开“https://www.ai-clauder.cc”
+2、注册账号
+3、兑换输入兑换码
+4、生成 API 密钥 -> 选择对应购买套餐的订阅（日卡、周卡、月卡）
+5、API URL ：https://www.ai-clauder.cc
+6、疑问：zsoar_
+7、教程：
+ -->
+
+<!--
+$env:ANTHROPIC_AUTH_TOKEN = "sk-be08aa56e195e417ec4d0af3d89758b0e175677f617c34c3379da3ca57c1d12a";
+$env:ANTHROPIC_BASE_URL = "https://www.ai-clauder.cc";
+$env:CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = "1";
+claude --dangerously-skip-permissions
+-->
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "sk-xxxx";
+$env:ANTHROPIC_BASE_URL = "https://www.ai-clauder.cc";
+$env:CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = "1";
+claude --dangerously-skip-permissions
+```
