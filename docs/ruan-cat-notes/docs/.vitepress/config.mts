@@ -50,6 +50,9 @@ const userConfig = setUserConfig({
 				link: "https://github.com/ruan-cat/notes",
 			},
 		],
+		editLink: {
+			pattern: "https://github.com/ruan-cat/notes/edit/dev/docs/ruan-cat-notes/docs/:path",
+		},
 	},
 });
 // @ts-ignore
