@@ -1,5 +1,5 @@
 ---
-juejin: todo
+juejin: https://juejin.cn/post/7614205951335612426
 desc: 将 compatibilityDate 配置为 latest 后，Vercel 在部分部署场景下会生成符号链接目录，并进一步触发路径解析错误。
 ---
 
