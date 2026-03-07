@@ -15,6 +15,6 @@
 		"@ruan-cat/vitepress-preset-config": "^3.0.0",
 		"vitepress": "^1.6.4",
 		"vitepress-demo-plugin": "^1.5.1",
-		"vue": "^3.5.28"
+		"vue": "^3.5.29"
 	}
 }
