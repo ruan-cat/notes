@@ -8,19 +8,21 @@ export default defineConfig({
 	vercelToken: process.env.VERCEL_TOKEN || "",
 
 	deployTargets: [
-		{
-			type: "static",
-			targetCWD: "./docs/ruan-cat-notes/docs/.vitepress/dist",
-			url: getDomains({
-				projectName: "ruan-cat-notes",
-				projectAlias: "notesGithubWorkflow",
-			}),
-		},
-		{
-			type: "static",
-			targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
-			url: getDomains("01s-doc"),
-		},
+		// 需要上传的文件太多了 故不考虑在github action内完成部署
+		// {
+		// 	type: "static",
+		// 	targetCWD: "./docs/ruan-cat-notes/docs/.vitepress/dist",
+		// 	url: getDomains({
+		// 		projectName: "ruan-cat-notes",
+		// 		projectAlias: "notesGithubWorkflow",
+		// 	}),
+		// },
+		// 需要上传的文件太多了 故不考虑在github action内完成部署
+		// {
+		// 	type: "static",
+		// 	targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
+		// 	url: getDomains("01s-doc"),
+		// },
 		{
 			type: "static",
 			targetCWD: "./docs/my-pull-requests/.vercel/output",
