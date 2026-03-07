@@ -422,7 +422,7 @@ Hydration completed but contains mismatches.
 8. **人工审核**： 然后要求我人工完成审核检查。人工审核后，才开始下一个步骤。
 9. **发起 pr**： 用 github MCP 完成最关键的 pr 流程。不要直接 pr 到目标项目的 main 主分支，这不符合规范。应该直接 pr 到目标仓库的一个新的分支。
 
-## 023 <!-- TODO: --> 更新迭代本项目的部署配置文件
+## 023 更新迭代本项目的部署配置文件
 
 1. 阅读 https://vc.ruan-cat.com/migration-guide.md 这个迁移文档。
 2. 我们项目的 `@ruan-cat/vercel-deploy-tool` 相关配置需要实现迁移了，需要你完成迁移。
