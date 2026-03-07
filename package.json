@@ -28,7 +28,7 @@
 		"corepack:pnpm": "corepack enable && corepack install",
 		"git:fetch": "git fetch -p",
 		"git:push": "git push --follow-tags",
-		"deploy-on-vercel": "tsx ./scripts/vercel-deploy-tool.ts",
+		"deploy-on-vercel": "vercel-deploy-tool deploy",
 		"on-github-action-flow": "pnpm run build",
 		"ci": "pnpm run build",
 		"build:docs:note": "turbo run do-build-note-doc",
