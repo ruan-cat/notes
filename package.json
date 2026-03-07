@@ -12,7 +12,7 @@
 	"scripts": {
 		"up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
 		"build:docs": "turbo run build:docs",
-		"deploy": "turbo do-deploy",
+		"deploy": "turbo run deploy:vercel",
 		"git:dev-2-main": "git rebase dev main && pnpm run git:push",
 		"git:main-2-dev": "git rebase main dev",
 		"git:dev-2-vc": "git rebase dev vc && pnpm run git:push",
@@ -28,7 +28,7 @@
 		"corepack:pnpm": "corepack enable && corepack install",
 		"git:fetch": "git fetch -p",
 		"git:push": "git push --follow-tags",
-		"deploy-on-vercel": "vercel-deploy-tool deploy",
+		"deploy:vercel": "vercel-deploy-tool deploy",
 		"on-github-action-flow": "pnpm run build",
 		"ci": "pnpm run build",
 		"build:docs:note": "turbo run do-build-note-doc",

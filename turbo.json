@@ -7,9 +7,9 @@
 			"outputs": ["**/.vercel/output/**", "**/.vuepress/dist/**", "**/.vitepress/dist/**"],
 			"dependsOn": ["^build:docs"]
 		},
-		"//#deploy-on-vercel": {
+		"//#deploy:vercel": {
 			"cache": false,
-			"dependsOn": ["//#build:docs"]
+			"dependsOn": ["^build:docs"]
 		},
 		"do-build-note-doc": {
 			"cache": true,
