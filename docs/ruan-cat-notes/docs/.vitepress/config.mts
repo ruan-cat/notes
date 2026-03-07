@@ -13,48 +13,56 @@ import { setUserConfig, setGenerateSidebar, addChangelog2doc } from "@ruan-cat/v
 // 	},
 // });
 
-const userConfig = setUserConfig({
-	title: "阮喵喵笔记",
-	description: "自己的笔记",
-	head: [["link", { rel: "icon", href: "/little-alice-eats-watermelon.svg" }]],
-	themeConfig: {
-		nav: [
-			{
-				link: "/todo/",
-				text: "学习待办",
+const userConfig = setUserConfig(
+	{
+		title: "阮喵喵笔记",
+		description: "自己的笔记",
+		head: [["link", { rel: "icon", href: "/little-alice-eats-watermelon.svg" }]],
+		themeConfig: {
+			nav: [
+				{
+					link: "/todo/",
+					text: "学习待办",
+				},
+				{
+					link: "/bug/",
+					text: "遭遇的bug",
+				},
+				{
+					link: "/git/",
+					text: "git使用",
+				},
+				{
+					link: "/demo/",
+					text: "演示用的demo",
+				},
+				{
+					link: "/css/css-challenges/",
+					text: "css训练",
+				},
+				{
+					link: "/50projects50days-vue3/",
+					text: "50天50个小项目",
+				},
+			],
+			socialLinks: [
+				{
+					icon: "github",
+					link: "https://github.com/ruan-cat/notes",
+				},
+			],
+			editLink: {
+				pattern: "https://github.com/ruan-cat/notes/edit/dev/docs/ruan-cat-notes/docs/:path",
 			},
-			{
-				link: "/bug/",
-				text: "遭遇的bug",
-			},
-			{
-				link: "/git/",
-				text: "git使用",
-			},
-			{
-				link: "/demo/",
-				text: "演示用的demo",
-			},
-			{
-				link: "/css/css-challenges/",
-				text: "css训练",
-			},
-			{
-				link: "/50projects50days-vue3/",
-				text: "50天50个小项目",
-			},
-		],
-		socialLinks: [
-			{
-				icon: "github",
-				link: "https://github.com/ruan-cat/notes",
-			},
-		],
-		editLink: {
-			pattern: "https://github.com/ruan-cat/notes/edit/dev/docs/ruan-cat-notes/docs/:path",
 		},
 	},
-});
+	{
+		plugins: {
+			// 笔记项目不需要开启严格的 llmstxt 插件，这会加剧构建时间，速度太慢了。
+			llmstxt: false,
+		},
+	},
+);
 // @ts-ignore
 userConfig.themeConfig.sidebar = setGenerateSidebar({
 	documentRootPath: "./docs",
