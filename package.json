@@ -29,8 +29,7 @@
 		"git:fetch": "git fetch -p",
 		"git:push": "git push --follow-tags",
 		"deploy:vercel": "vercel-deploy-tool deploy",
-		"on-github-action-flow": "pnpm run build",
-		"ci": "pnpm run build",
+		"ci": "pnpm run build:docs",
 		"build:docs:note": "turbo run do-build-note-doc",
 		"build:docs:01star": "turbo run do-build-01star-doc"
 	},
