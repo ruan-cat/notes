@@ -21,5 +21,10 @@ export default defineConfig({
 			targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
 			url: getDomains("01s-doc"),
 		},
+		{
+			type: "static",
+			targetCWD: "./docs/my-pull-requests/.vercel/output",
+			url: getDomains("gh"),
+		},
 	],
 });
