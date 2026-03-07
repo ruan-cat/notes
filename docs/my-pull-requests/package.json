@@ -9,7 +9,7 @@
 	"scripts": {
 		"dev": "nuxi dev",
 		"build": "pnpm run build:vercel",
-		"build:vercel": "cross-env NODE_OPTIONS=--max-old-space-size=4096 nuxi build --preset vercel",
+		"build:vercel": "cross-env NODE_OPTIONS=--max-old-space-size=8192 nuxi build --preset vercel",
 		"postinstall": "nuxi prepare",
 		"lint": "eslint .",
 		"typecheck": "vue-tsc --noEmit"
