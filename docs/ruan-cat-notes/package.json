@@ -1,5 +1,6 @@
 {
 	"name": "@ruan-cat-docs/notes",
+	"private": true,
 	"version": "1.0.0",
 	"author": "阮喵喵",
 	"license": "MIT",
