@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
-		"build": "turbo do-build",
+		"build:docs": "turbo run build:docs",
 		"deploy": "turbo do-deploy",
 		"git:dev-2-main": "git rebase dev main && pnpm run git:push",
 		"git:main-2-dev": "git rebase main dev",

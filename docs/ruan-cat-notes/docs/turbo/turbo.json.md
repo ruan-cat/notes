@@ -101,3 +101,50 @@
 	"ui": "tui"
 }
 ```
+
+## 根包安装子包依赖，实现在根包以依赖关系触发批量构建
+
+首先在 monorepo 的根包内，全面的以 pnpm 工作区协议，安装子包。确定其依赖关系。
+
+```json
+{
+	"dependencies": {
+		"@ruan-cat-docs/docs-01-star": "workspace:^",
+		"@ruan-cat-docs/my-pull-requests": "workspace:^",
+		"@ruan-cat-docs/notes": "workspace:^",
+		"@ruan-cat-docs/rpgmv-dev-notes": "workspace:^"
+	}
+}
+```
+
+然后在根包的 turbo.json 配置内，就可以配置基于拓扑依赖关系的同名命令一键批量执行的命令了。
+
+```json
+{
+	"tasks": {
+		"build:docs": {
+			"cache": true,
+			"outputs": ["**/.vuepress/dist/**", "**/.vitepress/dist/**"],
+			"dependsOn": ["^build:docs"]
+		}
+	}
+}
+```
+
+如果没有实现根包对子包的拓扑依赖，那么 turbo.json 配置就要写成这样。只能手动的获取需要依赖的子命令，写死路径，带来隐性的维护成本：
+
+```json
+{
+	"tasks": {
+		"//#do-build": {
+			"cache": true,
+			"outputs": ["**/.vuepress/dist/**", "**/.vitepress/dist/**"],
+			"dependsOn": [
+				"@ruan-cat-docs/notes#build:docs",
+				"@ruan-cat-docs/docs-01-star#build:docs",
+				"@ruan-cat-docs/rpgmv-dev-notes#build:docs"
+			]
+		}
+	}
+}
+```
