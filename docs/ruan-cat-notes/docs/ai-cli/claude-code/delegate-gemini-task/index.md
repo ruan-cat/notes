@@ -9,3 +9,7 @@ A claude code skill to delegate prompts to gemini
 - https://github.com/forayconsulting/gemini_cli_skill
 - 好像是从 Linux 论坛内找到的方案： https://github.com/GuDaStudio/geminimcp
 - 以 skills 技能模式驱动 gemini： https://github.com/softaworks/agent-toolkit/blob/main/skills/gemini/README.md
+
+## 对该方案的思考
+
+我觉得现在的 gemini 不行。没必要去折腾让 gemini 完成探索任务了，这个模型太差了。
