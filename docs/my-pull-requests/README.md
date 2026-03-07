@@ -8,13 +8,13 @@ Demo: https://prs.atinux.com
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fatinux%2Fmy-pull-requests&env=NUXT_GITHUB_TOKEN&envDescription=Create%20a%20GitHub%20token%20with%20no%20special%20scope.&envLink=https%3A%2F%2Fgithub.com%2Fsettings%2Fpersonal-access-tokens%2Fnew&project-name=my-pull-requests&demo-title=My%20Pull%20Requests&demo-description=Create%20a%20website%20with%20an%20RSS%20feed%20of%20your%20recent%20GitHub%20pull%20requests%20across%20the%20Open%20Source%20projects%20you%20contribute%20to.&demo-url=https%3A%2F%2Fprs.atinux.com&demo-image=https%3A%2F%2Fprs.atinux.com%2Fog.png)
 
-## Features
+## 1. Features
 
 - List the 50 most recent pull requests you've contributed to.
 - RSS feed
 - Only add your GitHub token to get started
 
-## Setup
+## 2. Setup
 
 Make sure to install the dependencies with [pnpm](https://pnpm.io/installation#using-corepack):
 
@@ -34,7 +34,7 @@ Create a GitHub token with no special scope on [GitHub](https://github.com/setti
 NUXT_GITHUB_TOKEN=your-github-token
 ```
 
-## Development Server
+## 3. Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -42,7 +42,7 @@ Start the development server on `http://localhost:3000`:
 pnpm dev
 ```
 
-## Production
+## 4. Production
 
 Build the application for production:
 
@@ -50,10 +50,19 @@ Build the application for production:
 pnpm build
 ```
 
-## Credits
+## 5. Credits
 
 This project is inspired by [Anthony Fu](https://github.com/antfu)'s [releases.antfu.me](https://github.com/antfu/releases.antfu.me) project.
 
-## License
+## 6. License
 
 [MIT](./LICENSE)
+
+## 7. 经验教训
+
+- `build:vercel` 在 Windows 本地构建失败时，不要第一时间只继续增大 `NODE_OPTIONS`。这次真正的首个问题不是单纯内存不够，而是 `@nuxt/icon` 在 monorepo 根目录发现了整包 `@iconify/json`，导致 Nitro server bundle 把过多 icon collection 一起打包，最终触发 OOM。
+- 如果项目实际只使用少量图标集，应该在 `nuxt.config.ts` 里显式限制 `icon.serverBundle.collections`。本项目实际只用到了 `lucide` 和 `simple-icons`，限制后构建内存占用明显下降，Nitro 阶段不再因为图标集合过大而崩溃。
+- 在 Windows 下使用 `nuxi build --preset vercel` 时，要特别关注 `payloadExtraction` 生成的 `_payload.json` 路由。此次问题中，ISR 自动派生出的 `//_payload.json` 路由会在 Vercel preset 下触发错误的本地路径解析，进而出现 `EPERM: mkdir 'D:\\'`。
+- 这类问题不能只看最终报错，必须把构建过程分段看清楚：先区分是 client build、SSR server build，还是 Nitro/Vercel preset 收尾阶段失败。只有先定位到具体阶段，后续修复才不会偏离方向。
+- 对于 monorepo 内的 Nuxt 子项目，根目录依赖会直接影响子项目构建行为。以后只要根目录安装了像 `@iconify/json` 这类“大而全”的依赖，就要主动评估它是否会被子项目的构建工具自动发现并卷入产物。
+- 后续新增 ISR、payload 或图标相关配置时，建议优先在 Windows 本地执行一次 `pnpm run build:vercel` 做完整验证，而不是只跑 `nuxi dev` 或普通 `build`。这次问题就是在 Vercel preset 的最后阶段才真正暴露出来。
