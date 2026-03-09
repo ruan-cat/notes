@@ -23,10 +23,11 @@ export default defineConfig({
 		// 	targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
 		// 	url: getDomains("01s-doc"),
 		// },
-		{
-			type: "static",
-			targetCWD: "./docs/my-pull-requests/.vercel/output",
-			url: getDomains("gh"),
-		},
+		// 需要上传的文件太多了 故不考虑在github action内完成部署
+		// {
+		// 	type: "static",
+		// 	targetCWD: "./docs/my-pull-requests/.vercel/output",
+		// 	url: getDomains("gh"),
+		// },
 	],
 });
