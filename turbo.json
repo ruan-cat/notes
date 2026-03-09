@@ -20,6 +20,11 @@
 			"cache": true,
 			"outputs": ["docs/docs-01-star/docs/.vitepress/dist/**"],
 			"dependsOn": ["@ruan-cat-docs/docs-01-star#build:docs"]
+		},
+		"do-build-my-pr-doc": {
+			"cache": true,
+			"outputs": ["docs/my-pull-requests/.vercel/output/**"],
+			"dependsOn": ["@ruan-cat-docs/my-pull-requests#build:docs"]
 		}
 	}
 }

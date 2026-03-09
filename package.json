@@ -31,7 +31,8 @@
 		"deploy:vercel": "vercel-deploy-tool deploy",
 		"ci": "pnpm run build:docs",
 		"build:docs:note": "turbo run do-build-note-doc",
-		"build:docs:01star": "turbo run do-build-01star-doc"
+		"build:docs:01star": "turbo run do-build-01star-doc",
+		"build:docs:my-pr": "turbo run do-build-my-pr-doc"
 	},
 	"dependencies": {
 		"@ruan-cat-docs/docs-01-star": "workspace:^",
