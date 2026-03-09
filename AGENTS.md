@@ -170,11 +170,15 @@ export function successResponse<T>(data: T, message: string = "操作成功") {
 
 ```bash
 # 构建所有文档站点
-pnpm build
+pnpm run build:docs
+
+# CI 构建命令
+pnpm run ci
 
 # 构建特定文档站点
 pnpm run build:docs:note        # 构建笔记文档
 pnpm run build:docs:01star       # 构建 01star 文档
+pnpm run build:docs:my-pr        # 构建 my-pull-requests 文档
 ```
 
 ### 9.2. 开发命令
@@ -198,6 +202,9 @@ pnpm test
 ```bash
 # 使用 Prettier 格式化所有文件
 pnpm format
+
+# 运行 todoctor 检查
+pnpm todoctor
 ```
 
 ### 9.5. 依赖管理
@@ -205,9 +212,6 @@ pnpm format
 ```bash
 # 使用 taze 更新依赖
 pnpm run up-taze
-
-# 更新 VitePress 相关包
-pnpm update-package
 ```
 
 ### 9.6. 部署
@@ -217,7 +221,7 @@ pnpm update-package
 pnpm deploy
 
 # 部署到 Vercel
-pnpm run deploy-on-vercel
+pnpm run deploy:vercel
 ```
 
 ### 9.7. 清理命令
@@ -236,8 +240,20 @@ pnpm run clear:deps
 # dev 分支变基到 main 分支并推送
 pnpm run git:dev-2-main
 
+# main 分支变基到 dev 分支
+pnpm run git:main-2-dev
+
 # dev 分支变基到 vc 分支并推送
 pnpm run git:dev-2-vc
+
+# vc 分支变基到 dev 分支
+pnpm run git:vc-2-dev
+
+# 获取远程分支并清理
+pnpm run git:fetch
+
+# 推送并跟随标签
+pnpm run git:push
 ```
 
 ## 10. 配置详情
