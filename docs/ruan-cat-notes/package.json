@@ -30,17 +30,17 @@
 		"node-localstorage": "^3.0.5",
 		"pinia": "^3.0.4",
 		"pinia-plugin-persistedstate": "^4.7.1",
-		"pixi.js": "^8.16.0",
+		"pixi.js": "^8.17.0",
 		"pixi.js-v4": "npm:pixi.js@^4.8.9",
 		"uuid": "^11.1.0",
 		"vue-json-excel3": "^1.0.30",
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.447",
+		"@iconify/json": "^2.2.448",
 		"@iconify/vue": "^5.0.0",
 		"@ruan-cat/utils": "^4.20.0",
-		"@ruan-cat/vitepress-preset-config": "^3.0.0",
+		"@ruan-cat/vitepress-preset-config": "^3.1.0",
 		"@types/js-yaml": "^4.0.9",
 		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^24.12.0",
@@ -57,6 +57,6 @@
 		"vite-plugin-ts-alias": "^0.1.1",
 		"vitepress": "^1.6.4",
 		"vitepress-demo-plugin": "^1.5.1",
-		"vue": "^3.5.29"
+		"vue": "^3.5.30"
 	}
 }
