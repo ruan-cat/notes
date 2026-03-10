@@ -24,9 +24,6 @@ this-proj.code-workspace
 # 忽略掉 @vitest/ui 生成的本地测试页面
 html
 
-# 不提供包锁文件 自动生成的文件 不应该提交到仓库中
-pnpm-lock.yaml
-
 # 忽略turbo生成文件
 .turbo
 
