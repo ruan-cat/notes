@@ -120,3 +120,23 @@ Pro comes with at least $20 of included usage per month. We work closely with th
 
 - tab 自动补全
 - git commit 生成
+
+## 尝试用咸鱼购买的卡来完成 pro 申领
+
+失败。被拒绝；无法被识别；
+
+> ![2026-03-11-03-12-15](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-15.png)
+
+---
+
+> ![2026-03-11-03-12-24](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-24.png)
+
+---
+
+> ![2026-03-11-03-12-37](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-37.png)
+
+---
+
+> ![2026-03-11-03-12-47](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-47.png)
+
+---
