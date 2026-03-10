@@ -16,3 +16,23 @@
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 
 对了还有，目前这个方法就是根据新用户能免费用半个月的 pro 版本 cursor，每半个月注册一次就行。注册要用邮箱注册嘛，所以要解决邮箱不够用的问题，我用的是域名邮箱，你有一个域名 理论上就能有无限个临时邮箱了
+
+## 尝试用咸鱼购买的卡来完成 pro 申领
+
+失败。被拒绝；无法被识别；
+
+> ![2026-03-11-03-12-15](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-15.png)
+
+---
+
+> ![2026-03-11-03-12-24](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-24.png)
+
+---
+
+> ![2026-03-11-03-12-37](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-37.png)
+
+---
+
+> ![2026-03-11-03-12-47](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-47.png)
+
+---
