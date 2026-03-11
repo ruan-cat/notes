@@ -2,7 +2,7 @@
 
 安装必要的环境和软件。
 
-## 项目技术栈介绍
+## 前端项目技术栈介绍
 
 提前学习对应的框架。核心的技术栈如下：
 
@@ -22,7 +22,7 @@
 
 推荐大家安装 NVM Desktop 软件，确保自己能够随时切换 node 环境。在本项目中，可能会遇到被迫降低 node 版本的情况。大家可以看情况选择合适的 node 版本切换工具。
 
-我们的 node 环境版本范围在 `20.15.0` 以上。你安装 `20.15.1` 即可。
+我们的 node 环境版本范围在 `20.15.0` 以上。但是我要求安装 `node22.14.0` 以上。
 
 你并不需要辛苦地去找指定版本的 node 环境去安装，我们有高效率的安装方案。我们推荐你使用 [nvm-desktop](https://github.com/1111mp/nvm-desktop) 来安装、切换、管理你的全部 node 环境。
 
@@ -116,7 +116,7 @@ npm config set COREPACK_NPM_REGISTRY https://registry.npmmirror.com/
 你必须用以下命令来完成 pnpm 安装全局依赖：
 
 ```bash
-pnpm i -g commitizen
+pnpm i -g commitizen cz-git rimraf turbo vercel degit
 ```
 
 :::
@@ -204,7 +204,7 @@ pnpm i -g commitizen
 
 学会使用合适的 git 历史记录查看工具，查看当前项目的提交记录。
 
-## AI 编程工具
+## AI 编程 IDE
 
 安装 Cursor / Trae / Windsurf 任意一款。务必保证手上有一款基于 vscode 的 AI 编程 IDE。
 

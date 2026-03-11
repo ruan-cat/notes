@@ -1,4 +1,4 @@
-# git 提交
+# 使用 commitlint 和 cz-git 来约束 git commit 提交信息的格式
 
 ## 快速初始化 git 配置
 
