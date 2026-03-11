@@ -1,0 +1,21 @@
+{
+	"extends": ["//"],
+	"tasks": {
+		"build:vercel": {
+			"cache": true,
+			"outputs": [".vercel/output/**"]
+		},
+		"rm": {
+			"dependsOn": ["build:vercel"],
+			"cache": false
+		},
+		"mk": {
+			"dependsOn": ["rm"],
+			"cache": false
+		},
+		"cp": {
+			"dependsOn": ["mk"],
+			"cache": false
+		}
+	}
+}

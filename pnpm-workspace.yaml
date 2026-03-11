@@ -1,6 +1,9 @@
 packages:
   - docs/*
 
+ignoredBuiltDependencies:
+  - "@vercel/speed-insights"
+
 onlyBuiltDependencies:
   - "@parcel/watcher"
   - esbuild

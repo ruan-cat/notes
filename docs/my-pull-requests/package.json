@@ -11,6 +11,10 @@
 		"build": "pnpm run build:vercel",
 		"build:docs": "pnpm run build:vercel",
 		"build:vercel": "cross-env NODE_OPTIONS=--max-old-space-size=8192 nuxi build --preset vercel",
+		"turbo:build:vercel": "turbo run cp --filter=@ruan-cat-docs/my-pull-requests",
+		"rm": "shx rm -rf ../../.vercel/output",
+		"mk": "shx mkdir -p ../../.vercel/output",
+		"cp": "shx cp -r .vercel/output/* ../../.vercel/output/",
 		"postinstall": "nuxi prepare",
 		"lint": "eslint .",
 		"typecheck": "vue-tsc --noEmit"
@@ -35,6 +39,7 @@
 		"@nuxt/eslint": "^1.9.0",
 		"cross-env": "^7.0.3",
 		"eslint": "^9.35.0",
+		"shx": "^0.4.0",
 		"typescript": "^5.9.2",
 		"vue-tsc": "^3.0.7"
 	}
