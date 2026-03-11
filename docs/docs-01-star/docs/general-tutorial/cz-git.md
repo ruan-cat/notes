@@ -1,5 +1,13 @@
 # git 提交
 
+## 快速初始化 git 配置
+
+运行命令批量初始化配置文件。
+
+```bash
+pnpm dlx @ruan-cat/commitlint-config init
+```
+
 ## 已配置好 cz-git
 
 我们项目已经配置好了 git commit 提交的模板工具了。如果你需要更改配置，请更改 `commitlint.config.cjs` 配置即可。
