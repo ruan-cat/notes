@@ -76,3 +76,26 @@ pnpm i && pnpm run build:cloudflare:admin
 ```bash
 npx wrangler --cwd=./apps/admin/.output deploy
 ```
+
+## cloudflare worker 解决默认使用 bun 作为构建工具的方案
+
+在 cloudflare worker 构建 monorepo 时，我要求默认使用 pnpm 包管理器，但是无法有效实现自动识别。通过询问 AI 得知，在 cloudflare worker 的`构建环境变量`内，新建
+`SKIP_DEPENDENCY_INSTALL` 即可。
+
+具体配置如下图所示：
+
+![2026-03-11-20-09-54](https://gh-img-store.ruan-cat.com/img/2026-03-11-20-09-54.png)
+
+比如在 monorepo 项目内部署，就手动使用 corepack 来完成 pnpm 的安装和使用。构建命令如下：
+
+主动用 pnpm 完成依赖安装。
+
+```bash
+corepack enable && pnpm install --no-frozen-lockfile && pnpm run build:docs:01star
+```
+
+参考的部署命令：
+
+```bash
+npx wrangler deploy --assets=./docs/docs-01-star/docs/.vitepress/dist --compatibility-date 2025-06-15
+```
