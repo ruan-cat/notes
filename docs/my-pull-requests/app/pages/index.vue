@@ -1,27 +1,46 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
-const { data: contributions } = await useFetch<Contributions>("/api/contributions");
+const { data: contributions, error } = await useFetch<Contributions>("/api/contributions");
 
-if (!contributions.value) {
-	throw createError("Could not load User activity");
-}
+const user = computed(() => contributions.value?.user);
+const safeUser = computed<User>(
+	() =>
+		user.value ?? {
+			name: "GitHub User",
+			username: "",
+			avatar: "",
+		},
+);
+const prs = computed(() => contributions.value?.prs ?? []);
+const userUrl = computed(() => (user.value ? `https://github.com/${user.value.username}` : "https://github.com"));
+const errorMessage = computed(
+	() => error.value?.statusMessage || error.value?.message || "加载 GitHub 数据时出错，请稍后重试。",
+);
 
-const { user, prs } = contributions.value;
-const userUrl = `https://github.com/${user.username}`;
-
-useHead({
+useHead(() => ({
 	link: [
 		{ rel: "icon", href: "/favicon.png" },
 		{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-		{ rel: "alternate", type: "application/rss+xml", title: `${user.name}'s recent pull requests`, href: "/feed.xml" },
+		{
+			rel: "alternate",
+			type: "application/rss+xml",
+			title: user.value ? `${user.value.name}'s recent pull requests` : "Recent pull requests",
+			href: "/feed.xml",
+		},
 	],
-});
+}));
 const url = useRequestURL();
 useSeoMeta({
-	title: `${user.name} is Contributing`,
-	description: `Discover ${user.name} recent pull requests on GitHub.`,
-	ogTitle: `${user.name} is Contributing`,
-	ogDescription: `Discover ${user.name} recent pull requests on GitHub.`,
+	title: () => (user.value ? `${user.value.name} is Contributing` : "Contributing"),
+	description: () =>
+		user.value
+			? `Discover ${user.value.name} recent pull requests on GitHub.`
+			: "Discover recent pull requests on GitHub.",
+	ogTitle: () => (user.value ? `${user.value.name} is Contributing` : "Contributing"),
+	ogDescription: () =>
+		user.value
+			? `Discover ${user.value.name} recent pull requests on GitHub.`
+			: "Discover recent pull requests on GitHub.",
 	twitterCard: "summary_large_image",
 	ogImage: `${url.origin}/og.png`,
 	twitterImage: `${url.origin}/og.png`,
@@ -76,7 +95,7 @@ const items = computed(() => [
 ]);
 
 const orderedPrs = computed(() => {
-	const sortedPrs = [...prs];
+	const sortedPrs = [...prs.value];
 	sortedPrs.sort((a, b) => {
 		if (orderKey.value === "star") {
 			return order.value === "asc" ? a.stars - b.stars : b.stars - a.stars;
@@ -88,25 +107,48 @@ const orderedPrs = computed(() => {
 	});
 	return sortedPrs;
 });
+
+function reloadPage() {
+	if (import.meta.client) {
+		window.location.reload();
+	}
+}
 </script>
 
 <template>
 	<UContainer class="p-4 sm:p-6 lg:p-8 lg:pt-10 max-w-3xl">
-		<div class="flex flex-col items-center gap-2">
-			<a :href="userUrl" target="_blank"><UAvatar :src="user.avatar" :alt="user.name" size="xl" /> </a>
+		<!-- 错误状态 -->
+		<div v-if="error" class="flex flex-col items-center gap-4 py-20">
+			<div class="text-6xl">⚠️</div>
+			<h1 class="text-2xl font-bold text-center">无法加载用户活动</h1>
+			<p class="text-center text-neutral-600 dark:text-neutral-400 max-w-md">
+				{{ errorMessage }}
+			</p>
+			<UButton @click="reloadPage" color="neutral" variant="soft"> 重新加载 </UButton>
+		</div>
+
+		<!-- 加载状态 -->
+		<div v-else-if="!user" class="flex flex-col items-center gap-4 py-20">
+			<div class="text-6xl animate-pulse">⏳</div>
+			<p class="text-center text-neutral-600 dark:text-neutral-400">加载中...</p>
+		</div>
+
+		<!-- 正常内容 -->
+		<div v-else class="flex flex-col items-center gap-2">
+			<a :href="userUrl" target="_blank"><UAvatar :src="safeUser.avatar" :alt="safeUser.name" size="xl" /> </a>
 			<h1 class="text-2xl sm:text-3xl text-center">
 				<a :href="userUrl" target="_blank">
-					{{ user.name }}
+					{{ safeUser.name }}
 				</a>
 				is <span class="animate-pulse">Contributing...</span>
 			</h1>
 			<p class="text-center text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300">
-				<NuxtLink :to="userUrl" target="_blank"> @{{ user.username }}'s recent pull requests on GitHub. </NuxtLink>
+				<NuxtLink :to="userUrl" target="_blank"> @{{ safeUser.username }}'s recent pull requests on GitHub. </NuxtLink>
 			</p>
 			<div class="flex items-center justify-center gap-1 text-neutral-700 dark:text-neutral-300">
 				<ClientOnly>
 					<UButton
-						:aria-label="`${user.name}'s GitHub profile`"
+						:aria-label="`${safeUser.name}'s GitHub profile`"
 						:icon="colorMode.value === 'dark' ? 'i-lucide-moon' : 'i-lucide-sun'"
 						color="neutral"
 						variant="link"
@@ -120,7 +162,7 @@ const orderedPrs = computed(() => {
 					:to="userUrl"
 					external
 					target="_blank"
-					:aria-label="`${user.name}'s GitHub profile`"
+					:aria-label="`${safeUser.name}'s GitHub profile`"
 					icon="i-lucide-github"
 					color="neutral"
 					variant="link"

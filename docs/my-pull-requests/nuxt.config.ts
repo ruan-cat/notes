@@ -21,13 +21,13 @@ export default defineNuxtConfig({
 		payloadExtraction: !isVercelPreset,
 	},
 
-	$production: {
-		routeRules: {
-			"/": { isr: 45 },
-			"/api/contributions": { isr: 45 },
-			"/feed.xml": { isr: 45 },
-		},
-	},
+	// $production: {
+	// 	routeRules: {
+	// 		"/": { isr: 45 },
+	// 		"/api/contributions": { isr: 45 },
+	// 		"/feed.xml": { isr: 45 },
+	// 	},
+	// },
 
 	// https://devtools.nuxt.com
 	devtools: { enabled: true },

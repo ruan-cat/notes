@@ -1,7 +1,9 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
 	data: PullRequest;
 }>();
+
+const createdAtFromNow = useTimeAgo(() => new Date(props.data.created_at));
 
 function formatStars(stars: number) {
 	return new Intl.NumberFormat("en-US", {
@@ -77,9 +79,9 @@ const stateIcons: Record<PullRequest["state"], string> = {
 			<div class="flex flex-col justify-between shrink-0 text-right">
 				<a :href="data.url" target="_blank" class="hover:underline text-xs sm:text-sm"> #{{ data.number }} </a>
 
-				<time :datatime="data.created_at" class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{{
-					useTimeAgo(new Date(data.created_at))
-				}}</time>
+				<time :datatime="data.created_at" class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">
+					{{ createdAtFromNow }}
+				</time>
 			</div>
 		</div>
 	</div>
