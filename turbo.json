@@ -23,8 +23,8 @@
 		},
 		"do-build-my-pr-doc": {
 			"cache": true,
-			"outputs": ["docs/my-pull-requests/.vercel/output/**"],
-			"dependsOn": ["@ruan-cat-docs/my-pull-requests#build:docs"]
+			"outputs": [".vercel/output/**"],
+			"dependsOn": ["@ruan-cat-docs/my-pull-requests#cp"]
 		}
 	}
 }
