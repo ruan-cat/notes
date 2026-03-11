@@ -1,6 +1,6 @@
 # 使用阿里云效平台的日常 git 协作方式
 
-我们项目的 git 团队协作，都可以用阿里云效平台完成。点此进入到我们的项目的[代码库](https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-10wms/)。
+我们项目的 git 团队协作，都可以用阿里云效平台完成。请先进入到对应云效的远程仓库页面。
 
 下面列举我们的 git 协作方式：
 
@@ -64,7 +64,7 @@ git fetch -p
 
 ### 进入到云效的 pr 界面
 
-[点此进入](https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-10wms/changes) 10wms 项目的云效 pr 界面。
+从云效仓库的合并请求内，进入到云效 pr 界面。
 
 ::: details 云效 pr 界面
 
