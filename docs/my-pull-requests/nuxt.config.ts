@@ -9,6 +9,9 @@ const isVercelPreset = process.argv.includes("--preset") && process.argv.include
 export default defineNuxtConfig({
 	// https://nuxt.com/modules
 	modules: ["@nuxt/eslint", "@nuxt/ui", "@vueuse/nuxt"],
+	runtimeConfig: {
+		githubToken: "",
+	},
 	icon: {
 		serverBundle: {
 			collections: ["lucide", "simple-icons"],
