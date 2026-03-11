@@ -191,6 +191,19 @@ pnpm i -g commitizen
 
 :::
 
+### 学会 vscode 常用的命令
+
+调用命令的快捷键： `Ctrl+Shift+P`
+
+1. **重启 vscode**： `reloadwindow`
+2. **打开个人用户全局配置**： `openusersetjson`
+
+### 学习 vscode 插件`git graph`
+
+插件 id： `mhutchie.git-graph`
+
+学会使用合适的 git 历史记录查看工具，查看当前项目的提交记录。
+
 ## AI 编程工具
 
 安装 Cursor / Trae / Windsurf 任意一款。务必保证手上有一款基于 vscode 的 AI 编程 IDE。

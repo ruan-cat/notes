@@ -36,13 +36,13 @@
 
 - https://docs-01-star.ruan-cat.com/attention/change-git-user-name.html
 
-### 拉取远程仓库的代码
+### <!-- 该部分已迁移到专门的教程章节 --> 拉取远程仓库的代码
 
 ```bash
 git fetch -p
 ```
 
-### 合并来自主分支的代码
+### <!-- 该部分已迁移到专门的教程章节 --> 合并来自主分支的代码
 
 1. 先进入到你自己所在的业务分支。
 2. 合并远程分支的代码
@@ -51,7 +51,7 @@ git fetch -p
 git merge origin/f1
 ```
 
-### 明确 git 操作规范
+### <!-- 该部分已迁移到专门的教程章节 --> 明确 git 操作规范
 
 未来开发时，每一个人必须遵守以下操作规范，否则会导致 git 提交不同步。
 
@@ -59,7 +59,7 @@ git merge origin/f1
 2. 将主分支的代码合并到自己分支内。
 3. 及时的提交代码到远程仓库。
 
-### 学习 vscode 插件`git graph`
+### <!-- 该部分已迁移到专门的教程章节 --> 学习 vscode 插件`git graph`
 
 插件 id： `mhutchie.git-graph`
 
@@ -69,7 +69,7 @@ git merge origin/f1
 
 ### 认识.vscode 目录下的配置文件
 
-### 学会 vscode 常用的命令
+### <!-- 该部分已迁移到专门的教程章节 --> 学会 vscode 常用的命令
 
 调用命令的快捷键： `Ctrl+Shift+P`
 
