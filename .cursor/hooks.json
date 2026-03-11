@@ -2,38 +2,39 @@
 	"hooks": {
 		"sessionStart": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"beforeSubmitPrompt": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"afterFileEdit": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"beforeShellExecution": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"afterMCPExecution": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"preCompact": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		],
 		"stop": [
 			{
-				"command": "cmd /c memorix hook"
+				"command": "memorix.cmd hook"
 			}
 		]
-	}
+	},
+	"version": 1
 }

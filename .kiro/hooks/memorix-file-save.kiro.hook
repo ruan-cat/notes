@@ -19,6 +19,6 @@
   },
   "then": {
     "type": "runCommand",
-    "command": "cmd /c memorix hook"
+    "command": "memorix.cmd hook"
   }
 }
