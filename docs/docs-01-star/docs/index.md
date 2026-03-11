@@ -13,6 +13,9 @@ hero:
       text: 第13次项目，小步快跑，快速迭代
       link: /13
     - theme: alt
+      text: 阅读01s通用教程
+      link: /general-tutorial
+    - theme: alt
       text: 在github内查看
       link: https://github.com/ruan-cat/notes/tree/dev/docs/docs-01-star
 ---
