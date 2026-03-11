@@ -1,25 +1,72 @@
+import { config as loadDotenvx } from "@dotenvx/dotenvx";
+import { resolve } from "node:path";
+import { createError } from "h3";
 import { Octokit } from "octokit";
 
 let _octokit: Octokit;
+let _githubToken = "";
+let _envLoaded = false;
+
+function loadGithubEnv() {
+	if (_envLoaded) {
+		return;
+	}
+
+	_envLoaded = true;
+
+	const cwd = process.cwd();
+	const envPaths = Array.from(
+		new Set([
+			resolve(cwd, ".env.local"),
+			resolve(cwd, ".env"),
+			resolve(cwd, "docs/my-pull-requests/.env.local"),
+			resolve(cwd, "docs/my-pull-requests/.env"),
+			resolve(cwd, "../../.env.local"),
+			resolve(cwd, "../../.env"),
+		]),
+	);
+
+	loadDotenvx({
+		path: envPaths,
+		quiet: true,
+		ignore: ["MISSING_ENV_FILE"],
+	});
+}
+
+function getGithubToken() {
+	loadGithubEnv();
+
+	const token = process.env.NUXT_GITHUB_TOKEN?.trim() || process.env.GITHUB_TOKEN?.trim() || "";
+
+	if (!token) {
+		throw createError({
+			statusCode: 500,
+			statusMessage:
+				"Missing GitHub token. Set NUXT_GITHUB_TOKEN or GITHUB_TOKEN in Vercel, or define it in docs/my-pull-requests/.env(.local).",
+		});
+	}
+
+	return token;
+}
 
 export function useOctokit() {
-	if (!_octokit) {
+	const token = getGithubToken();
+
+	if (!_octokit || _githubToken !== token) {
+		_githubToken = token;
 		_octokit = new Octokit({
-			auth: process.env.NUXT_GITHUB_TOKEN,
+			auth: token,
 		});
 	}
 	return _octokit;
 }
 
-// In memory cache as this is called internally in /api/contributions
 const RepoCache = new Map();
 
-// Read more about caching functions https://hub.nuxt.com/docs/features/cache#server-functions-caching
 export async function fetchRepo(owner: string, name: string) {
 	if (RepoCache.has(`${owner}/${name}`)) {
 		return RepoCache.get(`${owner}/${name}`);
 	}
-	// Fetch repository details to get owner type
 	const { data } = await useOctokit().request("GET /repos/{owner}/{name}", {
 		owner,
 		name,

@@ -20,6 +20,7 @@
 		"typecheck": "vue-tsc --noEmit"
 	},
 	"dependencies": {
+		"@dotenvx/dotenvx": "^1.54.1",
 		"@iconify-json/lucide": "^1.2.68",
 		"@iconify-json/simple-icons": "^1.2.52",
 		"@nuxt/ui": "^4.0.0-alpha.1",
