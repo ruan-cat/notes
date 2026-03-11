@@ -69,13 +69,13 @@
 
 本次大项目需要安装很多软件。
 
-### vscode
+### <!-- 该部分已迁移到专门的教程章节 --> vscode
 
 安装最新版本的 vscode，并确保自己的 vscode 处于管理员权限。
 
 本次项目不要求使用 WebStorm。你可以酌情使用 webstorm。
 
-### AI 编程工具
+### <!-- 该部分已迁移到专门的教程章节 --> AI 编程工具
 
 安装 Cursor / Trae / Windsurf 任意一款。务必保证手上有一款基于 vscode 的 AI 编程 IDE。
 
@@ -83,7 +83,7 @@
 
 安装[Trae](https://notes.ruan-cat.com/trae/)务必安装国外版本。
 
-### Apifox
+### <!-- 该部分已迁移到专门的教程章节 --> Apifox
 
 [apifox](https://apifox.com/)，接口请求工具。未来接口联调、mock 数据请求的核心工具。
 
@@ -93,7 +93,7 @@
 
 :::
 
-### 亿图脑图 MindMaster
+### <!-- 该部分已迁移到专门的教程章节 --> 亿图脑图 MindMaster
 
 [亿图脑图 MindMaster](https://www.edrawsoft.cn/mind/ad/mindmapv12.html)，是打开 `*.emmx` 文件的工具，未来阅读 **版本计划.emmx** 文件时，就使用该软件。
 
@@ -123,7 +123,7 @@ git clone https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-11community
 
 目前（2025-5-12）尚未有明确的前端分支。
 
-## 阅读 `版本计划.emmx` 文件
+## <!-- 该部分已迁移到专门的教程章节 --> 阅读 `版本计划.emmx` 文件
 
 克隆项目后，从文档内找到 `版本计划.emmx` 文件，单独复制粘贴到自己的桌面上。以后阅读的文件仅允许阅读你自己复制粘贴出来的 `版本计划.emmx` 思维导图。
 
