@@ -6,18 +6,19 @@
 
 本项目原本有内置的脚本帮助你安装 pnpm，按理说你并不需要手动去安装 pnpm。但是我们关闭了该功能。
 
-如果你想在本项目使用 pnpm，请依次运行以下两条命令。
+如果你想在本项目使用 pnpm，请依次运行以下命令。
 
 ```bash
+corepack -v
 corepack enable
-corepack prepare pnpm@9.5.0 --activate
+corepack use pnpm@latest
 ```
 
 运行效果如下：
 
 ::: details 用 corepack 安装 pnpm
 
-![2025-02-26-16-33-57](https://gh-img-store.ruan-cat.com/01s-docs/10wms/2025-02-26-16-33-57.png)
+![2026-03-11-18-01-58](https://gh-img-store.ruan-cat.com/img/2026-03-11-18-01-58.png)
 
 :::
 
@@ -27,7 +28,7 @@ corepack prepare pnpm@9.5.0 --activate
 
 ```json
 {
-	"packageManager": "pnpm@9.5.0"
+	"packageManager": "pnpm@10.32.1"
 }
 ```
 
@@ -35,7 +36,9 @@ corepack prepare pnpm@9.5.0 --activate
 
 ## corepack 存在严重的 bug
 
-我们目前的 node 版本使用的是低版本的 corepack，会导致你安装 pnpm 失败。[点此阅读详情](https://notes.ruan-cat.com/corepack/#安装与升级-pnpm)。
+我们目前的 node 版本使用的是低版本的 corepack，会导致你安装 pnpm 失败。你应该至少使用 `node22.14.0` 以上版本的 node 环境，因为该版本的 node 环境提供 `corepack0.31.0` 版本。可以有效解决 pnpm 安装出现的 key 值校验故障。
+
+[点此阅读详情](https://notes.ruan-cat.com/corepack/#安装与升级-pnpm)。
 
 ## win 专业版需要额外设置解除文件名限制
 
