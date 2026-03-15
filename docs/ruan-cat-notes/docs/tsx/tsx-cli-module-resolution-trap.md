@@ -1,5 +1,5 @@
 ---
-juejin: https://juejin.cn/post/7614205951335612426
+juejin: https://juejin.cn/post/7617269065950740516
 desc: 解析用 tsx 执行 NPM 脚本报 ERR_MODULE_NOT_FOUND 的原因：CLI 认路径而非模块名。本文揭示标准 bin 字段与包装脚本两套解法，带你跳出加载陷阱。
 
 title: "避坑指南：为什么 tsx 执行 NPM 包导出的脚本会报错 ERR_MODULE_NOT_FOUND？"
