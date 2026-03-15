@@ -5,16 +5,8 @@
 			"cache": true,
 			"outputs": [".vercel/output/**"]
 		},
-		"rm": {
+		"move-vercel-output-to-root": {
 			"dependsOn": ["build:vercel"],
-			"cache": false
-		},
-		"mk": {
-			"dependsOn": ["rm"],
-			"cache": false
-		},
-		"cp": {
-			"dependsOn": ["mk"],
 			"cache": false
 		}
 	}

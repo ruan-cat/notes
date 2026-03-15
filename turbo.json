@@ -24,7 +24,7 @@
 		"do-build-my-pr-doc": {
 			"cache": true,
 			"outputs": [".vercel/output/**"],
-			"dependsOn": ["@ruan-cat-docs/my-pull-requests#cp"]
+			"dependsOn": ["@ruan-cat-docs/my-pull-requests#move-vercel-output-to-root"]
 		}
 	}
 }
