@@ -1,5 +1,9 @@
 # github copilot
 
+## 申领地址
+
+- https://github.com/github-copilot/pro
+
 ## 账户申请权限
 
 官方文档
