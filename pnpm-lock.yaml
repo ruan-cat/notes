@@ -169,7 +169,7 @@ importers:
         version: 21.0.0(@nuxt/kit@4.4.2(magicast@0.5.2))(@vueuse/core@13.9.0(vue@3.5.30(typescript@5.9.3)))
       unplugin-vue-components:
         specifier: ^31.0.0
-        version: 31.0.0(@nuxt/kit@4.4.2(magicast@0.5.2))(vue@3.5.30(typescript@5.9.3))
+        version: 31.0.0(@nuxt/kit@4.3.1(magicast@0.5.2))(vue@3.5.30(typescript@5.9.3))
       vercel:
         specifier: 44.2.8
         version: 44.2.8(rollup@4.57.1)
@@ -349,6 +349,9 @@ importers:
       "@vitejs/plugin-vue":
         specifier: ^6.0.5
         version: 6.0.5(vite@7.3.1(@types/node@24.12.0)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.31.1)(sass@1.98.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.30(typescript@5.9.3))
+      "@vue/shared":
+        specifier: ^3.5.30
+        version: 3.5.30
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
@@ -4674,10 +4677,6 @@ packages:
       { integrity: sha512-v+R34icapydRwbZRD0sXwtHqrQJv38JuMB4JxbOxd8NEpGLny7cncMp53W9UH/zo4j8eDHjQ1dEJXwzFQknjtQ== }
     peerDependencies:
       vue: 3.5.30
-
-  "@vue/shared@3.5.24":
-    resolution:
-      { integrity: sha512-9cwHL2EsJBdi8NY22pngYYWzkTDhld6fAD6jlaeloNGciNSJL6bLpbxVgXl96X00Jtc6YWQv96YA/0sxex/k1A== }
 
   "@vue/shared@3.5.30":
     resolution:
@@ -15862,8 +15861,6 @@ snapshots:
       "@vue/shared": 3.5.30
       vue: 3.5.30(typescript@5.9.3)
 
-  "@vue/shared@3.5.24": {}
-
   "@vue/shared@3.5.30": {}
 
   "@vueuse/core@10.11.1(vue@3.5.30(typescript@5.9.3))":
@@ -22324,7 +22321,7 @@ snapshots:
       "@types/markdown-it": 14.1.2
       "@vitejs/plugin-vue": 5.2.4(vite@5.4.21(@types/node@24.12.0)(less@4.4.2)(lightningcss@1.31.1)(sass@1.98.0)(terser@5.46.0))(vue@3.5.30(typescript@5.9.3))
       "@vue/devtools-api": 7.7.8
-      "@vue/shared": 3.5.24
+      "@vue/shared": 3.5.30
       "@vueuse/core": 12.8.2(typescript@5.9.3)
       "@vueuse/integrations": 12.8.2(async-validator@4.2.5)(axios@1.13.6)(change-case@5.4.4)(focus-trap@7.6.6)(fuse.js@7.1.0)(typescript@5.9.3)
       focus-trap: 7.6.6
