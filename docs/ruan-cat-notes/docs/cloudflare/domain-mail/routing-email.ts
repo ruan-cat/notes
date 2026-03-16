@@ -17,6 +17,7 @@ export const routingEmails: RutingEmail[] = [
 		order: 1,
 		email: "use-kiro-001@ruan-cat.com",
 		openai: "已封号",
+		github: "已封号",
 		cursor: "试用期已过期。已删除账号。",
 	},
 	{
