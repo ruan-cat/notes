@@ -1,6 +1,11 @@
 {
 	// 需要使用prettier来便捷的格式化
 	"prettier.enable": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	// markdown文件目前使用prettier来格式化
 	"[markdown]": {
 		"editor.formatOnSave": true,
@@ -45,10 +50,7 @@
 		- https://github.com/vuejs/language-tools/tree/master/extensions/vscode#configs
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
-	"vue.server.includeLanguages": [
-		"vue",
-		"markdown"
-	],
+	"vue.server.includeLanguages": ["vue", "markdown"],
 	/** 忽略特定的文件夹 不予搜索 */
 	"search.exclude": {
 		"**/dist": true,
