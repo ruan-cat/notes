@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7618068222886477878
 desc: 通过 .npmrc 的 public-hoist-pattern 配置，解决 pnpm 严格隔离导致的幽灵依赖缺失和 IDE 插件模块解析失败两类典型问题。
 title: "pnpm 踩坑实录：用 public-hoist-pattern 拯救被严格隔离坑掉的依赖"
 date: 2026-03-17
