@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7618098747671543862
 desc: simple-git-hooks在嵌套monorepo中把钩子装到假.git目录，导致lint-staged从未触发。排查思路与三步组合修复方案。
 title: "simple-git-hooks 踩坑实录：钩子装对了却从没触发过，原来是 .git 目录捣的鬼"
 date: 2026-03-17
