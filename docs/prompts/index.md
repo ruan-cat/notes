@@ -426,3 +426,91 @@ Hydration completed but contains mismatches.
 
 1. 阅读 https://vc.ruan-cat.com/migration-guide.md 这个迁移文档。
 2. 我们项目的 `@ruan-cat/vercel-deploy-tool` 相关配置需要实现迁移了，需要你完成迁移。
+
+## 024 <!-- 已完成 --> 本项目的 prettier 无法完成在 cursor 内的格式化
+
+本项目的插件配置，已经开启 prettier 插件 `.vscode/settings.json`
+
+本项目的 prettier 插件： `prettier.config.mjs`
+
+我根据官方的插件教程，配置了 `prettier-plugin-lint-md` 和 `@prettier/plugin-oxc` 插件，可是无法在本项目内通过 Ctrl+S 的方式完成触发 prettier 的正确格式化，插件的报错日志如下：
+
+```log
+["INFO" - 18:38:34] Extension Name: esbenp.prettier-vscode.
+["INFO" - 18:38:34] Extension Version: 12.4.0.
+["INFO" - 18:38:36] Using config file at d:\code\github-desktop-store\gh.notes\prettier.config.mjs
+["INFO" - 18:38:36] EditorConfig support is enabled, checking for .editorconfig files
+["ERROR" - 18:38:36] Invalid prettier configuration file detected. See log for details.
+["ERROR" - 18:38:36] Cannot find package '@prettier/plugin-oxc' imported from d:\code\github-desktop-store\gh.notes\prettier.config.mjs
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@prettier/plugin-oxc' imported from d:\code\github-desktop-store\gh.notes\prettier.config.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:779:81)
+    at moduleResolve (node:internal/modules/esm/resolve:865:18)
+    at defaultResolve (node:internal/modules/esm/resolve:995:11)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolve (data:text/javascript;base64,CglleHBvcnQgYXN5bmMgZnVuY3Rpb24gcmVzb2x2ZShzcGVjaWZpZXIsIGNvbnRleHQsIG5leHRSZXNvbHZlKSB7CgkJaWYgKHNwZWNpZmllciA9PT0gJ2ZzJykgewoJCQlyZXR1cm4gewoJCQkJZm9ybWF0OiAnYnVpbHRpbicsCgkJCQlzaG9ydENpcmN1aXQ6IHRydWUsCgkJCQl1cmw6ICdub2RlOm9yaWdpbmFsLWZzJwoJCQl9OwoJCX0KCgkJLy8gRGVmZXIgdG8gdGhlIG5leHQgaG9vayBpbiB0aGUgY2hhaW4sIHdoaWNoIHdvdWxkIGJlIHRoZQoJCS8vIE5vZGUuanMgZGVmYXVsdCByZXNvbHZlIGlmIHRoaXMgaXMgdGhlIGxhc3QgdXNlci1zcGVjaWZpZWQgbG9hZGVyLgoJCXJldHVybiBuZXh0UmVzb2x2ZShzcGVjaWZpZXIsIGNvbnRleHQpOwoJfQ==:13:10)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolve (d:\dev-tool\cursor-ai-ide\resources\app\node_modules\import-in-the-middle\hook.js:333:26)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolve (data:text/javascript;base64,CglsZXQgbG9va3VwOwoJZXhwb3J0IGNvbnN0IGluaXRpYWxpemUgPSBhc3luYyAoY29udGV4dCkgPT4gewoJCWxldCByZXF1ZXN0SWRzID0gMDsKCQljb25zdCB7IHBvcnQgfSA9IGNvbnRleHQ7CgkJY29uc3QgcGVuZGluZ1JlcXVlc3RzID0gbmV3IE1hcCgpOwoJCXBvcnQub25tZXNzYWdlID0gKGV2ZW50KSA9PiB7CgkJCWNvbnN0IHsgaWQsIHVybCwgZXJyb3IgfSA9IGV2ZW50LmRhdGE7CgkJCWNvbnN0IGNhbGxiYWNrcyA9IHBlbmRpbmdSZXF1ZXN0cy5nZXQoaWQpOwoJCQlpZiAoY2FsbGJhY2tzKSB7CgkJCQlwZW5kaW5nUmVxdWVzdHMuZGVsZXRlKGlkKTsKCQkJCWlmIChlcnJvcikgewoJCQkJCWNhbGxiYWNrcy5yZWplY3QobmV3IEVycm9yKGVycm9yKSk7CgkJCQl9IGVsc2UgewoJCQkJCWNhbGxiYWNrcy5yZXNvbHZlKHVybCk7CgkJCQl9CgkJCX0KCQl9OwoJCWxvb2t1cCA9IHVybCA9PiB7CgkJCWNvbnN0IG15SWQgPSByZXF1ZXN0SWRzKys7CgkJCXJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7CgkJCQlwZW5kaW5nUmVxdWVzdHMuc2V0KG15SWQsIHsgcmVzb2x2ZSwgcmVqZWN0IH0pOwoJCQkJcG9ydC5wb3N0TWVzc2FnZSh7IGlkOiBteUlkLCB1cmwsIH0pOwoJCQl9KTsKCQl9OwoJfTsKCWV4cG9ydCBjb25zdCByZXNvbHZlID0gYXN5bmMgKHNwZWNpZmllciwgY29udGV4dCwgbmV4dFJlc29sdmUpID0+IHsKCQlpZiAoc3BlY2lmaWVyICE9PSAndnNjb2RlJyB8fCAhY29udGV4dC5wYXJlbnRVUkwpIHsKCQkJcmV0dXJuIG5leHRSZXNvbHZlKHNwZWNpZmllciwgY29udGV4dCk7CgkJfQoJCWNvbnN0IG90aGVyVXJsID0gYXdhaXQgbG9va3VwKGNvbnRleHQucGFyZW50VVJMKTsKCQlyZXR1cm4gewoJCQl1cmw6IG90aGVyVXJsLAoJCQlzaG9ydENpcmN1aXQ6IHRydWUsCgkJfTsKCX07:29:11)
+```
+
+在 prettier 的格式化流内，可以识别 `@prettier/plugin-oxc` 和 `prettier-plugin-lint-md` 这两款插件。以 cli 命令运行 prettier 这款包时，是可以运行并识别这两个插件的。现在的主要问题集中在运行在 vscode/cursor 端的 prettier 插件，无法识别 `@prettier/plugin-oxc` 和 `prettier-plugin-lint-md` 这两款插件。
+
+我的 prettier 包和 IDE 编辑器端的 prettier 插件，都是安装的最新版。
+
+### 001 对配置有疑惑
+
+我对配置 `prettier.config.mjs` 的写法有疑惑，我是按照 https://github.com/prettier/prettier/tree/main/packages/plugin-oxc 这个教程来完成配置的，难道 `@prettier/plugin-oxc` 不应该使用 overrides 来实现配置么？
+
+## 025 <!-- 已完成 --> 结合现在的记忆，对 `.npmrc` 使用 `public-hoist-pattern` 配置解决两款问题的情况，编写掘金风格文章
+
+请你在 `docs\ruan-cat-notes\docs\posts\2026-3-17-use-public-hoist-pattern-in-npmrc\index.md` 以 `.npmrc` 使用 `public-hoist-pattern` 配置解决两款依赖丢失与依赖提升的问题，为引子，编写掘金风格的博客文章。
+
+yaml 配置头信息模仿 `docs\ruan-cat-notes\docs\tsx\tsx-cli-module-resolution-trap.md`
+
+文章的结构模仿 `docs\ruan-cat-notes\docs\posts` 目录下的多款文章。务必确保提供 desc 和摘要部分。其中，在 markdown 顶部的 yaml 块的 desc 内，其总结说明的摘要文本，其字符串不应该超过 100 字。
+
+## 026 新建 `.claude\skills\write-juejin-posts` 掘金文章编写技能
+
+在 `.claude\skills\write-juejin-posts` 目录内，新增一款专门用来编写掘金风格 markdown 文档的技能。便于约束掘金发文时的 markdown 编写与行文规范：
+
+参考格式：
+
+- `docs\ruan-cat-notes\docs\posts\2026-3-17-use-public-hoist-pattern-in-npmrc\index.md`
+- `docs\ruan-cat-notes\docs\tsx\tsx-cli-module-resolution-trap.md`
+- `docs\ruan-cat-notes\docs\posts` 目录下的多款文章
+- `docs\ruan-cat-notes\docs` 目录内其他包含有 `juejin` yaml 配置的 markdown 文档。
+
+### 刚刚初始化新建的 markdown 掘金文章，不允许填写任何 juejin 字段
+
+1. 由 `write-juejin-posts` 技能初始化的 markdown 文档，其顶部的 juejin 字段应该使用以下固定格式来初始化。
+2. 在使用 `write-juejin-posts` 技能经手其他的 markdown 文档时，除了初始化一个全新的 markdown 文档以外，其他情况下都不允许去修改 juejin 字段。
+
+```markdown
+---
+juejin: TODO 编写完内容就可以直接发文
+---
+```
+
+### 顶部 yaml 的 desc 样有严格的字符串长度限制
+
+在 markdown 顶部的 yaml 块的 desc 内，其总结说明的摘要文本，其字符串不应该超过 100 字。包括中间的空格说明。为了增加信息密度，在 yaml 的 desc 编写摘要时，应该避免增加空格。
+
+### 增加固定的摘要说明
+
+其固定格式模板如下：
+
+```markdown
+> **摘要**：
+>
+> 具体的摘要文本不必严格遵循 yaml 的 desc 的 100 字限制，和移除空格增加文本密度的限制。
+```
+
+### 由`write-juejin-posts`技能参与的文章加入固定的说明文本
+
+```markdown
+> **AI 协助编写的博客文章**：
+>
+> 这篇文章有参与 AI 协助的。使用了 AI 润色文章。
+```
