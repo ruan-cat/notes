@@ -2,6 +2,85 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 本项目的技能表
+
+- `openspec-apply-change`
+  - 路径：`.claude/skills/openspec-apply-change/SKILL.md`
+  - 用途：从 OpenSpec change 实施任务
+  - 触发时机：当用户想要开始实施、继续实施或处理 OpenSpec change 任务时使用
+  - 参考作用：实施阶段的参考
+  - 约束：只负责实施，不负责规范制定
+
+- `openspec-archive-change`
+  - 路径：`.claude/skills/openspec-archive-change/SKILL.md`
+  - 用途：归档已完成的 change
+  - 触发时机：当用户想要完成并归档 change 时使用
+  - 参考作用：归档阶段的参考
+  - 约束：只负责归档，不负责实施
+
+- `openspec-bulk-archive-change`
+  - 路径：`.claude/skills/openspec-bulk-archive-change/SKILL.md`
+  - 用途：批量归档多个已完成 change
+  - 触发时机：当用户想要批量归档多个 change 时使用
+  - 参考作用：批量归档的参考
+  - 约束：只负责归档，不负责实施
+
+- `openspec-continue-change`
+  - 路径：`.claude/skills/openspec-continue-change/SKILL.md`
+  - 用途：继续 working on a change，创建下一个 artifact
+  - 触发时机：当用户想要继续 change 工作流程时使用
+  - 参考作用：继续工作的参考
+  - 约束：只负责继续工作，不负责归档
+
+- `openspec-explore`
+  - 路径：`.claude/skills/openspec-explore/SKILL.md`
+  - 用途：进入探索模式 - 思考伙伴，调查问题，澄清需求
+  - 触发时机：当用户想要思考问题、调查问题或澄清需求时使用
+  - 参考作用：探索阶段的参考
+  - 约束：只负责探索，不负责实施
+
+- `openspec-ff-change`
+  - 路径：`.claude/skills/openspec-ff-change/SKILL.md`
+  - 用途：快速创建所有需要的 artifact
+  - 触发时机：当用户想要快速创建所有 artifact 时使用
+  - 参考作用：快速创建的参考
+  - 约束：只负责创建，不负责验证
+
+- `openspec-new-change`
+  - 路径：`.claude/skills/openspec-new-change/SKILL.md`
+  - 用途：创建新的 OpenSpec change
+  - 触发时机：当用户想要开始新功能、修复或修改时使用
+  - 参考作用：新建 change 的参考
+  - 约束：只负责创建，不负责实施
+
+- `openspec-onboard`
+  - 路径：`.claude/skills/openspec-onboard/SKILL.md`
+  - 用途：OpenSpec 入职指导 - 完整的 workflow 演练
+  - 触发时机：当用户想要完整了解 OpenSpec workflow 时使用
+  - 参考作用：入职培训的参考
+  - 约束：只负责培训，不负责实施
+
+- `openspec-sync-specs`
+  - 路径：`.claude/skills/openspec-sync-specs/SKILL.md`
+  - 用途：同步 delta specs 到主 specs
+  - 触发时机：当用户想要更新主 specs 时使用
+  - 参考作用：同步的参考
+  - 约束：只负责同步，不负责归档
+
+- `openspec-verify-change`
+  - 路径：`.claude/skills/openspec-verify-change/SKILL.md`
+  - 用途：验证实现是否匹配 change artifacts
+  - 触发时机：当用户想要验证实现是否完整、正确和一致时使用
+  - 参考作用：验证的参考
+  - 约束：只负责验证，不负责归档
+
+- `record-bug-fix-memory`
+  - 路径：`.claude/skills/fix-bug/record-bug-fix-memory/SKILL.md`
+  - 用途：当用户要求在 bug 已经定位并修复后，记录排错经验、事故结论、AI 记忆更新、复盘摘要或本地 MCP 记忆时使用
+  - 触发时机：当用户要求"记录经验教训""补充 AI 记忆""写事故记录""同步本地 MCP 记忆"时，必须使用
+  - 参考作用：经验沉淀的参考
+  - 约束：这个技能只负责记忆沉淀和经验总结，不承担具体修复职责
+
 ## 1. 主动问询实施细节
 
 在我与你沟通并要求你具体实施更改时，难免会遇到很多模糊不清的事情。
@@ -28,6 +107,85 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 3. 完成任务后，请告知我你做了那些破坏性变更。
 
 请注意，在绝大多数情况下，我不会要求你以这种 `计划模式` 来和我协作。
+
+## 简单任务的高效执行原则
+
+当用户交代的任务范围明确清晰时，必须**直接行动**，禁止进行不必要的大范围侦察。
+
+### 1. 判断任务规模，选择正确的行动姿态
+
+| 任务信号                         | 正确行动               |
+| :------------------------------- | :--------------------- |
+| 用户通过 `@文件` 明确了操作范围  | 直接读该文件，立即动手 |
+| 用户说"帮我改这个"、"写个日志"   | 行动优先，缺什么补什么 |
+| 用户涉及多包架构改动、新功能设计 | 先侦察，再行动         |
+
+**核心原则**：用户提供的上下文（@文件引用、对话内容、当前打开文件）就是最直接的线索，优先使用，不要用命令重新发现已知信息。
+
+### 2. 禁止行为清单
+
+以下行为在**简单任务**（单文件改动、写 changeset、写提交信息等）中是被禁止的：
+
+- 禁止连续执行超过 3 次 `git log` 来"了解全貌"
+- 禁止在明确知道目标文件的情况下，仍去扫描整个项目目录
+- 禁止把"读遍所有相关文档"当作行动前置条件
+- 禁止在用户已给出 @文件 的情况下，用命令重新搜索文件位置
+
+### 3. 对用户纠偏提示立即响应
+
+当用户发出以下信号时，必须**立即停止对当前路径的死磕**，回归最小行动路径：
+
+- "太复杂了"
+- "不要反复查询"
+- "直接做就行"
+- "按要求做即可"
+
+正确反应：停止当前侦察行为 → 明确当前已知信息 → 直接执行最核心的操作步骤。
+
+### 4. 简单任务的标准执行路径
+
+以"为某文件修改编写更新日志"为例，正确路径只有 3 步：
+
+1. 读目标文件，理解改了什么
+2. 执行 `pnpm dlx @changesets/cli add --empty`，重命名文件，写入内容
+3. 提交
+
+不需要查 git log，不需要扫描全部 tags，不需要对比所有包的版本号。
+
+## 终端操作注意事项（防卡住）
+
+在 Windows PowerShell 环境下执行终端命令时，必须遵循以下规则，避免命令卡住浪费时间：
+
+### 1. 避免超长单行命令
+
+命令行参数过多（超过 200 字符）时，PowerShell 可能会挂起无响应。
+
+- **拆分命令**：每次传入 2~3 个文件路径，不要一次传入 5 个以上。
+- **使用通配符**：优先用 `git add scripts/.../src/*.ts` 替代逐个列举文件路径。
+
+### 2. 优先使用 `pnpm run` 而非 `npx`
+
+`npx` 在 Windows 上被终止时，会触发 `Terminate batch job (Y/N)?` 交互提示导致卡住。
+
+- **优先使用** `pnpm run build` 替代 `npx tsdown`。
+- **优先使用** `pnpm run test` 替代 `npx vitest run`。
+
+### 3. 及时止损，不要反复轮询
+
+当命令可能卡住时：
+
+1. 第 1 次状态检查等待 10~15 秒。
+2. 如果无输出且仍在运行 → **立即终止**，用新命令重试。
+3. **不要超过 2 次**状态检查仍无进展还继续等待。
+
+### 4. 合理的等待超时设置
+
+|         命令类型         | 建议等待时长 |
+| :----------------------: | :----------: |
+| `git add / status / log` |   5~10 秒    |
+|       `git commit`       |    10 秒     |
+| `pnpm run build / test`  |    30 秒     |
+|      `pnpm install`      |    60 秒     |
 
 ## 4. 获取技术栈对应的上下文
 
