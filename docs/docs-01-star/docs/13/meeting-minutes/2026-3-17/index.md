@@ -9,10 +9,20 @@ https://meeting.tencent.com/p/7933309962 #腾讯会议：793-330-9962
 
 该会议将不做讨论，仅仅以通知说明的方式告诉大家接下来的破坏性变更：
 
+## 大家要做什么
+
+1. 每个人无条件的在今晚 9 点整之前，将自己全部的代码都推送到远程。不需要考虑代码是否能本地跑起来，只负责无条件提送代码。
+2. 停止编写代码。停止编写任何代码，且不允许提交代码。
+3. 等待今晚糕鸭果的通知，拉取自己的远程分支。使用严格的 `git fetch -p` 命令拉取代码。不需要考虑合并分支的事情。
+4. 然后再新的 `eams-frontend-monorepo` 目录内重新安装 pnpm 依赖。在 `eams-frontend-monorepo\apps` 目录内找到 admin 项目并继续完成开发。
+
+## 具体决策
+
 具体决策如下：
-1 确定使用 monorepo 架构。将全部的 3 个业务项目，包括 pc 端后台项目和 2 个移动端项目，整合到 【eams-frontend-monorepo\apps】目录内。
-2 全面废弃，迁移，删除 eams-frontend、eams-frontstu 和 eams-fronttea 的内容。迁移整合到【eams-frontend-monorepo\apps】目录内。
-3 前端项目根目录统一为本项目的【eams-frontend-monorepo】目录，一个目录可以同时访问全部的 3 个子项目。
-4 admin 项目的 icon 技术选型方案选定为 iconify 方案，具体使用 icon 的参考项目为 https://github.com/ruan-cat/11comm 项目，由【糕鸭果】负责将 ruan-cat/11comm 项目的 iconify 方案迁移到 admin 项目内，并提供使用说明文档。
-5 自定义表格列，该部分定性为表格组件的子功能，不作为一个独立的组件。具体负责表格组件拓展的同学，可以咨询糕鸭果如何 AI 实现动态表格列的核心实现原理。
-6 【重要】每个人无条件的在今晚 9 点整之前，将自己全部的代码都推送到远程。不需要考虑代码是否能本地跑起来，只负责无条件提送代码。将由糕鸭果于今晚 9 点整，开始整合分支并完成代码迁移。
+
+1. 确定使用 `monorepo` 架构。将全部的 3 个业务项目，包括 pc 端后台项目和 2 个移动端项目，整合到 `eams-frontend-monorepo\apps` 目录内。
+2. 全面废弃，迁移，删除 `eams-frontend`、`eams-frontstu` 和 `eams-fronttea` 的内容。迁移整合到 `eams-frontend-monorepo\apps` 目录内。
+3. 前端项目根目录统一为本项目的 `eams-frontend-monorepo` 目录，一个目录可以同时访问全部的 3 个子项目。
+4. admin 项目的 `icon` 技术选型方案选定为 `iconify` 方案，具体使用 icon 的参考项目为 `ruan-cat/11comm` 项目，由`糕鸭果`负责将 [`ruan-cat/11comm`](https://github.com/ruan-cat/11comm) 项目的 `iconify` 方案迁移到 `admin` 项目内，并提供使用说明文档。
+5. 自定义表格列，该部分定性为表格组件的子功能，不作为一个独立的组件。具体负责表格组件拓展的同学，可以咨询糕鸭果如何 AI 实现动态表格列的核心实现原理。
+6. **重要**： 每个人无条件的在今晚 9 点整之前，将自己全部的代码都推送到远程。不需要考虑代码是否能本地跑起来，只负责无条件提送代码。将由糕鸭果于今晚 9 点整，开始整合分支并完成代码迁移。
