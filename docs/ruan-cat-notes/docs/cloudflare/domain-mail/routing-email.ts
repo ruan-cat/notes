@@ -35,6 +35,12 @@ export const routingEmails: RutingEmail[] = [
 		// 谷歌浏览器 无痕模式 先美区进入，验证手机号时，在直接退出，以中国ip输入手机号并接受验证码。即可注册成功。
 		cursor: "已注册。",
 	},
+	{
+		order: 4,
+		email: "use-kiro-004@ruan-cat.com",
+		// 在无任何翻墙情况下正常注册
+		cursor: "已注册。",
+	},
 	// use-cursor09-20260316@ruan-cat.com
 	{
 		order: 9,
