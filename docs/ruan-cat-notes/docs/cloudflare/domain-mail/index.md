@@ -1,4 +1,8 @@
-# 域名邮箱 无限邮箱
+<script setup>
+import RoutingEmailList from "./routing-email-list.vue";
+</script>
+
+# 基于 cloudflare 的域名邮箱，无限邮箱
 
 使用域名，实现无限邮箱的制作。并实现邮件转发。基于 cloudflare 提供的邮件路由实现。
 
@@ -12,4 +16,11 @@
 
 - https://juejin.cn/post/7493720445750034470#heading-6
 
-<!-- TODO: 新建一个vue组件，实现对配置的域名列表信息做记录配置 -->
+## 个人自己申请的全部邮箱
+
+<demo vue="./routing-email-list.vue" />
+<!-- <ClientOnly>
+	<div class="vp-raw">
+		<RoutingEmailList />
+	</div>
+</ClientOnly> -->

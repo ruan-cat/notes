@@ -1,16 +1,16 @@
-interface platform {
+export interface platform {
 	cursor: string;
 	kiro: string;
 	github: string;
 	openai: string;
 }
 
-interface EmailItem {
+export interface EmailItem {
 	email: string;
 	order: number;
 }
 
-type RutingEmail = EmailItem & Partial<platform>;
+export type RutingEmail = EmailItem & Partial<platform>;
 
 export const routingEmails: RutingEmail[] = [
 	{
