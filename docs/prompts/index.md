@@ -471,7 +471,7 @@ yaml 配置头信息模仿 `docs\ruan-cat-notes\docs\tsx\tsx-cli-module-resoluti
 
 文章的结构模仿 `docs\ruan-cat-notes\docs\posts` 目录下的多款文章。务必确保提供 desc 和摘要部分。其中，在 markdown 顶部的 yaml 块的 desc 内，其总结说明的摘要文本，其字符串不应该超过 100 字。
 
-## 026 新建 `.claude\skills\write-juejin-posts` 掘金文章编写技能
+## 026 <!-- 已完成 --> 新建 `.claude\skills\write-juejin-posts` 掘金文章编写技能
 
 在 `.claude\skills\write-juejin-posts` 目录内，新增一款专门用来编写掘金风格 markdown 文档的技能。便于约束掘金发文时的 markdown 编写与行文规范：
 
@@ -514,3 +514,5 @@ juejin: TODO 编写完内容就可以直接发文
 >
 > 这篇文章有参与 AI 协助的。使用了 AI 润色文章。
 ```
+
+## 027 <!-- TODO: -->
