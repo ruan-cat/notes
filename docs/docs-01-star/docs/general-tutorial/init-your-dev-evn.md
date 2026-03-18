@@ -104,12 +104,16 @@ npm config set COREPACK_NPM_REGISTRY https://registry.npmmirror.com/
 
 ## pnpm 管控下的全局依赖
 
-- commitizen
-- cz-git
-- rimraf
-- turbo
-- vercel
-- degit
+- commitizen 代码提交约束规范
+- cz-git 代码提交约束工具
+- rimraf 删除工具库
+- turbo monorepo 包构建缓存库
+- vercel 部署平台工具包
+- degit 克隆工具
+
+- memorix AI 记忆 MCP 工具包
+- @fission-ai/openspec AI 工作流
+- skills AI 技能安装工具
 
 ::: tip 全局安装命令
 
