@@ -1,4 +1,12 @@
-# 优化 VuePress
+# vuepress,文档渲染框架
+
+::: danger
+
+我已经全面使用 vitepress 或者是 nuxt 来搭建文档库了，不再继续使用 vuepress 了。
+
+告别 vuepress 很久了。
+
+:::
 
 ## 功能细节优化
 
