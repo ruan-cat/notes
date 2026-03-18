@@ -18,6 +18,7 @@ export const useRoutingEmailColumnsStore = defineStore(
 		return { visibleColumns, resetColumns };
 	},
 	{
+		// @ts-ignore
 		persist: true,
 	},
 );

@@ -13,22 +13,21 @@ import {
 } from "element-plus";
 import type { TableColumnCtx } from "element-plus";
 import { Setting } from "@element-plus/icons-vue";
-// routingEmails,
-import { type RutingEmail } from "./routing-email";
-import { mockRoutingEmails as routingEmails } from "./routing-email-mock";
+import { Icon } from "@iconify/vue";
+import { routingEmails, type RutingEmail } from "./routing-email";
 import { useRoutingEmailColumnsStore } from "./use-routing-email-columns";
 
-/** 表格列配置类型，复用 Element Plus TableColumnCtx 的全部字段约束 */
-type ColumnConfig = Partial<TableColumnCtx<RutingEmail>>;
+/** 表格列配置类型，扩展 Element Plus TableColumnCtx 并附加语义化图标字段 */
+type ColumnConfig = Partial<TableColumnCtx<RutingEmail>> & { icon?: string };
 
 /** 全部表格列配置 */
 const allColumns: ColumnConfig[] = [
-	{ prop: "order", label: "序号", width: 70, fixed: "left" },
-	{ prop: "email", label: "邮箱", minWidth: 220 },
-	{ prop: "cursor", label: "Cursor", minWidth: 180 },
-	{ prop: "kiro", label: "Kiro", minWidth: 120 },
-	{ prop: "github", label: "GitHub", minWidth: 120 },
-	{ prop: "openai", label: "OpenAI", minWidth: 120 },
+	{ prop: "order", label: "序号", width: 90, fixed: "left", icon: "mdi:format-list-numbered" },
+	{ prop: "email", label: "邮箱", minWidth: 220, icon: "mdi:email-outline" },
+	{ prop: "cursor", label: "Cursor", minWidth: 180, icon: "simple-icons:cursor" },
+	{ prop: "kiro", label: "Kiro", minWidth: 120, icon: "mdi:code-braces" },
+	{ prop: "github", label: "GitHub", minWidth: 120, icon: "mdi:github" },
+	{ prop: "openai", label: "OpenAI", minWidth: 120, icon: "simple-icons:openai" },
 ];
 
 const store = useRoutingEmailColumnsStore();
@@ -107,7 +106,12 @@ async function handleCellDblClick(row: RutingEmail, column: TableColumnCtx<Rutin
 				</template>
 				<ElCheckboxGroup v-model="visibleColumns">
 					<div v-for="col in allColumns" :key="col.prop" class="routing-email-list__checkbox-item">
-						<ElCheckbox :value="col.prop" :label="col.label" />
+						<ElCheckbox :value="col.prop">
+							<span class="routing-email-list__checkbox-label">
+								<Icon v-if="col.icon" :icon="col.icon" class="routing-email-list__checkbox-icon" />
+								<span>{{ col.label }}</span>
+							</span>
+						</ElCheckbox>
 					</div>
 				</ElCheckboxGroup>
 			</ElPopover>
@@ -129,10 +133,18 @@ async function handleCellDblClick(row: RutingEmail, column: TableColumnCtx<Rutin
 				v-for="col in visibleColumnConfigs"
 				:key="col.prop"
 				:prop="col.prop"
-				:label="col.label"
 				:min-width="col.minWidth"
+				:width="col.width"
+				:fixed="col.fixed"
 				show-overflow-tooltip
-			/>
+			>
+				<template #header>
+					<span class="routing-email-list__header">
+						<Icon v-if="col.icon" :icon="col.icon" class="routing-email-list__header-icon" />
+						<span>{{ col.label }}</span>
+					</span>
+				</template>
+			</ElTableColumn>
 		</ElTable>
 
 		<div class="routing-email-list__pagination">
@@ -191,10 +203,34 @@ async function handleCellDblClick(row: RutingEmail, column: TableColumnCtx<Rutin
 		padding: 8px 0;
 	}
 
+	&__header {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	&__header-icon {
+		font-size: 16px;
+		flex-shrink: 0;
+		color: var(--el-color-primary);
+	}
+
 	&__checkbox-item {
 		padding: 2px 0;
 		margin: 0 !important;
 		line-height: 1;
+	}
+
+	&__checkbox-label {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	&__checkbox-icon {
+		font-size: 14px;
+		flex-shrink: 0;
+		color: var(--el-color-primary);
 	}
 
 	// ========================
