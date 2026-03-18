@@ -15,6 +15,11 @@ import { setUserConfig, setGenerateSidebar, addChangelog2doc } from "@ruan-cat/v
 
 const userConfig = setUserConfig(
 	{
+		vite: {
+			ssr: {
+				noExternal: ["@iconify/vue"],
+			},
+		},
 		title: "阮喵喵笔记",
 		description: "自己的笔记",
 		head: [["link", { rel: "icon", href: "/little-alice-eats-watermelon.svg" }]],
