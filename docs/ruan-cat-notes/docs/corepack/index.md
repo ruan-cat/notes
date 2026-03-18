@@ -87,7 +87,9 @@ corepack install pnpm@9.15.0 -g
 # https://github.com/nodejs/corepack#environment-variables
 # https://github.com/nodejs/corepack/issues/67
 # https://github.com/nodejs/corepack/issues/572
-COREPACK_NPM_REGISTRY=https://registry.npmmirror.com/
+# 不增加尾缀斜杠
+# https://github.com/nodejs/corepack/issues/711
+COREPACK_NPM_REGISTRY=https://registry.npmmirror.com
 ```
 
 至此已解决问题。
@@ -121,7 +123,9 @@ COREPACK_NPM_REGISTRY=https://registry.npmmirror.com/
 # https://github.com/nodejs/corepack#environment-variables
 # https://github.com/nodejs/corepack/issues/67
 # https://github.com/nodejs/corepack/issues/572
-COREPACK_NPM_REGISTRY=https://registry.npmmirror.com/
+# 不增加尾缀斜杠
+# https://github.com/nodejs/corepack/issues/711
+COREPACK_NPM_REGISTRY=https://registry.npmmirror.com
 
 # 让corepack不检查包管理器key值的完整性
 # https://github.com/pnpm/pnpm/issues/9029#issuecomment-2629817478
