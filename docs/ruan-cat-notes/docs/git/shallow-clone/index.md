@@ -33,6 +33,12 @@ git clone --depth=1 https://github.com/vercel/examples gh.vercel.examples
 
 :::
 
+## 直接浅克隆丢失了全部的分支信息
+
+`git clone --depth=1` 只会克隆默认分支，也就是主分支，我们应该加上 `--no-single-branch` 参数，即 `git clone --depth=1 --no-single-branch` 的方式完成克隆。
+
+这样就实现了经可能获取最小的历史信息，且包含全部的远程分支。
+
 ## 动态生成 git 浅克隆命令
 
 以下小工具会帮助你根据 github 链接生成便于克隆的：
