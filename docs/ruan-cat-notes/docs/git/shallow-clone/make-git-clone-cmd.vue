@@ -12,10 +12,7 @@ const parseGitHubUrl = (url: string) => {
 	// https://github.com/user/repo
 	// https://github.com/user/repo.git
 	// git@github.com:user/repo.git
-	const patterns = [
-		/github\.com[:/]([^/]+)\/([^/.]+)(\.git)?$/,
-		/github\.com\/([^/]+)\/([^/]+)/,
-	];
+	const patterns = [/github\.com[:/]([^/]+)\/([^/.]+)(\.git)?$/, /github\.com\/([^/]+)\/([^/]+)/];
 
 	for (const pattern of patterns) {
 		const match = url.match(pattern);
@@ -36,7 +33,7 @@ const gitCloneCommand = computed(() => {
 	if (!parsed) return "";
 
 	const { user, repo } = parsed;
-	return `git clone --depth=1 https://github.com/${user}/${repo} ${repo}__${user}`;
+	return `git clone --depth=1 --no-single-branch https://github.com/${user}/${repo} ${repo}__${user}`;
 });
 
 // 复制到剪贴板
