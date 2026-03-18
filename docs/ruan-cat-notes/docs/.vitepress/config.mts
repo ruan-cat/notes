@@ -20,29 +20,17 @@ const userConfig = setUserConfig(
 		head: [["link", { rel: "icon", href: "/little-alice-eats-watermelon.svg" }]],
 		themeConfig: {
 			nav: [
+				{ link: "/todo/", text: "待办" },
+				{ link: "/bug/", text: "bug记录" },
+				{ link: "/juejin/", text: "掘金文章" },
+				// 常用入口
 				{
-					link: "/todo/",
-					text: "学习待办",
-				},
-				{
-					link: "/bug/",
-					text: "遭遇的bug",
-				},
-				{
-					link: "/git/",
-					text: "git使用",
-				},
-				{
-					link: "/demo/",
-					text: "演示用的demo",
-				},
-				{
-					link: "/css/css-challenges/",
-					text: "css训练",
-				},
-				{
-					link: "/50projects50days-vue3/",
-					text: "50天50个小项目",
+					text: "常用入口",
+					items: [
+						{ text: "浅克隆 shallow clone", link: "/git/shallow-clone/" },
+						{ text: "技能 skills", link: "/skills/" },
+						{ text: "域名路由记录表", link: "/cloudflare/domain-routing/" },
+					],
 				},
 			],
 			socialLinks: [
