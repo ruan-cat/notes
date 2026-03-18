@@ -6,6 +6,10 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[vue]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	// markdown文件目前使用prettier来格式化
 	"[markdown]": {
 		"editor.formatOnSave": true,

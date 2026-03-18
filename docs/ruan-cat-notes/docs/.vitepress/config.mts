@@ -29,7 +29,7 @@ const userConfig = setUserConfig(
 					items: [
 						{ text: "浅克隆 shallow clone", link: "/git/shallow-clone/" },
 						{ text: "技能 skills", link: "/skills/" },
-						{ text: "域名路由记录表", link: "/cloudflare/domain-routing/" },
+						{ text: "域名路由记录表", link: "/cloudflare/domain-mail/" },
 					],
 				},
 			],
