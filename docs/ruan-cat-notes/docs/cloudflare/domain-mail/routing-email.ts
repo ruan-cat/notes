@@ -12,6 +12,7 @@ export interface EmailItem {
 
 export type RutingEmail = EmailItem & Partial<platform>;
 
+/** @see https://dash.cloudflare.com/3412269ab0def154c8806e38acd1b493/ruan-cat.com/email/routing/routes */
 export const routingEmails: RutingEmail[] = [
 	{
 		order: 1,
