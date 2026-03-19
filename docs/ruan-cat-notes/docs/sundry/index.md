@@ -187,6 +187,12 @@ pnpm why vue-router
 
 - https://arco.design/themes
 
+## WebMCP
+
+一款让 Web 网站获得和 AI 交互的端口配置方案。
+
+- https://pawelkubiak.dev/blog/webmcp-teaching-ai-agents-to-interact-with-your-web-app
+
 ## 开通虚拟卡
 
 ### bitget 供应商
