@@ -1,3 +1,5 @@
+<!-- https://github.com/kaitranntt/ccs/issues/760 -->
+
 # 如何配置 gpt 的 fast 模式？
 
 > 提问者为中文母语用户，以下内容经过 AI 自动翻译成英文。
