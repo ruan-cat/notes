@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7619219565653983295
 desc: 加了.gitattributes设eol=lf却忘跑renormalize，全团队代码库出现幽灵差异、合并被阻塞，10个分支全中招。
 title: "加了 .gitattributes 就万事大吉？我差点毁了整个团队的 Git 工作流"
 date: 2026-03-21
