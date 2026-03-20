@@ -91,3 +91,7 @@ echo "* text=auto
 ```bash
 echo -e "* text=auto\n\n# Force the following filetypes to have unix eols, so Windows does not break them\n*.* text eol=lf" > .gitattributes_test
 ```
+
+## 编写 .gitattributes 之后应该及时运行 `git add --renormalize` 来应用更改
+
+详情见[掘金文章](../bug/025-gitattributes-must-use-renormalize/index.md)。
