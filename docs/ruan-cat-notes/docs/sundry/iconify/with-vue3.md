@@ -15,3 +15,9 @@ https://docs.iconify.design/icon-components/vue/
 ### 样式修改
 
 直接写 class 选择器，而不是使用组件的 props 传参。
+
+## 使用已经封装好的 skills 技能来完成对 vue3 项目的 iconify 能力初始化
+
+已经封装好技能了，直接复用即可。
+
+- https://github.com/ruan-cat/monorepo/tree/dev/ai-plugins/dev-skills/skills/init-pure-admin-iconify
