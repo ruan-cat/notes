@@ -230,10 +230,6 @@ zsh 是干什么的？
 - https://unjs.io/relations
 - https://uni-helper.js.org/relations
 
-## 利用智谱 GLM 的大容量，搭建 github workflow 实现 pr 后自动调用工具
-
-- https://docs.claude.com/zh-CN/docs/claude-code/github-actions
-
 ## CodeRabbit
 
 这是什么 github pr 机器人？
@@ -243,32 +239,6 @@ zsh 是干什么的？
 `<component :is>` + `defineAsyncComponent` + `<keep-alive>` = 高性能动态组件系统。
 
 - https://juejin.cn/post/7549314246204522506
-
-## node 内置的测试框架
-
-- https://juejin.cn/post/7536817253879513123
-
-```js
-// test/math.test.js
-import { test, describe } from "node:test";
-import assert from "node:assert";
-import { add, multiply } from "../math.js";
-
-describe("Math functions", () => {
-	test("adds numbers correctly", () => {
-		assert.strictEqual(add(2, 3), 5);
-	});
-
-	test("handles async operations", async () => {
-		const result = await multiply(2, 3);
-		assert.strictEqual(result, 6);
-	});
-
-	test("throws on invalid input", () => {
-		assert.throws(() => add("a", "b"), /Invalid input/);
-	});
-});
-```
 
 ## 从公开的 Figma 设计稿内提取出样式设计风格，优化项目的视觉设计
 
@@ -302,35 +272,13 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 - conventional-changelog-conventionalcommits
 - conventional-recommended-bump
 
-## 做一个控制台初始化工具包 ？
+## Claude Code Channels
 
-我还想做一个 cli，实现按需初始化各类配置文件。直接复制粘贴文件的。
+学习新技术，实现 claude code 直接和手机连接
 
-```bash
-ruan-cat-cli init config -- eslint prettier cz taze
-ruan-cat-cli init ghw -- ci
-ruan-cat-cli init cc -- statusline
-```
-
-直接覆写，覆盖，预设一大堆配置文件，实现渐进式升级旧项目，一键初始化其他规格的新项目。
-
-先去调研一下类似的配置初始化工具。
-
-## 学习相关的 claude code 周边库
-
-- 一体化方案？
-- 模型路由切换方案？
-- 计费统计方案？
-- 状态栏方案？
-
-- https://github.com/UfoMiao/zcf
-- https://github.com/Haleclipse/CCometixLine
-
-## 方舟 Coding Plan 首月特惠 ？
-
-￥ 9.90 ，晚点购买测试效果。
-
-- https://www.volcengine.com/activity/codingplan
+- https://rexai.top/ai/claude-code/claude-code-channels/
+- https://news.qq.com/rain/a/20260320A08T0500
+- https://github.com/m1heng/claude-plugin-weixin
 
 ## 阅读并翻译这些提示词仓库
 
