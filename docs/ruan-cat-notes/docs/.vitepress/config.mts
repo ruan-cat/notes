@@ -27,7 +27,7 @@ const userConfig = setUserConfig(
 			nav: [
 				{ link: "/todo/", text: "待办" },
 				{ link: "/bug/", text: "bug记录" },
-				{ link: "/juejin/", text: "掘金文章" },
+				{ link: "/posts/", text: "掘金文章" },
 				// 常用入口
 				{
 					text: "常用入口",
