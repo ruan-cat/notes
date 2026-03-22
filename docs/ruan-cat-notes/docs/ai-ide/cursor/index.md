@@ -140,3 +140,19 @@ Pro comes with at least $20 of included usage per month. We work closely with th
 > ![2026-03-11-03-12-47](https://gh-img-store.ruan-cat.com/img/2026-03-11-03-12-47.png)
 
 ---
+
+## 配置其他模型地址
+
+仅仅是付费用户才可以额外配置其他供应商的模型。
+
+### minimax
+
+在 cursor 内配置 minimax 的 baseUrl
+
+购买对应改的 coding plan，填写 key 和 baseUrl 即可。
+
+- baseUrl： https://api.minimaxi.com/v1
+
+> ![2026-03-22-15-44-35](https://gh-img-store.ruan-cat.com/img/2026-03-22-15-44-35.png)
+
+---
