@@ -531,7 +531,7 @@ juejin: TODO 编写完内容就可以直接发文
 
 - version bump 本地版本管理
 - changelog 日志的生成
-- git tag 的生成记忆推送到远端仓库
+- git tag 的生成以及推送到远端仓库
 - npm publish（暂时不考虑，包都是私有包）
 
 我重点使用 Relizy 提供的 `versionMode: 'selective'` 模式。
