@@ -515,4 +515,26 @@ juejin: TODO 编写完内容就可以直接发文
 > 这篇文章有参与 AI 协助的。使用了 AI 润色文章。
 ```
 
-## 027 <!-- TODO: -->
+## 027 <!-- 在其他地方实现了具体的接入 --> 探索 `LouisMazel/relizy` 和 `hywax/changelogen-monorepo` ，试着找到一个合适的发版版本号的方案
+
+对对对，就是这款 https://github.com/LouisMazel/relizy
+
+不过我很疑惑。这个仓库和 https://github.com/hywax/changelogen-monorepo 之间有什么异同和差异？我需要你从这几个方向去全面的评判分析：
+
+1. 能不能识别 changelog.config.ts 和 changelogithub.config.ts 提供的配置文件？
+2. 是整个 monorepo 都共用同一个版本号，一同升级？还是每一个版本号都可以独立看情况升级？
+3. 是否一定要 github 仓库的项目，存储到其他托管平台的项目能继续在本地内使用这两款工具么？
+
+### 001
+
+我需要做到以下几个维度：
+
+- version bump 本地版本管理
+- changelog 日志的生成
+- git tag 的生成记忆推送到远端仓库
+- npm publish（暂时不考虑，包都是私有包）
+
+我重点使用 Relizy 提供的 `versionMode: 'selective'` 模式。
+
+- https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/changelogithub.config.ts
+- https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/changelog.config.ts
