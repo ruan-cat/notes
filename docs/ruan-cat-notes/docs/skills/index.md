@@ -122,3 +122,5 @@ skills add carmahhawwari/ui-design-brain -g -y
 ```bash
 skills add nextlevelbuilder/ui-ux-pro-max-skill -y
 ```
+
+- 仓库： https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
