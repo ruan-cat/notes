@@ -224,6 +224,12 @@ zsh 是干什么的？
 
 - https://github.com/openapi-ui/openapi-ts-request
 
+## 实现 nitro
+
+将这个 mock 插件，实现一个新功能，批量生成 nitro v3 接口，实现一个疯狂的功能。本地写 mock 接口，可以生成真实可用的 nitro 接口请求。
+
+- https://vite-plugin-mock-dev-server.netlify.app/zh/guide/mock-service
+
 ## 给自己的 monorepo 库新建一个关系图表
 
 - https://github.com/uni-helper/website/pull/22
