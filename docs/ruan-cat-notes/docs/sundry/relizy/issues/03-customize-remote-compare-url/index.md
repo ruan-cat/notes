@@ -1,0 +1,45 @@
+# 让 relizy 实现自定义的 git 远程托管平台的 compare url 格式，实现对阿里云效平台 `codeup.aliyun.com` 的兼容
+
+在实际使用 relizy 时，生成的基于 tags 的对比 url 链接，不能满足我的 git 远程托管平台，需要实现自定义。
+
+relizy 生成的这样的链接 `https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-eams2603/compare/hello-world@0.1.0...hello-world@0.1.1` 。
+
+对于 `hello-world@0.1.0...hello-world@0.1.1` 格式的链接来说，在 github 上是成立的，正确的。可是在我当前使用的特殊的 git 托管平台内，有效的路径是：`https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-eams2603/compare?from=hello-world@0.1.0&to=hello-world@0.1.1&tab=tags` 。我需要实现配置链接，才能完成我的特殊需求。你需要在 relizy 内以 pr 的形式，实现好这个功能，
+
+你的核心任务是，帮我实现对 relizy 仓库的 pr，完成闭环式的功能新增。
+
+## 获取错误上下文信息，了解事故情况
+
+1. eams-frontend-monorepo 项目的错误报告：
+   - `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo\docs\reports\2026-03-25-relizy-pnpm-patch-why-nested-git-root.md`
+   - `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo\docs\reports\2026-03-23-relizy-independent-release-breaking-change.md`
+2. eams-frontend-monorepo 项目生成的 patch 修复补丁：
+   - `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo\patches\relizy@1.2.1.patch`
+   - `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo\patches\relizy@1.2.2-beta.1.patch`
+
+## 整个任务的流程
+
+1. 先阅读我提供给你的错误报告。必要时，请你去对应的仓库看看历史的处理代码。
+2. 阅读我提供给你上下文链接。务必全面阅读，并思考理解。
+3. 阅读当前这个已经 fork 到本地的 relizy 仓库。你的修改和后续 pr 将在这里开始。
+4. 在 `D:\code\github-desktop-store\gh.notes\docs\ruan-cat-notes\docs\sundry\relizy\issues` 目录内，在合适的地方内，分别编写好两份内容相同的 issue 稿。
+   - zh.md 纯中文的 issue 稿。因为我看不懂英文。
+   - en.md 纯英文的 issue 稿，因为 relizy 仓库的维护者语言是英文。
+   - 注意 issue 稿要说明发布者为非英文母语者，以下内容均为 AI 辅助翻译并生成。
+   - issue 要说明清楚事故起因，以及预期的修改设计方案。
+   - 格式参考请参考： `https://github.com/LouisMazel/relizy/issues/52`
+5. 停下来，让我审核检查 issue。我同意内容以后，再发布纯英文的 issue。
+6. 在当前的 relizy 仓库的 develop 分支的基础上，新建分支。按照规范，在新的分支内做出修改并完成 pr 流程。
+7. 编写你的修改。完成修改任务。
+8. 发布 pr。
+   - pr 要主动关联到刚才已经发布成功的 issue 序号。
+   - pr 稿的 title 标题要满足 Conventional Commits 规范的命名。
+   - 编写的 git commit 推送，要附带需要解决的 issue 序号，满足标准的 github pr 处理方式。
+
+## 允许使用的 agent 工具
+
+注意使用 github MCP，本机没有提供 gh 包来完成任务。
+
+## 补充编写 vitest 测试用例
+
+无论你是新增功能，还是处理故障。你都应该在本次 pr 内，补全基于 vitest 的测试用例。具体编写 vitest 的代码写法和编码风格，应该参考现有的 relizy 仓库代码例子。
