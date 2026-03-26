@@ -55,5 +55,5 @@
    - 本地项目目录： `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo`
    - 本地项目目录： `D:\code\github-desktop-store\01s-11comm`
 4. 在 link 本地包后，确保这款本地包能够使用。
-5. 在本地测试项目的项目根目录内，运行命令 `relizy release --no-publish --no-provider-release --yes --force` 。直接调用被链接的 relizy 包完成一次发版任务，预期能够完成发版。
+5. 在本地测试项目的项目根目录内，运行命令 `relizy release --no-publish --no-provider-release --yes --patch --force` 。直接调用被链接的 relizy 包完成一次发版任务，预期能够完成发版。
    - 如果发版失败，试着删除掉多余的 relizy patch 补丁文件，再继续完成发版。
