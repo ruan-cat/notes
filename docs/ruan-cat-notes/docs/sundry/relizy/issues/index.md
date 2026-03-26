@@ -20,6 +20,11 @@ relizy 包可能需要做出很多更改，适应各种诡异的使用场景。
 
 ---
 
+## 新增复盘入口
+
+1. [PR #58 实战复盘与经验教训](./pr58-retrospective-and-lessons/)
+   - 总结了 GNU 工具缺失、baseline tag 缺失、coverage 处理策略、真实本地发版验证、以及为什么 nested git root 必须拆到下一个 PR。
+
 > ![2026-03-27-00-20-23](https://gh-img-store.ruan-cat.com/img/2026-03-27-00-20-23.png)
 
 ---
