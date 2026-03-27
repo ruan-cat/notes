@@ -48,12 +48,20 @@
 
 1. 在当前分支下，build 构建产物包 relizy。
 2. 使用 pnpm link 的方式，创建链接到本地产物的依赖包。
-3. 在这两个本地项目内，完成 link 并测试发版行为。
+3. 具体的测试项目需要使用覆盖的方式，增加 link 并实现本地联调。`pnpm-workspace.yaml` 如下：
+
+```yaml
+overrides:
+  # 本地联调 relizy：保留下一行；无需本地包时删除 relizy 行并执行 pnpm i 重算 lockfile
+  relizy: link:../relizy__ruan-cat
+```
+
+4. 在这两个本地项目内，完成 link 并测试发版行为。
    - 本地项目目录： `D:\code\01s\202603-13hzb\yunxiao\01s-2603-13eams\eams-frontend-monorepo`
    - 本地项目目录： `D:\code\github-desktop-store\01s-11comm`
-4. 在 link 本地包后，确保这款本地包能够使用。
-5. link 本地包后，使用 pnpm i 安装依赖。
-6. 使用 git 贮藏区来临时存储被修改的内容。因为 relizy 发版需要干净的 git。
-7. 在本地测试项目的项目根目录内，运行命令 `pnpm exec relizy release --no-publish --no-provider-release --yes --patch --force` 。直接调用被链接的 relizy 包完成一次发版任务，预期能够完成发版。
+5. 在 link 本地包后，确保这款本地包能够使用。
+6. link 本地包后，使用 pnpm i 安装依赖。
+7. 使用 git 贮藏区来临时存储被修改的内容。因为 relizy 发版需要干净的 git。
+8. 在本地测试项目的项目根目录内，运行命令 `pnpm exec relizy release --no-publish --no-provider-release --yes --patch --force` 。直接调用被链接的 relizy 包完成一次发版任务，预期能够完成发版。
    - 如果发版失败，试着删除掉多余的 relizy patch 补丁文件，再继续完成发版。
-8. 如果本地包实现了发版，并看到 git 提交记录内产生了新的 git tag，那么就认定为完成了修改。将修改内容以贮藏区的形式存储。
+9. 如果本地包实现了发版，并看到 git 提交记录内产生了新的 git tag，那么就认定为完成了修改。将修改内容以贮藏区的形式存储。
