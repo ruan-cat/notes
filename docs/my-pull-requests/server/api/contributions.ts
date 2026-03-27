@@ -1,16 +1,26 @@
-import { createError } from "h3";
+import { createError, getQuery } from "h3";
 
 export default defineEventHandler(async (event) => {
 	try {
 		const octokit = useOctokit(event);
+		const query = getQuery(event);
+		const rawQ = query.q;
+		const qString = typeof rawQ === "string" ? rawQ : Array.isArray(rawQ) ? rawQ[0] : "";
+		const searchFragment = sanitizePrSearchQuery(typeof qString === "string" ? qString : "");
+
 		const userResponse = await octokit.request("GET /user");
 		const user: User = {
 			name: userResponse.data.name ?? userResponse.data.login,
 			username: userResponse.data.login,
 			avatar: userResponse.data.avatar_url,
 		};
+
+		const issueSearchQ = searchFragment
+			? `type:pr author:"${user.username}" ${searchFragment}`
+			: `type:pr author:"${user.username}"`;
+
 		const { data } = await octokit.request("GET /search/issues", {
-			q: `type:pr+author:"${user.username}"`,
+			q: issueSearchQ,
 			per_page: 50,
 			page: 1,
 			advanced_search: "true",

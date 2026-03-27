@@ -79,6 +79,20 @@ export function useOctokit(event?: H3Event) {
 
 const RepoCache = new Map();
 
+/**
+ * 净化用户输入的 PR 搜索关键词，避免换行/过长/引号破坏 GitHub `search/issues` 查询。
+ *
+ * GitHub 不提供真正模糊检索；`type:pr author:"..."` 与用户关键词组合后为关键词检索（标题/正文等）。
+ */
+export function sanitizePrSearchQuery(raw: string): string {
+	const singleLine = raw.replace(/[\n\r]+/g, " ").trim();
+	if (!singleLine) {
+		return "";
+	}
+	const noQuotes = singleLine.replace(/"/g, " ");
+	return noQuotes.length > 200 ? noQuotes.slice(0, 200) : noQuotes;
+}
+
 export async function fetchRepo(owner: string, name: string, event?: H3Event) {
 	if (RepoCache.has(`${owner}/${name}`)) {
 		return RepoCache.get(`${owner}/${name}`);
