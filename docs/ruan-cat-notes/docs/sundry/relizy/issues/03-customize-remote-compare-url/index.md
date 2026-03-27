@@ -1,3 +1,5 @@
+<!-- TODO: 没空，暂停， 未来再开始 -->
+
 # 让 relizy 实现自定义的 git 远程托管平台的 compare url 格式，实现对阿里云效平台 `codeup.aliyun.com` 的兼容
 
 在实际使用 relizy 时，生成的基于 tags 的对比 url 链接，不能满足我的 git 远程托管平台，需要实现自定义。

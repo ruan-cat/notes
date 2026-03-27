@@ -1,3 +1,5 @@
+<!-- 已完成pr 等待合并 -->
+
 # 处理 relizy 的 GNU 工具缺失，和 baseline tag 缺失导致的故障
 
 在 window 系统内，直接对一个全新的 monorepo 项目使用 relizy 工具包完成发包时，会因为 window 系统而产生 GNU 工具缺失的故障，和因为是全新仓库而导致 baseline tag 缺失而导致的 relizy 无法计算下一步的故障。
