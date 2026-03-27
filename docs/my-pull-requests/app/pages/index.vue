@@ -1,6 +1,22 @@
 <script setup lang="ts">
+import { refDebounced } from "@vueuse/core";
+
 const colorMode = useColorMode();
-const { data: contributions, error } = await useFetch<Contributions>("/api/contributions");
+
+const searchInput = ref("");
+/** 防抖后传给 Nitro，减少 GitHub Search API 调用 */
+const debouncedSearch = refDebounced(searchInput, 400);
+
+const {
+	data: contributions,
+	error,
+	pending: contributionsPending,
+} = await useFetch<Contributions>("/api/contributions", {
+	query: computed(() => {
+		const q = debouncedSearch.value.trim();
+		return q ? { q } : {};
+	}),
+});
 
 const user = computed(() => contributions.value?.user);
 const safeUser = computed<User>(
@@ -180,30 +196,39 @@ function reloadPage() {
 			<USeparator class="mt-2 sm:mt-6 mb-6 sm:mb-10 w-1/2 mx-auto animate-pulse" />
 		</div>
 
-		<div class="relative">
-			<div class="flex justify-end absolute -top-10 lg:-top-12 right-0">
-				<UDropdownMenu
-					:items="items"
-					:content="{
-						align: 'start',
-						side: 'bottom',
-						sideOffset: 8,
-					}"
-					:ui="{
-						content: 'w-48',
-					}"
-					size="xs"
-				>
-					<UButton
-						:label="orderKey === 'star' ? 'Stars' : order === 'asc' ? 'Oldset' : 'Newset'"
-						:icon="order === 'asc' ? 'i-lucide-arrow-up-narrow-wide' : 'i-lucide-arrow-down-narrow-wide'"
-						color="neutral"
-						variant="soft"
+		<div class="flex flex-col gap-4 mt-5 sm:mt-6">
+			<div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+				<PrSearchBar v-model="searchInput" :loading="contributionsPending" class="w-full sm:flex-1 sm:max-w-xl" />
+				<div class="flex justify-end shrink-0">
+					<UDropdownMenu
+						:items="items"
+						:content="{
+							align: 'start',
+							side: 'bottom',
+							sideOffset: 8,
+						}"
+						:ui="{
+							content: 'w-48',
+						}"
 						size="xs"
-					/>
-				</UDropdownMenu>
+					>
+						<UButton
+							:label="orderKey === 'star' ? 'Stars' : order === 'asc' ? 'Oldset' : 'Newset'"
+							:icon="order === 'asc' ? 'i-lucide-arrow-up-narrow-wide' : 'i-lucide-arrow-down-narrow-wide'"
+							color="neutral"
+							variant="soft"
+							size="xs"
+						/>
+					</UDropdownMenu>
+				</div>
 			</div>
-			<div class="flex flex-col gap-6 mt-5 sm:gap-10">
+			<p
+				v-if="debouncedSearch.trim() && !contributionsPending && orderedPrs.length === 0"
+				class="text-center text-sm text-neutral-500 dark:text-neutral-400 py-6"
+			>
+				没有匹配的 PR，请换个关键词（搜索由 GitHub Issues 搜索提供，支持标题/正文等字段）。
+			</p>
+			<div v-else class="flex flex-col gap-6 sm:gap-10">
 				<PullRequest v-for="pr of orderedPrs" :key="pr.url" :data="pr" />
 			</div>
 		</div>
