@@ -30,7 +30,11 @@ pnpm i -D commitizen cz-git
 
 在主要的工作目录内新建 `.czrc` 文件：
 
-<<< ./czrc.json
+```json
+{
+	"path": "cz-git"
+}
+```
 
 并不需要在 git 所在的`项目根目录`内新建。在嵌套文件夹的情况下，在你的`主要工作目录`内新建文件即可。
 
@@ -40,7 +44,15 @@ pnpm i -D commitizen cz-git
 
 在 package.json 内：
 
-<<< ./package.example.json
+```json
+{
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	}
+}
+```
 
 之所以不推荐，是因为该写法毕竟要写在 package.json 内，而且是对 git 所在路径硬编码。
 

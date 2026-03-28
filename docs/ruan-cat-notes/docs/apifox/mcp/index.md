@@ -6,10 +6,22 @@
 
 在 window 系统内，配置举例如下：
 
-::: details
-
-<<< ./mcp.example.json
-
-:::
+```json
+{
+	"mcpServers": {
+		"01s-10wms-clone - API 文档": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"apifox-mcp-server@latest",
+				"--site-id=5442571",
+				"--registry=https://registry.npmmirror.com/"
+			]
+		}
+	}
+}
+```
 
 为了防止该依赖下载失败，这里额外配置了镜像源 `--registry=https://registry.npmmirror.com/` 。

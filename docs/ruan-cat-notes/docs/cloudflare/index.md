@@ -1,10 +1,6 @@
-# cloudflare
+# cloudflare,云服务厂商
 
-云服务厂商
-
-## 很多产品
-
-cloudflare 有很多产品。看情况学习吧。
+云服务厂商。我主要使用的 cloudflare worker、cloudflare 邮箱、和 cloudflare 的域名托管功能。
 
 ## 尝试实现后端
 
