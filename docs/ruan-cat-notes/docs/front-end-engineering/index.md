@@ -2,7 +2,9 @@
 
 `前端工程化`包含了很多内容。
 
-<!-- TODO: 逐步完善笔记 并掘金发文 -->
+## 对应的掘金文章
+
+见[文章](../posts/2026-3-29-front-end-engineering-toolchain/index.md)。
 
 ## 参考资料
 
