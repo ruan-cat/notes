@@ -1,10 +1,10 @@
 # eslint
 
-尽管我清楚 eslint 和 prettier 相互打架，但还是要面对他。必须要面对 eslint 这个困难。
+尽管我清楚 `eslint` 和 `prettier` 相互打架，但还是要面对他。必须要面对 eslint 这个困难。
 
 ## 系统性的学习策略
 
-值得注意的是，用 @antfu/eslint-config 去配置 eslint 时，其配置风格完全割裂了，完全不像是之前学习的 eslint 配置。
+值得注意的是，用 `@antfu/eslint-config` 去配置 eslint 时，其配置风格完全割裂了，完全不像是之前学习的 eslint 配置。
 
 这种感觉就类似于 vue2 突然切换到 vue3 这样。
 
