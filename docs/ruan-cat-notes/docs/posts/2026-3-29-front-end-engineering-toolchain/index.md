@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7621911333945425947
 desc: 手把手讲解simple-git-hooks、lint-staged、commitlint三件套的配置方法，渐进式理解每个工具用途与注意事项，帮助团队自动格式化代码并规范提交信息。
 title: "前端工程化工具链从零配置：simple-git-hooks + lint-staged + commitlint"
 date: 2026-03-29
