@@ -138,3 +138,7 @@
 ## 用 AI 协助自己完成简历优化的提示词
 
 - https://gamwaisam.notion.site/AI-28a670aca6b68001abf1d13e660c9ba8
+
+## 面经导论与思考
+
+- https://juejin.cn/post/7270095064440864804
