@@ -538,3 +538,17 @@ juejin: TODO 编写完内容就可以直接发文
 
 - https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/changelogithub.config.ts
 - https://raw.githubusercontent.com/ruan-cat/11comm/refs/heads/main/changelog.config.ts
+
+## 028 <!-- 已完成 --> 批量 pr 自己的仓库，实现 `watchPaths` 的配置
+
+使用技能，全面检查对应的仓库，是否都存在有意义的 `vercel-deploy-tool.config.ts` 配置文件？
+
+如果不存在 `vercel-deploy-tool.config.ts` 部署配置，那么就按照 `migration-guide` 迁移指导，完成对项目的改造迁移。
+
+- https://vc.ruan-cat.com/migration-guide.md
+
+如果存在配置，那么就配置监听路径 `watchPaths`，实现精准的监听配置。
+
+- https://vc.ruan-cat.com/selective-deploy.md
+
+整个过程以 pr 来实现。
