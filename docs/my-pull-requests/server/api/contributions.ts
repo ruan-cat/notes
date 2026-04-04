@@ -1,10 +1,16 @@
 import { createError, getQuery } from "h3";
+import { filterPullRequestsByOwnRepo, parseIncludeOwnReposQuery } from "../utils/contributions-filter";
 
 export default defineEventHandler(async (event) => {
 	try {
 		const octokit = useOctokit(event);
 		const query = getQuery(event);
 		const rawQ = query.q;
+		const includeOwnRepos = parseIncludeOwnReposQuery(
+			typeof query.includeOwnRepos === "string" || Array.isArray(query.includeOwnRepos)
+				? query.includeOwnRepos
+				: undefined,
+		);
 		const qString = typeof rawQ === "string" ? rawQ : Array.isArray(rawQ) ? rawQ[0] : "";
 		const searchFragment = sanitizePrSearchQuery(typeof qString === "string" ? qString : "");
 
@@ -47,7 +53,7 @@ export default defineEventHandler(async (event) => {
 
 		return {
 			user,
-			prs,
+			prs: filterPullRequestsByOwnRepo(prs, user.username, includeOwnRepos),
 		} as Contributions;
 	} catch (error: any) {
 		if (error?.status === 401) {

@@ -4,6 +4,7 @@ import { refDebounced } from "@vueuse/core";
 const colorMode = useColorMode();
 
 const searchInput = ref("");
+const showOwnRepoPrs = ref(false);
 /** 防抖后传给 Nitro，减少 GitHub Search API 调用 */
 const debouncedSearch = refDebounced(searchInput, 400);
 
@@ -14,7 +15,10 @@ const {
 } = await useFetch<Contributions>("/api/contributions", {
 	query: computed(() => {
 		const q = debouncedSearch.value.trim();
-		return q ? { q } : {};
+		return {
+			...(q ? { q } : {}),
+			...(showOwnRepoPrs.value ? { includeOwnRepos: "true" } : {}),
+		};
 	}),
 });
 
@@ -199,7 +203,17 @@ function reloadPage() {
 		<div class="flex flex-col gap-4 mt-5 sm:mt-6">
 			<div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
 				<PrSearchBar v-model="searchInput" :loading="contributionsPending" class="w-full sm:flex-1 sm:max-w-xl" />
-				<div class="flex justify-end shrink-0">
+				<div class="flex justify-end shrink-0 gap-2">
+					<UButton
+						:label="showOwnRepoPrs ? '已显示自己仓库' : '显示自己仓库'"
+						:icon="showOwnRepoPrs ? 'i-lucide-eye' : 'i-lucide-eye-off'"
+						color="neutral"
+						:variant="showOwnRepoPrs ? 'soft' : 'outline'"
+						size="xs"
+						:loading="contributionsPending"
+						:aria-pressed="showOwnRepoPrs"
+						@click="showOwnRepoPrs = !showOwnRepoPrs"
+					/>
 					<UDropdownMenu
 						:items="items"
 						:content="{
