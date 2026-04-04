@@ -302,6 +302,10 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 ## 全局找一款工作流，将 github 开源信息的 TODO 都收集起来，制作成报表文档，便于整理复盘
 
+## 网易 UU 加速 claude，避免封号？
+
+- https://x.com/byCanen/status/2040403286935867778
+
 ## vitepress 的 AI 搜索栏插件，便于让文档介入 AI 或者是大模型实现沟通，便于精准检索
 
 ## 阿里云也有免费的边缘云计算套餐了
