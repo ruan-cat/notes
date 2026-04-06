@@ -11,3 +11,6 @@
 这个 cloudbase 似乎和 vercel 一样，也具有官方 skills 和 MCP。
 
 - https://docs.cloudbase.net/ai/cloudbase-ai-toolkit/
+
+- MCP： https://docs.cloudbase.net/ai/cloudbase-ai-toolkit/getting-started
+- skills： https://docs.cloudbase.net/ai/cloudbase-ai-toolkit/prompts/how-to-use
