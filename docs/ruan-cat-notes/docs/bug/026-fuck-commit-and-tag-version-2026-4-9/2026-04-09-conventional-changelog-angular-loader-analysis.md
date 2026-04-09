@@ -82,7 +82,7 @@
 ```mermaid
 graph TB
     subgraph A_IN["eams-component-lib 命令入口"]
-        A1["package.json script<br/>conventional-changelog -p angular"]
+        A1["package.json script conventional-changelog -p angular"]
         A2["bin conventional-changelog"]
         A3["conventional-changelog-cli 5.0.0"]
         A4["conventional-changelog 6.0.0"]
@@ -147,7 +147,7 @@ Error: The "angular" preset does not export a function. Maybe you are using an o
 ```mermaid
 graph TB
     subgraph B_IN["01s-11comm 命令入口"]
-        B1["package.json script<br/>conventional-changelog -p angular"]
+        B1["package.json script conventional-changelog -p angular"]
         B2["bin conventional-changelog"]
         B3["conventional-changelog-cli 5.0.0"]
         B4["conventional-changelog 6.0.0"]
@@ -192,8 +192,8 @@ graph TB
 ```mermaid
 graph TB
     subgraph ROOT["01s-11comm 根 node_modules"]
-        R1A["root conventional-changelog<br/>4.0.0"]
-        R1B["root angular preset<br/>6.0.0"]
+        R1A["root conventional-changelog 4.0.0"]
+        R1B["root angular preset 6.0.0"]
     end
 
     subgraph NEW["新 changelog 链路"]

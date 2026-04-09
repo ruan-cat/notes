@@ -94,8 +94,8 @@ conventional-changelog -p angular -i CHANGELOG.md -s
 ```mermaid
 graph TB
     subgraph ROOT["01s-11comm 根 node_modules (shamefully-hoist)"]
-        R1A["root conventional-changelog<br/>4.0.0"]
-        R1B["root angular preset<br/>6.0.0"]
+        R1A["root conventional-changelog 4.0.0"]
+        R1B["root angular preset 6.0.0"]
     end
 
     subgraph NEW["新 changelog 链路 (用户执行的命令)"]
@@ -140,7 +140,7 @@ graph TB
 ```mermaid
 graph TB
     subgraph ROOT_E["eams 根 node_modules (shamefully-hoist)"]
-        RE1["root angular preset<br/>8.3.1"]
+        RE1["root angular preset 8.3.1"]
     end
 
     subgraph CHAIN_E["唯一的 changelog 链路"]
@@ -201,18 +201,18 @@ graph TB
 ```mermaid
 graph TB
     subgraph "01s-11comm 根 node_modules (shamefully-hoist=true)"
-        ROOT_A["node_modules/conventional-changelog-angular<br/>→ <b>6.0.0</b> (被 hoist)"]
+        ROOT_A["node_modules/conventional-changelog-angular → 6.0.0 (被 hoist)"]
     end
 
     subgraph "01s-11comm 依赖来源"
         CTV["commit-and-tag-version@12.6.1"]
         CL4["conventional-changelog@4.0.0"]
-        A6["angular@6.0.0<br/>exports: Promise (object)"]
+        A6["angular@6.0.0 exports: Promise (object)"]
         CTV --> CL4 --> A6
 
         CLI5_A["conventional-changelog-cli@5.0.0"]
         CL6_A["conventional-changelog@6.0.0"]
-        A8_A["angular@8.3.0<br/>exports: function"]
+        A8_A["angular@8.3.0 exports: function"]
         CLI5_A --> CL6_A --> A8_A
     end
 
@@ -220,13 +220,13 @@ graph TB
     A8_A -. "被遮蔽，未 hoist" .-x ROOT_A
 
     subgraph "eams-component-lib 根 node_modules (shamefully-hoist=true)"
-        ROOT_B["node_modules/conventional-changelog-angular<br/>→ <b>8.3.1</b> (被 hoist)"]
+        ROOT_B["node_modules/conventional-changelog-angular → 8.3.1 (被 hoist)"]
     end
 
     subgraph "eams 依赖来源"
         CLI5_B["conventional-changelog-cli@5.0.0"]
         CL6_B["conventional-changelog@6.0.0"]
-        A8_B["angular@8.3.1<br/>exports: function"]
+        A8_B["angular@8.3.1 exports: function"]
         CLI5_B --> CL6_B --> A8_B
     end
 
@@ -244,26 +244,26 @@ graph TB
 ```mermaid
 flowchart TD
     START["conventional-changelog -p angular"]
-    LOAD["preset-loader@5.0.0<br/>import('conventional-changelog-angular')"]
+    LOAD["preset-loader@5.0.0 import(’conventional-changelog-angular’)"]
     START --> LOAD
 
-    LOAD --> RESOLVE{"Node.js 模块解析<br/>从 preset-loader 目录开始<br/>向上查找 node_modules"}
+    LOAD --> RESOLVE{"Node.js 模块解析 从 preset-loader 目录开始 向上查找 node_modules"}
 
     subgraph "01s-11comm 路径"
         RESOLVE -->|"找到根 node_modules"| FOUND_A["解析到 angular@6.0.0"]
         FOUND_A --> CHECK_A{"typeof default export?"}
-        CHECK_A -->|"object (Promise)"| FAIL["❌ 不是 function<br/>抛出错误"]
-        FAIL --> FALLBACK["config = {} 空对象<br/>angular headerPartial 未注入"]
-        FALLBACK --> WRITER_DEFAULT["writer@8.4.0 使用自己的<br/>默认 headerPartial"]
+        CHECK_A -->|"object (Promise)"| FAIL["❌ 不是 function 抛出错误"]
+        FAIL --> FALLBACK["config = {} 空对象 angular headerPartial 未注入"]
+        FALLBACK --> WRITER_DEFAULT["writer@8.4.0 使用自己的 默认 headerPartial"]
         WRITER_DEFAULT --> SMALL["输出: ## &lt;small&gt;version (date)&lt;/small&gt;"]
     end
 
     subgraph "eams-component-lib 路径"
         RESOLVE -->|"找到根 node_modules"| FOUND_B["解析到 angular@8.3.1"]
         FOUND_B --> CHECK_B{"typeof default export?"}
-        CHECK_B -->|"function"| SUCCESS["✅ 调用 createPreset()<br/>获得 preset 配置"]
-        SUCCESS --> INJECT["preset.writer.headerPartial<br/>注入到 writerOpts"]
-        INJECT --> ANGULAR_TPL["writer 使用 angular 的<br/>headerPartial 模板"]
+        CHECK_B -->|"function"| SUCCESS["✅ 调用 createPreset() 获得 preset 配置"]
+        SUCCESS --> INJECT["preset.writer.headerPartial 注入到 writerOpts"]
+        INJECT --> ANGULAR_TPL["writer 使用 angular 的 headerPartial 模板"]
         ANGULAR_TPL --> LINK["输出: ## [version](compare-url) (date)"]
     end
 
@@ -278,24 +278,24 @@ flowchart TD
 ```mermaid
 graph LR
     subgraph "旧 API (angular ≤ 7.0.0)"
-        OLD_EXPORT["module.exports = Promise.all([<br/>  conventionalChangelog,<br/>  parserOpts,<br/>  recommendedBumpOpts,<br/>  writerOpts<br/>])"]
-        OLD_LOADER["preset-loader@3.0.0<br/>能处理 Promise/Object"]
+        OLD_EXPORT["module.exports = Promise.all([   conventionalChangelog,   parserOpts,   recommendedBumpOpts,   writerOpts ])"]
+        OLD_LOADER["preset-loader@3.0.0 能处理 Promise/Object"]
         OLD_EXPORT --> OLD_LOADER
         OLD_LOADER --> OLD_OK["✅ 正常工作"]
     end
 
     subgraph "新 API (angular ≥ 8.0.0)"
-        NEW_EXPORT["export default function createPreset() {<br/>  return {<br/>    commits, parser,<br/>    writer, whatBump<br/>  }<br/>}"]
-        NEW_LOADER["preset-loader@5.0.0<br/>只接受 function"]
+        NEW_EXPORT["export default function createPreset() {   return {     commits, parser,     writer, whatBump   } }"]
+        NEW_LOADER["preset-loader@5.0.0 只接受 function"]
         NEW_EXPORT --> NEW_LOADER
         NEW_LOADER --> NEW_OK["✅ 正常工作"]
     end
 
     subgraph "❌ 版本交叉冲突"
-        CROSS_OLD["angular@6.0.0<br/>exports: Promise (object)"]
-        CROSS_NEW["preset-loader@5.0.0<br/>期望: function"]
+        CROSS_OLD["angular@6.0.0 exports: Promise (object)"]
+        CROSS_NEW["preset-loader@5.0.0 期望: function"]
         CROSS_OLD --> CROSS_NEW
-        CROSS_NEW --> CROSS_FAIL["❌ typeof !== function<br/>加载失败"]
+        CROSS_NEW --> CROSS_FAIL["❌ typeof !== function 加载失败"]
     end
 
     style OLD_OK fill:#9c6,stroke:#690
@@ -307,7 +307,7 @@ graph LR
 
 ### angular 的 headerPartial（所有版本相同，6.0.0 / 7.0.0 / 8.3.x）
 
-```handlebars
+```text
 {{#if isPatch~}}
 	##
 {{~else~}}
@@ -342,7 +342,7 @@ graph LR
 
 ### writer@8.4.0 的默认 headerPartial（fallback 模板）
 
-```handlebars
+```text
 ## {{#if isPatch~}} <small>
   {{~/if~}} {{version}}
   {{~#if title}} "{{title}}"
