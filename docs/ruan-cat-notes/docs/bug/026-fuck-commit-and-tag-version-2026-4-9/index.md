@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7626595191143940096
 desc: commit-and-tag-version锁死conventional-changelog@4.0.0，导致旧版angular@6被hoist到根目录遮蔽新版angular@8，CHANGELOG标题退化为<small>格式。
 title: "pnpm 依赖提升踩坑：commit-and-tag-version 锁死旧版依赖引发的 CHANGELOG 格式异变"
 date: 2026-04-09
