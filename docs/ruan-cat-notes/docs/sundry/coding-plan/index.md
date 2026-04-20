@@ -5,6 +5,13 @@
 
 - 小米： https://platform.xiaomimimo.com/#/token-plan
 
+---
+
+讯飞开发平台：
+
+- 邀请码【MAAS-946F368D】
+- 可点击链接 前往页面：https://maas.xfyun.cn/packageSubscription?inviteCode=MAAS-946F368D
+
 ## AI 中转站评测
 
 - https://www.helpaio.com/transit
