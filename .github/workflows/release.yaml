@@ -1,0 +1,154 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+      - "@*/v*" # 支持 @scope/package@v1.0.0 格式
+      - "@*/*@*" # 支持 relizy 生成的 @scope/package@version 格式，如 @scope/admin@6.1.2
+
+permissions: write-all
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出分支
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v5
+        with:
+          run_install: |
+            - recursive: true
+            - args: [--global, "npm"]
+
+      - name: 安装node
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+          cache: pnpm
+          registry-url: "https://registry.npmjs.org"
+
+      - name: corepack手动再安装一次pnpm
+        run: corepack enable && corepack install
+
+      # changelogithub 底层使用 changelogen，在 git log tag1...tag2 时无法解析含 @ 的 scoped tag（如 @scope/admin@6.1.3），
+      # 会产生 fatal: ambiguous argument 错误，因此不兼容 relizy 的 monorepo 子包 tag 格式。
+      # - name: 用 changelogithub 生成 github release 发行版日志
+      #   run: pnpm dlx changelogithub
+      #   continue-on-error: true
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 最终方案：使用 gh CLI 直接创建 release，将 tag 名作为普通字符串处理，无 @ 歧义
+      # 支持两种 tag 格式：
+      #   - @scope/pkg@version（子包）→ 从 relizy 的根 CHANGELOG.md 提取对应 section
+      #   - v*（根包）→ 从 changelogen 生成的根 CHANGELOG.md 提取对应 section
+      - name: 从 CHANGELOG.md 提取内容并创建 GitHub Release
+        if: github.ref_type == 'tag'
+        run: |
+          TAG="${{ github.ref_name }}"
+          echo "触发 tag: $TAG"
+
+          # 检查该 tag 的 release 是否已存在
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "Release '$TAG' 已存在，跳过创建"
+            exit 0
+          fi
+
+          # 根据 tag 格式选择不同的 CHANGELOG 提取策略
+          if [[ "$TAG" == v* ]]; then
+            # 根包 tag (v0.12.0) → changelogen 生成的段落
+            # 兼容以下标题格式（h2 和 h1 均覆盖）：
+            #   ## <small>0.12.0 (2026-04-09)</small>
+            #   ## [0.12.0](https://...compare/v0.11.3...v0.12.0) (2026-04-09)
+            #   ## 0.12.0 (2026-04-09)
+            #   ## [v0.12.0](https://...compare/v0.11.3...v0.12.0)
+            #   ## v0.12.0
+            #   ## v0.12.0 (2026-04-09)
+            #   # <small>0.12.0 (2026-04-09)</small>
+            #   # [0.12.0](https://...compare/v0.11.3...v0.12.0) (2026-04-09)
+            #   # 0.12.0 (2026-04-09)
+            #   # [v0.12.0](https://...compare/v0.11.3...v0.12.0)
+            #   # v0.12.0
+            #   # v0.12.0 (2026-04-09)
+            VERSION="${TAG#v}"
+            set +e
+            NOTES=$(
+              awk -v ver="$VERSION" '
+                function is_root_header(line) {
+                  return index(line, "## <small>" ver " (") == 1 \
+                    || index(line, "## [" ver "](") == 1 \
+                    || index(line, "## " ver " (") == 1 \
+                    || index(line, "## [v" ver "](") == 1 \
+                    || line == "## v" ver \
+                    || index(line, "## v" ver " (") == 1 \
+                    || index(line, "# <small>" ver " (") == 1 \
+                    || index(line, "# [" ver "](") == 1 \
+                    || index(line, "# " ver " (") == 1 \
+                    || index(line, "# [v" ver "](") == 1 \
+                    || line == "# v" ver \
+                    || index(line, "# v" ver " (") == 1
+                }
+
+                is_root_header($0) {
+                  print "::notice::matched root changelog header: " $0 > "/dev/stderr"
+                  found=1; next
+                }
+
+                found && /^##? / { exit }
+                found {
+                  if ($0 ~ /^[[:space:]]*$/) {
+                    if (has_content) pending_blank = pending_blank $0 ORS
+                    next
+                  }
+                  has_content=1
+                  if (pending_blank != "") { printf "%s", pending_blank; pending_blank = "" }
+                  print
+                }
+
+                END {
+                  if (!found) exit 2
+                  if (!has_content) exit 3
+                }
+              ' CHANGELOG.md
+            )
+            ROOT_STATUS=$?
+            set -e
+
+            if [ "$ROOT_STATUS" -eq 2 ]; then
+              echo "::warning::未在根 CHANGELOG.md 中找到版本 '$VERSION' 的标题，跳过 release 创建"
+              exit 0
+            fi
+            if [ "$ROOT_STATUS" -eq 3 ]; then
+              echo "::warning::版本 '$VERSION' 在根 CHANGELOG.md 中找到了标题，但内容为空，跳过 release 创建"
+              exit 0
+            fi
+            if [ "$ROOT_STATUS" -ne 0 ]; then
+              echo "::warning::根 CHANGELOG.md 提取版本 '$VERSION' 时失败，退出码: $ROOT_STATUS"
+              exit 0
+            fi
+          else
+            # 子包 tag (@scope/pkg@version) → relizy 格式
+            # section header: ## @scope/pkg@version (2026-04-09)
+            ESCAPED_TAG=$(printf '%s' "$TAG" | sed 's/[[\\.^$*+?(){}|]/\\&/g; s/\//\\\//g')
+            NOTES=$(awk "/^## ${ESCAPED_TAG}[[:space:]]/{found=1; next} found && /^## [^#]/{exit} found{print}" CHANGELOG.md)
+          fi
+
+          if [ -z "$NOTES" ]; then
+            echo "::warning::未在根 CHANGELOG.md 中找到 tag '$TAG' 对应的 section，跳过 release 创建"
+            exit 0
+          fi
+
+          echo "提取到的 release notes:"
+          echo "$NOTES"
+
+          gh release create "$TAG" --title "$TAG" --notes "$NOTES"
+          echo "成功为 tag '$TAG' 创建 GitHub Release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
