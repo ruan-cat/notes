@@ -12,17 +12,6 @@
 				]
 			}
 		],
-		"PostToolUse": [
-			{
-				"hooks": [
-					{
-						"type": "command",
-						"command": "memorix.cmd hook",
-						"timeout": 10
-					}
-				]
-			}
-		],
 		"UserPromptSubmit": [
 			{
 				"hooks": [
