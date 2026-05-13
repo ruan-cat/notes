@@ -3,7 +3,11 @@
 	"type": "module",
 	"private": true,
 	"version": "0.0.1",
-	"author": "阮喵喵",
+	"author": {
+		"name": "ruan-cat",
+		"email": "1219043956@qq.com",
+		"url": "https://github.com/ruan-cat"
+	},
 	"license": "MIT",
 	"description": "阮喵喵在github的全部commit和pr汇总站点，以 atinux/my-pull-requests 项目为模板制作。",
 	"scripts": {

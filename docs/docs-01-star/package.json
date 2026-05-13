@@ -13,7 +13,11 @@
 		"docs:preview": "vitepress preview docs"
 	},
 	"keywords": [],
-	"author": "ruan-cat",
+	"author": {
+		"name": "ruan-cat",
+		"email": "1219043956@qq.com",
+		"url": "https://github.com/ruan-cat"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"@ruan-cat/vitepress-preset-config": "^3.1.2",

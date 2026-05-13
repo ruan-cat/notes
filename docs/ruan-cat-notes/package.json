@@ -2,7 +2,11 @@
 	"name": "@ruan-cat-docs/notes",
 	"private": true,
 	"version": "1.0.0",
-	"author": "阮喵喵",
+	"author": {
+		"name": "ruan-cat",
+		"email": "1219043956@qq.com",
+		"url": "https://github.com/ruan-cat"
+	},
 	"license": "MIT",
 	"description": "阮喵喵自己的笔记。",
 	"scripts": {
