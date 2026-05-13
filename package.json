@@ -92,5 +92,10 @@
 		"vercel": "44.2.8",
 		"vite": "^7.0.0",
 		"vitest": "^3.2.4"
+	},
+	"author": {
+		"name": "ruan-cat",
+		"email": "1219043956@qq.com",
+		"url": "https://github.com/ruan-cat"
 	}
 }
