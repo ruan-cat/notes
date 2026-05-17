@@ -51,3 +51,18 @@ docker compose logs -f sub2api
 cd ~/sub2api-deploy
 docker compose logs sub2api | grep -i admin
 ```
+
+## CPA SUP 格式转换
+
+导入到 sub2api 平台，或者是 cpa 平台时，要注意 openai 账号的格式。每个平台有特定的格式。可以批量导入 json 格式的账号数据，实现号池搭建。
+
+- 转换器： https://gtxx3600.github.io/GPTSession2CPAandSub2API/
+- 转换器： https://flowpilot.qlhazycoder.top/converter/
+
+- `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
+
+### 渠道 1： 成品 codex plus，json 格式
+
+- 店铺： https://pay.ldxp.cn/shop/C1V67W46
+- 教程： https://www.bilibili.com/video/BV1o7dFBKESs/
+- 转换器： https://codex.kedaya.xyz/
