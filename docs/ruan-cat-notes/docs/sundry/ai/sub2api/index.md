@@ -36,7 +36,16 @@ dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 systemctl enable --now docker
 ```
 
-6. 生成密码：
+6. 安装 sub2api
+
+```bash
+mkdir -p sub2api-deploy && cd sub2api-deploy
+curl -sSL https://raw.githubusercontent.com/Wei-Shaw/sub2api/main/deploy/docker-deploy.sh | bash
+docker compose up -d
+docker compose logs -f sub2api
+```
+
+7. 生成密码：
 
 ```bash
 cd ~/sub2api-deploy
