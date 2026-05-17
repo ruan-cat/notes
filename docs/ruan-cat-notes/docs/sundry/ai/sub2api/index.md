@@ -66,3 +66,10 @@ docker compose logs sub2api | grep -i admin
 - 店铺： https://pay.ldxp.cn/shop/C1V67W46
 - 教程： https://www.bilibili.com/video/BV1o7dFBKESs/
 - 转换器： https://codex.kedaya.xyz/
+
+### 渠道 2： 成品 codex plus，json 格式
+
+- 教程： https://www.bilibili.com/video/BV1aYLg6sERd/
+- 解码器： https://boji1334.github.io/mailboxhub-online/
+- 店铺： https://pay.ldxp.cn/shop/FLTH3TZ2
+- 店铺： https://pay.ldxp.cn/shop/TH52WUW7
