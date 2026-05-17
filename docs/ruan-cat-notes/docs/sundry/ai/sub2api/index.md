@@ -56,7 +56,7 @@ docker compose logs sub2api | grep -i admin
 
 导入到 sub2api 平台，或者是 cpa 平台时，要注意 openai 账号的格式。每个平台有特定的格式。可以批量导入 json 格式的账号数据，实现号池搭建。
 
-- 转换器： https://gtxx3600.github.io/GPTSession2CPAandSub2API/
+- ChatGPT Session 转换成中转站常用格式： https://gtxx3600.github.io/GPTSession2CPAandSub2API/
 - 转换器： https://flowpilot.qlhazycoder.top/converter/
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
@@ -73,3 +73,14 @@ docker compose logs sub2api | grep -i admin
 - 解码器： https://boji1334.github.io/mailboxhub-online/
 - 店铺： https://pay.ldxp.cn/shop/FLTH3TZ2
 - 店铺： https://pay.ldxp.cn/shop/TH52WUW7
+
+### 渠道 3： 成品 codex plus，json 格式
+
+- 店铺： https://pay.ldxp.cn/item/psshgu
+- 转换器： https://codex.kedaya.xyz/
+
+### 渠道 4： 成品 codex plus
+
+- 店铺： https://pay.ldxp.cn/item/gd1v84
+- 免费接码： https://sms.nloop.cc/
+- 邮件取件助手地址： https://email.nloop.cc/
