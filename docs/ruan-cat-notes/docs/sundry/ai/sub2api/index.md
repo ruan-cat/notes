@@ -56,7 +56,8 @@ docker compose logs sub2api | grep -i admin
 
 导入到 sub2api 平台，或者是 cpa 平台时，要注意 openai 账号的格式。每个平台有特定的格式。可以批量导入 json 格式的账号数据，实现号池搭建。
 
-- ChatGPT Session 转换成中转站常用格式： https://gtxx3600.github.io/GPTSession2CPAandSub2API/
+- ChatGPT Session 转换成中转站常用格式：
+  > https://gtxx3600.github.io/GPTSession2CPAandSub2API/ > https://json.chatai.codes/
 - 转换器： https://flowpilot.qlhazycoder.top/converter/
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
