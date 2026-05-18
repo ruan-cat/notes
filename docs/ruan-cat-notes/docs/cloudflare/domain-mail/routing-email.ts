@@ -59,4 +59,9 @@ export const routingEmails: RutingEmail[] = [
 		email: "use2026-5-18-01@ruan-cat.com",
 		openai: "已注册。手机验证已通过。",
 	},
+	{
+		order: 11,
+		email: "use010@ruan-cat.com",
+		openai: "已注册。",
+	},
 ];
