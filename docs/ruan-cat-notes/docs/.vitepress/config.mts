@@ -1,5 +1,3 @@
-import { copyFile, mkdir } from "node:fs/promises";
-import { join } from "node:path";
 import { setUserConfig, setGenerateSidebar, addChangelog2doc } from "@ruan-cat/vitepress-preset-config/config";
 
 // 为文档添加自动生成的changelog
@@ -14,31 +12,6 @@ import { setUserConfig, setGenerateSidebar, addChangelog2doc } from "@ruan-cat/v
 // 		},
 // 	},
 // });
-
-const apiTransferStationLlmsDir = "sundry/ai/api-transfer-station";
-const generatedLlmsFiles = ["llms.txt", "llms-full.txt"];
-
-/** 复制根部 llms 文件到 API 中转站文档目录 */
-function copyApiTransferStationLlmsFiles() {
-	let outDir = "";
-
-	return {
-		name: "copy-api-transfer-station-llms-files",
-		apply: "build",
-		enforce: "post",
-		configResolved(config) {
-			outDir = config.vitepress?.outDir ?? config.build.outDir;
-		},
-		async closeBundle() {
-			const targetDir = join(outDir, apiTransferStationLlmsDir);
-
-			await mkdir(targetDir, { recursive: true });
-			await Promise.all(
-				generatedLlmsFiles.map((fileName) => copyFile(join(outDir, fileName), join(targetDir, fileName))),
-			);
-		},
-	};
-}
 
 const userConfig = setUserConfig(
 	{
@@ -79,27 +52,11 @@ const userConfig = setUserConfig(
 	},
 	{
 		plugins: {
-			// 只为 API 中转站少量生产运维文档生成 llms 文件，避免全站笔记参与生成。
-			llmstxt: {
-				title: "API 中转站文档",
-				description: "Sub2API、9router 和相关 VPS 部署运维文档。",
-				details: "仅收录 sundry/ai/api-transfer-station 目录内的生产运维文档。",
-				ignoreFiles: [`!${apiTransferStationLlmsDir}/**`],
-				injectLLMHint: false,
-				sidebar: [],
-			},
+			// 笔记项目不需要开启严格的 llmstxt 插件，这会加剧构建时间，速度太慢了。
+			llmstxt: false,
 		},
 	},
 );
-userConfig.vite ??= {};
-userConfig.vite.plugins = [
-	...(Array.isArray(userConfig.vite.plugins)
-		? userConfig.vite.plugins
-		: userConfig.vite.plugins
-			? [userConfig.vite.plugins]
-			: []),
-	copyApiTransferStationLlmsFiles(),
-];
 // @ts-ignore
 userConfig.themeConfig.sidebar = setGenerateSidebar({
 	documentRootPath: "./docs",
