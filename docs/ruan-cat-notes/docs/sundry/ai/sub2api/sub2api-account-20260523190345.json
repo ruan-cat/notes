@@ -235,7 +235,7 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "2026-5-24 plus 02 AshleaSanson97146@outlook.com",
+			"name": "2026-5-24 plus 02 token过期 AshleaSanson97146@outlook.com",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -283,7 +283,7 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "2026-5-24 plus 02 RaymundoRolufs146028@outlook.com",
+			"name": "2026-5-24 plus 02 token过期 RaymundoRolufs146028@outlook.com",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
