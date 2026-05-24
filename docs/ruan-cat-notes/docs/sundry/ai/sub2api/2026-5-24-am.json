@@ -1,7 +1,8 @@
 {
+	"proxies": [],
 	"accounts": [
 		{
-			"name": "2026-5-24 上午导入 plus VanesaLuisi94775@outlook.com",
+			"name": "2026-5-24 上午导入 plus token已过期 VanesaLuisi94775@outlook.com",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
