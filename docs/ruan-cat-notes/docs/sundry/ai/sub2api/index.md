@@ -63,29 +63,44 @@ docker compose logs sub2api | grep -i admin
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
 
-### 渠道 1： 成品 codex plus，json 格式
+### 001 成品 codex plus，json 格式
 
 - 店铺： https://pay.ldxp.cn/shop/C1V67W46
 - 教程： https://www.bilibili.com/video/BV1o7dFBKESs/
 - 转换器： https://codex.kedaya.xyz/
 
-### 渠道 2： 成品 codex plus，json 格式
+### 002 成品 codex plus，json 格式
 
 - 教程： https://www.bilibili.com/video/BV1aYLg6sERd/
 - 解码器： https://boji1334.github.io/mailboxhub-online/
 - 店铺： https://pay.ldxp.cn/shop/FLTH3TZ2
 - 店铺： https://pay.ldxp.cn/shop/TH52WUW7
 
-### 渠道 3： 成品 codex plus，json 格式
+### 003 成品 codex plus，json 格式
 
 - 店铺： https://pay.ldxp.cn/item/psshgu
 - 转换器： https://codex.kedaya.xyz/
 
-### 渠道 4： 成品 codex plus
+### 004 成品 codex plus
 
 - 店铺： https://pay.ldxp.cn/item/gd1v84
 - 免费接码： https://sms.nloop.cc/
 - 邮件取件助手地址： https://email.nloop.cc/
+
+### 005 QQ 2873239070
+
+- QQ： 2873239070
+- 备注： Puls60 元质保 1 一个月可充老号带 codex
+
+### 006 QQ 546200350
+
+- QQ： 546200350
+- 备注： 5r
+
+### 007 QQ 476025865
+
+- QQ： 476025865
+- 备注： 4r
 
 ---
 
