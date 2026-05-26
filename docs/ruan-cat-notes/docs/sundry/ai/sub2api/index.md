@@ -98,3 +98,12 @@ AbrilLadin54369@outlook.com----aqockb88141----9e5f94bc-e8a4-4e73-b8be-63364c29d7
 ```txt
 AloysKronz50079@outlook.com----iqyysr772199----9e5f94bc-e8a4-4e73-b8be-63364c29d753----M.C545_SN1.0.U.-CghUlw0bGHUkukS8yeV9M6zyVuBqPmd8cvrPTGBHqYRAnQBwPXVL7D3Ef*vVSJtNDaP9lr15f0eCdn!jKzw!O4dZ*F*feNOZ5PuJthzjr1778L9Zlgn61h*Es0REitkqc35RWEoFDCHykr8W*CbsjLL6D9kTZgiCUcRU*hE9LYCVfMlYSdM7mvyJxhbqArF4jPlvPt6nZLgbtzMqjwJ1NMxtjJPyxJGxR5Eq6rFy0w9bzEXf5D6MtHOZP28MA05Lm9IGyOzjmFgZsJ46GCZfxdMZtx1LWlPuMgfOP6xk9BLI2MemtLlCy59!rQ!9QNC2KnhrOCEv90AZCY5EigJBHr1!6MIwi6CL5RRMI1aeTbdZmMWjC2yQWmJ7I6l*Xdr8xguPY2x1CfRkqcN2BsMili8vLF8PMW3aE6h5SAL53AShfqmpMcodT5S*LMYx2otNww$$
 ```
+
+## 2026-5-26 02
+
+- shop: https://pay.ldxp.cn/shop/ZYGCPJD7
+- wx: YU2061150
+
+```txt
+A9TwyRt5dk@outlook.com===rTK2ol90@f1Q47NE===http://ms.outlook007.cc/api/open/email/latest?api_key=0lQpMJYvnN3gWOd6wARKLlzeRKtdQskx&pt=aU9MKL&email=A9TwyRt5dk@outlook.com
+```
