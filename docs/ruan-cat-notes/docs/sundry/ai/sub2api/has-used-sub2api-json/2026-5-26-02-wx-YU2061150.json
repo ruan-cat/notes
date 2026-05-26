@@ -1,0 +1,51 @@
+{
+	"exported_at": "2026-05-26T05:55:50Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-5-26-02-rt-plus-6.18r-wx:YU2061150|A9TwyRt5dk@...",
+			"platform": "openai",
+			"notes": "2026-5-26-02-wx-YU2061150 | A9TwyRt5dk@outlook.com===http://ms.outlook007.cc/api/open/email/latest?api_key=0lQpMJYvnN3gWOd6wARKLlzeRKtdQskx&pt=aU9MKL&email=A9TwyRt5dk@outlook.com",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgwMjQ2MDQwLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiYW1yIjpbInB3ZCJdLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfZGF0YV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwibG9jYWxob3N0Ijp0cnVlLCJ1c2VyX2lkIjoidXNlci1zRkp5Tm56RDRGOEpLRHY1THpsTGg3bk0ifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiQTlUd3lSdDVka0BvdXRsb29rLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzc5MzgyMDM5LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6ImJmOTZkZjBhLWQwYWYtNGY3MC05NDg3LTVkMWE4MWYyYWY4OSIsIm5iZiI6MTc3OTM4MjAzOSwicHdkX2F1dGhfdGltZSI6MTc3OTM4MjAzNDU3MCwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19ZaklScFdZeTdlOEpYTzJzZFdvVEVMZW0iLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8c2xkN25VY3VxcmN6T1lPek1Edk5LaGlkIn0.pC1ERijyqk3NaBsWFxcFhg-V52bTpIpOYYKi0QNVyBFXPa1VudYyGoSwydBQzlc6kaRUjsyHXpo4B49kCBciBfieagcoN2JJhi2I-jYG7cJA1WSQPZpW-Tnl2H-fkcqhBif-BoBcAX7v82ZGiSD9I9xb3oRxOa7gPSpoSVvncdE9WMpRHkyrhwIEsL3jPmO-Qrwn3GIuVj9TPs_9T2b-APicVW-D64CVhL77jS6dhWG1JewRiG-ZUaV05COhjm95jp2Kx5gLOgZDnisnDrmC1mv5qXhM-vQVWPFncsFv380bVFLBxWxfDe4RYzrjqxGxRw5apD3hHQlbcICsPgPtuxrYbvDVXKf_tH1ZXy-sNhP1yie1EOHGxqK4vj6XjFW1mrbQnW2ogrZmQ_dETcUwduc2AcWnFP4MxxoBc6a_EYyrtC0kE2IHBgUFNOhTB6BLYOBITzjgcOwHG46sJ3N1Q0ESTWLUASYRTCEVopy8rLWj1C8yDgRWxOys9nLbtsGk1dfm44KddRWz9VtPr2uimPVERKnqnpEFsCXdT8izwDL4KsrjEzQESZkW9IUL-20Ukh9KB4a671p_Fb86cf9HomodvgOQSMF82jch5ugJyzSeOhQ8_ngze3PFWyL80sLkxD0LAWfpgUqz639nDHSykPlKaSyb_l-CR_uW44FVmo0",
+				"chatgpt_user_id": "user-sFJyNnzD4F8JKDv5LzlLh7nM",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "A9TwyRt5dk@outlook.com",
+				"expires_at": "2026-05-31T16:47:20Z",
+				"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImIxZGQzZjhmLTlhYWQtNDdmZS1iMGU3LWVkYjAwOTc3N2Q2YiIsInR5cCI6IkpXVCJ9.eyJhbXIiOlsicHdkIl0sImF0X2hhc2giOiItNm1mM1F5WVExOE5HQzRycU14X1N3IiwiYXVkIjpbImFwcF9FTW9hbUVFWjczZjBDa1hhWHA3aHJhbm4iXSwiYXV0aF9wcm92aWRlciI6InBhc3N3b3JkIiwiYXV0aF90aW1lIjoxNzc5MzgyMDM0LCJlbWFpbCI6IkE5VHd5UnQ1ZGtAb3V0bG9vay5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZXhwIjoxNzc5Mzg1NjM5LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiZ3JvdXBzIjpbXSwibG9jYWxob3N0Ijp0cnVlLCJvcmdhbml6YXRpb25zIjpbeyJpZCI6Im9yZy1wN3YxS3ZvWTk1Q2NKdFE4Y3J4NHNMa0YiLCJpc19kZWZhdWx0Ijp0cnVlLCJyb2xlIjoib3duZXIiLCJ0aXRsZSI6IlBlcnNvbmFsIn1dLCJ1c2VyX2lkIjoidXNlci1zRkp5Tm56RDRGOEpLRHY1THpsTGg3bk0ifSwiaWF0IjoxNzc5MzgyMDM5LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjM5Nzc4ZTkxLTU2MzEtNDgzZS05YTkwLWRhYjQ3MzY2NWU1NiIsIm5hbWUiOiJMaWFtIEpvaG5zb24iLCJyYXQiOjE3NzkzODIwMDAsInNpZCI6ImIzZmE3OGJiLTZhOGUtNDY2Yi1iNjY2LTNjNDU1OTI5ZGEwNSIsInN1YiI6ImF1dGgwfHNsZDduVWN1cXJjek9ZT3pNRHZOS2hpZCJ9.wqoBSJUW1R3NpACz7RvXuK1R3jUKfGB9SE2EP5XN9UuGWGVfvcjw0zDsmp4qCanFz3ps4gkCvvvVy0SyjGh1YQDMjDk3UcCo2OOj0HvPYIaTHdk731I5XFKRzD-QLw374Rs-7-1zM3qbkGoVBKj1hkC_v2PfjupUsE3Rawq4H0BbZFR6AgdZt8DeGnLVGFvhSpAfajV9BF5Sh_ndzeKyVIAZALcmRFPGHT3BRH54DGkm-fE5Q5Ky3zZZyhoGEPD87Ot9UeyKOj7DS2h3reZG6pNkmHa0DiTw0L2x9bQ2rqBvuJc4MBAjOq6S-nkEG5GfvFJ5Djt1b2m2xWXx6Efa0B2makJgRzmkWnFn3tSgg04POv8YGtjVkFURkNuNvuVLUeJB49jEwzyh4IkDROpd--1LNDvmiqNtikGc-Py53f3bwT5lH9mz1Qtifgyi9KF-enV4Sdub2rQ-9nQWIVswpiyCBcd4djgthK90iahNlhhQKRJcwc5wBC-n8yO4b5g9Vx9JYDTH2yzCdDKKR5V-V4jfhJ9pE8zk__3a4zmkH2X-CVyhim33zgkP2BG8_gkbITy9ti4Zh4vMtuLrYdpkZ5r6TW5NRRUeHS2jrqU3irge_91_HliAmPcKiNACShEStcJiIxJnzkFZCIHmksW92axsb6owGvFwOIClcZl2QHw",
+				"plan_type": "plus",
+				"refresh_token": "rt_ki4r2mMdBmXWhxzi35AmTJ0PZK1OirZSvkvrge3cdAU.pGBZpXvohEvrxu-x-JHtKERiTpyP2EcXd3JA6dZilao"
+			},
+			"extra": {
+				"account_pool_account_id": 587,
+				"account_pool_lease_id": "8e879a29c5a242fb8aa5ff4879c58eb8",
+				"codex_5h_reset_after_seconds": 0,
+				"codex_5h_reset_at": "2026-05-25T18:37:52+08:00",
+				"codex_5h_used_percent": 0,
+				"codex_5h_window_minutes": 0,
+				"codex_7d_reset_after_seconds": 604800,
+				"codex_7d_reset_at": "2026-06-01T18:37:52+08:00",
+				"codex_7d_used_percent": 3,
+				"codex_7d_window_minutes": 10080,
+				"codex_primary_over_secondary_percent": 0,
+				"codex_primary_reset_after_seconds": 604800,
+				"codex_primary_used_percent": 3,
+				"codex_primary_window_minutes": 10080,
+				"codex_secondary_reset_after_seconds": 0,
+				"codex_secondary_used_percent": 0,
+				"codex_secondary_window_minutes": 0,
+				"codex_usage_updated_at": "2026-05-25T18:37:52+08:00",
+				"email": "A9TwyRt5dk@outlook.com",
+				"name": "A9TwyRt5dk@outlook.com",
+				"pay_url_present": true,
+				"privacy_mode": "training_off",
+				"source": "codex_register_direct_credentials"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		}
+	]
+}
