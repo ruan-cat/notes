@@ -4,6 +4,8 @@
 - 视频教程 `第1期：sub2api小白手把手部署教程，把大模型网页会员订阅转化成api，实现token自由`： https://www.bilibili.com/video/BV1aCdSBYEhY/
 - 文字教程： https://wu.wubin.cc/171.html
 
+## CentOS 10 安装命令
+
 进入 linux 服务器。我的系统是 `CentOS 10` ，以下命令经过 AI 调整：
 
 1. 安装官方工具箱。
@@ -50,6 +52,61 @@ docker compose logs -f sub2api
 ```bash
 cd ~/sub2api-deploy
 docker compose logs sub2api | grep -i admin
+```
+
+## Debian-12.0 安装命令
+
+```bash
+# 1. 更新系统
+apt update
+apt install -y ca-certificates curl gnupg openssl
+
+# 2. 清理可能冲突的旧 Docker 包；全新系统通常不会有，执行也没关系
+apt remove -y docker.io docker-compose docker-doc podman-docker containerd runc || true
+
+# 3. 添加 Docker 官方 GPG key
+install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+chmod a+r /etc/apt/keyrings/docker.asc
+
+# 4. 添加 Docker 官方 Debian 软件源
+cat > /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/debian
+Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+# 5. 刷新软件源
+apt update
+
+# 6. 安装 Docker 和 Docker Compose v2 插件
+apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# 7. 启动 Docker 并设置开机自启
+systemctl enable --now docker
+
+# 8. 检查 Docker 和 Compose 是否正常
+docker --version
+docker compose version
+
+# 9. 创建 sub2api 部署目录
+mkdir -p ~/sub2api-deploy && cd ~/sub2api-deploy
+
+# 10. 执行 sub2api 官方 Docker 部署准备脚本
+curl -sSL https://raw.githubusercontent.com/Wei-Shaw/sub2api/main/deploy/docker-deploy.sh | bash
+
+# 11. 启动 sub2api、PostgreSQL、Redis 等服务
+docker compose up -d
+
+# 12. 查看 sub2api 日志
+docker compose logs -f sub2api
+
+# 如果你想查看自动生成的管理员密码，用：
+cd ~/sub2api-deploy
+docker compose logs sub2api | grep -i "admin password"
 ```
 
 ## CPA SUP 格式转换
