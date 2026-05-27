@@ -63,6 +63,10 @@ docker compose logs sub2api | grep -i admin
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
 
+## 卖家
+
+需要买账号来补充 sub2api 号池。
+
 ### 001 成品 codex plus，json 格式
 
 - 店铺： https://pay.ldxp.cn/shop/C1V67W46
@@ -87,20 +91,15 @@ docker compose logs sub2api | grep -i admin
 - 免费接码： https://sms.nloop.cc/
 - 邮件取件助手地址： https://email.nloop.cc/
 
-### 005 QQ 2873239070
+## QQ 直接联系的号商
 
-- QQ： 2873239070
-- 备注： Puls60 元质保 1 一个月可充老号带 codex
-
-### 006 QQ 546200350
-
-- QQ： 546200350
-- 备注： 5r
-
-### 007 QQ 476025865
-
-- QQ： 476025865
-- 备注： 4r
+|     QQ     |   价格    |                      备注                       |
+| :--------: | :-------: | :---------------------------------------------: |
+| 2873239070 |    60     |     Puls60 元质保 1 一个月可充老号带 codex      |
+| 546200350  |     5     |                                                 |
+| 476025865  |     4     |                                                 |
+| 3570569707 |     6     |                                                 |
+|  5718423   | 2.5/2/1.5 | 100 起 2.5R 1000 起 2R 2K 起 1.5R 非时抛 和日抛 |
 
 ---
 
