@@ -117,6 +117,7 @@ docker compose logs sub2api | grep -i "admin password"
   > https://gtxx3600.github.io/GPTSession2CPAandSub2API/
   > https://json.chatai.codes/
 - 转换器： https://flowpilot.qlhazycoder.top/converter/
+- CPA 转换成 sub2api 格式： https://gtxx3600.github.io/CPA2sub2API/
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
 
