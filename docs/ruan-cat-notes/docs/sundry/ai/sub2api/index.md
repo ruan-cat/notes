@@ -121,3 +121,16 @@ AloysKronz50079@outlook.com----iqyysr772199----9e5f94bc-e8a4-4e73-b8be-63364c29d
 ```txt
 A9TwyRt5dk@outlook.com===rTK2ol90@f1Q47NE===http://ms.outlook007.cc/api/open/email/latest?api_key=0lQpMJYvnN3gWOd6wARKLlzeRKtdQskx&pt=aU9MKL&email=A9TwyRt5dk@outlook.com
 ```
+
+## 2026-5-27 01
+
+- 店铺： https://pay.ldxp.cn/shop/RO6Q3C9F
+- 店铺： https://pay.ldxp.cn/item/bwbgbg
+- 接码、转换格式，自助工具： https://ai.cdns.ccwu.cc/
+- QQ： 2732744559
+
+```txt
+SharonRay069894@hotmail.com----$BJmTYYK9DVcZLG3----0511cbaf-db8e-4f04-b509-b29f76345c8e----v1.eyJhY2NvdW50X2lkIjoxMzk2NiwiZW1haWwiOiJzaGFyb25yYXkwNjk4OTRAaG90bWFpbC5jb20iLCJ2IjoidjEifQ.MJhhkOlma9S9FjtGvq41Z-7fvuDd6dcMOvpjbrlCvBY
+HenryHughes502015@hotmail.com----VBKMqSVVYTizCjLk----6ef9c868-957f-4226-b033-890d2ce0619b----v1.eyJhY2NvdW50X2lkIjoxMzk2NSwiZW1haWwiOiJoZW5yeWh1Z2hlczUwMjAxNUBob3RtYWlsLmNvbSIsInYiOiJ2MSJ9.moWf_81sOpXDD1NEmtmmHY7RwYUwZGlKaF9x44_Hqc0
+ChristopherMorris85273@hotmail.com----VtILzVMgRh2I@Wt7----0d910841-6b81-44f0-a3c9-75d911040163----v1.eyJhY2NvdW50X2lkIjoxMzk2NCwiZW1haWwiOiJjaHJpc3RvcGhlcm1vcnJpczg1MjczQGhvdG1haWwuY29tIiwidiI6InYxIn0.n9edPy1eB-rH-7Ypt7ZLIyGpYoTzr0-JjVuEVG97ccM
+```
