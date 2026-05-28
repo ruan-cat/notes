@@ -109,6 +109,26 @@ cd ~/sub2api-deploy
 docker compose logs sub2api | grep -i "admin password"
 ```
 
+## Debian-12.0 给指定账户授权 admin 权限
+
+```bash
+# 先把邮箱换成你要授权的账号：
+cd /root/sub2api-deploy 2>/dev/null || cd ~/sub2api-deploy 2>/dev/null || true
+TARGET_EMAIL='你的账号邮箱@example.com'
+
+# 直接授权 admin：
+docker exec -it sub2api-postgres sh -lc "psql -U \"\${POSTGRES_USER:-sub2api}\" -d \"\${POSTGRES_DB:-sub2api}\" -v ON_ERROR_STOP=1 -P pager=off -c \"UPDATE public.users SET role='admin', status='active', updated_at=NOW() WHERE lower(email)=lower('$TARGET_EMAIL') AND deleted_at IS NULL RETURNING id,email,username,role,status,deleted_at,updated_at;\""
+
+# 测试指定账号是否已经是管理员：
+docker exec -it sub2api-postgres sh -lc "psql -U \"\${POSTGRES_USER:-sub2api}\" -d \"\${POSTGRES_DB:-sub2api}\" -P pager=off -c \"SELECT id,email,username,role,status,deleted_at,updated_at FROM public.users WHERE lower(email)=lower('$TARGET_EMAIL') ORDER BY id;\""
+
+# 测试当前所有有效管理员：
+docker exec -it sub2api-postgres sh -lc "psql -U \"\${POSTGRES_USER:-sub2api}\" -d \"\${POSTGRES_DB:-sub2api}\" -P pager=off -c \"SELECT id,email,username,role,status,deleted_at FROM public.users WHERE role='admin' AND status='active' AND deleted_at IS NULL ORDER BY id;\""
+
+# 如果授权命令返回 UPDATE 0 或没有 RETURNING 结果，通常是邮箱不存在，或者该用户已经软删除。可以查一下：
+docker exec -it sub2api-postgres sh -lc "psql -U \"\${POSTGRES_USER:-sub2api}\" -d \"\${POSTGRES_DB:-sub2api}\" -P pager=off -c \"SELECT id,email,username,role,status,deleted_at FROM public.users WHERE email ILIKE '%$TARGET_EMAIL%' OR username ILIKE '%$TARGET_EMAIL%' ORDER BY id;\""
+```
+
 ## CPA SUP 格式转换
 
 导入到 sub2api 平台，或者是 cpa 平台时，要注意 openai 账号的格式。每个平台有特定的格式。可以批量导入 json 格式的账号数据，实现号池搭建。
