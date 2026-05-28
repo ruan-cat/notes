@@ -38,4 +38,17 @@ bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_star
 
 ## Debian-12.0 安装命令
 
-<!-- TODO: -->
+```bash
+# 1. 切换 root
+sudo -i
+
+# 2. 更新系统并安装基础工具
+apt update -y && apt upgrade -y
+apt install -y curl wget tar
+
+# 3. 执行 1Panel 官方在线安装脚本
+bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
+
+# 4. 安装完成后，查看面板访问地址、账号、密码、安全入口
+1pctl user-info
+```
