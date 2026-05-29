@@ -198,6 +198,7 @@ AloysKronz50079@outlook.com----iqyysr772199----9e5f94bc-e8a4-4e73-b8be-63364c29d
 
 - shop: https://pay.ldxp.cn/shop/ZYGCPJD7
 - wx: YU2061150
+- 于 2026-5-29 无法继续用网页版认证，强制要求二次验证手机号，且无法收到验证码。
 
 ```txt
 A9TwyRt5dk@outlook.com===rTK2ol90@f1Q47NE===http://ms.outlook007.cc/api/open/email/latest?api_key=0lQpMJYvnN3gWOd6wARKLlzeRKtdQskx&pt=aU9MKL&email=A9TwyRt5dk@outlook.com
