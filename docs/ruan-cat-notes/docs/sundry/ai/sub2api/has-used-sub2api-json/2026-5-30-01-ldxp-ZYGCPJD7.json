@@ -1,0 +1,31 @@
+{
+	"exported_at": "2026-05-30T03:39:39.070Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-5-30-rt-7.21r-plus-lipinskyklimkowicz71",
+			"platform": "openai",
+			"type": "oauth",
+			"expires_at": 1780934564,
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"priority": 1,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgwOTM0NTY0LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiYW1yIjpbInB3ZCJdLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfZGF0YV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwibG9jYWxob3N0Ijp0cnVlLCJ1c2VyX2lkIjoidXNlci1GVUlkU0JId1NHMG1GWGN2eW5pU05Ed3kifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoibGlwaW5za3lrbGlta293aWN6NzFAb3V0bG9vay5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc4MDA3MDU2NCwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmOTQxM2Q5Yi1iNzQ2LTRjODMtYjA5Mi1jYWQ1Yzg4MDg3M2MiLCJuYmYiOjE3ODAwNzA1NjQsInB3ZF9hdXRoX3RpbWUiOjE3ODAwNzA1NjM0MTAsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfdXJnUnM4M09URUpwczBRTjJDdUJXZms1Iiwic2wiOnRydWUsInN1YiI6ImF1dGgwfGt4d1NKV2tTOE9tMDZzVXNlS1B6NXY3bCJ9.7Xhh_1oWgi3PVYohpGBuc7wzlQmw59UXvKdg_wVanFwgfqFVWJkd4x_MbAUoETu5C7gKxOIWLc9ks8GwWf2RL3QLbJSU11vbbP_GRaZcGiq1yD1erWFN6BRGGCqdoa-XzHQBQ89ILYTlZ2NO4wTAvBtFQakNqT1-alV5KAvuN6atZh_HcJrTUI5oDamvc8lDvH2p2FSn7MPEYwLJ2KGA5Wc4k1f-KZ8iCh3excLysgXgeZFtHp910vSNIYdcKou0s8U1C8_idN_xcPMITfklSt-SZ-Zoilafl5uR6_pijSsbuvTRi4HwlCZFngEBA4KXd_2I3tAEYLaPHJFDUfW73_2LgLGB7EMy6yOotclKyiYqtgrANbR4kuIaPXwTnXUu-ncU-uhqq2G2LY8s0XHKX6Hzmv9VR9KBu4weJqDk9OWFfk779MC36u3F9YoE0VJDnCZUdDQM5DGFmbwIE1qlVCTVR6jVRvD8YzpS3ujfw6DRSToxS_BD92wKtyPPs_v8JbcnR_1SVOJgZVMO7q1dMwVW_oxoRV9BWyr-rRBBrksgYrEdhfNo1c17PXE5_fqGJt2Y4P_s8xj2zOJfehUctgF2J7Yi1YekYyRg_iBrLRTkUzvMTt9y1RIIQ33Zk4zF2j692RcXH9RWQxFew0IzV6WI1uymr3MUSOzpOmzTSbw",
+				"chatgpt_account_id": "0e48e21c-b702-4115-b4e8-0a8c1b873c35",
+				"chatgpt_user_id": "user-FUIdSBHwSG0mFXcvyniSNDwy",
+				"email": "lipinskyklimkowicz71@outlook.com",
+				"expires_at": "2026-06-08T16:02:44.000Z",
+				"expires_in": 822184,
+				"plan_type": "plus"
+			},
+			"extra": {
+				"email": "lipinskyklimkowicz71@outlook.com",
+				"email_key": "lipinskyklimkowicz71_outlook_com",
+				"name": "lipinskyklimkowicz71@outlook.com",
+				"source": "chatgpt_web_session",
+				"last_refresh": "2026-05-30T03:39:39.068Z"
+			}
+		}
+	]
+}
