@@ -84,3 +84,8 @@
 - 美国 https://chatgpt.com/?promoCode=TECHREV2026
 - 英国 https://chatgpt.com/?promoCode=codestonegb
 - 英国 https://chatgpt.com/?promoCode=openaisequoialondon
+
+## 生成支付链接
+
+- https://payurl.ark2.cn/
+- https://pay.chatai.codes/
