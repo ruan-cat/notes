@@ -187,6 +187,10 @@ pnpm why vue-router
 
 - https://arco.design/themes
 
+## 用 AI 在线生成产品原型
+
+- https://ardot.tencent.com/
+
 ## WebMCP
 
 一款让 Web 网站获得和 AI 交互的端口配置方案。
