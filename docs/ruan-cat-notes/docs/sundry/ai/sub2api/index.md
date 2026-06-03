@@ -216,3 +216,24 @@ SharonRay069894@hotmail.com----$BJmTYYK9DVcZLG3----0511cbaf-db8e-4f04-b509-b29f7
 HenryHughes502015@hotmail.com----VBKMqSVVYTizCjLk----6ef9c868-957f-4226-b033-890d2ce0619b----v1.eyJhY2NvdW50X2lkIjoxMzk2NSwiZW1haWwiOiJoZW5yeWh1Z2hlczUwMjAxNUBob3RtYWlsLmNvbSIsInYiOiJ2MSJ9.moWf_81sOpXDD1NEmtmmHY7RwYUwZGlKaF9x44_Hqc0
 ChristopherMorris85273@hotmail.com----VtILzVMgRh2I@Wt7----0d910841-6b81-44f0-a3c9-75d911040163----v1.eyJhY2NvdW50X2lkIjoxMzk2NCwiZW1haWwiOiJjaHJpc3RvcGhlcm1vcnJpczg1MjczQGhvdG1haWwuY29tIiwidiI6InYxIn0.n9edPy1eB-rH-7Ypt7ZLIyGpYoTzr0-JjVuEVG97ccM
 ```
+
+## 2026-6-3 01
+
+- 账号店铺： https://sp.az0.cn/
+- 邮箱接码（根本无法接收任何验证码）： https://mail.chatai.codes/
+- 价格： 5.26 元
+
+- ChatGPT 与 outlook 账号： `zlbgjuyskqa@outlook.com`
+- ChatGPT 与 outlook 密码： `sgcjpelwrbb82`
+
+<!-- 2026-6-3-01-plus-rt-5.26r-sp.az0.cn|zlbgjuyskqa@outlook.com 未实现接码 未实现中转站的导入 -->
+
+```txt
+zlbgjuyskqa@outlook.com----sgcjpelwrbb82----9e5f94bc-e8a4-4e73-b8be-63364c29d753----M.C561_BAY.0.U.-CjoC2VTANaRn3HU8V66RS7TnS3XFdR9Ensy2T7c*1sDKm6*87PUEkA5svNcrpijFInQw!Kr382pKKtRthzU!gQ2MXoV53!QtQBO0c*x1UrLpfA6gu4ZfgNEvv81VwYTW0JPPxCKH2QX!gKADBZkV3CPj!CzGJfb!j96mMl2k2*JUT8j3!fsXKAGmPNAklPR*QdTs3lvjQKg8EHMfT4DFyzNy9rI0lVMVBndwMPTgzPdzR6bffbDh66qp1yd6emnRen93ih0J24kFnheFYuIpelExEuY!oucc5SmXH4dIGJF*7hB!WXuHB1RHwS25VkPTQkngjUv!hm23Wqa2*0zM8xH3keutLcixJyyx7NXFoe79
+```
+
+- 手机号接码店铺： https://pay.ldxp.cn/shop/66666SMS
+- 手机号接码站点： https://admin-running.top/sms-usthree/
+- 长效接码卡密： CDK-JMAD-RTOJ-XSWJ
+- 美区手机号： +15163478326
+- （无法接码）
