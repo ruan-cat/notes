@@ -1,0 +1,32 @@
+{
+	"exported_at": "2026-06-03T11:43:12.602Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "未验证、未解码、无法在中转站内使用 zlbgjuyskqa@outlook.com",
+			"platform": "openai",
+			"type": "oauth",
+			"expires_at": 1781343528,
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"priority": 1,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTc4MTM0MzUyOCwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7ImFtciI6WyJvdHAiLCJ1cm46b3BlbmFpOmFtcjpvdHBfZW1haWwiXSwiY2hhdGdwdF9hY2NvdW50X2lkIjoiZmNhZmJiYTAtOTQ4ZC00Zjg2LWE1YWMtYzJjZGM5MzM0ZTcyIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLThIRTRmbzE5RzJob0NXUzc0TlFGSGRwbl9fZmNhZmJiYTAtOTQ4ZC00Zjg2LWE1YWMtYzJjZGM5MzM0ZTcyIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLThIRTRmbzE5RzJob0NXUzc0TlFGSGRwbiIsInVzZXJfaWQiOiJ1c2VyLThIRTRmbzE5RzJob0NXUzc0TlFGSGRwbiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJ6bGJnanV5c2txYUBvdXRsb29rLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzgwNDc5NTI3LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjhkNmFhZDk3LTgwMzMtNDEwNC04YjdlLTAyMzY4OWViZTU4MSIsIm5iZiI6MTc4MDQ3OTUyNywicHdkX2F1dGhfdGltZSI6MTc4MDQ3OTUyNjMxMiwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIiwibW9kZWwucmVxdWVzdCIsIm1vZGVsLnJlYWQiLCJvcmdhbml6YXRpb24ucmVhZCIsIm9yZ2FuaXphdGlvbi53cml0ZSJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfZnh6NXM3MFd2NmpCUmZyMUVXc053Wm1DIiwic2wiOnRydWUsInN1YiI6ImF1dGgwfG1CT0d4SE9nZWY5WHF2UzU0d1FNTkdtMiJ9.f5Ki5Vc3Ru3Dd28z4ntJlVDMHtB1wc9kSPpW59XuxZb2Gr6JVja0r5Sx_AeOH1z3ir7JDLbrigBmWACHwA9AHQ7hHRYakUinYMt44MBSaSI2gpMtBzdaM6H-_xLEexj3Okm92K9tBAmyUkeIk5CAgs-KkwH_SCdDpKg6mwgKCin8lbivGUo9j9N0WveGdxc_GSTPURRlYLbdNX-kQfOehm3oYnvbaNgpcaj2L18lcNGUBEtSIW6l2M5a7_0gZ5C3Z7wmWF8MISBoW7ObONq0tTpfoOaN8MLYHJLT0Mi_uyOqPqxl8y7U2X8I6Y5zl7e6k44oRTvV3rnnYn9Ulo0rghhfPsyRzaM5b-Ck_8F8f6bwupILH8sYuglrR5M-iT9Ca7hq4rghS0txPMAUhdc8yIzcpy9RtFRHUd80UxBqh5mW2lPcCkBva8JCoi2dJWs1Vu8sG-Z2toY1QsIjgL_2uxp1APGcKhBnr3_c3wRNs2Ghkn4eAFoqei6K5C0eP6cPTBVkLRsHLgnjkHrDf3TeJPRngLQUELSWwwgRApKypAFRWoYb8J3k2qtPkcb4tswkN0vHwqQC3c6mWdc8gx_MVnMtL1_zyQRtI4CmLtDVmdfytbQ4GtoO7NbTA9zeccozD1alwH6iiZ6rVERcUND5Oh_DF6MXeFJ3WxLY-lTsDdM",
+				"chatgpt_account_id": "fcafbba0-948d-4f86-a5ac-c2cdc9334e72",
+				"chatgpt_user_id": "user-8HE4fo19G2hoCWS74NQFHdpn",
+				"email": "zlbgjuyskqa@outlook.com",
+				"expires_at": "2026-06-13T09:38:48.000Z",
+				"expires_in": 856535,
+				"plan_type": "plus"
+			},
+			"extra": {
+				"email": "zlbgjuyskqa@outlook.com",
+				"email_key": "zlbgjuyskqa_outlook_com",
+				"name": "zlbgjuyskqa@outlook.com",
+				"auth_provider": "openai",
+				"source": "chatgpt_web_session",
+				"last_refresh": "2026-06-03T11:43:12.600Z"
+			}
+		}
+	]
+}
