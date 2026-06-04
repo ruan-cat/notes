@@ -244,8 +244,9 @@ zlbgjuyskqa@outlook.com----sgcjpelwrbb82----9e5f94bc-e8a4-4e73-b8be-63364c29d753
 - 商品： https://pay.ldxp.cn/item/xvf3y4
 - 单价： 3.5 元
 - 账号套餐规格： team
+- 卡密兑换： https://ai.082715.xyz/
 
-- CDK：
+- CDK 卡密：
 
 ```txt
 CDK-8A174D9737212F00
