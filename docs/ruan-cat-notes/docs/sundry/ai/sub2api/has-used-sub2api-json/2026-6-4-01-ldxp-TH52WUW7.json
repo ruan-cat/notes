@@ -1,0 +1,123 @@
+{
+	"exported_at": "2026-06-04T06:33:49+00:00",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7|um19swgq1yq2ktybok3@",
+			"notes": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgxMzkzNjQ4LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiYW1yIjpbIm90cCIsInVybjpvcGVuYWk6YW1yOm90cF9lbWFpbCJdLCJjaGF0Z3B0X2FjY291bnRfaWQiOiJhNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItUjZEQzBuM01MalgyTUZTVnJIWlhobFQ1X19hNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoidGVhbSIsImNoYXRncHRfdXNlcl9pZCI6InVzZXItUjZEQzBuM01MalgyTUZTVnJIWlhobFQ1IiwibG9jYWxob3N0Ijp0cnVlLCJ1c2VyX2lkIjoidXNlci1SNkRDMG4zTUxqWDJNRlNWckhaWGhsVDUifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoidW0xOXN3Z3ExeXEya3R5Ym9rM0A2bmxlOHp3ai5jdXJzb20uc2hvcCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzgwNTI5NjQ4LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjQ3Njg3YTQxLTJiYWItNDlmNy04NDczLTg4MzFhNzM3ZDVlOCIsIm5iZiI6MTc4MDUyOTY0OCwicHdkX2F1dGhfdGltZSI6MTc4MDUyOTY0NTgzMywic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19zcm9QV2loblc5REsySkNJaEpJWkFPRGciLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8TExURDJhQXhQeXFFREt3bXNxbmZSSWRUIn0.0kWoANkvjNofurGkRwn-UShJLdwBnBfMcYSLB63lp8xmI-5kf0sQGW0rnZp9hN7xYK-BatBKLO_2rujZOJYsblV5LK19x6US45_ZSgMe2FIJcziMo379wD_imeHCj-vh7LdTes-_kCre_36_pNEQP1k0z_r3dgnN1thKXRwNrGjMtehFBeveeFIV3zsMWBj1K6jd-rM2YzNSm8voX1OU2o_Ns4VYtyj7XH-8bDkO9w6RrnS8Cb-RSdATKgD5gwlDheFnQINIhk73h0flpcJH_hRmB6eEGh44glHsQjl5Ed2kLzeKxGhPImSdoJc9t5h4ELDfCCOejeaRm3c7SBH0KPhXUHz0XJ0DbZD02BvGaXqEVNX9VZ_SeMS_jmlPXb6oWTvtsOj3HP4zd_MWWdGSpXtweEZBPFHp3KRMaXlIpNtYkcA-Pteu_o25iw4shuplE-oWCBzGPXEsiP1odRlMnGAseX9p1cU-_HIOvO_Xb301GHG53zL-ZhEn6ven6A870r3ldyWvAO2PK7p9BElMdC0h6pRlKQ6BDSE0bxo4AVEhrUwk6FU5PpzVdarBFQwlBafndLiLemtjTxb5yXPY_z5kMtjutEDZr7OuPpMOHHEzftVSFzuJZs5Up0v5j7a_XC--SJDTaOjR5y10g5hb2MSYBQGtFVj4U5POzXM8VlE",
+				"refresh_token": "rt.1.AAC8UGpu9frOWFSXfevjnu-0x4N2qFb_nOoxkhqTLpPPDqitWp-6LKWmZ6I34A3weOiNBHlnyykhrP1Sn1vXHoQy-HPhfcI0YOeAIxkCF1mbvPeghgg9cegmjun57G9yElemOmZAb5F9rfUbQKW0skTZaHAwfYDMfIhJVBpxCSMGuXT0hyDazic24ACo6S3qBkX8JiJecabOqj_41UYpHLEOE_yckDU5UCRtJx58WbJ4Mp4KfBxaI0tEGFPPOAZBHRXBjszO25acFoxAtVNxQgVibrBljtDjYZHlq2TJrWL05Da26_7-pEuUi5jZG8Qe3L4",
+				"model_mapping": {
+					"gpt-4o-audio-preview": "gpt-4o-audio-preview",
+					"gpt-4o-realtime-preview": "gpt-4o-realtime-preview",
+					"gpt-5.2": "gpt-5.2",
+					"gpt-5.2-2025-12-11": "gpt-5.2-2025-12-11",
+					"gpt-5.2-chat-latest": "gpt-5.2-chat-latest",
+					"gpt-5.2-pro": "gpt-5.2-pro",
+					"gpt-5.2-pro-2025-12-11": "gpt-5.2-pro-2025-12-11",
+					"gpt-5.3-codex": "gpt-5.3-codex",
+					"gpt-5.3-codex-spark": "gpt-5.3-codex-spark",
+					"gpt-5.4": "gpt-5.4",
+					"gpt-5.4-2026-03-05": "gpt-5.4-2026-03-05",
+					"gpt-5.4-mini": "gpt-5.4-mini",
+					"gpt-5.5": "gpt-5.5",
+					"gpt-image-1": "gpt-image-1",
+					"gpt-image-1.5": "gpt-image-1.5",
+					"gpt-image-2": "gpt-image-2"
+				},
+				"organization_id": "",
+				"plan_type": "team",
+				"chatgpt_account_id": "a5757eae-5eab-4d4e-8757-e89306a7ddd8",
+				"chatgpt_user_id": "user-R6DC0n3MLjX2MFSVrHZXhlT5",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "um19swgq1yq2ktybok3@6nle8zwj.cursom.shop"
+			},
+			"extra": {},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7|um19ucnw1gmf9m22onj@",
+			"notes": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgxMzkxODAzLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiYW1yIjpbIm90cCIsInVybjpvcGVuYWk6YW1yOm90cF9lbWFpbCJdLCJjaGF0Z3B0X2FjY291bnRfaWQiOiJhNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItQUY1U002c0drYmRhM3NySUdqU3FyQlVXX19hNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoidGVhbSIsImNoYXRncHRfdXNlcl9pZCI6InVzZXItQUY1U002c0drYmRhM3NySUdqU3FyQlVXIiwibG9jYWxob3N0Ijp0cnVlLCJ1c2VyX2lkIjoidXNlci1BRjVTTTZzR2tiZGEzc3JJR2pTcXJCVVcifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoidW0xOXVjbncxZ21mOW0yMm9uakBxNWV2dHk3by5jdXJzb20uc2hvcCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzgwNTI3ODAyLCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjI5YTg2MGEwLTNkOWUtNGU3My1hZDM1LTJkY2YwNGRhYWI0NyIsIm5iZiI6MTc4MDUyNzgwMiwicHdkX2F1dGhfdGltZSI6MTc4MDUyNzgwMDkzMywic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19HdzN0b1RIOTNoU2pjTGFnWWhtVVlObVYiLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8Wmh3TVp5QUpSc0ZFbkFKWTJ1MERnRnNOIn0.S1-mAbnPFJKVfavpudVmkQ5Dylij-nHfnD5eM6nfO6GQKm_KtE3Z2ykfIwsI3VlMnhw6L9oHtV9gL-ZEKummUbjZZC8OPZ9ja_-lWm5ckS6a6bdeCG7CFIZlvPBtvZ2MY67zu0z0i8f7LOr73iIVoHdTK_4fjOL6e_BfGjLXzQf4-s2Vm6NoHKAbynEpkQdotA1DAulBhEpC_KCchm1hCtO9FTiX-lgrh06-jrqPGiokS3uzSiAsrb2UJaJ3oemMUA6JaVihBZGsjilVWdmpqYTybJdcZOJYORnoFTtG4PMgJUehtbK16BDQ1ph2u4lR2Aks-wNbGV3UXE7pmvayjnk7R-ch1z9avQjzUn31PEVy43RFqm1vm8NnbNFiGE6Ige8ij0Wy3r81yAj_rOoZqNTS_7wKRKN22KRtHDXJMICqZbNr0UeypPDJHmdmP2VedlikZ6j0Rk17Xsl-QBFb3gucbCfvOHrKZm5MmPCezZlbINL-qZvhtsZgNmqJyk9QnmGtRICY6IVliLKxFzZ9o30y8BjOGUSgjNuIKHKqergOFnj2q7AN3DVQe77sftr5IM-VnwX33lao37WeUX4_f9mIeW2uWl9Si28buz1WgDWAaMOmyIdKsWvDVfW5w__4js2mSBHSjyOwcqTKa02a01sxOTZflMapZxsapEzTB-0",
+				"refresh_token": "rt.1.AAA9XWC_-S7L76MVZvYfnJQRtOCEg7SW9DG2CnBTYc2pFeSWchv_-F-s5Qox9lNSXtspLQldfQiW-9xdmr1OcTDu_-mTyYcobEVZ6xSZInHIcorGNi74OHTjw2KY-dQJXS8v3RUjXJ7wcKGdOXPki8ukkRz55iAHhem0njvuk6SpARYkJGdyFVXhtcyhYxb4Zk2htDTFuA9B6VRjAwWDCtkm2JahIf_xtVeSkN3sxzGedfUAMAQZCjL52eylAIzdPbraOQKKS4pDiPt9v47oVeNpdqAnoSzHVDpvG0Xj_MS7Otm_jnx5PFd5EECDo64DOd4",
+				"model_mapping": {
+					"gpt-4o-audio-preview": "gpt-4o-audio-preview",
+					"gpt-4o-realtime-preview": "gpt-4o-realtime-preview",
+					"gpt-5.2": "gpt-5.2",
+					"gpt-5.2-2025-12-11": "gpt-5.2-2025-12-11",
+					"gpt-5.2-chat-latest": "gpt-5.2-chat-latest",
+					"gpt-5.2-pro": "gpt-5.2-pro",
+					"gpt-5.2-pro-2025-12-11": "gpt-5.2-pro-2025-12-11",
+					"gpt-5.3-codex": "gpt-5.3-codex",
+					"gpt-5.3-codex-spark": "gpt-5.3-codex-spark",
+					"gpt-5.4": "gpt-5.4",
+					"gpt-5.4-2026-03-05": "gpt-5.4-2026-03-05",
+					"gpt-5.4-mini": "gpt-5.4-mini",
+					"gpt-5.5": "gpt-5.5",
+					"gpt-image-1": "gpt-image-1",
+					"gpt-image-1.5": "gpt-image-1.5",
+					"gpt-image-2": "gpt-image-2"
+				},
+				"organization_id": "",
+				"plan_type": "team",
+				"chatgpt_account_id": "a5757eae-5eab-4d4e-8757-e89306a7ddd8",
+				"chatgpt_user_id": "user-AF5SM6sGkbda3srIGjSqrBUW",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "um19ucnw1gmf9m22onj@q5evty7o.cursom.shop"
+			},
+			"extra": {},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7|um19wpjyi3nky9ic1ee@",
+			"notes": "2026-6-4-01-3.5r-team-ldxp:TH52WUW7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgxMzkwNjcwLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiYW1yIjpbIm90cCIsInVybjpvcGVuYWk6YW1yOm90cF9lbWFpbCJdLCJjaGF0Z3B0X2FjY291bnRfaWQiOiJhNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItazJBSFhQeUpybERCeVE0R3FuUUNlN0N6X19hNTc1N2VhZS01ZWFiLTRkNGUtODc1Ny1lODkzMDZhN2RkZDgiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoidGVhbSIsImNoYXRncHRfdXNlcl9pZCI6InVzZXItazJBSFhQeUpybERCeVE0R3FuUUNlN0N6IiwibG9jYWxob3N0Ijp0cnVlLCJ1c2VyX2lkIjoidXNlci1rMkFIWFB5SnJsREJ5UTRHcW5RQ2U3Q3oifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoidW0xOXdwanlpM25reTlpYzFlZUBxNWV2dHk3by5jdXJzb20uc2hvcCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzgwNTI2NjY5LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6ImI1OTQxOWRlLWVkYjYtNDkxNy1iMTdmLWQ4ZGU4ZGVjYjY1ZiIsIm5iZiI6MTc4MDUyNjY2OSwicHdkX2F1dGhfdGltZSI6MTc4MDUyNjY2NzczOCwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19UZGs3SEhTeWNXZVpPdTVESnZ5WURSOHYiLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8NHlLYXE4ZUFvUHRJM0VsYTJiRnhsenpQIn0.Ydne4W6BhyGhRgYN50l-kSys-qBHm6fs-YSJaZpiE9kJvJ1J2uFCBawH9FENcvaZq1SinIVgoVDovBVbqJXTi80CJZlMfKNffcdyY2ETxcy4cyBiLaUXfEaTIphOMSgL9u-XQ9FALLN1_lgcpw1k_1J_KllUtid_xoq4v-EgL1GQnh2nEwtjp5SAiRuZswN4BHpqHs15ja_VI9kGM8SWAkHYdgIn0rQAFF9V9XXhA91G_8xSQULmmQV29GloPrLx-PLYLuV6SeX5QbaeTUtqfzXE5uDnUfISaV4oaPfNhsKnEHoG3yZwW20ft7xaP5iLStP7tAED5XW3crwXbIb2trEMbV58HE0utCogDRgCDb500X53lkTZTPfv8Ka2XDU8etTEPL6wYqBIS6hXoG3i0I8ahb_ATnZWwM9fqHpf3x08PedXWIVZo-i8kaNc6-a97JLfGl59awVkijjQASXLG_p1mCn_ToLp57WMBrXjBqeJDKoFjA7jxviQPqct1S2k9OWhK9j1hBZikpE0cHOQ0Yj9qt5JXlRPmhsWzdkr3BWPV-Q3MXwPW-0oeYqtnH-7MZjDkWUanTBdy2EC95umGJp3degnzJktIUcG2edDoOMKzvWHMn3YzmfuEbho5bpUZ47MvzQ77qRxalbkEyyy1fVfVkyKc6mvlr8hFupkZyM",
+				"refresh_token": "rt.1.AABQ3PMW1k7YSDubRRja6GByh41covh3hJrD6VqUjnrmgWb4KbNY78lJ_FiI0DPcREdDnl3VITyAiUmblJgKDDTFY9Kp6JQm0j9CfM9ZEWObitzrvuILQSrN5AeBtNZu8I1y-qmNdwutyJ3oblrgIKWellxotgh26Gzi0tUZE-8ZBGmIFQ89rVvPTivH1U2fOHHd0Jvmz1TlUAnB8UKSKrBhI0WhseHOgBBYSBhdZDhvmXQhByWTQar_oN6pJnlrmJBC7_jhNBIDzxsm3JsfdFTP6_oCWMqn8may-rIvAXDd_JyZpMTNTbN4ca032N0sqKM",
+				"model_mapping": {
+					"gpt-4o-audio-preview": "gpt-4o-audio-preview",
+					"gpt-4o-realtime-preview": "gpt-4o-realtime-preview",
+					"gpt-5.2": "gpt-5.2",
+					"gpt-5.2-2025-12-11": "gpt-5.2-2025-12-11",
+					"gpt-5.2-chat-latest": "gpt-5.2-chat-latest",
+					"gpt-5.2-pro": "gpt-5.2-pro",
+					"gpt-5.2-pro-2025-12-11": "gpt-5.2-pro-2025-12-11",
+					"gpt-5.3-codex": "gpt-5.3-codex",
+					"gpt-5.3-codex-spark": "gpt-5.3-codex-spark",
+					"gpt-5.4": "gpt-5.4",
+					"gpt-5.4-2026-03-05": "gpt-5.4-2026-03-05",
+					"gpt-5.4-mini": "gpt-5.4-mini",
+					"gpt-5.5": "gpt-5.5",
+					"gpt-image-1": "gpt-image-1",
+					"gpt-image-1.5": "gpt-image-1.5",
+					"gpt-image-2": "gpt-image-2"
+				},
+				"organization_id": "",
+				"plan_type": "team",
+				"chatgpt_account_id": "a5757eae-5eab-4d4e-8757-e89306a7ddd8",
+				"chatgpt_user_id": "user-k2AHXPyJrlDByQ4GqnQCe7Cz",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "um19wpjyi3nky9ic1ee@q5evty7o.cursom.shop"
+			},
+			"extra": {},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		}
+	]
+}
