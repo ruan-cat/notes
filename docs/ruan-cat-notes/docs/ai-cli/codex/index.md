@@ -115,3 +115,4 @@
 - 1250： https://gpt.xheai.cc/product/3a05507a-2af5-40d6-8655-570b49f0984a
 - 750： https://yidachuang.top/product/d8ebc7d0-82d1-4e7c-96f1-a367a3e97740
 - 1000： https://makerich.club/item?id=133
+- 1200： https://pay.ldxp.cn/item/clizy8
