@@ -93,3 +93,25 @@
 
 - https://payurl.ark2.cn/
 - https://pay.chatai.codes/
+
+## 特殊渠道 plus
+
+- 68： https://pay.ldxp.cn/item/3joig2
+- 66： https://sp.az0.cn/
+- 84： https://pay.ldxp.cn/item/eu4gvf
+- 80： https://yidachuang.top/
+
+## pro20 代充
+
+200 美元 = 1,354.70 人民币，务必找到 900 左右的 pro20 代充。
+
+- 999： https://pay.ldxp.cn/item/9jdvnw
+- 1200： https://pay.ldxp.cn/item/bd4iow
+- 1200： https://pay.ldxp.cn/item/jvoznm
+- 750/1150： https://xwfk.shop/ai/xxz
+- 1300： https://pay.ldxp.cn/item/tgcfux
+- 1500： https://shop.deep4399.cn/item/26
+- 1200： https://gfself.datingai.club/item/19
+- 1250： https://gpt.xheai.cc/product/3a05507a-2af5-40d6-8655-570b49f0984a
+- 750： https://yidachuang.top/product/d8ebc7d0-82d1-4e7c-96f1-a367a3e97740
+- 1000： https://makerich.club/item?id=133
