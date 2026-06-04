@@ -8,6 +8,10 @@
 - codex 用量官方套餐额度： https://developers.openai.com/codex/pricing#what-are-the-usage-limits-for-my-plan
 - 敏感的用户 session 信息： https://chatgpt.com/api/auth/session
 
+## codex 接入其他模型
+
+- https://vaitk.com/blog/codex-deepseek-third-party-api/
+
 ## 用 PayPal 免费领取 ChatGPT plus
 
 ### 方案 1 失败
