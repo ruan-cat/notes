@@ -17,3 +17,10 @@ LangGraph 是一个针对 AI agent（智能体）工作流管理与执行的框�
 
 - @langchain/langgraph
 - @langchain/core
+
+## 对应的常见业务场景
+
+- 客服 Agent: 查询订单 + 触发工单
+- coding assistant: 读 repo + 运行测试 + 生成 patch
+- 知识库机器人: 检索 + 校验 + 生成答案
+- 多 agent 协作机器人：分任务 + 汇总答案
