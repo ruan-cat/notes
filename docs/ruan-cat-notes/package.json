@@ -20,7 +20,8 @@
 		"format-index-md": "prettier --write ./docs/index.md",
 		"do-index-md": "pnpm run make-index-md && pnpm run format-index-md",
 		"notuse--predocs:dev": "pnpm run do-index-md",
-		"notuse--prebuild:docs": "pnpm run do-index-md"
+		"notuse--prebuild:docs": "pnpm run do-index-md",
+		"merge-sub2api-account-pool-redeem": "tsx ./docs/sundry/ai/sub2api/scripts/merge-account-pool-redeem.ts"
 	},
 	"dependencies": {
 		"@element-plus/icons-vue": "^2.3.2",
