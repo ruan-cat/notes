@@ -2,17 +2,21 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const DATA_DIRECTORY = "C:/Users/pc/Desktop/wishtoapp.com/2500-form-part";
+const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
+const TARGET_FILE_NAME = "2026-6-7-01-team-0.6r-ldxp-SB9T68JP-j2gg2m.json";
+const ACCOUNT_BATCH_PREFIX = "2026-6-7-01-team-0.6r-ldxp:SB9T68JP:j2gg2m";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
-	inputPath: path.join(DATA_DIRECTORY, "sub2api-2026-06-06_21-36-16.json"),
-	namePrefix: "2026-6-6-06",
-	outputPath: path.join(DATA_DIRECTORY, "2026-6-6-06.json"),
+	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
+	namePrefix: ACCOUNT_BATCH_PREFIX,
+	notes: ACCOUNT_BATCH_PREFIX,
+	outputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
 };
 
 export interface RewriteSub2ApiAccountNamesConfig {
 	inputPath: string;
 	namePrefix: string;
+	notes?: string;
 	outputPath: string;
 }
 
@@ -32,6 +36,7 @@ export interface AccountRecord {
 		[key: string]: unknown;
 	};
 	name?: string;
+	notes?: string;
 	[key: string]: unknown;
 }
 
@@ -51,11 +56,15 @@ function getEmailLocalName(account: AccountRecord) {
 	return emailLocalName;
 }
 
-function rewriteAccountName(account: AccountRecord, namePrefix: string): AccountRecord {
-	const { name: _name, ...rest } = account;
+function rewriteAccountMetadata(
+	account: AccountRecord,
+	params: Pick<RewriteSub2ApiAccountNamesConfig, "namePrefix" | "notes">,
+): AccountRecord {
+	const { name: _name, notes: _notes, ...rest } = account;
 
 	return {
-		name: `${namePrefix}|${getEmailLocalName(account)}`,
+		name: `${params.namePrefix}|${getEmailLocalName(account)}`,
+		...(params.notes === undefined ? {} : { notes: params.notes }),
 		...rest,
 	};
 }
@@ -71,7 +80,12 @@ export function rewriteSub2ApiAccountNames(
 
 	const output = {
 		...source,
-		accounts: source.accounts.map((account) => rewriteAccountName(account, config.namePrefix)),
+		accounts: source.accounts.map((account) =>
+			rewriteAccountMetadata(account, {
+				namePrefix: config.namePrefix,
+				notes: config.notes,
+			}),
+		),
 	};
 
 	fs.mkdirSync(path.dirname(config.outputPath), { recursive: true });
