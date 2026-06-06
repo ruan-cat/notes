@@ -217,10 +217,10 @@ HenryHughes502015@hotmail.com----VBKMqSVVYTizCjLk----6ef9c868-957f-4226-b033-890
 ChristopherMorris85273@hotmail.com----VtILzVMgRh2I@Wt7----0d910841-6b81-44f0-a3c9-75d911040163----v1.eyJhY2NvdW50X2lkIjoxMzk2NCwiZW1haWwiOiJjaHJpc3RvcGhlcm1vcnJpczg1MjczQGhvdG1haWwuY29tIiwidiI6InYxIn0.n9edPy1eB-rH-7Ypt7ZLIyGpYoTzr0-JjVuEVG97ccM
 ```
 
-## 2026-6-3 01
+## 2026-6-3 01 已封号
 
 - 账号店铺： https://sp.az0.cn/
-- 邮箱接码（根本无法接收任何验证码）： https://mail.chatai.codes/
+- 邮箱接码： https://mail.chatai.codes/
 - 价格： 5.26 元
 
 - ChatGPT 与 outlook 账号： `zlbgjuyskqa@outlook.com`
