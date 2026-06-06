@@ -1,0 +1,27 @@
+{
+	"accounts": [
+		{
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzgxNTY5MjU5LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiNWUzZDQ4MGMtNmY4Mi00ZTY4LWFjNDQtODljNDA5NGZmNzM0IiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLWQ1SU93RDhBV1R1aDFMaHJqUGd2YVlhcV9fNWUzZDQ4MGMtNmY4Mi00ZTY4LWFjNDQtODljNDA5NGZmNzM0IiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InRlYW0iLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLWQ1SU93RDhBV1R1aDFMaHJqUGd2YVlhcSIsImxvY2FsaG9zdCI6dHJ1ZSwic3NvX2Nvbm5lY3Rpb25faWQiOiJjb25uXzAxS1RCS1NXUTdCMVQySFI4WFk5RDRXVDJaIiwidXNlcl9pZCI6InVzZXItZDVJT3dEOEFXVHVoMUxocmpQZ3ZhWWFxIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6IjYwcHBzYmRxeHdAdGVhbXRjLmxvbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzgwNzA1MjU5LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjhhN2FiMWQ2LTQyYzAtNGQ2Zi05MTBiLWY2OThlYzlkNTlkYiIsIm5iZiI6MTc4MDcwNTI1OSwicHdkX2F1dGhfdGltZSI6MTc4MDcwNTI1NzM3Miwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19zT3dDa21jc1U2TmpJVWYySUE3VEl5bloiLCJzbCI6dHJ1ZSwic3ViIjoic2FtbHB8cHJvZl8wMUtURDRUWkExREZKRzIxMTJUMjU1MFBYTXw2MHBwc2JkcXh3QHRlYW10Yy5sb2wifQ.CD8N02NWjzSz0tikKOBzHmLwNCSm5u-3Too_O-c18oKOEqAbeXSWvj01WU_a-QIz_IlszDyrjXtlmV9Fnxs6O-O100tk_vxckVvr7ue2XcSnZxZs0uDEuKouZdELpj0Y9FWHzGbVf7UTcE7kVfpbsLAuEhDfTzNA_0h8lgiMtBypOjfiEWehFQqffyAUA1H8rYk1N5F_tbEt1V4ge84u2_S9Fsm75V5QIProdPSCYMPhm_Eg5rI84sKAWM3wmfELpfzV7DJN4-jzooZ_uulm1QVCmSpV_8SskT5pO3iZm8_90Pc9ka3-MuHy-cPrj6uyDMYwRls7MM16GYsVqSdkKpeMmsgGIAbbbgN9jx43Fi5mlP4lvRtXAkh9p7wYFFg7g5j48Q0ZDOZzmBAKh-LtyYItsl-54mZTywfwkALotYPmn8rJ6xqJrKTm_3h-JNV4r-rFQNJOTi1GP6OWd0Ae9mVZPITOMq7wYKsAmZMTALyim28U9mVbsZtebIlNaZhjlfY8yQoZNHEkjRepstmyxwF1iPX0akc8fjPpk3Hxj1Lbl9aHejf6Q3GdHa0QTmLhtizDHcUjPpbL1zMJ051kflCaXTiBlh4M3uCjb7iK0OtdkS92MiXypQT6ZJelGR5dT6vZ_QfJc8y-casxZ4ODiE2tSaauMa24j2xl0Yh1vmU",
+				"chatgpt_account_id": "5e3d480c-6f82-4e68-ac44-89c4094ff734",
+				"email": "60ppsbdqxw@teamtc.lol",
+				"expires_at": 1781569259,
+				"refresh_token": "rt.1.AACwTwldo1Sf3cxJJMhz_T6fkikoanQfmjTB9B0aLmwnEbbv9matAnSASvHz4KcCZwnQX1n5AlXO1JglaZxDieXc6-5dUTDSOYr10YsIeMwAwZcgd56B4qWlYNLrU8rq1FBRjRMZndh6tg8_eRX67KDBBgErPfZVwVswHfoS36KEEHOicTtFgZDUvRJNdx8_z0gIvtBVkO_Et2zEgDXWAr8CAqgqpdfvWKxybX2voF2eTvf3iOWvv9BP3ZtYZF6LyJR7y4S758h-MVxV7wdWH1hUxfpgHsUaUXxyIB00aQsfQ-fTbQi0Fji_5gyB7eO1ZiA"
+			},
+			"expires_at": 1781569259,
+			"extra": {
+				"email": "60ppsbdqxw@teamtc.lol",
+				"name": "60ppsbdqxw@teamtc.lol",
+				"source": "aether_pool_redeem_export"
+			},
+			"name": "60ppsbdqxw@teamtc.lol",
+			"platform": "openai",
+			"priority": 1,
+			"type": "oauth"
+		}
+	],
+	"exported_at": "2026-06-06T09:18:12.832143653+00:00",
+	"proxies": []
+}
