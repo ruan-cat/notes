@@ -307,3 +307,27 @@ NVEC-GROK-0IFO-TQEC
 JYK2-5KBI-1VNG-GCU8
 QGFC-TXMQ-22FP-J0RT
 ```
+
+## 2026-6-7 01 team
+
+- 前缀： 2026-6-7-01-team-0.6r-ldxp:SB9T68JP:j2gg2m
+- 店家地址： https://pay.ldxp.cn/shop/SB9T68JP
+- 商品地址： https://pay.ldxp.cn/item/j2gg2m
+- 卡密提取： https://kmi.ailaile.site/verify.php
+
+- cdk 卡密：
+
+```txt
+cEU2bt9c5XSTvSP9W8mw
+mWuF5mgah505Dt8QAJ0K
+xWn9ve6wxTVr3Fmlj14v
+y3Ana06mdBgZ7kqbRNls
+JuarsSEmBIXGxyRDeWKI
+WDSLd4AUTkv6OHGvZMks
+j8w8SDLFYaGc54YebhYc
+2kPqKPFncOZfJrmPYp9X
+SBMVRpXBw80uu2nj1ZOF
+q7uiLbzBGQiuVDfpMERU
+V6pUmHW059zmfE3E97g2
+FJAu79bRmOH74FtYMyTD
+```
