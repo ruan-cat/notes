@@ -250,3 +250,21 @@ CDK-8A174D9737212F00
 CDK-6EF77CB2E3649387
 CDK-775FD8A09580C148
 ```
+
+## 2026-6-6 01 team
+
+- 店铺地址： https://pay.ldxp.cn/shop/3V6XRTOJ
+- 商品地址： https://pay.ldxp.cn/item/7r5zms
+- 格式转换： https://convert.13916454.xyz/
+- 卡密兑换： http://pool.acteam.lol/
+
+- CDK 卡密：
+
+```txt
+FXH5-XTRR-4VBU-NPI6
+IGNW-4XAM-3PEH-EEMW
+OUWB-DLLO-TNKB-3LFK
+J2BU-J4ZH-VUHC-Q9XQ
+JMPM-OSTR-DTX4-HTFS
+QM0V-N3XI-FDV4-RWHI
+```
