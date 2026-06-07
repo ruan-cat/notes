@@ -355,3 +355,11 @@ FJAu79bRmOH74FtYMyTD
 
 - 前缀： 2026-6-7-04-team-1r-ldxp:2G7WG7S7:质保
 - 前缀： 2026-6-7-06-team-1r-ldxp-2G7WG7S7-zb
+
+## 2026-6-7 07 team
+
+- 前缀： 2026-6-7-07-team-2.3r-ldxp-shayulajiao-wl774l
+- 店铺地址： https://pay.ldxp.cn/shop/shayulajiao
+- 商品地址： https://pay.ldxp.cn/item/wl774l
+- 格式转换： https://gpt.learnlicen.dpdns.org/
+- 售后 QQ 群： 1098199335
