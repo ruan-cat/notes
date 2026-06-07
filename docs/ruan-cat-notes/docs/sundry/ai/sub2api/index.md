@@ -308,7 +308,7 @@ JYK2-5KBI-1VNG-GCU8
 QGFC-TXMQ-22FP-J0RT
 ```
 
-## 2026-6-7 01 team
+## 2026-6-7 01 team 全部都封号，差评
 
 - 前缀： 2026-6-7-01-team-0.6r-ldxp:SB9T68JP:j2gg2m
 - 店家地址： https://pay.ldxp.cn/shop/SB9T68JP
@@ -332,7 +332,7 @@ V6pUmHW059zmfE3E97g2
 FJAu79bRmOH74FtYMyTD
 ```
 
-## 2026-6-7 02 team
+## 2026-6-7 02 team | 30 天 bug team
 
 - 前缀： 2026-6-7-02-team-2.3r-ldxp:3V6XRTOJ:7r5zms
 - 店铺地址： https://pay.ldxp.cn/shop/3V6XRTOJ
