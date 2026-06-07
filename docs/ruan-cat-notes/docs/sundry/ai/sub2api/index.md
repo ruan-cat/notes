@@ -251,7 +251,9 @@ CDK-6EF77CB2E3649387
 CDK-775FD8A09580C148
 ```
 
-## 2026-6-6 01 team
+## 2026-6-6
+
+### 01 team
 
 - 店铺地址： https://pay.ldxp.cn/shop/3V6XRTOJ
 - 商品地址： https://pay.ldxp.cn/item/7r5zms
@@ -269,7 +271,7 @@ JMPM-OSTR-DTX4-HTFS
 QM0V-N3XI-FDV4-RWHI
 ```
 
-## 2026-6-6 02 team
+### 02 team
 
 - 店铺地址： https://pay.ldxp.cn/shop/G5V6NZEZ
 - 商品地址： https://pay.ldxp.cn/item/g46pmy
@@ -308,7 +310,9 @@ JYK2-5KBI-1VNG-GCU8
 QGFC-TXMQ-22FP-J0RT
 ```
 
-## 2026-6-7 01 team 全部都封号，差评
+## 2026-6-7
+
+### 01 team 全部都封号，差评
 
 - 前缀： 2026-6-7-01-team-0.6r-ldxp:SB9T68JP:j2gg2m
 - 店家地址： https://pay.ldxp.cn/shop/SB9T68JP
@@ -332,7 +336,7 @@ V6pUmHW059zmfE3E97g2
 FJAu79bRmOH74FtYMyTD
 ```
 
-## 2026-6-7 02 team | 30 天 bug team
+### 02 team | 30 天 bug team
 
 - 前缀： 2026-6-7-02-team-2.3r-ldxp:3V6XRTOJ:7r5zms
 - 店铺地址： https://pay.ldxp.cn/shop/3V6XRTOJ
@@ -340,7 +344,7 @@ FJAu79bRmOH74FtYMyTD
 - 格式转换： https://gpt.learnlicen.dpdns.org/
 - 售后 QQ 群： 1073546817
 
-## 2026-6-7 03 team
+### 03 team
 
 6 个以上的号，可以直接找店家 QQ 号，私聊购买，便宜。
 
@@ -356,9 +360,9 @@ FJAu79bRmOH74FtYMyTD
 - 前缀： 2026-6-7-04-team-1r-ldxp:2G7WG7S7:质保
 - 前缀： 2026-6-7-06-team-1r-ldxp-2G7WG7S7-zb
 
-## 2026-6-7 07 team
+### 07 team
 
-- 前缀： 2026-6-7-07-team-2.3r-ldxp-shayulajiao-wl774l
+- 前缀： 2026-6-7-07-team-0.7r-ldxp-shayulajiao-wl774l
 - 店铺地址： https://pay.ldxp.cn/shop/shayulajiao
 - 商品地址： https://pay.ldxp.cn/item/wl774l
 - 格式转换： https://gpt.learnlicen.dpdns.org/
