@@ -339,3 +339,14 @@ FJAu79bRmOH74FtYMyTD
 - 商品地址： https://pay.ldxp.cn/item/7r5zms
 - 格式转换： https://gpt.learnlicen.dpdns.org/
 - 售后 QQ 群： 1073546817
+
+## 2026-6-7 03 team
+
+6 个以上的号，可以直接找店家 QQ 号，私聊购买，便宜。
+
+- 前缀： 2026-6-7-03-team-1r-ldxp:2G7WG7S7:tzwzk0
+- 店铺地址： https://pay.ldxp.cn/shop/2G7WG7S7
+- 商品地址： https://pay.ldxp.cn/item/tzwzk0
+- 售后 QQ 群： 1104981321
+
+- 自己找到的，格式转换（非店家默认提供）： https://gpt.learnlicen.dpdns.org/
