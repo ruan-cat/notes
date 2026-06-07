@@ -100,6 +100,7 @@
 - 66： https://sp.az0.cn/
 - 84： https://pay.ldxp.cn/item/eu4gvf
 - 80： https://yidachuang.top/
+- 50.6： https://pay.ldxp.cn/item/6xbjn9
 
 ## pro20 代充
 
