@@ -5,70 +5,70 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 本项目的技能表
 
 - `openspec-apply-change`
-  - 路径：`.claude/skills/openspec-apply-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-apply-change/SKILL.md`
   - 用途：从 OpenSpec change 实施任务
   - 触发时机：当用户想要开始实施、继续实施或处理 OpenSpec change 任务时使用
   - 参考作用：实施阶段的参考
   - 约束：只负责实施，不负责规范制定
 
 - `openspec-archive-change`
-  - 路径：`.claude/skills/openspec-archive-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-archive-change/SKILL.md`
   - 用途：归档已完成的 change
   - 触发时机：当用户想要完成并归档 change 时使用
   - 参考作用：归档阶段的参考
   - 约束：只负责归档，不负责实施
 
 - `openspec-bulk-archive-change`
-  - 路径：`.claude/skills/openspec-bulk-archive-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-bulk-archive-change/SKILL.md`
   - 用途：批量归档多个已完成 change
   - 触发时机：当用户想要批量归档多个 change 时使用
   - 参考作用：批量归档的参考
   - 约束：只负责归档，不负责实施
 
 - `openspec-continue-change`
-  - 路径：`.claude/skills/openspec-continue-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-continue-change/SKILL.md`
   - 用途：继续 working on a change，创建下一个 artifact
   - 触发时机：当用户想要继续 change 工作流程时使用
   - 参考作用：继续工作的参考
   - 约束：只负责继续工作，不负责归档
 
 - `openspec-explore`
-  - 路径：`.claude/skills/openspec-explore/SKILL.md`
+  - 路径：`.agent/skills/openspec-explore/SKILL.md`
   - 用途：进入探索模式 - 思考伙伴，调查问题，澄清需求
   - 触发时机：当用户想要思考问题、调查问题或澄清需求时使用
   - 参考作用：探索阶段的参考
   - 约束：只负责探索，不负责实施
 
 - `openspec-ff-change`
-  - 路径：`.claude/skills/openspec-ff-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-ff-change/SKILL.md`
   - 用途：快速创建所有需要的 artifact
   - 触发时机：当用户想要快速创建所有 artifact 时使用
   - 参考作用：快速创建的参考
   - 约束：只负责创建，不负责验证
 
 - `openspec-new-change`
-  - 路径：`.claude/skills/openspec-new-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-new-change/SKILL.md`
   - 用途：创建新的 OpenSpec change
   - 触发时机：当用户想要开始新功能、修复或修改时使用
   - 参考作用：新建 change 的参考
   - 约束：只负责创建，不负责实施
 
 - `openspec-onboard`
-  - 路径：`.claude/skills/openspec-onboard/SKILL.md`
+  - 路径：`.agent/skills/openspec-onboard/SKILL.md`
   - 用途：OpenSpec 入职指导 - 完整的 workflow 演练
   - 触发时机：当用户想要完整了解 OpenSpec workflow 时使用
   - 参考作用：入职培训的参考
   - 约束：只负责培训，不负责实施
 
 - `openspec-sync-specs`
-  - 路径：`.claude/skills/openspec-sync-specs/SKILL.md`
+  - 路径：`.agent/skills/openspec-sync-specs/SKILL.md`
   - 用途：同步 delta specs 到主 specs
   - 触发时机：当用户想要更新主 specs 时使用
   - 参考作用：同步的参考
   - 约束：只负责同步，不负责归档
 
 - `openspec-verify-change`
-  - 路径：`.claude/skills/openspec-verify-change/SKILL.md`
+  - 路径：`.agent/skills/openspec-verify-change/SKILL.md`
   - 用途：验证实现是否匹配 change artifacts
   - 触发时机：当用户想要验证实现是否完整、正确和一致时使用
   - 参考作用：验证的参考
@@ -78,8 +78,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - 路径：`.claude/skills/fix-bug/record-bug-fix-memory/SKILL.md`
   - 用途：当用户要求在 bug 已经定位并修复后，记录排错经验、事故结论、AI 记忆更新、复盘摘要或本地 MCP 记忆时使用
   - 触发时机：当用户要求"记录经验教训""补充 AI 记忆""写事故记录""同步本地 MCP 记忆"时，必须使用
-  - 参考作用：经验沉淀的参考
-  - 约束：这个技能只负责记忆沉淀和经验总结，不承担具体修复职责
+  - 参考作用：经验沉淀的参考。使用前先读 `SKILL.md` 的案例索引，再按需读取同目录独立案例文件
+  - 约束：这个技能只负责记忆沉淀和经验总结，不承担具体修复职责；完整事故正文必须写入独立 `YYYY-MM-DD-{slug}.md` 文件，禁止继续内嵌到 `SKILL.md`
+
+- `write-juejin-posts`
+  - 路径：`.claude/skills/write-juejin-posts/SKILL.md`
+  - 用途：编写掘金风格的技术博客文章
+  - 触发时机：当用户要求撰写掘金文章、博客文章、技术分享文、posts 目录下的文档，或提及"掘金"关键词时使用
+  - 参考作用：规范 posts 文档的 frontmatter、摘要、标题编号、代码块语言、表格对齐和行文风格
+  - 约束：新建文章默认落点为 `docs/ruan-cat-notes/docs/posts/`，Vue 片段必须使用带 `<template>` 的 `vue` 代码块，表格必须居中对齐
 
 ## 1. 主动问询实施细节
 

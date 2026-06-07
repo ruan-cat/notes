@@ -1,0 +1,16 @@
+{
+	"hooks": {
+		"pre_user_prompt": [
+			{
+				"command": "cmd /c memorix hook",
+				"show_output": false
+			}
+		],
+		"post_cascade_response": [
+			{
+				"command": "cmd /c memorix hook",
+				"show_output": false
+			}
+		]
+	}
+}

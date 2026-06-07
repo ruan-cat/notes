@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Memorix File Change Tracker",
   "description": "Track significant file changes for cross-session memory",
   "version": "1",

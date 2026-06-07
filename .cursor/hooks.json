@@ -1,0 +1,25 @@
+{
+	"version": 1,
+	"hooks": {
+		"sessionStart": [
+			{
+				"command": "memorix.cmd hook"
+			}
+		],
+		"beforeSubmitPrompt": [
+			{
+				"command": "memorix.cmd hook"
+			}
+		],
+		"preCompact": [
+			{
+				"command": "memorix.cmd hook"
+			}
+		],
+		"stop": [
+			{
+				"command": "memorix.cmd hook"
+			}
+		]
+	}
+}

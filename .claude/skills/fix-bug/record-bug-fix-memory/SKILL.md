@@ -1,11 +1,13 @@
 ---
 name: record-bug-fix-memory
 description: 当用户要求在 bug 已经定位并修复后，记录排错经验、事故结论、AI 记忆更新、复盘摘要或本地 MCP 记忆时使用。这个技能只负责沉淀"发生了什么、为什么会发生、如何修好、以后要记住什么"，不要把它用于实际修复 bug。
+metadata:
+  template-version: "2.0.0"
 ---
 
 # 记录 Bug 修复记忆
 
-## 概述
+## 1. 概述
 
 使用这个技能，把已经完成的排错结果沉淀成可复用的长期记忆。
 
@@ -13,7 +15,71 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 
 核心原则：记录决策链，不记录流水账。
 
-## 何时使用
+## 2. 存储架构
+
+本技能采用**双层存储架构**：
+
+- **SKILL.md**：只放流程指导 + 案例摘要索引（保持精简，不超过 150 行流程指导）
+- **独立案例文件**：每条详细事故记录写成独立的 `YYYY-MM-DD-{slug}.md` 文件，与 SKILL.md 同目录
+
+**禁止**将完整事故记录正文内嵌到 SKILL.md 中。SKILL.md 中只保留摘要索引。
+
+### 2.1. 目录结构
+
+```plain
+.claude/skills/fix-bug/record-bug-fix-memory/
+├── SKILL.md
+├── 2026-06-07-vitepress-element-plus-style-conflict.md
+└── ...
+```
+
+### 2.2. 案例文件命名规范
+
+- 格式：`YYYY-MM-DD-{slug}.md`
+- slug 使用小写英文 + 短横杠，简明描述事故主题
+- 示例：`2026-06-07-vitepress-element-plus-style-conflict.md`
+
+### 2.3. 案例文件必填结构
+
+```markdown
+# YYYY-MM-DD {事故简述}
+
+## 1. 问题现象
+
+{从用户视角看，哪里坏了}
+
+## 2. 实际根因
+
+{真正出错的地方}
+
+## 3. 关键误导点
+
+{哪个错误假设或误导信号浪费了时间}
+
+## 4. 有效修复
+
+{真正解决问题的改动}
+
+## 5. 验证方式
+
+{证明修复成功的证据}
+
+## 6. 后续约束
+
+{未来 agent 必须先检查什么、避免什么}
+```
+
+### 2.4. 摘要索引格式
+
+```markdown
+### {事故简述}（YYYY-MM-DD）
+
+- 详细案例：`YYYY-MM-DD-{slug}.md`
+- 适用场景：{一句话描述触发条件}
+- 关键约束：{一句话核心教训}
+```
+
+## 3. 何时使用
 
 在以下场景使用这个技能：
 
@@ -28,7 +94,7 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 - 用户要求的是修复实现，而不是经验沉淀。
 - 你手里只有猜测、片段证据或临时绕过方案。
 
-## 前置输入
+## 4. 前置输入
 
 开始写记忆前，必须能回答下面六个问题：
 
@@ -41,87 +107,25 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 
 如果有任何一个问题答不上来，先完成排错，不要提前写记忆。
 
-## 写到哪里
+## 5. 写到哪里
 
-- 仓库级、可复用的规则：写到根级 `CLAUDE.md`、`AGENTS.md`、`GEMINI.md`
-- 跨会话的本地记忆：写到 Memorix，类型用 `gotcha`、`decision` 或 `problem-solution`
-- 包级 prompts、plans、reports：只有用户明确要求时才写进去
+- **详细案例**：写到本技能目录下的独立 md 文件（默认落点）
+- **摘要索引**：同步更新 SKILL.md 的"案例索引"章节
+- **跨会话的本地记忆**：写到 Memorix，类型用 `gotcha`、`decision` 或 `problem-solution`
+- **仓库级规则**：只有当经验会影响整个仓库的未来 agent 时，才同步写入根级 `CLAUDE.md`、`AGENTS.md`、`GEMINI.md`
 
-默认规则：只要这条经验会影响整个仓库里的未来 agent，就优先写入三个根级 AI 记忆文档，不要埋进包级备注里。
+## 6. 记录流程
 
-## 记录什么
+1. 先确认 bug 已经理解清楚并且修复完成。
+2. 把结果压缩成 4 到 6 条高信号事实。
+3. 创建独立案例文件 `YYYY-MM-DD-{slug}.md`，按必填结构写入详细内容。
+4. 在 SKILL.md 的"案例索引"章节追加一条摘要索引。
+5. 如果经验影响整个仓库，同步更新根级 AI 记忆文档。
+6. 用同样的结论更新 Memorix，并选对记忆类型。
+7. 回读一遍文本，删掉瞬时噪音、猜测和低价值命令历史。
+8. 如果用户还要求提交 commit，把提交动作交给单独的 git 工作流处理。
 
-每条记忆至少要覆盖这六件事：
-
-1. 问题现象：从用户视角看，哪里坏了
-2. 根因：真正出错的地方
-3. 关键线索：哪条信号把问题从假象拉回真实根因
-4. 有效修复：真正解决问题的改动
-5. 验证方式：证明修复成功的证据
-6. 后续约束：未来 agent 必须先检查什么、避免什么
-
-## 记忆模板
-
-使用简洁、面向未来复用的结构：
-
-- `问题现象：...`
-- `根因：...`
-- `关键误导点：...`
-- `有效修复：...`
-- `验证方式：...`
-- `后续约束：...`
-
-这些句子应该帮助未来 agent 快速做对事，而不是复述完整排错过程。
-
-## 仓库级经验库
-
-当用户要求"补充 AI 记忆"时，不要只写当次 bug 的表面结论。先检查这次问题是否落在仓库已有事故模式里，再把对应经验合并写入记忆。
-
-> **注意**：随着项目中实际的 bug 修复经验积累，应在此处按照以下格式逐步补充仓库级事故记录：
->
-> ```markdown
-> ### {模块/包名} 的 {事故简述}
->
-> - 问题现象：...
-> - 实际根因：...
-> - 关键线索：...
-> - 关键误导点：...
-> - 有效修复：...
-> - 验证方式：...
-> - 后续约束：...
-> ```
-
-### VitePress 文档站内 Element Plus 组件的样式冲突
-
-- 问题现象：在 VitePress markdown 页面中使用 Element Plus 的 ElTable / ElPagination / ElPopover 组件时，出现表格多出空行、分页栏按钮错位、弹框背景透明/文字变蓝/间距异常、主题色不一致等多种样式污染问题
-- 实际根因：VitePress 的 `.vp-doc` 全局样式会给原生 HTML 元素（`table`/`tr`/`th`/`td`/`ul`/`li`/`button`/`label`/`div`）设置 `display: block`、`margin`、`padding-left`、`border`、`background`、`color` 等属性，这些全局样式与 Element Plus 组件内部渲染的同名原生元素产生冲突
-- 关键线索：浏览器 DevTools 中观察到 `.vp-doc table { display: block; margin: 20px 0 }` 和 `.vp-doc ul { padding-left: 1.25rem; margin: 16px 0 }` 直接作用于 ElTable 内部的 `<table>` 和 ElPagination 的 `<ul class="el-pager">`
-- 关键误导点：最初尝试用 VitePress 的 `vp-raw` class 包裹组件来隔离样式，但 `vp-raw` 在使用 `@ruan-cat/vitepress-preset-config` 自定义主题时并未完全生效，仍需手动 CSS 重置
-- 有效修复：采用分层隔离策略——
-  1. 在 `index.md` 中用 `<ClientOnly>` + `<div class="vp-raw">` 包裹组件
-  2. 在 scoped style 中用 `:deep()` 重置 `table`/`ul`/`li`/`button` 的 VitePress 样式
-  3. 对 ElPopover 使用 `popper-class` 自定义类名 + 非 scoped style 全局选择器（因弹框默认 teleport 到 `<body>`，脱离 scoped 作用域）
-  4. 在组件根元素通过 CSS 变量将 Element Plus 的 `--el-color-primary-*` 映射为 VitePress 的 `--vp-c-brand-*`，统一主题色
-- 验证方式：VitePress dev server 热更新后，在浏览器中切换亮色/暗色主题，确认表格无空行、分页正常、弹框有背景且层级正确、所有组件颜色跟随 VitePress 品牌色
-- 后续约束：
-  1. 在 VitePress markdown 中使用任何 Element Plus 组件时，必须用 `<ClientOnly>` + `<div class="vp-raw">` 包裹，并在组件 scoped style 中添加 `:deep(table) { display: table; margin: 0; border-collapse: separate; }` 重置
-  2. 分页组件额外需要重置 `:deep(.el-pagination) { ul { padding-left: 0; margin: 0; } }`
-  3. ElPopover 等 teleported 弹出层不能用 `:deep()` 选中，必须通过 `popper-class` + 非 scoped style 来定制样式
-  4. 需要在组件根元素上添加 `--el-color-primary: var(--vp-c-brand-1)` 等 CSS 变量映射来同步主题色
-  5. 不要轻易使用 `teleported=false`，会导致层级和定位问题，应优先使用默认 teleport + `popper-class`
-
-## 写入经验时必须保留的额外信息
-
-如果这次 bug 与仓库已有事故模式相似，写记忆时不要遗漏下面这些额外信息：
-
-- 这次问题是否打破了某个"用户已确认稳定"的基线
-- 是否存在"不要乱改"的配置
-- 首个可信信号来自哪里，是终端日志、浏览器 console、网络请求，还是构建输出
-- 这次修复属于哪一类：依赖实例统一、废弃 API 清理、导入路径修正、类型断言补齐、构建配置兜底、依赖入口兼容、模板层覆盖、样式层补齐、还是启动前置准备
-- 这次是否存在误导性很强的假象
-- 最终验证是否基于 fresh 进程、fresh 日志和 fresh 页面，而不是历史缓存
-
-## 验证证据写法
+## 7. 验证证据写法
 
 未来写事故记录时，优先记录可重复验证的证据，而不是模糊措辞。
 
@@ -132,27 +136,16 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 - 不好的写法：`应该没问题了`
 - 不好的写法：`看起来像是好了`
 
-## 不要写成什么
-
-把根级 AI 记忆经验吸收到技能里，不等于把技能写成修复手册。下面这些内容不应该成为这个技能的主体：
+## 8. 不要写成什么
 
 - 大段命令执行流水
 - 与当前仓库无关的泛化 debug 理论
 - 逐条罗列所有试错过程
 - 把某一次临时绕过方案包装成永久规则
 - 用"必须执行这些命令"代替"应该记录哪些结论"
+- 把完整事故记录正文写进 SKILL.md 而不是独立案例文件
 
-## 记录流程
-
-1. 先确认 bug 已经理解清楚并且修复完成。
-2. 把结果压缩成 4 到 6 条高信号事实。
-3. 选对记忆落点。
-4. 如果是仓库级经验，就更新根级 AI 记忆文档。
-5. 用同样的结论更新 Memorix，并选对记忆类型。
-6. 回读一遍文本，删掉瞬时噪音、猜测和低价值命令历史。
-7. 如果用户还要求提交 commit，把提交动作交给单独的 git 工作流处理。
-
-## 好记忆的特征
+## 9. 好记忆的特征
 
 - 解释清楚"为什么会坏"，而不是只写跑了什么命令
 - 明确指出第一条可信线索，说明它如何打破错误假设
@@ -160,7 +153,7 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 - 写出未来 agent 可以重复执行的验证动作
 - 让下一次排错明显更短
 
-## 常见错误
+## 10. 常见错误
 
 - 根因还没确认，就开始写猜测性结论
 - 写成很长的 debug 日记，而不是可复用结论
@@ -168,9 +161,23 @@ description: 当用户要求在 bug 已经定位并修复后，记录排错经�
 - 没把导致绕路的错误假设写出来
 - 把修复说明和记忆沉淀混在一起
 - 忘了同步本地 MCP 记忆
+- 只因为仓库记忆文件声明"有 Memorix"，就跳过当前会话工具可用性核对
 
-## 边界
+## 11. 边界
 
 这个技能只负责记忆沉淀和总结。
 
 它不能替代调试、实现、测试和修复工作流。如果 bug 还没修好，先使用合适的调试或实现技能，等结果稳定后再回到这个技能做经验沉淀。
+
+## 12. 案例索引
+
+### VitePress 文档站内 Element Plus 组件的样式冲突（2026-06-07）
+
+- 详细案例：`2026-06-07-vitepress-element-plus-style-conflict.md`
+- 适用场景：在 VitePress markdown 页面中使用 Element Plus 的 ElTable、ElPagination、ElPopover 等组件时出现样式污染。
+- 关键约束：优先用 `<ClientOnly>` + `vp-raw` + scoped `:deep()` 重置，teleport 弹层用 `popper-class` + 非 scoped style。
+
+## 13. 本仓库落点覆盖
+
+- 本仓库的 bug 经验优先记录在当前技能目录：`.claude/skills/fix-bug/record-bug-fix-memory/*.md`
+- 根级 `CLAUDE.md`、`AGENTS.md`、`GEMINI.md` 只在用户明确要求同步 AI 记忆文档时才更新

@@ -1,13 +1,13 @@
-* text=auto
-
-# Force the following filetypes to have unix eols, so Windows does not break them
-*.* text eol=lf
+# 统一强制使用 LF 行尾，防止 Windows 幽灵 git modified 问题
+* text=auto eol=lf
 
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
+*.webp binary
 *.ico binary
+*.bmp binary
 *.mov binary
 *.mp4 binary
 *.mp3 binary
@@ -15,11 +15,15 @@
 *.fla binary
 *.swf binary
 *.gz binary
+*.tar binary
 *.zip binary
 *.7z binary
 *.ttf binary
 *.eot binary
 *.woff binary
+*.woff2 binary
+*.otf binary
+*.wasm binary
 *.pyc binary
 *.pdf binary
 

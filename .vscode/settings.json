@@ -1,4 +1,5 @@
 {
+	"files.eol": "\n",
 	// 需要使用prettier来便捷的格式化
 	"prettier.enable": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -62,7 +63,19 @@
 		"**/.temp": true,
 		"**/.vercel": true,
 		"**/.turbo": true,
-		"**/cache": true
+		"**/cache": true,
+		"**/.vitepress/cache/**": true,
+		"**/.nuxt/**": true
+	},
+	/** 减少大目录监听，避免文档站和 monorepo 缓存拖慢编辑器 */
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/.turbo/**": true,
+		"**/node_modules/*/**": true,
+		"**/dist/**": true,
+		"**/.vitepress/cache/**": true,
+		"**/.changeset/**": true
 	},
 	// 配置多根项目的目录地址 默认为项目根目录
 	"terminal.integrated.cwd": "${workspaceFolder}",
@@ -73,5 +86,7 @@
 	/** 折叠 AI大模型记忆文件 */
 	"explorer.fileNesting.patterns": {
 		"CLAUDE.md": "GEMINI.md,AGENTS.md"
-	}
+	},
+	"iconify.annotations": true,
+	"iconify.inplace": true
 }

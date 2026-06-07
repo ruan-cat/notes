@@ -1,0 +1,44 @@
+{
+	"version": 1,
+	"hooks": {
+		"SessionStart": [
+			{
+				"matcher": "*",
+				"hooks": [
+					{
+						"name": "memorix-session-start",
+						"type": "command",
+						"command": "memorix.cmd hook",
+						"description": "Load memorix context at session start"
+					}
+				]
+			}
+		],
+		"AfterAgent": [
+			{
+				"matcher": "*",
+				"hooks": [
+					{
+						"name": "memorix-after-agent",
+						"type": "command",
+						"command": "memorix.cmd hook",
+						"description": "Record agent response in memorix"
+					}
+				]
+			}
+		],
+		"PreCompress": [
+			{
+				"matcher": "*",
+				"hooks": [
+					{
+						"name": "memorix-pre-compress",
+						"type": "command",
+						"command": "memorix.cmd hook",
+						"description": "Save context before compression"
+					}
+				]
+			}
+		]
+	}
+}
