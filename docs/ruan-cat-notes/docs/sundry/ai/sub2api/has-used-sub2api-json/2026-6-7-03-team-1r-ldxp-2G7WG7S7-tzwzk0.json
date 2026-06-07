@@ -3,7 +3,8 @@
 	"proxies": [],
 	"accounts": [
 		{
-			"name": "ctfvdrj3x6qm5@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvdrj3x6qm5",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -33,7 +34,8 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "ctfvee6zr3lc2@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvee6zr3lc2",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -63,7 +65,8 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "ctfvenf30i6yb@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvenf30i6yb",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -93,7 +96,8 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "ctfvfkgnd7gjz@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvfkgnd7gjz",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -123,7 +127,8 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "ctfvfxirgwj96@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvfxirgwj96",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
@@ -153,7 +158,8 @@
 			"auto_pause_on_expired": true
 		},
 		{
-			"name": "ctfvh8l33xpwp@gptteam.ikun.edu.rs",
+			"name": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json|ctfvh8l33xpwp",
+			"notes": "2026-6-7-03-team-1r-ldxp-2G7WG7S7-tzwzk0.json",
 			"platform": "openai",
 			"type": "oauth",
 			"credentials": {
