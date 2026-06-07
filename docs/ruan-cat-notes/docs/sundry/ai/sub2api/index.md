@@ -331,3 +331,11 @@ q7uiLbzBGQiuVDfpMERU
 V6pUmHW059zmfE3E97g2
 FJAu79bRmOH74FtYMyTD
 ```
+
+## 2026-6-7 02 team
+
+- 前缀： 2026-6-7-02-team-2.3r-ldxp:3V6XRTOJ:7r5zms
+- 店铺地址： https://pay.ldxp.cn/shop/3V6XRTOJ
+- 商品地址： https://pay.ldxp.cn/item/7r5zms
+- 格式转换： https://gpt.learnlicen.dpdns.org/
+- 售后 QQ 群： 1073546817
