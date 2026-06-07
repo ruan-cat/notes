@@ -1,4 +1,4 @@
-<!-- TODO: 未完成 -->
+<!-- 已完成 https://github.com/vercel-labs/skills/pull/1390 -->
 
 # 向 https://github.com/vercel-labs/skills 仓库 pr
 
