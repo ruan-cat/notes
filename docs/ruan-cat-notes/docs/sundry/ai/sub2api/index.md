@@ -367,3 +367,13 @@ FJAu79bRmOH74FtYMyTD
 - 商品地址： https://pay.ldxp.cn/item/wl774l
 - 格式转换： https://gpt.learnlicen.dpdns.org/
 - 售后 QQ 群： 1098199335
+
+## 2026-6-8
+
+### 02 team
+
+- 前缀： 2026-6-8-02-team-0.5r-ldxp-shayulajiao-wl774l
+- 店铺地址： https://pay.ldxp.cn/shop/shayulajiao
+- 商品地址： https://pay.ldxp.cn/item/wl774l
+- 格式转换： https://gpt.learnlicen.dpdns.org/
+- 售后 QQ 群： 1098199335
