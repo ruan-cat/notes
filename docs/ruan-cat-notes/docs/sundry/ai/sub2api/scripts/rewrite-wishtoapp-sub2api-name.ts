@@ -3,8 +3,8 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
-const TARGET_FILE_NAME = "2026-6-8-03-team-公开-QQ群1098199335.json";
-const ACCOUNT_BATCH_PREFIX = "2026-6-8-03-team-公开199个-QQ群1098199335";
+const TARGET_FILE_NAME = "2026-6-8-04team公开1600-QQ615737875.json";
+const ACCOUNT_BATCH_PREFIX = "2026-6-8-04team公开1600-QQ615737875";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
