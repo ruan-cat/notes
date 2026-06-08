@@ -118,3 +118,4 @@
 - 1000： https://makerich.club/item?id=133
 - 1200： https://pay.ldxp.cn/item/clizy8
 - 600： https://sp.az0.cn/
+- 880： https://kapay.shop/products/GPT20X
