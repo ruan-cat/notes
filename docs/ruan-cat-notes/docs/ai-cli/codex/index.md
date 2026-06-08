@@ -94,6 +94,10 @@
 - https://payurl.ark2.cn/
 - https://pay.chatai.codes/
 
+## 自动领取 bug team
+
+- 自动领取 bug team： https://api.chixiaotao.cn/bugteam/
+
 ## 特殊渠道 plus
 
 - 68： https://pay.ldxp.cn/item/3joig2
