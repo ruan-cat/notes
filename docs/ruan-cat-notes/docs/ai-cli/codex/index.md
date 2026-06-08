@@ -119,3 +119,4 @@
 - 1200： https://pay.ldxp.cn/item/clizy8
 - 600： https://sp.az0.cn/
 - 880： https://kapay.shop/products/GPT20X
+- 1300： https://pineappleking.duckdns.org/
