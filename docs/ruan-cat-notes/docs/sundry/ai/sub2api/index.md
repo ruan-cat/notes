@@ -383,3 +383,13 @@ FJAu79bRmOH74FtYMyTD
 - 03： `2026-6-8-03-team-公开-QQ群1098199335`
 - 04： `2026-6-8-04team公开1600-QQ615737875`
 - 05： `2026-6-8-05team公开554-QQ61073546817`
+
+## 2026-6-10
+
+### 01 plus
+
+- 前缀： 2026-6-10-01-plus-4.03r-ldxp-SB9T68JP-toc8z3
+- 店铺地址： https://pay.ldxp.cn/shop/SB9T68JP
+- 商品地址： https://pay.ldxp.cn/item/toc8z3
+- 格式转换： https://gpt.learnlicen.dpdns.org/
+- 售后 QQ 群： 707552240
