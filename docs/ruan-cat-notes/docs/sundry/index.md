@@ -197,6 +197,11 @@ pnpm why vue-router
 
 - https://pawelkubiak.dev/blog/webmcp-teaching-ai-agents-to-interact-with-your-web-app
 
+## 制作 AI 视频的 skills
+
+- remotion
+- hyperframe
+
 ## 开通虚拟卡
 
 ### bitget 供应商
