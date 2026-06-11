@@ -124,3 +124,4 @@
 - 600： https://sp.az0.cn/
 - 880： https://kapay.shop/products/GPT20X
 - 1300： https://pineappleking.duckdns.org/
+- 690： https://pay.ldxp.cn/item/ifyj6j
