@@ -1,5 +1,11 @@
 # AI 模型，kimi
 
+## 文档
+
+- kimi code 文档： https://www.kimi.com/code/docs/
+- 会员权益： https://www.kimi.com/membership/pricing
+- 控制台： https://www.kimi.com/code/console
+
 ## 在 roo code 内配置 kimi
 
 - https://platform.moonshot.cn/docs/guide/agent-support#获取-api-key
