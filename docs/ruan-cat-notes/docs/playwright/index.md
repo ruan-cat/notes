@@ -21,7 +21,7 @@
 ### <!-- TODO: --> playwright-cli 和 playwright MCP 的使用情况、使用边界、以及最小限度初始化的方式？
 
 1. 我该怎么让 AI 正确的去使用 playwright-cli 和 playwright MCP ？如何让 AI 学会恰当的使用这两个工具，并减少 token 消耗？
-2. playwright-cli Skill 只能去说明最基础的 playwright-cli 的操作行为么？对于 playwright MCP ，有配套的使用说明么？还是说已经包含了。请你去对应的 github 仓库认真检索查询，并给我贴切的答案。
+2. 我在本地项目安装`@playwright/mcp`依赖之后，执行 `pnpm exec playwright-cli install --skills` 命令后所产生的文件，playwright-cli Skill 只能去说明最基础的 playwright-cli 的操作行为么？对于 playwright MCP ，有配套的使用说明么？还是说已经包含了。请你去对应的 github 仓库认真检索查询，并给我贴切的答案。
 
 ### <!-- TODO: --> 如何让 AI 在开发过程中设计可固化的，可持续自主验证的 Playwright + vitest 自动化测试套件？
 
@@ -77,10 +77,9 @@ project/
 ## 本地搭建完整 Playwright 工具链
 
 ```bash
-pnpm add -D @playwright/test @playwright/cli
+pnpm add -D @playwright/test @playwright/cli @playwright/mcp
 pnpm exec playwright install chromium
 pnpm exec playwright-cli install --skills
-pnpm add -D @playwright/mcp
 pnpm exec playwright-mcp --help
 ```
 
@@ -197,49 +196,6 @@ export default defineConfig({
 		"mode": "full"
 	}
 }
-```
-
-## 派生 MCP 的设计
-
-低 Token playwright：
-
-### claude code
-
-```json
-{
-	"mcpServers": {
-		"playwright-visual": {
-			"command": "npx",
-			"args": [
-				"-y",
-				"@playwright/mcp@latest",
-				"--browser=chrome",
-				"--isolated",
-				"--viewport-size=1440x900",
-				"--caps=testing",
-				"--console-level=error",
-				"--output-dir=artifacts/playwright-mcp"
-			]
-		}
-	}
-}
-```
-
-### codex
-
-```toml
-[mcp_servers.playwright_visual]
-command = "npx"
-args = [
-  "-y",
-  "@playwright/mcp@latest",
-  "--browser=chrome",
-  "--isolated",
-  "--viewport-size=1440x900",
-  "--caps=testing",
-  "--console-level=error",
-  "--output-dir=artifacts/playwright-mcp"
-]
 ```
 
 ## AI 做视觉检查时的检查维度清单表
