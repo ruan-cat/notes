@@ -80,3 +80,221 @@ pnpm add -D @playwright/test @playwright/cli
 pnpm exec playwright install chromium
 pnpm exec playwright-cli install --skills
 ```
+
+## playwright.config.ts 的配置参考
+
+配置 playwright 配置文件时需要考虑的范畴：
+
+- 固定 Viewport
+- DPR
+- 语言
+- 主题
+- 时区
+
+```ts
+import { defineConfig, devices } from "@playwright/test";
+export default defineConfig({
+	testDir: "./tests",
+
+	snapshotPathTemplate: "{testDir}/__screenshots__/{projectName}/{testFilePath}/{arg}{ext}",
+
+	use: {
+		baseURL: "http://127.0.0.1:5173",
+
+		viewport: {
+			width: 1440,
+			height: 900,
+		},
+
+		deviceScaleFactor: 1,
+		colorScheme: "light",
+		locale: "zh-CN",
+		timezoneId: "UTC",
+		reducedMotion: "reduce",
+
+		trace: "retain-on-failure",
+		screenshot: "only-on-failure",
+		video: "retain-on-failure",
+	},
+
+	expect: {
+		toHaveScreenshot: {
+			animations: "disabled",
+			caret: "hide",
+			scale: "css",
+
+			// 初期建议稍宽松，稳定以后逐步收紧。
+			maxDiffPixelRatio: 0.001,
+
+			stylePath: "./tests/visual/visual-stability.css",
+		},
+	},
+
+	projects: [
+		{
+			name: "chromium-desktop",
+			use: {
+				...devices["Desktop Chrome"],
+				viewport: {
+					width: 1440,
+					height: 900,
+				},
+				deviceScaleFactor: 1,
+			},
+		},
+
+		{
+			name: "chromium-mobile",
+			use: {
+				viewport: {
+					width: 390,
+					height: 844,
+				},
+				deviceScaleFactor: 1,
+				isMobile: true,
+				hasTouch: true,
+			},
+		},
+	],
+
+	webServer: {
+		command: "pnpm dev --host 127.0.0.1",
+		url: "http://127.0.0.1:5173",
+		reuseExistingServer: !process.env.CI,
+	},
+});
+```
+
+## .playwright/cli.config.json 的设计参考
+
+```json
+{
+	"browser": {
+		"browserName": "chromium",
+		"isolated": true,
+		"launchOptions": {
+			"channel": "chrome",
+			"headless": false
+		},
+		"contextOptions": {
+			"viewport": {
+				"width": 1440,
+				"height": 900
+			},
+			"locale": "zh-CN",
+			"serviceWorkers": "block"
+		}
+	},
+	"outputDir": "./artifacts/playwright-cli",
+	"outputMode": "file",
+	"console": {
+		"level": "error"
+	},
+	"snapshot": {
+		"mode": "full"
+	}
+}
+```
+
+## 派生 MCP 的设计
+
+低 Token playwright：
+
+### claude code
+
+```json
+{
+	"mcpServers": {
+		"playwright-visual": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@playwright/mcp@latest",
+				"--browser=chrome",
+				"--isolated",
+				"--viewport-size=1440x900",
+				"--caps=testing",
+				"--console-level=error",
+				"--output-dir=artifacts/playwright-mcp"
+			]
+		}
+	}
+}
+```
+
+### codex
+
+```toml
+[mcp_servers.playwright_visual]
+command = "npx"
+args = [
+  "-y",
+  "@playwright/mcp@latest",
+  "--browser=chrome",
+  "--isolated",
+  "--viewport-size=1440x900",
+  "--caps=testing",
+  "--console-level=error",
+  "--output-dir=artifacts/playwright-mcp"
+]
+```
+
+## AI 做视觉检查时的检查维度清单表
+
+1. 页面整体布局和视觉层级
+2. X/Y 对齐、宽高和比例
+3. Padding、Margin、Gap
+4. 字体、字号、字重、行高
+5. 颜色、渐变、边框、阴影
+6. 圆角、图标和图片裁切
+7. 文本换行和截断
+8. 可滚动区域和固定定位
+9. Hover、Focus、Disabled、Loading 状态
+
+输出差异表，每项包含：
+
+- 严重程度
+- 元素名称
+- 设计预期
+- 当前结果
+- 可能对应的 Vue/CSS 文件
+- 下一步需要测量的属性
+
+## AI 做 UI 视觉修改与联调时被允许更改的代码范围
+
+- 设计 Token
+- CSS Variables
+- 共享组件
+- 布局容器
+- Element Plus Theme Variables
+- UnoCSS / Tailwind 配置
+
+而不是给每个页面临时堆叠像素值。
+
+## 完成视觉对齐和一次联调后固化测试
+
+及时编写 @playwright/test 测试套件来完成自动化的测试。避免未来继续跑偏。
+
+编写 playwright 自动化测试时需要注意范围：
+
+- 像素视觉
+- 组件局部视觉
+- 准确 CSS 属性
+- 几何布局
+- 稳定测试数据
+- 字体加载完成
+
+## 需要被验证的前端交互行为
+
+- Default
+- Hover
+- Focus
+- Active
+- Disabled
+- Loading
+- Empty
+- Error
+- Dialog Open
+- Dropdown Open
+- Tooltip Visible
+- Mobile Menu Open
