@@ -552,3 +552,17 @@ juejin: TODO 编写完内容就可以直接发文
 - https://vc.ruan-cat.com/selective-deploy.md
 
 整个过程以 pr 来实现。
+
+## 029 AI 协作开发推荐的 UI 视觉能力调整的工具
+
+我在使用 claude code/codex 等 AI agent 开发工具，完成 vue+typescript+vite 的前端/全栈开发，在做前端开发的时候，我经常遇到 UI 设计不合适，设计原型不美观，联调纠偏 UI 设计不精准的情况。请问有那些 skills 和 MCP，或者是什么 AI 工具来解决我的三个痛点问题呢？
+
+1. 默认给的 UI 设计不美观。
+2. 设计的产品原型不美观。
+3. 纠偏联调 UI 设计时沟通困难，指向性不明确，AI 无法精准实现样式修改。
+
+请问 https://github.com/nexu-io/open-design 这个项目能解决我的痛点问题么？
+
+---
+
+## 030 如何确保
