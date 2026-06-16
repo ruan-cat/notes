@@ -6,6 +6,7 @@
 - playwright-cli Skill
 - @playwright/test
 - @playwright/cli
+- @playwright/mcp
 
 ## 一系列问题
 
@@ -79,6 +80,8 @@ project/
 pnpm add -D @playwright/test @playwright/cli
 pnpm exec playwright install chromium
 pnpm exec playwright-cli install --skills
+pnpm add -D @playwright/mcp
+pnpm exec playwright-mcp --help
 ```
 
 ## playwright.config.ts 的配置参考

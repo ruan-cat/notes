@@ -280,3 +280,8 @@ disabled_tools = ["browser_run_code_unsafe"]
 	}
 }
 ```
+
+## 何时使用这两款本地 MCP？
+
+- 验证业务流程和基本功能时，使用 `pw_core`
+- 做视觉检查和差异化检查时用 `pw_visual`
