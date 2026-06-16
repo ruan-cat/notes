@@ -573,4 +573,21 @@ juejin: TODO 编写完内容就可以直接发文
 2. 我应该怎么让 design.md 在设计到 UI 设计的时候被严格遵循使用？在通用的 CLAUDE.md/AGENTS.md AI 记忆文档内，怎么做索引说明？
 3. 提取，建立，维护视觉规范的常见 skills 有那些？我在项目该怎么使用他们？
 
-## 031 <!-- TODO: -->
+## 031 <!-- TODO: --> 如何建立一个合适的本地视觉验证的工件目录？
+
+如何建立一个合适的本地视觉验证的工件目录？比如这样的一个本地 design 的设计目录：
+
+```txt
+design/
+├─ references/
+│  ├─ dashboard-desktop-1440x900.png
+│  ├─ dashboard-mobile-390x844.png
+│  ├─ login-desktop-1440x900.png
+│  └─ login-mobile-390x844.png
+├─ specs/
+│  ├─ dashboard.json
+│  └─ login.json
+└─ README.md
+```
+
+我怎么让生成 UI 和原型设计的 AI 工具，去生成合适的 UI 设计产物，并且去搭配 playwright-cli 和 Playwright MCP 完成本地 vite+vue 前端项目的开发时视觉联调和 UI 修改？为 AI agent 建立合适的自主联调工作流？
