@@ -83,6 +83,23 @@ pnpm exec playwright-cli install --skills
 pnpm exec playwright-mcp --help
 ```
 
+## 使用 playwright cli 和 使用 playwright MCP 的使用场景与使用边界
+
+|              任务               |      优先工具      |               原因               |
+| :-----------------------------: | :----------------: | :------------------------------: |
+| 修改 Vue 组件后快速打开页面验证 |        CLI         | 命令短、输出按文件保存、Token 少 |
+|    点击、输入、检查表单结果     |        CLI         |  流程确定，不需要 MCP 工具推理   |
+|       检查 Console Error        |        CLI         |         一个命令即可完成         |
+|        检查少量目标 API         |        CLI         |      先列出，再读取指定请求      |
+|     获取截图、局部组件截图      |        CLI         |       无需 MCP 工具 Schema       |
+| 从交互过程生成 Playwright 代码  |        CLI         |   CLI 可以输出对应 TypeScript    |
+| 调试正在运行的 Playwright Test  |        CLI         |   支持 `--debug=cli` 和 attach   |
+|  第一次探索完全陌生的复杂网站   |        MCP         |       结构化工具循环更自然       |
+|  多页面、长时间自主浏览器任务   |        MCP         |    更适合连续 Tool Call 推理     |
+|   自愈测试、探索页面结构变化    |        MCP         |       适合反复读取页面状态       |
+|  Agent 没有 Shell，但支持 MCP   |        MCP         |           CLI 无法使用           |
+|        正式回归测试和 CI        | `@playwright/test` |    CLI/MCP 都不应替代测试资产    |
+
 ## playwright.config.ts 的配置参考
 
 配置 playwright 配置文件时需要考虑的范畴：
