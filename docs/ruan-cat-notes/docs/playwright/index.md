@@ -18,7 +18,7 @@
 1. 你设计了多款本地项目级别的 MCP，请问我在一个常见的 node、vite、vue 项目内，我怎么才能新建合适的本地项目级别的 MCP 文件，才能确保 claude code/codex/cursor 之类的 agent 开发工具，能够识别这些本地级别的 MCP 配置？
 2. 我该怎么设计合适的多款派生出来的 Playwright MCP ，并在通用的 CLAUDE.md/AGENTS.md AI 记忆文档内，设计简短清晰的派生 Playwright MCP 使用规范和使用边界？
 
-### <!-- TODO: --> playwright-cli 和 playwright MCP 的使用情况、使用边界、以及最小限度初始化的方式？
+### <!-- 已经询问，本质内容和 ./init-playwright-mcp.md 相差无几 --> playwright-cli 和 playwright MCP 的使用情况、使用边界、以及最小限度初始化的方式？
 
 1. 我该怎么让 AI 正确的去使用 playwright-cli 和 playwright MCP ？如何让 AI 学会恰当的使用这两个工具，并减少 token 消耗？
 2. 我在本地项目安装`@playwright/mcp`依赖之后，执行 `pnpm exec playwright-cli install --skills` 命令后所产生的文件，playwright-cli Skill 只能去说明最基础的 playwright-cli 的操作行为么？对于 playwright MCP ，有配套的使用说明么？还是说已经包含了。请你去对应的 github 仓库认真检索查询，并给我贴切的答案。
