@@ -23,7 +23,7 @@
 1. 我该怎么让 AI 正确的去使用 playwright-cli 和 playwright MCP ？如何让 AI 学会恰当的使用这两个工具，并减少 token 消耗？
 2. 我在本地项目安装`@playwright/mcp`依赖之后，执行 `pnpm exec playwright-cli install --skills` 命令后所产生的文件，playwright-cli Skill 只能去说明最基础的 playwright-cli 的操作行为么？对于 playwright MCP ，有配套的使用说明么？还是说已经包含了。请你去对应的 github 仓库认真检索查询，并给我贴切的答案。
 
-### <!-- TODO: --> 如何让 AI 在开发过程中设计可固化的，可持续自主验证的 Playwright + vitest 自动化测试套件？
+### <!-- 预期在 work-with-playwright+vitest.md 完成整理。只能简单说明清楚playwright和vitest职责差异。 --> 如何让 AI 在开发过程中设计可固化的，可持续自主验证的 Playwright + vitest 自动化测试套件？
 
 我现在清楚了这三个工具的职责：
 
