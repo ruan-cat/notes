@@ -51,11 +51,3 @@ Playwright 验证范畴：
 ```
 
 不需要在 Playwright 中穷举 20 种邮箱格式，也不需要在 Vitest 中模拟完整页面导航。
-
-## 最小化依赖
-
-<!-- 有疑惑 为什么这里要涉及那么多依赖？跟我详细说明一下，这些依赖所负责的职责，以及在vue+vite项目内的作用。 -->
-
-```bash
-pnpm add -D vitest @vitest/coverage-v8 jsdom @vue/test-utils @testing-library/vue @testing-library/jest-dom msw @playwright/test
-```
