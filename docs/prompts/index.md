@@ -599,3 +599,5 @@ design/
 ```
 
 我怎么让生成 UI 和原型设计的 AI 工具，去生成合适的 UI 设计产物，并且去搭配 playwright-cli 和 Playwright MCP 完成本地 vite+vue 前端项目的开发时视觉联调和 UI 修改？为 AI agent 建立合适的自主联调工作流？
+
+## 032 <!-- TODO: --> 如何在生成项目原型与 UI 设计时，确保生成的格式是 AI 可读的验收格式？怎么设置这样的 AI agent 可阅读的高效迭代格式？
