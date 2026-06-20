@@ -51,3 +51,26 @@ Playwright 验证范畴：
 ```
 
 不需要在 Playwright 中穷举 20 种邮箱格式，也不需要在 Vitest 中模拟完整页面导航。
+
+## 其他要求
+
+### 单元测试文件尾缀区分规则
+
+我们现在同时使用 vitest 和 playwright，要求按照以下方式来分别区分 vitest 和 playwright 专用的测试用例。
+
+- `xxx*.test.ts` 偏单元测试、组件测试、函数测试
+- `xxx*.e2e.spec.ts` 偏功能规格、集成测试、E2E、验收测试
+- `xxx.visual.spec.ts` 视觉测试
+
+### 框定专门的处理范围，避免两个工具重复处理
+
+- playwright.config.ts 内设置： `testMatch: '**/*.spec.ts',`
+- vitest 内设置：
+
+```json
+{
+	"test": {
+		"include": ["src/**/*.test.ts"]
+	}
+}
+```
