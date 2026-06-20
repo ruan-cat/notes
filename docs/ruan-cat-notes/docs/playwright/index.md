@@ -42,7 +42,7 @@
 
 我该如何在开发过程中，让 AI 去设计，固化基于 Playwright + vitest 的测试套件，实现固定规格的自动验收？
 
-### <!-- TODO: --> playwright 在 vite 项目目录结构与特定文件作用，和具体配置？
+### <!-- 已完成询问 有效的内容仅提供给 ./directory-structure.md 文档内 --> playwright 在 vite 项目目录结构与特定文件作用，和具体配置？
 
 我现在清楚了，在通用的 Vite + Vue + TypeScript 项目内，搭配 playwright 的项目工件目录大体如下
 
