@@ -1,5 +1,7 @@
 # Open Design,UI 设计能力的本地 agent 应用
 
+- 仓库： https://github.com/nexu-io/open-design
+
 ## DESIGN.md 在项目内的作用
 
 - 制订并约束项目的长期视觉规范
