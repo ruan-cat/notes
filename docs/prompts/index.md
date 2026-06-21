@@ -604,7 +604,7 @@ design/
 
 ## 032 <!-- TODO: --> 如何在生成项目原型与 UI 设计时，确保生成的格式是 AI 可读的验收格式？怎么设置这样的 AI agent 可阅读的高效迭代格式？
 
-## 033 <!-- TODO: --> 删除本机关于 `lark-*` 系列的技能，我不需要飞书系列的全局技能
+## 033 <!-- 已完成 --> 删除本机关于 `lark-*` 系列的技能，我不需要飞书系列的全局技能
 
 1. 用 `skills list -g -a claude-code -a codex -a cursor -a antigravity -a trae -a qoder` 获取到本机全局的 skills，删除掉飞书系列的 skills，我后续不太有机会再继续使用飞书文档的能力了，故不需要这些全局 skills 占用具体本地 agent 工具的上下文窗口。
 2. 然后用 memorix 记录清楚，以后我不怎么用飞书的技能了。
