@@ -49,9 +49,15 @@ codex mcp add figma --url https://mcp.figma.com/mcp
 skills add figma/mcp-server-guide -g -s "*" -y
 ```
 
-## 04 <!-- TODO: --> @figma/code-connect CLI
+## 04 <!-- 已询问 --> @figma/code-connect CLI
 
-你说的 @figma/code-connect CLI 这个 node 包，是什么？是做什么的？和我介绍一下，跟我说明清楚这个包在我开发流程中的作用。
+你说的 `@figma/code-connect` CLI 这个 node 包，是什么？是做什么的？和我介绍一下，跟我说明清楚这个包在我开发流程中的作用。
+
+---
+
+在 vue 项目内，为组件生成附属配套的 `xxx.figma.ts` 模板文件，实现 vue 组件和 figma 模板的关联。
+
+`@figma/code-connect` 适合有设计系统、有工程组件、需要长期维护的项目。对于我快速出成果的项目来说，这个方案过于重了。不打算在项目内接入 `xxx.figma.ts` + `@figma/code-connect` 的方案。
 
 ## 05 <!-- TODO: --> figma MCP 对于免费用户的限制情况？
 
