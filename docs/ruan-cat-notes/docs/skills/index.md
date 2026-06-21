@@ -110,8 +110,13 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 ### 前端设计常用的技能
 
 ```bash
+# 只安装 frontend-design 这一个技能
 skills add anthropics/skills -g -y -s frontend-design
+
+# 只安装 web-design-guidelines 这一个技能
 skills add vercel-labs/agent-skills -g -y -s web-design-guidelines
+
+# 安装 `carmahhawwari/ui-design-brain` 仓库内全部的技能
 skills add carmahhawwari/ui-design-brain -g -y
 ```
 
@@ -124,3 +129,15 @@ skills add nextlevelbuilder/ui-ux-pro-max-skill -y
 ```
 
 - 仓库： https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+### caveman
+
+JuliusBrussee/caveman ，用来节省 token 的一个 skills 技能。目前我只安装 `/caveman` 这一个技能，其他的技能不予安装。
+
+- 仓库：
+
+全局安装：
+
+```bash
+skills add JuliusBrussee/caveman -g -y -s caveman
+```
