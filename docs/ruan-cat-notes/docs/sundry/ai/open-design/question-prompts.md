@@ -59,8 +59,12 @@ skills add figma/mcp-server-guide -g -s "*" -y
 
 `@figma/code-connect` 适合有设计系统、有工程组件、需要长期维护的项目。对于我快速出成果的项目来说，这个方案过于重了。不打算在项目内接入 `xxx.figma.ts` + `@figma/code-connect` 的方案。
 
-## 05 <!-- TODO: --> figma MCP 对于免费用户的限制情况？
+## 05 <!-- 已询问 --> figma MCP 对于免费用户的限制情况？
 
 阅读 https://github.com/figma/mcp-server-guide/ 的 README 时，我看到免费用户的限额条款。
 
 我目前是 figma 的免费用户，我很担心我在使用 figma MCP 创建远程 figma 项目时，受到速率和使用次数的影响。请你去看看 figma 官方的 blog 和 docs 文档，用联网查询的手段找到免费用户使用 figma 的限制条款。我需要清楚我的使用情况，了解清楚明确的使用边界。
+
+---
+
+就是 6 次 MCP 工具调用。非常稀少。直接放弃 figma MCP 的使用。
