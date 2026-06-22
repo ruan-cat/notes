@@ -642,7 +642,11 @@ design/
 全部通过才结束
 ```
 
-## 033 <!-- TODO: 后续在独立的对话内完成询问 --> 大写的 DESIGN.md 文件命名，现在已经成为了那些 AI 工具或 skills 的共有识别规范？claude code/codex/cursor 和 Open Design 目前都默认能识别大写的 DESIGN.md 文件命名么？换成小写的 design.md 可以么？
+## 033 <!-- 已询问 --> 大写的 DESIGN.md 文件命名，现在已经成为了那些 AI 工具或 skills 的共有识别规范？claude code/codex/cursor 和 Open Design 目前都默认能识别大写的 DESIGN.md 文件命名么？换成小写的 design.md 可以么？
+
+---
+
+已确认，就是要写成固定的大写文件命名风格。
 
 ## 034 <!-- TODO: 后续在独立的对话内完成询问 --> 设计 Token 推荐使用 DTCG 格式，DTCG 格式是什么？在设计 token 领域内是什么？我该怎么在 vite+typescript 的前端/全栈项目内使用呢？
 
