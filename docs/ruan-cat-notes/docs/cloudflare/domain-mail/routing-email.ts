@@ -3,6 +3,7 @@ export interface platform {
 	kiro: string;
 	github: string;
 	openai: string;
+	qoder: string;
 }
 
 export interface EmailItem {
@@ -27,6 +28,7 @@ export const routingEmails: RutingEmail[] = [
 		openai: "已封号",
 		// Your payment method is not eligible for a free trial. You can still upgrade to a paid plan and continue using Cursor.
 		cursor: "无法验证支付信息。已删除账号。",
+		qoder: "国际版已注册，没有免费plus可以领取",
 	},
 	{
 		order: 3,
