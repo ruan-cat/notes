@@ -30,7 +30,7 @@ jobs:
       - name: 安装node
         uses: actions/setup-node@v6
         with:
-          node-version: 22.14.0
+          node-version: 24.18.0
           cache: pnpm
 
       - name: 检查版本
