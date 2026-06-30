@@ -177,6 +177,12 @@ metadata:
 - 适用场景：在 VitePress markdown 页面中使用 Element Plus 的 ElTable、ElPagination、ElPopover 等组件时出现样式污染。
 - 关键约束：优先用 `<ClientOnly>` + `vp-raw` + scoped `:deep()` 重置，teleport 弹层用 `popper-class` + 非 scoped style。
 
+### WorkBuddy 内 memorix MCP 启动失败（2026-06-30）
+
+- 详细案例：`docs/ruan-cat-notes/docs/memorix/2026-06-30-workbuddy-memorix-mcp-failure-report.md`
+- 适用场景：在 WorkBuddy 中配置 stdio MCP（如 memorix）后，出现 `MCP error -32000: Connection closed` 且子进程因 Node ABI 不匹配或 `NODE_OPTIONS` 不兼容而崩溃。
+- 关键约束：在 `~/.workbuddy/mcp.json` 中显式指定兼容的 `node.exe` 绝对路径，清空不兼容的全局 `NODE_OPTIONS`；修改配置后若主线程未重新加载，可临时添加不影响 server hash 的字段触发 `refreshAndSync`。
+
 ## 13. 本仓库落点覆盖
 
 - 本仓库的 bug 经验优先记录在当前技能目录：`.claude/skills/fix-bug/record-bug-fix-memory/*.md`
