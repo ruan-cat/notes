@@ -27,3 +27,15 @@ memorix hooks install --agent antigravity
 # 这个客户端是错误的
 memorix hooks install --agent claude-code
 ```
+
+## 安装一揽子的 memorix 工具包
+
+- 文档 https://github.com/AVIDS2/memorix/blob/main/docs/INTEGRATIONS.md
+
+具体命令类似于：
+
+```bash
+memorix setup --agent claude --global
+memorix setup --agent codex --global
+memorix setup --agent cursor --global
+```
