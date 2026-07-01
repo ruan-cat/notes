@@ -654,3 +654,52 @@ design/
 
 1. 用 `skills list -g -a claude-code -a codex -a cursor -a antigravity -a trae -a qoder` 获取到本机全局的 skills，删除掉飞书系列的 skills，我后续不太有机会再继续使用飞书文档的能力了，故不需要这些全局 skills 占用具体本地 agent 工具的上下文窗口。
 2. 然后用 memorix 记录清楚，以后我不怎么用飞书的技能了。
+
+## 036 <!-- TODO: --> 重新设置本机全部 agent 工具的全局 memorix MCP 配置
+
+在 `C:\Users\pc\.memorix` 内，新建一个专门的文件，叫做 `memorix-serve.cmd` ，内部注释用中文说明清楚，说明这个是用来给本机全部能使用 memorix MCP 的 AI agent 客户端的启动脚本。
+
+1. 首先你去 codex 和 WorkBuddy 内，看清楚 `memorix-serve.cmd` 启动脚本的核心代码
+2. 新建这个核心代码。
+3. 在 claude code/codex/cursor WorkBuddy QoderWork 或者是本机其他已经配置 memorix 的配置文件内，使用 来自 `C:\Users\pc\.memorix` 的 `memorix-serve.cmd` 来启动 memorix。
+4. 根据不同客户端的存储格式，配置文件，配置目标等差异，设计合适的导入路径写法。
+5. 最后删除掉 WorkBuddy 和 codex 已经写好的 `memorix-serve.cmd` ，避免出现冗余配置。
+
+### 注意事项
+
+1. 你需要先调研清楚那些本机的客户端需要增加，修改，覆写 memorix MCP 配置。
+2. 然后经过我审核后，再开始完成配置改写。
+
+可以参考的配置写法如下：
+
+```txt
+@ECHO OFF
+SETLOCAL EnableExtensions
+
+:: 在这里编写你的注释
+SET "NODE_OPTIONS="
+SET "PATH=D:\store\nvm-desktop\22.14.0;%PATH%"
+
+memorix serve --mode team
+```
+
+### 有效 MCP 配置文件位置参考
+
+- codex
+  - `C:\Users\pc\.codex\config.toml`
+  - `C:\Users\pc\.codex\config-2026-6-13-bg.toml`
+- claude code
+  - `C:\Users\pc\.claude.json`
+- cursor
+  - `C:\Users\pc\.cursor\mcp.json`
+- WorkBuddy
+  - `C:\Users\pc\.workbuddy\mcp.json`
+  - `C:\Users\pc\.workbuddy\.mcp.json`
+- zcode
+  - `C:\Users\pc\.zcode\cli\config.json`
+- vscode
+  - `F:\store\vscode\user-data\User\mcp.json`
+- qoder
+  - `C:\Users\pc\AppData\Roaming\Qoder\SharedClientCache\mcp.json`
+- kiro
+  - `C:\Users\pc\.kiro\settings\mcp.json`
