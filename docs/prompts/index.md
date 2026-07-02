@@ -88,7 +88,7 @@ github 用户 antfu 是前端开发领域重要的开发者。请你帮我调研
    - https://gemini.google.com/app/5b3892f9fc81360e
 2. 将上述内容，整理成一份完整全面的报告，包含全部的 github 仓库，确保不会遗漏。
 
-## 08 <!-- TODO: --> 寻找 vue2 老项目迁移用的知识
+## 08 <!-- 已放弃 --> 寻找 vue2 老项目迁移用的知识
 
 我想找一下关于 vue-cli（webpack + vue2） 项目迁移成 vite + vue3 项目的子代理、提示词、或 claude code skill。请帮我找相关的 github 仓库，至少 10 个。
 
@@ -99,8 +99,6 @@ claude code 要学会用 gemini 的无头模式写法，开启多款并行的探
 claude code 的 claude 主模型作为主代理，用于新建，并向并行子代理布置探索任务，收集信息，并从 gemini 驱动的探索子代理内，收集回上下文信息。便于 claude 模型做行为决策。
 
 ---
-
-<!-- TODO:  -->
 
 我来帮你规划这个大规模的重构任务。首先，我需要深入了解当前代码库的结构和相关包的实现方式。
 
@@ -648,14 +646,58 @@ design/
 
 已确认，就是要写成固定的大写文件命名风格。
 
-## 034 <!-- TODO: 后续在独立的对话内完成询问 --> 设计 Token 推荐使用 DTCG 格式，DTCG 格式是什么？在设计 token 领域内是什么？我该怎么在 vite+typescript 的前端/全栈项目内使用呢？
+## 034 <!-- 已放弃，目前不打算继续深究 design 的token设计体系了，没必要，太累了 --> 设计 Token 推荐使用 DTCG 格式，DTCG 格式是什么？在设计 token 领域内是什么？我该怎么在 vite+typescript 的前端/全栈项目内使用呢？
 
 ## 035 <!-- 已完成 --> 删除本机关于 `lark-*` 系列的技能，我不需要飞书系列的全局技能
 
 1. 用 `skills list -g -a claude-code -a codex -a cursor -a antigravity -a trae -a qoder` 获取到本机全局的 skills，删除掉飞书系列的 skills，我后续不太有机会再继续使用飞书文档的能力了，故不需要这些全局 skills 占用具体本地 agent 工具的上下文窗口。
 2. 然后用 memorix 记录清楚，以后我不怎么用飞书的技能了。
 
-## 036 <!-- TODO: --> 重新设置本机全部 agent 工具的全局 memorix MCP 配置
+## 036 <!-- 正在QoderWork内做 已完成 --> 全面执行 `memorix setup --agent claude --global` 相关的初始化命令
+
+我要求你全面的执行相关的更新命令，全面覆盖，重写，设置相关的配置文件。
+
+运行命令如下：
+
+```bash
+memorix setup --agent claude --global
+memorix setup --agent codex --global
+memorix setup --agent cursor --global
+memorix setup --agent antigravity --global
+memorix setup --agent trae --global
+memorix setup --agent qoder --global
+```
+
+但是在你运行命令之前，我需要你先给我检查清楚，被修改的文件在执行全局修改命令前后的变化。修改前文件是如何的？修改后全局对应的 agent 工具的 MCP 配置文件又是如何的？以及新增了那些全局 skills 和 hooks？
+
+我需要清楚这些命令修改了那些文件，后果如何。我心里要有个底。先给我设计一个跟踪方案，再去开始执行。
+
+### 你的参考资料
+
+- memorix 仓库： https://github.com/AVIDS2/memorix
+
+有效 MCP 配置文件位置参考
+
+- codex
+  - `C:\Users\pc\.codex\config.toml`
+  - `C:\Users\pc\.codex\config-2026-6-13-bg.toml`
+- claude code
+  - `C:\Users\pc\.claude.json`
+- cursor
+  - `C:\Users\pc\.cursor\mcp.json`
+- WorkBuddy
+  - `C:\Users\pc\.workbuddy\mcp.json`
+  - `C:\Users\pc\.workbuddy\.mcp.json`
+- zcode
+  - `C:\Users\pc\.zcode\cli\config.json`
+- vscode
+  - `F:\store\vscode\user-data\User\mcp.json`
+- qoder
+  - `C:\Users\pc\AppData\Roaming\Qoder\SharedClientCache\mcp.json`
+- kiro
+  - `C:\Users\pc\.kiro\settings\mcp.json`
+
+## 037 <!-- 已过时，不作处理 --> 重新设置本机全部 agent 工具的全局 memorix MCP 配置
 
 在 `C:\Users\pc\.memorix` 内，新建一个专门的文件，叫做 `memorix-serve.cmd` ，内部注释用中文说明清楚，说明这个是用来给本机全部能使用 memorix MCP 的 AI agent 客户端的启动脚本。
 
@@ -703,3 +745,7 @@ memorix serve --mode team
   - `C:\Users\pc\AppData\Roaming\Qoder\SharedClientCache\mcp.json`
 - kiro
   - `C:\Users\pc\.kiro\settings\mcp.json`
+
+## 038 <!-- 在Kimi Work内执行 已完成 --> 为 Kimi Work 新建基于全局 `C:\Users\pc\.agents` 目录的软链接
+
+在 `C:\Users\pc\AppData\Roaming\kimi-desktop\daimon-share\daimon\skills` 目录内，新建全局 skills 技能的软链接。
