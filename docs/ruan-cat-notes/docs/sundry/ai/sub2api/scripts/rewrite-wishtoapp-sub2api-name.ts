@@ -3,8 +3,8 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
-const TARGET_FILE_NAME = "2026-6-10-01-plus-4.03r-ldxp-SB9T68JP-toc8z3.json";
-const ACCOUNT_BATCH_PREFIX = "2026-6-10-01-plus-4.03r-ldxp-SB9T68JP-toc8z3";
+const TARGET_FILE_NAME = "2026-7-2-01-k12.json";
+const ACCOUNT_BATCH_PREFIX = "2026-7-2-01-k12";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
