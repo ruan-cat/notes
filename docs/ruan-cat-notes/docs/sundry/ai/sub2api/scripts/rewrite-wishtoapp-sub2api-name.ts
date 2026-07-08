@@ -3,10 +3,9 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
-const TARGET_FILE_NAME = "2026-7-8-02-bugteam-自救.json";
-const ACCOUNT_BATCH_PREFIX = "2026-7-8-02-bugteam-自救";
-const notes =
-	"2026-7-8-02-bugteam-自救 1个 【401刷新账号状态或者重新导入就好了 账号没有rt 】 7.11元 https://pay.ldxp.cn/shop/JL7007 https://pay.ldxp.cn/item/h3avrl";
+const TARGET_FILE_NAME = "2026-7-8-03-k2.json";
+const ACCOUNT_BATCH_PREFIX = "2026-7-8-03-team";
+const notes = "2026-7-8-03-team 3个 1.24元 https://pay.ldxp.cn/shop/TTEF5IWE https://pay.ldxp.cn/item/gcvgvl";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),

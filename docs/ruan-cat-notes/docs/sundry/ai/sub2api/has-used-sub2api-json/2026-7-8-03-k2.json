@@ -1,0 +1,123 @@
+{
+	"exported_at": "2026-07-08T13:37:34+00:00",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-8-03-team|MichaelEvans856103",
+			"notes": "2026-7-8-03-team 3个 1.24元 https://pay.ldxp.cn/shop/TTEF5IWE https://pay.ldxp.cn/item/gcvgvl",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"email": "MichaelEvans856103@outlook.com",
+				"access_token": "at-gs4X_ob8abn2udpVnk7hi2pttisqmerfhJPD0mjUZSE",
+				"token_type": "Bearer",
+				"auth_mode": "personalAccessToken",
+				"openai_auth_mode": "personal_access_token",
+				"plan_type": "team",
+				"headers": {
+					"authorization": "Bearer at-gs4X_ob8abn2udpVnk7hi2pttisqmerfhJPD0mjUZSE"
+				},
+				"model_mapping": {},
+				"disabled": false,
+				"id_token": null,
+				"last_refresh": "2026-07-08T20:38:01+08:00",
+				"refresh_token": null,
+				"type": "codex",
+				"account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"chatgpt_account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"session_access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJhbXIiOlsib3RwIiwidXJuOm9wZW5haTphbXI6b3RwX2VtYWlsIl0sImNoYXRncHRfYWNjb3VudF9pZCI6ImNjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfYWNjb3VudF91c2VyX2lkIjoidXNlci1QOUlBYjJpaFVJSGk2Z3djNlBOUXV6SnhfX2NjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfY29tcHV0ZV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJ0ZWFtIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1QOUlBYjJpaFVJSGk2Z3djNlBOUXV6SngiLCJ1c2VyX2lkIjoidXNlci1QOUlBYjJpaFVJSGk2Z3djNlBOUXV6SngifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiTWljaGFlbEV2YW5zODU2MTAzQG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM1MTQyNzE3MTcsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX0hnNU9VRHdRQXQyOEZtT2pjbGRXamFWcCIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxpWXM5TG1nNE5OZFZKQjZYeHhQWDVqdHQiLCJpYXQiOjE3ODM1MTQyNzIsImV4cCI6MTc4NDM3ODI3MiwianRpIjoiYzk2YTU2ZDZhNTkzNGM4NWI3NmU3MGI4MjU2M2JmNTIiLCJuYmYiOjE3ODM1MTQyNzJ9.f4BdMCZlAyxnyBDvIhfeyYYBOmdp94eI4kj3b409LNtWrhLXtKcaNYTYSqi4S_qqbg_K3SICZJDjNqEnJ9ang0cccUOuq3doqdyZ4aAXtSieyGBWsaKddHdx-7BNRJWnEPu9F2vbVcQfzAJF_N6QPuzxwi3-XL5O0JaU9CA8_P048DbczCN9h5cp3Cubz6ZIP0h5nzKIHW3B60o3xAUC7G2eSZu7AHti-RnNvdQhQhpk5ra4VG22MDLSpzY0NNuD6WYl9Bp4fizuJ2BSDpHh7n9APBu9AzdCSMFsHNVCBsU8PXOWcfDwvzCCGzmGz-BWJtuukn1MFhCcDQXqY6IfjKeSpYCdZnSXdQQ1Q_EkBC1UPDp-fbm-YDCRybshcudlcPm2YQm4TS2QYkMLlcORMjNUwecPfeCV39zR40EZM9bOv4EUbeHwwOOKAKWW_v7h0815qM9KLJNRT4m9Gsj7BXlrb4_Z1AfEy_CQ-ei6oNXG8Z9lq0ugmo93xzUik2RlKoaRd2ud40OsBCzJ0rVNg_GIpHsmsoSBGSeECQOG-DFCdQD_Ih_tkUGrOPcTU6KbpDudGgwXibMrhQKrB9CpV7ERnvvfzDAPnJJqbspnWo59EQiawNJibAluMyhOws5LnwJ0abImfBAm9bZflkQpLOSCGQ5ZVqDGRIa7cgPmu1M"
+			},
+			"extra": {
+				"source": "cpa-header-convert",
+				"source_file": "",
+				"auto_pause_5h_disabled": true,
+				"auto_pause_7d_disabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"openai_oauth_responses_websockets_v2_enabled": true
+			},
+			"concurrency": 40,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true,
+			"expires_at": 1924912800
+		},
+		{
+			"name": "2026-7-8-03-team|MelanieWoods331719",
+			"notes": "2026-7-8-03-team 3个 1.24元 https://pay.ldxp.cn/shop/TTEF5IWE https://pay.ldxp.cn/item/gcvgvl",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"email": "MelanieWoods331719@outlook.com",
+				"access_token": "at-LWcovEgGUAOhUOKJ6MGrTltsrsFAC_bHmNQAgMOf-DE",
+				"token_type": "Bearer",
+				"auth_mode": "personalAccessToken",
+				"openai_auth_mode": "personal_access_token",
+				"plan_type": "team",
+				"headers": {
+					"authorization": "Bearer at-LWcovEgGUAOhUOKJ6MGrTltsrsFAC_bHmNQAgMOf-DE"
+				},
+				"model_mapping": {},
+				"disabled": false,
+				"id_token": null,
+				"last_refresh": "2026-07-08T20:42:03+08:00",
+				"refresh_token": null,
+				"type": "codex",
+				"account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"chatgpt_account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"session_access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJhbXIiOlsib3RwIiwidXJuOm9wZW5haTphbXI6b3RwX2VtYWlsIl0sImNoYXRncHRfYWNjb3VudF9pZCI6ImNjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfYWNjb3VudF91c2VyX2lkIjoidXNlci1xaTkyR1c1Vm9kUG51dVpxaWdUb09FcGlfX2NjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfY29tcHV0ZV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJ0ZWFtIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1xaTkyR1c1Vm9kUG51dVpxaWdUb09FcGkiLCJ1c2VyX2lkIjoidXNlci1xaTkyR1c1Vm9kUG51dVpxaWdUb09FcGkifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiTWVsYW5pZVdvb2RzMzMxNzE5QG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM1MTQ1MDU4NjUsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX3ljV2Zta041djhyUFNuVDd6dzhpZmpHZiIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxJWEtEbEpOZXIwSlVQWWRaenR5QlJDSVEiLCJpYXQiOjE3ODM1MTQ1MDcsImV4cCI6MTc4NDM3ODUwNywianRpIjoiNmY3ZDhlM2JhZGU2NGQ3Mzk5ZDkzY2RjOGRiMzAwZGQiLCJuYmYiOjE3ODM1MTQ1MDd9.OIImx3RDPh4S8aAvNul8kCpSqbjcLt6WqvXcQpTPinzqxWrRkRJO9xMoHC43sObuvsWt2WlIOsNyek6XmLyQLs7wDjwWqiR1HU0uIOrLMaL_TMeKe73tDmqMkPwhgWbjsJzWi7mSoSSo0OmV8kYDmoc1rkOSQ2lbOFHY3eccfZtJQwDMqZ7YAuC_QVv4TjNOR_zcrel8qzbdOBlMor8YEM0-Z2DMmCCRuj9AdXZUIaI9_D90DvVVLKncuuYw_sCMaIYDDBnGP6KLeLb2gjb0KxUVnVm9RiRNyIWTEhOPnkHQHGwrNimAyU-ipcYRhR1_WBKuXytRUxcozFwyuiF0BWBY4nxjb-c6luCSHi0PXQsgn2JDusLgLERHJ--kDSSekPlF_U3Iekw2XsE01u9aPf95kvYqy4f6TLKAukQgmkhFWcOUj3zct5Sm0KOKsPf1YTj1SR-xKHUM02rXsUq0kBY6pxlzaMy-c2SK4vDkUaofVlIWDthgFjIWzcBWb-5NIRMiuUsr-S84eoXhq6oOilvozIORaw4rFaSv1ijORdsGPEBGJzdRSS7KUhfajpqkvAw6aHyYJHQRmkgBKK2RISINS7mbrdzrNVXUbPNb27wyqcM5Hug-uYdJJokUPubb27Tv_R_2NaxwIjoCSmFGo3gi6NQqHyD_H-fmHtyOzlI"
+			},
+			"extra": {
+				"source": "cpa-header-convert",
+				"source_file": "",
+				"auto_pause_5h_disabled": true,
+				"auto_pause_7d_disabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"openai_oauth_responses_websockets_v2_enabled": true
+			},
+			"concurrency": 40,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true,
+			"expires_at": 1924912800
+		},
+		{
+			"name": "2026-7-8-03-team|MichellePham753806",
+			"notes": "2026-7-8-03-team 3个 1.24元 https://pay.ldxp.cn/shop/TTEF5IWE https://pay.ldxp.cn/item/gcvgvl",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"email": "MichellePham753806@outlook.com",
+				"access_token": "at-sw_G4feksf2edJi2HzLEYZkgOqQBDAEt-JyPB_QJarQ",
+				"token_type": "Bearer",
+				"auth_mode": "personalAccessToken",
+				"openai_auth_mode": "personal_access_token",
+				"plan_type": "team",
+				"headers": {
+					"authorization": "Bearer at-sw_G4feksf2edJi2HzLEYZkgOqQBDAEt-JyPB_QJarQ"
+				},
+				"model_mapping": {},
+				"disabled": false,
+				"id_token": null,
+				"last_refresh": "2026-07-08T19:56:03+08:00",
+				"refresh_token": null,
+				"type": "codex",
+				"account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"chatgpt_account_id": "cc209a06-6867-47f7-b6cc-e6a9fe1eab63",
+				"session_access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJhbXIiOlsib3RwIiwidXJuOm9wZW5haTphbXI6b3RwX2VtYWlsIl0sImNoYXRncHRfYWNjb3VudF9pZCI6ImNjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfYWNjb3VudF91c2VyX2lkIjoidXNlci1uODlvSVlXUDJXUXNGNFhEMDI4bnMwUW1fX2NjMjA5YTA2LTY4NjctNDdmNy1iNmNjLWU2YTlmZTFlYWI2MyIsImNoYXRncHRfY29tcHV0ZV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJ0ZWFtIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1uODlvSVlXUDJXUXNGNFhEMDI4bnMwUW0iLCJ1c2VyX2lkIjoidXNlci1uODlvSVlXUDJXUXNGNFhEMDI4bnMwUW0ifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiTWljaGVsbGVQaGFtNzUzODA2QG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM1MTE0NDM5MzYsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzFsSzJXUmFnRUxMWURvUFc2WDhKUGpRZiIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHw3UUlkY2xJV1o0R1ByOVFLS1dkUVpxOWsiLCJpYXQiOjE3ODM1MTE0NDUsImV4cCI6MTc4NDM3NTQ0NSwianRpIjoiOWNlNWM1YjhmMWY1NDZmODg3MTk1NGMyNGExZTE5YmIiLCJuYmYiOjE3ODM1MTE0NDV9.JMmcPyKmKV9oJlyG59JsHFVnuxxB6mLviXIa2wfofJKJ6xPwZ3Q6BlpCyy4cP_DuaXcmMBxzWp32H9m9bo5IGxVfe9R8idQagrFljP3Ng6UDNcKzwlEro83OET9ABb66spxoFgtt5uZNESHbk09YAzChDbQlY7HorgbypF7D9H9ZTiHWr9MEG0VQu4RZBnWTcgaaMFZ5Lxh9dYm2UgFteiXsZfTZKBBalqniCzV53BPvSplBpSYqcaTCeXJNNrqioDyM3ZrulUyTKgR2ftyqMLuzaESDtXeEu4bmvh6tsIKoAYkB4riEdWcVDbn3OxOfdjhTHh29oKvelpONrEtTkwBlqEP2HMXIMeE4QdUQAm35O1FzqOkXMmBdtxgQDRQ5XpCizWziwBic13QrdptqrqLtHdj4Ym440VDr8P3GaKX_WMPzacBPg8r1rO08l6our7PZYZYMpPo1j8rxWi--4r_nO2PnsVOghxZQtVg9111-Cx0XgNj7n_1TNaLstKS_EnleW9rMwKGbnN0GK_ujq5h88kMOEtizMiws1Y9N2-6RDjKzoihsPfis_DRyV_uuMUIRw5ygxjvIUB3X3Cfxf0mdowmur7t4_N4k4YpxGrVNrXV1Da-lmow_lsIb_1-JpcCwLVjoOmdHVzuB-lg6KWmDMwegp1QEXuedFTmizBg"
+			},
+			"extra": {
+				"source": "cpa-header-convert",
+				"source_file": "",
+				"auto_pause_5h_disabled": true,
+				"auto_pause_7d_disabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"openai_oauth_responses_websockets_v2_enabled": true
+			},
+			"concurrency": 40,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true,
+			"expires_at": 1924912800
+		}
+	]
+}
