@@ -1,0 +1,45 @@
+{
+	"exported_at": "2026-07-08T13:18:00Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-8-02-bugteam-自救|fob.seamen.1l+g1",
+			"notes": "2026-7-8-02-bugteam-自救 1个 【401刷新账号状态或者重新导入就好了 账号没有rt 】 https://pay.ldxp.cn/shop/JL7007 https://pay.ldxp.cn/item/h3avrl",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"email": "fob.seamen.1l+g1@icloud.com",
+				"access_token": "at-0byIu0nUCvTOlpwuLuLC5F_EKCAwGaWu_PcflRMG2x4",
+				"token_type": "Bearer",
+				"auth_mode": "personalAccessToken",
+				"openai_auth_mode": "personal_access_token",
+				"plan_type": "team",
+				"headers": {
+					"authorization": "Bearer at-0byIu0nUCvTOlpwuLuLC5F_EKCAwGaWu_PcflRMG2x4"
+				},
+				"model_mapping": {},
+				"disabled": false,
+				"id_token": null,
+				"last_refresh": "2026-07-08T18:48:29+08:00",
+				"refresh_token": null,
+				"type": "codex",
+				"account_id": "1b92fd5e-357b-4712-89af-effe0e653e0b",
+				"chatgpt_account_id": "1b92fd5e-357b-4712-89af-effe0e653e0b",
+				"session_access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiIxYjkyZmQ1ZS0zNTdiLTQ3MTItODlhZi1lZmZlMGU2NTNlMGIiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItSVhQQ1N3am1WT25kVE4zRHZUUnpmUnhTX18xYjkyZmQ1ZS0zNTdiLTQ3MTItODlhZi1lZmZlMGU2NTNlMGIiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoidGVhbSIsImNoYXRncHRfdXNlcl9pZCI6InVzZXItSVhQQ1N3am1WT25kVE4zRHZUUnpmUnhTIiwiaXNfc2lnbnVwIjp0cnVlLCJ1c2VyX2lkIjoidXNlci1JWFBDU3dqbVZPbmRUTjNEdlRSemZSeFMifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiZm9iLnNlYW1lbi4xbCtnMUBpY2xvdWQuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM1MDc2ODQ5NDQsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX2tHNVlKTkdXbTJYbW52OWxNR2taN2ZYZyIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxnc2pKbVgwcGIyU29TQkFUSDVWdmJVdk8iLCJpYXQiOjE3ODM1MDc2OTEsImV4cCI6MTc4NDM3MTY5MSwianRpIjoiYjE2NWI5OTI1ODk5NGVmNTk4Yjg4Y2Y3Y2EwMmExMzciLCJuYmYiOjE3ODM1MDc2OTF9.Kpz9FroaBxpHeoVmyC1QKshzoH7TGbvFzfxIdtY9qXsGEimw_tvt4sXlc6H4sX_20AIQSMTw8uX46FUH04TsE3TaNiChmt4IVaQ0cd40rBZPi_jYrRLt45mj0um3WY91uW3Rf4Lwf0kSj33UgRQNTfS9OQeGCj4-kDNNa8n13BuHYX1wRMnUSmxVGSFezhNniumuiFCLFk2019moreLL2X41GKWe9XcqwJnbhsgVk2UjVNch90SSYmng_uMMp3xbaQsA53_EjAdT47UPp0s_YBgsIQ1iExUXIyQvWFkBwIYaOmng6pk7RcksDGbUwvUsHq6MdresqWHElDuW9dm7CUFgCbEobeACjRfDcfSG-GQBfahjsYOQftrlUjm60FvY31qoG6IlXgpESkP4vxIaAfp-r-_F0dLxPQkZyuaCTMnPBL6URvBgsePYL7zsEP2eqBR2h_WJUmMkAGOmqWIWCh75t3SHRyS_7xwy7cWeAc6MYDW4J89aTHLcMyTPaf1qmieR7Y0QF0RQUwc-O2T7euH99acd7ox3uvmD5bWYj7wrLzwUhmpqtarWgMdTLFMJxg5IYZBE5ZXcna8J3Fi9oIRISu86kYZ0_pbpvMkrpqWutUXFXHpU78y4jnvfwnPr1PZ8tOf9s4F5mUGwNXSxVzdpwk91wxFEvATg8WOde4U"
+			},
+			"extra": {
+				"source": "cpa-header-convert",
+				"source_file": "fob.seamen.1l+g1@icloud.com.json",
+				"auto_pause_5h_disabled": true,
+				"auto_pause_7d_disabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"openai_oauth_responses_websockets_v2_enabled": true
+			},
+			"concurrency": 40,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true,
+			"expires_at": 1791287143
+		}
+	]
+}
