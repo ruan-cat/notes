@@ -1,0 +1,94 @@
+{
+	"exported_at": "2026-07-08T08:09:34+00:00",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-8-01-k12|julieanderson887697",
+			"notes": "2026-7-8-01-k12 3个 https://pay.ldxp.cn/shop/2G7WG7S7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiI4YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItNzVGdzRHM3FiQ3dTQU5KbEtKVE9TVHp5X184YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci03NUZ3NEczcWJDd1NBTkpsS0pUT1NUenkiLCJ1c2VyX2lkIjoidXNlci03NUZ3NEczcWJDd1NBTkpsS0pUT1NUenkifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiSnVsaWVBbmRlcnNvbjg4NzY5N0BvdXRsb29rLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJwd2RfYXV0aF90aW1lIjoxNzgzNDk4MTEwMzQzLCJzY3AiOlsib3BlbmlkIiwiZW1haWwiLCJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJtb2RlbC5yZXF1ZXN0IiwibW9kZWwucmVhZCIsIm9yZ2FuaXphdGlvbi5yZWFkIiwib3JnYW5pemF0aW9uLndyaXRlIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19Qb204QWhhT25yWFZZVGNSVHpVZW1rMkIiLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8TW5JdVV6M21yUFg2OW14bTlGQThNUGx4IiwiaWF0IjoxNzgzNDk4MTQ5LCJleHAiOjE3ODQzNjIxNDksImp0aSI6ImMzMDY3NzM1NDM2ZjQ5ZTFiYTZhYjU5ZGU4MWMxYmI0IiwibmJmIjoxNzgzNDk4MTQ5fQ.EiCikOul7U8qdbuXjSMakKEd_GfQyd_cvvjy7l5DPlW4xsgYt8ws1vzce0DesZr09ce_7JlHYFWzKsWWOT1vkGpTXYPnS2DnwNgkimlXvsToDNy55mulcD1zD3HnorE_YwqwzfpCiZ4--NQVbnsIDtGPcx2a6YAuVNST5mJz1uYXbsV9_Yy9Y-sSgELMr-DuVRSVlYKP40qRycMaGt8WeaOF6sopeMcdcaxjMLHVwh9QsIsUciX8lbUKhzO20A7cRcy-8lU3yjIDk9biAxC61J7vjGbDMA7Ouv5HAfRCPKjUTQP2Uh0ijPc2bIxy5OciyVymBXBJJvxOpzM2T--PsFNsNVasV0fAeQCdyBwgLQjSnyGQb5fhZdvAJSyPPxGVCglvRmcb0kJaEQjiwY8dnOspNGX7SPEHF47mEs6wvdHYX_r4xP-Wsfq0pjyr7AsphBE8UfS3PjjuYv63nwpxstb384ktIFRes0KiJjv6FdZRkKGwJM2jyvMY5IQgqtGkksSWC0Ll3u4M9bxrE40J-3uS28Aap3pSiEUdfKNk8iT2YEB-rHU4S8bzmyM04v23bvu5GxFZg2n5_LgOaOMVPt1MBkJZN2dDWKY6IPeAqzzutcETDlMNdma1rqIlqYKcMBiB1GmClim0TA27G4YzqgmvAoviBPZRUKWaXIOcJEU",
+				"chatgpt_account_id": "8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"chatgpt_user_id": "user-75Fw4G3qbCwSANJlKJTOSTzy__8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"email": "julieanderson887697@outlook.com",
+				"expires_at": 1784362173,
+				"expires_in": 863999,
+				"organization_id": "",
+				"plan_type": "k12",
+				"refresh_token": "",
+				"session_token": "",
+				"workspace_id": "8a54945d-8e15-4332-bf20-636ed8d29d01"
+			},
+			"extra": {
+				"email": "julieanderson887697@outlook.com",
+				"display_email": "julieanderson887697@outlook.com",
+				"auth_provider": "openai",
+				"token_source": "chatgpt_web_session"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-8-01-k12|elizabethlong154797+wsxcfr1",
+			"notes": "2026-7-8-01-k12 3个 https://pay.ldxp.cn/shop/2G7WG7S7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiI4YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItSktleFMyaEhGNVRVZ1BmcW9GQWZBRTNuX184YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1KS2V4UzJoSEY1VFVnUGZxb0ZBZkFFM24iLCJ1c2VyX2lkIjoidXNlci1KS2V4UzJoSEY1VFVnUGZxb0ZBZkFFM24ifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiRWxpemFiZXRoTG9uZzE1NDc5Nyt3c3hjZnIxQG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM0OTgwNTA3MzUsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX0x0V0hJTFdKWFc2N01ncVNQa0N4dTV2biIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxaaEM5Zm5YWFdvc1RuZGxsejUwbEM0MDciLCJpYXQiOjE3ODM0OTgwOTAsImV4cCI6MTc4NDM2MjA5MCwianRpIjoiZjUzYmViNjg0MjI4NDg0YWIyZDk4NDMxOWZlMzFmMzAiLCJuYmYiOjE3ODM0OTgwOTB9.CaBsR18CKumIAIilmvdlhGo8xFcnXsh7wvzFkeHypP9WHb7Mm97Xx6OzpIdvRndQyNl5sYfILY0NCgtVdWQPD-8-ZlggNbEQcbfkI2ISFyUZEWo7BTeBD-knYNCfL3RCY9ipWw92m5zJX3pYJo2LZ-E0SHwbFxSx9d2i9MeDJRt7Weuk9-3o91OlIpjOHn7OMMxeQJxR9UoZlP7UWhXEDhqDl_NSk0773ioTFmMW_ekyBUXLH7YdLWJajVl4Mbm9S0PnaGiwyDVLNXZUPeqLo3FSqFNEazDW4jGVA4_lnzdnv6Xp5u33oKG2nLrXT-8QiXoUtHVEm7vA9RBAKesgLYYiWgfBaG4JxLMPgFC_8WXAuy3UPNNWsn1c85ydb5vUy0X3cOSh8IN-thconTg16zljvnVqRqCOC5XUOo4ZED7yLaYbYuKdgkZEJQZWvQyK6wnpX3w3eqdu4PNWCYGgAEBJ3_b5mCbMVPKfD81GAgQebitQClD4pYdc0XjHTzGJxH3IYZd8Q0dhKXJ3vkuyl_4iFR-RLIAwTxwxJyI9FcSVO_ip99a1NIdz8GiMnyCWbcCV8teenN5i5UAkPlEP7xc1QkrCAtCpn1RVItGddeNDgGv8RrEYKpkqY1f9TYh13yn9T76doyUFA_NHE3EcLbQbxS9YjcZCNJCKezJuRRM",
+				"chatgpt_account_id": "8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"chatgpt_user_id": "user-JKexS2hHF5TUgPfqoFAfAE3n__8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"email": "elizabethlong154797+wsxcfr1@outlook.com",
+				"expires_at": 1784362142,
+				"expires_in": 863999,
+				"organization_id": "",
+				"plan_type": "k12",
+				"refresh_token": "",
+				"session_token": "",
+				"workspace_id": "8a54945d-8e15-4332-bf20-636ed8d29d01"
+			},
+			"extra": {
+				"email": "elizabethlong154797+wsxcfr1@outlook.com",
+				"display_email": "elizabethlong154797+wsxcfr1@outlook.com",
+				"auth_provider": "openai",
+				"token_source": "chatgpt_web_session"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-8-01-k12|julieanderson887697+wsxcfr1",
+			"notes": "2026-7-8-01-k12 3个 https://pay.ldxp.cn/shop/2G7WG7S7",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiI4YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItNmhuMnExSW4yWUozcEdMSlVETElqZ284X184YTU0OTQ1ZC04ZTE1LTQzMzItYmYyMC02MzZlZDhkMjlkMDEiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci02aG4ycTFJbjJZSjNwR0xKVURMSWpnbzgiLCJ1c2VyX2lkIjoidXNlci02aG4ycTFJbjJZSjNwR0xKVURMSWpnbzgifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiSnVsaWVBbmRlcnNvbjg4NzY5Nyt3c3hjZnIxQG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM0OTgxMDkyNjAsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNoYXJWblBQVDQ3eUhUM1J3TXp5U2xXcyIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxoSW1nOTRHMkhUWXBYR2xQamJSQzBxRzkiLCJpYXQiOjE3ODM0OTgxNTAsImV4cCI6MTc4NDM2MjE1MCwianRpIjoiNDYzNDFiNDA1MjU0NGIyYjlkMTIwNDMxMzg2NmE3MjIiLCJuYmYiOjE3ODM0OTgxNTB9.iC6wpbrUSbfyWA3ktwLgomJjivu0EiBxErq0ODH_Xt6KdeQ5FBM8GJG0pLo7DPgl1Yl-cSLPU77QrS67AH2fXdPC25VFI3cwsOwQYB_0KvDb3n5k2T5HG8TjdVSSPVuk0FcpgLhJeel9bEQWoToTUm7jB4Bms6lMKjE3zkvO7F0qHCxCfaiv2SsMntfodndWjszjeOA79jpkEYurK0EBGDSTlEZcvu8MWQsuYuSPgjzcgW0Im4MKRmHHUilRJLQt5JN2EF5MtDNxnV4jpmAkzW0uGVWrI2Vl2PqVjgABjqVD4l6TGbZaWEt-_nfjqWxfO87Vt9fBWSZC7nUCaONmQO9u_Ppku5lyA2Wm95IoK6SsMIv0fD2Mxe4O3L9B7EWPLI94fHiOke-kZzO81FLmwgz2IWr72V7AWsvN1wsKQMmhDyB9yjwTIuFyVuXdWZddGCjWphwowAnu75FQV4bI2F_ztEkdI8loX2y1Ft9tfMof9lnY_9_FNnSJvJIvQwOlhZBH2RXV_AyBDtBa7Wjj7wd10Su99gVa8i08PtKOIexoXy4P4xiX8n_-B8tjAcyemFlpNAg0pJ3K6Um7pWeu43arsJK5eDbUWxIxX6FGBd7cxJvGrfJ1EgV9gi1RBlHO2oarpOHgGXq7bpgfpI3wo-_uuuEMDuSzMPYqW7U3tMY",
+				"chatgpt_account_id": "8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"chatgpt_user_id": "user-6hn2q1In2YJ3pGLJUDLIjgo8__8a54945d-8e15-4332-bf20-636ed8d29d01",
+				"email": "julieanderson887697+wsxcfr1@outlook.com",
+				"expires_at": 1784362159,
+				"expires_in": 863999,
+				"organization_id": "",
+				"plan_type": "k12",
+				"refresh_token": "",
+				"session_token": "",
+				"workspace_id": "8a54945d-8e15-4332-bf20-636ed8d29d01"
+			},
+			"extra": {
+				"email": "julieanderson887697+wsxcfr1@outlook.com",
+				"display_email": "julieanderson887697+wsxcfr1@outlook.com",
+				"auth_provider": "openai",
+				"token_source": "chatgpt_web_session"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		}
+	],
+	"skipped_not_workspace": []
+}
