@@ -6,7 +6,7 @@ const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url))
 const TARGET_FILE_NAME = "2026-7-8-02-bugteam-自救.json";
 const ACCOUNT_BATCH_PREFIX = "2026-7-8-02-bugteam-自救";
 const notes =
-	"2026-7-8-02-bugteam-自救 1个 【401刷新账号状态或者重新导入就好了 账号没有rt 】 https://pay.ldxp.cn/shop/JL7007 https://pay.ldxp.cn/item/h3avrl";
+	"2026-7-8-02-bugteam-自救 1个 【401刷新账号状态或者重新导入就好了 账号没有rt 】 7.11元 https://pay.ldxp.cn/shop/JL7007 https://pay.ldxp.cn/item/h3avrl";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
