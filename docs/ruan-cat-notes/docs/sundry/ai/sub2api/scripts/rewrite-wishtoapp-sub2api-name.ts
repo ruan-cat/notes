@@ -3,9 +3,10 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
-const TARGET_FILE_NAME = "2026-7-9-01-k12.json";
-const ACCOUNT_BATCH_PREFIX = "2026-7-9-01-k12";
-const notes = "2026-7-9-01-k12 4个 1.75元 https://pay.ldxp.cn/shop/2G7WG7S7 https://pay.ldxp.cn/item/di2911";
+const TARGET_FILE_NAME = "2026-7-9-05-team.json";
+const ACCOUNT_BATCH_PREFIX = "2026-7-9-02~5-team";
+const notes = "2026-7-9-02~5-team QQ群有人大批量赠送 team 账号";
+// const notes = "2026-7-9-02~5-team 4个 1.75元 https://pay.ldxp.cn/shop/2G7WG7S7 https://pay.ldxp.cn/item/di2911";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
