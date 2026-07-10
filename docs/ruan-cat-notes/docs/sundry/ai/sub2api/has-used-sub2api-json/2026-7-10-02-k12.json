@@ -1,0 +1,58 @@
+{
+	"exported_at": "2026-07-10T10:14:27.458Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-10-02-k12|a.nthonydavis860608",
+			"notes": "2026-7-10-02-k12 2个 1.5元 \n https://card-cat.boji1334.com/?key=97KC-3MQH-ATE9 \n https://card-cat.boji1334.com/?key=PYM7-J6S9-AW8B",
+			"platform": "openai",
+			"type": "oauth",
+			"expires_at": 1784539869,
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"priority": 1,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiJjNjg1ZjUxMS0zM2MwLTQwZDMtYmNmYS00ZjllMGFkNTYzMWMiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItZGdaQ0lBQno4UjBZQjNXYks1ZXA2NU5SX19jNjg1ZjUxMS0zM2MwLTQwZDMtYmNmYS00ZjllMGFkNTYzMWMiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1kZ1pDSUFCejhSMFlCM1diSzVlcDY1TlIiLCJ1c2VyX2lkIjoidXNlci1kZ1pDSUFCejhSMFlCM1diSzVlcDY1TlIifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiYS5udGhvbnlkYXZpczg2MDYwOEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6Ik1pY2hhZWwgSm9obnNvbiJ9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM2NzU3NzA0MTcsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX1dtNVVzUkhtbjNRTDF5Qzd6WkpCdDZqeSIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxhU01rOHlxVFM1dGptRTlFVVlKQXRrQWUiLCJpYXQiOjE3ODM2NzU4NjksImV4cCI6MTc4NDUzOTg2OSwianRpIjoiODU5NjRjMDg3ZWNjNDg1ZDllNjJlOTMyZjVjNjYzNzQiLCJuYmYiOjE3ODM2NzU4Njl9.qV0gIHcbkqproNEjF45zgFfbyf62k1DlAd0XFeicvl86TCzlWkWutS5I1cLrb9dms7Mwl1xZh13OSVVQ1jqmxPVYCccTbKZRvQ9fBOCOkFrS6-9aTxpvSOPGSvuMtaPAKViNVmotjXtEYimA3jHYQETAse1VBLYP2Fwf23Pnr37M9oZ124SU7lrEGvX2t1DOSRThjOZRRKaKf2rbtiQNV3AjVhdeKtXKvZLKV4-OH0E_mkvd0LucIKdPCq8by2G0FQN1F3iQXbq2PerqUzQBVzMq36ihoxzB6opU3ciOE1rShKZHW4K1NK6SQgEDCjOzcevsMqz417HB80SrNLyR26-20yf3N8fx3UI-nkv4U1jLQF3y9xwY6FMtnXEHJ1bUoJYssJ3LqlDah2FaebUr1Mje-6VOsB6FOktp4s_WtT6X3ivBv9T4IELj_a6B_mA7m29db4iZiiTn_9jU0T2NAezl6900Ss_J0Sr0wNl7SpjazFWLct-I6O7j9igMF4BGXzYCBkuxSJtVe26TTUlIfldGDYN2JqSeJzXFJexkTknXQEzxhFl7TyMYw9FolInagjopawrK5w_EFIdhBZgawa3AjXh_zhIDB-v0nOG7N7v9PYcF1ESmD1lEvPBaXiLwG9ddDx2axceJkWoPjUXg7LdN7djxJs4d9SYMGQtqoUY",
+				"chatgpt_account_id": "c685f511-33c0-40d3-bcfa-4f9e0ad5631c",
+				"chatgpt_user_id": "user-dgZCIABz8R0YB3WbK5ep65NR",
+				"email": "a.nthonydavis860608@gmail.com",
+				"expires_at": "2026-07-20T09:31:09.000Z",
+				"expires_in": 861401,
+				"plan_type": "k12"
+			},
+			"extra": {
+				"email": "a.nthonydavis860608@gmail.com",
+				"email_key": "a_nthonydavis860608_gmail_com",
+				"name": "a.nthonydavis860608@gmail.com",
+				"source": "chatgpt_web_session",
+				"last_refresh": "2026-07-10T10:14:27.446Z"
+			}
+		},
+		{
+			"name": "2026-7-10-02-k12|josephpalmer6939",
+			"notes": "2026-7-10-02-k12 2个 1.5元 \n https://card-cat.boji1334.com/?key=97KC-3MQH-ATE9 \n https://card-cat.boji1334.com/?key=PYM7-J6S9-AW8B",
+			"platform": "openai",
+			"type": "oauth",
+			"expires_at": 1784539868,
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"priority": 1,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlNjc5NWRjLTRiYWUtNDE4YS04NjVkLTA4YTY0MzllZWRhNiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiJjNjg1ZjUxMS0zM2MwLTQwZDMtYmNmYS00ZjllMGFkNTYzMWMiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItZ3JRWWx1dzlNVHlmSGhWTWJwUjVTMEtrX19jNjg1ZjUxMS0zM2MwLTQwZDMtYmNmYS00ZjllMGFkNTYzMWMiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1nclFZbHV3OU1UeWZIaFZNYnBSNVMwS2siLCJ1c2VyX2lkIjoidXNlci1nclFZbHV3OU1UeWZIaFZNYnBSNVMwS2sifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiam9zZXBocGFsbWVyNjkzOUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkVtbWEgSm9obnNvbiJ9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM2NzU3Nzc5ODQsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX2RyYjdmd1NCbjlGMFJMTjJYWWZQYks0SCIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxGSTRuWVROdXRKRmZlRzBzN0R6QTVTVm8iLCJpYXQiOjE3ODM2NzU4NjgsImV4cCI6MTc4NDUzOTg2OCwianRpIjoiYTAxOTRmZTMyYWNmNDgzODk3NWFlZDQzZmEyYjEzZDciLCJuYmYiOjE3ODM2NzU4Njh9.IT1T4DVkOiB7sQUrMFcHIKSYfF1p_g4w6i9Rg6APVaCwm3yzdlEv_ezmOK2cc6JMkekiCra7NdyVF9DJBUVlUWBp3xhXWcZOzlLFiZqm2mF7IDQxoRsvXqLqV_4BLHY5MKRUwABxC6NLciMofnXTlipA53uBncxMPnG5KvmlhwLY4zbgKyEA0XCPdAqil6bOkBWRXBAR4m_-REvinijf0h0zx41Zl7DifWTyV1gITCWT-vpXfjoCbsKUIrS-uGiVWW1tSXB7IiwsaAVCqmqJmtZRXTqNhdhURjYEnpXw2CO2Rj7Y3GgxKA3K2Axh3DhDuIJtjXi6L7o8o4SQo_LxdE98P1ijWDoq7whw7iLeHPMzi_SlvCwohIiczWY_bu_MfVk3kHYi0VJplWU_D_zbO7u2rp3t8T1cqRbccVgsTz4kOY2fVzU2Mt2EIhHLgNv10mQr0X9lA4_-BoqyEkKLkOtAxiVFB-nlk9jrT60cMGMGPHJqaa47nDzlwwiIDjiloq2ga7QO0Z86ryJddTQgzoQBJPmIOPkMEWdNg7RO-7OjFLw59SipDEE5uGQUruXjgWfbu8yzx_dvEaw2BaSQ3te15q3INTyFhCnIl0zMxui1WMLz_Gij2D7q6CWk_MimiV6jgMX_IMC1uFfaBsuxTj5Wp2wQ7vt6rN-KXyAsZU4",
+				"chatgpt_account_id": "c685f511-33c0-40d3-bcfa-4f9e0ad5631c",
+				"chatgpt_user_id": "user-grQYluw9MTyfHhVMbpR5S0Kk",
+				"email": "josephpalmer6939@gmail.com",
+				"expires_at": "2026-07-20T09:31:08.000Z",
+				"expires_in": 861400,
+				"plan_type": "k12"
+			},
+			"extra": {
+				"email": "josephpalmer6939@gmail.com",
+				"email_key": "josephpalmer6939_gmail_com",
+				"name": "josephpalmer6939@gmail.com",
+				"source": "chatgpt_web_session",
+				"last_refresh": "2026-07-10T10:14:27.446Z"
+			}
+		}
+	]
+}
