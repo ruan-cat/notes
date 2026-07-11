@@ -725,7 +725,7 @@ SET "PATH=D:\store\nvm-desktop\22.14.0;%PATH%"
 memorix serve --mode team
 ```
 
-### 有效 MCP 配置文件位置参考
+### 本机有效 MCP 配置文件位置参考
 
 - codex
   - `C:\Users\pc\.codex\config.toml`
