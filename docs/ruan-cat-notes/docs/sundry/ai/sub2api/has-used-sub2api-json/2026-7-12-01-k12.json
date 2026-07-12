@@ -1,0 +1,80 @@
+{
+	"type": "sub2api-data",
+	"version": 1,
+	"exported_at": "2026-07-12T05:17:04Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-12-01-k12|umeshgayakwad254+3424",
+			"notes": "2026-7-12-01-k12 2个 3元 \n https://pay.ldxp.cn/shop/3V6XRTOJ \n https://pay.ldxp.cn/item/8vticl \n http://xgrok.xdo.icu:18363/",
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IldjNzdXREtWTkN2N1ZYSGxqZUhzZjZZUjFhM3I3MmxYMnhJdG9zaVF4NHciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJhbXIiOlsicHdkIl0sImNoYXRncHRfYWNjb3VudF9pZCI6ImM1YjQ2YzgyLWM5M2QtNDI2Zi1iMmNiLTUzNmJhMzYyZmU5OCIsImNoYXRncHRfYWNjb3VudF91c2VyX2lkIjoidXNlci1TR1lSU3B5eFh0blhHcEtJenIxcXR1ejJfX2M1YjQ2YzgyLWM5M2QtNDI2Zi1iMmNiLTUzNmJhMzYyZmU5OCIsImNoYXRncHRfY29tcHV0ZV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJrMTIiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLVNHWVJTcHl4WHRuWEdwS0l6cjFxdHV6MiIsImlzX3NpZ251cCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItU0dZUlNweXhYdG5YR3BLSXpyMXF0dXoyIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InVtZXNoZ2F5YWt3YWQyNTQrMzQyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkJwZG9iaHEgU3R3dmhrZSJ9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM3NTMwMDE2NzEsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzV6emNIcFlSVDJqQld3RTJhWXBId2tlMCIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxHYjNKbUswbW5xSFZ5MTRITVdmVnpIQ0EiLCJpYXQiOjE3ODM3Njk3MjcsImV4cCI6MTc4NDYzMzcyNywianRpIjoiMTczMTQ1MWRlNDkwNGYxZjkyYjIxZjk1N2ExNDliNzgiLCJuYmYiOjE3ODM3Njk3Mjd9.hjvk_Q47RV0Y7WxXliV6A3Q4gWupRTEhIVdP7sOkqZBSSUKQP5gZ6keDtPU64am-r-h8THivYKjiFr4VKmIukRsetMq0wOPrO7u-0b-AaovTB7Tu82HtqxaO1MoZ0hbx3hUf-q1woyS7HuiixYev5vGnWmn6DtNQLE1T0WOIEWdbxljZc4aHdQi7OTXPlawW8LP_YYRIw4iew9CnrRnUFHvbUOkdz40jR2G941v05cZ5SAnBo5R-TObKnUgURbRrelipFPmERJP0PBczyYQuoffyMkLaofpV2R4tpyVWZZGtqAuwuP7hnKtQTqfa8UzfYu95qAp4F2080Pff8zMwiw",
+				"chatgpt_account_id": "",
+				"chatgpt_user_id": "",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "umeshgayakwad254+3424@gmail.com",
+				"expires_at": 1784694058,
+				"expires_in": 864000,
+				"id_token": "",
+				"organization_id": "",
+				"plan_type": "",
+				"refresh_token": ""
+			},
+			"extra": {
+				"batch_code": "Lyy-A7B3874F7D40",
+				"batch_index": 172,
+				"email": "umeshgayakwad254+3424@gmail.com",
+				"last_refresh": "2026-07-12T04:20:58Z",
+				"openai_oauth_responses_websockets_v2_enabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"privacy_mode": "training_off",
+				"source_order_no": "RGfoGSW2bEF2aCpkP6zN1jQ",
+				"source_target_id": "c5b46c82-c93d-426f-b2cb-536ba362fe98",
+				"source_workspace_id": "c5b46c82-c93d-426f-b2cb-536ba362fe98"
+			},
+			"plan_type": "",
+			"platform": "openai",
+			"priority": 1,
+			"rate_multiplier": 1,
+			"type": "oauth"
+		},
+		{
+			"name": "2026-7-12-01-k12|pbharath6305",
+			"notes": "2026-7-12-01-k12 2个 3元 \n https://pay.ldxp.cn/shop/3V6XRTOJ \n https://pay.ldxp.cn/item/8vticl \n http://xgrok.xdo.icu:18363/",
+			"auto_pause_on_expired": true,
+			"concurrency": 10,
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IldjNzdXREtWTkN2N1ZYSGxqZUhzZjZZUjFhM3I3MmxYMnhJdG9zaVF4NHciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJhbXIiOlsicHdkIl0sImNoYXRncHRfYWNjb3VudF9pZCI6ImM1YjQ2YzgyLWM5M2QtNDI2Zi1iMmNiLTUzNmJhMzYyZmU5OCIsImNoYXRncHRfYWNjb3VudF91c2VyX2lkIjoidXNlci1mUE1kU0JCd2pMQlg3UmZ6VXNsdEtIUTVfX2M1YjQ2YzgyLWM5M2QtNDI2Zi1iMmNiLTUzNmJhMzYyZmU5OCIsImNoYXRncHRfY29tcHV0ZV9yZXNpZGVuY3kiOiJub19jb25zdHJhaW50IiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJrMTIiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLWZQTWRTQkJ3akxCWDdSZnpVc2x0S0hRNSIsImlzX3NpZ251cCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItZlBNZFNCQndqTEJYN1JmelVzbHRLSFE1In0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InBiaGFyYXRoNjMwNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6Ildyb3VteCBadG1ub2V4In0sImlzcyI6Imh0dHBzOi8vYXV0aC5vcGVuYWkuY29tIiwicHdkX2F1dGhfdGltZSI6MTc4Mzc1MzA3ODg3NSwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIiwibW9kZWwucmVxdWVzdCIsIm1vZGVsLnJlYWQiLCJvcmdhbml6YXRpb24ucmVhZCIsIm9yZ2FuaXphdGlvbi53cml0ZSJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfTW02d2M0OXVnZGlrdDVlZlRGZHNlYUxhIiwic2wiOnRydWUsInN1YiI6ImF1dGgwfE1CeUwxUkxKNGladGFxZDJxVXJ2NVl0RiIsImlhdCI6MTc4Mzc2OTcyNywiZXhwIjoxNzg0NjMzNzI3LCJqdGkiOiI5ZjY2ZjFmZTIzNzc0ZWYyOTFhMThkZGM5ZmMxMmM1MiIsIm5iZiI6MTc4Mzc2OTcyN30.UMwgQ6UqZPmg6qTv4ae38NCdvwJXBGNW7au58_z4qNBfLMVyNF49DWOt0vnpZMLqgO9LFRIuKLQPGPviwxkhgC6F0myxqKtzuJf8O10WWW_MNK9cs5Kg364cVxSDfhX5ehjVUe1AJ2pgCcsNUJbeGiqXs5lKmHrX3QvpPKs-FvF8ZHmYlt9V7iT2zuIcBM9lC_kJMk3vq2XpJBYlKRxWWwtT_0RKSojS0ugUOhmkmsyJ8LEzZsT6MN8suGDE-Mb8B1YotSUMyghXNBn0CXnE-FSlWPsAAGNYZN0LcM5ozfwgRhK3A_BwtYWysIqjjNKkoKymhVMEy5s9nx5ZzvP-_w",
+				"chatgpt_account_id": "",
+				"chatgpt_user_id": "",
+				"client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+				"email": "pbharath6305@gmail.com",
+				"expires_at": 1784694058,
+				"expires_in": 864000,
+				"id_token": "",
+				"organization_id": "",
+				"plan_type": "",
+				"refresh_token": ""
+			},
+			"extra": {
+				"batch_code": "Lyy-A7B3874F7D40",
+				"batch_index": 173,
+				"email": "pbharath6305@gmail.com",
+				"last_refresh": "2026-07-12T04:20:58Z",
+				"openai_oauth_responses_websockets_v2_enabled": true,
+				"openai_oauth_responses_websockets_v2_mode": "ctx_pool",
+				"privacy_mode": "training_off",
+				"source_order_no": "RGfoGSW2bEF2aCpkP6zN1jQ",
+				"source_target_id": "c5b46c82-c93d-426f-b2cb-536ba362fe98",
+				"source_workspace_id": "c5b46c82-c93d-426f-b2cb-536ba362fe98"
+			},
+			"plan_type": "",
+			"platform": "openai",
+			"priority": 1,
+			"rate_multiplier": 1,
+			"type": "oauth"
+		}
+	]
+}
