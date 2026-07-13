@@ -1,0 +1,96 @@
+{
+	"type": "sub2api-data",
+	"version": 1,
+	"exported_at": "2026-07-13T08:13:26.127Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-13-01-k12|BraxtonBluemel50889",
+			"notes": "2026-7-13-01-k12 3个 1.13元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/e3ezlu \n http://81.70.44.148:3000/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IldjNzdXREtWTkN2N1ZYSGxqZUhzZjZZUjFhM3I3MmxYMnhJdG9zaVF4NHciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiJlYjkzYzZmNC01OGM1LTQ5MjQtOTgyOC03ODhjYTI0MTJlZjgiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItV3MzTEd6V1hVd1JKRzR0eXdlRXRCWWNRX19lYjkzYzZmNC01OGM1LTQ5MjQtOTgyOC03ODhjYTI0MTJlZjgiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1XczNMR3pXWFV3UkpHNHR5d2VFdEJZY1EiLCJ1c2VyX2lkIjoidXNlci1XczNMR3pXWFV3UkpHNHR5d2VFdEJZY1EifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiQnJheHRvbkJsdWVtZWw1MDg4OUBvdXRsb29rLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTm9yYSBCcm93biJ9LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsInB3ZF9hdXRoX3RpbWUiOjE3ODM5MTI4ODkxOTEsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX2N0N1BYb3pGUjZFclNPcjVpaE5rZmJraiIsInNsIjp0cnVlLCJzdWIiOiJhdXRoMHxOdzVJOGtJWXVhMHVka1NrR2RYaUdIYloiLCJpYXQiOjE3ODM5MTI4OTEsImV4cCI6MTc4NDc3Njg5MSwianRpIjoiMzZlODEzNGJiZDM1NGM3YTlkYjNkNzQwZGMwZDM1NTAiLCJuYmYiOjE3ODM5MTI4OTF9.ZT4MJRQZVTfeNu90t25zK_wXLjVb6Y_4o8FqGyar47Rd-JPw_ppx17VzgySRUjDRhzr2l7ltAiMgqWIgA_P3lWFRhAWh-i4K3w6q4p91DgDM44EShIN6LN_upLFFbThkJM_6-CAMkW9cx3BFy6tMJ9xX04xEvDCAz1nqOuM5tnBKMIkAj3L85-wn2TIQ_xu22vcHvQzZtAEQbNyfnOeipS9eAuG5IyFpmN2ZScHWViGXKpyfqovuwBhLhWEZ3qAozH4O0NrH4AAkE_9W9tjpL-Yj6lQdbWdBxO9Za7haycR8FVGG22EuiG7IQ5b3JMqD6jgi4a_CL7TDUg6ZnSwSbg",
+				"chatgpt_account_id": "eb93c6f4-58c5-4924-9828-788ca2412ef8",
+				"chatgpt_user_id": "user-Ws3LGzWXUwRJG4tyweEtBYcQ",
+				"client_id": "app_X8zY6vW2pQ9tR3dE7nK1jL5gH",
+				"email": "BraxtonBluemel50889@outlook.com",
+				"plan_type": "k12"
+			},
+			"extra": {
+				"codex_5h_reset_after_seconds": 18000,
+				"codex_5h_reset_at": "2026-07-13T16:22:00+08:00",
+				"codex_5h_used_percent": 1,
+				"codex_5h_window_minutes": 300,
+				"codex_7d_reset_after_seconds": 604800,
+				"codex_7d_reset_at": "2026-07-20T11:22:00+08:00",
+				"codex_7d_used_percent": 0,
+				"codex_7d_window_minutes": 10080,
+				"codex_primary_over_secondary_percent": 0,
+				"codex_primary_reset_after_seconds": 18000,
+				"codex_primary_used_percent": 1,
+				"codex_primary_window_minutes": 300,
+				"codex_secondary_reset_after_seconds": 604800,
+				"codex_secondary_used_percent": 0,
+				"codex_secondary_window_minutes": 10080,
+				"codex_usage_updated_at": "2026-07-13T11:22:00+08:00",
+				"email": "BraxtonBluemel50889@outlook.com",
+				"no_rt": true,
+				"privacy_mode": "training_set_failed",
+				"source": "ai-gpt-k12-nort-bulk"
+			},
+			"concurrency": 16,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-13-01-k12|DeeGetsinger904503",
+			"notes": "2026-7-13-01-k12 3个 1.13元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/e3ezlu \n http://81.70.44.148:3000/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IldjNzdXREtWTkN2N1ZYSGxqZUhzZjZZUjFhM3I3MmxYMnhJdG9zaVF4NHciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiI0OTI5OWZkOC0wZjZmLTQwZWEtYTIwYS1lNDRhNGM5ODNjYTgiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItSDVDOGVmelRhdXE3UExLUUFZaVlvVkxPX180OTI5OWZkOC0wZjZmLTQwZWEtYTIwYS1lNDRhNGM5ODNjYTgiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1INUM4ZWZ6VGF1cTdQTEtRQVlpWW9WTE8iLCJ1c2VyX2lkIjoidXNlci1INUM4ZWZ6VGF1cTdQTEtRQVlpWW9WTE8ifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiRGVlR2V0c2luZ2VyOTA0NTAzQG91dGxvb2suY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJSeWFuIENsYXJrIn0sImlzcyI6Imh0dHBzOi8vYXV0aC5vcGVuYWkuY29tIiwicHdkX2F1dGhfdGltZSI6MTc4MzkxMjg4OTkzMSwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIiwibW9kZWwucmVxdWVzdCIsIm1vZGVsLnJlYWQiLCJvcmdhbml6YXRpb24ucmVhZCIsIm9yZ2FuaXphdGlvbi53cml0ZSJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfQmxnbVBQT2FVMm1jY3JWc3YyWU1MOFAzIiwic2wiOnRydWUsInN1YiI6ImF1dGgwfEZjODBPdDFGRUhscVM2endOY3hEZ0dSNSIsImlhdCI6MTc4MzkxMjg5MCwiZXhwIjoxNzg0Nzc2ODkwLCJqdGkiOiI1NWE4YjE1M2M4MWQ0OGI4ODVlOWVmODhkMTVkZTAzZSIsIm5iZiI6MTc4MzkxMjg5MH0.D9aBqNwHaGEZ6jRKOUpyGH719MOUHcBL8LLc8CuyGdZV6f-VaJYX-I7ZCx3SqSD3tzUluizhiv__P5KB6y-C8UPJlY9T6trFF9dPIU5w5Ll5BE9hdDsAjmSjtgjs_ksQiymzYO0ILhLq2_C3FgXgjWXnWGEDOHPIjdB0t_LPyyXKJ6kPJU1ZvFin3cE13b-djh5JetpuDeB266dK5KW9v2QUV2JzY61JBiB9AiblAEyWGzwPW5uZbw2jy2Df8HeN-DGq45JSwPSQyn1zwREY3Ni5T7L60Hzxh7_FxW1m1OvQm8LHQ4woUT5GRKMt1a7HtJhQAfWoPI1vOVgwgSZ2Cw",
+				"chatgpt_account_id": "49299fd8-0f6f-40ea-a20a-e44a4c983ca8",
+				"chatgpt_user_id": "user-H5C8efzTauq7PLKQAYiYoVLO",
+				"client_id": "app_X8zY6vW2pQ9tR3dE7nK1jL5gH",
+				"email": "DeeGetsinger904503@outlook.com",
+				"plan_type": "k12"
+			},
+			"extra": {
+				"email": "DeeGetsinger904503@outlook.com",
+				"no_rt": true,
+				"privacy_mode": "training_set_failed",
+				"source": "ai-gpt-k12-nort-bulk"
+			},
+			"concurrency": 16,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-13-01-k12|VinaCentanni95551",
+			"notes": "2026-7-13-01-k12 3个 1.13元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/e3ezlu \n http://81.70.44.148:3000/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IldjNzdXREtWTkN2N1ZYSGxqZUhzZjZZUjFhM3I3MmxYMnhJdG9zaVF4NHciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiI2MjU3OGFiNC1lOGFmLTQzM2MtYTZlMi1mMGEzYjRmNTQyZjAiLCJjaGF0Z3B0X2FjY291bnRfdXNlcl9pZCI6InVzZXItc2RzTjZWcFI1b1BXbVBIRTJTMkI0SzZ5X182MjU3OGFiNC1lOGFmLTQzM2MtYTZlMi1mMGEzYjRmNTQyZjAiLCJjaGF0Z3B0X2NvbXB1dGVfcmVzaWRlbmN5Ijoibm9fY29uc3RyYWludCIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1zZHNONlZwUjVvUFdtUEhFMlMyQjRLNnkiLCJ1c2VyX2lkIjoidXNlci1zZHNONlZwUjVvUFdtUEhFMlMyQjRLNnkifSwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9wcm9maWxlIjp7ImVtYWlsIjoiVmluYUNlbnRhbm5pOTU1NTFAb3V0bG9vay5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkxpYW0gV2lsc29uIn0sImlzcyI6Imh0dHBzOi8vYXV0aC5vcGVuYWkuY29tIiwicHdkX2F1dGhfdGltZSI6MTc4MzkxMjg4MzYwOSwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIiwibW9kZWwucmVxdWVzdCIsIm1vZGVsLnJlYWQiLCJvcmdhbml6YXRpb24ucmVhZCIsIm9yZ2FuaXphdGlvbi53cml0ZSJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfSXF4M2duWHF2ZDhLUmhFZWcwWFdaWWlqIiwic2wiOnRydWUsInN1YiI6ImF1dGgwfFlnSUJRenFnbktEbmFad2w3am9GWnlkTiIsImlhdCI6MTc4MzkxMjg4NSwiZXhwIjoxNzg0Nzc2ODg1LCJqdGkiOiJhYmU5MzA3ZWY4ZTg0OTc3YWZkMjRmODRjZDg2YmExMiIsIm5iZiI6MTc4MzkxMjg4NX0.aVMTC8CdkMkvj6BOmcFZfMhe0VlBUFc-J3BxIIgVrlnadKpdmVAs_Ywh_i7kw5i7tl_yapcAvm4bm4mBBYJLZ8JgYolyeFktRv9HUhdn0oq1D9QTVm-7SwZtJ2z5rYBpaBVETDWKyKWXksh6FahA736Vp12qJLb7TZvPvFAUIg9Hop2sXNpBmlV-qxQ28GsfDX-OZYDT5lM-0Q8FNtdbH_jxDlV2NCNy8HGyaunETub92r0Nndy84ulSTCNO1YoZm-onUSOk46RV6dNFErdLEwla3G2Ch4_yTOAzeZQXePZdiYakSO8zvPOy9jIC6g_b7Sy_wd-rQcPhMk-dJ45l0w",
+				"chatgpt_account_id": "62578ab4-e8af-433c-a6e2-f0a3b4f542f0",
+				"chatgpt_user_id": "user-sdsN6VpR5oPWmPHE2S2B4K6y",
+				"client_id": "app_X8zY6vW2pQ9tR3dE7nK1jL5gH",
+				"email": "VinaCentanni95551@outlook.com",
+				"plan_type": "k12"
+			},
+			"extra": {
+				"email": "VinaCentanni95551@outlook.com",
+				"no_rt": true,
+				"privacy_mode": "training_set_failed",
+				"source": "ai-gpt-k12-nort-bulk"
+			},
+			"concurrency": 16,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		}
+	]
+}
