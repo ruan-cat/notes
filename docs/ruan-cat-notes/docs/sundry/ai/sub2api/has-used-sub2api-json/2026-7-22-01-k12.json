@@ -1,0 +1,144 @@
+{
+	"type": "sub2api-data",
+	"version": 1,
+	"exported_at": "2026-07-22T00:54:01.046Z",
+	"proxies": [],
+	"accounts": [
+		{
+			"name": "2026-7-22-01-k12|thorakawalek789239+c2api3",
+			"notes": "2026-7-22-01-k12 4个 1.29元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/5q26yu \n https://www.kezongai.top/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"agent_private_key": "MC4CAQAwBQYDK2VwBCIEIPow7oaslXJzYOSfI8j6euiAZy8SKmGvp/ITuAKm88ai",
+				"agent_runtime_id": "agent-FW2GTw0adIkuRqxExq5KpKKS",
+				"auth_mode": "agentIdentity",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_is_fedramp": false,
+				"chatgpt_user_id": "user-zOqzAAVWCezGWfcxX6IhrErI",
+				"email": "thorakawalek789239+c2api3@outlook.com",
+				"id_token": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIiwiY3BhX3N5bnRoZXRpYyI6dHJ1ZX0.eyJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbS8iLCJzdWIiOiJ1c2VyLXpPcXpBQVZXQ2V6R1dmY3hYNklockVySSIsImF1ZCI6ImNoYXRncHQyYXBpLWV4cG9ydCIsImlhdCI6MTc4NDY1OTgzMiwiZXhwIjoxNzkyNDM1OTg1LCJlbWFpbCI6InRob3Jha2F3YWxlazc4OTIzOStjMmFwaTNAb3V0bG9vay5jb20iLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiZWIzZjEwNjgtZWIzOS00NGNmLWEzNzUtNDYxYjdjODFkOGJlIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci16T3F6QUFWV0NlekdXZmN4WDZJaHJFckkiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6ImsxMiJ9fQ.synthetic",
+				"plan_type": "k12",
+				"task_id": "task-xwFwgrNRCp3qOCsjnT2hrAU7",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"extra": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"email": "thorakawalek789239+c2api3@outlook.com",
+				"email_key": "thorakawalek789239_c2api3_outlook_com",
+				"last_refresh": "2026-07-21T18:50:38.041Z",
+				"name": "thorakawalek789239+c2api3@outlook.com",
+				"source": "chatgpt_web_session",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-22-01-k12|thorntonyavari1976",
+			"notes": "2026-7-22-01-k12 4个 1.29元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/5q26yu \n https://www.kezongai.top/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"agent_private_key": "MC4CAQAwBQYDK2VwBCIEIBCOfWlFClyHBrJEIXChJcA/YbJtLOXL/isbWmAhw+kb",
+				"agent_runtime_id": "agent-7CiZEK3GyhQ6noz5sAeypiPr",
+				"auth_mode": "agentIdentity",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_is_fedramp": false,
+				"chatgpt_user_id": "user-FrivaC1W0Volw4OyHT8wo0UA",
+				"email": "thorntonyavari1976@outlook.com",
+				"id_token": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIiwiY3BhX3N5bnRoZXRpYyI6dHJ1ZX0.eyJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbS8iLCJzdWIiOiJ1c2VyLUZyaXZhQzFXMFZvbHc0T3lIVDh3bzBVQSIsImF1ZCI6ImNoYXRncHQyYXBpLWV4cG9ydCIsImlhdCI6MTc4NDY1OTEzNSwiZXhwIjoxNzkyNDM1Mjc3LCJlbWFpbCI6InRob3JudG9ueWF2YXJpMTk3NkBvdXRsb29rLmNvbSIsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiJlYjNmMTA2OC1lYjM5LTQ0Y2YtYTM3NS00NjFiN2M4MWQ4YmUiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLUZyaXZhQzFXMFZvbHc0T3lIVDh3bzBVQSIsImNoYXRncHRfcGxhbl90eXBlIjoiazEyIn19.synthetic",
+				"plan_type": "k12",
+				"task_id": "task-VtJl5ObT4CPh21HKxdDRIxun",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"extra": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"email": "thorntonyavari1976@outlook.com",
+				"email_key": "thorntonyavari1976_outlook_com",
+				"last_refresh": "2026-07-21T18:39:00.325Z",
+				"name": "thorntonyavari1976@outlook.com",
+				"source": "chatgpt_web_session",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-22-01-k12|thresaculmer9825+c2api3",
+			"notes": "2026-7-22-01-k12 4个 1.29元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/5q26yu \n https://www.kezongai.top/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"agent_private_key": "MC4CAQAwBQYDK2VwBCIEIFjbHqCe25K1j0BP3ZAIRudjudfxlvrStkQZOULpMiNX",
+				"agent_runtime_id": "agent-BIn2t5mblqm2LJw5AYxZwvmq",
+				"auth_mode": "agentIdentity",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_is_fedramp": false,
+				"chatgpt_user_id": "user-aYUVUvBm7Cwgqy9TiZw6eEkX",
+				"email": "thresaculmer9825+c2api3@outlook.com",
+				"id_token": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIiwiY3BhX3N5bnRoZXRpYyI6dHJ1ZX0.eyJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbS8iLCJzdWIiOiJ1c2VyLWFZVVZVdkJtN0N3Z3F5OVRpWnc2ZUVrWCIsImF1ZCI6ImNoYXRncHQyYXBpLWV4cG9ydCIsImlhdCI6MTc4NDY1OTgyNiwiZXhwIjoxNzkyNDM1OTg0LCJlbWFpbCI6InRocmVzYWN1bG1lcjk4MjUrYzJhcGkzQG91dGxvb2suY29tIiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7ImNoYXRncHRfYWNjb3VudF9pZCI6ImViM2YxMDY4LWViMzktNDRjZi1hMzc1LTQ2MWI3YzgxZDhiZSIsImNoYXRncHRfdXNlcl9pZCI6InVzZXItYVlVVlV2Qm03Q3dncXk5VGladzZlRWtYIiwiY2hhdGdwdF9wbGFuX3R5cGUiOiJrMTIifX0.synthetic",
+				"plan_type": "k12",
+				"task_id": "task-GpKG6wc2obss95C6yZOQ3iuy",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"extra": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"email": "thresaculmer9825+c2api3@outlook.com",
+				"email_key": "thresaculmer9825_c2api3_outlook_com",
+				"last_refresh": "2026-07-21T18:50:32.235Z",
+				"name": "thresaculmer9825+c2api3@outlook.com",
+				"source": "chatgpt_web_session",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		},
+		{
+			"name": "2026-7-22-01-k12|thurmandipadova495028+c2api3",
+			"notes": "2026-7-22-01-k12 4个 1.29元 \n https://pay.ldxp.cn/shop/TTEF5IWE \n https://pay.ldxp.cn/item/5q26yu \n https://www.kezongai.top/",
+			"platform": "openai",
+			"type": "oauth",
+			"credentials": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"agent_private_key": "MC4CAQAwBQYDK2VwBCIEIE9wBpqSiqTuJAhWRFQX4iW+JnDGtLqxI1XKRbXc86Cm",
+				"agent_runtime_id": "agent-RazVavdNH5YnMVO4R5IMkJDt",
+				"auth_mode": "agentIdentity",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_is_fedramp": false,
+				"chatgpt_user_id": "user-gjVnKNCctPczmdZm1YUo8tFY",
+				"email": "thurmandipadova495028+c2api3@outlook.com",
+				"id_token": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIiwiY3BhX3N5bnRoZXRpYyI6dHJ1ZX0.eyJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbS8iLCJzdWIiOiJ1c2VyLWdqVm5LTkNjdFBjem1kWm0xWVVvOHRGWSIsImF1ZCI6ImNoYXRncHQyYXBpLWV4cG9ydCIsImlhdCI6MTc4NDY1OTg2NywiZXhwIjoxNzkyNDM2MDI0LCJlbWFpbCI6InRodXJtYW5kaXBhZG92YTQ5NTAyOCtjMmFwaTNAb3V0bG9vay5jb20iLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiZWIzZjEwNjgtZWIzOS00NGNmLWEzNzUtNDYxYjdjODFkOGJlIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci1nalZuS05DY3RQY3ptZFptMVlVbzh0RlkiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6ImsxMiJ9fQ.synthetic",
+				"plan_type": "k12",
+				"task_id": "task-V94FKGamPdT9zrPfwRuTYa1h",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"extra": {
+				"account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"chatgpt_account_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be",
+				"email": "thurmandipadova495028+c2api3@outlook.com",
+				"email_key": "thurmandipadova495028_c2api3_outlook_com",
+				"last_refresh": "2026-07-21T18:51:13.566Z",
+				"name": "thurmandipadova495028+c2api3@outlook.com",
+				"source": "chatgpt_web_session",
+				"workspace_id": "eb3f1068-eb39-44cf-a375-461b7c81d8be"
+			},
+			"concurrency": 10,
+			"priority": 1,
+			"rate_multiplier": 1,
+			"auto_pause_on_expired": true
+		}
+	]
+}
