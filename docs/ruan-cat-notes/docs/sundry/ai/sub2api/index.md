@@ -1,3 +1,7 @@
+<script setup>
+import Sub2ApiJsonRewriter from "./Sub2ApiJsonRewriter.vue";
+</script>
+
 # sub2api 自建中转站
 
 - 仓库： https://github.com/Wei-Shaw/sub2api
@@ -141,3 +145,11 @@ docker exec -it sub2api-postgres sh -lc "psql -U \"\${POSTGRES_USER:-sub2api}\" 
 - CPA 转换成 sub2api 格式： https://gtxx3600.github.io/CPA2sub2API/
 
 - `GPT 手搓plus账号 质保首登 长效邮箱`： https://pay.ldxp.cn/item/wuu9fh
+
+## 给 sub2api json 文件增加必要前缀
+
+<ClientOnly>
+	<div class="vp-raw">
+		<Sub2ApiJsonRewriter />
+	</div>
+</ClientOnly>
