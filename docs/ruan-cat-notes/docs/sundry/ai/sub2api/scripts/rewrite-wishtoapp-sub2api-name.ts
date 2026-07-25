@@ -3,9 +3,9 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_DIRECTORY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../has-used-sub2api-json");
-const TARGET_FILE_NAME = "2026-7-25-01-k12.json";
-const ACCOUNT_BATCH_PREFIX = "2026-7-25-01-k12";
-const notes = "2026-7-25-01-k12 3个 2.04元 \n https://pay.ldxp.cn/item/a9tg0a \n https://k12.365vr.top/";
+const TARGET_FILE_NAME = "2026-7-25-02-k12.json";
+const ACCOUNT_BATCH_PREFIX = "2026-7-25-02-k12";
+const notes = "2026-7-25-02-k12 2个 \n https://pay.ldxp.cn/item/ynkvtr ";
 
 const CONFIG: RewriteSub2ApiAccountNamesConfig = {
 	inputPath: path.join(DATA_DIRECTORY, TARGET_FILE_NAME),
