@@ -17,15 +17,8 @@
 		"noEmit": true,
 		"allowJs": true,
 		// Web 应用需要 DOM 环境
-		"lib": [
-			"ESNext",
-			"ES2020",
-			"DOM",
-			"DOM.Iterable"
-		],
-		"typeRoots": [
-			"./types"
-		],
+		"lib": ["ESNext", "ES2020", "DOM", "DOM.Iterable"],
+		"typeRoots": ["./types"],
 		"types": [
 			/** https://juejin.cn/post/7262322846252613693 */
 			"element-plus/global.d.ts",
@@ -33,15 +26,9 @@
 			"vite/client"
 		],
 		"paths": {
-			"@/*": [
-				"./src/*"
-			],
-			"utils/*": [
-				"./src/utils/*"
-			],
-			"@docs/*": [
-				"./docs/*"
-			]
+			"@/*": ["./src/*"],
+			"utils/*": ["./src/utils/*"],
+			"@docs/*": ["./docs/*"]
 		}
 	},
 	/** https://www.typescriptlang.org/tsconfig#include */
@@ -74,6 +61,7 @@
 		"./.github/**/*.md",
 		"./.claude/**/*.md",
 		"./.cursor/**/*.md",
+		"./.agents/**/*.md",
 		"./openspec/**/*.md",
 		"GEMINI.md",
 		"README.md",
@@ -82,17 +70,12 @@
 		"AGENTS.md"
 	],
 	/* 模仿其他项目加上的排除配置 */
-	"exclude": [
-		"node_modules",
-		"dist"
-	],
+	"exclude": ["node_modules", "dist"],
 	/**
 		让volar对md提供基础的类型支持
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
 	"vueCompilerOptions": {
-		"vitePressExtensions": [
-			".md"
-		]
+		"vitePressExtensions": [".md"]
 	}
 }
