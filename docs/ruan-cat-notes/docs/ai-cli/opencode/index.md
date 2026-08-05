@@ -5,7 +5,3 @@
 ## 下载
 
 - https://opencode.ai/download
-
-## <!-- TODO:  --> 在 opencode 内使用 gemini 模型
-
-- https://github.com/NoeFabris/opencode-antigravity-auth
