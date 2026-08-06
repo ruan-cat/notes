@@ -16,7 +16,7 @@
 
 - 生成的 AI 用的命令： https://github.com/Fission-AI/OpenSpec/blob/main/docs/opsx.md#commands
 
-### 初始化与迁移命令
+## 初始化与迁移命令
 
 该命令可以将旧版本的规范文件，全部删除。并全部使用新版本的 skills 文件来约束。
 
@@ -24,7 +24,16 @@
 openspec init
 ```
 
-### 常用 AI 命令
+## 快速给新项目初始化配置
+
+```bash
+# 默认给通用级别的agent skills安装， openspec 的技能会默认进入到当前工作目录的 .agents\skills 文件夹内
+openspec init --tools codex
+# 删除脏文件 避免污染
+rm .agents\skills\.openspec-target
+```
+
+## 常用 AI 命令
 
 ```bash
 # 新建
