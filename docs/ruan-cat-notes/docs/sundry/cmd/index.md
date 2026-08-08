@@ -31,25 +31,19 @@ code $profile
 
 ## tree
 
-树状图输出命令
+- 树状图输出命令： https://blog.csdn.net/weixin_43900833/article/details/86565085
 
-- https://blog.csdn.net/weixin_43900833/article/details/86565085
-
-常用命令
+输出全部的文件和文件夹，并将结果保存输出到`list.md`文件内：
 
 ```bash
-tree /f > list.md
+[Console]::OutputEncoding = [Text.Encoding]::GetEncoding(936); tree /f | Out-String | Set-Content -Encoding UTF8 list.md
 ```
-
-输出全部的文件和文件夹，并将结果保存输出到`list.md`文件内。
-
-还可以写成：
 
 ```bash
 tree /f >list.md
 ```
 
-```sh
+```bash
 tree /F
 ```
 
