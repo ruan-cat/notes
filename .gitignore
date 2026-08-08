@@ -53,4 +53,7 @@ todoctor/
 # 忽略本地缓存文件 忽略AI模型记忆缓存文件
 local_cache/
 
+# 忽略 WorkBuddy
+.workbuddy
+
 .vercel
