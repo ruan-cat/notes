@@ -25,6 +25,12 @@ codex 有多个应用端、cli、App、vscode plugins。
 codex-threadripper bucket switch custom
 ```
 
+我需要整体同步，运行命令：
+
+```bash
+codex-threadripper sync
+```
+
 ## 申领 openai 套餐
 
 这里罗列全部 openai 官方的额度申请活动链接：
