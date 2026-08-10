@@ -25,6 +25,21 @@ codex 有多个应用端、cli、App、vscode plugins。
 codex-threadripper bucket switch custom
 ```
 
+## 申领 openai 套餐
+
+这里罗列全部 openai 官方的额度申请活动链接：
+
+- Codex for Open Source ：https://openai.com/zh-Hans-CN/form/codex-for-oss/
+- codex-for-oss 文档： https://developers.openai.com/community/codex-for-oss
+- `开源维护者可免费领 6 个月 ChatGPT Pro`： https://juejin.cn/post/7614205951298584622
+- 学术研究人员的 ChatGPT 工作空间： https://chatgpt.com/sophia/verification
+- `研究人员准入计划申请` Researcher Access Program application： https://openai.com/form/researcher-access-program/
+- `价值百万的干货！免费教你申请 OpenAI 研究员账号，轻松领取 $10,000 API 积分支持！`： https://www.bilibili.com/video/BV1thrSYcEF6/
+
+## 免费领取 plus 或 pro
+
+- 需要 telegram 账号： https://keycrop.net/roulette
+
 ## 用 PayPal 免费领取 ChatGPT plus
 
 ### 方案 1 失败
