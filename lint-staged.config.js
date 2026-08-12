@@ -6,5 +6,5 @@
  */
 export default {
 	/** @see https://github.com/lint-staged/lint-staged/blob/main/README.md#automatically-fix-code-style-with-prettier-for-any-format-prettier-supports */
-	"*": "prettier --experimental-cli --write",
+	"*": "prettier --experimental-cli --write --no-parallel",
 };
