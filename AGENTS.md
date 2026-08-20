@@ -5,84 +5,94 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 本项目的技能表
 
 - `openspec-apply-change`
-  - 路径：`.agent/skills/openspec-apply-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-apply-change/SKILL.md`
   - 用途：从 OpenSpec change 实施任务
   - 触发时机：当用户想要开始实施、继续实施或处理 OpenSpec change 任务时使用
   - 参考作用：实施阶段的参考
   - 约束：只负责实施，不负责规范制定
 
 - `openspec-archive-change`
-  - 路径：`.agent/skills/openspec-archive-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-archive-change/SKILL.md`
   - 用途：归档已完成的 change
   - 触发时机：当用户想要完成并归档 change 时使用
   - 参考作用：归档阶段的参考
   - 约束：只负责归档，不负责实施
 
 - `openspec-bulk-archive-change`
-  - 路径：`.agent/skills/openspec-bulk-archive-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-bulk-archive-change/SKILL.md`
   - 用途：批量归档多个已完成 change
   - 触发时机：当用户想要批量归档多个 change 时使用
   - 参考作用：批量归档的参考
   - 约束：只负责归档，不负责实施
 
 - `openspec-continue-change`
-  - 路径：`.agent/skills/openspec-continue-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-continue-change/SKILL.md`
   - 用途：继续 working on a change，创建下一个 artifact
   - 触发时机：当用户想要继续 change 工作流程时使用
   - 参考作用：继续工作的参考
   - 约束：只负责继续工作，不负责归档
 
 - `openspec-explore`
-  - 路径：`.agent/skills/openspec-explore/SKILL.md`
+  - 路径：`.agents/skills/openspec-explore/SKILL.md`
   - 用途：进入探索模式 - 思考伙伴，调查问题，澄清需求
   - 触发时机：当用户想要思考问题、调查问题或澄清需求时使用
   - 参考作用：探索阶段的参考
   - 约束：只负责探索，不负责实施
 
 - `openspec-ff-change`
-  - 路径：`.agent/skills/openspec-ff-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-ff-change/SKILL.md`
   - 用途：快速创建所有需要的 artifact
   - 触发时机：当用户想要快速创建所有 artifact 时使用
   - 参考作用：快速创建的参考
   - 约束：只负责创建，不负责验证
 
 - `openspec-new-change`
-  - 路径：`.agent/skills/openspec-new-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-new-change/SKILL.md`
   - 用途：创建新的 OpenSpec change
   - 触发时机：当用户想要开始新功能、修复或修改时使用
   - 参考作用：新建 change 的参考
   - 约束：只负责创建，不负责实施
 
 - `openspec-onboard`
-  - 路径：`.agent/skills/openspec-onboard/SKILL.md`
+  - 路径：`.agents/skills/openspec-onboard/SKILL.md`
   - 用途：OpenSpec 入职指导 - 完整的 workflow 演练
   - 触发时机：当用户想要完整了解 OpenSpec workflow 时使用
   - 参考作用：入职培训的参考
   - 约束：只负责培训，不负责实施
 
 - `openspec-sync-specs`
-  - 路径：`.agent/skills/openspec-sync-specs/SKILL.md`
+  - 路径：`.agents/skills/openspec-sync-specs/SKILL.md`
   - 用途：同步 delta specs 到主 specs
   - 触发时机：当用户想要更新主 specs 时使用
   - 参考作用：同步的参考
   - 约束：只负责同步，不负责归档
 
 - `openspec-verify-change`
-  - 路径：`.agent/skills/openspec-verify-change/SKILL.md`
+  - 路径：`.agents/skills/openspec-verify-change/SKILL.md`
   - 用途：验证实现是否匹配 change artifacts
   - 触发时机：当用户想要验证实现是否完整、正确和一致时使用
   - 参考作用：验证的参考
   - 约束：只负责验证，不负责归档
 
+- `vitepress-client-component-usage`
+  - 路径：`.agents/skills/vitepress-client-component-usage/SKILL.md`
+  - 用途：在 VitePress Markdown 中创建、导入、渲染或修复客户端 Vue 组件
+  - 触发时机：处理 `<demo vue="./Xxx.vue" />`、`ClientOnly`、`vp-raw`、Element Plus 样式隔离或主题色映射时使用
+  - 参考作用：提供 VitePress 客户端组件和浏览器端验证规范
+  - 约束：必须遵循客户端渲染边界、样式隔离和浏览器验证要求
+
 - `record-bug-fix-memory`
-  - 路径：`.claude/skills/fix-bug/record-bug-fix-memory/SKILL.md`
+  - 路径：`.agents/skills/fix-bug/record-bug-fix-memory/SKILL.md`
   - 用途：当用户要求在 bug 已经定位并修复后，记录排错经验、事故结论、AI 记忆更新、复盘摘要或本地 MCP 记忆时使用
   - 触发时机：当用户要求"记录经验教训""补充 AI 记忆""写事故记录""同步本地 MCP 记忆"时，必须使用
   - 参考作用：经验沉淀的参考。使用前先读 `SKILL.md` 的案例索引，再按需读取同目录独立案例文件
   - 约束：这个技能只负责记忆沉淀和经验总结，不承担具体修复职责；完整事故正文必须写入独立 `YYYY-MM-DD-{slug}.md` 文件，禁止继续内嵌到 `SKILL.md`
+  - **存储架构**：双层存储。SKILL.md 只放流程指导和摘要索引，详细案例存储在同目录下的独立 `YYYY-MM-DD-{slug}.md` 文件中。
+  - **阅读方式**：使用此技能前，先读 SKILL.md 了解流程，再按「案例索引」按需读取独立案例文件。
+  - **写入方式**：新增经验时创建独立案例文件并追加摘要索引，禁止将完整事故正文写入 SKILL.md。
 
 - `write-juejin-posts`
-  - 路径：`.claude/skills/write-juejin-posts/SKILL.md`
+  - 路径：`.agents/skills/write-juejin-posts/SKILL.md`
   - 用途：编写掘金风格的技术博客文章
   - 触发时机：当用户要求撰写掘金文章、博客文章、技术分享文、posts 目录下的文档，或提及"掘金"关键词时使用
   - 参考作用：规范 posts 文档的 frontmatter、摘要、标题编号、代码块语言、表格对齐和行文风格
@@ -103,7 +113,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 3. 测试用例的目录一般情况下为 `**/tests/` ，`**/src/tests/` 格式。
 4. 在对应 monorepo 的 tests 目录内，编写测试用例。如果你无法独立识别清楚到底在那个具体的 monorepo 子包内编写测试用例，请直接咨询我应该在那个目录下编写测试用例。
 
-## 3. 沟通协作要求
+## 3. 报告编写规范
+
+在大多数情况下，你的更改不需要编写说明报告；只有确有报告需求时，才按以下规范执行：
+
+- 报告地址：默认在 `docs/reports` 文件夹内编写报告。
+- 报告文件格式：`*.md` 通常使用 Markdown。
+- 报告文件名以日期 `YYYY-MM-DD` 开头，后接小写英文短横杠 slug。
+- 一级标题必须使用 `YYYY-MM-DD` 加报告名的格式。
+- 日志代码块统一使用 `log` 语言标记。
+- 报告语言默认使用简体中文。
+- 报告开头必须说明使用的 agent 工具和 AI 模型。
+
+## 4. 生成发版日志的操作规范
+
+生成 changeset 发版日志时：
+
+1. 运行 `pnpm dlx @changesets/cli add --empty` 创建文件。
+2. 将随机文件名改为日期加语义化更新内容的名称。
+3. 在 YAML 区域写入包名和 `major`、`minor` 或 `patch` 发版标签。
+4. 正文禁止使用 Markdown 标题，改用有序列表。
+5. `major` 需详细说明重大变更；`minor` 和 `patch` 简明列出更新内容。
+
+### 4.1. 术语说明
+
+- “生成更新日志”和“生成发版日志”均指在 `.changeset` 中编写面向 changeset 的更新日志。
+- 未明确发版等级时，先询问用户确认 `major`、`minor` 或 `patch`。
+
+## 5. 沟通协作要求
 
 ### 3.1. `计划模式`
 
@@ -115,7 +152,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 请注意，在绝大多数情况下，我不会要求你以这种 `计划模式` 来和我协作。
 
-## 简单任务的高效执行原则
+## 6. 简单任务的高效执行原则
 
 当用户交代的任务范围明确清晰时，必须**直接行动**，禁止进行不必要的大范围侦察。
 
@@ -131,7 +168,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 2. 禁止行为清单
 
-以下行为在**简单任务**（单文件改动，写 changeset，写提交信息等）中是被禁止的：
+以下行为在**简单任务**（单文件改动、写 changeset、写提交信息等）中是被禁止的：
 
 - 禁止连续执行超过 3 次 `git log` 来"了解全貌"
 - 禁止在明确知道目标文件的情况下，仍去扫描整个项目目录
@@ -159,7 +196,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 不需要查 git log，不需要扫描全部 tags，不需要对比所有包的版本号。
 
-## 终端操作注意事项（防卡住）
+## 7. 终端操作注意事项（防卡住）
 
 在 Windows PowerShell 环境下执行终端命令时，必须遵循以下规则，避免命令卡住浪费时间：
 
@@ -194,17 +231,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `pnpm run build / test`  |    30 秒     |
 |      `pnpm install`      |    60 秒     |
 
-## 4. 获取技术栈对应的上下文
-
-在处理特定技术栈相关的问题时，你应该主动获取对应的上下文文档和最佳实践。
-
-### 4.1. claude code skill
-
-- 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
-- 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
-- 规范文档： https://agentskills.io/home
-
-## 5. 代码/编码格式要求
+## 8. 代码/编码格式要求
 
 ### 1. markdown 文档的 table 编写格式
 
@@ -287,7 +314,7 @@ export function successResponse<T>(data: T, message: string = "操作成功") {
 1. 主动添加**数字**序号，便于我阅读文档。
 2. 主动**维护正确的数字序号顺序**。如果你处理的 markdown 文档，其手动添加的序号顺序不对，请你及时的更新序号顺序。
 
-## 6. 报告编写规范
+## 9. 报告编写补充
 
 在大多数情况下，你的更改是**不需要**编写任何说明报告的。但是每当你需要编写报告时，请你首先遵循以下要求：
 
@@ -311,11 +338,49 @@ export function successResponse<T>(data: T, message: string = "操作成功") {
 
 - 报告语言： 默认用简体中文。
 
-## 7. 项目概览
+## 10. 编码前思考、简洁优先、精准修改与目标驱动执行
+
+这些准则用于降低 agent 在编码、改代码和重构时的常见错误：
+
+- 编码前明确假设；存在多种解释时列出差异，需求不清时先询问。
+- 简洁优先，不添加未要求的功能、抽象、配置项或兼容层。
+- 精准修改，只触碰任务必须触碰的内容，不顺手重构或格式化无关文件。
+- 目标驱动执行，先定义成功标准，再用测试、构建、文档检查或手动验证证明结果。
+- 失败时先读错误、源码上下文和历史约束，再换方案；保护用户已有改动。
+- 完成前必须读 diff，确认每一行都能追溯到需求或必要清理。
+
+## 11. 使用 superpower 技能的个人偏好
+
+- `brainstorming`、`writing-plans`、`executing-plans` 生成的 `docs\\superpowers\\specs` 和 `docs\\superpowers\\plans` 文档必须使用简体中文。
+- 不要擅自添加“已完成”等状态标记；只有真实实施、验证并获用户认可后才能记录完成状态。
+- superpower 流程不要擅自执行 `git commit`；提交必须等用户明确授权，并且只提交本轮涉及文件。
+- `executing-plans` 不默认创建 worktree；优先在当前分支工作，切换前检查并保护未提交修改。
+
+## 12. 文档读取策略
+
+初始化或更新 AI 记忆文档时遵循渐进式读取：
+
+- 第一次只读目录和标题结构；Markdown 先执行 `grep "^##" file`。
+- 根据任务需要按 offset/limit 读取相关章节，避免把无关内容全部载入。
+- JSON、YAML、TOML 先查看顶层键和相关字段，再读取具体范围。
+- 更新时使用精准 Edit/patch 定点插入，不整体覆盖已有文件。
+- 编辑后复读修改位置，并用 diff 检查没有误改、漏改或格式破坏。
+
+## 13. 获取技术栈对应的上下文
+
+在处理特定技术栈时，主动获取对应的上下文文档和最佳实践。
+
+### claude code skill
+
+- 编写语法与格式： https://code.claude.com/docs/zh-CN/skills
+- 最佳实践： https://platform.claude.com/docs/zh-CN/agents-and-tools/agent-skills/best-practices
+- 规范文档： https://agentskills.io/home
+
+## 14. 项目概览
 
 这是一个使用 pnpm workspaces 和 Turbo 进行构建编排的 monorepo 文档项目，管理多个基于 VitePress 的文档站点。项目包含个人笔记、RPGMV 开发文档和团队文档。
 
-## 8. 架构概述
+## 15. 架构概述
 
 - **包管理器**: pnpm (要求版本 10.15.0)
 - **构建系统**: Turbo 用于跨工作空间的任务编排
@@ -329,7 +394,7 @@ export function successResponse<T>(data: T, message: string = "操作成功") {
 - `docs/rpgmv-dev-notes/` - RPGMV 开发文档 (@ruan-cat-docs/rpgmv-dev-notes)
 - `docs/docs-01-star/` - 01-star 团队文档 (@ruan-cat-docs/docs-01-star)
 
-## 9. 常用命令
+## 16. 常用命令
 
 ### 9.1. 构建命令
 
@@ -421,7 +486,7 @@ pnpm run git:fetch
 pnpm run git:push
 ```
 
-## 10. 配置详情
+## 17. 配置详情
 
 ### 10.1. TypeScript 配置
 
@@ -449,7 +514,7 @@ pnpm run git:push
 - Vitest 配置为输出 HTML 报告格式
 - 测试端口设置为 4000
 
-## 11. 核心依赖
+## 18. 核心依赖
 
 ### 11.1. 文档生成
 
@@ -476,116 +541,3 @@ pnpm run git:push
 - @ruan-cat/taze-config 依赖更新配置
 - @ruan-cat/vercel-deploy-tool 部署工具
 - @ruan-cat/generate-code-workspace 工作空间生成
-
-# Memorix — Automatic Memory Rules
-
-You have access to Memorix memory tools. Follow these rules to maintain persistent context across sessions.
-
-## RULE 1: Session Start — Load Context
-
-At the **beginning of every conversation**, BEFORE responding to the user:
-
-1. Call `memorix_session_start` to get the previous session summary and key memories (this is a direct read, not a search — no fragmentation risk)
-2. Then call `memorix_search` with a query related to the user's first message for additional context
-3. If search results are found, use `memorix_detail` to fetch the most relevant ones
-4. Reference relevant memories naturally — the user should feel you "remember" them
-
-## RULE 2: Store Important Context
-
-**Proactively** call `memorix_store` when any of the following happen:
-
-### What MUST be recorded
-
-- Architecture/design decisions → type: `decision`
-- Bug identified and fixed → type: `problem-solution`
-- Unexpected behavior or gotcha → type: `gotcha`
-- Config changed (env vars, ports, deps) → type: `what-changed`
-- Feature completed or milestone → type: `what-changed`
-- Trade-off discussed with conclusion → type: `trade-off`
-
-### What should NOT be recorded
-
-- Simple file reads, greetings, trivial commands (ls, pwd, git status)
-
-### Use topicKey for evolving topics
-
-For decisions, architecture docs, or any topic that evolves over time, ALWAYS use `topicKey` parameter.
-This ensures the memory is UPDATED instead of creating duplicates.
-Use `memorix_suggest_topic_key` to generate a stable key.
-
-Example: `topicKey: "architecture/auth-model"` — subsequent stores with the same key update the existing memory.
-
-### Track progress with the progress parameter
-
-When working on features or tasks, include the `progress` parameter:
-
-```json
-{
-	"progress": {
-		"feature": "user authentication",
-		"status": "in-progress",
-		"completion": 60
-	}
-}
-```
-
-Status values: `in-progress`, `completed`, `blocked`
-
-## RULE 3: Resolve Completed Memories
-
-When a task is completed, a bug is fixed, or information becomes outdated:
-
-1. Call `memorix_resolve` with the observation IDs to mark them as resolved
-2. Resolved memories are hidden from default search, preventing context pollution
-
-This is critical — without resolving, old bug reports and completed tasks will keep appearing in future searches.
-
-## RULE 4: Session End — Store Decision Chain Summary
-
-When the conversation is ending, create a **decision chain summary** (not just a checklist):
-
-1. Call `memorix_store` with type `session-request` and `topicKey: "session/latest-summary"`:
-
-   **Required structure:**
-
-   ```plain
-   ## Goal
-   [What we were working on — specific, not vague]
-
-   ## Key Decisions & Reasoning
-   - Chose X because Y. Rejected Z because [reason].
-   - [Every architectural/design decision with WHY]
-
-   ## What Changed
-   - [File path] — [what changed and why]
-
-   ## Current State
-   - [What works now, what's pending]
-   - [Any blockers or risks]
-
-   ## Next Steps
-   - [Concrete next actions, in priority order]
-   ```
-
-   **Critical: Include the "Key Decisions & Reasoning" section.** Without it, the next AI session will lack the context to understand WHY things were done a certain way and may suggest conflicting approaches.
-
-2. Call `memorix_resolve` on any memories for tasks completed in this session
-
-## RULE 5: Compact Awareness
-
-Memorix automatically compacts memories on store:
-
-- **With LLM API configured:** Smart dedup — extracts facts, compares with existing, merges or skips duplicates
-- **Without LLM (free mode):** Heuristic dedup — uses similarity scores to detect and merge duplicate memories
-- **You don't need to manually deduplicate.** Just store naturally and compact handles the rest.
-- If you notice excessive duplicate memories, call `memorix_deduplicate` for batch cleanup.
-
-## Guidelines
-
-- **Use concise titles** (~5-10 words) and structured facts
-- **Include file paths** in filesModified when relevant
-- **Include related concepts** for better searchability
-- **Always use topicKey** for recurring topics to prevent duplicates
-- **Always resolve** completed tasks and fixed bugs
-- **Always include reasoning** — "chose X because Y" is 10x more valuable than "did X"
-- Search defaults to `status="active"` — use `status="all"` to include resolved memories
