@@ -1,0 +1,88 @@
+name: 云端 PR Prettier 格式化
+
+on:
+  # 只在 PR 生命周期中触发；不要替换为 pull_request_target，以免向不受信任代码授予写权限。
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  # 同仓 PR 的格式化结果需要写回 head 分支；fork PR 会被 job 条件安全跳过。
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: cloud-pr-prettier-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  format-pr:
+    name: 格式化同仓 PR 改动
+    # fork PR 不执行带写权限的 job，避免执行不受信任代码后推送到其他仓库。
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      # 直接导入 sxzz 的通用 Node.js 初始化 action：checkout、pnpm、Node、缓存由它负责。
+      # auto-install 必须关闭：该 action 未提供 PR head ref 输入，后续需先检出 head 再在正确提交上安装依赖。
+      - name: 使用 sxzz 初始化 Node.js 与 pnpm 环境
+        uses: sxzz/workflows/setup-js@main
+        with:
+          persist-credentials: "true"
+          fetch-all: "true"
+          node-version: 24.18.0
+          auto-install: "false"
+
+      # sxzz 的 checkout 没有暴露 ref 输入；这里必须覆盖为 PR head，防止把 merge commit 推回来源分支。
+      - name: 检出 PR head 提交
+        env:
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: bash
+        run: git checkout --detach "$HEAD_SHA"
+
+      # 在安装前验证目标仓库具备独立、可复现运行所需的最小元数据。
+      - name: 检查独立运行前提
+        shell: bash
+        run: |
+          test -f package.json || { echo "缺少 package.json，无法识别 Node.js 项目。"; exit 1; }
+          test -f pnpm-lock.yaml || { echo "缺少 pnpm-lock.yaml；请先提交锁文件，或经维护者审查后修改安装策略。"; exit 1; }
+          grep -Eq '"packageManager"[[:space:]]*:[[:space:]]*"pnpm@' package.json || { echo "package.json#packageManager 必须声明 pnpm@版本，才能保证可复现的独立工作流。"; exit 1; }
+
+      # 依赖必须在已检出的 PR head 上安装，不能复用 sxzz action 内部 checkout 的 merge 提交状态。
+      - name: 安装锁定依赖
+        run: pnpm install --frozen-lockfile
+
+      - name: 仅格式化 PR 修改文件
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: |
+          files=()
+          while IFS= read -r -d '' file; do
+            case "$file" in
+              *.js|*.jsx|*.mjs|*.cjs|*.ts|*.tsx|*.mts|*.cts|*.json|*.jsonc|*.md|*.mdx|*.yaml|*.yml|*.css|*.scss|*.less)
+                files+=("$file") ;;
+            esac
+          done < <(git diff --name-only -z --diff-filter=ACMRTUXB "$BASE_SHA...HEAD")
+
+          if ((${#files[@]} == 0)); then
+            echo "PR 中没有需要 Prettier 处理的文件。"
+            exit 0
+          fi
+
+          for file in "${files[@]}"; do
+            pnpm exec prettier --experimental-cli --no-parallel --write -- "$file"
+          done
+
+          git add -- "${files[@]}"
+          git diff --cached --check
+
+          if git diff --cached --quiet; then
+            echo "Prettier 未产生格式化改动。"
+            exit 0
+          fi
+
+          # 只提交上面精确暂存的 PR 文件；禁止使用 git add . 吞入无关改动。
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "style: 自动格式化 PR 改动"
+          # checkout 使用 head SHA（detached HEAD），因此明确将 HEAD 推送回 PR 的 head 分支。
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
