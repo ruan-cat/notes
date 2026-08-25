@@ -1,7 +1,5 @@
 # 用 claude code 向 gemini 委派任务
 
-<!-- TODO: 待研究 待实践 -->
-
 A claude code skill to delegate prompts to gemini
 
 - https://na-ai.studio/posts/2025-6-29-1-claude-code-with-gemin-cli/

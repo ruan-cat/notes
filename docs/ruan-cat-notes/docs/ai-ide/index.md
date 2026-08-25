@@ -10,6 +10,3 @@
 - [Windsurf](https://windsurf.com/)
 - [Lingma](https://lingma.aliyun.com/lingma/download)
 - [Qoder](https://qoder.com/download)
-
-<!-- TODO: kiro 邮件提供给我的邀请码 懒得用 -->
-<!-- KIRO-bHZr-sOdS -->
