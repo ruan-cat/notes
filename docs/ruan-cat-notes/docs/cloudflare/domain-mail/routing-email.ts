@@ -38,6 +38,7 @@ export const routingEmails: RutingEmail[] = [
 		// 谷歌浏览器 无痕模式 先美区进入，验证手机号时，在直接退出，以中国ip输入手机号并接受验证码。即可注册成功。
 		cursor: "已注册。",
 		openai: "已注册。手机验证已通过。无法领取plus。",
+		qoder: "国际版已注册。 plus试用权限被立刻收回撤销了。",
 	},
 	{
 		order: 4,
