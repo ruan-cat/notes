@@ -46,6 +46,7 @@ export const routingEmails: RutingEmail[] = [
 		// 在无任何翻墙情况下正常注册
 		cursor: "已注册。",
 		openai: "已注册。手机验证已通过。无法领取plus。",
+		qoder: "国际版已注册。 plus试用权限还没有登录qoder code，所以没有触发其他行为。",
 	},
 	{
 		order: 5,
