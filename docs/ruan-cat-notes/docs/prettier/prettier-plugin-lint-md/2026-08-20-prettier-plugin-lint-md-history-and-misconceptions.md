@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7679451313240129582
 desc: 复盘 prettier-plugin-lint-md 半年排障：从包解析、版本漂移到 VSCode 与 experimental CLI 的三链路验收。
 title: "Prettier 明明执行成功，Markdown 为什么还是没变？一次插件误诊复盘"
 date: 2026-08-20
@@ -12,6 +12,10 @@ tags: ["prettier-plugin-lint-md", "Prettier", "VSCode", "pnpm", "lint-staged"]
 > **摘要**：
 >
 > 我们曾经花了半年排查一个看似简单的问题：Prettier 退出码是 0，Markdown 却没有出现预期的中英文空格。真正的原因不是某一行配置写错，而是 pnpm 隔离、插件版本漂移、VSCode 与 experimental CLI 的加载方式，以及 Windows 并行执行问题叠在了一起。本文把这条排障路径重新走一遍，并给出可以复用的验收方法。
+
+> **AI 协助编写的博客文章**：
+>
+> 这篇文章完全由 AI 生成。
 
 这件事的起点，是一句很容易被低估的话：
 
