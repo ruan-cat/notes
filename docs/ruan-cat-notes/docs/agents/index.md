@@ -24,3 +24,7 @@
 - 没有可以执行 MCP 的 agent 客户端。无法批量安装 MCP 配置。
 - 有云端 linux 系统。
 - 每天赠送的 200 积分额度很少，完全不能支持一个较长一点的，基于 github pr 的云任务。
+
+## <!-- TODO: 还没有试过 --> qoder.com/cloud
+
+- 阿里 qoder 国外版： https://qoder.com/cloud/quickstart
