@@ -1,5 +1,5 @@
 ---
-juejin: TODO 编写完内容就可以直接发文
+juejin: https://juejin.cn/post/7679644532576796698
 desc: 实锤取证：KimiDesktop内置Daimon运行时，把32个自家技能静默塞进全局目录~/.agents/skills，无授权、无提示、无开关。含完整证据链、源码、时间线与自查指南。
 title: "Kimi Desktop，谁允许你把 32 个私货技能偷偷塞进我的全局目录的？"
 date: 2026-08-31
