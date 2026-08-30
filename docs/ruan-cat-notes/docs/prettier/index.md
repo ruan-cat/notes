@@ -1,17 +1,18 @@
-# 官网
+# prettier,格式化库
 
 ## 配置的困境
 
-这个问题很大，格式化取决于本地的 vscode 插件或配置，而不是‘项目根目录下的配置文件’或‘开发环境依赖包’。这个让我很坐牢。
+这个问题很大，格式化取决于本地的 vscode 插件或配置，而不是`项目根目录下的配置文件`或`开发环境依赖包`。这个让我很坐牢。
 
-我希望的是，vscode 的相关格式化插件，可以自己识别项目根目录下的配置文件，识别到有.eslintrc 的文件时，他就按照文件配置来做格式化。
+我希望的是，vscode 的相关格式化插件，可以自己识别项目根目录下的配置文件，识别到有 `.eslintrc` 的文件时，他就按照文件配置来做格式化。
 
 否则就按照 vscode 的用户配置，或工作区配置来格式化。
 
 这个阶段有严格的优先级：
-1： 项目本身的配置。
-2： vscode 全局用户配置。
-3： vscode 本地工作区配置。
+
+1. 项目本身的配置。
+2. vscode 全局用户配置。
+3. vscode 本地工作区配置。
 
 但我不停地切换不同的项目时，上述 3 种阶段的配置差异让我坐牢。
 
@@ -85,30 +86,22 @@
 不使用插件 `rvest.vs-code-prettier-eslint` ，因为该插件仅仅针对于 `node` 项目，且要求项目本身安装多个依赖。被限定在 `node` 项目，而不是更多的情况
 
 参考资料：
-https://rileycai.com/不以规矩，不能成方圆-彻底搞懂-eslint-和-prettier/
-https://luzhaoyang.com/zh/posts/dai-ma-gui-fan-zhi-li-jie-eslint-prettier-editorconfig.html
 
-## 待研究的配置？
-
-https://juejin.cn/post/7018810975822282760
-
-"javascript.format.insertSpaceBeforeFunctionParenthesis":
+- https://rileycai.com/不以规矩，不能成方圆-彻底搞懂-eslint-和-prettier/
+- https://luzhaoyang.com/zh/posts/dai-ma-gui-fan-zhi-li-jie-eslint-prettier-editorconfig.html
 
 ## 在 vscode 的 prettier 插件内对 .xml 文件做格式化
 
 结论，在无 node 项目，无 prettier 配置文件的前提下，做不到让 esbenp.prettier-vscode 插件实现对单文件 .xml 的格式化处理。
 
 - https://github.com/prettier/prettier-vscode#plugins
-  这篇文章称，esbenp.prettier-vscode 插件可以识别出 package.json 配置的插件。可是不符合当前业务场景。
-
+  > 这篇文章称，esbenp.prettier-vscode 插件可以识别出 package.json 配置的插件。可是不符合当前业务场景。
 - https://prettier.io/docs/en/configuration.html#setting-the-parserdocsenoptionshtmlparser-option
-  官方文档说明了特定文件类型的格式化配置写法。可是我们无法提供格式化配置文件。
-
+  > 官方文档说明了特定文件类型的格式化配置写法。可是我们无法提供格式化配置文件。
 - https://prettier.io/docs/en/plugins.html#official-plugins
-  针对 .xml 是有官方插件的。
-
+  > 针对 .xml 是有官方插件的。
 - https://github.com/prettier/plugin-xml#getting-started
-  官方插件 .xml 默认总是在 node 项目内作用。
+  > 官方插件 .xml 默认总是在 node 项目内作用。
 
 ## prittier 格式化代码报错
 
@@ -129,12 +122,6 @@ https://juejin.cn/post/7018810975822282760
 - https://blog.csdn.net/shd_0310/article/details/120769177
 
 处理方式是在用户全局 vscode 配置文件中写死。
-
-## prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
-
-TODO: prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
-
-这导致了 vue 组件在使用时，有着不同的操作行为。
 
 ## --experimental-cli 和 @prettier/plugin-oxc
 
