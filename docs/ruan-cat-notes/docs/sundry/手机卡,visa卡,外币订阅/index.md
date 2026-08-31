@@ -20,7 +20,10 @@
 
 ### Starryblu
 
+新加坡卡。
+
 - https://x.com/NFTCPS/status/2093667857959956788
+- https://x.com/MinLiBuilds/status/2094017117096161331
 
 ## 开通国外接码用途手机号
 
