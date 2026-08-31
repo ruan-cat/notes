@@ -5,6 +5,7 @@ skills 技能，已经成为大语言模型通用的渐进式揭露的上下文�
 ## 常用的 skills 工具与下载站点
 
 - vercel 公司维护的 skills 下载站点： https://skills.sh/
+- skills 领域内热门排名平台： https://www.openagentskill.com/
 - 自己封装的 skills： https://skills.sh/ruan-cat/monorepo
 - https://skillsmp.com/
 - https://claude-plugins.dev/skills
