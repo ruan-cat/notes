@@ -21,3 +21,12 @@
 - baseUrl： http://integrate.api.nvidia.com/v1
 
 <!-- apikey： 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 -->
+
+### zed 编辑器学生认证
+
+- https://x.com/getkaozhu/status/2093917048036610534
+- https://dashboard.zed.dev/education/apply
+
+### tokenrouter.com
+
+- https://www.tokenrouter.com/console/token
