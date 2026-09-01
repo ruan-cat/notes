@@ -2,46 +2,35 @@
 	"mcpServers": {
 		"context7": {
 			"command": "cmd",
-			"args": [
-				"/c",
-				"npx",
-				"-y",
-				"@upstash/context7-mcp"
-			]
+			"args": ["/c", "npx", "-y", "@upstash/context7-mcp"]
 		},
 		"chrome-devtools": {
 			"type": "stdio",
 			"command": "cmd",
-			"args": [
-				"/c",
-				"npx",
-				"chrome-devtools-mcp@latest"
-			],
+			"args": ["/c", "npx", "chrome-devtools-mcp@latest"],
 			"env": {}
 		},
 		"office-word-mcp-server": {
 			"command": "uvx",
-			"args": [
-				"--from",
-				"office-word-mcp-server",
-				"word_mcp_server"
-			]
+			"args": ["--from", "office-word-mcp-server", "word_mcp_server"]
 		},
 		"gemini": {
 			"type": "stdio",
 			"command": "uvx",
-			"args": [
-				"--from",
-				"git+https://github.com/GuDaStudio/geminimcp.git",
-				"geminimcp"
-			]
-		}, 
+			"args": ["--from", "git+https://github.com/GuDaStudio/geminimcp.git", "geminimcp"]
+		},
 		"github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "Authorization": "Bearer 自己设置的github token"
-      }
-    }
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/",
+			"headers": {
+				"Authorization": "Bearer 自己设置的github token"
+			}
+		},
+		//
+		"amap-maps-streamableHTTP": {
+			"type": "http",
+			"url": "https://mcp.amap.com/mcp?key=具体的key",
+			"enabled": false
+		}
 	}
 }
