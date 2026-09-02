@@ -14,34 +14,34 @@
 
 ### ✅ 直连通（出网代理透传）
 
-| 域名 | 用途 |
-|------|------|
-| `github.com` / `api.github.com` | GitHub Web / REST |
-| `api.githubcopilot.com` | **GitHub MCP** 端点 |
-| `vercel.com` / `api.vercel.com` | Vercel Web / API |
-| `mcp.vercel.com` | **Vercel MCP** 端点 |
-| `mcp.neon.tech` | **Neon MCP** 端点 |
-| `cloudflare.com` | Cloudflare 主站（仅主页） |
+| 域名                            | 用途                      |
+| ------------------------------- | ------------------------- |
+| `github.com` / `api.github.com` | GitHub Web / REST         |
+| `api.githubcopilot.com`         | **GitHub MCP** 端点       |
+| `vercel.com` / `api.vercel.com` | Vercel Web / API          |
+| `mcp.vercel.com`                | **Vercel MCP** 端点       |
+| `mcp.neon.tech`                 | **Neon MCP** 端点         |
+| `cloudflare.com`                | Cloudflare 主站（仅主页） |
 
 ### ❌ DNS 劫持 / 端口被挡
 
-| 域名 | 现象 | 解决 |
-|------|------|------|
+| 域名            | 现象                                   | 解决                                          |
+| --------------- | -------------------------------------- | --------------------------------------------- |
 | `*.workers.dev` | DNS 被改成 `199.59.149.237` 等非 CF IP | **无解**，考虑把 MCP 部署到 Vercel 或自定义域 |
 
 ### ⚠️ 慢到挂 / 超时（必须镜像）
 
-| 资源 | 镜像 |
-|------|------|
-| `github.com/.../releases/download/...` | `https://gh-proxy.com/<原 URL>` |
-| `registry.npmjs.org` | `https://registry.npmmirror.com` |
-| `pypi.org` / 清华源 / 豆瓣 | `https://mirrors.aliyun.com/pypi/simple/` |
+| 资源                                   | 镜像                                      |
+| -------------------------------------- | ----------------------------------------- |
+| `github.com/.../releases/download/...` | `https://gh-proxy.com/<原 URL>`           |
+| `registry.npmjs.org`                   | `https://registry.npmmirror.com`          |
+| `pypi.org` / 清华源 / 豆瓣             | `https://mirrors.aliyun.com/pypi/simple/` |
 
 ### 沙箱代理指纹
 
 `curl -v` 看证书 issuer，如果出现：
 
-```
+```plain
 subject: O=hangzhou; OU=alibaba cloud; CN=ack-agent-identity-proxy
 ```
 
@@ -111,6 +111,7 @@ mcpc call   --token-env GITHUB_PAT_TOKEN --raw \
 ```
 
 **特性**：
+
 - `--token-env` 从 `secret` 工具引用 token，不接触明文
 - args 既能内联 JSON，也能 `@file.json`
 - `--raw` 模式只输出工具真实 result（剥离 MCP envelope）
@@ -118,11 +119,11 @@ mcpc call   --token-env GITHUB_PAT_TOKEN --raw \
 
 ## 三个 MCP 实测
 
-| MCP | 端点 | 工具数 | 实测 |
-|-----|------|-------|------|
-| GitHub MCP | `https://api.githubcopilot.com/mcp/` | 44 | `get_me`、`pull_request_read`（PR #154）、`search_pull_requests` |
-| Vercel MCP | `https://mcp.vercel.com` | 37 | `list_teams`、`list_projects`（27 个项目）、`list_deployments` |
-| Neon MCP | `https://mcp.neon.tech/mcp` | **104** | `list_organizations`（2 orgs）、`list_projects`、`list_regions` |
+| MCP        | 端点                                 | 工具数  | 实测                                                             |
+| ---------- | ------------------------------------ | ------- | ---------------------------------------------------------------- |
+| GitHub MCP | `https://api.githubcopilot.com/mcp/` | 44      | `get_me`、`pull_request_read`（PR #154）、`search_pull_requests` |
+| Vercel MCP | `https://mcp.vercel.com`             | 37      | `list_teams`、`list_projects`（27 个项目）、`list_deployments`   |
+| Neon MCP   | `https://mcp.neon.tech/mcp`          | **104** | `list_organizations`（2 orgs）、`list_projects`、`list_regions`  |
 
 **Neon MCP 警告**：server 声明 `Write mode active`，破坏性工具（`delete_*` / `reset_*`）**必须**先经用户确认。
 
@@ -135,6 +136,7 @@ mcpc call   --token-env GITHUB_PAT_TOKEN --raw \
 - 通过 `mcode-tools get-asset-url` / `upload-temp-url` 拿 Drive 资源
 
 **与 `mcpc` 不冲突**，各管一摊：
+
 - `mcode-tools` → 沙箱内置 MiniMax 多媒体
 - `mcpc` → 直连任意 MCP server
 
