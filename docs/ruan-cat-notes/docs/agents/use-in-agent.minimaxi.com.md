@@ -1,1 +1,168 @@
-IyDlnKggYWdlbnQubWluaW1heGkuY29tIOWGheS9v+eUqAoKPiDmnKzoioLkuLrln7rkuo4gMjAyNi0wOS0wMiDlrp7pmYXmspnnrrHosIPnoJTnmoTnrJTorrDvvIznm67moIfmmK/miooi6IO95bmy5Zib44CB5LiN6IO95bmy5Zib44CB5oCO5LmI57uVIuayiea3gOaIkOWPr+WkjeeUqOinhOiMg+OAggoKIyMgVEw7RFIKCi0gKirmnInkupEgTGludXgg546v5aKDKirvvIhBQ0sgLyDpmL/ph4zkupHlrrnlmajmnI3liqHvvInvvIzkvYblh7rnvZHooqvpmL/ph4zkupEgZWdyZXNzIHByb3h5IOaOpeeuoQotICoq5LiN6IO9Kirnm7Tov54gYCoud29ya2Vycy5kZXZg77yIRE5TIOWKq+aMgeWIsOmdniBDRiBJUO+8iQotICoq6IO9Kirnm7Tov54gR2l0SHViIC8gVmVyY2VsIC8gTmVvbiAvIENsb3VkZmxhcmUg5Li756uZCi0gKirog70qKuijhSBnaOOAgXZlcmNlbOOAgU1DUCBTREsg5LiJ5Liq5qC45b+DIENMSe+8jOS9huimgSoq6LWw6ZWc5YOPKirvvIhnaC1wcm94eSAvIG5wbW1pcnJvciAvIGFsaXl1bi1weXBp77yJCi0gKirlv4XpobsqKuiHquW4piBNQ1Ag5a6i5oi356uv77yI5a6Y5pa5IGBtY3BgIOWMheWPque7meacjeWKoeWZqCBkZXYg55So77yJ77yM5oiR6Ieq56CU5LqGIGBtY3BjYAoKIyMg5rKZ566x572R57uc6buR55m95ZCN5Y2VCgojIyMg4pyFIOebtOi/numAmu+8iOWHuue9keS7o+eQhumAj+S8oO+8iQoKfCDln5/lkI0gfCDnlKjpgJQgfAp8LS0tLS0tfC0tLS0tLXwKfCBgZ2l0aHViLmNvbWAgLyBgYXBpLmdpdGh1Yi5jb21gIHwgR2l0SHViIFdlYiAvIFJFU1QgfAp8IGBhcGkuZ2l0aHViY29waWxvdC5jb21gIHwgKipHaXRIdWIgTUNQKiog56uv54K5IHwKfCBgdmVyY2VsLmNvbWAgLyBgYXBpLnZlcmNlbC5jb21gIHwgVmVyY2VsIFdlYiAvIEFQSSB8CnwgYG1jcC52ZXJjZWwuY29tYCB8ICoqVmVyY2VsIE1DUCoqIOerr+eCuSB8CnwgYG1jcC5uZW9uLnRlY2hgIHwgKipOZW9uIE1DUCoqIOerr+eCuSB8CnwgYGNsb3VkZmxhcmUuY29tYCB8IENsb3VkZmxhcmUg5Li756uZ77yI5LuF5Li76aG177yJIHwKCiMjIyDinYwgRE5TIOWKq+aMgSAvIOerr+WPo+iiq+aMoQoKfCDln5/lkI0gfCDnjrDosaEgfCDop6PlhrMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18CnwgYCoud29ya2Vycy5kZXZgIHwgRE5TIOiiq+aUueaIkCBgMTk5LjU5LjE0OS4yMzdgIOetiemdniBDRiBJUCB8ICoq5peg6KejKirvvIzogIPomZHmioogTUNQIOmDqOe9suWIsCBWZXJjZWwg5oiW6Ieq5a6a5LmJ5Z+fIHwKCiMjIyDimqDvuI8g5oWi5Yiw5oyCIC8g6LaF5pe277yI5b+F6aG76ZWc5YOP77yJCgp8IOi1hOa6kCB8IOmVnOWDjyB8CnwtLS0tLS18LS0tLS0tfAp8IGBnaXRodWIuY29tLy4uLi9yZWxlYXNlcy9kb3dubG9hZC8uLi5gIHwgYGh0dHBzOi8vZ2gtcHJveHkuY29tLzzljp8gVVJMPmAgfAp8IGByZWdpc3RyeS5ucG1qcy5vcmdgIHwgYGh0dHBzOi8vcmVnaXN0cnkubnBtbWlycm9yLmNvbWAgfAp8IGBweXBpLm9yZ2AgLyDmuIXljY7mupAgLyDosYbnk6MgfCBgaHR0cHM6Ly9taXJyb3JzLmFsaXl1bi5jb20vcHlwaS9zaW1wbGUvYCB8CgojIyMg5rKZ566x5Luj55CG5oyH57q5CgpgY3VybCAtdmAg55yL6K+B5LmmIGlzc3Vlcu+8jOWmguaenOWHuueOsO+8mgoKYGBgCnN1YmplY3Q6IE89aGFuZ3pob3U7IE9VPWFsaWJhYmEgY2xvdWQ7IENOPWFjay1hZ2VudC1pZGVudGl0eS1wcm94eQpgYGAKCuivtOaYjuS9oOato+e7j+i/h+aymeeuseeahCBlZ3Jlc3MgcHJveHnjgIIqKuS4u+a1geWfn+WQjeiiq+mAj+aYjuS7o+eQhioq77yM5Y+v55aR5Z+f5ZCN77yI54m55Yir5pivIGAqLndvcmtlcnMuZGV2YO+8ieS8muiiq+WKq+aMgeOAggoKIyMgQ0xJIOmAn+mAmuWuieijhQoKIyMjIGBnaGAgQ0xJCgpgYGBiYXNoCiMg6LWwIGdoLXByb3h5IOmVnOWDjwpjdXJsIC1mc1NMIC1vIC90bXAvZ2gudGd6IFwKICAiaHR0cHM6Ly9naC1wcm94eS5jb20vaHR0cHM6Ly9naXRodWIuY29tL2NsaS9jbGkvcmVsZWFzZXMvZG93bmxvYWQvdjIuNjIuMC9naF8yLjYyLjBfbGludXhfYW1kNjQudGFyLmd6IgpjZCAvdG1wICYmIHRhciAteHpmIGdoLnRneiBcCiAgJiYgY3AgZ2hfMi42Mi4wX2xpbnV4X2FtZDY0L2Jpbi9naCAvdXNyL2xvY2FsL2Jpbi8gXAogICYmIGNobW9kICt4IC91c3IvbG9jYWwvYmluL2doCmdoIC0tdmVyc2lvbiAgICMgZ2ggdmVyc2lvbiAyLjYyLjAKYGBgCgojIyMgYHZlcmNlbGAgQ0xJCgpgYGBiYXNoCiMg5YiHIG5wbW1pcnJvcgpucG0gY29uZmlnIHNldCByZWdpc3RyeSBodHRwczovL3JlZ2lzdHJ5Lm5wbW1pcnJvci5jb20KbnBtIGluc3RhbGwgLWcgdmVyY2VsCnZlcmNlbCAtLXZlcnNpb24gICAjIFZlcmNlbCBDTEkgNTkuMTEuMQpgYGAKCiMjIyBQeXRob24gYG1jcGAgU0RLCgpgYGBiYXNoCiMg55SoIHZlbnYg57uVIFBFUCA2NjgKcHl0aG9uMyAtbSB2ZW52IC93b3Jrc3BhY2UvbWNwLXZlbnYKc291cmNlIC93b3Jrc3BhY2UvbWNwLXZlbnYvYmluL2FjdGl2YXRlCgojIOWIhyBhbGl5dW4gcGlwIOmVnOWDjwpwaXAgY29uZmlnIHNldCBnbG9iYWwuaW5kZXgtdXJsIGh0dHBzOi8vbWlycm9ycy5hbGl5dW4uY29tL3B5cGkvc2ltcGxlLwpwaXAgY29uZmlnIHNldCBnbG9iYWwudHJ1c3RlZC1ob3N0IG1pcnJvcnMuYWxpeXVuLmNvbQoKIyDlrpjmlrkgU0RLICsg6auY5bGC5bCB6KOFCnBpcCBpbnN0YWxsIG1jcCAgICAgICMgbWNwIDIuMS4xIChNb2RlbCBDb250ZXh0IFByb3RvY29sLCBMRiBQcm9qZWN0cykKcGlwIGluc3RhbGwgZmFzdG1jcCAgIyBmYXN0bWNwIDQuMC4wCmBgYAoKPiBgbWNwYCDljIXlvZLlsZ7vvJpQdWJsaXNoZXIg5pivIGBNb2RlbCBDb250ZXh0IFByb3RvY29sIGEgU2VyaWVzIG9mIExGIFByb2plY3RzLCBMTENg77yITGludXggRm91bmRhdGlvbiDml5fkuIvvvInvvIzmnIDliJ3nlLEgQW50aHJvcGljIOW3peeoi+W4iOS4u+WvvO+8jOenu+S6pOWIsCBNQ1Agb3JnIOe7tOaKpOOAgkxpY2Vuc2UgTUlU44CCKipgcGlwIGluc3RhbGwgbWNwYCDljbPmmK/lvZPliY3mnIDmoIflh4bnmoQgUHl0aG9uIOijheazlSoq44CCCgojIyBgbWNwY2DvvJroh6rnoJTpgJrnlKggTUNQIOWuouaIt+erryBDTEkKCuWumOaWuSBgbWNwYCDljIUqKuiHquW4pueahCBgbWNwYCDlkb3ku6TmmK/nu5nmnI3liqHlmajnq68gZGV2IOeUqOeahCoq77yIYGRldmAgLyBgcnVuYCAvIGBpbnN0YWxsYO+8ie+8jOayoeaciSLkuIDplK7osIPku7vmhI/ov5znqIsgTUNQIueahOiDveWKm+OAggoK5oiR5YaZ5LqGIDE1MCDooYznmoQgYG1jcGNg77yM5oqKIGBDbGllbnRTZXNzaW9uYCArIGBzdHJlYW1hYmxlX2h0dHBfY2xpZW50YCDljIXmiJDkuIDooYwgc2hlbGzvvJoKCmBgYGJhc2gKIyDkv6Hmga8KbWNwYyBpbmZvICAgLS10b2tlbi1lbnYgR0lUSFVCX1BBVF9UT0tFTiBodHRwczovL2FwaS5naXRodWJjb3BpbG90LmNvbS9tY3AvCgojIOWIl+W3peWFtwptY3BjIGxpc3QgICAtLXRva2VuLWVudiBHSVRIVUJfUEFUX1RPS0VOIGh0dHBzOi8vYXBpLmdpdGh1YmNvcGlsb3QuY29tL21jcC8KCiMg55yLIHNjaGVtYQptY3BjIHNjaGVtYSAtLXRva2VuLWVudiBHSVRIVUJfUEFUX1RPS0VOIGh0dHBzOi8vYXBpLmdpdGh1YmNvcGlsb3QuY29tL21jcC8gcHVsbF9yZXF1ZXN0X3JlYWQKCiMg6LCD55SoCm1jcGMgY2FsbCAgIC0tdG9rZW4tZW52IEdJVEhVQl9QQVRfVE9LRU4gLS1yYXcgXAogIGh0dHBzOi8vYXBpLmdpdGh1YmNvcGlsb3QuY29tL21jcC8gcHVsbF9yZXF1ZXN0X3JlYWQgXAogICd7Im93bmVyIjoicnVhbi1jYXQiLCJyZXBvIjoibW9ub3JlcG8iLCJwdWxsTnVtYmVyIjoxNTQsIm1ldGhvZCI6ImdldCJ9JwpgYGAKCioq54m55oCnKirvvJoKLSBgLS10b2tlbi1lbnZgIOS7jiBgc2VjcmV0YCDlt6XlhbflvJXnlKggdG9rZW7vvIzkuI3mjqXop6bmmI7mlocKLSBhcmdzIOaXouiDveWGheiBlCBKU09O77yM5Lmf6IO9IGBAZmlsZS5qc29uYAotIGAtLXJhd2Ag5qih5byP5Y+q6L6T5Ye65bel5YW355yf5a6eIHJlc3VsdO+8iOWJpeemuyBNQ1AgZW52ZWxvcGXvvIkKLSDovpPlh7rnuq8gSlNPTiDliLAgc3Rkb3V077yM5Y+vIHBpcGUg5YiwIGBqcWAgLyBgcHl0aG9uMyAtbSBqc29uLnRvb2xgCgojIyDkuInkuKogTUNQIOWunua1iwoKfCBNQ1AgfCDnq6/ngrkgfCDlt6XlhbfmlbAgfCDlrp7mtYsgfAp8LS0tLS18LS0tLS0tfC0tLS0tLS18LS0tLS0tfAp8IEdpdEh1YiBNQ1AgfCBgaHR0cHM6Ly9hcGkuZ2l0aHViY29waWxvdC5jb20vbWNwL2AgfCA0NCB8IGBnZXRfbWVg44CBYHB1bGxfcmVxdWVzdF9yZWFkYO+8iFBSICMxNTTvvInjgIFgc2VhcmNoX3B1bGxfcmVxdWVzdHNgIHwKfCBWZXJjZWwgTUNQIHwgYGh0dHBzOi8vbWNwLnZlcmNlbC5jb21gIHwgMzcgfCBgbGlzdF90ZWFtc2DjgIFgbGlzdF9wcm9qZWN0c2DvvIgyNyDkuKrpobnnm67vvInjgIFgbGlzdF9kZXBsb3ltZW50c2AgfAp8IE5lb24gTUNQIHwgYGh0dHBzOi8vbWNwLm5lb24udGVjaC9tY3BgIHwgKioxMDQqKiB8IGBsaXN0X29yZ2FuaXphdGlvbnNg77yIMiBvcmdz77yJ44CBYGxpc3RfcHJvamVjdHNg44CBYGxpc3RfcmVnaW9uc2AgfAoKKipOZW9uIE1DUCDorablkYoqKu+8mnNlcnZlciDlo7DmmI4gYFdyaXRlIG1vZGUgYWN0aXZlYO+8jOegtOWdj+aAp+W3peWFt++8iGBkZWxldGVfKmAgLyBgcmVzZXRfKmDvvIkqKuW/hemhuyoq5YWI57uP55So5oi356Gu6K6k44CCCgojIyDkuI4gYG1jb2RlLXRvb2xzYCDnmoTlhbPns7sKCuaymeeusSoq6aKE6KOFKirkuoYgYC91c3IvbG9jYWwvYmluL21jb2RlLXRvb2xzYO+8iGBAbWluaW1heC9tY29kZS10b29sc0AwLjAuM2DvvInvvIzmmK/kuKrni6znq4vnmoQgY29ubmVjdG9yIOWuouaIt+err++8mgoKLSDosIMgTWluaU1heCBNYXRyaXgg5aSa5aqS5L2TIEFJ77yIaW1hZ2UgLyB2aWRlbyAvIFRUUyAvIHZpc2lvbiAvIC4uLu+8iQotIOmAmui/hyBgbWNvZGUtdG9vbHMgY29ubmVjdG9yIGNhbGwgY29ubmVjdG9yX19tYXRyaXhfXypgIOiwg+eUqAotIOmAmui/hyBgbWNvZGUtdG9vbHMgZ2V0LWFzc2V0LXVybGAgLyBgdXBsb2FkLXRlbXAtdXJsYCDmi78gRHJpdmUg6LWE5rqQCgoqKuS4jiBgbWNwY2Ag5LiN5Yay56qBKirvvIzlkITnrqHkuIDmkYrvvJoKLSBgbWNvZGUtdG9vbHNgIOKGkiDmspnnrrHlhoXnva4gTWluaU1heCDlpJrlqpLkvZMKLSBgbWNwY2Ag4oaSIOebtOi/nuS7u+aEjyBNQ1Agc2VydmVyCgojIyDkvb/nlKjlu7rorq7vvIjln7rkuo7ov5nmrKHlrp7pmYXnu4/pqozvvIkKCiMjIyDinIUgRE8KCi0g55SoIGBtY3BjYCDosIPov5znqIsgTUNQ77yMdG9rZW4g6LWwIGBzZWNyZXRgIOW3peWFtwotIOijhSBDTEkg56ys5LiA5pe26Ze06K+V5a6Y5pa55rqQ77yM5LiN6YCa5bCx5LiK6ZWc5YOP77yIZ2gtcHJveHkgLyBucG1taXJyb3IgLyBhbGl5dW4tcHlwae+8iQotIOWkjeadgueahCBhcmdzIOWGmeWIsCBgQGZpbGUuanNvbmAg6YeM77yM6YG/5YWNIHNoZWxsIOi9rOS5iQotIE1DUCDlt6XlhbfosIPnlKjliY3lhYggYG1jcGMgc2NoZW1hYCDnnIvnnJ/lrp7lhaXlj4LvvIhNQ1Ag5a2X5q615ZG95ZCN6Lef5Y6f55SfIEFQSSDkuI3kuIDmoLfvvIkKCiMjIyDinYwgRE9OJ1QKCi0g5LiN6KaB55u45L+hIEdpdEh1YiBNQ1Ag57uZ5L2g5omA5pyJ5Y6f55SfIEdpdEh1YiBBUEkg5a2X5q6177yI5a6D5Lya5YGaIG5vcm1hbGl6Ze+8jGBwYXRoYCDihpIgYGZpbGVuYW1lYOOAgeW1jOWll+WIsCBgZGV0YWlsc2Ag562J77yJCi0g5LiN6KaB5oqKIHRva2VuIOaYjuaWh+i0tOiBiuWkqemHjCDigJTigJQg55SoIGBzZWNyZXRgIOW3peWFt+WtmAotIOS4jeimgeWBh+WumiBgKi53b3JrZXJzLmRldmAg5Z+f6IO95LuO5rKZ566x6K6/6Zeu5Yiw77yIRE5TIOWKq+aMge+8iQotIOS4jeimgeiuqSBOZW9uIE1DUCDosIMgYGRlbGV0ZV8qYCDlt6XlhbfvvIzpmaTpnZ7nlKjmiLfmmI7noa7lkIzmhI8KLSDkuI3opoHlgYflrprmspnnrrHnmoQgYGdoYCAvIGB2ZXJjZWxgIC8gYG1jcGAg6ZW/5pyf5a2Y5rS7IOKAlOKAlCDmspnnrrEgcmVzZXQg5ZCO6KaB6YeN6KOFCgojIyDlkI7nu63lvoXlip4KCi0gWyBdIGBtY3BjYCDliqAgYHN0ZGlvYCB0cmFuc3BvcnQg5pSv5oyBCi0gWyBdIGBtY3BjYCDliqAgc2Vzc2lvbiBjYWNoZe+8iOmBv+WFjeavj+asoemHjeWQryBNQ1Agc2Vzc2lvbu+8iQotIFsgXSDlhpkgYGluc3RhbGwtY2xpIDxuYW1lPmAg5LiA6ZSu6ISa5pys6Ieq5Yqo5YyW56ysIDMg6IqCCi0gWyBdIOivhOS8sCBNQ1Agc2VydmVyIOabv+S7o+Wfn++8muaYr+WQpumcgOimgeWcqCBWZXJjZWwg5oiW6Ieq5a6a5LmJ5Z+f6YOo572yIHNraWxsLXJvdXRlci1tY3Ag6ZWc5YOPCgotLS0KCj4g5oql5ZGK55Sf5oiQ5pe26Ze077yaMjAyNi0wOS0wMgo+IOW3peWFt+mTvueJiOacrO+8mmBnaGAgMi42Mi4wIMK3IGB2ZXJjZWxgIDU5LjExLjEgwrcgYG1jcGAgMi4xLjEgwrcgUHl0aG9uIDMuMTEuMiDCtyBOb2RlIHYyMi4xOS4wCg==
+# 在 agent.minimaxi.com 内使用
+
+> 本节为基于 2026-09-02 实际沙箱调研的笔记，目标是把"能干嘛、不能干嘛、怎么绕"沉淀成可复用规范。
+
+## TL;DR
+
+- **有云 Linux 环境**（ACK / 阿里云容器服务），但出网被阿里云 egress proxy 接管
+- **不能**直连 `*.workers.dev`（DNS 劫持到非 CF IP）
+- **能**直连 GitHub / Vercel / Neon / Cloudflare 主站
+- **能**装 gh、vercel、MCP SDK 三个核心 CLI，但要**走镜像**（gh-proxy / npmmirror / aliyun-pypi）
+- **必须**自带 MCP 客户端（官方 `mcp` 包只给服务器 dev 用），我自研了 `mcpc`
+
+## 沙箱网络黑白名单
+
+### ✅ 直连通（出网代理透传）
+
+| 域名 | 用途 |
+|------|------|
+| `github.com` / `api.github.com` | GitHub Web / REST |
+| `api.githubcopilot.com` | **GitHub MCP** 端点 |
+| `vercel.com` / `api.vercel.com` | Vercel Web / API |
+| `mcp.vercel.com` | **Vercel MCP** 端点 |
+| `mcp.neon.tech` | **Neon MCP** 端点 |
+| `cloudflare.com` | Cloudflare 主站（仅主页） |
+
+### ❌ DNS 劫持 / 端口被挡
+
+| 域名 | 现象 | 解决 |
+|------|------|------|
+| `*.workers.dev` | DNS 被改成 `199.59.149.237` 等非 CF IP | **无解**，考虑把 MCP 部署到 Vercel 或自定义域 |
+
+### ⚠️ 慢到挂 / 超时（必须镜像）
+
+| 资源 | 镜像 |
+|------|------|
+| `github.com/.../releases/download/...` | `https://gh-proxy.com/<原 URL>` |
+| `registry.npmjs.org` | `https://registry.npmmirror.com` |
+| `pypi.org` / 清华源 / 豆瓣 | `https://mirrors.aliyun.com/pypi/simple/` |
+
+### 沙箱代理指纹
+
+`curl -v` 看证书 issuer，如果出现：
+
+```
+subject: O=hangzhou; OU=alibaba cloud; CN=ack-agent-identity-proxy
+```
+
+说明你正经过沙箱的 egress proxy。**主流域名被透明代理**，可疑域名（特别是 `*.workers.dev`）会被劫持。
+
+## CLI 速通安装
+
+### `gh` CLI
+
+```bash
+# 走 gh-proxy 镜像
+curl -fsSL -o /tmp/gh.tgz \
+  "https://gh-proxy.com/https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_linux_amd64.tar.gz"
+cd /tmp && tar -xzf gh.tgz \
+  && cp gh_2.62.0_linux_amd64/bin/gh /usr/local/bin/ \
+  && chmod +x /usr/local/bin/gh
+gh --version   # gh version 2.62.0
+```
+
+### `vercel` CLI
+
+```bash
+# 切 npmmirror
+npm config set registry https://registry.npmmirror.com
+npm install -g vercel
+vercel --version   # Vercel CLI 59.11.1
+```
+
+### Python `mcp` SDK
+
+```bash
+# 用 venv 绕 PEP 668
+python3 -m venv /workspace/mcp-venv
+source /workspace/mcp-venv/bin/activate
+
+# 切 aliyun pip 镜像
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+pip config set global.trusted-host mirrors.aliyun.com
+
+# 官方 SDK + 高层封装
+pip install mcp      # mcp 2.1.1 (Model Context Protocol, LF Projects)
+pip install fastmcp  # fastmcp 4.0.0
+```
+
+> `mcp` 包归属：Publisher 是 `Model Context Protocol a Series of LF Projects, LLC`（Linux Foundation 旗下），最初由 Anthropic 工程师主导，移交到 MCP org 维护。License MIT。**`pip install mcp` 即是当前最标准的 Python 装法**。
+
+## `mcpc`：自研通用 MCP 客户端 CLI
+
+官方 `mcp` 包**自带的 `mcp` 命令是给服务器端 dev 用的**（`dev` / `run` / `install`），没有"一键调任意远程 MCP"的能力。
+
+我写了 150 行的 `mcpc`，把 `ClientSession` + `streamable_http_client` 包成一行 shell：
+
+```bash
+# 信息
+mcpc info   --token-env GITHUB_PAT_TOKEN https://api.githubcopilot.com/mcp/
+
+# 列工具
+mcpc list   --token-env GITHUB_PAT_TOKEN https://api.githubcopilot.com/mcp/
+
+# 看 schema
+mcpc schema --token-env GITHUB_PAT_TOKEN https://api.githubcopilot.com/mcp/ pull_request_read
+
+# 调用
+mcpc call   --token-env GITHUB_PAT_TOKEN --raw \
+  https://api.githubcopilot.com/mcp/ pull_request_read \
+  '{"owner":"ruan-cat","repo":"monorepo","pullNumber":154,"method":"get"}'
+```
+
+**特性**：
+- `--token-env` 从 `secret` 工具引用 token，不接触明文
+- args 既能内联 JSON，也能 `@file.json`
+- `--raw` 模式只输出工具真实 result（剥离 MCP envelope）
+- 输出纯 JSON 到 stdout，可 pipe 到 `jq` / `python3 -m json.tool`
+
+## 三个 MCP 实测
+
+| MCP | 端点 | 工具数 | 实测 |
+|-----|------|-------|------|
+| GitHub MCP | `https://api.githubcopilot.com/mcp/` | 44 | `get_me`、`pull_request_read`（PR #154）、`search_pull_requests` |
+| Vercel MCP | `https://mcp.vercel.com` | 37 | `list_teams`、`list_projects`（27 个项目）、`list_deployments` |
+| Neon MCP | `https://mcp.neon.tech/mcp` | **104** | `list_organizations`（2 orgs）、`list_projects`、`list_regions` |
+
+**Neon MCP 警告**：server 声明 `Write mode active`，破坏性工具（`delete_*` / `reset_*`）**必须**先经用户确认。
+
+## 与 `mcode-tools` 的关系
+
+沙箱**预装**了 `/usr/local/bin/mcode-tools`（`@minimax/mcode-tools@0.0.3`），是个独立的 connector 客户端：
+
+- 调 MiniMax Matrix 多媒体 AI（image / video / TTS / vision / ...）
+- 通过 `mcode-tools connector call connector__matrix__*` 调用
+- 通过 `mcode-tools get-asset-url` / `upload-temp-url` 拿 Drive 资源
+
+**与 `mcpc` 不冲突**，各管一摊：
+- `mcode-tools` → 沙箱内置 MiniMax 多媒体
+- `mcpc` → 直连任意 MCP server
+
+## 使用建议（基于这次实际经验）
+
+### ✅ DO
+
+- 用 `mcpc` 调远程 MCP，token 走 `secret` 工具
+- 装 CLI 第一时间试官方源，不通就上镜像（gh-proxy / npmmirror / aliyun-pypi）
+- 复杂的 args 写到 `@file.json` 里，避免 shell 转义
+- MCP 工具调用前先 `mcpc schema` 看真实入参（MCP 字段命名跟原生 API 不一样）
+
+### ❌ DON'T
+
+- 不要相信 GitHub MCP 给你所有原生 GitHub API 字段（它会做 normalize，`path` → `filename`、嵌套到 `details` 等）
+- 不要把 token 明文贴聊天里 —— 用 `secret` 工具存
+- 不要假定 `*.workers.dev` 域能从沙箱访问到（DNS 劫持）
+- 不要让 Neon MCP 调 `delete_*` 工具，除非用户明确同意
+- 不要假定沙箱的 `gh` / `vercel` / `mcp` 长期存活 —— 沙箱 reset 后要重装
+
+## 后续待办
+
+- [ ] `mcpc` 加 `stdio` transport 支持
+- [ ] `mcpc` 加 session cache（避免每次重启 MCP session）
+- [ ] 写 `install-cli <name>` 一键脚本自动化第 3 节
+- [ ] 评估 MCP server 替代域：是否需要在 Vercel 或自定义域部署 skill-router-mcp 镜像
+
+---
+
+> 报告生成时间：2026-09-02
+> 工具链版本：`gh` 2.62.0 · `vercel` 59.11.1 · `mcp` 2.1.1 · Python 3.11.2 · Node v22.19.0
