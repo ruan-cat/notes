@@ -23,7 +23,7 @@
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp/",
 			"headers": {
-				"Authorization": "Bearer 自己设置的github token"
+				"Authorization": "Bearer 自己设置的 github token"
 			}
 		},
 		//
