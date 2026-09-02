@@ -12,18 +12,18 @@ agentmore.chatglm.cn 提供的云 Linux 环境**不是持久化的**，而是**�
 
 在一次完整的会话中观察到以下重置行为：
 
-| 项目 | 会话中创建/修改 | 重置后状态 | 结论 |
-|------|----------------|-----------|------|
-| `.env` 文件 | 写入 GitHub/Vercel token | 还原成初始模板（只剩 `DATABASE_URL`） | 被还原 |
-| `.env.bak` 备份 | 创建 | 消失 | 被删除 |
-| `.gitignore` | 追加 `.env`、`.mcp-config.json` | 还原成初始内容 | 被还原 |
-| `.mcp-config.json` | 创建 | 消失 | 被删除 |
-| `scripts/mcp_call.py` | 创建 | 消失 | 被删除 |
-| `scripts/fastmcp_test.py` | 创建 | 保留 | 留下 |
-| `gh` 二进制（`~/.local/bin/gh`） | 下载安装 | 消失 | 被删除 |
-| `vercel` 全局 npm 包 | 安装 | 消失 | 被删除 |
-| git commit hash | `9cf305c` | `975f588` | 仓库被重新初始化 |
-| `skills/` 目录 | 系统预置 | 保留 | 留下 |
+| 项目                             | 会话中创建/修改                 | 重置后状态                            | 结论             |
+| -------------------------------- | ------------------------------- | ------------------------------------- | ---------------- |
+| `.env` 文件                      | 写入 GitHub/Vercel token        | 还原成初始模板（只剩 `DATABASE_URL`） | 被还原           |
+| `.env.bak` 备份                  | 创建                            | 消失                                  | 被删除           |
+| `.gitignore`                     | 追加 `.env`、`.mcp-config.json` | 还原成初始内容                        | 被还原           |
+| `.mcp-config.json`               | 创建                            | 消失                                  | 被删除           |
+| `scripts/mcp_call.py`            | 创建                            | 消失                                  | 被删除           |
+| `scripts/fastmcp_test.py`        | 创建                            | 保留                                  | 留下             |
+| `gh` 二进制（`~/.local/bin/gh`） | 下载安装                        | 消失                                  | 被删除           |
+| `vercel` 全局 npm 包             | 安装                            | 消失                                  | 被删除           |
+| git commit hash                  | `9cf305c`                       | `975f588`                             | 仓库被重新初始化 |
+| `skills/` 目录                   | 系统预置                        | 保留                                  | 留下             |
 
 ### 重置规律
 
@@ -113,10 +113,10 @@ agentmore.chatglm.cn 提供的云 Linux 环境**不是持久化的**，而是**�
 
 当前云 Linux 环境预装两个 MCP 相关 Python 包：
 
-| 包 | 版本 | 提供方 | 角色 |
-|------|------|--------|------|
-| `mcp` | 1.27.0 | Anthropic, PBC.（官方） | MCP 协议官方 Python SDK，提供 `ClientSession` 和 `streamablehttp_client` |
-| `fastmcp` | 2.14.3 | Jeremiah Lowin（社区） | 基于 `mcp` SDK 的上层框架，API 更简洁，返回值结构化 |
+| 包        | 版本   | 提供方                  | 角色                                                                     |
+| --------- | ------ | ----------------------- | ------------------------------------------------------------------------ |
+| `mcp`     | 1.27.0 | Anthropic, PBC.（官方） | MCP 协议官方 Python SDK，提供 `ClientSession` 和 `streamablehttp_client` |
+| `fastmcp` | 2.14.3 | Jeremiah Lowin（社区）  | 基于 `mcp` SDK 的上层框架，API 更简洁，返回值结构化                      |
 
 两者关系：`fastmcp` 依赖 `mcp`，是上层封装。纯消费 MCP 服务器时 `fastmcp` 更易用（返回 `structured_content` 直接是 dict），追求底层控制力时用 `mcp` SDK。
 
