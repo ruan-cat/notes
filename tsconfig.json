@@ -16,6 +16,11 @@
 		"esModuleInterop": true,
 		"noEmit": true,
 		"allowJs": true,
+
+		// === 2026-09-05 优化：tsserver 内存降级（PLAN v2 Task D Batch 2） ===
+		"incremental": true,
+		"tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
+
 		// Web 应用需要 DOM 环境
 		"lib": ["ESNext", "ES2020", "DOM", "DOM.Iterable"],
 		"typeRoots": ["./types"],
