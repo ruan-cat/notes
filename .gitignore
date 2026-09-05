@@ -57,3 +57,6 @@ local_cache/
 .workbuddy
 
 .vercel
+
+# TypeScript 增量构建缓存
+*.tsbuildinfo
