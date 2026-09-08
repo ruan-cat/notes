@@ -16,3 +16,12 @@
 vercel 出品的工具，包括 cli、MCP、skills。
 
 ## 谷歌浏览器 MCP
+
+## Obscura
+
+- https://x.com/MaxForAI/status/2095168688643293458
+- https://github.com/h4ckf0r0day/obscura
+
+## moli
+
+- https://github.com/lexmount/moli
