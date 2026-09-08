@@ -24,8 +24,10 @@
 - https://dashboard.zed.dev/education/apply
   > ![2026-09-07-15-37-37](https://gh-img-store.ruan-cat.com/img/2026-09-07-15-37-37.png)
 
-##
-
 ## tokenrouter.com
 
 - https://www.tokenrouter.com/console/token
+
+## 微软学生认证
+
+- https://azure.microsoft.com/zh-cn/free/students
