@@ -1,5 +1,7 @@
 # 免费羊毛方案
 
+- 免费渠道汇总站： https://freetokens.custats.info/
+
 ## 英伟达
 
 - https://x.com/Nozelcode/status/2093418232669684114
@@ -21,8 +23,11 @@
 ## zed 编辑器学生认证
 
 - 已经无法访问： https://x.com/getkaozhu/status/2093917048036610534
-- https://dashboard.zed.dev/education/apply
+- 教程： https://iqilian.com/learn/zed-xuesheng-mianfei/
+- 正式申请页面： https://dashboard.zed.dev/education/apply
   > ![2026-09-07-15-37-37](https://gh-img-store.ruan-cat.com/img/2026-09-07-15-37-37.png)
+
+申请的是 12 个月的 pro，zed 的 pro 提供 10 美元的按量付费额度，这个量其实真的不大。感觉申请到位了，每个月给的也很少。稍微用力就能用完了。
 
 ## tokenrouter.com
 
