@@ -20,6 +20,17 @@
 
 <!-- apikey： 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 -->
 
+## kiraai.vn
+
+- https://x.com/nahid_pro09/status/2097338741933453540
+- 站点： https://kiraai.vn/models
+- baseURL： https://kiraai.vn/api/v1
+- 模型名称： `glm-5.3-flash-free` `glm-5.3-free`
+
+<!-- apikey： kira_165b4bd5f96db857d33de4d4f7b28f16 -->
+
+越南的中转站站点。每日都有足够多的额度，足够高强度使用了。
+
 ## zed 编辑器学生认证
 
 - 已经无法访问： https://x.com/getkaozhu/status/2093917048036610534
