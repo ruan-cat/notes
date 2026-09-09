@@ -22,3 +22,4 @@
 <!-- - 用户名： `20260909@seu.edu.mk`
 - 旧密码： `T$423048830625at` -->
 - 修改密码： https://account.activedirectory.windowsazure.com/ChangePassword.aspx
+- 请关闭转发功能，尽量不要设置转发邮件，国内邮箱容易屏蔽国外邮件，还会退信。
