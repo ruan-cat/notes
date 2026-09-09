@@ -16,7 +16,9 @@
 ## 东南大学 seu.edu.mk 校友教育邮箱
 
 - 店铺链接： https://edumailshop.com/shop/164.html
+- 登录教程： https://www.edumails.cn/edu-outlook.html
 - 价格： 70 元
 - 订单信息： https://edumailshop.com/users/cCAAvzmll/orders
-
-TODO: 已经添加了客服微信，等待回复处理。
+<!-- - 用户名： `20260909@seu.edu.mk`
+- 旧密码： `T$423048830625at` -->
+- 修改密码： https://account.activedirectory.windowsazure.com/ChangePassword.aspx
