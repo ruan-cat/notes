@@ -31,6 +31,20 @@
 
 越南的中转站站点。每日都有足够多的额度，足够高强度使用了。
 
+## tokenrouter.com
+
+- https://www.tokenrouter.com/console/token
+
+## tokenharbor.ai
+
+- https://x.com/nahid_pro09/status/2097286106920395065
+- 模型列表： https://tokenharbor.ai/models
+- 模型型号： `deepseek-v4-flash:free` `mimo-v2.5:free`
+
+无法访问，疑似 VPN 地区封禁，可能是识别到中国地区。
+
+> ![2026-09-09-09-38-07](https://gh-img-store.ruan-cat.com/img/2026-09-09-09-38-07.png)
+
 ## zed 编辑器学生认证
 
 - 已经无法访问： https://x.com/getkaozhu/status/2093917048036610534
@@ -46,10 +60,6 @@
 - 教程： https://www.edumails.cn/zed-dev.html
 - `高端美国edu教育邮箱B型`商品链接： https://edumail.vip/45.html
 - `高端美国edu教育邮箱B型`： https://edumailshop.com/shop/140.html
-
-## tokenrouter.com
-
-- https://www.tokenrouter.com/console/token
 
 ## 微软学生认证
 
