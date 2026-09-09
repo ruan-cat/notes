@@ -23,3 +23,8 @@
 - 旧密码： `T$423048830625at` -->
 - 修改密码： https://account.activedirectory.windowsazure.com/ChangePassword.aspx
 - 请关闭转发功能，尽量不要设置转发邮件，国内邮箱容易屏蔽国外邮件，还会退信。
+
+- 学校信息： https://www.seeu.edu.mk/en/about
+- 学校名称： `South East European University`
+- 所属国家： 马其顿共和国 `the Republic of North Macedonia`
+- 城市： 泰托沃
