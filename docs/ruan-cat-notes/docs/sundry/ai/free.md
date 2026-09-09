@@ -32,6 +32,10 @@
 - 用不了 xxxx@seu.edu.mk
 - 用不了 xxxx@whu.edu.cn
 
+- 教程： https://www.edumails.cn/zed-dev.html
+- `高端美国edu教育邮箱B型`商品链接： https://edumail.vip/45.html
+- `高端美国edu教育邮箱B型`： https://edumailshop.com/shop/140.html
+
 ## tokenrouter.com
 
 - https://www.tokenrouter.com/console/token
