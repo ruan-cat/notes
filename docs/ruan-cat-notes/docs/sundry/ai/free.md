@@ -29,6 +29,9 @@
 
 申请的是 12 个月的 pro，zed 的 pro 提供 10 美元的按量付费额度，这个量其实真的不大。感觉申请到位了，每个月给的也很少。稍微用力就能用完了。
 
+- 用不了 xxxx@seu.edu.mk
+- 用不了 xxxx@whu.edu.cn
+
 ## tokenrouter.com
 
 - https://www.tokenrouter.com/console/token
