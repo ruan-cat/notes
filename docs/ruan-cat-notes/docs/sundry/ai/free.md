@@ -45,6 +45,13 @@
 
 > ![2026-09-09-09-38-07](https://gh-img-store.ruan-cat.com/img/2026-09-09-09-38-07.png)
 
+## chat.b.ai
+
+- https://chat.b.ai/
+- baseUrl： https://api.b.ai/v1
+
+<!-- apikey： sk-fs082xy18yekqw4ur886r1agcms2dz3i -->
+
 ## zed 编辑器学生认证
 
 - 已经无法访问： https://x.com/getkaozhu/status/2093917048036610534
