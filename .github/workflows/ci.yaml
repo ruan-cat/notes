@@ -20,18 +20,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 安装pnpm
-        uses: pnpm/action-setup@v5
+      - name: 安装pnpm和node
+        uses: pnpm/setup@c9883cc79df532ad1a7b81bf9ab944ceb090d65c # v2.0.0
         with:
-          run_install: |
-            - recursive: true
-            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx", "turbo"]
+          runtime: node@24.18.0
+          cache: true
+          install: false
 
-      - name: 安装node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.18.0
-          cache: pnpm
+      - name: 安装项目依赖
+        run: pnpm install -r
+
+      - name: 安装全局工具
+        run: pnpm add -g vercel @dotenvx/dotenvx tsx turbo
 
       - name: 检查版本
         run: |
