@@ -1,6 +1,18 @@
 packages:
   - docs/*
 
+# pnpm 12 供应链收紧：xlsx 由某传递依赖按 URL 引入，
+# SheetJS 官方仅通过 cdn.sheetjs.com 分发，属刻意异种依赖，故显式放行。
+blockExoticSubdeps: false
+
+# pnpm 12：onlyBuiltDependencies 不再授予构建权限，改用 allowBuilds
+allowBuilds:
+  "@parcel/watcher": true
+  esbuild: true
+  simple-git-hooks: true
+  unrs-resolver: true
+  vue-demi: true
+
 ignoredBuiltDependencies:
   - "@vercel/speed-insights"
 
