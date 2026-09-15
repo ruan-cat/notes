@@ -1,4 +1,4 @@
-# bybit,虚拟卡供应商
+# bybit，虚拟卡供应商
 
 开通 bybit 虚拟卡。利用 bug。
 
@@ -9,6 +9,7 @@
 ## 开通
 
 - `0门槛开Bybit台区卡！支持微信支付宝、身份证开卡、新客奖励120U！`： https://www.youtube.com/watch?v=lbwst8-plH4
+- https://www.youtube.com/watch?v=Q0Xr_oQIdLM
 - 邀请码： 86239
 
 - 所需材料： 中国大陆身份证
