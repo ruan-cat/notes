@@ -47,6 +47,8 @@
 
 ## chat.b.ai
 
+已过期，没有免费 token 了。
+
 - https://chat.b.ai/
 - baseUrl： https://api.b.ai/v1
 
