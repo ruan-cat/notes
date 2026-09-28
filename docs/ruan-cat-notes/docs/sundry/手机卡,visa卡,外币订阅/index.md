@@ -29,8 +29,15 @@
 
 pokepay，香港卡。
 
+- 首页（电脑端、手机端均可）： https://app.pokepay.cc/#/login
 - 邀请链接（手机打开）： app.pokepay.cc/pages/invitation/regist?r=164298
+- app 下载链接： https://app.pokepay.cc/app/pokepay.apk
 - `香港Visa实体卡超低门槛申请教学，直接邮寄到你家，低费率、全球付`： https://www.bilibili.com/video/BV1PVgbzYEGe/
+- `2026 最全 PokePay 开卡教程 | 用于订阅各种会员服务包括X和YouTube｜墙内海外消费必看`（pokepay 用币安入金教程）： https://www.youtube.com/watch?v=nyxqBWTNZLQ
+- 开卡卡段、openai 支付教程：
+  - https://github.com/fsfonz/chatgpt-pokepay-cards
+  - https://github.com/pmdpshv/openai-payment-fix
+  - https://github.com/lhb094/openai-card-solution
 
 ---
 
