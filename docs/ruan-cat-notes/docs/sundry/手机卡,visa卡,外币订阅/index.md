@@ -53,3 +53,7 @@ pokepay，香港卡。
 ### 日本乐天卡
 
 - https://x.com/imwsl90/status/2093493938959388988
+
+### 美国 saily 虚拟卡
+
+- https://www.youtube.com/watch?v=_Q76kvPydQc
