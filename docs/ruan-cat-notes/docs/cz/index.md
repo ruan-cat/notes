@@ -2,7 +2,7 @@
 
 commitizen，简称 cz，他用于管控我们 git commit 提交。
 
-相关的配置很多，附属插件，依赖也很多。目前（2024-10-23）暂不考虑继续折腾该内容。
+相关的配置很多，附属插件，依赖也很多。2026-09-28 更新：全局 `cz` 命令在 pnpm 12 下出现集体故障，根因与 `.czrc` 的写法直接相关，排障过程见 [bug-with-pnpm12](./bug-with-pnpm12.md)，本文的配置写法已同步修正。
 
 ## 最低限度的快速初始化 cz
 
@@ -32,15 +32,17 @@ pnpm i -D commitizen cz-git
 
 ```json
 {
-	"path": "cz-git"
+	"path": "node_modules/cz-git"
 }
 ```
 
-并不需要在 git 所在的`项目根目录`内新建。在嵌套文件夹的情况下，在你的`主要工作目录`内新建文件即可。
+注意 `path` 要写 `node_modules/cz-git` 这种**相对路径**，而不是裸模块名 `"cz-git"`。commitizen 会先定位 git 仓库根，再从仓库根解析这个相对路径，命中**项目本地**安装的 cz-git；裸模块名则会让 commitizen 从它自身的安装位置（全局环境）查找，在 pnpm 12 的全局隔离布局下必然失败，详见 [bug-with-pnpm12](./bug-with-pnpm12.md)。
+
+`.czrc` 放在哪个工作目录都可以，在嵌套文件夹的情况下，在你的`主要工作目录`内新建文件即可。但如果该目录不是 git 仓库根（例如 monorepo 子包），相对路径要以 git 仓库根为基准书写。
 
 :::
 
-::: warning 不太推荐
+::: warning 备选方案
 
 在 package.json 内：
 
@@ -54,7 +56,7 @@ pnpm i -D commitizen cz-git
 }
 ```
 
-之所以不推荐，是因为该写法毕竟要写在 package.json 内，而且是对 git 所在路径硬编码。
+该写法与 `.czrc` 完全等价，commitizen 对 `path` 的解析规则相同（同样从 git 仓库根解析相对路径），是官方支持的合法方式。区别只在配置载体：写进 package.json 便于集中管理，但会让 package.json 逐步臃肿；`.czrc` 更轻量独立。按项目习惯二选一即可。
 
 :::
 
