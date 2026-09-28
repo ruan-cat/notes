@@ -11,4 +11,8 @@
 
 ## 入金
 
-- https://www.youtube.com/watch?v=9oqGcyqumhI
+- `Bitget 银行卡新人如何入金？| 无限芝士`： https://www.youtube.com/watch?v=9oqGcyqumhI
+
+## 安全准则
+
+- `2026币圈入门指南：使用欧易和币安千万不能做的5件事儿`： https://www.youtube.com/watch?v=dJrwRck_610
