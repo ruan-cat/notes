@@ -1,4 +1,4 @@
-# 手机卡,visa 卡,外币订阅
+# 手机卡，visa 卡，外币订阅
 
 ## 开通虚拟卡
 
@@ -24,6 +24,17 @@
 
 - https://x.com/NFTCPS/status/2093667857959956788
 - https://x.com/MinLiBuilds/status/2094017117096161331
+
+### pokepay
+
+pokepay，香港卡。
+
+- 邀请链接（手机打开）： app.pokepay.cc/pages/invitation/regist?r=164298
+- `香港Visa实体卡超低门槛申请教学，直接邮寄到你家，低费率、全球付`： https://www.bilibili.com/video/BV1PVgbzYEGe/
+
+---
+
+已注册。接下来是币安入金，才能做下一步的身份认证。
 
 ## 开通国外接码用途手机号
 
