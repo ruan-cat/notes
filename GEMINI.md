@@ -82,7 +82,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - 约束：必须遵循客户端渲染边界、样式隔离和浏览器验证要求
 
 - `record-bug-fix-memory`
-  - 路径：`.agents/skills/fix-bug/record-bug-fix-memory/SKILL.md`
+  - 路径：`.agents/skills/record-bug-fix-memory/SKILL.md`
   - 用途：当用户要求在 bug 已经定位并修复后，记录排错经验、事故结论、AI 记忆更新、复盘摘要或本地 MCP 记忆时使用
   - 触发时机：当用户要求"记录经验教训""补充 AI 记忆""写事故记录""同步本地 MCP 记忆"时，必须使用
   - 参考作用：经验沉淀的参考。使用前先读 `SKILL.md` 的案例索引，再按需读取同目录独立案例文件
@@ -154,7 +154,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 5. 沟通协作要求
 
-### 3.1. `计划模式`
+### 3.1`计划模式`
 
 在`计划模式`下，请你按照以下方式与我协作：
 
@@ -599,7 +599,7 @@ LLM 在编码任务中常见的问题不是"不会写代码"，而是会在不�
 
 ## 15. 架构概述
 
-- **包管理器**: pnpm (要求版本 10.15.0)
+- **包管理器**: pnpm （要求版本 10.15.0)
 - **构建系统**: Turbo 用于跨工作空间的任务编排
 - **文档引擎**: VitePress 用于所有文档站点
 - **开发语言**: TypeScript，目标为 ESNext
@@ -607,9 +607,9 @@ LLM 在编码任务中常见的问题不是"不会写代码"，而是会在不�
 
 ### 8.1. 工作空间结构
 
-- `docs/ruan-cat-notes/` - 个人笔记文档 (@ruan-cat-docs/notes)
-- `docs/rpgmv-dev-notes/` - RPGMV 开发文档 (@ruan-cat-docs/rpgmv-dev-notes)
-- `docs/docs-01-star/` - 01-star 团队文档 (@ruan-cat-docs/docs-01-star)
+- `docs/ruan-cat-notes/` - 个人笔记文档 （@ruan-cat-docs/notes）
+- `docs/rpgmv-dev-notes/` - RPGMV 开发文档 （@ruan-cat-docs/rpgmv-dev-notes）
+- `docs/docs-01-star/` - 01-star 团队文档 （@ruan-cat-docs/docs-01-star）
 
 ## 16. 常用命令
 
@@ -724,7 +724,7 @@ pnpm run git:push
 - Turbo 管理跨工作空间的并行构建
 - VitePress 构建输出到 `.vitepress/dist/` 目录
 - 启用构建缓存优化
-- 笔记文档构建使用大内存分配 (8GB)
+- 笔记文档构建使用大内存分配 （8GB）
 
 ### 10.4. 测试配置
 

@@ -27,7 +27,7 @@ metadata:
 ### 2.1. 目录结构
 
 ```plain
-.claude/skills/fix-bug/record-bug-fix-memory/
+.agents/skills/record-bug-fix-memory/
 ├── SKILL.md
 ├── 2026-06-07-vitepress-element-plus-style-conflict.md
 └── ...
@@ -185,5 +185,5 @@ metadata:
 
 ## 13. 本仓库落点覆盖
 
-- 本仓库的 bug 经验优先记录在当前技能目录：`.claude/skills/fix-bug/record-bug-fix-memory/*.md`
+- 本仓库的 bug 经验优先记录在当前技能目录：`.agents/skills/record-bug-fix-memory/*.md`
 - 根级 `CLAUDE.md`、`AGENTS.md`、`GEMINI.md` 只在用户明确要求同步 AI 记忆文档时才更新
