@@ -65,10 +65,9 @@ pokepay，香港卡。
 
 ## 开通国外接码用途手机号
 
-- `免实名海外esim卡 | 免费接收短信 | 长期保号 | 一年不到10元 | 荷兰沃达丰0月租手机卡 | 注册tg`： https://www.youtube.com/watch?v=RGu5jTQgKKw&t=191s
-- https://potoh.com/posts/2026-1-5/wdfesim/
+技术选型：
 
-注意到这个视频，是要求我们先要有虚拟 visa 卡才能申请账号的。
+- https://sms-virtual.com/zh
 
 ### 日本乐天卡
 
@@ -78,6 +77,17 @@ pokepay，香港卡。
 
 - `每月不到 1 美元，长期拥有纯正美国号码！实测完美绑定美区 PayPal` https://www.youtube.com/watch?v=_Q76kvPydQc
 - 不打算继续探究： 付款方式需要 visa 卡、或 USDT
+
+### 荷兰沃达丰（不推荐）
+
+- `免实名海外esim卡 | 免费接收短信 | 长期保号 | 一年不到10元 | 荷兰沃达丰0月租手机卡 | 注册tg`： https://www.youtube.com/watch?v=RGu5jTQgKKw&t=191s
+- https://potoh.com/posts/2026-1-5/wdfesim/
+- 进度卡点： 注意到这个视频，是要求我们先要有虚拟 visa 卡才能申请账号的。
+
+### 香港易博通 esender（无法继续付款）
+
+- 官网： https://www.esender.hk/zh-cn/
+- 手机 app 无法实现对英国手机号的下单购买。直接说无法预定单。
 
 ### 加拿大 Kitesim
 
