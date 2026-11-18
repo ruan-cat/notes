@@ -1,5 +1,7 @@
 # 通过配置 baseUrl 的方式来使用 claude code
 
+随着桌面 agent 应用的蓬勃发展，这里我不再考虑在 claude code 内折腾外接独立的 baseUrl 来来开发了。（2026-11-18）
+
 ## 性能基于供应商的 url
 
 经过这段时间的使用，使用 baseUrl 方式的 claude code，其性能主要取决于中转商提供的 url 性能。不同的中转商，提供的性能和额度都各不相同。
