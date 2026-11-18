@@ -2,6 +2,8 @@
 
 ## 开通虚拟卡
 
+- 虚拟卡评测： https://cardwiki.net/
+
 ### bitget 供应商
 
 - `免费申请虚拟海外银行卡 | 0开卡费0年费 | 支持大陆身份 | 线上直接开卡 | Bitget Wallet 银行卡 | 可订阅GPT和Gemini | 从注册到使用全过程教程`：https://www.youtube.com/watch?v=RRap2O_vzgk
@@ -24,6 +26,21 @@
 
 - https://x.com/NFTCPS/status/2093667857959956788
 - https://x.com/MinLiBuilds/status/2094017117096161331
+
+### Muse Wallet
+
+- https://www.youtube.com/watch?v=8JEkhlZEIE8
+- 开卡费要 5 USDT。并且至少要充值 10 USDT 才能开始付款。有无法支付成功的风险，故这边暂时没有继续跟进下去。
+
+### roogoo
+
+- 汇总站点： https://cardwiki.net/card/roogoo/enjoy/
+- 视频教程： https://www.youtube.com/watch?v=opsY7xQ_wrU
+- 图文教程： https://rinfinity.net/video-opsy7xq_wru/
+- 支付门槛： 至少要充值 10 USDT 才能激活支付。
+
+进度说明：
+已经充值了 11 USDT 在币安内，但是中途 roogoo 无法在 app 与网页端继续登录和访问了，故开卡流程卡在这里了。无法继续。
 
 ### pokepay （不推荐）
 
