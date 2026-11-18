@@ -68,6 +68,7 @@ pokepay，香港卡。
 技术选型：
 
 - https://sms-virtual.com/zh
+- `【全网最全】大陆用户海外手机号选购攻略！英国、德国、香港、美国等20个国家地区主要方案全面大横评！ | 2026海外手机号长期保号&避坑指南` https://www.youtube.com/watch?v=LhBRDnfNODI
 
 ### 日本乐天卡
 
@@ -88,6 +89,12 @@ pokepay，香港卡。
 
 - 官网： https://www.esender.hk/zh-cn/
 - 手机 app 无法实现对英国手机号的下单购买。直接说无法预定单。
+
+### 格鲁吉亚 cellfie（卡点：付款方式需要 visa 卡）
+
+- 官网： https://cellfie.ge/en
+- `Cellfie 不限量eSIM套餐免费申领（免费试用7天）提供格鲁吉亚本地不限量流量、语音、短信。支持在中国大陆激活。每年保号仅需3钱、还支持自动保号` https://www.youtube.com/watch?v=DmDNrjigNMU
+- 进度卡点： 付款方式需要用 visa 卡，不方便。故不继续推进了。
 
 ### 加拿大 Kitesim
 
