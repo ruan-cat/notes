@@ -74,6 +74,28 @@ pokepay，香港卡。
 
 - https://x.com/imwsl90/status/2093493938959388988
 
-### 美国 saily 虚拟卡
+### 美国 saily 虚拟卡（不推荐）
 
-- https://www.youtube.com/watch?v=_Q76kvPydQc
+- `每月不到 1 美元，长期拥有纯正美国号码！实测完美绑定美区 PayPal` https://www.youtube.com/watch?v=_Q76kvPydQc
+- 不打算继续探究： 付款方式需要 visa 卡、或 USDT
+
+### 加拿大 Kitesim
+
+可以直接在 APP 内完成接收验证码。不需要 esim 。
+APP 使用的网络条件必须是正式的全局国外节点。
+付款方式可以直接支持大陆支付宝，支付宝自动走港元。
+
+- `【限时活动】0.3美元即可拥有加拿大号码 | 免实名 | 免费接收短信 | 无需esim设备 | 支持长期保号 | Kitesim | 成功注册Telegram、Whatsapp、GPT` https://www.youtube.com/watch?v=FSWP-ABJuLQ
+- 网页版注册： https://h5.kitesim.co/register/?invite=PCFPCK
+- 手机号验证器： https://www.phonevalidator.com/results
+
+已购买。
+
+1. 首季度是 0.3 美元，续费是 1 美元一个季度。
+2. 手机号码类型属于 LANDLINE 座机。属于实体手机号。
+   > ![2026-11-18-23-17-08](https://gh-img-store.ruan-cat.com/img/2026-11-18-23-17-08.png)
+3. 手机号为： 3435606702
+   > ![2026-11-18-23-17-27](https://gh-img-store.ruan-cat.com/img/2026-11-18-23-17-27.jpeg)
+4. 没收到验证码
+   - telegram 新注册账号收不到；
+   - ChatGPT 新注册账号收不到；
