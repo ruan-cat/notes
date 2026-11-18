@@ -1,13 +1,11 @@
-# Anthropic 封号
+# Anthropic 账号的注册、使用、维护、与防封
 
-坏事做尽，还封号哦。
+## 封号应对方案
 
-## 参考资料
+### 参考资料
 
 - [`告别封号！2025最新Claude注册及Pro订阅保姆级教程🔥 | 指纹浏览器 | PingMe接码 | IP纯净度 | 黄思平`](https://www.bilibili.com/video/BV1SXwzeoEaP/)
 - [`Claude防封指南：被封 3 次后，我总结了「3大作死行为」和「6条防封经验」，亲测有效`](https://zhuanlan.zhihu.com/p/1936013939122078205)
-
-## 应对方案
 
 ### 绝对不切换 ip 地址了
 
