@@ -4,6 +4,12 @@
 
 - 虚拟卡评测： https://cardwiki.net/
 
+<!-- TODO: 等待探究 -->
+
+- https://www.youtube.com/watch?v=u6hI_2dSZpI
+- https://sms-virtual.com/zh
+- https://sms4you.org/zh
+
 ### bitget 供应商
 
 - `免费申请虚拟海外银行卡 | 0开卡费0年费 | 支持大陆身份 | 线上直接开卡 | Bitget Wallet 银行卡 | 可订阅GPT和Gemini | 从注册到使用全过程教程`：https://www.youtube.com/watch?v=RRap2O_vzgk
@@ -96,6 +102,19 @@ pokepay，香港卡。
 - `Cellfie 不限量eSIM套餐免费申领（免费试用7天）提供格鲁吉亚本地不限量流量、语音、短信。支持在中国大陆激活。每年保号仅需3钱、还支持自动保号` https://www.youtube.com/watch?v=DmDNrjigNMU
 - 进度卡点： 付款方式需要用 visa 卡，不方便。故不继续推进了。
 
+### 爱沙尼亚 codsim（已付款 80 元 1 年，但是手机没有 esim 无法安装使用）
+
+- 主要教程 `codsim -提供119个国家的海外流量卡和海外保号卡 丨爱沙尼亚ESIM保号卡，开卡费3.3刀，保号一年成本0.19欧丨也可以在codsim购买实体ESIM卡进行扫码下载` https://www.youtube.com/watch?v=dnWQMro3yCo
+- 次要教程 https://www.youtube.com/watch?v=fAvhqtt4RUs
+- codsim 注册链接： https://codsim.cc/?reference=liulaoge
+- 通过链接注册，输入折扣码： LLG3
+
+- 价格： 79.67 元。
+  > 上面的折扣码没用，注册的时候用不了博主给的邀请链接，也没有地方识别到。所以只能原价购买。
+- 个人控制台订单页： https://www.codsim.cc/zh/account/esims/numbers/6af568c8ae7291802cf0abea
+
+- 进度卡点： 我手机没有能够识别的 esim 卡，无法实现安装。需要尝试去购买空白 esim 卡完成录入。
+
 ### 加拿大 Kitesim
 
 可以直接在 APP 内完成接收验证码。不需要 esim 。
@@ -116,3 +135,12 @@ APP 使用的网络条件必须是正式的全局国外节点。
 4. 没收到验证码
    - telegram 新注册账号收不到；
    - ChatGPT 新注册账号收不到；
+
+## esim
+
+目的是在自己安卓手机内，完成 esim 的读取与使用。
+
+### 方案 1
+
+- `如何让没有eSIM功能的手机用上eSIM？` https://www.bilibili.com/video/BV1LdHwzuEEr
+- `eSIM卡读卡器电脑使用教程` https://www.bilibili.com/video/BV18SpCzEEf7
