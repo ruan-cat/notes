@@ -106,6 +106,8 @@ pokepay，香港卡。
 
 - 主要教程 `codsim -提供119个国家的海外流量卡和海外保号卡 丨爱沙尼亚ESIM保号卡，开卡费3.3刀，保号一年成本0.19欧丨也可以在codsim购买实体ESIM卡进行扫码下载` https://www.youtube.com/watch?v=dnWQMro3yCo
 - 次要教程 https://www.youtube.com/watch?v=fAvhqtt4RUs
+- `一年不到41元：海外手机号保号与 AI 验证实测` https://www.bilibili.com/video/BV1P4ew6AETq
+  - 买手机号的时候输入 `5316` 然后再刷新，就能刷出便宜价格的手机卡号。
 - codsim 注册链接： https://codsim.cc/?reference=liulaoge
 - 通过链接注册，输入折扣码： LLG3
 
@@ -114,6 +116,7 @@ pokepay，香港卡。
 - 个人控制台订单页： https://www.codsim.cc/zh/account/esims/numbers/6af568c8ae7291802cf0abea
 
 - 进度卡点： 我手机没有能够识别的 esim 卡，无法实现安装。需要尝试去购买空白 esim 卡完成录入。
+  - <!-- TODO: --> 想办法调研清楚，到底选择哪款 esim 方案？esim APP 和实体卡是强绑定的。如何做兼容性检查？软件如何使用？
 
 ### 加拿大 Kitesim
 
@@ -140,7 +143,11 @@ APP 使用的网络条件必须是正式的全局国外节点。
 
 目的是在自己安卓手机内，完成 esim 的读取与使用。
 
-### 方案 1
+### 方案 1 xesim
 
 - `如何让没有eSIM功能的手机用上eSIM？` https://www.bilibili.com/video/BV1LdHwzuEEr
 - `eSIM卡读卡器电脑使用教程` https://www.bilibili.com/video/BV18SpCzEEf7
+
+### 方案 2 9esim
+
+- `让你的国行手机支持eSIM｜9esim新品v3卡｜开箱实测｜可下载50个esim｜支持安卓、苹果管理esim` https://www.bilibili.com/video/BV1BXRmY5EYL
