@@ -60,3 +60,8 @@ local_cache/
 
 # TypeScript 增量构建缓存
 *.tsbuildinfo
+
+# WorkBuddy 运行时目录：技能联接指向 .agents/skills，记忆与临时产物为本地数据，均不入库
+.workbuddy-ai/skills
+.workbuddy-ai/memory
+.workbuddy-ai/tmp
