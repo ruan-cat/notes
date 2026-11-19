@@ -4,6 +4,8 @@ export interface platform {
 	github: string;
 	openai: string;
 	qoder: string;
+	/** https://www.orcarouter.ai/console/token @description 可以大批量重复注册的免费llm模型渠道 */
+	"orcarouter.ai": string;
 }
 
 export interface EmailItem {
@@ -27,6 +29,7 @@ export const routingEmails: RutingEmail[] = [
 		email: "use-kiro-002@ruan-cat.com",
 		openai: "已封号",
 		github: "已注册，可正常使用，做第三方授权。",
+		"orcarouter.ai": "已使用，用github做了第三方授权登录",
 		// Your payment method is not eligible for a free trial. You can still upgrade to a paid plan and continue using Cursor.
 		cursor: "无法验证支付信息。已删除账号。",
 		qoder: "国际版已注册，没有免费plus可以领取",
@@ -41,6 +44,7 @@ export const routingEmails: RutingEmail[] = [
 		cursor: "已注册。",
 		openai: "已注册。手机验证已通过。无法领取plus。",
 		qoder: "国际版已注册。 plus试用权限被立刻收回撤销了。",
+		"orcarouter.ai": "直接邮箱注册，但是没有长期有效github账号，故没有免费模型使用",
 	},
 	{
 		order: 4,
@@ -49,6 +53,7 @@ export const routingEmails: RutingEmail[] = [
 		cursor: "已注册。",
 		openai: "已注册。手机验证已通过。无法领取plus。",
 		qoder: "国际版已注册。 plus试用权限还没有登录qoder code，所以没有触发其他行为。",
+		"orcarouter.ai": "直接邮箱注册，但是没有长期有效github账号，故没有免费模型使用",
 	},
 	{
 		order: 5,
