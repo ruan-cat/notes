@@ -303,7 +303,7 @@ Windows 下全局环境变量继承路径与类 Unix 系统不同，且 `cmd /c`
 |                    `pua`                     |     高绩效交付文化：RCA + 蓝军自检      |
 |      `superpowers:systematic-debugging`      |            系统化调试方法论             |
 | `superpowers:verification-before-completion` |      完成前必须验证，防止虚假交付       |
-|            `init-simple-memorix`             |        WorkBuddy hooks 配置落点         |
+|                `use-memorix`                 |        WorkBuddy hooks 配置落点         |
 |           `record-bug-fix-memory`            | 本报告的结构来源与 bug-fix 记忆沉淀规范 |
 
 ---
