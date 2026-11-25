@@ -33,4 +33,7 @@ skills add emilkowalski/skills -s emil-design-eng animate animation-performance 
 
 # https://github.com/addyosmani/agent-skills
 skills add addyosmani/agent-skills -s browser-testing-with-devtools context-engineering -g -y -a claude-code -a codex
+
+# archify（tt-a1i/archify —— 仓库内 6 个技能，指名安装，避开 archify-pr、archify-review、archify-tuning、simplify-codebase、test-value）
+skills add tt-a1i/archify -s archify -g -y -a claude-code -a codex
 ```
