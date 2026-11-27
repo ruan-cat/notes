@@ -106,11 +106,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 3. 在 YAML 区域写入包名和 `major`、`minor` 或 `patch` 发版标签。
 4. 正文禁止使用 Markdown 标题，改用有序列表。
 5. `major` 需详细说明重大变更；`minor` 和 `patch` 简明列出更新内容。
-
-### 4.1. 术语说明
-
-- “生成更新日志”和“生成发版日志”均指在 `.changeset` 中编写面向 changeset 的更新日志。
-- 未明确发版等级时，先询问用户确认 `major`、`minor` 或 `patch`。
+6. 未明确发版等级时，先询问用户确认 `major`、`minor` 或 `patch`。
 
 ## 6. 简单任务的高效执行原则
 
